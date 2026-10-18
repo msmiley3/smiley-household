@@ -298,6 +298,8 @@
     .ticker .track{animation-duration:180s}
     *,*::before,*::after{transition-duration:.01ms!important}
   }
+  .sump{margin:0 0 8px}
+  .sump:last-of-type{margin-bottom:3px}
 </style>
 </head>
 <body>
@@ -673,7 +675,7 @@
       var _nh = 0; (CONTENT.headlines.cats || []).forEach(function(c){ _nh += (c.items || []).length; }); setBadge('badgeNews', _nh);
       document.getElementById('headlinesDate').textContent = CONTENT.headlines.date||"";
       document.getElementById('headlinesWrap').innerHTML = CONTENT.headlines.cats.map(function(c){
-        var rows=c.items.map(function(x){return '<details class="flat inner"><summary>'+esc(x.title)+'<span class="chev">▾</span></summary><div class="body">'+esc(x.summary)+' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">Read at '+esc(x.source)+' ›</a></div></details>'}).join('');
+        var rows=c.items.map(function(x){return '<details class="flat inner"><summary>'+esc(x.title)+'<span class="chev">▾</span></summary><div class="body">'+(x.summary||'').split(/\n\n+/).map(function(p){return '<p class="sump">'+esc(p)+'</p>';}).join('')+' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">Read at '+esc(x.source)+' ›</a></div></details>'}).join('');
         return '<div class="grp">'+esc(c.name)+'</div>'+rows;
       }).join('');
     }
