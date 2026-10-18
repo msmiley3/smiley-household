@@ -4,189 +4,263 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Smiley Family — Household</title>
-<meta name="description" content="Smiley Family household hub: shopping list, to-dos, family calendar, deals, recipes, local events, headlines, baby checklist and photos. Sign-in required.">
+<meta name="description" content="Smiley Family household hub: shopping list, to-dos, family calendar, deals, recipes, local events, headlines, baby checklist and photos.">
 <style>
-  :root{--bg:#0b0e13;--card:#151a23;--card2:#1b222f;--text:#f2f5f9;--muted:#9aa7b8;--accent:#4da3ff;--accent2:#34d399;--danger:#f87171;--border:#242d3d;--radius:18px}
+  :root{
+    --bg:#0a0b0e; --surface:#12141a; --surface2:#171a21; --line:rgba(255,255,255,.08);
+    --text:#f4f4f5; --muted:#9b9ba4; --faint:#62626a;
+    --accent:#5e6ad2; --accent-soft:rgba(94,106,210,.14); --green:#4caf76; --danger:#e5534b;
+    --radius:12px;
+  }
   *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
-  .wrap{max-width:720px;margin:0 auto;padding:20px 16px 40px}
-  header{padding:12px 4px 8px}
-  h1{font-size:28px;margin:0 0 4px;letter-spacing:-.02em}
-  .date{color:var(--muted);font-size:16px}
-  .clock{font-size:44px;font-weight:700;margin-top:8px;letter-spacing:-.03em}
-  .section{margin:26px 4px 10px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
-  .panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
-  .item{display:flex;align-items:center;gap:12px;padding:10px 2px;border-bottom:1px solid var(--border)}
-  .item:last-child{border-bottom:none}
-  .item input[type=checkbox]{width:24px;height:24px;accent-color:var(--accent2);flex:none}
-  .item .txt{flex:1;min-width:0}
-  .item .meta{color:var(--muted);font-size:13px}
-  .item.done .txt{color:var(--muted);text-decoration:line-through}
-  .del{background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:6px;flex:none}
-  .del:active{color:var(--danger)}
-  .empty{color:var(--muted);padding:8px 2px}
-  form.add{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-  form.add input{flex:1;min-width:110px;background:var(--card2);border:1px solid var(--border);border-radius:12px;color:var(--text);padding:12px;font-size:16px}
-  button{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:650;cursor:pointer}
-  button.ghost{background:var(--card2);color:var(--text);border:1px solid var(--border)}
-  button:active{opacity:.85}
-  details{background:var(--card);border:1px solid var(--border);border-radius:14px;margin-bottom:10px;overflow:hidden}
-  summary{cursor:pointer;padding:16px 18px;font-size:17px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
-  summary::-webkit-details-marker{display:none}
-  summary .chev{color:var(--muted);font-weight:400}
-  details .body{padding:4px 18px 16px}
-  details.inner{background:var(--card2);border-color:var(--border)}
-  details.inner summary{font-size:15px;font-weight:550;padding:12px 14px}
-  details.inner .body{padding:2px 14px 12px;color:var(--muted);font-size:14px;line-height:1.5}
-  .deal{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
-  .deal:last-child{border-bottom:none}
-  .deal .price{font-weight:700;color:var(--accent2);white-space:nowrap;text-align:right}
-  .deal .tag{color:var(--muted);font-size:13px}
-  .src{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-  a{color:var(--accent)}
-  a.row{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--text);font-size:17px;min-height:56px;margin-bottom:10px}
-  a.row span.arrow{color:var(--muted)}
-  .ev-when{color:var(--accent);font-size:13px;font-weight:650}
-  .grp{margin:14px 0 4px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-  .grp:first-child{margin-top:2px}
-  .loginbox{max-width:420px;margin:8vh auto 0;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px 24px}
-  .loginbox h1{text-align:center}
-  .loginbox p.sub{color:var(--muted);text-align:center;margin:6px 0 20px;line-height:1.45}
-  .loginbox label{display:block;font-size:14px;color:var(--muted);margin:14px 0 6px}
-  .loginbox input{width:100%;background:var(--card2);border:1px solid var(--border);border-radius:12px;color:var(--text);padding:14px;font-size:16px}
-  .loginbox button{width:100%;margin-top:18px}
-  .loginbox button.ghost{margin-top:10px}
-  .msg{margin-top:14px;font-size:14px;line-height:1.45;color:var(--accent2);text-align:center;min-height:20px}
-  .msg.err{color:var(--danger)}
-  .topbar{display:flex;justify-content:space-between;align-items:center;gap:10px}
-  .who{color:var(--muted);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .ticker{overflow:hidden;background:#101623;border:1px solid var(--border);border-radius:12px;padding:10px 0;margin-top:10px;white-space:nowrap}
-  .ticker .track{display:inline-block;padding-left:100%;animation:tick 70s linear infinite;font-size:15px}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-size:14px;line-height:1.45;
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+  /* ---------- Sticky header: brand + ticker + nav stay pinned ---------- */
+  .stickyhead{position:sticky;top:0;z-index:60;background:rgba(10,11,14,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .topbar{max-width:1120px;margin:0 auto;padding:8px 16px 6px;display:flex;align-items:center;gap:12px}
+  .brand{font-size:15px;font-weight:650;letter-spacing:-.02em;white-space:nowrap}
+  .brand .home{margin-right:6px}
+  .who{color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0}
+  .clockbox{text-align:right;white-space:nowrap}
+  .clock{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  .date{color:var(--faint);font-size:11px}
+  .iconbtn{background:var(--surface2);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:5px 10px;font-size:12.5px;font-weight:550;cursor:pointer}
+  .iconbtn:active{opacity:.8}
+  .ticker{border-top:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:4px 0}
+  .ticker .track{display:inline-block;padding-left:100%;animation:tick 65s linear infinite;font-size:12.5px;color:#d7d7de}
   @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-100%)}}
-  .photos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-  .ph{position:relative;border-radius:12px;overflow:hidden;background:var(--card2);aspect-ratio:1}
+  .navpills{max-width:1120px;margin:0 auto;padding:6px 16px 8px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+  .navpills::-webkit-scrollbar{display:none}
+  .navpills a{flex:none;color:var(--muted);text-decoration:none;font-size:12.5px;font-weight:550;padding:4px 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+  .navpills a:active{color:var(--text);border-color:var(--accent)}
+  /* ---------- Layout ---------- */
+  .wrap{max-width:1120px;margin:0 auto;padding:14px 16px 32px}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media(min-width:920px){.grid{grid-template-columns:1fr 1fr}.span2{grid-column:span 2}}
+  section{scroll-margin-top:132px}
+  .card{background:linear-gradient(180deg,#13161d,#10131a);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px}
+  .card h2,.ghead h2{font-size:12px;font-weight:650;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:0}
+  .cardhead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:6px}
+  .cardhead .sub{color:var(--faint);font-size:11.5px}
+  .ghead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:4px 2px 8px}
+  .ghead .sub{color:var(--faint);font-size:11.5px}
+  /* ---------- Week brief ---------- */
+  .brief{background:linear-gradient(180deg,rgba(94,106,210,.16),rgba(94,106,210,.05));border:1px solid rgba(94,106,210,.38);border-radius:var(--radius);padding:14px 16px;margin-bottom:12px}
+  .brief h2{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:#b9bffa;margin:0 0 6px;font-weight:650}
+  .brief p{margin:0;font-size:14.5px;line-height:1.55;color:#eceef7}
+  .chips{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font-size:12px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#d7d7de}
+  /* ---------- Identity bar ---------- */
+  .idbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px;margin-bottom:12px;font-size:13.5px}
+  .idbar .q{color:var(--muted)}
+  .idbar button{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:7px 16px;font-size:13.5px;font-weight:600;cursor:pointer}
+  .idbar button.alt{background:var(--surface2);border:1px solid var(--line);color:var(--text)}
+  /* ---------- List rows ---------- */
+  .item{display:flex;align-items:center;gap:9px;padding:6px 0;border-bottom:1px solid var(--line)}
+  .item:last-child{border-bottom:none}
+  .item input[type=checkbox]{width:18px;height:18px;accent-color:var(--green);flex:none;margin:0}
+  .item .txt{flex:1;min-width:0;font-size:14px}
+  .item .meta{color:var(--faint);font-size:12px}
+  .item.done .txt{color:var(--faint);text-decoration:line-through}
+  .del{background:none;border:none;color:var(--faint);font-size:15px;cursor:pointer;padding:4px 6px;flex:none;line-height:1}
+  .del:active{color:var(--danger)}
+  .empty{color:var(--faint);font-size:13px;padding:6px 0}
+  .grp{margin:10px 0 2px;font-size:11px;font-weight:650;letter-spacing:.07em;text-transform:uppercase;color:var(--faint)}
+  .grp:first-child{margin-top:0}
+  .ev-when{color:#8f9bf0;font-size:12px;font-weight:600}
+  /* ---------- Forms ---------- */
+  form.add{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  form.add input{flex:1;min-width:100px;background:var(--surface2);border:1px solid var(--line);border-radius:8px;color:var(--text);padding:8px 10px;font-size:16px}
+  form.add input:focus{outline:none;border-color:var(--accent)}
+  button{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:14px;font-weight:600;cursor:pointer}
+  button.ghost{background:var(--surface2);color:var(--text);border:1px solid var(--line)}
+  button:active{opacity:.85}
+  /* ---------- Accordions (deals / recipes / events / headlines) ---------- */
+  .subgrid{display:grid;grid-template-columns:1fr;gap:8px}
+  @media(min-width:920px){.subgrid{grid-template-columns:1fr 1fr}}
+  details{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  summary{cursor:pointer;padding:10px 12px;font-size:14px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:8px}
+  summary::-webkit-details-marker{display:none}
+  summary .chev{color:var(--faint);font-weight:400;font-size:12px}
+  details .body{padding:2px 12px 12px}
+  details.inner{background:var(--surface2)}
+  details.inner summary{font-size:13.5px;font-weight:550;padding:9px 11px}
+  details.inner .body{padding:0 11px 10px;color:var(--muted);font-size:13px;line-height:1.5}
+  .deal{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+  .deal:last-child{border-bottom:none}
+  .deal .price{font-weight:650;color:var(--green);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .deal .tag{color:var(--faint);font-size:12px}
+  .src{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:.06em}
+  a{color:#8f9bf0}
+  /* ---------- Photos ---------- */
+  .photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:6px}
+  .ph{position:relative;border-radius:8px;overflow:hidden;background:var(--surface2);aspect-ratio:1}
   .ph img{width:100%;height:100%;object-fit:cover;display:block}
-  .ph .del{position:absolute;top:2px;right:2px;background:rgba(0,0,0,.55);border-radius:8px;color:#fff;font-size:14px;padding:2px 8px}
-  footer{color:var(--muted);font-size:13px;line-height:1.5;margin-top:28px;padding:0 4px}
+  .ph .cap{position:absolute;left:0;right:0;bottom:0;padding:10px 6px 4px;font-size:10.5px;color:#fff;background:linear-gradient(180deg,transparent,rgba(0,0,0,.65))}
+  .ph .del{position:absolute;top:2px;right:2px;background:rgba(0,0,0,.55);border-radius:6px;color:#fff;font-size:12px;padding:1px 7px}
+  .meta{color:var(--faint);font-size:12px}
+  /* ---------- Login ---------- */
+  .loginbox{max-width:400px;margin:9vh auto 0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px}
+  .loginbox h1{text-align:center;font-size:20px;margin:0;letter-spacing:-.02em}
+  .loginbox p.sub{color:var(--muted);text-align:center;margin:6px 0 16px;line-height:1.45;font-size:13.5px}
+  .loginbox label{display:block;font-size:12.5px;color:var(--muted);margin:12px 0 5px}
+  .loginbox input{width:100%;background:var(--surface2);border:1px solid var(--line);border-radius:8px;color:var(--text);padding:11px;font-size:16px}
+  .loginbox button{width:100%;margin-top:14px;padding:11px}
+  .loginbox button.ghost{margin-top:8px}
+  .msg{margin-top:12px;font-size:13px;line-height:1.45;color:var(--green);text-align:center;min-height:18px}
+  .msg.err{color:var(--danger)}
+  footer{color:var(--faint);font-size:12px;line-height:1.5;margin-top:16px;padding:0 2px}
   [hidden]{display:none!important}
 </style>
 </head>
 <body>
-<div class="wrap">
 
   <!-- LOGIN VIEW -->
   <div id="loginView" hidden>
-    <div class="loginbox">
-      <h1>🏠 Smiley Family</h1>
-      <p class="sub">Private household hub.<br>Sign in with the email Mike or Kelly was invited with.</p>
-      <label for="email">Email</label>
-      <input id="email" type="email" autocomplete="email" placeholder="you@email.com">
-      <label for="password">Password</label>
-      <input id="password" type="password" autocomplete="current-password" placeholder="Your password">
-      <button id="signInBtn">Sign in</button>
-      <button id="magicBtn" class="ghost">Email me a sign-in link instead</button>
-      <button id="previewBtn" class="ghost">Just looking? Preview the app</button>
-      <div class="msg" id="loginMsg"></div>
-      <p class="sub" style="margin-top:16px;font-size:13px">First time? Open the invite email from Supabase and tap its link — it signs you straight in, then you can set a password under Account at the bottom. On your own phone you stay signed in after that.</p>
+    <div class="wrap">
+      <div class="loginbox">
+        <h1>🏠 Smiley Family</h1>
+        <p class="sub">Private household hub.<br>Sign in with the email Mike or Kelly was invited with.</p>
+        <label for="email">Email</label>
+        <input id="email" type="email" autocomplete="email" placeholder="you@email.com">
+        <label for="password">Password</label>
+        <input id="password" type="password" autocomplete="current-password" placeholder="Your password">
+        <button id="signInBtn">Sign in</button>
+        <button id="magicBtn" class="ghost">Email me a sign-in link instead</button>
+        <button id="previewBtn" class="ghost">Just looking? Preview the app</button>
+        <div class="msg" id="loginMsg"></div>
+        <p class="sub" style="margin-top:14px;font-size:12.5px">First time? Open the invite email from Supabase and tap its link — it signs you straight in, then you can set a password under Account at the bottom. On your own phone you stay signed in after that.</p>
+      </div>
     </div>
   </div>
 
   <!-- APP VIEW -->
   <div id="appView" hidden>
-    <div class="topbar">
-      <div class="who" id="whoami"></div>
-      <div>
-        <button class="ghost" id="refreshBtn" style="padding:8px 12px;font-size:14px">↻ Refresh</button>
-        <button class="ghost" id="signOutBtn" style="padding:8px 12px;font-size:14px">Sign out</button>
+    <div class="stickyhead">
+      <div class="topbar">
+        <div class="brand"><span class="home">🏠</span>Smiley Family</div>
+        <div class="who" id="whoami"></div>
+        <button class="iconbtn" id="personChip" title="Who is using this device?">👤 Set name</button>
+        <button class="iconbtn" id="refreshBtn">↻</button>
+        <button class="iconbtn" id="signOutBtn">Sign out</button>
+        <div class="clockbox">
+          <div class="clock" id="clock">--:--</div>
+          <div class="date" id="date">Loading…</div>
+        </div>
       </div>
-    </div>
-    <header>
-      <h1>Smiley Family</h1>
-      <div class="date" id="date">Loading date…</div>
-      <div class="clock" id="clock">--:--</div>
-    </header>
-    <div class="ticker"><span class="track" id="tickerTrack">Loading your ticker…</span></div>
-
-    <div class="section"><span>🛒 Shopping List</span></div>
-    <div class="panel">
-      <div id="shopList"><div class="empty">Loading…</div></div>
-      <form class="add" id="shopForm">
-        <input id="shopItem" placeholder="Add an item…" required>
-        <input id="shopQty" placeholder="Qty" style="flex:0 0 74px;min-width:64px">
-        <input id="shopStore" placeholder="Store" style="flex:0 0 96px;min-width:84px">
-        <button type="submit">Add</button>
-      </form>
+      <div class="ticker"><span class="track" id="tickerTrack">Loading your ticker…</span></div>
+      <nav class="navpills">
+        <a href="#s-brief">✨ Week</a><a href="#s-shop">🛒 Shopping</a><a href="#s-todo">✓ To-Dos</a><a href="#s-cal">📅 Calendar</a><a href="#s-deals">🏷️ Deals</a><a href="#s-recipes">🍽️ Recipes</a><a href="#s-events">🎃 This Week</a><a href="#s-news">🗞️ Headlines</a><a href="#s-baby">👶 Baby</a><a href="#s-photos">🐶 Photos</a>
+      </nav>
     </div>
 
-    <div class="section"><span>✓ To-Dos</span></div>
-    <div class="panel">
-      <div id="todoList"><div class="empty">Loading…</div></div>
-      <form class="add" id="todoForm">
-        <input id="todoTask" placeholder="Add a task…" required>
-        <input id="todoOwner" placeholder="Owner" style="flex:0 0 96px;min-width:84px">
-        <input id="todoDue" placeholder="Due" style="flex:0 0 96px;min-width:84px">
-        <button type="submit">Add</button>
-      </form>
+    <div class="wrap">
+      <section id="s-brief">
+        <div class="brief">
+          <h2>✨ The Week Ahead — AI Brief</h2>
+          <p id="briefText">Putting your week together…</p>
+          <div class="chips" id="briefChips"></div>
+        </div>
+      </section>
+
+      <div class="idbar" id="idBar" hidden>
+        <span class="q">Who's using this device? Your name gets stamped on everything you add.</span>
+        <button id="pickMike">I'm Mike</button>
+        <button id="pickKelly" class="alt">I'm Kelly</button>
+      </div>
+
+      <main class="grid">
+        <section class="card" id="s-shop">
+          <div class="cardhead"><h2>🛒 Shopping List</h2></div>
+          <div id="shopList"><div class="empty">Loading…</div></div>
+          <form class="add" id="shopForm">
+            <input id="shopItem" placeholder="Add an item…" required>
+            <input id="shopQty" placeholder="Qty" style="flex:0 0 64px;min-width:56px">
+            <input id="shopStore" placeholder="Store" style="flex:0 0 84px;min-width:72px">
+            <button type="submit">Add</button>
+          </form>
+        </section>
+
+        <section class="card" id="s-todo">
+          <div class="cardhead"><h2>✓ To-Dos</h2><span class="sub">owner is automatic — it's whoever adds it</span></div>
+          <div id="todoList"><div class="empty">Loading…</div></div>
+          <form class="add" id="todoForm">
+            <input id="todoTask" placeholder="Add a task…" required>
+            <input id="todoDue" placeholder="Due (optional)" style="flex:0 0 110px;min-width:96px">
+            <button type="submit">Add</button>
+          </form>
+        </section>
+
+        <section class="card span2" id="s-cal">
+          <div class="cardhead"><h2>📅 Coming Up — Family Calendar</h2></div>
+          <div id="eventList"><div class="empty">Loading…</div></div>
+          <form class="add" id="eventForm">
+            <input id="evTitle" placeholder="New event…" required>
+            <input id="evWhen" type="datetime-local" required style="flex:0 0 200px">
+            <button type="submit">Add</button>
+          </form>
+        </section>
+
+        <section class="span2" id="s-deals">
+          <div class="ghead"><h2>🏷️ Deals This Week</h2><span class="sub" id="dealsRange"></span></div>
+          <div class="subgrid" id="dealsWrap"><div class="empty">Loading deals…</div></div>
+        </section>
+
+        <section class="span2" id="s-recipes">
+          <div class="ghead"><h2>🍽️ Recipe Ideas From the Ads</h2></div>
+          <div class="subgrid" id="recipesWrap"><div class="empty">Loading recipes…</div></div>
+        </section>
+
+        <section class="span2" id="s-events">
+          <div class="ghead"><h2>🎃 This Week Around Us</h2><span class="sub" id="eventsRange"></span></div>
+          <div class="subgrid" id="eventsWrap"><div class="empty">Loading events…</div></div>
+        </section>
+
+        <section class="span2" id="s-news">
+          <div class="ghead"><h2>🗞️ Daily Headlines</h2><span class="sub" id="headlinesDate"></span></div>
+          <div id="headlinesWrap"><div class="empty">Loading headlines…</div></div>
+        </section>
+
+        <section class="card" id="s-baby">
+          <div class="cardhead"><h2>👶 Baby Checklist</h2></div>
+          <div id="babyList"><div class="empty">Loading…</div></div>
+          <form class="add" id="babyForm">
+            <input id="babyItem" placeholder="Add an item…" required>
+            <input id="babyCat" placeholder="Section (e.g. Nursery)" style="flex:0 0 140px;min-width:120px">
+            <button type="submit">Add</button>
+          </form>
+        </section>
+
+        <section class="card" id="s-photos">
+          <div class="cardhead"><h2>🐶 Photos — Moose &amp; Family</h2></div>
+          <div class="photos" id="photoGrid"><div class="empty">Loading photos…</div></div>
+          <form class="add" id="photoForm">
+            <input id="photoFile" type="file" accept="image/*" multiple style="padding:6px">
+            <button type="submit">Upload</button>
+          </form>
+          <div class="meta" id="photoMsg" style="margin-top:6px"></div>
+        </section>
+
+        <section class="card span2" id="acctHead">
+          <div class="cardhead"><h2>🔐 Account</h2></div>
+          <div id="acctPanel">
+            <div class="meta">Signed in as <span id="acctEmail"></span>. Set or change your password here:</div>
+            <form class="add" id="pwForm">
+              <input id="newPw" type="password" autocomplete="new-password" placeholder="New password (min 6 characters)">
+              <button type="submit">Save password</button>
+            </form>
+            <div class="meta" id="pwMsg" style="margin-top:6px"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        Smiley Family hub — Solon, OH. Ticker weather is live; headlines refresh each morning; deals, recipes and events refresh Wednesdays.
+        The old Google Sheet and Calendar remain as a backup.
+      </footer>
     </div>
-
-    <div class="section"><span>📅 Coming Up — Family Calendar</span></div>
-    <div class="panel">
-      <div id="eventList"><div class="empty">Loading…</div></div>
-      <form class="add" id="eventForm">
-        <input id="evTitle" placeholder="New event…" required>
-        <input id="evWhen" type="datetime-local" required style="flex:0 0 210px">
-        <button type="submit">Add</button>
-      </form>
-    </div>
-
-    <div class="section"><span>🏷️ Deals This Week</span><span id="dealsRange" style="letter-spacing:0;text-transform:none;font-weight:400"></span></div>
-    <div id="dealsWrap"><div class="empty">Loading deals…</div></div>
-
-    <div class="section"><span>🍽️ Recipe Ideas From the Ads</span></div>
-    <div id="recipesWrap"><div class="empty">Loading recipes…</div></div>
-
-    <div class="section"><span>🎃 This Week Around Us</span><span id="eventsRange" style="letter-spacing:0;text-transform:none;font-weight:400"></span></div>
-    <div id="eventsWrap"><div class="empty">Loading events…</div></div>
-
-    <div class="section"><span>🗞️ Daily Headlines</span><span id="headlinesDate" style="letter-spacing:0;text-transform:none;font-weight:400"></span></div>
-    <div id="headlinesWrap"><div class="empty">Loading headlines…</div></div>
-
-    <div class="section"><span>👶 Baby Checklist</span></div>
-    <div class="panel">
-      <div id="babyList"><div class="empty">Loading…</div></div>
-      <form class="add" id="babyForm">
-        <input id="babyItem" placeholder="Add an item…" required>
-        <input id="babyCat" placeholder="Section (e.g. Nursery)" style="flex:0 0 150px;min-width:130px">
-        <button type="submit">Add</button>
-      </form>
-    </div>
-
-    <div class="section"><span>🐶 Photos — Moose &amp; Family</span></div>
-    <div class="panel">
-      <div class="photos" id="photoGrid"><div class="empty">Loading photos…</div></div>
-      <form class="add" id="photoForm">
-        <input id="photoFile" type="file" accept="image/*" multiple style="padding:9px">
-        <button type="submit">Upload</button>
-      </form>
-      <div class="meta" id="photoMsg" style="color:var(--muted);font-size:13px;margin-top:8px"></div>
-    </div>
-
-    <div class="section" id="acctHead"><span>🔐 Account</span></div>
-    <div class="panel" id="acctPanel">
-      <div class="meta" style="color:var(--muted);font-size:14px">Signed in as <span id="acctEmail"></span>. Set or change your password here:</div>
-      <form class="add" id="pwForm">
-        <input id="newPw" type="password" autocomplete="new-password" placeholder="New password (min 6 characters)">
-        <button type="submit">Save password</button>
-      </form>
-      <div class="meta" id="pwMsg" style="color:var(--muted);font-size:13px;margin-top:8px"></div>
-    </div>
-
-    <footer>
-      Private to Mike &amp; Kelly — sign-in required. Lists, calendar, baby checklist and photos live in a private database, not on this public page.
-      The old Google Sheet and Calendar are still there as a backup. Made for the Smiley household, Solon, OH.
-    </footer>
   </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -200,7 +274,7 @@
   function tick(){
     var now=new Date();
     var d=document.getElementById('date'),c=document.getElementById('clock');
-    if(d)d.textContent=now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+    if(d)d.textContent=now.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',year:'numeric'});
     if(c)c.textContent=now.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
   }
   tick(); setInterval(tick,15000);
@@ -235,25 +309,29 @@
     document.getElementById('tickerTrack').textContent = items.join("   ✦   ");
   }
 
-  /* ---------- Content sections (deals / recipes / events / headlines) ---------- */
+  /* ---------- Content sections (brief / deals / recipes / events / headlines) ---------- */
   function renderContent(){
     if(!CONTENT) return;
+    if(CONTENT.weekBrief){
+      document.getElementById('briefText').textContent = CONTENT.weekBrief.text || '';
+      document.getElementById('briefChips').innerHTML = (CONTENT.weekBrief.chips||[]).map(function(c){return '<span class="chip">'+esc(c)+'</span>'}).join('');
+    }
     if(CONTENT.deals){
       document.getElementById('dealsRange').textContent = CONTENT.deals.range||"";
       document.getElementById('dealsWrap').innerHTML = CONTENT.deals.stores.map(function(s){
         var rows=s.items.map(function(x){return '<div class="deal"><div>'+esc(x[0])+(x[2]?' <span class="tag">· '+esc(x[2])+'</span>':'')+'</div><div class="price">'+esc(x[1])+'</div></div>'}).join('');
-        return '<details><summary>'+esc(s.name)+'<span class="chev">▾</span></summary><div class="body"><div class="src">'+esc(s.note||"")+'</div>'+rows+'<div style="margin-top:10px"><a href="'+esc(s.link)+'" target="_blank" rel="noopener">Open the full ad ›</a></div></div></details>';
+        return '<details><summary>'+esc(s.name)+'<span class="chev">▾</span></summary><div class="body"><div class="src">'+esc(s.note||"")+'</div>'+rows+'<div style="margin-top:8px"><a href="'+esc(s.link)+'" target="_blank" rel="noopener">Open the full ad ›</a></div></div></details>';
       }).join('');
     }
     if(CONTENT.recipes){
       document.getElementById('recipesWrap').innerHTML = CONTENT.recipes.map(function(r){
-        return '<details class="inner" style="background:var(--card);border:1px solid var(--border)"><summary>'+esc(r.name)+'<span class="chev">▾</span></summary><div class="body"><div class="src">'+esc(r.basedOn)+'</div><div style="margin-top:6px">'+esc(r.blurb)+'</div></div></details>';
+        return '<details><summary>'+esc(r.name)+'<span class="chev">▾</span></summary><div class="body"><div class="src">'+esc(r.basedOn)+'</div><div style="margin-top:5px;color:var(--muted);font-size:13.5px">'+esc(r.blurb)+'</div></div></details>';
       }).join('');
     }
     if(CONTENT.events){
       document.getElementById('eventsRange').textContent = CONTENT.events.range||"";
       document.getElementById('eventsWrap').innerHTML = CONTENT.events.areas.map(function(a){
-        var rows=a.items.map(function(x){return '<div class="item"><div class="txt"><div class="ev-when">'+esc(x.when)+'</div><div>'+esc(x.title)+'</div><div class="meta">'+esc(x.where)+'</div></div><a href="'+esc(x.link)+'" target="_blank" rel="noopener" style="text-decoration:none;font-size:20px">›</a></div>'}).join('');
+        var rows=a.items.map(function(x){return '<div class="item"><div class="txt"><div class="ev-when">'+esc(x.when)+'</div><div>'+esc(x.title)+'</div><div class="meta">'+esc(x.where)+'</div></div><a href="'+esc(x.link)+'" target="_blank" rel="noopener" style="text-decoration:none;font-size:18px">›</a></div>'}).join('');
         return '<details><summary>'+esc(a.name)+'<span class="chev">▾</span></summary><div class="body">'+rows+'</div></details>';
       }).join('');
     }
@@ -261,7 +339,7 @@
       document.getElementById('headlinesDate').textContent = CONTENT.headlines.date||"";
       document.getElementById('headlinesWrap').innerHTML = CONTENT.headlines.cats.map(function(c){
         var rows=c.items.map(function(x){return '<details class="inner"><summary>'+esc(x.title)+'<span class="chev">▾</span></summary><div class="body">'+esc(x.summary)+' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">Read at '+esc(x.source)+' ›</a></div></details>'}).join('');
-        return '<details><summary>'+esc(c.name)+'<span class="chev">▾</span></summary><div class="body">'+rows+'</div></details>';
+        return '<details style="margin-bottom:8px"><summary>'+esc(c.name)+'<span class="chev">▾</span></summary><div class="body"><div class="subgrid">'+rows+'</div></div></details>';
       }).join('');
     }
     buildTicker();
@@ -272,8 +350,26 @@
   }
 </script>
 <script>
-  /* ---------- Private data (Supabase) ---------- */
+  /* ---------- Private data (Supabase) + device identity ---------- */
   var previewMode = false;
+  var person = '';
+  try{ person = localStorage.getItem('sf_person') || ''; }catch(e){}
+  function applyPersonUI(){
+    var chip=document.getElementById('personChip');
+    chip.textContent = person ? ('👤 '+person) : '👤 Set name';
+    document.getElementById('idBar').hidden = !!person;
+  }
+  function setPerson(p){
+    person = p;
+    try{ localStorage.setItem('sf_person', p); }catch(e){}
+    applyPersonUI();
+  }
+  document.getElementById('pickMike').addEventListener('click', function(){ setPerson('Mike'); });
+  document.getElementById('pickKelly').addEventListener('click', function(){ setPerson('Kelly'); });
+  document.getElementById('personChip').addEventListener('click', function(){
+    document.getElementById('idBar').hidden = false;
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
   function lockPanels(){
     var note = '<div class="empty">🔒 Sign in to see and edit this — it stays private to you and Kelly.</div>';
     document.getElementById('shopList').innerHTML = note;
@@ -286,7 +382,9 @@
     var main = kind==='shop' ? r.item : r.task;
     var meta = [];
     if(kind==='shop'){ if(r.qty)meta.push(r.qty); if(r.store)meta.push(r.store); }
-    else { if(r.owner)meta.push(r.owner); if(r.due)meta.push('Due '+r.due); }
+    else { if(r.due)meta.push('Due '+r.due); }
+    var by = r.added_by || (kind==='todo' ? r.owner : '');
+    if(by) meta.push('👤 '+by);
     var done = kind==='shop' ? r.got_it : r.done;
     return '<div class="item'+(done?' done':'')+'"><input type="checkbox" data-kind="'+kind+'" data-id="'+r.id+'" '+(done?'checked':'')+'>'+
       '<div class="txt"><div>'+esc(main)+'</div>'+(meta.length?'<div class="meta">'+esc(meta.join(' · '))+'</div>':'')+'</div>'+
@@ -298,7 +396,8 @@
     el.innerHTML = rows.map(function(r){
       var when = new Date(r.starts_at);
       var whenTxt = when.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'})+' · '+when.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
-      return '<div class="item"><div class="txt"><div class="ev-when">'+esc(whenTxt)+'</div><div>'+esc(r.title)+'</div>'+(r.notes?'<div class="meta">'+esc(r.notes)+'</div>':'')+'</div>'+
+      var meta = []; if(r.notes)meta.push(r.notes); if(r.added_by)meta.push('👤 '+r.added_by);
+      return '<div class="item"><div class="txt"><div class="ev-when">'+esc(whenTxt)+'</div><div>'+esc(r.title)+'</div>'+(meta.length?'<div class="meta">'+esc(meta.join(' · '))+'</div>':'')+'</div>'+
         '<button class="del" data-kind="event" data-id="'+r.id+'" aria-label="Delete">✕</button></div>';
     }).join('');
   }
@@ -310,7 +409,7 @@
     el.innerHTML = cats.map(function(c){
       var items = byCat[c].map(function(r){
         return '<div class="item'+(r.done?' done':'')+'"><input type="checkbox" data-kind="baby" data-id="'+r.id+'" '+(r.done?'checked':'')+'>'+
-          '<div class="txt"><div>'+esc(r.item)+'</div></div>'+
+          '<div class="txt"><div>'+esc(r.item)+'</div>'+(r.added_by?'<div class="meta">👤 '+esc(r.added_by)+'</div>':'')+'</div>'+
           '<button class="del" data-kind="baby" data-id="'+r.id+'" aria-label="Delete">✕</button></div>';
       }).join('');
       return '<div class="grp">'+esc(c)+'</div>'+items;
@@ -325,7 +424,9 @@
     var html='';
     for(var i=0;i<files.length;i++){
       var s = await sb.storage.from('household-photos').createSignedUrl(files[i].name, 3600);
-      if(s.data && s.data.signedUrl) html += '<div class="ph"><img src="'+esc(s.data.signedUrl)+'" alt="Family photo"><button class="del" data-kind="photo" data-name="'+esc(files[i].name)+'" aria-label="Delete photo">✕</button></div>';
+      var who = files[i].name.split('-')[0];
+      var cap = (who==='Mike'||who==='Kelly') ? '<div class="cap">👤 '+who+'</div>' : '';
+      if(s.data && s.data.signedUrl) html += '<div class="ph"><img src="'+esc(s.data.signedUrl)+'" alt="Family photo">'+cap+'<button class="del" data-kind="photo" data-name="'+esc(files[i].name)+'" aria-label="Delete photo">✕</button></div>';
     }
     grid.innerHTML = html || '<div class="empty" style="grid-column:1/-1">No photos yet.</div>';
   }
@@ -347,6 +448,7 @@
     document.getElementById('appView').hidden = false;
     document.getElementById('whoami').textContent = user ? user.email : '';
     document.getElementById('acctEmail').textContent = user ? user.email : '';
+    applyPersonUI();
     loadAll();
   }
   function showLogin(){
@@ -372,7 +474,7 @@
     previewMode = true;
     document.getElementById('loginView').hidden = true;
     document.getElementById('appView').hidden = false;
-    document.getElementById('whoami').textContent = 'Preview mode — deals, recipes, events & headlines are open; lists & photos need sign-in';
+    document.getElementById('whoami').textContent = 'Preview mode';
     document.getElementById('signOutBtn').textContent = 'Sign in';
     document.getElementById('acctEmail').textContent = '(preview — not signed in)';
     loadAll();
@@ -395,26 +497,26 @@
   document.getElementById('shopForm').addEventListener('submit', async function(e){
     e.preventDefault();
     var item=document.getElementById('shopItem').value.trim(); if(!item)return;
-    await sb.from('shopping_items').insert({item:item, qty:document.getElementById('shopQty').value.trim(), store:document.getElementById('shopStore').value.trim()});
+    await sb.from('shopping_items').insert({item:item, qty:document.getElementById('shopQty').value.trim(), store:document.getElementById('shopStore').value.trim(), added_by:person});
     e.target.reset(); loadAll();
   });
   document.getElementById('todoForm').addEventListener('submit', async function(e){
     e.preventDefault();
     var task=document.getElementById('todoTask').value.trim(); if(!task)return;
-    await sb.from('todos').insert({task:task, owner:document.getElementById('todoOwner').value.trim(), due:document.getElementById('todoDue').value.trim()});
+    await sb.from('todos').insert({task:task, owner:person, due:document.getElementById('todoDue').value.trim(), added_by:person});
     e.target.reset(); loadAll();
   });
   document.getElementById('eventForm').addEventListener('submit', async function(e){
     e.preventDefault();
     var title=document.getElementById('evTitle').value.trim(); var when=document.getElementById('evWhen').value;
     if(!title||!when)return;
-    await sb.from('events').insert({title:title, starts_at:new Date(when).toISOString()});
+    await sb.from('events').insert({title:title, starts_at:new Date(when).toISOString(), added_by:person});
     e.target.reset(); loadAll();
   });
   document.getElementById('babyForm').addEventListener('submit', async function(e){
     e.preventDefault();
     var item=document.getElementById('babyItem').value.trim(); if(!item)return;
-    await sb.from('baby_items').insert({item:item, category:document.getElementById('babyCat').value.trim() || 'General'});
+    await sb.from('baby_items').insert({item:item, category:document.getElementById('babyCat').value.trim() || 'General', added_by:person});
     e.target.reset(); loadAll();
   });
   document.getElementById('photoForm').addEventListener('submit', async function(e){
@@ -426,7 +528,7 @@
     var failed=0;
     for(var i=0;i<input.files.length;i++){
       var f=input.files[i];
-      var name=Date.now()+'-'+f.name.replace(/[^a-zA-Z0-9._-]/g,'_');
+      var name=(person?person+'-':'')+Date.now()+'-'+f.name.replace(/[^a-zA-Z0-9._-]/g,'_');
       var up=await sb.storage.from('household-photos').upload(name, f, {cacheControl:'3600', upsert:false});
       if(up.error) failed++;
     }
@@ -458,10 +560,10 @@
     if(TINKER_MODE){
       document.getElementById('loginView').hidden = true;
       document.getElementById('appView').hidden = false;
-      document.getElementById('whoami').textContent = 'Tinker mode — sign-in is off for now, everything is open';
+      document.getElementById('whoami').textContent = 'Tinker mode — sign-in is off for now';
       document.getElementById('signOutBtn').style.display = 'none';
       document.getElementById('acctHead').style.display = 'none';
-      document.getElementById('acctPanel').style.display = 'none';
+      applyPersonUI();
       loadAll();
       return;
     }
