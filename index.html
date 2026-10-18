@@ -361,6 +361,9 @@
   .rcard{position:relative}
   .rfav{position:absolute;top:6px;right:6px;width:26px;height:26px;border-radius:50%;background:rgba(5,6,10,.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;z-index:2}
   .rfav.on{color:#ff7d92}
+  .newsfilter{margin:0 0 6px}
+  #headlinesWrap details.wasread>summary{color:var(--faint)}
+  .evadd{flex:none;margin-left:4px;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -523,6 +526,7 @@
 
         <section class="card span2" id="s-news">
           <div class="cardhead"><h2>🗞️ News</h2><span class="sub" id="headlinesDate"></span></div>
+          <div class="newsfilter"><input id="newsFilter" type="search" placeholder="Filter headlines… try Browns, tariffs, AI"></div>
           <div id="headlinesWrap"><div class="empty">Loading headlines…</div></div>
         </section>
 
@@ -739,8 +743,8 @@
     }
     if(CONTENT.events){
       document.getElementById('eventsRange').textContent = CONTENT.events.range||"";
-      document.getElementById('eventsWrap').innerHTML = CONTENT.events.areas.map(function(a){
-        var rows=a.items.map(function(x){return '<div class="item"><div class="txt"><div class="ev-when">'+esc(x.when)+'</div><div>'+esc(x.title)+'</div><div class="meta">'+esc(x.where)+'</div></div><a href="'+esc(x.link)+'" target="_blank" rel="noopener" style="text-decoration:none;font-size:18px">›</a></div>'}).join('');
+      document.getElementById('eventsWrap').innerHTML = CONTENT.events.areas.map(function(a, ai){
+        var rows=a.items.map(function(x, ii){return '<div class="item"><div class="txt"><div class="ev-when">'+esc(x.when)+'</div><div>'+esc(x.title)+'</div><div class="meta">'+esc(x.where)+'</div></div><button class="gbtn evadd" type="button" data-evadd="'+ai+':'+ii+'">＋ Cal</button><a href="'+esc(x.link)+'" target="_blank" rel="noopener" style="text-decoration:none;font-size:18px">›</a></div>'}).join('');
         return '<details class="flat"><summary>'+esc(a.name)+'<span class="rhs"><span class="cnt">'+a.items.length+' events</span><span class="chev">▾</span></span></summary><div class="body">'+rows+'</div></details>';
       }).join('');
     }
@@ -1602,6 +1606,76 @@ document.addEventListener('click', function(e){
   if(pf){ window._photoFilter = pf.getAttribute('data-pf'); loadPhotos(); return; }
   if(t.closest && t.closest('#rSurprise')){ var n = (window._recipes || []).length; if(n){ selectRecipe(Math.floor(Math.random() * n)); var d = document.getElementById('rDetail'); if(d) setTimeout(function(){ d.scrollIntoView({behavior: 'smooth', block: 'nearest'}); }, 60); } }
 }, true);
+</script>
+<script>
+function applyNewsFilter(){
+  var inp = document.getElementById('newsFilter'); var wrap = document.getElementById('headlinesWrap');
+  if(!inp || !wrap) return;
+  var q = (inp.value || '').toLowerCase().trim();
+  var kids = Array.prototype.slice.call(wrap.children);
+  var lastGrp = null, grpHas = false, anyVisible = false;
+  kids.forEach(function(k){
+    if(k.id === 'newsNone') return;
+    if(k.classList.contains('grp')){ if(lastGrp) lastGrp.style.display = grpHas ? '' : 'none'; lastGrp = k; grpHas = false; }
+    else if(k.tagName === 'DETAILS'){ var hit = !q || k.textContent.toLowerCase().indexOf(q) >= 0; k.style.display = hit ? '' : 'none'; if(hit){ grpHas = true; anyVisible = true; } }
+  });
+  if(lastGrp) lastGrp.style.display = grpHas ? '' : 'none';
+  var nn = document.getElementById('newsNone');
+  if(!nn){ nn = document.createElement('div'); nn.id = 'newsNone'; nn.className = 'empty'; nn.textContent = 'No stories match that — try another word.'; wrap.appendChild(nn); }
+  nn.style.display = (q && !anyVisible) ? '' : 'none';
+}
+function _readSet(){ try{ var o = JSON.parse(localStorage.getItem('sf_read') || '{}'); var d = (CONTENT.headlines || {}).date; return o.date === d ? o : {date: d, titles: []}; }catch(_){ return {date: null, titles: []}; } }
+function paintRead(){ var R = _readSet(); document.querySelectorAll('#headlinesWrap details').forEach(function(d){ var sum = d.querySelector('summary'); if(!sum) return; var t = sum.textContent.replace('▾', '').trim(); d.classList.toggle('wasread', R.titles.indexOf(t) >= 0); }); }
+var _rc2 = renderContent;
+renderContent = function(){ _rc2(); applyNewsFilter(); paintRead(); };
+document.getElementById('newsFilter').addEventListener('input', applyNewsFilter);
+document.addEventListener('toggle', function(e){
+  var d = e.target;
+  if(!d || !d.open || !d.closest || !d.closest('#headlinesWrap')) return;
+  var sum = d.querySelector('summary'); if(!sum) return;
+  var t = sum.textContent.replace('▾', '').trim();
+  var R = _readSet();
+  if(R.titles.indexOf(t) < 0){ R.titles.push(t); try{ localStorage.setItem('sf_read', JSON.stringify(R)); }catch(_){ } }
+  d.classList.add('wasread');
+}, true);
+function parseWhen(w){
+  var months = {Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11};
+  var m = /(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})/.exec(w || '');
+  if(!m) return null;
+  var yr = new Date().getFullYear();
+  var d = new Date(yr, months[m[1]], Number(m[2]), 9, 0, 0, 0);
+  if(d.getTime() < Date.now() - 60 * 864e5){ d.setFullYear(yr + 1); }
+  var allDay = true, en = null;
+  var tp = /·\s*(\d{1,2})(?::(\d{2}))?\s*(AM|PM)/.exec(w || '');
+  if(tp){
+    allDay = false;
+    var h = Number(tp[1]) % 12 + (tp[3] === 'PM' ? 12 : 0);
+    d.setHours(h, Number(tp[2] || 0), 0, 0);
+    var rest = (w || '').slice(tp.index);
+    var ep = /[–-]\s*(\d{1,2})(?::(\d{2}))?\s*(AM|PM)/.exec(rest);
+    if(ep){ var eh = Number(ep[1]) % 12 + (ep[3] === 'PM' ? 12 : 0); en = new Date(d); en.setHours(eh, Number(ep[2] || 0), 0, 0); }
+  }
+  if(!en) en = new Date(d.getTime() + 3600000);
+  if(en.getTime() < Date.now() - 60 * 864e5) en.setFullYear(yr + 1);
+  return {start: d, end: en, allDay: allDay};
+}
+document.addEventListener('click', async function(e){
+  var b = e.target.closest ? e.target.closest('[data-evadd]') : null;
+  if(!b || b.disabled) return;
+  var parts = b.getAttribute('data-evadd').split(':');
+  var a = (CONTENT.events.areas || [])[Number(parts[0])];
+  var x = a && a.items[Number(parts[1])];
+  if(!x) return;
+  var person = (typeof personName === 'function') ? personName() : null;
+  if(!person){ requirePerson(); return; }
+  var pw = parseWhen(x.when);
+  if(!pw){ b.textContent = 'No date'; return; }
+  b.disabled = true; b.textContent = 'Adding…';
+  var res = await sb.from('events').insert({title: x.title, starts_at: pw.start.toISOString(), ends_at: pw.end.toISOString(), notes: pw.allDay ? 'All day' : ('Around town · ' + (x.where || '')), added_by: person});
+  if(res.error){ b.disabled = false; b.textContent = '＋ Cal'; return; }
+  b.textContent = '✓ Added';
+  refreshSoon();
+});
 </script>
 </body>
 </html>
