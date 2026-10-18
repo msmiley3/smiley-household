@@ -367,6 +367,11 @@
   .qchips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 2px}
   .qchip{padding:5px 11px;border-radius:999px;border:1px solid var(--line2);background:var(--surface2);color:var(--muted);font-size:12px;font-weight:600;cursor:pointer}
   .qchip:active{transform:scale(.96);border-color:var(--accent);color:#c6ccff}
+  .greet{font-size:11px;font-weight:500;color:var(--faint);letter-spacing:0}
+  .item.gracing{opacity:.45}
+  .item.gracing .txt{text-decoration:line-through}
+  button.del.undobtn{width:auto;min-width:52px;padding:0 8px;font-size:11px;font-weight:700;color:#ffb3ab;border-color:rgba(255,150,140,.4)}
+  .pwrap.gracing{opacity:.4}
 </style>
 </head>
 <body>
@@ -394,7 +399,7 @@
   <div id="appView" hidden>
     <div class="stickyhead">
       <div class="topbar">
-        <div class="brand"><span class="home">🏠</span>Smiley Family</div>
+        <div class="brand"><span class="home">🏠</span>Smiley Family <span class="greet" id="greetLine"></span></div>
         <div class="who" id="whoami"></div>
         <button class="iconbtn" id="personChip" title="Who is using this device?">👤 Set name</button>
         <button class="iconbtn" id="shareBtn">↗ Share</button>
@@ -1703,6 +1708,39 @@ document.addEventListener('click', async function(e){
     setTimeout(function(){ btn.textContent = '⧉ Copy list'; }, 1600);
   }
 });
+</script>
+<script>
+function setGreet(){ var h = new Date().getHours(); var g = h < 5 ? 'Up late' : h < 12 ? 'Good morning' : h < 18 ? 'Good afternoon' : 'Good evening'; var el = document.getElementById('greetLine'); if(el) el.textContent = '· ' + g; }
+setGreet(); setInterval(setGreet, 60000);
+var _graceBypass = false;
+document.addEventListener('click', function(e){
+  if(_graceBypass) return;
+  var b = e.target.closest ? e.target.closest('button.del') : null;
+  if(!b) return;
+  var row = b.closest('.item') || b.closest('.pwrap') || b.parentElement;
+  if(row && row.dataset && row.dataset.grace){
+    // second tap = undo
+    e.stopPropagation(); e.preventDefault();
+    clearTimeout(b._graceTimer);
+    delete row.dataset.grace; row.classList.remove('gracing');
+    b.classList.remove('undobtn'); b.textContent = '✕';
+    return;
+  }
+  e.stopPropagation(); e.preventDefault();
+  if(!row) return;
+  row.dataset.grace = '1'; row.classList.add('gracing');
+  b.classList.add('undobtn'); b.textContent = 'Undo?';
+  b._graceTimer = setTimeout(async function(){
+    row.classList.remove('gracing'); if(row.dataset) delete row.dataset.grace;
+    b.classList.remove('undobtn'); b.textContent = '✕';
+    if(document.contains(b)){ _graceBypass = true; b.click(); _graceBypass = false; }
+    else {
+      var table = {shop: 'shopping_items', todo: 'todos', event: 'events', baby: 'baby_items', note: 'notes'}[b.dataset.kind];
+      if(b.dataset.kind === 'photo'){ await sb.storage.from('household-photos').remove([b.dataset.name]); loadPhotos(); }
+      else if(table){ await sb.from(table).delete().eq('id', b.dataset.id); loadAll(); }
+    }
+  }, 4500);
+}, true);
 </script>
 </body>
 </html>
