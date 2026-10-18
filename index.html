@@ -343,6 +343,11 @@
   ::-webkit-scrollbar{width:9px;height:9px}
   ::-webkit-scrollbar-thumb{background:#262a33;border-radius:99px;border:2px solid var(--bg)}
   ::-webkit-scrollbar-track{background:transparent}
+  .babyrow{padding:9px 0 10px;border-top:1px solid var(--line)}
+  .babyrow:first-of-type{border-top:none;padding-top:2px}
+  .babylab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#9aa5f0;margin-bottom:3px}
+  .babytext{font-size:14px;line-height:1.55}
+  .newsimg{width:100%;height:auto;max-height:230px;object-fit:cover;border-radius:10px;display:block;margin:0 0 10px;background:var(--surface2)}
 </style>
 </head>
 <body>
@@ -440,6 +445,13 @@
       </section>
 
       <main class="grid">
+        <section class="card" id="s-babyfun">
+          <div class="cardhead"><h2>👶 Baby Corner</h2><span class="sub" id="babyFunSub"></span></div>
+          <div class="babyrow"><div class="babylab">💡 Tip of the day</div><div class="babytext" id="babyTip">The first tip lands tomorrow morning.</div></div>
+          <div class="babyrow"><div class="babylab">🧠 Fact of the day</div><div class="babytext" id="babyFact"></div></div>
+          <div class="babyrow"><div class="babylab">🎈 Something fun</div><div class="babytext" id="babyFun"></div></div>
+        </section>
+
         <section class="card listcard" id="s-shop">
           <div class="cardhead"><h2>🛒 Shopping List</h2><span class="sub" id="shopSub"></span><button class="iconbtn clearbtn" data-clear="shop" type="button">Clear done</button><button class="iconbtn" id="groupStoreBtn" type="button">Group by store</button></div>
           <div id="shopList"><div class="empty">Loading…</div></div>
@@ -714,11 +726,16 @@
         return '<details class="flat"><summary>'+esc(a.name)+'<span class="rhs"><span class="cnt">'+a.items.length+' events</span><span class="chev">▾</span></span></summary><div class="body">'+rows+'</div></details>';
       }).join('');
     }
+    if(CONTENT.baby){
+      document.getElementById('babyTip').textContent = CONTENT.baby.tip || '';
+      document.getElementById('babyFact').textContent = CONTENT.baby.fact || '';
+      document.getElementById('babyFun').textContent = CONTENT.baby.fun || '';
+    }
     if(CONTENT.headlines){
       var _nh = 0; (CONTENT.headlines.cats || []).forEach(function(c){ _nh += (c.items || []).length; }); setBadge('badgeNews', _nh);
       document.getElementById('headlinesDate').textContent = CONTENT.headlines.date||"";
       document.getElementById('headlinesWrap').innerHTML = CONTENT.headlines.cats.map(function(c){
-        var rows=c.items.map(function(x){return '<details class="flat inner"><summary>'+esc(x.title)+'<span class="chev">▾</span></summary><div class="body">'+(x.summary||'').split(/\n\n+/).map(function(p){return '<p class="sump">'+esc(p)+'</p>';}).join('')+' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">Read at '+esc(x.source)+' ›</a></div></details>'}).join('');
+        var rows=c.items.map(function(x){return '<details class="flat inner"><summary>'+esc(x.title)+'<span class="chev">▾</span></summary><div class="body">'+(x.img?'<img class="newsimg" src="'+esc(x.img)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':'')+(x.summary||'').split(/\n\n+/).map(function(p){return '<p class="sump">'+esc(p)+'</p>';}).join('')+' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">Read at '+esc(x.source)+' ›</a></div></details>'}).join('');
         return '<div class="grp">'+esc(c.name)+'</div>'+rows;
       }).join('');
     }
@@ -1077,6 +1094,7 @@
     document.getElementById('todoSub').textContent = todoRows.length ? (todoRows.length - tDone)+' open · '+tDone+' done' : '';
     var bDone = babyRows.filter(function(r){return r.done}).length;
     document.getElementById('babySub').textContent = babyRows.length ? bDone+' of '+babyRows.length+' done' : '';
+      var _bf = document.getElementById('babyFunSub'); if(_bf) _bf.textContent = babyRows.length ? bDone+' of '+babyRows.length+' prep items done' : '';
     document.getElementById('calSub').textContent = upcoming.length ? upcoming.length+' coming up' : '';
     setBadge('badgeLists', (shopRows.length - sGot) + (todoRows.length - tDone));
     setBadge('badgeCal', upcoming.length);
@@ -1325,7 +1343,7 @@
     if(n > 0){ b.textContent = n > 99 ? '99' : String(n); b.hidden = false; }
     else b.hidden = true;
   }
-  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'discover','s-news':'news','s-photos':'photos'};
+  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-babyfun':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'discover','s-news':'news','s-photos':'photos'};
   var currentView = 'home';
   function switchView(v){
     if(!v) return;
