@@ -171,8 +171,8 @@
       <div class="meta" id="photoMsg" style="color:var(--muted);font-size:13px;margin-top:8px"></div>
     </div>
 
-    <div class="section"><span>🔐 Account</span></div>
-    <div class="panel">
+    <div class="section" id="acctHead"><span>🔐 Account</span></div>
+    <div class="panel" id="acctPanel">
       <div class="meta" style="color:var(--muted);font-size:14px">Signed in as <span id="acctEmail"></span>. Set or change your password here:</div>
       <form class="add" id="pwForm">
         <input id="newPw" type="password" autocomplete="new-password" placeholder="New password (min 6 characters)">
@@ -193,6 +193,7 @@
   var SUPABASE_URL = "https://bwbujkkmqokjdwrelpvl.supabase.co";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ3YnVqa2ttcW9ramR3cmVscHZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzNDIyNjgsImV4cCI6MjEwNzkxODI2OH0.-i2GfZF8G-w2ZJ72D7Hj9_jphbazMpVulpgjiJDnFaw";
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {auth:{flowType:'implicit', detectSessionInUrl:true}});
+  var TINKER_MODE = true; // Sign-in temporarily OFF at Mike's request (2026-10-18) while he tinkers. Set false to restore the login gate.
   var CONTENT = null;
 
   function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
@@ -451,9 +452,19 @@
     if(table){ await sb.from(table).delete().eq('id', t.dataset.id); loadAll(); }
   });
   sb.auth.onAuthStateChange(function(event, session){
-    if(session && session.user){ showApp(session.user); } else { showLogin(); }
+    if(session && session.user){ showApp(session.user); } else if(!TINKER_MODE){ showLogin(); }
   });
   (async function(){
+    if(TINKER_MODE){
+      document.getElementById('loginView').hidden = true;
+      document.getElementById('appView').hidden = false;
+      document.getElementById('whoami').textContent = 'Tinker mode — sign-in is off for now, everything is open';
+      document.getElementById('signOutBtn').style.display = 'none';
+      document.getElementById('acctHead').style.display = 'none';
+      document.getElementById('acctPanel').style.display = 'none';
+      loadAll();
+      return;
+    }
     var errText='';
     try{
       var fromHash = new URLSearchParams(window.location.hash.replace(/^#/, '')).get('error_description');
