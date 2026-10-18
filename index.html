@@ -143,13 +143,11 @@
   .meal .dish{font-size:12.5px;margin-top:2px;line-height:1.35}
   .meal.today{border-color:var(--accent);background:var(--accent-soft)}
   /* ---------- Recipe carousel ---------- */
-  .rcar{display:flex;align-items:center;gap:6px}
-  .rnav{flex:none;font-size:16px;padding:6px 10px}
-  .rtrack{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 1px 6px;flex:1;scrollbar-width:none}
+  .dgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  @media(min-width:900px){.dgrid{grid-template-columns:repeat(4,1fr)}}
   .rtrack::-webkit-scrollbar{display:none}
-  .rcard{flex:0 0 calc((100% - 32px)/5);scroll-snap-align:start;background:var(--surface2);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;padding:0;color:var(--text);text-align:left;font-family:inherit}
-  @media(max-width:640px){.rcard{flex-basis:43%}}
-  .rcard img{width:100%;height:62px;object-fit:cover;display:block;background:var(--surface)}
+  .rcard{width:100%;background:var(--surface2);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;padding:0;color:var(--text);text-align:left;font-family:inherit}
+  .rcard img{width:100%;height:88px;object-fit:cover;display:block;background:var(--surface)}
   .rcard .rn{padding:6px 8px;font-size:12.5px;font-weight:600;line-height:1.3}
   .rcard .rp{padding:0 8px 7px;font-size:11px;color:var(--faint)}
   .rcard.sel{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
@@ -231,8 +229,10 @@
   .clearbtn{margin-left:auto}
   #toTop{position:fixed;right:14px;bottom:96px;z-index:90;box-shadow:0 4px 18px rgba(0,0,0,.45)}
   /* ---------- Mini calendar ---------- */
-  .calstrip{display:flex;gap:5px;padding:2px 0 8px}
-  .cday{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:1px;padding:7px 0 6px;border:1px solid var(--line);border-radius:12px;background:var(--surface2);color:var(--text);cursor:pointer;font-family:inherit}
+  .calstrip{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;padding:2px 0 8px}
+  .cday{min-width:0;display:flex;flex-direction:column;align-items:center;gap:1px;padding:6px 0 5px;border:1px solid var(--line);border-radius:10px;background:var(--surface2);color:var(--text);cursor:pointer;font-family:inherit}
+  .cday.dim{opacity:.35}
+  .cal-dow{text-align:center;font-size:10.5px;font-weight:650;color:var(--faint);padding:1px 0 3px}
   .wkrow{display:flex;align-items:center;gap:6px;margin-bottom:7px}
   .wkrow .wklab{flex:1;text-align:center;font-size:13.5px;font-weight:650;letter-spacing:-.01em}
   .evm{position:fixed;inset:0;background:rgba(4,5,8,.66);backdrop-filter:blur(3px);z-index:120;display:flex;align-items:flex-end;justify-content:center}
@@ -436,11 +436,7 @@
 
         <section class="card span2" id="s-recipes">
           <div class="cardhead"><h2>🍽️ This Week's Dinners</h2><span class="sub">options for the week · tap a dish for the full recipe</span></div>
-          <div class="rcar">
-            <button class="iconbtn rnav" id="rPrev" type="button" aria-label="Previous recipes">‹</button>
-            <div class="rtrack" id="rTrack"><div class="empty">Loading recipes…</div></div>
-            <button class="iconbtn rnav" id="rNext" type="button" aria-label="More recipes">›</button>
-          </div>
+          <div class="dgrid" id="rTrack"><div class="empty">Loading recipes…</div></div>
           <div id="rDetail"></div>
         </section>
 
@@ -660,7 +656,7 @@
       window._recipes = CONTENT.recipes;
       window._selRecipe = -1;
       document.getElementById('rTrack').innerHTML = CONTENT.recipes.map(function(r, i){
-        return '<button class="rcard" type="button" data-ridx="'+i+'">'+(r.img?'<img src="'+esc(r.img)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':'')+'<div class="rn">'+esc(r.name)+'</div><div class="rp">'+esc(r.time||'')+' · ＋ recipe</div></button>';
+        return '<button class="rcard" type="button" data-ridx="'+i+'">'+(r.img?'<img src="'+esc(r.img)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':'')+'<div class="rn">'+esc(r.name)+'</div><div class="rp">'+esc(r.time||'')+(r.cost?' · '+esc(r.cost):'')+' · ＋ recipe</div></button>';
       }).join('');
       document.getElementById('rDetail').innerHTML = '';
     }
@@ -711,13 +707,7 @@
   }
   document.getElementById('rTrack').addEventListener('click', function(e){
     var card = e.target.closest ? e.target.closest('.rcard') : null;
-    if(card) selectRecipe(Number(card.dataset.ridx));
-  });
-  document.getElementById('rPrev').addEventListener('click', function(){
-    var t = document.getElementById('rTrack'); t.scrollBy({left: -t.clientWidth * 0.9, behavior:'smooth'});
-  });
-  document.getElementById('rNext').addEventListener('click', function(){
-    var t = document.getElementById('rTrack'); t.scrollBy({left: t.clientWidth * 0.9, behavior:'smooth'});
+    if(card){ selectRecipe(Number(card.dataset.ridx)); setTimeout(function(){ var d = document.getElementById('rDetail'); if(d) d.scrollIntoView({behavior:'smooth', block:'nearest'}); }, 60); }
   });
 </script>
 <script>
@@ -1037,8 +1027,9 @@
     loadUsage();
     loadContent();
   }
-  /* ---------- Calendar: week strip + agenda ---------- */
+  /* ---------- Calendar: month grid + agenda ---------- */
   var calSel = new Date();
+  var calCursor = new Date(); calCursor.setDate(1); calCursor.setHours(0, 0, 0, 0);
   function dstr(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
   function isAllDay(r){ return (r.notes || '') === 'All day'; }
   function renderDayEvents(rows){
@@ -1057,18 +1048,22 @@
     var strip = document.getElementById('calStrip'); if(!strip) return;
     var byDay = {};
     (window._events || []).forEach(function(r){ var k = dstr(new Date(r.starts_at)); (byDay[k] = byDay[k] || []).push(r); });
-    var sel = new Date(calSel); sel.setHours(0, 0, 0, 0);
-    var wkStart = new Date(sel); wkStart.setDate(wkStart.getDate() - wkStart.getDay());
-    var wkEnd = new Date(wkStart); wkEnd.setDate(wkEnd.getDate() + 6);
-    var fmt = {month:'short', day:'numeric'};
-    document.getElementById('wkLabel').textContent = wkStart.toLocaleDateString('en-US', fmt) + ' – ' + wkEnd.toLocaleDateString('en-US', fmt) + (wkStart.getFullYear() !== wkEnd.getFullYear() || wkEnd.getFullYear() !== new Date().getFullYear() ? '' : '');
-    var selK = dstr(sel), todayK = dstr(new Date());
-    var html = '';
-    for(var i = 0; i < 7; i++){
-      var d = new Date(wkStart); d.setDate(d.getDate() + i);
-      var k = dstr(d);
+    document.getElementById('wkLabel').textContent = calCursor.toLocaleDateString('en-US', {month:'long', year:'numeric'});
+    var y = calCursor.getFullYear(), m = calCursor.getMonth();
+    var startDay = new Date(y, m, 1).getDay();
+    var dim = new Date(y, m + 1, 0).getDate();
+    var prevDim = new Date(y, m, 0).getDate();
+    var total = Math.ceil((startDay + dim) / 7) * 7;
+    var selK = dstr(calSel), todayK = dstr(new Date());
+    var html = ['S','M','T','W','T','F','S'].map(function(x){ return '<div class="cal-dow">'+x+'</div>'; }).join('');
+    for(var i = 0; i < total; i++){
+      var dayNum = i - startDay + 1, date, isDim = false;
+      if(dayNum < 1){ date = new Date(y, m - 1, prevDim + dayNum); isDim = true; }
+      else if(dayNum > dim){ date = new Date(y, m + 1, dayNum - dim); isDim = true; }
+      else date = new Date(y, m, dayNum);
+      var k = dstr(date);
       var dots = (byDay[k] || []).slice(0, 3).map(function(r){ return '<span class="cal-dot '+(r.added_by === 'Kelly' ? 'kelly' : r.added_by === 'Mike' ? 'mike' : '')+'"></span>'; }).join('');
-      html += '<button type="button" class="cday'+(k === selK ? ' sel' : '')+(k === todayK ? ' today' : '')+'" data-day="'+k+'"><span class="dw">'+d.toLocaleDateString('en-US', {weekday:'narrow'})+'</span><span class="dn">'+d.getDate()+'</span><span class="cal-dots">'+dots+'</span></button>';
+      html += '<button type="button" class="cday'+(isDim ? ' dim' : '')+(k === selK ? ' sel' : '')+(k === todayK ? ' today' : '')+'" data-day="'+k+'"><span class="dn">'+date.getDate()+'</span><span class="cal-dots">'+dots+'</span></button>';
     }
     strip.innerHTML = html;
     renderDayEvents(byDay[selK] || []);
@@ -1077,11 +1072,20 @@
     var c = e.target.closest ? e.target.closest('.cday') : null; if(!c) return;
     var parts = c.dataset.day.split('-');
     calSel = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+    if(calSel.getMonth() !== calCursor.getMonth() || calSel.getFullYear() !== calCursor.getFullYear())
+      calCursor = new Date(calSel.getFullYear(), calSel.getMonth(), 1);
     renderCalStrip();
   });
-  document.getElementById('wkPrev').addEventListener('click', function(){ calSel.setDate(calSel.getDate() - 7); renderCalStrip(); });
-  document.getElementById('wkNext').addEventListener('click', function(){ calSel.setDate(calSel.getDate() + 7); renderCalStrip(); });
-  document.getElementById('wkToday').addEventListener('click', function(){ calSel = new Date(); renderCalStrip(); });
+  function calMove(months){
+    var target = new Date(calCursor.getFullYear(), calCursor.getMonth() + months, 1);
+    var day = Math.min(calSel.getDate(), new Date(target.getFullYear(), target.getMonth() + 1, 0).getDate());
+    calSel = new Date(target.getFullYear(), target.getMonth(), day);
+    calCursor = new Date(target.getFullYear(), target.getMonth(), 1);
+    renderCalStrip();
+  }
+  document.getElementById('wkPrev').addEventListener('click', function(){ calMove(-1); });
+  document.getElementById('wkNext').addEventListener('click', function(){ calMove(1); });
+  document.getElementById('wkToday').addEventListener('click', function(){ calSel = new Date(); calCursor = new Date(); calCursor.setDate(1); renderCalStrip(); });
   /* ---------- Pop-up event editor ---------- */
   var evmDay = new Date(); evmDay.setHours(0, 0, 0, 0);
   var evmCursor = new Date(); evmCursor.setDate(1);
@@ -1148,6 +1152,7 @@
     var res = await sb.from('events').insert({title: title, starts_at: start.toISOString(), notes: allDay ? 'All day' : '', added_by: person});
     if(res.error){ msg.textContent = 'Could not save — check your connection and try again.'; return; }
     calSel = new Date(evmDay);
+    calCursor = new Date(evmDay.getFullYear(), evmDay.getMonth(), 1);
     closeEvModal();
     loadAll(true);
   });
