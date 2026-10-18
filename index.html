@@ -231,9 +231,32 @@
   .clearbtn{margin-left:auto}
   #toTop{position:fixed;right:14px;bottom:96px;z-index:90;box-shadow:0 4px 18px rgba(0,0,0,.45)}
   /* ---------- Mini calendar ---------- */
-  .calstrip{display:flex;gap:6px;overflow-x:auto;padding:2px 1px 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .calstrip::-webkit-scrollbar{display:none}
-  .cday{flex:0 0 47px;display:flex;flex-direction:column;align-items:center;gap:1px;padding:7px 0 6px;border:1px solid var(--line);border-radius:12px;background:var(--surface2);color:var(--text);cursor:pointer;font-family:inherit}
+  .calstrip{display:flex;gap:5px;padding:2px 0 8px}
+  .cday{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:1px;padding:7px 0 6px;border:1px solid var(--line);border-radius:12px;background:var(--surface2);color:var(--text);cursor:pointer;font-family:inherit}
+  .wkrow{display:flex;align-items:center;gap:6px;margin-bottom:7px}
+  .wkrow .wklab{flex:1;text-align:center;font-size:13.5px;font-weight:650;letter-spacing:-.01em}
+  .evm{position:fixed;inset:0;background:rgba(4,5,8,.66);backdrop-filter:blur(3px);z-index:120;display:flex;align-items:flex-end;justify-content:center}
+  @media(min-width:640px){.evm{align-items:center}}
+  .evsheet{background:var(--surface);border:1px solid var(--line);border-radius:16px 16px 0 0;width:100%;max-width:430px;max-height:92vh;overflow-y:auto;padding:16px}
+  @media(min-width:640px){.evsheet{border-radius:16px}}
+  .evsheet h3{margin:0 0 10px;font-size:16px;letter-spacing:-.01em}
+  .evsheet input[type=text]{width:100%;background:var(--surface2);border:1px solid var(--line);border-radius:9px;color:var(--text);padding:10px 11px;font-size:15px;font-family:inherit;box-sizing:border-box}
+  .mgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-top:4px}
+  .mday{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:8px;font-size:13px;cursor:pointer;border:1px solid transparent;background:none;color:var(--text);font-family:inherit;padding:0}
+  .mday.dim{color:var(--faint)}
+  .mday.today{border-color:var(--accent)}
+  .mday.sel{background:var(--accent);color:#fff;font-weight:650}
+  .evrow{display:flex;gap:8px;align-items:center;margin-top:12px}
+  .evrow label{font-size:13px;color:var(--muted)}
+  .evrow input[type=time]{background:var(--surface2);border:1px solid var(--line);border-radius:8px;color:var(--text);padding:8px 9px;font-size:14px;font-family:inherit}
+  .evfoot{display:flex;gap:8px;margin-top:16px}
+  .evfoot .btn{flex:1;padding:11px}
+  .switch{position:relative;width:40px;height:23px;flex:none}
+  .switch input{opacity:0;width:0;height:0}
+  .switch .tr{position:absolute;inset:0;background:var(--surface2);border:1px solid var(--line);border-radius:999px;transition:background .15s}
+  .switch .tr:before{content:'';position:absolute;left:2px;top:2px;width:17px;height:17px;border-radius:50%;background:#cfd2dc;transition:transform .15s}
+  .switch input:checked + .tr{background:var(--accent);border-color:var(--accent)}
+  .switch input:checked + .tr:before{transform:translateX(17px);background:#fff}
   .cday .dw{font-size:10px;font-weight:650;letter-spacing:.05em;color:var(--faint);text-transform:uppercase}
   .cday .dn{font-size:16px;font-weight:650;line-height:1.15}
   .cday.today{border-color:var(--accent)}
@@ -365,16 +388,17 @@
         </section>
 
         <section class="card span2" id="s-cal">
-          <div class="cardhead"><h2>📅 Family Calendar</h2><span class="sub" id="calSub"></span></div>
+          <div class="cardhead"><h2>📅 Family Calendar</h2><span class="sub" id="calSub"></span><button class="iconbtn" id="evAddBtn" type="button">＋ Add event</button></div>
+          <div class="wkrow">
+            <button class="iconbtn" id="wkPrev" type="button" aria-label="Previous week">‹</button>
+            <div class="wklab" id="wkLabel"></div>
+            <button class="iconbtn" id="wkToday" type="button">Today</button>
+            <button class="iconbtn" id="wkNext" type="button" aria-label="Next week">›</button>
+          </div>
           <div class="calstrip" id="calStrip"></div>
           <div id="dayEvents"></div>
           <div class="grp">Coming up</div>
           <div id="eventList"><div class="empty">Loading…</div></div>
-          <form class="add" id="eventForm">
-            <input id="evTitle" placeholder="New event…" required>
-            <input id="evWhen" type="datetime-local" required style="flex:0 0 200px">
-            <button type="submit">Add</button>
-          </form>
         </section>
 
         <section class="card span2" id="s-deals">
@@ -452,6 +476,35 @@
           </div>
         </section>
       </main>
+
+      <div class="evm" id="evModal" hidden>
+        <div class="evsheet">
+          <h3>📅 New event</h3>
+          <input type="text" id="evmTitle" placeholder="What's happening?">
+          <div class="wkrow" style="margin-top:14px">
+            <button class="iconbtn" id="evmPrev" type="button" aria-label="Previous month">‹</button>
+            <div class="wklab" id="evmLabel"></div>
+            <button class="iconbtn" id="evmNext" type="button" aria-label="Next month">›</button>
+          </div>
+          <div class="mgrid" id="evmDow"></div>
+          <div class="mgrid" id="evmGrid"></div>
+          <div class="evrow">
+            <label class="switch"><input type="checkbox" id="evmAllDay"><span class="tr"></span></label>
+            <label for="evmAllDay">All day</label>
+          </div>
+          <div class="evrow" id="evmTimes">
+            <label>Starts</label>
+            <input type="time" id="evmStart" value="18:00">
+            <label>Ends</label>
+            <input type="time" id="evmEnd" value="19:00">
+          </div>
+          <div class="meta" id="evmMsg" style="margin-top:10px"></div>
+          <div class="evfoot">
+            <button class="btn ghost" id="evmCancel" type="button">Cancel</button>
+            <button class="btn" id="evmSave" type="button">Add event</button>
+          </div>
+        </div>
+      </div>
 
       <div id="slideshow" hidden>
         <div class="ssbg" id="ssBg"></div>
@@ -711,10 +764,19 @@
       '<button class="edbtn" data-kind="'+kind+'" data-id="'+r.id+'" aria-label="Edit">✎</button>'+
       '<button class="del" data-kind="'+kind+'" data-id="'+r.id+'" aria-label="Delete">✕</button></div>';
   }
+  function gcalUrl(r){
+    var d = new Date(r.starts_at);
+    function p(x){ return String(x).padStart(2, '0'); }
+    function fmt(dt){ return dt.getUTCFullYear() + p(dt.getUTCMonth() + 1) + p(dt.getUTCDate()) + 'T' + p(dt.getUTCHours()) + p(dt.getUTCMinutes()) + '00Z'; }
+    var end = new Date(d.getTime() + 3600000);
+    return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(r.title) + '&dates=' + fmt(d) + '/' + fmt(end);
+  }
   function eventRowHtml(r, whenTxt){
-    var metaHtml = r.notes ? esc(r.notes) : '';
+    if(isAllDay(r)) whenTxt = 'All day';
+    var metaHtml = (r.notes && !isAllDay(r)) ? esc(r.notes) : '';
     if(r.added_by) metaHtml += (metaHtml ? ' · ' : '') + whoPill(r.added_by);
     return '<div class="item"><div class="txt"><div class="ev-when">' + esc(whenTxt) + '</div><div>' + esc(r.title) + '</div>' + (metaHtml ? '<div class="meta">' + metaHtml + '</div>' : '') + '</div>' +
+      '<a class="edbtn" href="' + gcalUrl(r) + '" target="_blank" rel="noopener" title="Add to Google Calendar" style="text-decoration:none">＋ GCal</a>' +
       '<button class="edbtn" data-kind="event" data-id="' + r.id + '" aria-label="Edit">✎</button>' +
       '<button class="del" data-kind="event" data-id="' + r.id + '" aria-label="Delete">✕</button></div>';
   }
@@ -947,15 +1009,16 @@
     loadUsage();
     loadContent();
   }
-  /* ---------- Calendar: day strip + agenda ---------- */
+  /* ---------- Calendar: week strip + agenda ---------- */
   var calSel = new Date();
   function dstr(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+  function isAllDay(r){ return (r.notes || '') === 'All day'; }
   function renderDayEvents(rows){
     var el = document.getElementById('dayEvents'); if(!el) return;
     var label = calSel.toLocaleDateString('en-US',{weekday:'long', month:'long', day:'numeric'});
-    if(!rows.length){ el.innerHTML = '<div class="grp">'+esc(label)+'</div><div class="empty">Nothing that day — add an event below and it lands here.</div>'; return; }
+    if(!rows.length){ el.innerHTML = '<div class="grp">'+esc(label)+'</div><div class="empty">Nothing that day — tap ＋ Add event up top to put something here.</div>'; return; }
     el.innerHTML = '<div class="grp">'+esc(label)+'</div>' + rows.map(function(r){
-      var t = new Date(r.starts_at).toLocaleTimeString('en-US',{hour:'numeric', minute:'2-digit'});
+      var t = isAllDay(r) ? 'All day' : new Date(r.starts_at).toLocaleTimeString('en-US',{hour:'numeric', minute:'2-digit'});
       var pill = r.added_by ? whoPill(r.added_by) : '';
       return '<div class="item"><div class="txt"><div>'+esc(r.title)+'</div><div class="meta">'+esc(t)+(pill ? ' · ' : '')+pill+'</div></div>'+
         '<button class="edbtn" data-kind="event" data-id="'+r.id+'" aria-label="Edit">✎</button>'+
@@ -966,27 +1029,99 @@
     var strip = document.getElementById('calStrip'); if(!strip) return;
     var byDay = {};
     (window._events || []).forEach(function(r){ var k = dstr(new Date(r.starts_at)); (byDay[k] = byDay[k] || []).push(r); });
-    var base = new Date(); base.setHours(0, 0, 0, 0);
-    var selK = dstr(calSel), todayK = dstr(new Date());
+    var sel = new Date(calSel); sel.setHours(0, 0, 0, 0);
+    var wkStart = new Date(sel); wkStart.setDate(wkStart.getDate() - wkStart.getDay());
+    var wkEnd = new Date(wkStart); wkEnd.setDate(wkEnd.getDate() + 6);
+    var fmt = {month:'short', day:'numeric'};
+    document.getElementById('wkLabel').textContent = wkStart.toLocaleDateString('en-US', fmt) + ' – ' + wkEnd.toLocaleDateString('en-US', fmt) + (wkStart.getFullYear() !== wkEnd.getFullYear() || wkEnd.getFullYear() !== new Date().getFullYear() ? '' : '');
+    var selK = dstr(sel), todayK = dstr(new Date());
     var html = '';
-    for(var i = -2; i < 46; i++){
-      var d = new Date(base); d.setDate(d.getDate() + i);
+    for(var i = 0; i < 7; i++){
+      var d = new Date(wkStart); d.setDate(d.getDate() + i);
       var k = dstr(d);
       var dots = (byDay[k] || []).slice(0, 3).map(function(r){ return '<span class="cal-dot '+(r.added_by === 'Kelly' ? 'kelly' : r.added_by === 'Mike' ? 'mike' : '')+'"></span>'; }).join('');
       html += '<button type="button" class="cday'+(k === selK ? ' sel' : '')+(k === todayK ? ' today' : '')+'" data-day="'+k+'"><span class="dw">'+d.toLocaleDateString('en-US', {weekday:'narrow'})+'</span><span class="dn">'+d.getDate()+'</span><span class="cal-dots">'+dots+'</span></button>';
     }
     strip.innerHTML = html;
-    var sel = strip.querySelector('.cday.sel');
-    if(sel) sel.scrollIntoView({inline:'center', block:'nearest'});
     renderDayEvents(byDay[selK] || []);
   }
   document.getElementById('calStrip').addEventListener('click', function(e){
     var c = e.target.closest ? e.target.closest('.cday') : null; if(!c) return;
     var parts = c.dataset.day.split('-');
     calSel = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
-    var f = document.getElementById('evWhen');
-    if(f){ var t = (f.value && f.value.length >= 16) ? f.value.slice(11, 16) : '18:00'; f.value = c.dataset.day + 'T' + t; }
     renderCalStrip();
+  });
+  document.getElementById('wkPrev').addEventListener('click', function(){ calSel.setDate(calSel.getDate() - 7); renderCalStrip(); });
+  document.getElementById('wkNext').addEventListener('click', function(){ calSel.setDate(calSel.getDate() + 7); renderCalStrip(); });
+  document.getElementById('wkToday').addEventListener('click', function(){ calSel = new Date(); renderCalStrip(); });
+  /* ---------- Pop-up event editor ---------- */
+  var evmDay = new Date(); evmDay.setHours(0, 0, 0, 0);
+  var evmCursor = new Date(); evmCursor.setDate(1);
+  function renderEvm(){
+    var dow = document.getElementById('evmDow');
+    if(dow && !dow.innerHTML) dow.innerHTML = ['Su','Mo','Tu','We','Th','Fr','Sa'].map(function(x){ return '<div class="cal-dow" style="text-align:center;font-size:10.5px;font-weight:650;color:var(--faint)">'+x+'</div>'; }).join('');
+    var y = evmCursor.getFullYear(), m = evmCursor.getMonth();
+    document.getElementById('evmLabel').textContent = evmCursor.toLocaleDateString('en-US', {month:'long', year:'numeric'});
+    var startDay = new Date(y, m, 1).getDay();
+    var prevDim = new Date(y, m, 0).getDate();
+    var dim = new Date(y, m + 1, 0).getDate();
+    var cells = [];
+    for(var i = 0; i < 42; i++){
+      var dayNum = i - startDay + 1, date, isDim = false;
+      if(dayNum < 1){ date = new Date(y, m - 1, prevDim + dayNum); isDim = true; }
+      else if(dayNum > dim){ date = new Date(y, m + 1, dayNum - dim); isDim = true; }
+      else date = new Date(y, m, dayNum);
+      if(i >= 35 && isDim) break;
+      var k = dstr(date);
+      cells.push('<button type="button" class="mday'+(isDim ? ' dim' : '')+(k === dstr(new Date()) ? ' today' : '')+(k === dstr(evmDay) ? ' sel' : '')+'" data-day="'+k+'">'+date.getDate()+'</button>');
+    }
+    document.getElementById('evmGrid').innerHTML = cells.join('');
+  }
+  function openEvModal(){
+    evmDay = new Date(calSel); evmDay.setHours(0, 0, 0, 0);
+    evmCursor = new Date(evmDay.getFullYear(), evmDay.getMonth(), 1);
+    document.getElementById('evmTitle').value = '';
+    document.getElementById('evmMsg').textContent = '';
+    document.getElementById('evmAllDay').checked = false;
+    document.getElementById('evmTimes').style.display = '';
+    renderEvm();
+    document.getElementById('evModal').hidden = false;
+    setTimeout(function(){ document.getElementById('evmTitle').focus(); }, 60);
+  }
+  function closeEvModal(){ document.getElementById('evModal').hidden = true; }
+  document.getElementById('evAddBtn').addEventListener('click', openEvModal);
+  document.getElementById('evmCancel').addEventListener('click', closeEvModal);
+  document.getElementById('evModal').addEventListener('click', function(e){ if(e.target === this) closeEvModal(); });
+  document.getElementById('evmPrev').addEventListener('click', function(){ evmCursor = new Date(evmCursor.getFullYear(), evmCursor.getMonth() - 1, 1); renderEvm(); });
+  document.getElementById('evmNext').addEventListener('click', function(){ evmCursor = new Date(evmCursor.getFullYear(), evmCursor.getMonth() + 1, 1); renderEvm(); });
+  document.getElementById('evmGrid').addEventListener('click', function(e){
+    var c = e.target.closest ? e.target.closest('.mday') : null; if(!c) return;
+    var parts = c.dataset.day.split('-');
+    evmDay = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+    if(evmDay.getMonth() !== evmCursor.getMonth() || evmDay.getFullYear() !== evmCursor.getFullYear()) evmCursor = new Date(evmDay.getFullYear(), evmDay.getMonth(), 1);
+    renderEvm();
+  });
+  document.getElementById('evmAllDay').addEventListener('change', function(){
+    document.getElementById('evmTimes').style.display = this.checked ? 'none' : '';
+  });
+  document.getElementById('evmSave').addEventListener('click', async function(){
+    if(previewMode) return;
+    var title = document.getElementById('evmTitle').value.trim();
+    var msg = document.getElementById('evmMsg');
+    if(!title){ msg.textContent = 'Give the event a title first.'; return; }
+    if(!requirePerson()){ closeEvModal(); return; }
+    var allDay = document.getElementById('evmAllDay').checked;
+    var start;
+    if(allDay){ start = new Date(evmDay); start.setHours(9, 0, 0, 0); }
+    else {
+      var t = (document.getElementById('evmStart').value || '18:00').split(':');
+      start = new Date(evmDay); start.setHours(Number(t[0]), Number(t[1]), 0, 0);
+    }
+    var res = await sb.from('events').insert({title: title, starts_at: start.toISOString(), notes: allDay ? 'All day' : '', added_by: person});
+    if(res.error){ msg.textContent = 'Could not save — check your connection and try again.'; return; }
+    calSel = new Date(evmDay);
+    closeEvModal();
+    loadAll(true);
   });
   document.getElementById('groupStoreBtn').addEventListener('click', function(){
     groupStore = !groupStore;
@@ -1225,14 +1360,6 @@ await sb.from('shopping_items').insert({item:item, qty:document.getElementById('
     var task=document.getElementById('todoTask').value.trim(); if(!task)return;
         if(!requirePerson())return;
 await sb.from('todos').insert({task:task, owner:person, due:document.getElementById('todoDue').value.trim(), added_by:person});
-    e.target.reset(); loadAll();
-  });
-  document.getElementById('eventForm').addEventListener('submit', async function(e){
-    e.preventDefault();
-    var title=document.getElementById('evTitle').value.trim(); var when=document.getElementById('evWhen').value;
-    if(!title||!when)return;
-        if(!requirePerson())return;
-await sb.from('events').insert({title:title, starts_at:new Date(when).toISOString(), added_by:person});
     e.target.reset(); loadAll();
   });
   document.getElementById('babyForm').addEventListener('submit', async function(e){
