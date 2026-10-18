@@ -4,88 +4,433 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Smiley Family — Household</title>
-<meta name="description" content="Smiley Family household hub: shopping list, to-dos, family calendar, local news and Meijer deals.">
+<meta name="description" content="Smiley Family household hub: shopping list, to-dos, family calendar, deals, recipes, local events, headlines, baby checklist and photos. Sign-in required.">
 <style>
-  :root{--bg:#0b0e13;--card:#151a23;--card2:#1b222f;--text:#f2f5f9;--muted:#9aa7b8;--accent:#4da3ff;--accent2:#34d399;--border:#242d3d;--radius:18px}
+  :root{--bg:#0b0e13;--card:#151a23;--card2:#1b222f;--text:#f2f5f9;--muted:#9aa7b8;--accent:#4da3ff;--accent2:#34d399;--danger:#f87171;--border:#242d3d;--radius:18px}
   *{box-sizing:border-box}
   body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
   .wrap{max-width:720px;margin:0 auto;padding:20px 16px 40px}
-  header{padding:12px 4px 20px}
+  header{padding:12px 4px 8px}
   h1{font-size:28px;margin:0 0 4px;letter-spacing:-.02em}
   .date{color:var(--muted);font-size:16px}
   .clock{font-size:44px;font-weight:700;margin-top:8px;letter-spacing:-.03em}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  @media(max-width:520px){.grid{grid-template-columns:1fr}}
-  a.card{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--text);min-height:112px}
-  a.card:active{background:var(--card2)}
-  .card .icon{font-size:28px;display:block;margin-bottom:10px}
-  .card .title{font-size:19px;font-weight:650;display:block}
-  .card .sub{color:var(--muted);font-size:14px;display:block;margin-top:4px;line-height:1.4}
-  .primary{background:linear-gradient(135deg,#173a63,#12283f);border-color:#24507f}
-  .section{margin:26px 4px 10px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-  .list{display:grid;gap:10px}
-  a.row{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--text);font-size:17px;min-height:56px}
+  .section{margin:26px 4px 10px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+  .panel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+  .item{display:flex;align-items:center;gap:12px;padding:10px 2px;border-bottom:1px solid var(--border)}
+  .item:last-child{border-bottom:none}
+  .item input[type=checkbox]{width:24px;height:24px;accent-color:var(--accent2);flex:none}
+  .item .txt{flex:1;min-width:0}
+  .item .meta{color:var(--muted);font-size:13px}
+  .item.done .txt{color:var(--muted);text-decoration:line-through}
+  .del{background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:6px;flex:none}
+  .del:active{color:var(--danger)}
+  .empty{color:var(--muted);padding:8px 2px}
+  form.add{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  form.add input{flex:1;min-width:110px;background:var(--card2);border:1px solid var(--border);border-radius:12px;color:var(--text);padding:12px;font-size:16px}
+  button{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:650;cursor:pointer}
+  button.ghost{background:var(--card2);color:var(--text);border:1px solid var(--border)}
+  button:active{opacity:.85}
+  details{background:var(--card);border:1px solid var(--border);border-radius:14px;margin-bottom:10px;overflow:hidden}
+  summary{cursor:pointer;padding:16px 18px;font-size:17px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  summary::-webkit-details-marker{display:none}
+  summary .chev{color:var(--muted);font-weight:400}
+  details .body{padding:4px 18px 16px}
+  details.inner{background:var(--card2);border-color:var(--border)}
+  details.inner summary{font-size:15px;font-weight:550;padding:12px 14px}
+  details.inner .body{padding:2px 14px 12px;color:var(--muted);font-size:14px;line-height:1.5}
+  .deal{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+  .deal:last-child{border-bottom:none}
+  .deal .price{font-weight:700;color:var(--accent2);white-space:nowrap;text-align:right}
+  .deal .tag{color:var(--muted);font-size:13px}
+  .src{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  a{color:var(--accent)}
+  a.row{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--text);font-size:17px;min-height:56px;margin-bottom:10px}
   a.row span.arrow{color:var(--muted)}
+  .ev-when{color:var(--accent);font-size:13px;font-weight:650}
+  .grp{margin:14px 0 4px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .grp:first-child{margin-top:2px}
+  .loginbox{max-width:420px;margin:8vh auto 0;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px 24px}
+  .loginbox h1{text-align:center}
+  .loginbox p.sub{color:var(--muted);text-align:center;margin:6px 0 20px;line-height:1.45}
+  .loginbox label{display:block;font-size:14px;color:var(--muted);margin:14px 0 6px}
+  .loginbox input{width:100%;background:var(--card2);border:1px solid var(--border);border-radius:12px;color:var(--text);padding:14px;font-size:16px}
+  .loginbox button{width:100%;margin-top:18px}
+  .loginbox button.ghost{margin-top:10px}
+  .msg{margin-top:14px;font-size:14px;line-height:1.45;color:var(--accent2);text-align:center;min-height:20px}
+  .msg.err{color:var(--danger)}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .who{color:var(--muted);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .ticker{overflow:hidden;background:#101623;border:1px solid var(--border);border-radius:12px;padding:10px 0;margin-top:10px;white-space:nowrap}
+  .ticker .track{display:inline-block;padding-left:100%;animation:tick 70s linear infinite;font-size:15px}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+  .photos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .ph{position:relative;border-radius:12px;overflow:hidden;background:var(--card2);aspect-ratio:1}
+  .ph img{width:100%;height:100%;object-fit:cover;display:block}
+  .ph .del{position:absolute;top:2px;right:2px;background:rgba(0,0,0,.55);border-radius:8px;color:#fff;font-size:14px;padding:2px 8px}
   footer{color:var(--muted);font-size:13px;line-height:1.5;margin-top:28px;padding:0 4px}
+  [hidden]{display:none!important}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>Smiley Family</h1>
-    <div class="date" id="date">Loading date…</div>
-    <div class="clock" id="clock">--:--</div>
-  </header>
 
-  <div class="grid">
-    <a class="card primary" href="https://docs.google.com/spreadsheets/d/1hYxfyk3TvTijvyEbfvk6KV0tDsbGtEa13MjU6Oqs1-A/edit?usp=drivesdk">
-      <span class="icon">🛒</span>
-      <span class="title">Shopping List</span>
-      <span class="sub">Shared list — tap to add or check off. Opens the shared sheet's Shopping List tab.</span>
-    </a>
-    <a class="card primary" href="https://docs.google.com/spreadsheets/d/1hYxfyk3TvTijvyEbfvk6KV0tDsbGtEa13MjU6Oqs1-A/edit?usp=drivesdk">
-      <span class="icon">✓</span>
-      <span class="title">To-Dos</span>
-      <span class="sub">Household tasks — tap to open the shared sheet's To-Dos tab.</span>
-    </a>
-    <a class="card" href="https://calendar.google.com/calendar/u/0/r">
-      <span class="icon">📅</span>
-      <span class="title">Family Calendar</span>
-      <span class="sub">Smiley Family calendar — shared with Kelly.</span>
-    </a>
-    <a class="card" href="https://www.meijer.com/shopping/weekly-ad">
-      <span class="icon">🏷️</span>
-      <span class="title">Meijer Weekly Ad</span>
-      <span class="sub">This week's deals for your local store.</span>
-    </a>
+  <!-- LOGIN VIEW -->
+  <div id="loginView" hidden>
+    <div class="loginbox">
+      <h1>🏠 Smiley Family</h1>
+      <p class="sub">Private household hub.<br>Sign in with the email Mike or Kelly was invited with.</p>
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="email" placeholder="you@email.com">
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" placeholder="Your password">
+      <button id="signInBtn">Sign in</button>
+      <button id="magicBtn" class="ghost">Email me a sign-in link instead</button>
+      <div class="msg" id="loginMsg"></div>
+      <p class="sub" style="margin-top:16px;font-size:13px">First time? Open the invite email from Supabase and tap its link — it signs you straight in, then you can set a password under Account at the bottom. On your own phone you stay signed in after that.</p>
+    </div>
   </div>
 
-  <div class="section">Deals</div>
-  <div class="list">
-    <a class="row" href="https://www.meijer.com/shopping/weekly-ad">Meijer Weekly Ad <span class="arrow">›</span></a>
-    <a class="row" href="https://www.meijer.com/">mPerks &amp; Meijer Home <span class="arrow">›</span></a>
-  </div>
+  <!-- APP VIEW -->
+  <div id="appView" hidden>
+    <div class="topbar">
+      <div class="who" id="whoami"></div>
+      <div>
+        <button class="ghost" id="refreshBtn" style="padding:8px 12px;font-size:14px">↻ Refresh</button>
+        <button class="ghost" id="signOutBtn" style="padding:8px 12px;font-size:14px">Sign out</button>
+      </div>
+    </div>
+    <header>
+      <h1>Smiley Family</h1>
+      <div class="date" id="date">Loading date…</div>
+      <div class="clock" id="clock">--:--</div>
+    </header>
+    <div class="ticker"><span class="track" id="tickerTrack">Loading your ticker…</span></div>
 
-  <div class="section">Local News — Solon &amp; Cleveland</div>
-  <div class="list">
-    <a class="row" href="https://www.cleveland.com/">Cleveland.com <span class="arrow">›</span></a>
-    <a class="row" href="https://fox8.com/">Fox 8 <span class="arrow">›</span></a>
-    <a class="row" href="https://www.wkyc.com/">WKYC <span class="arrow">›</span></a>
-    <a class="row" href="https://www.solonohio.gov/">City of Solon <span class="arrow">›</span></a>
-  </div>
+    <div class="section"><span>🛒 Shopping List</span></div>
+    <div class="panel">
+      <div id="shopList"><div class="empty">Loading…</div></div>
+      <form class="add" id="shopForm">
+        <input id="shopItem" placeholder="Add an item…" required>
+        <input id="shopQty" placeholder="Qty" style="flex:0 0 74px;min-width:64px">
+        <input id="shopStore" placeholder="Store" style="flex:0 0 96px;min-width:84px">
+        <button type="submit">Add</button>
+      </form>
+    </div>
 
-  <footer>
-    Shopping, to-dos and the calendar stay private in Google — only Mike and Kelly can open them.
-    This page is just the front door. Made for the Smiley household, Solon, OH.
-  </footer>
+    <div class="section"><span>✓ To-Dos</span></div>
+    <div class="panel">
+      <div id="todoList"><div class="empty">Loading…</div></div>
+      <form class="add" id="todoForm">
+        <input id="todoTask" placeholder="Add a task…" required>
+        <input id="todoOwner" placeholder="Owner" style="flex:0 0 96px;min-width:84px">
+        <input id="todoDue" placeholder="Due" style="flex:0 0 96px;min-width:84px">
+        <button type="submit">Add</button>
+      </form>
+    </div>
+
+    <div class="section"><span>📅 Coming Up — Family Calendar</span></div>
+    <div class="panel">
+      <div id="eventList"><div class="empty">Loading…</div></div>
+      <form class="add" id="eventForm">
+        <input id="evTitle" placeholder="New event…" required>
+        <input id="evWhen" type="datetime-local" required style="flex:0 0 210px">
+        <button type="submit">Add</button>
+      </form>
+    </div>
+
+    <div class="section"><span>🏷️ Deals This Week</span><span id="dealsRange" style="letter-spacing:0;text-transform:none;font-weight:400"></span></div>
+    <div id="dealsWrap"><div class="empty">Loading deals…</div></div>
+
+    <div class="section"><span>🍽️ Recipe Ideas From the Ads</span></div>
+    <div id="recipesWrap"><div class="empty">Loading recipes…</div></div>
+
+    <div class="section"><span>🎃 This Week Around Us</span><span id="eventsRange" style="letter-spacing:0;text-transform:none;font-weight:400"></span></div>
+    <div id="eventsWrap"><div class="empty">Loading events…</div></div>
+
+    <div class="section"><span>🗞️ Daily Headlines</span><span id="headlinesDate" style="letter-spacing:0;text-transform:none;font-weight:400"></span></div>
+    <div id="headlinesWrap"><div class="empty">Loading headlines…</div></div>
+
+    <div class="section"><span>👶 Baby Checklist</span></div>
+    <div class="panel">
+      <div id="babyList"><div class="empty">Loading…</div></div>
+      <form class="add" id="babyForm">
+        <input id="babyItem" placeholder="Add an item…" required>
+        <input id="babyCat" placeholder="Section (e.g. Nursery)" style="flex:0 0 150px;min-width:130px">
+        <button type="submit">Add</button>
+      </form>
+    </div>
+
+    <div class="section"><span>🐶 Photos — Moose &amp; Family</span></div>
+    <div class="panel">
+      <div class="photos" id="photoGrid"><div class="empty">Loading photos…</div></div>
+      <form class="add" id="photoForm">
+        <input id="photoFile" type="file" accept="image/*" multiple style="padding:9px">
+        <button type="submit">Upload</button>
+      </form>
+      <div class="meta" id="photoMsg" style="color:var(--muted);font-size:13px;margin-top:8px"></div>
+    </div>
+
+    <div class="section"><span>🔐 Account</span></div>
+    <div class="panel">
+      <div class="meta" style="color:var(--muted);font-size:14px">Signed in as <span id="acctEmail"></span>. Set or change your password here:</div>
+      <form class="add" id="pwForm">
+        <input id="newPw" type="password" autocomplete="new-password" placeholder="New password (min 6 characters)">
+        <button type="submit">Save password</button>
+      </form>
+      <div class="meta" id="pwMsg" style="color:var(--muted);font-size:13px;margin-top:8px"></div>
+    </div>
+
+    <footer>
+      Private to Mike &amp; Kelly — sign-in required. Lists, calendar, baby checklist and photos live in a private database, not on this public page.
+      The old Google Sheet and Calendar are still there as a backup. Made for the Smiley household, Solon, OH.
+    </footer>
+  </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
+  var SUPABASE_URL = "https://bwbujkkmqokjdwrelpvl.supabase.co";
+  var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ3YnVqa2ttcW9ramR3cmVscHZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzNDIyNjgsImV4cCI6MjEwNzkxODI2OH0.-i2GfZF8G-w2ZJ72D7Hj9_jphbazMpVulpgjiJDnFaw";
+  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  var CONTENT = null;
+
+  function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
   function tick(){
     var now=new Date();
-    document.getElementById('date').textContent=now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
-    document.getElementById('clock').textContent=now.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+    var d=document.getElementById('date'),c=document.getElementById('clock');
+    if(d)d.textContent=now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+    if(c)c.textContent=now.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
   }
   tick(); setInterval(tick,15000);
+
+  /* ---------- Ticker ---------- */
+  var WCODE={0:"Clear",1:"Mostly clear",2:"Partly cloudy",3:"Overcast",45:"Foggy",48:"Foggy",51:"Light drizzle",53:"Drizzle",55:"Drizzle",61:"Light rain",63:"Rain",65:"Heavy rain",71:"Light snow",73:"Snow",75:"Heavy snow",80:"Light showers",81:"Showers",82:"Heavy showers",95:"Thunderstorms"};
+  function aqiLabel(a){return a<=50?"Good":a<=100?"Moderate":a<=150?"Sensitive groups":"Unhealthy"}
+  async function buildTicker(){
+    var items=[];
+    try{
+      var w=await (await fetch("https://api.open-meteo.com/v1/forecast?latitude=41.3898&longitude=-81.4412&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,uv_index_max,sunrise,sunset&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FNew_York&forecast_days=1")).json();
+      var cur=w.current, day=w.daily;
+      items.push("🌡️ Solon "+Math.round(cur.temperature_2m)+"°F, "+(WCODE[cur.weather_code]||"")+" · feels "+Math.round(cur.apparent_temperature)+"°F");
+      items.push("📈 High "+Math.round(day.temperature_2m_max[0])+"° · Low "+Math.round(day.temperature_2m_min[0])+"° · Rain chance "+(day.precipitation_probability_max[0]==null?"—":day.precipitation_probability_max[0]+"%"));
+      items.push("💨 Wind "+Math.round(cur.wind_speed_10m)+" mph · ☀️ UV peak "+Math.round(day.uv_index_max[0]));
+      var sr=new Date(day.sunrise[0]), ss=new Date(day.sunset[0]);
+      items.push("🌅 Sunrise "+sr.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'})+" · 🌇 Sunset "+ss.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}));
+    }catch(e){}
+    try{
+      var aq=await (await fetch("https://air-quality-api.open-meteo.com/v1/air-quality?latitude=41.3898&longitude=-81.4412&current=us_aqi,grass_pollen,ragweed_pollen,birch_pollen")).json();
+      if(aq.current && aq.current.us_aqi!=null) items.push("🌬️ Air quality: AQI "+Math.round(aq.current.us_aqi)+" ("+aqiLabel(aq.current.us_aqi)+")");
+      var pol=[];
+      if(aq.current){["grass_pollen","ragweed_pollen","birch_pollen"].forEach(function(k){if(aq.current[k]!=null&&aq.current[k]>0)pol.push(k.replace("_pollen","")+" "+aq.current[k])});}
+      if(pol.length) items.push("🌾 Pollen: "+pol.join(", ")+" grains/m³");
+    }catch(e){}
+    try{
+      var al=await (await fetch("https://api.weather.gov/alerts/active?point=41.3898,-81.4412")).json();
+      if(al.features) al.features.forEach(function(f){ items.unshift("⚠️ "+f.properties.headline); });
+    }catch(e){}
+    if(CONTENT && CONTENT.tickerExtras) items=items.concat(CONTENT.tickerExtras);
+    if(!items.length) items=["Smiley Family ticker — weather is taking a coffee break ☕"];
+    document.getElementById('tickerTrack').textContent = items.join("   ✦   ");
+  }
+
+  /* ---------- Content sections (deals / recipes / events / headlines) ---------- */
+  function renderContent(){
+    if(!CONTENT) return;
+    if(CONTENT.deals){
+      document.getElementById('dealsRange').textContent = CONTENT.deals.range||"";
+      document.getElementById('dealsWrap').innerHTML = CONTENT.deals.stores.map(function(s){
+        var rows=s.items.map(function(x){return '<div class="deal"><div>'+esc(x[0])+(x[2]?' <span class="tag">· '+esc(x[2])+'</span>':'')+'</div><div class="price">'+esc(x[1])+'</div></div>'}).join('');
+        return '<details><summary>'+esc(s.name)+'<span class="chev">▾</span></summary><div class="body"><div class="src">'+esc(s.note||"")+'</div>'+rows+'<div style="margin-top:10px"><a href="'+esc(s.link)+'" target="_blank" rel="noopener">Open the full ad ›</a></div></div></details>';
+      }).join('');
+    }
+    if(CONTENT.recipes){
+      document.getElementById('recipesWrap').innerHTML = CONTENT.recipes.map(function(r){
+        return '<details class="inner" style="background:var(--card);border:1px solid var(--border)"><summary>'+esc(r.name)+'<span class="chev">▾</span></summary><div class="body"><div class="src">'+esc(r.basedOn)+'</div><div style="margin-top:6px">'+esc(r.blurb)+'</div></div></details>';
+      }).join('');
+    }
+    if(CONTENT.events){
+      document.getElementById('eventsRange').textContent = CONTENT.events.range||"";
+      document.getElementById('eventsWrap').innerHTML = CONTENT.events.areas.map(function(a){
+        var rows=a.items.map(function(x){return '<div class="item"><div class="txt"><div class="ev-when">'+esc(x.when)+'</div><div>'+esc(x.title)+'</div><div class="meta">'+esc(x.where)+'</div></div><a href="'+esc(x.link)+'" target="_blank" rel="noopener" style="text-decoration:none;font-size:20px">›</a></div>'}).join('');
+        return '<details><summary>'+esc(a.name)+'<span class="chev">▾</span></summary><div class="body">'+rows+'</div></details>';
+      }).join('');
+    }
+    if(CONTENT.headlines){
+      document.getElementById('headlinesDate').textContent = CONTENT.headlines.date||"";
+      document.getElementById('headlinesWrap').innerHTML = CONTENT.headlines.cats.map(function(c){
+        var rows=c.items.map(function(x){return '<details class="inner"><summary>'+esc(x.title)+'<span class="chev">▾</span></summary><div class="body">'+esc(x.summary)+' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">Read at '+esc(x.source)+' ›</a></div></details>'}).join('');
+        return '<details><summary>'+esc(c.name)+'<span class="chev">▾</span></summary><div class="body">'+rows+'</div></details>';
+      }).join('');
+    }
+    buildTicker();
+  }
+  async function loadContent(){
+    try{ var r=await fetch('content.json',{cache:'no-store'}); if(r.ok){ CONTENT=await r.json(); } }catch(e){}
+    renderContent();
+  }
+</script>
+<script>
+  /* ---------- Private data (Supabase) ---------- */
+  function rowHtml(r, kind){
+    var main = kind==='shop' ? r.item : r.task;
+    var meta = [];
+    if(kind==='shop'){ if(r.qty)meta.push(r.qty); if(r.store)meta.push(r.store); }
+    else { if(r.owner)meta.push(r.owner); if(r.due)meta.push('Due '+r.due); }
+    var done = kind==='shop' ? r.got_it : r.done;
+    return '<div class="item'+(done?' done':'')+'"><input type="checkbox" data-kind="'+kind+'" data-id="'+r.id+'" '+(done?'checked':'')+'>'+
+      '<div class="txt"><div>'+esc(main)+'</div>'+(meta.length?'<div class="meta">'+esc(meta.join(' · '))+'</div>':'')+'</div>'+
+      '<button class="del" data-kind="'+kind+'" data-id="'+r.id+'" aria-label="Delete">✕</button></div>';
+  }
+  function renderDbEvents(rows){
+    var el=document.getElementById('eventList');
+    if(!rows.length){ el.innerHTML='<div class="empty">Nothing on the family calendar yet — add the first event below.</div>'; return; }
+    el.innerHTML = rows.map(function(r){
+      var when = new Date(r.starts_at);
+      var whenTxt = when.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'})+' · '+when.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+      return '<div class="item"><div class="txt"><div class="ev-when">'+esc(whenTxt)+'</div><div>'+esc(r.title)+'</div>'+(r.notes?'<div class="meta">'+esc(r.notes)+'</div>':'')+'</div>'+
+        '<button class="del" data-kind="event" data-id="'+r.id+'" aria-label="Delete">✕</button></div>';
+    }).join('');
+  }
+  function renderBaby(rows){
+    var el=document.getElementById('babyList');
+    if(!rows.length){ el.innerHTML='<div class="empty">Checklist is empty — add items below.</div>'; return; }
+    var cats=[], byCat={};
+    rows.forEach(function(r){ var c=r.category||'General'; if(!byCat[c]){byCat[c]=[];cats.push(c);} byCat[c].push(r); });
+    el.innerHTML = cats.map(function(c){
+      var items = byCat[c].map(function(r){
+        return '<div class="item'+(r.done?' done':'')+'"><input type="checkbox" data-kind="baby" data-id="'+r.id+'" '+(r.done?'checked':'')+'>'+
+          '<div class="txt"><div>'+esc(r.item)+'</div></div>'+
+          '<button class="del" data-kind="baby" data-id="'+r.id+'" aria-label="Delete">✕</button></div>';
+      }).join('');
+      return '<div class="grp">'+esc(c)+'</div>'+items;
+    }).join('');
+  }
+  async function loadPhotos(){
+    var grid=document.getElementById('photoGrid');
+    var res = await sb.storage.from('household-photos').list('', {limit:60, sortBy:{column:'created_at', order:'desc'}});
+    if(res.error){ grid.innerHTML='<div class="empty">Photos could not load.</div>'; return; }
+    var files=(res.data||[]).filter(function(f){return f.name && !f.name.startsWith('.')});
+    if(!files.length){ grid.innerHTML='<div class="empty" style="grid-column:1/-1">No photos yet — upload the first Moose pic below 🐶</div>'; return; }
+    var html='';
+    for(var i=0;i<files.length;i++){
+      var s = await sb.storage.from('household-photos').createSignedUrl(files[i].name, 3600);
+      if(s.data && s.data.signedUrl) html += '<div class="ph"><img src="'+esc(s.data.signedUrl)+'" alt="Family photo"><button class="del" data-kind="photo" data-name="'+esc(files[i].name)+'" aria-label="Delete photo">✕</button></div>';
+    }
+    grid.innerHTML = html || '<div class="empty" style="grid-column:1/-1">No photos yet.</div>';
+  }
+  async function loadAll(){
+    var shop = await sb.from('shopping_items').select('*').order('created_at',{ascending:true});
+    var todo = await sb.from('todos').select('*').order('created_at',{ascending:true});
+    var ev = await sb.from('events').select('*').gte('starts_at', new Date(Date.now()-86400000).toISOString()).order('starts_at',{ascending:true}).limit(30);
+    var baby = await sb.from('baby_items').select('*').order('created_at',{ascending:true});
+    document.getElementById('shopList').innerHTML = shop.data && shop.data.length ? shop.data.map(function(r){return rowHtml(r,'shop')}).join('') : '<div class="empty">List is empty — add what you need below.</div>';
+    document.getElementById('todoList').innerHTML = todo.data && todo.data.length ? todo.data.map(function(r){return rowHtml(r,'todo')}).join('') : '<div class="empty">No to-dos right now.</div>';
+    renderDbEvents(ev.data || []);
+    renderBaby(baby.data || []);
+    loadPhotos();
+    loadContent();
+  }
+  function showApp(user){
+    document.getElementById('loginView').hidden = true;
+    document.getElementById('appView').hidden = false;
+    document.getElementById('whoami').textContent = user ? user.email : '';
+    document.getElementById('acctEmail').textContent = user ? user.email : '';
+    loadAll();
+  }
+  function showLogin(){
+    document.getElementById('appView').hidden = true;
+    document.getElementById('loginView').hidden = false;
+  }
+  function loginMsg(text, isErr){
+    var m=document.getElementById('loginMsg'); m.textContent=text||''; m.className='msg'+(isErr?' err':'');
+  }
+  document.getElementById('signInBtn').addEventListener('click', async function(){
+    loginMsg('Signing in…');
+    var res = await sb.auth.signInWithPassword({email:document.getElementById('email').value.trim(), password:document.getElementById('password').value});
+    if(res.error){ loginMsg(res.error.message, true); }
+  });
+  document.getElementById('magicBtn').addEventListener('click', async function(){
+    var email=document.getElementById('email').value.trim();
+    if(!email){ loginMsg('Type your email first, then tap this button.', true); return; }
+    loginMsg('Sending your sign-in link…');
+    var res = await sb.auth.signInWithOtp({email:email, options:{emailRedirectTo: window.location.href}});
+    if(res.error){ loginMsg(res.error.message, true); } else { loginMsg('Link sent — check your email and tap it on this phone.'); }
+  });
+  document.getElementById('signOutBtn').addEventListener('click', async function(){ await sb.auth.signOut(); });
+  document.getElementById('refreshBtn').addEventListener('click', loadAll);
+  document.getElementById('pwForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var pw=document.getElementById('newPw').value;
+    var msg=document.getElementById('pwMsg');
+    if(pw.length<6){ msg.textContent='Password needs at least 6 characters.'; return; }
+    var res = await sb.auth.updateUser({password:pw});
+    msg.textContent = res.error ? res.error.message : 'Password saved. Use it on the sign-in page from now on.';
+    if(!res.error) e.target.reset();
+  });
+  document.getElementById('shopForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var item=document.getElementById('shopItem').value.trim(); if(!item)return;
+    await sb.from('shopping_items').insert({item:item, qty:document.getElementById('shopQty').value.trim(), store:document.getElementById('shopStore').value.trim()});
+    e.target.reset(); loadAll();
+  });
+  document.getElementById('todoForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var task=document.getElementById('todoTask').value.trim(); if(!task)return;
+    await sb.from('todos').insert({task:task, owner:document.getElementById('todoOwner').value.trim(), due:document.getElementById('todoDue').value.trim()});
+    e.target.reset(); loadAll();
+  });
+  document.getElementById('eventForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var title=document.getElementById('evTitle').value.trim(); var when=document.getElementById('evWhen').value;
+    if(!title||!when)return;
+    await sb.from('events').insert({title:title, starts_at:new Date(when).toISOString()});
+    e.target.reset(); loadAll();
+  });
+  document.getElementById('babyForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var item=document.getElementById('babyItem').value.trim(); if(!item)return;
+    await sb.from('baby_items').insert({item:item, category:document.getElementById('babyCat').value.trim() || 'General'});
+    e.target.reset(); loadAll();
+  });
+  document.getElementById('photoForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var input=document.getElementById('photoFile');
+    var msg=document.getElementById('photoMsg');
+    if(!input.files.length){ msg.textContent='Pick at least one photo first.'; return; }
+    msg.textContent='Uploading…';
+    var failed=0;
+    for(var i=0;i<input.files.length;i++){
+      var f=input.files[i];
+      var name=Date.now()+'-'+f.name.replace(/[^a-zA-Z0-9._-]/g,'_');
+      var up=await sb.storage.from('household-photos').upload(name, f, {cacheControl:'3600', upsert:false});
+      if(up.error) failed++;
+    }
+    msg.textContent = failed ? (failed+' photo(s) could not upload — check the file type and try again.') : 'Uploaded ✓';
+    input.value='';
+    loadPhotos();
+  });
+  document.addEventListener('change', async function(e){
+    var t=e.target; if(t.type!=='checkbox')return;
+    var conf={shop:['shopping_items','got_it'],todo:['todos','done'],baby:['baby_items','done']}[t.dataset.kind];
+    if(!conf)return;
+    var upd={}; upd[conf[1]]=t.checked;
+    await sb.from(conf[0]).update(upd).eq('id', t.dataset.id); loadAll();
+  });
+  document.addEventListener('click', async function(e){
+    var t=e.target; if(!t.classList || !t.classList.contains('del'))return;
+    if(t.dataset.kind==='photo'){
+      await sb.storage.from('household-photos').remove([t.dataset.name]); loadPhotos(); return;
+    }
+    var table={shop:'shopping_items',todo:'todos',event:'events',baby:'baby_items'}[t.dataset.kind];
+    if(table){ await sb.from(table).delete().eq('id', t.dataset.id); loadAll(); }
+  });
+  sb.auth.onAuthStateChange(function(event, session){
+    if(session && session.user){ showApp(session.user); } else { showLogin(); }
+  });
+  (async function(){
+    var res = await sb.auth.getSession();
+    if(res.data.session){ showApp(res.data.session.user); } else { showLogin(); }
+  })();
 </script>
 </body>
 </html>
