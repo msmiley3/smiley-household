@@ -285,6 +285,18 @@
     .grid{gap:10px}
     .uval{font-size:11.5px}
   }
+
+  /* ---------- Polish 2026-10-18 (Linear): focus states + tab-bar ---------- */
+  :focus-visible{outline:2px solid #8f9bf0;outline-offset:2px;border-radius:6px}
+  form.add input:focus-visible,#noteText:focus-visible,.loginbox input:focus-visible{outline:none}
+  .tab{transition:color .15s ease,transform .1s ease}
+  .tab:active{transform:scale(.94)}
+  .tab.active::after{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:22px;height:2px;border-radius:0 0 3px 3px;background:var(--accent)}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .ticker .track{animation-duration:180s}
+    *,*::before,*::after{transition-duration:.01ms!important}
+  }
 </style>
 </head>
 <body>
