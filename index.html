@@ -348,6 +348,13 @@
   .babylab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#9aa5f0;margin-bottom:3px}
   .babytext{font-size:14px;line-height:1.55}
   .newsimg{width:100%;height:auto;max-height:230px;object-fit:cover;border-radius:10px;display:block;margin:0 0 10px;background:var(--surface2)}
+  .wrow{display:flex;gap:11px;padding:10px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--text)}
+  .wrow:first-child{border-top:none;padding-top:2px}
+  .wthumb{width:118px;height:66px;object-fit:cover;border-radius:9px;flex:none;background:var(--surface2);display:block}
+  .wthumbx{width:118px;height:66px;border-radius:9px;flex:none;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:22px}
+  .wtxt{min-width:0}
+  .wt{font-weight:600;font-size:14px;line-height:1.35}
+  .wwhy{font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.45}
 </style>
 </head>
 <body>
@@ -501,6 +508,11 @@
         <section class="card span2" id="s-events">
           <div class="cardhead"><h2>🎃 This Week Around Us</h2><span class="sub" id="eventsRange"></span></div>
           <div id="eventsWrap"><div class="empty">Loading events…</div></div>
+        </section>
+
+        <section class="card span2" id="s-watch">
+          <div class="cardhead"><h2>📺 Watch &amp; Listen</h2><span class="sub" id="watchDate">Today's picks</span></div>
+          <div id="watchWrap"><div class="empty">First picks land tomorrow morning.</div></div>
         </section>
 
         <section class="card span2" id="s-news">
@@ -738,6 +750,15 @@
         var rows=c.items.map(function(x){return '<details class="flat inner"><summary>'+esc(x.title)+'<span class="chev">▾</span></summary><div class="body">'+(x.img?'<img class="newsimg" src="'+esc(x.img)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':'')+(x.summary||'').split(/\n\n+/).map(function(p){return '<p class="sump">'+esc(p)+'</p>';}).join('')+' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">Read at '+esc(x.source)+' ›</a></div></details>'}).join('');
         return '<div class="grp">'+esc(c.name)+'</div>'+rows;
       }).join('');
+    }
+    if(CONTENT.watch){
+      document.getElementById('watchDate').textContent = CONTENT.watch.date ? 'Picks for ' + CONTENT.watch.date : "Today's picks";
+      document.getElementById('watchWrap').innerHTML = (CONTENT.watch.items || []).map(function(w){
+        var m = /[?&]v=([\w-]{6,})/.exec(w.url || '') || /youtu\.be\/([\w-]{6,})/.exec(w.url || '');
+        var thumb = m ? '<img class="wthumb" src="https://i.ytimg.com/vi/' + m[1] + '/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display=\'none\'">' : '<div class="wthumbx">🎧</div>';
+        var meta = esc(w.channel || '') + (w.dur ? ' · ' + esc(w.dur) : '');
+        return '<a class="wrow" href="' + esc(w.url || '#') + '" target="_blank" rel="noopener">' + thumb + '<div class="wtxt"><div class="wt">' + esc(w.title || '') + '</div><div class="meta">' + meta + '</div>' + (w.why ? '<div class="wwhy">' + esc(w.why) + '</div>' : '') + '</div></a>';
+      }).join('') || '<div class="empty">No picks today.</div>';
     }
     buildTicker();
   }
@@ -1343,7 +1364,7 @@
     if(n > 0){ b.textContent = n > 99 ? '99' : String(n); b.hidden = false; }
     else b.hidden = true;
   }
-  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-babyfun':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'discover','s-news':'news','s-photos':'photos'};
+  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-babyfun':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'discover','s-watch':'discover','s-news':'news','s-photos':'photos'};
   var currentView = 'home';
   function switchView(v){
     if(!v) return;
