@@ -1,13 +1,25 @@
 # Smiley Family — Household Hub
 
-A dark, phone-first household front door for Mike and Kelly.
+A dark, phone-first household app for Mike and Kelly, hosted on GitHub Pages.
+**Sign-in required** — only Mike's and Kelly's invited accounts can get in.
 
-- **Shopping List / To-Dos:** buttons into the shared Google Sheet "Household Board — Smiley Family" (shared only with Mike and Kelly in Google — the data is not in this repo).
-- **Family Calendar:** link to the shared "Smiley Family" Google Calendar.
-- **News:** Cleveland.com, Fox 8, WKYC, City of Solon.
-- **Deals:** Meijer weekly ad and mPerks / Meijer home.
+## What's inside (all on one page, behind the login)
+- **Live ticker** — Solon weather, AQI/pollen, UV, sunrise/sunset, alerts + sports/deal/headline extras
+- **Shopping List & To-Dos** — real, editable, shared between Mike and Kelly (private database)
+- **Family Calendar** — upcoming events, add right on the page
+- **Deals** — Meijer, Giant Eagle Market District, Heinen's, Miles Farmers Market (tap a store to expand)
+- **Recipe ideas** — built from that week's ads, pregnancy-friendly
+- **This Week Around Us** — Solon / Chagrin Falls / Cleveland events
+- **Daily Headlines** — world, politics, tech, U.S., Cleveland & Ohio (tap to expand)
+- **Baby Checklist** — shared check-off list with starter items
+- **Photos** — private Moose & family photo grid with uploads (login-only storage)
 
-## Status
-App is built and ready to push. Publishing is on hold pending:
-1. Mike's choice: public GitHub Pages vs. a private hosting option.
-2. A repo the Muse GitHub App can write to — `create_repository` returned 403 "Resource not accessible by integration" on 2026-10-18, so a blank repo may need to be created in the GitHub web UI and selected for the Muse app first.
+## How it works
+- This repo holds the page (`index.html`) and curated content (`content.json`).
+- Accounts and private data live in a Supabase project (free tier) created 2026-10-18:
+  tables `shopping_items`, `todos`, `events`, `baby_items` with row-level security
+  (authenticated users only), plus the private `household-photos` storage bucket.
+- The Google Sheet "Household Board — Smiley Family" and the "Smiley Family" Google
+  Calendar remain in place as a backup; the app no longer depends on them.
+
+Content (`content.json`) is refreshed by Muse: headlines daily, deals/recipes/events weekly.
