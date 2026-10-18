@@ -372,6 +372,8 @@
   .item.gracing .txt{text-decoration:line-through}
   button.del.undobtn{width:auto;min-width:52px;padding:0 8px;font-size:11px;font-weight:700;color:#ffb3ab;border-color:rgba(255,150,140,.4)}
   .pwrap.gracing{opacity:.4}
+  #tickerTrack.paused{animation-play-state:paused}
+  .ticker{cursor:pointer}
 </style>
 </head>
 <body>
@@ -1730,17 +1732,46 @@ document.addEventListener('click', function(e){
   if(!row) return;
   row.dataset.grace = '1'; row.classList.add('gracing');
   b.classList.add('undobtn'); b.textContent = 'Undo?';
-  b._graceTimer = setTimeout(async function(){
+  b._graceTimer = setTimeout(function(){
     row.classList.remove('gracing'); if(row.dataset) delete row.dataset.grace;
     b.classList.remove('undobtn'); b.textContent = '✕';
     if(document.contains(b)){ _graceBypass = true; b.click(); _graceBypass = false; }
     else {
-      var table = {shop: 'shopping_items', todo: 'todos', event: 'events', baby: 'baby_items', note: 'notes'}[b.dataset.kind];
-      if(b.dataset.kind === 'photo'){ await sb.storage.from('household-photos').remove([b.dataset.name]); loadPhotos(); }
-      else if(table){ await sb.from(table).delete().eq('id', b.dataset.id); loadAll(); }
+      // The row re-rendered mid-grace (e.g. a sync from the other phone): hand the
+      // grace to the row's current delete button instead of deleting out from under the user.
+      var sel = b.dataset.kind === 'photo'
+        ? 'button.del[data-kind="photo"][data-name="' + b.dataset.name + '"]'
+        : 'button.del[data-kind="' + b.dataset.kind + '"][data-id="' + b.dataset.id + '"]';
+      var nb = document.querySelector(sel);
+      if(nb && nb !== b) nb.click();
+      // If no current button exists, the item is already gone — nothing to do.
     }
-  }, 4500);
+  }, 6000);
 }, true);
+</script>
+<script>
+(function(){
+  var ORDER = ['home', 'lists', 'calendar', 'news', 'discover', 'photos'];
+  var sx = 0, sy = 0, tracking = false;
+  document.addEventListener('touchstart', function(e){
+    if(e.touches.length !== 1) return;
+    var t = e.target;
+    if(t.closest && (t.closest('#evModal') || t.closest('input') || t.closest('textarea') || t.closest('select') || t.closest('#slideshow'))) return;
+    sx = e.touches[0].clientX; sy = e.touches[0].clientY; tracking = true;
+  }, {passive: true});
+  document.addEventListener('touchend', function(e){
+    if(!tracking) return; tracking = false;
+    var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+    if(Math.abs(dx) < 64 || Math.abs(dy) > Math.abs(dx) * 0.6) return;
+    var cur = (location.hash || '#/home').replace('#/', '');
+    var i = ORDER.indexOf(cur); if(i < 0) return;
+    var n = dx < 0 ? i + 1 : i - 1;
+    if(n < 0 || n >= ORDER.length) return;
+    switchView(ORDER[n]);
+  }, {passive: true});
+  var tk = document.querySelector('.ticker');
+  if(tk) tk.addEventListener('click', function(){ var tr = document.getElementById('tickerTrack'); if(tr) tr.classList.toggle('paused'); });
+})();
 </script>
 </body>
 </html>
