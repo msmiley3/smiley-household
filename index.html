@@ -374,6 +374,10 @@
   .pwrap.gracing{opacity:.4}
   #tickerTrack.paused{animation-play-state:paused}
   .ticker{cursor:pointer}
+  section{scroll-margin-top:118px}
+  .jumpbar{display:flex;gap:6px;flex-wrap:wrap}
+  .jchip{padding:6px 12px;border-radius:999px;border:1px solid var(--line2);background:var(--surface);color:var(--muted);font-size:12.5px;font-weight:600;cursor:pointer}
+  .jchip:active{transform:scale(.96);border-color:var(--accent);color:#c6ccff}
 </style>
 </head>
 <body>
@@ -416,6 +420,15 @@
     </div>
 
     <div class="wrap">
+      <section class="jumpbar span2" id="s-jump">
+        <button class="jchip" type="button" data-jump="s-notes">📝 Note</button>
+        <button class="jchip" type="button" data-jump="s-daily">☀️ Today's Brief</button>
+        <button class="jchip" type="button" data-jump="s-brief">✨ Week Ahead</button>
+        <button class="jchip" type="button" data-jump="s-babyfun">👶 Baby Corner</button>
+        <button class="jchip" type="button" data-jump="s-events">🎃 Around Us</button>
+        <button class="jchip" type="button" data-jump="s-usage">☁️ Status</button>
+      </section>
+
       <section id="s-top-photos" hidden>
         <div class="topshow" id="topShow" title="Tap for fullscreen slideshow">
           <div class="tsbg" id="topBg"></div>
@@ -1388,7 +1401,7 @@
     if(n > 0){ b.textContent = n > 99 ? '99' : String(n); b.hidden = false; }
     else b.hidden = true;
   }
-  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-babyfun':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'home','s-watch':'discover','s-news':'news','s-photos':'photos'};
+  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-jump':'home','s-babyfun':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'home','s-watch':'discover','s-news':'news','s-photos':'photos'};
   var currentView = 'home';
   function switchView(v){
     if(!v) return;
@@ -1715,38 +1728,58 @@ document.addEventListener('click', async function(e){
 function setGreet(){ var h = new Date().getHours(); var g = h < 5 ? 'Up late' : h < 12 ? 'Good morning' : h < 18 ? 'Good afternoon' : 'Good evening'; var el = document.getElementById('greetLine'); if(el) el.textContent = '· ' + g; }
 setGreet(); setInterval(setGreet, 60000);
 var _graceBypass = false;
+var _pendDel = null;
+function _undoToastEl(){
+  var t = document.getElementById('undoToast');
+  if(!t){
+    t = document.createElement('div'); t.id = 'undoToast';
+    t.setAttribute('style', 'position:fixed;left:50%;bottom:86px;transform:translateX(-50%);z-index:300;background:rgba(18,20,26,.96);border:1px solid rgba(255,255,255,.16);color:#fff;padding:9px 10px 9px 15px;border-radius:999px;display:none;gap:10px;align-items:center;font-size:13px;box-shadow:0 10px 30px rgba(0,0,0,.5)');
+    t.innerHTML = '<span>Item removed</span><button type="button" id="undoToastBtn" style="background:#5e6ad2;border:0;color:#fff;font-weight:700;border-radius:999px;padding:5px 13px;cursor:pointer;font-size:13px">Undo</button>';
+    document.body.appendChild(t);
+    t.querySelector('#undoToastBtn').addEventListener('click', function(){ _restorePend(); });
+  }
+  return t;
+}
+function _restorePend(){
+  var p = _pendDel; if(!p) return;
+  _pendDel = null;
+  clearTimeout(p.timer);
+  p.row.classList.remove('gracing');
+  p.b.classList.remove('undobtn'); p.b.textContent = '✕';
+  var t = document.getElementById('undoToast'); if(t) t.style.display = 'none';
+}
+function _finishPend(){
+  var p = _pendDel; if(!p) return;
+  _pendDel = null;
+  var t = document.getElementById('undoToast'); if(t) t.style.display = 'none';
+  var b = p.b;
+  p.row.classList.remove('gracing');
+  b.classList.remove('undobtn'); b.textContent = '✕';
+  if(document.contains(b)){ _graceBypass = true; b.click(); _graceBypass = false; }
+  else {
+    // The row re-rendered mid-grace (e.g. a sync from the other phone): hand the grace
+    // to the row's current delete button instead of deleting out from under the user.
+    var sel = b.dataset.kind === 'photo'
+      ? 'button.del[data-kind="photo"][data-name="' + b.dataset.name + '"]'
+      : 'button.del[data-kind="' + b.dataset.kind + '"][data-id="' + b.dataset.id + '"]';
+    var nb = document.querySelector(sel);
+    if(nb && nb !== b) nb.click();
+    // If no current button exists, the item is already gone — nothing to do.
+  }
+}
 document.addEventListener('click', function(e){
   if(_graceBypass) return;
   var b = e.target.closest ? e.target.closest('button.del') : null;
   if(!b) return;
-  var row = b.closest('.item') || b.closest('.pwrap') || b.parentElement;
-  if(row && row.dataset && row.dataset.grace){
-    // second tap = undo
-    e.stopPropagation(); e.preventDefault();
-    clearTimeout(b._graceTimer);
-    delete row.dataset.grace; row.classList.remove('gracing');
-    b.classList.remove('undobtn'); b.textContent = '✕';
-    return;
-  }
+  if(_pendDel && _pendDel.b === b){ e.stopPropagation(); e.preventDefault(); _restorePend(); return; }
   e.stopPropagation(); e.preventDefault();
+  if(_pendDel) _finishPend();
+  var row = b.closest('.item') || b.closest('.pwrap') || b.parentElement;
   if(!row) return;
-  row.dataset.grace = '1'; row.classList.add('gracing');
+  row.classList.add('gracing');
   b.classList.add('undobtn'); b.textContent = 'Undo?';
-  b._graceTimer = setTimeout(function(){
-    row.classList.remove('gracing'); if(row.dataset) delete row.dataset.grace;
-    b.classList.remove('undobtn'); b.textContent = '✕';
-    if(document.contains(b)){ _graceBypass = true; b.click(); _graceBypass = false; }
-    else {
-      // The row re-rendered mid-grace (e.g. a sync from the other phone): hand the
-      // grace to the row's current delete button instead of deleting out from under the user.
-      var sel = b.dataset.kind === 'photo'
-        ? 'button.del[data-kind="photo"][data-name="' + b.dataset.name + '"]'
-        : 'button.del[data-kind="' + b.dataset.kind + '"][data-id="' + b.dataset.id + '"]';
-      var nb = document.querySelector(sel);
-      if(nb && nb !== b) nb.click();
-      // If no current button exists, the item is already gone — nothing to do.
-    }
-  }, 6000);
+  var toast = _undoToastEl(); toast.style.display = 'flex';
+  _pendDel = { b: b, row: row, timer: setTimeout(_finishPend, 8000) };
 }, true);
 </script>
 <script>
@@ -1772,6 +1805,14 @@ document.addEventListener('click', function(e){
   var tk = document.querySelector('.ticker');
   if(tk) tk.addEventListener('click', function(){ var tr = document.getElementById('tickerTrack'); if(tr) tr.classList.toggle('paused'); });
 })();
+</script>
+<script>
+document.addEventListener('click', function(e){
+  var j = e.target.closest ? e.target.closest('[data-jump]') : null;
+  if(!j) return;
+  var el = document.getElementById(j.getAttribute('data-jump'));
+  if(el) el.scrollIntoView({behavior: 'smooth', block: 'start'});
+});
 </script>
 </body>
 </html>
