@@ -199,6 +199,7 @@
   #tabbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;background:rgba(12,13,17,.93);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:5px 2px calc(5px + env(safe-area-inset-bottom))}
   .tab{flex:1;background:none;border:none;color:var(--faint);font-size:19px;display:flex;flex-direction:column;align-items:center;gap:0;padding:4px 0 2px;cursor:pointer;font-family:inherit;position:relative;line-height:1.25}
   .tab span{font-size:10.5px;font-weight:600;letter-spacing:.02em}
+  .tab .tabimg{width:24px;height:24px;border-radius:50%;object-fit:cover;display:block;border:1.5px solid rgba(255,255,255,.35)}
   .tab.active{color:#aab4ff}
   .tbadge{position:absolute;top:0;left:calc(50% + 3px);background:var(--accent);color:#fff;font-size:10px;font-weight:700;min-width:17px;height:17px;border-radius:999px;display:flex;align-items:center;justify-content:center;padding:0 4px}
   /* ---------- Login ---------- */
@@ -861,6 +862,15 @@
     });
     grid.innerHTML = html;
     setBadge('badgePhotos', (window._photoUrls || []).length);
+    var _tb = document.querySelector('#tabbar [data-view="photos"]');
+    if(_tb && window._photoUrls && window._photoUrls.length){
+      var _pick = null;
+      for(var _pi = 0; _pi < window._photoUrls.length; _pi++){ if(window._photoUrls[_pi].area === 'moose'){ _pick = window._photoUrls[_pi]; break; } }
+      if(!_pick) _pick = window._photoUrls[0];
+      var _im = document.createElement('img');
+      _im.src = _pick.url; _im.alt = 'Moose'; _im.className = 'tabimg';
+      if(_tb.firstChild) _tb.replaceChild(_im, _tb.firstChild);
+    }
     startTopShow();
   }
   /* ---------- Top auto slideshow banner ---------- */
