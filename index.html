@@ -93,6 +93,15 @@
   details.inner{background:var(--surface2)}
   details.inner summary{font-size:13.5px;font-weight:550;padding:9px 11px}
   details.inner .body{padding:0 11px 10px;color:var(--muted);font-size:13px;line-height:1.5}
+  /* ---------- Flat accordion rows (lower sections — one panel, hairline rows) ---------- */
+  details.flat{background:transparent;border:none;border-radius:0;border-bottom:1px solid var(--line)}
+  details.flat:last-child{border-bottom:none}
+  details.flat summary{padding:8px 0;font-size:13.5px;font-weight:600}
+  details.flat .body{padding:0 0 10px}
+  details.flat.inner summary{font-size:13px;font-weight:500;padding:7px 0;color:var(--text)}
+  details.flat.inner .body{padding:0 0 9px;color:var(--muted);font-size:13px;line-height:1.5}
+  summary .rhs{display:flex;gap:8px;align-items:center;flex:none}
+  summary .cnt{color:var(--faint);font-size:11.5px;font-weight:500}
   .deal{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid var(--line);font-size:13.5px}
   .deal:last-child{border-bottom:none}
   .deal .price{font-weight:650;color:var(--green);white-space:nowrap;font-variant-numeric:tabular-nums}
@@ -239,23 +248,23 @@
           <div class="meals" id="mealGrid"><div class="empty">Loading dinners…</div></div>
         </section>
 
-        <section class="span2" id="s-deals">
-          <div class="ghead"><h2>🏷️ Deals This Week</h2><span class="sub" id="dealsRange"></span></div>
-          <div class="subgrid" id="dealsWrap"><div class="empty">Loading deals…</div></div>
+        <section class="card span2" id="s-deals">
+          <div class="cardhead"><h2>🏷️ Deals This Week</h2><span class="sub" id="dealsRange"></span></div>
+          <div id="dealsWrap"><div class="empty">Loading deals…</div></div>
         </section>
 
-        <section class="span2" id="s-recipes">
-          <div class="ghead"><h2>🍽️ Recipe Ideas From the Ads</h2></div>
-          <div class="subgrid" id="recipesWrap"><div class="empty">Loading recipes…</div></div>
+        <section class="card span2" id="s-recipes">
+          <div class="cardhead"><h2>🍽️ Recipe Ideas From the Ads</h2></div>
+          <div id="recipesWrap"><div class="empty">Loading recipes…</div></div>
         </section>
 
-        <section class="span2" id="s-events">
-          <div class="ghead"><h2>🎃 This Week Around Us</h2><span class="sub" id="eventsRange"></span></div>
-          <div class="subgrid" id="eventsWrap"><div class="empty">Loading events…</div></div>
+        <section class="card span2" id="s-events">
+          <div class="cardhead"><h2>🎃 This Week Around Us</h2><span class="sub" id="eventsRange"></span></div>
+          <div id="eventsWrap"><div class="empty">Loading events…</div></div>
         </section>
 
-        <section class="span2" id="s-news">
-          <div class="ghead"><h2>🗞️ Daily Headlines</h2><span class="sub" id="headlinesDate"></span></div>
+        <section class="card span2" id="s-news">
+          <div class="cardhead"><h2>🗞️ Daily Headlines</h2><span class="sub" id="headlinesDate"></span></div>
           <div id="headlinesWrap"><div class="empty">Loading headlines…</div></div>
         </section>
 
@@ -407,26 +416,26 @@
       document.getElementById('dealsRange').textContent = CONTENT.deals.range||"";
       document.getElementById('dealsWrap').innerHTML = CONTENT.deals.stores.map(function(s){
         var rows=s.items.map(function(x){return '<div class="deal"><div>'+esc(x[0])+(x[2]?' <span class="tag">· '+esc(x[2])+'</span>':'')+'</div><div class="price">'+esc(x[1])+'</div></div>'}).join('');
-        return '<details><summary>'+esc(s.name)+'<span class="chev">▾</span></summary><div class="body"><div class="src">'+esc(s.note||"")+'</div>'+rows+'<div style="margin-top:8px"><a href="'+esc(s.link)+'" target="_blank" rel="noopener">Open the full ad ›</a></div></div></details>';
+        return '<details class="flat"><summary>'+esc(s.name)+'<span class="rhs"><span class="cnt">'+s.items.length+' deals</span><span class="chev">▾</span></span></summary><div class="body"><div class="src">'+esc(s.note||"")+'</div>'+rows+'<div style="margin-top:8px"><a href="'+esc(s.link)+'" target="_blank" rel="noopener">Open the full ad ›</a></div></div></details>';
       }).join('');
     }
     if(CONTENT.recipes){
       document.getElementById('recipesWrap').innerHTML = CONTENT.recipes.map(function(r){
-        return '<details><summary>'+esc(r.name)+'<span class="chev">▾</span></summary><div class="body"><div class="src">'+esc(r.basedOn)+'</div><div style="margin-top:5px;color:var(--muted);font-size:13.5px">'+esc(r.blurb)+'</div></div></details>';
+        return '<details class="flat"><summary>'+esc(r.name)+'<span class="chev">▾</span></summary><div class="body"><div class="src">'+esc(r.basedOn)+'</div><div style="margin-top:5px;color:var(--muted);font-size:13.5px">'+esc(r.blurb)+'</div></div></details>';
       }).join('');
     }
     if(CONTENT.events){
       document.getElementById('eventsRange').textContent = CONTENT.events.range||"";
       document.getElementById('eventsWrap').innerHTML = CONTENT.events.areas.map(function(a){
         var rows=a.items.map(function(x){return '<div class="item"><div class="txt"><div class="ev-when">'+esc(x.when)+'</div><div>'+esc(x.title)+'</div><div class="meta">'+esc(x.where)+'</div></div><a href="'+esc(x.link)+'" target="_blank" rel="noopener" style="text-decoration:none;font-size:18px">›</a></div>'}).join('');
-        return '<details><summary>'+esc(a.name)+'<span class="chev">▾</span></summary><div class="body">'+rows+'</div></details>';
+        return '<details class="flat"><summary>'+esc(a.name)+'<span class="rhs"><span class="cnt">'+a.items.length+' events</span><span class="chev">▾</span></span></summary><div class="body">'+rows+'</div></details>';
       }).join('');
     }
     if(CONTENT.headlines){
       document.getElementById('headlinesDate').textContent = CONTENT.headlines.date||"";
       document.getElementById('headlinesWrap').innerHTML = CONTENT.headlines.cats.map(function(c){
-        var rows=c.items.map(function(x){return '<details class="inner"><summary>'+esc(x.title)+'<span class="chev">▾</span></summary><div class="body">'+esc(x.summary)+' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">Read at '+esc(x.source)+' ›</a></div></details>'}).join('');
-        return '<details style="margin-bottom:8px"><summary>'+esc(c.name)+'<span class="chev">▾</span></summary><div class="body"><div class="subgrid">'+rows+'</div></div></details>';
+        var rows=c.items.map(function(x){return '<details class="flat inner"><summary>'+esc(x.title)+'<span class="chev">▾</span></summary><div class="body">'+esc(x.summary)+' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">Read at '+esc(x.source)+' ›</a></div></details>'}).join('');
+        return '<div class="grp">'+esc(c.name)+'</div>'+rows;
       }).join('');
     }
     buildTicker();
