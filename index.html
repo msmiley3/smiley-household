@@ -85,6 +85,7 @@
       <input id="password" type="password" autocomplete="current-password" placeholder="Your password">
       <button id="signInBtn">Sign in</button>
       <button id="magicBtn" class="ghost">Email me a sign-in link instead</button>
+      <button id="previewBtn" class="ghost">Just looking? Preview the app</button>
       <div class="msg" id="loginMsg"></div>
       <p class="sub" style="margin-top:16px;font-size:13px">First time? Open the invite email from Supabase and tap its link — it signs you straight in, then you can set a password under Account at the bottom. On your own phone you stay signed in after that.</p>
     </div>
@@ -271,6 +272,15 @@
 </script>
 <script>
   /* ---------- Private data (Supabase) ---------- */
+  var previewMode = false;
+  function lockPanels(){
+    var note = '<div class="empty">🔒 Sign in to see and edit this — it stays private to you and Kelly.</div>';
+    document.getElementById('shopList').innerHTML = note;
+    document.getElementById('todoList').innerHTML = note;
+    document.getElementById('eventList').innerHTML = note;
+    document.getElementById('babyList').innerHTML = note;
+    document.getElementById('photoGrid').innerHTML = '<div class="empty" style="grid-column:1/-1">🔒 Sign in to see Moose &amp; family photos.</div>';
+  }
   function rowHtml(r, kind){
     var main = kind==='shop' ? r.item : r.task;
     var meta = [];
@@ -319,6 +329,7 @@
     grid.innerHTML = html || '<div class="empty" style="grid-column:1/-1">No photos yet.</div>';
   }
   async function loadAll(){
+    if(previewMode){ lockPanels(); loadContent(); return; }
     var shop = await sb.from('shopping_items').select('*').order('created_at',{ascending:true});
     var todo = await sb.from('todos').select('*').order('created_at',{ascending:true});
     var ev = await sb.from('events').select('*').gte('starts_at', new Date(Date.now()-86400000).toISOString()).order('starts_at',{ascending:true}).limit(30);
@@ -356,7 +367,20 @@
     var res = await sb.auth.signInWithOtp({email:email, options:{emailRedirectTo: window.location.href}});
     if(res.error){ loginMsg(res.error.message, true); } else { loginMsg('Link sent — check your email and tap it on this phone.'); }
   });
-  document.getElementById('signOutBtn').addEventListener('click', async function(){ await sb.auth.signOut(); });
+  document.getElementById('previewBtn').addEventListener('click', function(){
+    previewMode = true;
+    document.getElementById('loginView').hidden = true;
+    document.getElementById('appView').hidden = false;
+    document.getElementById('whoami').textContent = 'Preview mode — deals, recipes, events & headlines are open; lists & photos need sign-in';
+    document.getElementById('signOutBtn').textContent = 'Sign in';
+    document.getElementById('acctEmail').textContent = '(preview — not signed in)';
+    loadAll();
+  });
+  document.getElementById('signOutBtn').addEventListener('click', async function(){
+    if(previewMode){ location.reload(); return; }
+    await sb.auth.signOut();
+  });
+  document.addEventListener('submit', function(e){ if(previewMode){ e.preventDefault(); e.stopImmediatePropagation(); lockPanels(); } }, true);
   document.getElementById('refreshBtn').addEventListener('click', loadAll);
   document.getElementById('pwForm').addEventListener('submit', async function(e){
     e.preventDefault();
@@ -410,6 +434,7 @@
     loadPhotos();
   });
   document.addEventListener('change', async function(e){
+    if(previewMode) return;
     var t=e.target; if(t.type!=='checkbox')return;
     var conf={shop:['shopping_items','got_it'],todo:['todos','done'],baby:['baby_items','done']}[t.dataset.kind];
     if(!conf)return;
@@ -417,6 +442,7 @@
     await sb.from(conf[0]).update(upd).eq('id', t.dataset.id); loadAll();
   });
   document.addEventListener('click', async function(e){
+    if(previewMode) return;
     var t=e.target; if(!t.classList || !t.classList.contains('del'))return;
     if(t.dataset.kind==='photo'){
       await sb.storage.from('household-photos').remove([t.dataset.name]); loadPhotos(); return;
