@@ -191,7 +191,7 @@
 <script>
   var SUPABASE_URL = "https://bwbujkkmqokjdwrelpvl.supabase.co";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ3YnVqa2ttcW9ramR3cmVscHZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzNDIyNjgsImV4cCI6MjEwNzkxODI2OH0.-i2GfZF8G-w2ZJ72D7Hj9_jphbazMpVulpgjiJDnFaw";
-  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {auth:{flowType:'implicit', detectSessionInUrl:true}});
   var CONTENT = null;
 
   function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
@@ -428,8 +428,18 @@
     if(session && session.user){ showApp(session.user); } else { showLogin(); }
   });
   (async function(){
+    var errText='';
+    try{
+      var fromHash = new URLSearchParams(window.location.hash.replace(/^#/, '')).get('error_description');
+      var fromQuery = new URLSearchParams(window.location.search).get('error_description');
+      errText = fromHash || fromQuery || '';
+    }catch(e){}
     var res = await sb.auth.getSession();
-    if(res.data.session){ showApp(res.data.session.user); } else { showLogin(); }
+    if(res.data.session){ showApp(res.data.session.user); }
+    else {
+      showLogin();
+      if(errText) loginMsg(errText.replace(/\+/g,' ') + ' — type your email above and tap "Email me a sign-in link instead" for a fresh one.', true);
+    }
   })();
 </script>
 </body>
