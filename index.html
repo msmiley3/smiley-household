@@ -100,6 +100,23 @@
   .ph .cap{position:absolute;left:0;right:0;bottom:0;padding:10px 6px 4px;font-size:10.5px;color:#fff;background:linear-gradient(180deg,transparent,rgba(0,0,0,.65))}
   .ph .del{position:absolute;top:2px;right:2px;background:rgba(0,0,0,.55);border-radius:6px;color:#fff;font-size:12px;padding:1px 7px}
   .meta{color:var(--faint);font-size:12px}
+  /* ---------- Person colors ---------- */
+  .who-pill{display:inline-block;padding:0 7px;border-radius:999px;font-size:11px;font-weight:650;line-height:1.7;vertical-align:1px}
+  .who-pill.mike{background:rgba(94,106,210,.22);color:#aab4ff;border:1px solid rgba(94,106,210,.5)}
+  .who-pill.kelly{background:rgba(224,122,158,.18);color:#f2b3c9;border:1px solid rgba(224,122,158,.45)}
+  .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:1px}
+  .dot.mike{background:#8f9bf0}.dot.kelly{background:#f0a6c0}
+  /* ---------- Meal plan strip ---------- */
+  .meals{display:grid;grid-template-columns:repeat(auto-fit,minmax(88px,1fr));gap:6px}
+  .meal{background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:7px 9px}
+  .meal .dow{font-size:10.5px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+  .meal .dish{font-size:12.5px;margin-top:2px;line-height:1.35}
+  .meal.today{border-color:var(--accent);background:var(--accent-soft)}
+  /* ---------- Slideshow ---------- */
+  #slideshow{position:fixed;inset:0;background:#000;z-index:200;display:flex;align-items:center;justify-content:center;cursor:pointer}
+  #slideshow img{max-width:100%;max-height:100%;object-fit:contain;transition:opacity .6s ease}
+  #slideshow .ss-cap{position:absolute;left:0;right:0;bottom:26px;text-align:center;color:#fff;font-size:14px;text-shadow:0 1px 8px rgba(0,0,0,.8)}
+  #slideshow .ss-hint{position:absolute;top:14px;right:16px;color:rgba(255,255,255,.75);font-size:12px;background:rgba(0,0,0,.45);padding:4px 10px;border-radius:999px}
   /* ---------- Login ---------- */
   .loginbox{max-width:400px;margin:9vh auto 0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px}
   .loginbox h1{text-align:center;font-size:20px;margin:0;letter-spacing:-.02em}
@@ -151,7 +168,7 @@
       </div>
       <div class="ticker"><span class="track" id="tickerTrack">Loading your ticker…</span></div>
       <nav class="navpills">
-        <a href="#s-brief">✨ Week</a><a href="#s-shop">🛒 Shopping</a><a href="#s-todo">✓ To-Dos</a><a href="#s-cal">📅 Calendar</a><a href="#s-deals">🏷️ Deals</a><a href="#s-recipes">🍽️ Recipes</a><a href="#s-events">🎃 This Week</a><a href="#s-news">🗞️ Headlines</a><a href="#s-baby">👶 Baby</a><a href="#s-photos">🐶 Photos</a>
+        <a href="#s-brief">✨ Week</a><a href="#s-shop">🛒 Shopping</a><a href="#s-todo">✓ To-Dos</a><a href="#s-cal">📅 Calendar</a><a href="#s-meals">🍽️ Dinners</a><a href="#s-deals">🏷️ Deals</a><a href="#s-recipes">🍽️ Recipes</a><a href="#s-events">🎃 This Week</a><a href="#s-news">🗞️ Headlines</a><a href="#s-baby">👶 Baby</a><a href="#s-photos">🐶 Photos</a>
       </nav>
     </div>
 
@@ -161,6 +178,7 @@
           <h2>✨ The Week Ahead — AI Brief</h2>
           <p id="briefText">Putting your week together…</p>
           <div class="chips" id="briefChips"></div>
+          <div class="chips" id="countChips" style="margin-top:6px"></div>
         </div>
       </section>
 
@@ -202,6 +220,11 @@
           </form>
         </section>
 
+        <section class="card span2" id="s-meals">
+          <div class="cardhead"><h2>🍽️ This Week's Dinners</h2><span class="sub">from the ads · refreshes Wednesdays</span></div>
+          <div class="meals" id="mealGrid"><div class="empty">Loading dinners…</div></div>
+        </section>
+
         <section class="span2" id="s-deals">
           <div class="ghead"><h2>🏷️ Deals This Week</h2><span class="sub" id="dealsRange"></span></div>
           <div class="subgrid" id="dealsWrap"><div class="empty">Loading deals…</div></div>
@@ -233,7 +256,7 @@
         </section>
 
         <section class="card" id="s-photos">
-          <div class="cardhead"><h2>🐶 Photos — Moose &amp; Family</h2></div>
+          <div class="cardhead"><h2>🐶 Photos — Moose &amp; Family</h2><button class="iconbtn" id="slideshowBtn" type="button">▶ Slideshow</button></div>
           <div class="photos" id="photoGrid"><div class="empty">Loading photos…</div></div>
           <form class="add" id="photoForm">
             <input id="photoFile" type="file" accept="image/*" multiple style="padding:6px">
@@ -254,6 +277,12 @@
           </div>
         </section>
       </main>
+
+      <div id="slideshow" hidden>
+        <img id="ssImg" alt="Slideshow photo">
+        <div class="ss-cap" id="ssCap"></div>
+        <div class="ss-hint">Tap anywhere to exit ✕</div>
+      </div>
 
       <footer>
         Smiley Family hub — Solon, OH. Ticker weather is live; headlines refresh each morning; deals, recipes and events refresh Wednesdays.
@@ -309,9 +338,29 @@
     document.getElementById('tickerTrack').textContent = items.join("   ✦   ");
   }
 
+  /* ---------- Countdowns ---------- */
+  function thanksgiving(year){ var d=new Date(year,10,1); var off=(4-d.getDay()+7)%7; return new Date(year,10,1+off+21); }
+  function daysUntil(d){ var now=new Date(); var a=new Date(now.getFullYear(),now.getMonth(),now.getDate()); var b=new Date(d.getFullYear(),d.getMonth(),d.getDate()); return Math.round((b-a)/86400000); }
+  function buildCountdowns(){
+    var el=document.getElementById('countChips'); if(!el) return;
+    var now=new Date(), y=now.getFullYear(), out=[];
+    var targets=[["🎃 Halloween", new Date(y,9,31)],["🦃 Thanksgiving", thanksgiving(y)],["🎄 Christmas", new Date(y,11,25)]];
+    targets.forEach(function(t){ var d=t[1]; if(daysUntil(d)<0) d=(t[0].indexOf('Thanksgiving')>-1)?thanksgiving(y+1):new Date(y+1,d.getMonth(),d.getDate()); var n=daysUntil(d); out.push(t[0]+(n===0?" · today!":" · "+n+"d")); });
+    if(CONTENT && CONTENT.babyDue){ var bd=new Date(CONTENT.babyDue+'T12:00:00'); var bn=daysUntil(bd); if(bn>=0) out.unshift("👶 Baby · "+(bn===0?"today!":bn+"d")); }
+    if(window._nextEv) out.push(window._nextEv);
+    el.innerHTML = out.map(function(c){return '<span class="chip">⏳ '+esc(c)+'</span>'}).join('');
+  }
+
   /* ---------- Content sections (brief / deals / recipes / events / headlines) ---------- */
   function renderContent(){
     if(!CONTENT) return;
+    if(CONTENT.mealPlan){
+      var todayName = new Date().toLocaleDateString('en-US',{weekday:'short'});
+      document.getElementById('mealGrid').innerHTML = CONTENT.mealPlan.map(function(d){
+        return '<div class="meal'+(d.day===todayName?' today':'')+'"><div class="dow">'+esc(d.day)+'</div><div class="dish">'+esc(d.meal)+'</div></div>';
+      }).join('');
+    }
+    buildCountdowns();
     if(CONTENT.weekBrief){
       document.getElementById('briefText').textContent = CONTENT.weekBrief.text || '';
       document.getElementById('briefChips').innerHTML = (CONTENT.weekBrief.chips||[]).map(function(c){return '<span class="chip">'+esc(c)+'</span>'}).join('');
@@ -354,9 +403,16 @@
   var previewMode = false;
   var person = '';
   try{ person = localStorage.getItem('sf_person') || ''; }catch(e){}
+  function whoPill(name){
+    if(!name) return '';
+    var cls = name==='Kelly' ? 'kelly' : 'mike';
+    return '<span class="who-pill '+cls+'">'+esc(name)+'</span>';
+  }
   function applyPersonUI(){
     var chip=document.getElementById('personChip');
     chip.textContent = person ? ('👤 '+person) : '👤 Set name';
+    chip.style.borderColor = person==='Kelly' ? 'rgba(224,122,158,.55)' : (person ? 'rgba(94,106,210,.55)' : '');
+    chip.style.color = person==='Kelly' ? '#f2b3c9' : (person ? '#aab4ff' : '');
     document.getElementById('idBar').hidden = !!person;
   }
   function setPerson(p){
@@ -384,10 +440,11 @@
     if(kind==='shop'){ if(r.qty)meta.push(r.qty); if(r.store)meta.push(r.store); }
     else { if(r.due)meta.push('Due '+r.due); }
     var by = r.added_by || (kind==='todo' ? r.owner : '');
-    if(by) meta.push('👤 '+by);
+    var metaHtml = meta.map(esc).join(' · ');
+    if(by) metaHtml += (metaHtml?' · ':'') + whoPill(by);
     var done = kind==='shop' ? r.got_it : r.done;
     return '<div class="item'+(done?' done':'')+'"><input type="checkbox" data-kind="'+kind+'" data-id="'+r.id+'" '+(done?'checked':'')+'>'+
-      '<div class="txt"><div>'+esc(main)+'</div>'+(meta.length?'<div class="meta">'+esc(meta.join(' · '))+'</div>':'')+'</div>'+
+      '<div class="txt"><div>'+esc(main)+'</div>'+(metaHtml?'<div class="meta">'+metaHtml+'</div>':'')+'</div>'+
       '<button class="del" data-kind="'+kind+'" data-id="'+r.id+'" aria-label="Delete">✕</button></div>';
   }
   function renderDbEvents(rows){
@@ -396,8 +453,9 @@
     el.innerHTML = rows.map(function(r){
       var when = new Date(r.starts_at);
       var whenTxt = when.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'})+' · '+when.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
-      var meta = []; if(r.notes)meta.push(r.notes); if(r.added_by)meta.push('👤 '+r.added_by);
-      return '<div class="item"><div class="txt"><div class="ev-when">'+esc(whenTxt)+'</div><div>'+esc(r.title)+'</div>'+(meta.length?'<div class="meta">'+esc(meta.join(' · '))+'</div>':'')+'</div>'+
+      var metaHtml = r.notes ? esc(r.notes) : '';
+      if(r.added_by) metaHtml += (metaHtml?' · ':'') + whoPill(r.added_by);
+      return '<div class="item"><div class="txt"><div class="ev-when">'+esc(whenTxt)+'</div><div>'+esc(r.title)+'</div>'+(metaHtml?'<div class="meta">'+metaHtml+'</div>':'')+'</div>'+
         '<button class="del" data-kind="event" data-id="'+r.id+'" aria-label="Delete">✕</button></div>';
     }).join('');
   }
@@ -409,7 +467,7 @@
     el.innerHTML = cats.map(function(c){
       var items = byCat[c].map(function(r){
         return '<div class="item'+(r.done?' done':'')+'"><input type="checkbox" data-kind="baby" data-id="'+r.id+'" '+(r.done?'checked':'')+'>'+
-          '<div class="txt"><div>'+esc(r.item)+'</div>'+(r.added_by?'<div class="meta">👤 '+esc(r.added_by)+'</div>':'')+'</div>'+
+          '<div class="txt"><div>'+esc(r.item)+'</div>'+(r.added_by?'<div class="meta">'+whoPill(r.added_by)+'</div>':'')+'</div>'+
           '<button class="del" data-kind="baby" data-id="'+r.id+'" aria-label="Delete">✕</button></div>';
       }).join('');
       return '<div class="grp">'+esc(c)+'</div>'+items;
@@ -422,14 +480,46 @@
     var files=(res.data||[]).filter(function(f){return f.name && !f.name.startsWith('.')});
     if(!files.length){ grid.innerHTML='<div class="empty" style="grid-column:1/-1">No photos yet — upload the first Moose pic below 🐶</div>'; return; }
     var html='';
+    window._photoUrls = [];
     for(var i=0;i<files.length;i++){
       var s = await sb.storage.from('household-photos').createSignedUrl(files[i].name, 3600);
       var who = files[i].name.split('-')[0];
-      var cap = (who==='Mike'||who==='Kelly') ? '<div class="cap">👤 '+who+'</div>' : '';
-      if(s.data && s.data.signedUrl) html += '<div class="ph"><img src="'+esc(s.data.signedUrl)+'" alt="Family photo">'+cap+'<button class="del" data-kind="photo" data-name="'+esc(files[i].name)+'" aria-label="Delete photo">✕</button></div>';
+      var cap = (who==='Mike'||who==='Kelly') ? '<div class="cap"><span class="dot '+(who==='Kelly'?'kelly':'mike')+'"></span>'+who+'</div>' : '';
+      if(s.data && s.data.signedUrl){
+        window._photoUrls.push({url:s.data.signedUrl, who:(who==='Mike'||who==='Kelly')?who:''});
+        html += '<div class="ph"><img src="'+esc(s.data.signedUrl)+'" alt="Family photo">'+cap+'<button class="del" data-kind="photo" data-name="'+esc(files[i].name)+'" aria-label="Delete photo">✕</button></div>';
+      }
     }
     grid.innerHTML = html || '<div class="empty" style="grid-column:1/-1">No photos yet.</div>';
   }
+  /* ---------- Slideshow ---------- */
+  var ssTimer = null, ssIdx = 0;
+  function ssShow(){
+    var list = window._photoUrls || [];
+    if(!list.length) return;
+    var p = list[ssIdx % list.length];
+    var img = document.getElementById('ssImg');
+    img.style.opacity = 0;
+    var pre = new Image();
+    pre.onload = function(){ img.src = p.url; img.style.opacity = 1; };
+    pre.src = p.url;
+    document.getElementById('ssCap').textContent = p.who ? ('👤 '+p.who) : '';
+  }
+  function startSlideshow(){
+    var list = window._photoUrls || [];
+    if(!list.length){ document.getElementById('photoMsg').textContent = 'Upload a photo first — then the slideshow has something to show 🐶'; return; }
+    ssIdx = 0;
+    document.getElementById('slideshow').hidden = false;
+    ssShow();
+    ssTimer = setInterval(function(){ ssIdx++; ssShow(); }, 6000);
+  }
+  function stopSlideshow(){
+    document.getElementById('slideshow').hidden = true;
+    if(ssTimer){ clearInterval(ssTimer); ssTimer = null; }
+  }
+  document.getElementById('slideshowBtn').addEventListener('click', startSlideshow);
+  document.getElementById('slideshow').addEventListener('click', stopSlideshow);
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') stopSlideshow(); });
   async function loadAll(){
     if(previewMode){ lockPanels(); loadContent(); return; }
     var shop = await sb.from('shopping_items').select('*').order('created_at',{ascending:true});
@@ -439,6 +529,11 @@
     document.getElementById('shopList').innerHTML = shop.data && shop.data.length ? shop.data.map(function(r){return rowHtml(r,'shop')}).join('') : '<div class="empty">List is empty — add what you need below.</div>';
     document.getElementById('todoList').innerHTML = todo.data && todo.data.length ? todo.data.map(function(r){return rowHtml(r,'todo')}).join('') : '<div class="empty">No to-dos right now.</div>';
     renderDbEvents(ev.data || []);
+    if(ev.data && ev.data.length){
+      var nx = ev.data[0];
+      window._nextEv = '📅 Next up: '+nx.title+' · '+new Date(nx.starts_at).toLocaleDateString('en-US',{month:'short',day:'numeric'});
+    } else { window._nextEv = ''; }
+    if(window.buildCountdowns) buildCountdowns();
     renderBaby(baby.data || []);
     loadPhotos();
     loadContent();
