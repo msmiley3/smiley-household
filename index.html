@@ -51,6 +51,12 @@
   .brief p{margin:0;font-size:14.5px;line-height:1.55;color:#eceef7}
   .chips{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
   .chip{font-size:12px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#d7d7de}
+  a.chip{text-decoration:none}
+  a.chip:active{border-color:var(--accent);color:#fff}
+  .brief a{color:#c3c9ff;text-decoration:underline;text-underline-offset:2px}
+  .brief.daily{background:linear-gradient(180deg,rgba(232,180,84,.13),rgba(232,180,84,.04));border-color:rgba(232,180,84,.35)}
+  .brief.daily h2{color:#f2cd8a}
+  .brief.daily a{color:#f2cd8a}
   /* ---------- Identity bar ---------- */
   .idbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px;margin-bottom:12px;font-size:13.5px}
   .idbar .q{color:var(--muted)}
@@ -168,11 +174,19 @@
       </div>
       <div class="ticker"><span class="track" id="tickerTrack">Loading your ticker…</span></div>
       <nav class="navpills">
-        <a href="#s-brief">✨ Week</a><a href="#s-shop">🛒 Shopping</a><a href="#s-todo">✓ To-Dos</a><a href="#s-cal">📅 Calendar</a><a href="#s-meals">🍽️ Dinners</a><a href="#s-deals">🏷️ Deals</a><a href="#s-recipes">🍽️ Recipes</a><a href="#s-events">🎃 This Week</a><a href="#s-news">🗞️ Headlines</a><a href="#s-baby">👶 Baby</a><a href="#s-photos">🐶 Photos</a>
+        <a href="#s-daily">☀️ Today</a><a href="#s-brief">✨ Week</a><a href="#s-shop">🛒 Shopping</a><a href="#s-todo">✓ To-Dos</a><a href="#s-cal">📅 Calendar</a><a href="#s-meals">🍽️ Dinners</a><a href="#s-deals">🏷️ Deals</a><a href="#s-recipes">🍽️ Recipes</a><a href="#s-events">🎃 This Week</a><a href="#s-news">🗞️ Headlines</a><a href="#s-baby">👶 Baby</a><a href="#s-photos">🐶 Photos</a>
       </nav>
     </div>
 
     <div class="wrap">
+      <section id="s-daily">
+        <div class="brief daily">
+          <h2>☀️ Today's Brief — <span id="dailyDate">AI Daily Summary</span></h2>
+          <p id="dailyText">Rounding up overnight…</p>
+          <div class="chips" id="dailyChips"></div>
+        </div>
+      </section>
+
       <section id="s-brief">
         <div class="brief">
           <h2>✨ The Week Ahead — AI Brief</h2>
@@ -361,9 +375,33 @@
       }).join('');
     }
     buildCountdowns();
+    function linkify(txt, links){
+      var html = esc(txt || '');
+      (links||[]).slice().sort(function(a,b){return b.phrase.length-a.phrase.length}).forEach(function(l){
+        var needle = esc(l.phrase);
+        var idx = html.indexOf(needle);
+        if(idx > -1){
+          var ext = l.url.charAt(0) === '#' ? '' : ' target="_blank" rel="noopener"';
+          html = html.slice(0, idx) + '<a href="'+esc(l.url)+'"'+ext+'>' + needle + '</a>' + html.slice(idx + needle.length);
+        }
+      });
+      return html;
+    }
+    function chipsHtml(chips){
+      return (chips||[]).map(function(c){
+        if(typeof c === 'string') return '<span class="chip">'+esc(c)+'</span>';
+        var ext = c.url.charAt(0) === '#' ? '' : ' target="_blank" rel="noopener"';
+        return '<a class="chip" href="'+esc(c.url)+'"'+ext+'>'+esc(c.label)+'</a>';
+      }).join('');
+    }
+    if(CONTENT.dailyBrief){
+      document.getElementById('dailyDate').textContent = CONTENT.dailyBrief.date || 'AI Daily Summary';
+      document.getElementById('dailyText').innerHTML = linkify(CONTENT.dailyBrief.text, CONTENT.dailyBrief.links);
+      document.getElementById('dailyChips').innerHTML = chipsHtml(CONTENT.dailyBrief.chips);
+    }
     if(CONTENT.weekBrief){
-      document.getElementById('briefText').textContent = CONTENT.weekBrief.text || '';
-      document.getElementById('briefChips').innerHTML = (CONTENT.weekBrief.chips||[]).map(function(c){return '<span class="chip">'+esc(c)+'</span>'}).join('');
+      document.getElementById('briefText').innerHTML = linkify(CONTENT.weekBrief.text, CONTENT.weekBrief.links);
+      document.getElementById('briefChips').innerHTML = chipsHtml(CONTENT.weekBrief.chips);
     }
     if(CONTENT.deals){
       document.getElementById('dealsRange').textContent = CONTENT.deals.range||"";
