@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smiley Family — Household</title>
+<meta name="description" content="Smiley Family household hub: shopping list, to-dos, family calendar, local news and Meijer deals.">
+<style>
+  :root{--bg:#0b0e13;--card:#151a23;--card2:#1b222f;--text:#f2f5f9;--muted:#9aa7b8;--accent:#4da3ff;--accent2:#34d399;--border:#242d3d;--radius:18px}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
+  .wrap{max-width:720px;margin:0 auto;padding:20px 16px 40px}
+  header{padding:12px 4px 20px}
+  h1{font-size:28px;margin:0 0 4px;letter-spacing:-.02em}
+  .date{color:var(--muted);font-size:16px}
+  .clock{font-size:44px;font-weight:700;margin-top:8px;letter-spacing:-.03em}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}}
+  a.card{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-decoration:none;color:var(--text);min-height:112px}
+  a.card:active{background:var(--card2)}
+  .card .icon{font-size:28px;display:block;margin-bottom:10px}
+  .card .title{font-size:19px;font-weight:650;display:block}
+  .card .sub{color:var(--muted);font-size:14px;display:block;margin-top:4px;line-height:1.4}
+  .primary{background:linear-gradient(135deg,#173a63,#12283f);border-color:#24507f}
+  .section{margin:26px 4px 10px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .list{display:grid;gap:10px}
+  a.row{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--text);font-size:17px;min-height:56px}
+  a.row span.arrow{color:var(--muted)}
+  footer{color:var(--muted);font-size:13px;line-height:1.5;margin-top:28px;padding:0 4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Smiley Family</h1>
+    <div class="date" id="date">Loading date…</div>
+    <div class="clock" id="clock">--:--</div>
+  </header>
+
+  <div class="grid">
+    <a class="card primary" href="https://docs.google.com/spreadsheets/d/1hYxfyk3TvTijvyEbfvk6KV0tDsbGtEa13MjU6Oqs1-A/edit?usp=drivesdk">
+      <span class="icon">🛒</span>
+      <span class="title">Shopping List</span>
+      <span class="sub">Shared list — tap to add or check off. Opens the shared sheet's Shopping List tab.</span>
+    </a>
+    <a class="card primary" href="https://docs.google.com/spreadsheets/d/1hYxfyk3TvTijvyEbfvk6KV0tDsbGtEa13MjU6Oqs1-A/edit?usp=drivesdk">
+      <span class="icon">✓</span>
+      <span class="title">To-Dos</span>
+      <span class="sub">Household tasks — tap to open the shared sheet's To-Dos tab.</span>
+    </a>
+    <a class="card" href="https://calendar.google.com/calendar/u/0/r">
+      <span class="icon">📅</span>
+      <span class="title">Family Calendar</span>
+      <span class="sub">Smiley Family calendar — shared with Kelly.</span>
+    </a>
+    <a class="card" href="https://www.meijer.com/shopping/weekly-ad">
+      <span class="icon">🏷️</span>
+      <span class="title">Meijer Weekly Ad</span>
+      <span class="sub">This week's deals for your local store.</span>
+    </a>
+  </div>
+
+  <div class="section">Deals</div>
+  <div class="list">
+    <a class="row" href="https://www.meijer.com/shopping/weekly-ad">Meijer Weekly Ad <span class="arrow">›</span></a>
+    <a class="row" href="https://www.meijer.com/">mPerks &amp; Meijer Home <span class="arrow">›</span></a>
+  </div>
+
+  <div class="section">Local News — Solon &amp; Cleveland</div>
+  <div class="list">
+    <a class="row" href="https://www.cleveland.com/">Cleveland.com <span class="arrow">›</span></a>
+    <a class="row" href="https://fox8.com/">Fox 8 <span class="arrow">›</span></a>
+    <a class="row" href="https://www.wkyc.com/">WKYC <span class="arrow">›</span></a>
+    <a class="row" href="https://www.solonohio.gov/">City of Solon <span class="arrow">›</span></a>
+  </div>
+
+  <footer>
+    Shopping, to-dos and the calendar stay private in Google — only Mike and Kelly can open them.
+    This page is just the front door. Made for the Smiley household, Solon, OH.
+  </footer>
+</div>
+<script>
+  function tick(){
+    var now=new Date();
+    document.getElementById('date').textContent=now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+    document.getElementById('clock').textContent=now.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+  }
+  tick(); setInterval(tick,15000);
+</script>
+</body>
+</html>
