@@ -316,7 +316,7 @@
         <button id="magicBtn" class="ghost">Email me a sign-in link instead</button>
         <button id="previewBtn" class="ghost">Just looking? Preview the app</button>
         <div class="msg" id="loginMsg"></div>
-        <p class="sub" style="margin-top:14px;font-size:12.5px">First time? Open the invite email from Supabase and tap its link — it signs you straight in, then you can set a password under Account at the bottom. On your own phone you stay signed in after that.</p>
+        <p class="sub" style="margin-top:14px;font-size:12.5px">First time? Tap “Email me a sign-in link instead” above, open that email on this phone, and tap the link — it signs you straight in. Then set a password under Account (bottom of the Home tab) so the next sign-in is one tap. On your own phone you stay signed in after that.</p>
       </div>
     </div>
   </div>
@@ -560,7 +560,7 @@
   var SUPABASE_URL = "https://bwbujkkmqokjdwrelpvl.supabase.co";
   var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ3YnVqa2ttcW9ramR3cmVscHZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzNDIyNjgsImV4cCI6MjEwNzkxODI2OH0.-i2GfZF8G-w2ZJ72D7Hj9_jphbazMpVulpgjiJDnFaw";
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {auth:{flowType:'implicit', detectSessionInUrl:true}});
-  var TINKER_MODE = true; // Sign-in temporarily OFF at Mike's request (2026-10-18) while he tinkers. Set false to restore the login gate.
+  var TINKER_MODE = false; // Sign-in temporarily OFF at Mike's request (2026-10-18) while he tinkers. Set false to restore the login gate.
   var CONTENT = null;
 
   function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
