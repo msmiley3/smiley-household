@@ -447,7 +447,7 @@
         </section>
 
         <section class="card span2" id="s-news">
-          <div class="cardhead"><h2>🗞️ Daily Headlines</h2><span class="sub" id="headlinesDate"></span></div>
+          <div class="cardhead"><h2>🗞️ News</h2><span class="sub" id="headlinesDate"></span></div>
           <div id="headlinesWrap"><div class="empty">Loading headlines…</div></div>
         </section>
 
@@ -542,13 +542,14 @@
         <button class="tab active" data-view="home" type="button">🏠<span>Home</span></button>
         <button class="tab" data-view="lists" type="button">🛒<span>Lists</span><span class="tbadge" id="badgeLists" hidden></span></button>
         <button class="tab" data-view="calendar" type="button">📅<span>Calendar</span><span class="tbadge" id="badgeCal" hidden></span></button>
+        <button class="tab" data-view="news" type="button">🗞️<span>News</span><span class="tbadge" id="badgeNews" hidden></span></button>
         <button class="tab" data-view="discover" type="button">✨<span>Discover</span></button>
         <button class="tab" data-view="photos" type="button">🐶<span>Photos</span><span class="tbadge" id="badgePhotos" hidden></span></button>
       </nav>
       <button id="toTop" class="iconbtn" hidden>↑ Top</button>
 
       <footer>
-        Smiley Family hub — Solon, OH. Ticker weather is live; headlines refresh each morning; deals, recipes and events refresh Wednesdays.
+        Smiley Family hub — Solon, OH. Ticker weather is live; headlines refresh three times a day; deals, recipes and events refresh Wednesdays.
         The old Google Sheet and Calendar remain as a backup.
       </footer>
     </div>
@@ -669,6 +670,7 @@
       }).join('');
     }
     if(CONTENT.headlines){
+      var _nh = 0; (CONTENT.headlines.cats || []).forEach(function(c){ _nh += (c.items || []).length; }); setBadge('badgeNews', _nh);
       document.getElementById('headlinesDate').textContent = CONTENT.headlines.date||"";
       document.getElementById('headlinesWrap').innerHTML = CONTENT.headlines.cats.map(function(c){
         var rows=c.items.map(function(x){return '<details class="flat inner"><summary>'+esc(x.title)+'<span class="chev">▾</span></summary><div class="body">'+esc(x.summary)+' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">Read at '+esc(x.source)+' ›</a></div></details>'}).join('');
@@ -1278,7 +1280,7 @@
     if(n > 0){ b.textContent = n > 99 ? '99' : String(n); b.hidden = false; }
     else b.hidden = true;
   }
-  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'discover','s-news':'discover','s-photos':'photos'};
+  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'discover','s-news':'news','s-photos':'photos'};
   var currentView = 'home';
   function switchView(v){
     if(!v) return;
