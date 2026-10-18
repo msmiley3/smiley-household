@@ -355,6 +355,12 @@
   .wtxt{min-width:0}
   .wt{font-weight:600;font-size:14px;line-height:1.35}
   .wwhy{font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.45}
+  .gchips{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap;margin:0 0 2px}
+  .gchip{padding:5px 11px;border-radius:999px;border:1px solid var(--line2);background:var(--surface2);color:var(--muted);font-size:12px;font-weight:600;cursor:pointer}
+  .gchip.on{background:rgba(94,106,210,.2);border-color:var(--accent);color:#c6ccff}
+  .rcard{position:relative}
+  .rfav{position:absolute;top:6px;right:6px;width:26px;height:26px;border-radius:50%;background:rgba(5,6,10,.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;z-index:2}
+  .rfav.on{color:#ff7d92}
 </style>
 </head>
 <body>
@@ -500,7 +506,7 @@
         </section>
 
         <section class="card span2" id="s-recipes">
-          <div class="cardhead"><h2>🍽️ This Week's Dinners</h2><span class="sub">options for the week · tap a dish for the full recipe</span></div>
+          <div class="cardhead"><h2>🍽️ This Week's Dinners</h2><span class="sub">options for the week · tap a dish for the full recipe</span><button class="iconbtn" id="rSurprise" type="button">🎲 Surprise me</button></div>
           <div class="dgrid" id="rTrack"><div class="empty">Loading recipes…</div></div>
           <div id="rDetail"></div>
         </section>
@@ -724,10 +730,10 @@
       }).join('');
     }
     if(CONTENT.recipes){
-      window._recipes = CONTENT.recipes;
+      window._recipes = CONTENT.recipes.slice().sort(function(a, b){ var F = []; try{ F = JSON.parse(localStorage.getItem('sf_favs') || '[]'); }catch(_){ } return (F.indexOf(b.name) >= 0 ? 1 : 0) - (F.indexOf(a.name) >= 0 ? 1 : 0); });
       window._selRecipe = -1;
-      document.getElementById('rTrack').innerHTML = CONTENT.recipes.map(function(r, i){
-        return '<button class="rcard" type="button" data-ridx="'+i+'">'+(r.img?'<img src="'+esc(r.img)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':'')+'<div class="rn">'+esc(r.name)+'</div><div class="rp">'+esc(r.time||'')+(r.cost?' · '+esc(r.cost):'')+' · ＋ recipe</div></button>';
+      document.getElementById('rTrack').innerHTML = window._recipes.map(function(r, i){
+        return '<button class="rcard" type="button" data-ridx="'+i+'">'+(r.img?'<img src="'+esc(r.img)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':'')+'<span class="rfav" data-fav="'+i+'" role="button" aria-label="Save as favorite">♡</span>'+'<div class="rn">'+esc(r.name)+'</div><div class="rp">'+esc(r.time||'')+(r.cost?' · '+esc(r.cost):'')+' · ＋ recipe</div></button>';
       }).join('');
       document.getElementById('rDetail').innerHTML = '';
     }
@@ -938,8 +944,11 @@
     if(!window._photoUrls.length){ grid.innerHTML='<div class="empty" style="grid-column:1/-1">'+(files.length?'Photos could not load — try refreshing.':'No photos yet — upload the first Moose pic below 🐶')+'</div>'; startTopShow(); return; }
     var order = ['Family','Moose','Baby','House','Food'];
     var html = '';
+    var _ord = ['All'].concat(order.filter(function(a){ return byArea[a]; }));
+    html += '<div class="gchips">' + _ord.map(function(a){ var n = a === 'All' ? files.length : byArea[a].length; var on = (window._photoFilter || 'All') === a ? ' on' : ''; return '<button class="gchip' + on + '" type="button" data-pf="' + a + '">' + (a === 'All' ? 'All' : esc(AREA_LABELS[a])) + ' · ' + n + '</button>'; }).join('') + '</div>';
     order.forEach(function(a){
       if(!byArea[a]) return;
+      if(window._photoFilter && window._photoFilter !== 'All' && window._photoFilter !== a) return;
       html += '<div class="grp">'+esc(AREA_LABELS[a])+'</div><div class="photos">' + byArea[a].map(function(p){
         var cap = p.who ? '<div class="cap"><span class="dot '+(p.who==='Kelly'?'kelly':'mike')+'"></span>'+p.who+'</div>' : '';
         return '<div class="ph"><img src="'+esc(p.url)+'" alt="Family photo">'+cap+'<button class="del" data-kind="photo" data-name="'+esc(p.name)+'" aria-label="Delete photo">✕</button></div>';
@@ -1579,6 +1588,20 @@ await sb.from('baby_items').insert({item:item, category:document.getElementById(
       if(errText) loginMsg(errText.replace(/\+/g,' ') + ' — type your email above and tap "Email me a sign-in link instead" for a fresh one.', true);
     }
   })();
+</script>
+<script>
+function _favs(){ try{ return JSON.parse(localStorage.getItem('sf_favs') || '[]'); }catch(_){ return []; } }
+function paintFavs(){ var F = _favs(); document.querySelectorAll('.rfav').forEach(function(el){ var i = Number(el.getAttribute('data-fav')); var r = (window._recipes || [])[i]; var on = r && F.indexOf(r.name) >= 0; el.textContent = on ? '♥' : '♡'; el.classList.toggle('on', !!on); }); }
+var _rcOrig = renderContent;
+renderContent = function(){ _rcOrig(); paintFavs(); };
+document.addEventListener('click', function(e){
+  var t = e.target;
+  var f = t.closest ? t.closest('[data-fav]') : null;
+  if(f){ e.stopPropagation(); e.preventDefault(); var i = Number(f.getAttribute('data-fav')); var r = (window._recipes || [])[i]; if(r){ var F = _favs(); var k = F.indexOf(r.name); if(k >= 0) F.splice(k, 1); else F.push(r.name); try{ localStorage.setItem('sf_favs', JSON.stringify(F)); }catch(_){ } paintFavs(); } return; }
+  var pf = t.closest ? t.closest('[data-pf]') : null;
+  if(pf){ window._photoFilter = pf.getAttribute('data-pf'); loadPhotos(); return; }
+  if(t.closest && t.closest('#rSurprise')){ var n = (window._recipes || []).length; if(n){ selectRecipe(Math.floor(Math.random() * n)); var d = document.getElementById('rDetail'); if(d) setTimeout(function(){ d.scrollIntoView({behavior: 'smooth', block: 'nearest'}); }, 60); } }
+}, true);
 </script>
 </body>
 </html>
