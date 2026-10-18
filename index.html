@@ -364,6 +364,9 @@
   .newsfilter{margin:0 0 6px}
   #headlinesWrap details.wasread>summary{color:var(--faint)}
   .evadd{flex:none;margin-left:4px;white-space:nowrap}
+  .qchips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 2px}
+  .qchip{padding:5px 11px;border-radius:999px;border:1px solid var(--line2);background:var(--surface2);color:var(--muted);font-size:12px;font-weight:600;cursor:pointer}
+  .qchip:active{transform:scale(.96);border-color:var(--accent);color:#c6ccff}
 </style>
 </head>
 <body>
@@ -469,8 +472,9 @@
         </section>
 
         <section class="card listcard" id="s-shop">
-          <div class="cardhead"><h2>🛒 Shopping List</h2><span class="sub" id="shopSub"></span><button class="iconbtn clearbtn" data-clear="shop" type="button">Clear done</button><button class="iconbtn" id="groupStoreBtn" type="button">Group by store</button></div>
+          <div class="cardhead"><h2>🛒 Shopping List</h2><span class="sub" id="shopSub"></span><button class="iconbtn clearbtn" data-clear="shop" type="button">Clear done</button><button class="iconbtn" id="groupStoreBtn" type="button">Group by store</button><button class="iconbtn" id="shopCopy" type="button">⧉ Copy list</button></div>
           <div id="shopList"><div class="empty">Loading…</div></div>
+          <div class="qchips" id="shopChips"><button class="qchip" type="button" data-qadd="Milk">+ Milk</button><button class="qchip" type="button" data-qadd="Eggs">+ Eggs</button><button class="qchip" type="button" data-qadd="Bread">+ Bread</button><button class="qchip" type="button" data-qadd="Butter">+ Butter</button><button class="qchip" type="button" data-qadd="Shredded cheese">+ Shredded cheese</button><button class="qchip" type="button" data-qadd="Coffee">+ Coffee</button><button class="qchip" type="button" data-qadd="Bananas">+ Bananas</button><button class="qchip" type="button" data-qadd="Chicken breast">+ Chicken breast</button><button class="qchip" type="button" data-qadd="Ground beef">+ Ground beef</button><button class="qchip" type="button" data-qadd="Paper towels">+ Paper towels</button><button class="qchip" type="button" data-qadd="Diapers">+ Diapers</button><button class="qchip" type="button" data-qadd="Wipes">+ Wipes</button><button class="qchip" type="button" data-qadd="Dog food">+ Dog food</button><button class="qchip" type="button" data-qadd="Laundry detergent">+ Laundry detergent</button></div>
           <form class="add" id="shopForm">
             <input id="shopItem" placeholder="Add an item…" required>
             <input id="shopQty" placeholder="Qty" style="flex:0 0 64px;min-width:56px">
@@ -1675,6 +1679,29 @@ document.addEventListener('click', async function(e){
   if(res.error){ b.disabled = false; b.textContent = '＋ Cal'; return; }
   b.textContent = '✓ Added';
   refreshSoon();
+});
+</script>
+<script>
+var _rsOrig = renderShop;
+renderShop = function(rows){ window._shopRows = rows; _rsOrig(rows); };
+document.addEventListener('click', async function(e){
+  var q = e.target.closest ? e.target.closest('[data-qadd]') : null;
+  if(q){
+    document.getElementById('shopItem').value = q.getAttribute('data-qadd');
+    document.getElementById('shopForm').requestSubmit();
+    return;
+  }
+  if(e.target.closest && e.target.closest('#shopCopy')){
+    var rows = (window._shopRows || []).filter(function(r){ return !r.got_it; });
+    if(!rows.length) return;
+    var lines = rows.map(function(r){ return '• ' + r.item + (r.qty ? ' (' + r.qty + ')' : '') + (r.store ? ' — ' + r.store : ''); });
+    var text = '🛒 Shopping list (' + rows.length + ')\n' + lines.join('\n');
+    var btn = document.getElementById('shopCopy');
+    try{ await navigator.clipboard.writeText(text); }
+    catch(_){ var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); try{ document.execCommand('copy'); }catch(__){ } ta.remove(); }
+    btn.textContent = '✓ Copied';
+    setTimeout(function(){ btn.textContent = '⧉ Copy list'; }, 1600);
+  }
 });
 </script>
 </body>
