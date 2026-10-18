@@ -303,34 +303,40 @@
         "name": "World",
         "items": [
           {
-            "title": "France cleans up after its worst unrest in years",
-            "summary": "More than half a million people marched across France over living costs and public services, and violent fringe groups torched a town hall, looted shops and clashed with police. One demonstrator died, more than 500 officers were injured and nearly 1,800 people were arrested, leaving a huge clean-up from Lille to Marseille.",
+            "title": "Ukraine launches more than 1,000 drones at Russia, St. Petersburg oil sites ablaze",
+            "summary": "Ukrainian strikes set the Petersburg Oil Terminal and the Ruchi oil depot ablaze in St. Petersburg on Sunday, in what Russia said was an attack involving more than 1,000 drones across 15 regions, Crimea and the Black Sea. One person was killed and five were wounded in St. Petersburg, and an Ozon logistics center and a VK data center were also hit, the companies confirmed.\n\nThe barrage is one of Kyiv's largest of the war and lands right in the middle of a fight with Washington: President Trump has criticized Ukraine's refinery strikes and just waived new Russia sanctions, while President Zelenskiy says Russia hit Ukrainian energy sites 76 times since the energy ceasefire was announced. Watch whether the scale of this attack hardens the sanctions debate in Congress this week.",
+            "source": "Associated Press",
+            "url": "https://www.military.com/st-petersburg-oil-facilities-ablaze-as-ukraine-launches-more-than-1000-drones-at-russia"
+          },
+          {
+            "title": "France cleans up after its worst unrest in years, Macron to address the nation",
+            "summary": "France woke up Sunday to smashed shop windows, burnt-out bicycles and a partially destroyed 143-year-old town hall in Limoges after cost-of-living protests turned violent across the country. More than half a million people marched; one demonstrator died after a cardiac arrest in Paris, more than 500 officers were injured and nearly 1,800 people were arrested, including a record 855 in Paris alone.\n\nPresident Emmanuel Macron condemned the violence and is expected to address the nation as the clean-up runs from Lille to Marseille. The unrest merged a month-long student movement with broader anger over prices and public services, and it is now spreading — Italy saw a second day of clashes on Sunday — so European leaders face a shared cost-of-living crisis, not just a French one.",
             "source": "Reuters",
             "url": "https://www.reuters.com/world/europe/france-faces-aftermath-worst-unrest-years-2026-10-18/"
           },
           {
-            "title": "Alberta votes Monday on whether to start a path toward separation",
-            "summary": "Albertans will decide Monday whether their government should begin the legal process toward a future independence referendum — not separation itself. Polls show roughly 70% favor staying in Canada, so the margin matters: Prime Minister Mark Carney is pushing for a decisive 'remain' result, while separatists hope a large 'yes' share gives them leverage with Ottawa.",
-            "source": "Washington Examiner",
-            "url": "https://www.washingtonexaminer.com/news/world/4770169/what-to-know-alberta-referendum-canada/"
+            "title": "Milan police clash with protesters for a second day as Italy unrest spreads",
+            "summary": "Milan police fired tear gas and used water cannons on Sunday after several hundred hooded protesters broke shop windows, looted stores and set bins on fire near Piazza Duomo during cost-of-living demonstrations. More than 60 people were taken in for checks on Sunday, after 28 arrests on Saturday across Milan, Bologna, Brescia, Bergamo and Turin.\n\nPrime Minister Giorgia Meloni, facing an election next year, condemned the violence and called a government meeting for Monday. Coming a day after France's riots, the Italian clashes show the protest wave jumping borders — and they put pressure on Meloni to offer a cost-of-living response without looking soft on disorder.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/milan-police-clash-with-protesters-second-day-unrest-2026-10-18/"
           },
           {
-            "title": "Stampede at Kolkata Hindu festival kills at least 19",
-            "summary": "A sudden downpour at a Durga Puja festival in Kolkata sent crowds rushing for cover under a pavilion, triggering a crush that killed at least 19 people, including a 7-year-old girl, and hospitalized 25. A court-run investigation is underway and some organizers and security staff were detained, renewing questions about crowd safety at huge religious gatherings.",
+            "title": "Fire at Alberta military base kills 4 service members, injures dozens",
+            "summary": "Prime Minister Mark Carney said Sunday that four Canadian service members were killed and dozens seriously injured in a fast-moving fire at Canadian Forces Base Wainwright in Alberta on Saturday. Alberta Premier Danielle Smith said 39 people were in hospital, at least 19 in critical condition, after fierce winds whipped flames beyond the base during a training exercise; officials said there is no indication of terrorism and the cause is under investigation.\n\nCarney called it one of the worst peacetime tragedies for Canada's military on home soil and ordered flags at half-staff on federal buildings. The injured — including reservists and soldiers from Princess Patricia's Canadian Light Infantry who had gathered from across the country — overwhelmed hospitals from Wainwright to Edmonton, Red Deer and Calgary, and investigators will now focus on how a training-area fire escalated so quickly.",
+            "source": "Associated Press",
+            "url": "https://www.military.com/carney-says-4-service-members-killed-and-dozens-injured-in-fire-at-alberta-military-base"
+          },
+          {
+            "title": "Pope Leo greets crowds in first public event since lung cancer surgery",
+            "summary": "Pope Leo XIV appeared at a window of the Vatican's apostolic palace on Sunday and spoke to pilgrims in St. Peter's Square in a firm, clear voice — his first public event since surgery five days ago to remove the lower lobe of his right lung for adenocarcinoma. He came to the window unaided, kept his usual noon appointment, and urged the crowd to set aside selfish ambitions and serve God 'without compromise.'\n\nThe appearance steadies a 17-month papacy that had been thrown into uncertainty by the diagnosis. The Vatican says Leo will ease back gradually rather than resume a full schedule at once, so his pace over the next few weeks — and any further medical updates — will signal how much the illness reshapes his agenda.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/pope-leo-greets-crowds-vatican-first-event-since-cancer-surgery-2026-10-18/"
+          },
+          {
+            "title": "Kolkata festival stampede toll holds at 19, organizers arrested in probe",
+            "summary": "At least 19 people, including a 7-year-old girl, died and 25 were hospitalized Saturday night when a sudden downpour at the Chorbagan Durga Puja festival in Kolkata sent crowds rushing for cover and an announcement triggered pushing and a crush at the pavilion. By Sunday, police had arrested seven people, including organizers and security staff, and detained others for questioning.\n\nA court-run Special Investigation Team is examining crowd control, exits and announcements at one of about 3,500 Durga Puja pavilions across the city, several of which closed temporarily as a precaution. West Bengal announced compensation and a government job for each bereaved family, on top of federal payments — but the central question for the rest of the festival is whether safety rules change fast enough to prevent a repeat.",
             "source": "People (via AP / BBC)",
             "url": "https://people.com/at-least-19-dead-as-sudden-downpour-triggers-stampede-religious-festival-kolkata-india-12180673"
-          },
-          {
-            "title": "Pope Leo makes first appearance since lung cancer surgery",
-            "summary": "Pope Leo XIV appeared in public for the first time since surgery for lung cancer, pledging a gradual return to his duties. The appearance is a reassuring milestone after his adenocarcinoma operation, though the Vatican says he will ease back into his schedule rather than resume it all at once.",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/podcasts/france-unrest-canada-military-base-pope-leo-siberian-bears-2026-10-18/"
-          },
-          {
-            "title": "Trump endorses Netanyahu ahead of Israel's Oct. 27 election",
-            "summary": "President Trump gave Prime Minister Benjamin Netanyahu a 'complete and total endorsement' for re-election, calling him a strong partner against Iran. Netanyahu's Likud is trailing in several major Israeli polls, so the endorsement lands in a tight race shaped by the Gaza, Lebanon and Iran conflicts and his corruption trial.",
-            "source": "New York Post",
-            "url": "https://nypost.com/2026/10/18/us-news/trump-endorses-netanyahu-ahead-of-israels-elections/"
           }
         ]
       },
@@ -338,40 +344,40 @@
         "name": "Politics",
         "items": [
           {
-            "title": "Rubio defends Russia sanctions waiver and diesel deal amid bipartisan backlash",
-            "summary": "Secretary of State Marco Rubio said President Trump will take up to 60 days to weigh Russia sanctions after Friday's executive order waived new energy sanctions. Ukrainian President Zelenskiy warned the move would embolden Putin, and Sen. Darline Graham said she would keep pressure on Russia, while Rubio argued Russia would sell its diesel either way and the deal could ease fuel prices.",
+            "title": "Rubio says Trump will take up to 60 days to weigh the Russia sanctions he waived",
+            "summary": "Secretary of State Marco Rubio said President Trump will take up to 60 days to assess the Russia sanctions and tariffs he waived on Friday under the Graham Sanctioning Russia and Iran Act, which were due to take effect this weekend. Rubio defended a related diesel deal by arguing Russia would sell the fuel either way, and said colliding wars in Ukraine and the Middle East are driving energy prices higher at the same time.\n\nThe waiver has drawn bipartisan backlash — Sen. Thom Tillis called it 'beyond irresponsible' and Sen. Ted Cruz called it a mistake — while Zelenskiy warned it will embolden Putin, especially after Sunday's massive Ukrainian drone attack on Russian oil sites. The 60-day clock now runs into the midterms, so watch whether Congress tries to force the sanctions back on or lets the review play out.",
             "source": "Reuters",
-            "url": "https://www.reuters.com/world/us/rubio-says-trump-take-up-60-days-weigh-russia-sanctions-2026-10-18/"
+            "url": "https://www.globalbankingandfinance.com/rubio-trump-take-up-60-days-weigh-russia-sanctions/"
           },
           {
-            "title": "Anti-party, anti-politician candidates surge in the midterms",
-            "summary": "In red and blue states alike, unconventional candidates are downplaying or disowning party labels to tap voter anger at Washington, Axios reports. Whether they come from the pulpit or the NFL sidelines, they are making the same bet — that voters are tired of career politicians — with just over two weeks to Election Day.",
+            "title": "Trump gives Netanyahu his 'complete and total' endorsement nine days before Israel votes",
+            "summary": "President Trump endorsed Prime Minister Benjamin Netanyahu on Sunday, calling him 'Strong, Brave, and Brilliant' and a 'Great Warrior Prime Minister' in a Truth Social post addressed to the people of Israel. Trump told Axios he 'was always going to do that' and just did not want to do it too soon; Netanyahu thanked him for the 'tremendous support.' Israel votes on October 27, its first election since the October 7, 2023 attack.\n\nNetanyahu's Likud trails centrist challenger Gadi Eisenkot's Yashar in several polls, and no candidate has a clear path to a coalition majority, so the endorsement may matter less than coalition math. Trump also warned Iran to 'change their ways, rapidly' or 'we will soon finish the job' — a reminder that the U.S.-Israel war with Iran, now in its seventh month, hangs over the vote.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/middle-east/trump-endorses-netanyahu-israeli-election-2026-10-18/"
+          },
+          {
+            "title": "Omar's lawyers demand the Justice Department return property seized from her home",
+            "summary": "Attorneys for Rep. Ilhan Omar asked the Justice Department on Friday to immediately return property seized in a federal search of her Washington home this week, calling the immigration-fraud investigation 'neither justified nor lawful' and a 'vindictive, retributive, and politically motivated' effort against a chief Trump critic. They say there is no legitimate basis to question her citizenship, which she obtained by naturalization in 2000.\n\nThe Justice Department called the letter 'riddled with false allegations' and said agents complied with all court orders; a magistrate judge signed the warrant but limited how the department could access her documents. The search broke the department's usual practice of avoiding public investigative steps against a candidate within 60 days of an election — Omar is on the ballot in November — so the legal fight over the warrant's limits is the next thing to watch.",
+            "source": "Associated Press",
+            "url": "https://www.lapost.com/content/rep-ilhan-omar-s-attorneys-demand-return-of-property-seized-in-federal-search-of-her-home"
+          },
+          {
+            "title": "Axios: Some MAGA allies discussed martial law if midterms are deemed 'rigged'",
+            "summary": "Axios reported that MAGA election activists on a September 30 video call pushed extraordinary measures — including martial law — if they come to believe the midterm elections are 'rigged,' with attorney Peter Ticktin, described as a Trump childhood friend, saying there 'would have to be martial law' after another rigged election. Axios noted the proposals go far beyond Trump's legal authority and that there is no evidence the elections will be rigged.\n\nThe report matters because people in that orbit have close access to the president, and it drew immediate reaction — California Gov. Gavin Newsom urged voters not to sit out the election. With 16 days to Election Day, election officials and courts, not activists, run the count, so watch for whether mainstream Republican leaders distance themselves from the talk or let it ride.",
+            "source": "Axios",
+            "url": "https://247us.cfx.bz/blog/tlnet93-13287"
+          },
+          {
+            "title": "Anti-party, anti-politician candidates surge as midterms enter the final stretch",
+            "summary": "In red and blue states alike, unconventional candidates are downplaying or even disowning their party labels to tap voter disdain for Washington, Axios reports. The candidates come from pulpits, the NFL sidelines and outside politics entirely, but they are making the same bet: that voters are tired of career politicians.\n\nThey will not all win, but the sheer number connecting with voters is a signal about the electorate with just over two weeks left: angry and willing to take risks. If several break through on November 3, both parties will have to rethink how much a party brand helps — or hurts — in 2028.",
             "source": "Axios via Political Wire",
             "url": "https://politicalwire.com/2026/10/18/anti-party-anti-politician-candidates-surge-in-midterms/"
           },
           {
-            "title": "Bessent blasts Zelenskiy as 'reckless' in Starlink dispute",
-            "summary": "Treasury Secretary Scott Bessent called Ukrainian President Zelenskiy 'reckless' for faulting the U.S. over restrictions on the Musk-owned satellite system in Ukraine. Zelenskiy talked Sunday with envoys Steve Witkoff and Jared Kushner and said peace would only come through cooperation built on trust, underscoring how strained U.S.-Ukraine relations have become.",
-            "source": "New York Post",
-            "url": "https://nypost.com/2026/10/18/us-news/bessent-blasts-reckless-zelensky-for-faulting-us-over-starlink-throttling/"
-          },
-          {
-            "title": "Slotkin remarks about prosecuting Trump staffers ignite a firestorm",
-            "summary": "Sen. Elissa Slotkin urged Democrats to use prosecution in signature cases so young people think twice about serving in a Trump administration, saying aides 'have no immunity the way the president does.' Conservatives slammed the comments as intimidation, and the exchange comes as Trump has floated a broad pardon spree before leaving office.",
-            "source": "New York Post",
-            "url": "https://nypost.com/2026/10/18/us-news/sen-slotkin-urges-dems-to-use-prosecution-to-make-young-people-afraid-to-serve-in-trump-admin/"
-          },
-          {
-            "title": "'Medicare for All' support surges in new Axios-Ipsos poll",
-            "summary": "Supporters of 'Medicare for All' now outnumber opponents nearly 2-to-1 in the Axios-Ipsos American Health Index, with 43% in favor, 24% opposed and 32% unsure. Two-thirds of respondents said the government should spend more to lower health costs, even as trust in leaders on health — including the president and Congress — hit survey lows.",
-            "source": "Axios-Ipsos via Portside",
-            "url": "https://portside.org/2026-10-16/axios-ipsos-poll-medicare-all-support-surges"
-          },
-          {
-            "title": "AI policy money pours into U.S. elections — $48 million and counting",
-            "summary": "AI-safety groups and donors have spent $48 million this cycle backing candidates seen as more open to AI regulation, Axios reported, while a rival network favors faster development and lighter rules. That means many campaign ads about AI are really part of a larger industry fight over safety, data centers, jobs and regulation.",
-            "source": "Axios via OpenTools",
-            "url": "https://opentools.ai/news/ai-safety-election-spending-48-million-fec-context"
+            "title": "Trump's October barrage tests his lowest approval ratings yet",
+            "summary": "Axios reports President Trump has packed the first half of October with controversies and breaks from convention: the federal search of Rep. Omar's home, a statement that leakers 'should be shot,' concessions to Russia, a $5,000 payment promise if Republicans hold Congress, and a Justice Department antitrust probe of major TV networks. The White House rejected the framing, saying October is 'shaping up to be another incredible month.'\n\nA Fox News poll this week put Trump's approval at 36%, the lowest of either of his presidencies, with just 22% approving on inflation. That is the backdrop for everything else in this edition — the sanctions waiver, the early-voting push and the midterm map — and it explains why both parties are treating the next 16 days as a turnout fight above all.",
+            "source": "Axios",
+            "url": "https://live.eastoranews.com/2026/10/17/axios-says-president-donald-trump-is-escalating-controversy-and-160213"
           }
         ]
       },
@@ -379,34 +385,34 @@
         "name": "Tech & Business",
         "items": [
           {
-            "title": "Tech selloff deepens as AI debt fears rattle markets",
-            "summary": "A selloff in AI-exposed tech stocks gained pace after a hot U.S. inflation reading raised fears the Fed could hike rates and raise the cost of the debt financing the AI build-out. SK Hynix fell 11% and Samsung 9.5% in Asia, ASML dropped 5.6% in Europe, and Nvidia, Micron and CoreWeave were lower in the U.S.",
-            "source": "The Wall Street Journal",
-            "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-2c407ece"
+            "title": "AI selloff spreads to Asia as hot 3.7% inflation resets rate expectations",
+            "summary": "Asian markets slid after September U.S. inflation came in at 3.7% year over year, up from 3.4% and above the 3.6% expected, pushing up bets on another Fed rate hike. The damage centered on the AI trade: on Wall Street the Nasdaq fell about 1.9% and the S&P 500 about 1.1% in the initial session, with CoreWeave down roughly 16%, Dell about 11% and Oracle about 9%.\n\nThe worry is the cost of money for the AI build-out: debt-funded data-center firms borrow heavily, and higher-for-longer rates make that math harder just as revenue questions grow. The Fed meets October 27–28, and earnings from Tesla, Netflix, Texas Instruments and IBM next week will test whether real results can calm a market that CNN's Fear & Greed Index put at 18 — extreme fear — on Friday.",
+            "source": "Crypto Briefing",
+            "url": "https://cryptobriefing.com/asian-markets-fall-ai-stocks-us-cpi/"
           },
           {
-            "title": "SpaceX shares fall despite a successful NASA resupply launch",
-            "summary": "SpaceX stock fell more than 2% even after its CRS-35 Dragon resupply mission launched successfully, as hotter inflation — CPI at 3.7% — lifted Treasury yields and hit growth stocks. The S&P 500 fell over 1% and the Nasdaq over 1.6% that session, showing routine good launch news was not enough to offset the broader selloff.",
-            "source": "Invezz",
-            "url": "https://invezz.com/news/2026/10/14/why-is-spacex-falling-despite-successful-nasa-resupply-mission-launch/"
+            "title": "SpaceX earnings Tuesday will test whether AI growth justifies $18.4 billion in spending",
+            "summary": "SpaceX reports third-quarter results after the close on Tuesday, October 20, with Wall Street expecting revenue of about $12.89 billion, up sharply from $7.81 billion in the second quarter, and earnings of $0.14 a share versus a loss last quarter. The stock closed Friday at $146.03, down 1.74% on the day and about 10.6% over the past week, even as analysts' average price target sits near $217.50.\n\nIn the second quarter SpaceX spent $18.4 billion on capital expenditures, including $15.8 billion on AI infrastructure, while posting a $541 million net loss — exactly the spending pattern investors are punishing across the AI sector right now. Tuesday's numbers on AI revenue versus that burn rate will likely move the whole space-stock group, not just SpaceX.",
+            "source": "TipRanks",
+            "url": "https://www.tipranks.com/news/spacex-stock-forecast-what-analysts-expect-ahead-of-october-20-earnings"
           },
           {
-            "title": "SpaceX seeks $40 billion to buy AI chips",
-            "summary": "SpaceX is reportedly seeking $40 billion — $10 billion in bank loans plus $30 billion in investment-grade debt — to finance Nvidia chip purchases for AI computing. The plan ties its satellite and launch ambitions to a capital-intensive computing strategy, making debt capacity as important to its valuation as launch execution.",
-            "source": "ad-hoc news",
-            "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/spacex-seeks-usd-40-billion-for-ai-chips-spacex-stock-falls-1-33-percent/70267524"
+            "title": "Meta and Apple team up on a huge open AI model you can run on two Mac Studios",
+            "summary": "Meta released Muse Spark Open, an 816-billion-parameter open-weight model it calls the most capable U.S. open-weight model to date, optimized with Apple's help to run locally across two M5 Ultra Mac Studios with a combined terabyte of unified memory. The mixture-of-experts design uses about 42 billion active parameters per token, handles text, images, audio and video, and is aimed at coding and multi-step agent work; the weights are free on Hugging Face.\n\nThe partnership is the story as much as the model: Apple and Meta spent a decade fighting over ad tracking and privacy, and now Apple gets a privacy-friendly 'AI on your desk' showcase for its most expensive Mac while Meta gets distribution outside the cloud. The catch is price — a multi-Mac Studio setup runs into the tens of thousands of dollars — so watch whether labs and companies actually adopt local frontier models or stick with cloud APIs.",
+            "source": "Engadget",
+            "url": "https://WWW.Engadget.com/2287833/meta-built-a-huge-open-weight-ai-model-for-macs-but-youll-need-1tb-of-ram-to-run-it/"
           },
           {
-            "title": "Space stocks slide 9% in a weekly selloff as FCC decision looms",
-            "summary": "SpaceX fell about 9% last week alongside AST SpaceMobile, Rocket Lab and Firefly as investors waited on FCC approval of its spectrum deal. Barclays also floated that a Tesla-SpaceX merger announcement could come before Tesla's Dec. 6 annual meeting, keeping big strategic questions hanging over the stock.",
-            "source": "Mogaz News",
-            "url": "https://www.mogazmasr.com/150328"
+            "title": "SpaceX Dragon delivers brain organoids and artificial-retina tech to the space station",
+            "summary": "SpaceX's Dragon spacecraft docked with the International Space Station on October 15 carrying more than 6,300 pounds of supplies on the company's 35th commercial resupply mission, including miniature brain organoids, 3D heart tissue and technology for producing artificial retinas in microgravity. The cargo also includes the final set of upgraded roll-out solar arrays for the station.\n\nResearchers will use the brain and heart tissues to study diseases like Alzheimer's and Parkinson's and to test drugs in ways that are hard to replicate on Earth, while the retina work could eventually support vision-restoration therapies. Dragon stays docked until mid-November, then returns research samples for a Pacific splashdown — a reminder that SpaceX's routine cargo business keeps running underneath the AI spending headlines.",
+            "source": "ScienceDaily via Shafaqna",
+            "url": "https://en.shafaqna.com/485674/spacex-delivers-brain-organoids-and-artificial-retina-tech-to-iss/"
           },
           {
-            "title": "Apple hires a former Meta lawyer to run global litigation",
-            "summary": "Apple has hired former Meta lawyer Scott Tucker as vice president of global litigation and financial services, reuniting him with Jennifer Newstead, who joined Apple in March after six years at Meta. The move strengthens Apple's team for commercial lawsuits and patent disputes at a time of heavy regulatory and IP pressure on big tech.",
-            "source": "Bloomberg via daily roundup",
-            "url": "https://hackinabush.com/roundup/2026-10-18.html"
+            "title": "If smaller AI clouds collapse, SpaceX may be first in line to buy the pieces",
+            "summary": "A Motley Fool analysis argues SpaceX would be a prime beneficiary if debt-squeezed 'neocloud' AI computing firms fail, as Gartner predicts most will not stay independent by 2030 and billions in impairments loom. Because SpaceX standardized on Nvidia GPUs and Nvidia has backstop arrangements with many neoclouds, SpaceX could pick up distressed GPU clusters — and, more valuably, their power-grid access and site permits — at a discount.\n\nIt is a useful lens for Tuesday's SpaceX earnings and for the wider selloff: the firms with cash, power and permits survive a shakeout, while leveraged renters of compute face 15%-plus bond yields. Whether SpaceX is a buyer or just another heavy spender is the debate its results will feed.",
+            "source": "Motley Fool",
+            "url": "https://WWW.FOOL.COM/investing/2026/10/18/prediction-spacex-will-be-the-biggest-winner-if-ne/"
           }
         ]
       },
@@ -414,34 +420,34 @@
         "name": "U.S. News",
         "items": [
           {
-            "title": "Truck drives through a Kansas youth soccer game, killing two",
-            "summary": "A truck drove through a youth soccer venue in Kansas on Saturday, killing two people including a 6-year-old and injuring 11 others, according to ABC News reporting. Police are still investigating what happened, and the community is left asking how a vehicle got into a crowded kids' game.",
-            "source": "ABC News / NBC News",
-            "url": "https://10bmnews.com/two-dead-others-injured-after-truck-drives-through-kansas-soccer-game/"
+            "title": "Wichita driver released as police await toxicology and truck inspection after soccer tragedy",
+            "summary": "Wichita police released the 34-year-old driver on Sunday after interviewing more than 30 witnesses, pending toxicology results and a mechanical examination of her Chevrolet pickup, and no charges have been filed. Her truck barreled from a parking space onto a youth soccer field at the Stryker Sports Complex on Saturday, killing 6-year-old Adrian Cole and 35-year-old Nicholas Schafer, both of McPherson, and injuring 10 others ages 5 to 68, none with life-threatening injuries; two of her own children were in the truck and another was playing at the complex.\n\nPolice Chief Joe Sullivan said investigators know what happened but not yet why, and the toxicology and vehicle checks are now the whole case: they will determine whether this was a medical or mechanical failure, impairment, or something intentional. All events at the complex remain canceled, and police are asking anyone with video to come forward.",
+            "source": "USA Today",
+            "url": "https://www.usatoday.com/story/news/nation/2026/10/17/wichita-kansas-vehicle-plows-into-soccer-game/92308719007/"
           },
           {
-            "title": "Coastal homes burn as hot winds fuel the Norte fire in Southern California",
-            "summary": "A fast-moving, wind-driven fire that started in San Clemente burned at least six homes in San Juan Capistrano, forced about 16,000 residents to evacuate and sent two firefighters to the hospital with heat injuries. Officials have not said how the blaze, under a square mile on Friday evening, started.",
-            "source": "NPR / Associated Press",
-            "url": "https://www.knkx.org/2026-10-17/coastal-homes-burn-as-hot-winds-fuel-california-fires"
-          },
-          {
-            "title": "Bend's Silver Rail Elementary stays closed after deadly shooting",
-            "summary": "Three children and teacher Megan Lambert, 25, were killed Oct. 15 at Silver Rail Elementary in Bend before an armed parent fatally shot the 16-year-old attacker. Two survivors remain hospitalized, the wider district is preparing to reopen, but Silver Rail itself has no return date as families wait for answers on motive and how the shooter got his gun.",
-            "source": "HeyDay News",
-            "url": "https://heyday.news/articles/bend-silver-rail-shooting-victims-school-reopening-fc3d0548"
-          },
-          {
-            "title": "Investigators piece together how the Bend shooter got inside",
-            "summary": "Bend police say the teen threw his gun over a fence, fired at a pickup truck, then shot through locked glass doors into a special-education classroom, firing up to 15 times. A driver who saw it unfold followed him inside with a legally secured gun and killed him as he struggled with a teacher, minutes before officers arrived.",
+            "title": "Bend mourns as investigators piece together how the school shooter got inside",
+            "summary": "Bend-La Pine Schools will stay closed through Tuesday, October 20, after Thursday's shooting at Silver Rail Elementary killed three children — ages 5, 8 and 11 — and 25-year-old teacher Megan Lambert, and left a 7-year-old girl and a 54-year-old teacher hospitalized. Police identified the shooter as Griffin J. John II, 16, a former student at the school, who forced his way in by firing through locked doors into the special-education classroom where he had once been a student; no motive has been announced.\n\nThe investigation now centers on access and the gun: the pump-action shotgun was purchased by his mother, according to a law-enforcement official, and the classroom remains a crime scene through at least October 20. Students return Wednesday on an early-release schedule, with Silver Rail itself closed until further notice.",
             "source": "USA Today",
             "url": "https://www.usatoday.com/story/news/crime/2026/10/17/bend-oregon-school-shooting-suspect-motive/92299900007/"
           },
           {
-            "title": "16 days to the midterms: campaigns make their closing push",
-            "summary": "With 16 days left before Election Day, Sunday shows focused on voter priorities, fuel-price frustration and the Russia sanctions fight. Energy Secretary Chris Wright faced questions about Americans' anger over prices, while reporters traveling the country found affordability at the top of voters' lists almost everywhere.",
-            "source": "ABC News",
-            "url": "https://www.youtube.com/watch?v=0O1QOOiccrA"
+            "title": "A Bend father who followed the shooter into the school is hailed as a hero",
+            "summary": "New police detail from Bend describes three civilians who tried to stop Thursday's attack: a driver in a red pickup who confronted the shooter at the fence, was shot at repeatedly and called 911; a teacher who struggled with the gunman inside; and a father of two Silver Rail students, identified by his mother as lifelong Bend resident Kaylub Giamanco, who retrieved his legally carried gun from his car, followed the shooter inside and killed him. Governor Tina Kotek thanked the man who intervened, noting the heavy emotional burden he now carries.\n\nOregon's story this weekend is grief braided with that intervention — the attack lasted about three minutes, and officials credit the civilians with preventing further loss of life. Giamanco has asked for privacy, and how the community honors both the victims and the people who acted will shape the memorials planned as schools reopen this week.",
+            "source": "NPR via WAMC",
+            "url": "https://www.wamc.org/2026-10-17/suspect-in-deadly-oregon-elementary-school-shooting-was-a-former-student"
+          },
+          {
+            "title": "'No Kings: Vote Early' rallies shift from protest to getting ballots cast",
+            "summary": "The No Kings network held rallies across the country on Saturday billed this time as nonpartisan voter participation rather than pure protest, urging people to make a plan and vote early in the November 3 midterms. At the Lincoln Memorial a band played for a few hundred people in caps and coats holding 'VOTE EARLY' and 'HANDS OFF MY VOTE!' signs, and dozens of events ran across Maryland alone, with similar turnouts reported from Oklahoma City to Alexandria, Virginia.\n\nOrganizers say early voting is the best defense against interference, while President Trump continues to criticize mail-in voting — a method he uses himself. Polls suggest Democrats are poised to retake the House with the Senate too close to call, so the practical fight for the next two weeks is turnout mechanics: who banks their votes early and who waits for Election Day.",
+            "source": "Associated Press",
+            "url": "https://www.thebanner.com/politics-power/national-politics/no-kings-rallies-us-urge-voters-to-cast-early-ballots-midterms-FHWZD3WSNRDOLDEWY4KSSSGQZY/"
+          },
+          {
+            "title": "Norte Fire crews gain ground, but Santa Ana winds keep Southern California on edge",
+            "summary": "The Norte Fire, which ignited Friday near San Clemente and San Juan Capistrano in Orange County, burned 570 acres, destroyed or damaged six homes and forced evacuations affecting roughly 16,000 residents at its peak, with two firefighters hospitalized in stable condition. By Saturday evening containment had reached about 25% and most evacuation orders were lifted, though officials warned conditions remained volatile in gusty Santa Ana winds and 95-degree heat.\n\nNorte is one of about ten wildfires burning across California this weekend, including the Bryson Fire in Malibu and the larger Henderson Fire in San Diego County, under red-flag warnings and a FEMA fire-assistance grant for Orange County. Whether the weekend's gains hold depends on the winds: another round of gusts could mean another round of evacuations.",
+            "source": "CNN",
+            "url": "https://www.cnn.com/2026/10/16/weather/california-wildfires-santa-ana-winds-climate?cid=external-feeds_iluminar_meta"
           }
         ]
       },
@@ -449,40 +455,40 @@
         "name": "Cleveland & Ohio",
         "items": [
           {
-            "title": "Browns stun Ravens 13-10 on a walk-off field goal, grab a share of first place",
-            "summary": "Andre Szmyt kicked a 37-yard field goal as time expired — after his first try was blocked but Baltimore was flagged offside — to complete a comeback from 10-0 down at Huntington Bank Field. Carson Schwesinger forced Derrick Henry's late fumble to set up the tying score, and Cleveland (4-2) is now tied with Baltimore atop the AFC North despite being outgained and held to 46 first-half yards.",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/sports/nfl/browns-get-walk-off-winner-catch-ravens-afc-north--flm-2026-10-18/"
+            "title": "Browns stun Ravens 13-10 on Szmyt's walk-off kick, grab a share of first place",
+            "summary": "The Browns beat Baltimore 13-10 at Huntington Bank Field on Sunday on Andre Szmyt's 37-yard field goal as time expired — redemption after he missed a 48-yarder wide left with 3:44 to play. Cleveland trailed 10-0 and had just 46 yards in the first half, but a Derrick Henry fumble set up Audric Estime's tying 2-yard touchdown, and Deshaun Watson's 33-yard strike to Jerry Jeudy (4 catches, 69 yards) set up the winner; the defense held Henry to 58 yards and Baltimore scoreless after the first quarter.\n\nAt 4-2, Cleveland owns a share of first in the AFC North this late in a season for the first time since 2014, plus the head-to-head tiebreaker over Baltimore. The concern is the offense, which needed another fourth-quarter rescue; the Browns visit Tennessee next Sunday needing a more complete performance, while Baltimore hosts Cincinnati.",
+            "source": "NBC Sports",
+            "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/browns-move-into-first-place-with-13-10-victory-over-ravens"
           },
           {
-            "title": "Guardians host Rays in pivotal ALCS Game 5 tonight at Progressive Field",
-            "summary": "After Tampa Bay evened the ALCS 2-2 with a 7-3 win Saturday night, Cleveland turns to lefty Parker Messick for Game 5, first pitch 5:08 PM. The winner moves one win from the World Series, where Milwaukee is waiting, and the series heads back to Florida for Game 6 on Monday with no travel day.",
+            "title": "Guardians trail early in pivotal ALCS Game 5 as Rays jump on Messick",
+            "summary": "Game 5 of the ALCS started at 5:08 p.m. Sunday at Progressive Field with the series tied 2-2, and Tampa Bay struck first: Parker Messick walked in a run with the bases loaded in a 31-pitch first inning, then Jonathan Aranda's RBI single made it 2-0 in the second as Messick's pitch count climbed past 57 with Tim Herrin warming. The Rays forced the swing game by winning Game 4 on Saturday 7-3, helped by Chase DeLauter's fielding error in right.\n\nWhoever wins tonight flies to Florida up 3-2 and one win from the World Series, where Milwaukee waits; the loser faces elimination in Game 6 on Monday at Tropicana Field with no travel off-day after Friday's rainout. Cleveland's rested high-leverage bullpen — Hunter Gaddis, Erik Sabrowski and closer Cade Smith sat out the Game 4 blowout — is the Guardians' best path back into this one.",
             "source": "Akron Beacon Journal",
             "url": "https://www.beaconjournal.com/story/sports/mlb/cleveland-guardians/2026/10/18/guardians-game-live-score-rays-channel-watch-stats-lineups/92315086007/"
           },
           {
-            "title": "Ohio State escapes Indiana 19-15, but loses QB Julian Sayin for weeks",
-            "summary": "Ohio State won 19-15 in Bloomington on two fourth-down touchdown throws — to Bo Jackson and Jeremiah Smith — and a last-minute defensive stand when Indiana's would-be winner landed out of bounds. The win came at a cost: Sayin left with a shoulder injury that coach Ryan Day said will sideline him 'several weeks,' leaving the 6-1 Buckeyes with a quarterback question heading into their bye.",
+            "title": "Ohio State turns to freshman Luke Fahey with Sayin out 'several weeks'",
+            "summary": "Ohio State held on to beat Indiana 19-15 on Saturday, but quarterback Julian Sayin left late in the fourth quarter after Mario Landino's sack pinned his throwing arm, returned to the sideline in a sling, and coach Ryan Day said he will miss several weeks. True freshman Luke Fahey finished the game — his first snaps in a top-five matchup after mop-up duty against Ball State and Kent State — and teammates like lineman Luke Montgomery publicly backed him: 'It's Fahey's time.'\n\nThe schedule does not wait: Ohio State goes to No. 19 USC next, then hosts Oregon and Northwestern before visiting Nebraska, all likely without a quarterback who had thrown for 2,007 yards and 19 touchdowns. How fast Fahey settles in — he went 0-for-2 with two punts in relief — will decide whether the Buckeyes' playoff path survives Sayin's absence.",
             "source": "Columbus Dispatch",
-            "url": "https://www.dispatch.com/story/sports/college/football/2026/10/17/ohio-state-football-live-score-stats-highlights-analysis--live/92255168007/"
+            "url": "https://www.dispatch.com/story/sports/college/football/2026/10/17/ohio-state-responds-to-luke-fahey-replacing-julian-sayin-after-indiana-injury/92231885007/"
           },
           {
-            "title": "Cleveland looks to extend its data center moratorium into early 2027",
-            "summary": "City Council legislation would extend Cleveland's pause on new data centers, set to expire Oct. 20, until Jan. 29, 2027, while the city finishes rules on zoning, power and water use. Ohio now has about 125 local moratoriums, 80 data centers operating and 189 planned, most clustered around Columbus.",
+            "title": "Cleveland moves to extend its data center moratorium into early 2027",
+            "summary": "Cleveland City Council legislation would extend the city's pause on new data centers — set to expire October 20 — until January 29, 2027, after three town halls where residents raised power-grid, water-use and jobs concerns. Councilman Brian Kazy's Data Center Working Group studied laws elsewhere in Ohio, where about 125 local moratoriums were in place as of September and a state committee is still shaping House Bill 646.\n\nOhio has roughly 80 data centers operating and 189 planned, mostly around Columbus, and a developer just filed for a $1.6 billion, 150MW campus on East 55th Street that the extended moratorium could stall. The debate is the local version of the national AI build-out story: who pays for power and water, and whether the jobs justify it — expect the council vote and the state's bill to collide this winter.",
             "source": "Cleveland Scene",
             "url": "https://www.clevescene.com/news/cleveland-news/city-council-set-to-extend-data-center-moratorium-to-early-2027/"
           },
           {
-            "title": "Hopkins Airport's $3 billion master plan would cut it to two concourses, 40 gates",
-            "summary": "Cleveland Hopkins' full CLEvolution master plan, shown to nearly 800 contractors this week, would replace today's concourses with two new ones of about 20 gates each and bring the rental-car facility back on site for the first time since 1998. It's a conceptual, two-decade, $3 billion build-out, with the new terminal headhouse targeted for 2032.",
+            "title": "Hopkins master plan would rebuild the airport around two concourses and 40 gates",
+            "summary": "Cleveland Hopkins unveiled its full Terminal Modernization Development Program master plan, replacing concourses A, B and C — 46 gates today — with two new concourses of about 40 gates, a new terminal headhouse, and an on-site rental-car facility on the old Concourse D site, ending the shuttle ride used since 1998. The expanded program is now estimated around $3 billion, with the ground transportation center due by 2029 and a new terminal possible by 2032.\n\nNothing about the full build is funded or final yet — the $301 million ground transportation center is the approved early step — but the plan sets Cleveland's pitch for the next decade of travel and for a possible hub return. Gate count actually shrinks, so the bet is on bigger, better facilities rather than more flights; watch the financing votes, not the renderings, for whether it becomes real.",
             "source": "Cleveland Magazine / NEOtrans",
             "url": "https://clevelandmagazine.com/articles/cleveland-hopkins-international-airports-full-masterplan-has-been-released/"
           },
           {
-            "title": "Ohio governor's race tightens as Obama plans an Oct. 24 Cleveland rally",
-            "summary": "Former President Obama will rally in Cleveland Oct. 24 with Dr. Amy Acton and Sherrod Brown, a sign Democrats see Cuyahoga County turnout as decisive for Acton's race against Vivek Ramaswamy and Brown's Senate bid. Recent polls mostly show Acton with a narrow lead, and both parties are bringing in heavyweights as the race enters its final weeks.",
+            "title": "Obama to rally in Cleveland Oct. 24 for Brown and Acton as Ohio races tighten",
+            "summary": "Former President Barack Obama will campaign in Cleveland on Saturday, October 24 with Senate candidate Sherrod Brown and gubernatorial nominee Dr. Amy Acton — his first Ohio visit since 2018. Brown is trying to unseat Sen. Jon Husted in the special election for JD Vance's old seat, and Acton faces Vivek Ramaswamy to succeed term-limited Gov. Mike DeWine; Obama praised Brown in a video for standing up to corporations, Wall Street and drug companies.\n\nOhio has drawn Trump and Vance for three rallies in 10 days, and now Obama is Democrats' first high-profile surrogate in the state — a sign both parties see the Senate race as close enough to decide control of the chamber. With gas and grocery prices the top voter complaint, the Cleveland rally kicks off the final ten days of a genuinely contested Ohio midterm.",
             "source": "Columbus Dispatch",
-            "url": "https://www.dispatch.com/story/opinion/columns/2026/10/18/barack-obama-cleveland-amy-acton-sherrod-brown/92248369007/"
+            "url": "https://www.dispatch.com/story/news/politics/elections/2026/10/13/barack-obama-returns-to-ohio-for-rally-with-sherrod-brown-amy-acton/92229790007/"
           }
         ]
       }
@@ -749,9 +755,9 @@
     }
   ],
   "tickerExtras": [
-    "🏈 Browns 13-10 over Ravens — Szmyt's walk-off FG puts Cleveland tied for 1st in the AFC North at 4-2",
-    "⚾ Guardians vs Rays — ALCS Game 5 tonight, 5:08 PM at Progressive Field, series tied 2-2",
-    "📰 Top story: France faces the aftermath of its worst unrest in years after cost-of-living protests",
+    "🏈 Browns 13-10 over Ravens — Szmyt's walk-off FG puts Cleveland tied for 1st in the AFC North at 4-2 · Next: at Titans next Sunday",
+    "⚾ Guardians vs Rays — ALCS Game 5 tonight at Progressive Field, Rays led 2-0 early, series tied 2-2 · Game 6 Mon in Florida",
+    "📰 Top story: Ukraine launches 1,000+ drones at Russia — St. Petersburg oil facilities ablaze as U.S. sanctions fight heats up",
     "🏷️ Deal of the day: Giant Eagle — spend $350 by Nov 8, earn a free frozen turkey",
     "🚗 Roads: no major Solon-area alerts this morning — I-271 and US-422 running normal",
     "🎃 This week: Trunk or Treat in Solon Thu evening, Heinen's Clam Bake Fri in Chagrin Falls"
