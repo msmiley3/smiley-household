@@ -3127,5 +3127,102 @@ selectRecipe = function(i){
   setTimeout(ensureBtn, 600);
 })();
 </script>
+<style>
+.pushbtn{background:none;border:none;color:var(--faint);font-size:13px;cursor:pointer;padding:4px 2px;flex:none;line-height:1;opacity:.6;border-radius:6px}
+@media(hover:hover){.pushbtn:hover{opacity:1;background:rgba(255,255,255,.05)}}
+.pushbtn:active{color:var(--accent)}
+.pushbtn[disabled]{opacity:.35;cursor:default}
+@media print{.pushbtn{display:none!important}}
+</style>
+<script>
+// ---- Cycle 29: To-Do Push to Tomorrow (+1 day on the due date) ----
+(function(){
+  var MONTHS = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
+  // Verbatim copy of Cycle 13's parseDue, so the two features agree.
+  function parseDue(txt){
+    if(!txt) return null;
+    var t = String(txt).toLowerCase().trim();
+    var now = new Date(); var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    if(t === 'today') return today;
+    if(t === 'tomorrow'){ var d = new Date(today); d.setDate(d.getDate() + 1); return d; }
+    var iso = t.match(/(20\d\d)-(\d{1,2})-(\d{1,2})/);
+    if(iso) return new Date(+iso[1], +iso[2] - 1, +iso[3]);
+    var m = t.match(/(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+(\d{1,2})/);
+    if(m){ var d2 = new Date(today.getFullYear(), MONTHS[m[1]], +m[2]); if(d2.getTime() < today.getTime() - 30 * 864e5) d2.setFullYear(d2.getFullYear() + 1); return d2; }
+    return null;
+  }
+  function labelFor(next, now){
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var diff = Math.round((next.getTime() - today.getTime()) / 864e5);
+    if(diff === 0) return 'Today';
+    if(diff === 1) return 'Tomorrow';
+    return next.toLocaleDateString('en-US', {weekday: 'short', month: 'short', day: 'numeric'});
+  }
+  function computeNext(dueTxt, now){
+    var d = parseDue(dueTxt);
+    if(!d) return null;
+    var next = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    next.setDate(next.getDate() + 1);
+    return { date: next, label: labelFor(next, now || new Date()) };
+  }
+  window._pushTom = { parseDue: parseDue, labelFor: labelFor, computeNext: computeNext };
+  function dueRawFor(item, id){
+    var row = (window._rows || {})['todo:' + id];
+    if(row && row.due) return String(row.due);
+    var meta = item.querySelector('.meta');
+    if(meta){ var mm = (meta.textContent || '').match(/Due (.+?)(?:\s\u00B7\s|$)/); if(mm) return mm[1]; }
+    return '';
+  }
+  function enhance(){
+    var list = document.getElementById('todoList'); if(!list) return;
+    var items = list.querySelectorAll('.item');
+    for(var i = 0; i < items.length; i++){
+      var it = items[i];
+      if(it.classList.contains('done')) continue;
+      if(it.querySelector('.pushbtn')) continue;
+      var del = it.querySelector('button.del[data-kind="todo"]');
+      if(!del || !del.dataset || !del.dataset.id) continue;
+      var raw = dueRawFor(it, del.dataset.id);
+      if(!raw || !parseDue(raw)) continue;
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'pushbtn';
+      b.dataset.push = del.dataset.id; b.dataset.due = raw;
+      b.textContent = '\u23E9';
+      b.title = 'Push to tomorrow (+1 day)';
+      b.setAttribute('aria-label', 'Push due date one day later');
+      var ed = it.querySelector('.edbtn');
+      if(ed) it.insertBefore(b, ed); else if(del) it.insertBefore(b, del); else it.appendChild(b);
+    }
+  }
+  var t = null;
+  function schedule(){ clearTimeout(t); t = setTimeout(enhance, 90); }
+  var list = document.getElementById('todoList');
+  if(list && window.MutationObserver){ new MutationObserver(schedule).observe(list, {childList: true}); }
+  schedule();
+  document.addEventListener('click', async function(e){
+    var b = e.target.closest ? e.target.closest('.pushbtn') : null;
+    if(!b) return;
+    e.stopPropagation(); e.preventDefault();
+    if(b.disabled) return;
+    var id = b.dataset.push;
+    var row = (window._rows || {})['todo:' + id];
+    var raw = (row && row.due) ? String(row.due) : (b.dataset.due || '');
+    var nx = computeNext(raw, new Date());
+    if(!nx){ b.textContent = '\u2014'; setTimeout(function(){ b.textContent = '\u23E9'; }, 1200); return; }
+    b.disabled = true;
+    var orig = b.textContent; b.textContent = '\u2026';
+    try{
+      var res = await sb.from('todos').update({due: nx.label}).eq('id', id);
+      if(res && res.error) throw res.error;
+      b.textContent = '\u2713';
+      try{ if(typeof refreshSoon === 'function') refreshSoon(); }catch(_){ }
+      setTimeout(function(){ b.textContent = orig; b.disabled = false; }, 1400);
+    }catch(err){
+      b.textContent = '\u2715';
+      setTimeout(function(){ b.textContent = orig; b.disabled = false; }, 1600);
+    }
+  }, true);
+})();
+</script>
 </body>
 </html>
