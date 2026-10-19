@@ -2193,5 +2193,125 @@ selectRecipe = function(i){
   makeMic('todoForm', 'todoTask', false);
 })();
 </script>
+<style>
+#rDetail.cookmode .rdetail h3{font-size:20px}
+#rDetail.cookmode .rdetail .src{font-size:14px}
+#rDetail.cookmode .rdetail{font-size:16px}
+#rDetail.cookmode .ing{list-style:none;padding-left:0;font-size:16.5px;line-height:1.5;color:#e8e8ee}
+#rDetail.cookmode .cook-ing{display:flex;gap:11px;align-items:flex-start;padding:11px 6px;border-bottom:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+#rDetail.cookmode .cook-ring{flex:0 0 auto;width:23px;height:23px;border-radius:50%;border:2px solid #5E6AD2;margin-top:1px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;line-height:1}
+#rDetail.cookmode .cook-ing.done .cook-ring{background:#5E6AD2}
+#rDetail.cookmode .cook-ing.done .cook-txt{text-decoration:line-through;opacity:.55}
+#rCookBtn{width:100%;margin-top:10px}
+</style>
+<script>
+// ---- Cycle 18: Cook Mode for Dinner Detail ----
+(function(){
+  if(typeof selectRecipe !== 'function') return;
+  var cookOn = false, cookWL = null;
+  function escX(t){ return (typeof esc === 'function') ? esc(t) : String(t == null ? '' : t); }
+  function key(name){ return 'sf_cook_' + String(name || ''); }
+  function loadChecked(name){
+    try{ var a = JSON.parse(localStorage.getItem(key(name)) || '[]'); return Array.isArray(a) ? a : []; }catch(_){ return []; }
+  }
+  function saveChecked(name, arr){
+    try{ localStorage.setItem(key(name), JSON.stringify(arr)); }catch(_){ }
+  }
+  function releaseWL(){ try{ if(cookWL){ cookWL.release(); cookWL = null; } }catch(_){ cookWL = null; } }
+  function requestWL(){
+    try{
+      if(navigator.wakeLock && navigator.wakeLock.request){
+        navigator.wakeLock.request('screen').then(function(lock){
+          cookWL = lock;
+          try{ lock.addEventListener('release', function(){ if(cookWL === lock) cookWL = null; }); }catch(_){ }
+        }).catch(function(){ });
+      }
+    }catch(_){ }
+  }
+  function currentRecipe(){
+    var i = (typeof window._selRecipe === 'number') ? window._selRecipe : -1;
+    return (window._recipes || [])[i] || null;
+  }
+  function transformIngredients(r){
+    var d = document.getElementById('rDetail'); if(!d || !r) return;
+    var ul = d.querySelector('ul.ing'); if(!ul) return;
+    var checked = loadChecked(r.name);
+    ul.innerHTML = (r.ingredients || []).map(function(x, idx){
+      var done = checked.indexOf(idx) >= 0;
+      return '<li class="cook-ing' + (done ? ' done' : '') + '" data-ci="' + idx + '"><span class="cook-ring">' + (done ? '&#10003;' : '') + '</span><span class="cook-txt">' + escX(x) + '</span></li>';
+    }).join('');
+  }
+  function setBtnText(){
+    var b = document.getElementById('rCookBtn');
+    if(b) b.textContent = cookOn ? '\u2713 Done cooking' : '\uD83D\uDC68\u200D\uD83C\uDF73 Start cooking';
+  }
+  function enableCook(){
+    var r = currentRecipe(); if(!r) return;
+    cookOn = true;
+    var d = document.getElementById('rDetail'); if(!d) return;
+    d.classList.add('cookmode');
+    transformIngredients(r);
+    requestWL();
+    setBtnText();
+  }
+  function disableCook(rerender){
+    cookOn = false;
+    releaseWL();
+    var d = document.getElementById('rDetail');
+    if(d) d.classList.remove('cookmode');
+    if(rerender){
+      var i = (typeof window._selRecipe === 'number') ? window._selRecipe : -1;
+      if(i >= 0 && typeof _sr61 === 'function'){ _sr61(i); addCookBtn(i); }
+    }
+    setBtnText();
+  }
+  var _sr61 = selectRecipe;
+  function addCookBtn(i){
+    var d = document.getElementById('rDetail'); if(!d) return;
+    var r = (window._recipes || [])[i]; if(!r) return;
+    if(d.querySelector('#rCookBtn')) { setBtnText(); return; }
+    var b = document.createElement('button');
+    b.className = 'gbtn'; b.id = 'rCookBtn'; b.type = 'button';
+    b.addEventListener('click', function(){
+      if(cookOn) disableCook(true); else enableCook();
+    });
+    d.appendChild(b);
+    setBtnText();
+  }
+  selectRecipe = function(i){
+    _sr61(i);
+    addCookBtn(i);
+    if(cookOn) enableCook();
+  };
+  // Ingredient check-off (delegated; only active rows carry .cook-ing)
+  document.addEventListener('click', function(e){
+    if(!cookOn) return;
+    var t = e.target;
+    var row = t && t.closest ? t.closest('.cook-ing') : null;
+    if(!row) return;
+    var r = currentRecipe(); if(!r) return;
+    var idx = Number(row.getAttribute('data-ci'));
+    var checked = loadChecked(r.name);
+    var k = checked.indexOf(idx);
+    if(k >= 0) checked.splice(k, 1); else checked.push(idx);
+    saveChecked(r.name, checked);
+    row.classList.toggle('done', k < 0);
+    var ring = row.querySelector('.cook-ring');
+    if(ring) ring.innerHTML = k < 0 ? '&#10003;' : '';
+    try{ if(navigator.vibrate) navigator.vibrate(8); }catch(_){ }
+  });
+  // Release the wake lock when leaving Discover
+  if(typeof switchView === 'function'){
+    var _sv61 = switchView;
+    switchView = function(v){
+      _sv61(v);
+      if(v !== 'discover' && cookWL) releaseWL();
+    };
+  }
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible' && cookOn && !cookWL) requestWL();
+  });
+})();
+</script>
 </body>
 </html>
