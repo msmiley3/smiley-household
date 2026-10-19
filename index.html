@@ -378,6 +378,8 @@
   .jumpbar{display:flex;gap:6px;flex-wrap:wrap}
   .jchip{padding:6px 12px;border-radius:999px;border:1px solid var(--line2);background:var(--surface);color:var(--muted);font-size:12.5px;font-weight:600;cursor:pointer}
   .jchip:active{transform:scale(.96);border-color:var(--accent);color:#c6ccff}
+  .cal-dot.town{background:var(--amber)}
+  .cal-dots{display:flex;gap:3px;justify-content:center}
 </style>
 </head>
 <body>
@@ -1813,6 +1815,44 @@ document.addEventListener('click', function(e){
   var el = document.getElementById(j.getAttribute('data-jump'));
   if(el) el.scrollIntoView({behavior: 'smooth', block: 'start'});
 });
+</script>
+<script>
+function townMap(){
+  var map = {};
+  if(!CONTENT || !CONTENT.events || !CONTENT.events.areas) return map;
+  CONTENT.events.areas.forEach(function(a, ai){
+    a.items.forEach(function(x, ii){
+      (x.when || '').split('&').forEach(function(part){
+        var pw = parseWhen(part);
+        if(pw){ var k = dstr(pw.start); (map[k] = map[k] || []).push({ai: ai, ii: ii, x: x}); }
+      });
+    });
+  });
+  return map;
+}
+var _rcsOrig = renderCalStrip;
+renderCalStrip = function(){
+  _rcsOrig();
+  var map = townMap();
+  document.querySelectorAll('#calStrip .cday').forEach(function(cell){
+    var list = map[cell.getAttribute('data-day')];
+    if(!list) return;
+    var dots = cell.querySelector('.cal-dots');
+    if(!dots){ dots = document.createElement('span'); dots.className = 'cal-dots'; cell.appendChild(dots); }
+    if(!dots.querySelector('.town')){ var d = document.createElement('span'); d.className = 'cal-dot town'; dots.appendChild(d); }
+  });
+};
+var _rdeOrig = renderDayEvents;
+renderDayEvents = function(rows){
+  _rdeOrig(rows);
+  var el = document.getElementById('dayEvents');
+  if(!el) return;
+  var list = townMap()[dstr(calSel)];
+  if(!list) return;
+  el.innerHTML += '<div class="grp">🎃 Around town</div>' + list.map(function(en){
+    return '<div class="item"><div class="txt"><div>' + esc(en.x.title) + '</div><div class="meta">' + esc(en.x.when) + (en.x.where ? ' · ' + esc(en.x.where) : '') + '</div></div><button class="gbtn evadd" type="button" data-evadd="' + en.ai + ':' + en.ii + '">＋ Cal</button></div>';
+  }).join('');
+};
 </script>
 </body>
 </html>
