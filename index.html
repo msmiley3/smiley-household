@@ -2097,5 +2097,44 @@ document.addEventListener('click', function(e){
   }, 1200);
 }, true);
 </script>
+<script>
+var _sr59 = selectRecipe;
+selectRecipe = function(i){
+  _sr59(i);
+  var d = document.getElementById('rDetail'); if(!d) return;
+  var r = (window._recipes || [])[i]; if(!r || !r.ingredients || !r.ingredients.length) return;
+  if(d.querySelector('#rAddIng')) return;
+  var b = document.createElement('button');
+  b.className = 'gbtn'; b.id = 'rAddIng'; b.type = 'button';
+  b.style.cssText = 'width:100%;margin-top:10px';
+  b.textContent = '🛒 Add ingredients to shopping list';
+  b.addEventListener('click', async function(){
+    if(!requirePerson()) return;
+    var have = (window._shopRows || []).filter(function(x){ return !x.got_it; }).map(function(x){ return (x.item || '').toLowerCase().trim(); });
+    var adds = [], skipped = 0;
+    r.ingredients.forEach(function(g){
+      var raw = String(g);
+      if(/\(pantry\)|\(optional\)/i.test(raw)){ skipped++; return; }
+      var parts = raw.split(',');
+      var name = parts[0].replace(/\(.*$/, '').trim();
+      var qty = parts.length > 1 ? parts.slice(1).join(',').replace(/\(.*$/, '').trim() : '';
+      if(!name){ skipped++; return; }
+      var key = name.toLowerCase();
+      var dup = have.some(function(h){ return h && (h === key || h.indexOf(key) > -1 || key.indexOf(h) > -1); });
+      if(dup){ skipped++; return; }
+      have.push(key);
+      adds.push({ item: name, qty: qty, store: '', added_by: personName() });
+    });
+    if(!adds.length){ b.textContent = '✓ Everything needed is already on the list'; setTimeout(function(){ b.textContent = '🛒 Add ingredients to shopping list'; }, 2200); return; }
+    b.disabled = true; b.textContent = 'Adding…';
+    var res = await sb.from('shopping_items').insert(adds);
+    if(res.error){ b.disabled = false; b.textContent = '⚠ Could not add — try again'; return; }
+    b.textContent = '✓ Added ' + adds.length + ' item' + (adds.length === 1 ? '' : 's') + (skipped ? ' · skipped ' + skipped + ' (pantry/dupes)' : '');
+    refreshSoon();
+    setTimeout(function(){ b.disabled = false; b.textContent = '🛒 Add ingredients to shopping list'; }, 2600);
+  });
+  d.appendChild(b);
+};
+</script>
 </body>
 </html>
