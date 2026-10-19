@@ -380,6 +380,8 @@
   .jchip:active{transform:scale(.96);border-color:var(--accent);color:#c6ccff}
   .cal-dot.town{background:var(--amber)}
   .cal-dots{display:flex;gap:3px;justify-content:center}
+  .bbar{height:6px;background:var(--surface2);border-radius:99px;overflow:hidden;margin:0 0 10px}
+  .bbar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#4CAF76,#86d99b);border-radius:99px;transition:width .45s ease}
 </style>
 </head>
 <body>
@@ -508,6 +510,7 @@
         <section class="card listcard" id="s-todo">
           <div class="cardhead"><h2>✓ To-Dos</h2><span class="sub" id="todoSub"></span><button class="iconbtn clearbtn" data-clear="todo" type="button">Clear done</button></div>
           <div id="todoList"><div class="empty">Loading…</div></div>
+          <div class="qchips"><button class="qchip" type="button" data-due="today">Due: Today</button><button class="qchip" type="button" data-due="tomorrow">Tomorrow</button><button class="qchip" type="button" data-due="weekend">This weekend</button><button class="qchip" type="button" data-due="clear">No date</button></div>
           <form class="add" id="todoForm">
             <input id="todoTask" placeholder="Add a task…" required>
             <input id="todoDue" placeholder="Due (optional)" style="flex:0 0 110px;min-width:96px">
@@ -558,6 +561,7 @@
 
         <section class="card listcard" id="s-baby">
           <div class="cardhead"><h2>👶 Baby Checklist</h2><span class="sub" id="babySub"></span><button class="iconbtn clearbtn" data-clear="baby" type="button">Clear done</button></div>
+          <div class="bbar"><i id="babyBarFill"></i></div>
           <div id="babyList"><div class="empty">Loading…</div></div>
           <form class="add" id="babyForm">
             <input id="babyItem" placeholder="Add an item…" required>
@@ -1853,6 +1857,25 @@ renderDayEvents = function(rows){
     return '<div class="item"><div class="txt"><div>' + esc(en.x.title) + '</div><div class="meta">' + esc(en.x.when) + (en.x.where ? ' · ' + esc(en.x.where) : '') + '</div></div><button class="gbtn evadd" type="button" data-evadd="' + en.ai + ':' + en.ii + '">＋ Cal</button></div>';
   }).join('');
 };
+</script>
+<script>
+var _rbOrig = renderBaby;
+renderBaby = function(rows){
+  _rbOrig(rows);
+  var fill = document.getElementById('babyBarFill');
+  if(fill && rows){ var done = rows.filter(function(r){ return r.done; }).length; fill.style.width = rows.length ? Math.round(done / rows.length * 100) + '%' : '0%'; }
+};
+document.addEventListener('click', function(e){
+  var c = e.target.closest ? e.target.closest('[data-due]') : null;
+  if(!c) return;
+  var inp = document.getElementById('todoDue'); if(!inp) return;
+  var mode = c.getAttribute('data-due'), now = new Date();
+  if(mode === 'today') inp.value = 'Today';
+  else if(mode === 'tomorrow') inp.value = 'Tomorrow';
+  else if(mode === 'weekend'){ var d = new Date(now); d.setDate(d.getDate() + ((6 - d.getDay() + 7) % 7 || 7)); inp.value = d.toLocaleDateString('en-US', {weekday: 'short', month: 'short', day: 'numeric'}); }
+  else inp.value = '';
+  document.getElementById('todoTask').focus();
+});
 </script>
 </body>
 </html>
