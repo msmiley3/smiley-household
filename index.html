@@ -2136,5 +2136,62 @@ selectRecipe = function(i){
   d.appendChild(b);
 };
 </script>
+<script>
+// ---- Cycle 17: Voice Add for Shopping & To-Dos ----
+(function(){
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SR) return;
+  function clean(t){ return String(t || '').trim().replace(/[.]+$/, '').trim(); }
+  function makeMic(formId, inputId, isShop){
+    var form = document.getElementById(formId);
+    var input = document.getElementById(inputId);
+    if(!form || !input || form.querySelector('.voiceMic')) return;
+    var btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'voiceMic';
+    btn.textContent = '🎤';
+    btn.title = isShop ? 'Voice add — say items like “milk, eggs and dog food”' : 'Voice add — say the task';
+    btn.setAttribute('aria-label', 'Voice add');
+    btn.style.cssText = 'flex:0 0 auto;padding:8px 11px';
+    var submitBtn = form.querySelector('button[type="submit"]');
+    if(submitBtn) form.insertBefore(btn, submitBtn); else form.appendChild(btn);
+    var listening = false, rec = null;
+    btn.addEventListener('click', function(){
+      if(listening){ try{ rec && rec.stop(); }catch(_){ } return; }
+      if(typeof requirePerson === 'function' && !requirePerson()) return;
+      try{ rec = new SR(); }catch(_){ return; }
+      rec.lang = 'en-US'; rec.interimResults = false; rec.maxAlternatives = 1;
+      listening = true; btn.textContent = '🔴'; btn.title = 'Listening… tap to stop';
+      rec.onresult = function(ev){
+        var transcript = '';
+        try{ transcript = ev.results[0][0].transcript; }catch(_){ }
+        transcript = clean(transcript);
+        if(!transcript) return;
+        if(!isShop){
+          input.value = transcript;
+          form.requestSubmit();
+          return;
+        }
+        var parts = [];
+        transcript.split(',').forEach(function(seg){
+          seg.split(/ and /i).forEach(function(p){ p = clean(p); if(p) parts.push(p); });
+        });
+        if(!parts.length) parts = [transcript];
+        var idx = 0;
+        (function next(){
+          if(idx >= parts.length) return;
+          input.value = parts[idx++];
+          form.requestSubmit();
+          if(idx < parts.length) setTimeout(next, 450);
+        })();
+      };
+      var done = function(){ listening = false; btn.textContent = '🎤'; btn.title = 'Voice add'; };
+      rec.onend = done; rec.onerror = done;
+      try{ rec.start(); }catch(_){ done(); }
+    });
+  }
+  makeMic('shopForm', 'shopItem', true);
+  makeMic('todoForm', 'todoTask', false);
+})();
+</script>
 </body>
 </html>
