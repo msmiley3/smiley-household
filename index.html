@@ -8,6 +8,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Smiley Home">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <title>Smiley Family — Household</title>
 <meta name="description" content="Smiley Family household hub: shopping list, to-dos, family calendar, deals, recipes, local events, headlines, baby checklist and photos.">
 <style>
@@ -1970,6 +1973,9 @@ loadContent = async function(){
   document.addEventListener('change', function(e){ var t = e.target; if(t && t.type === 'checkbox' && t.dataset && t.dataset.kind) buzz(); });
   document.addEventListener('click', function(e){ if(e.target.closest && e.target.closest('[data-fav]')) buzz(); }, true);
 })();
+</script>
+<script>
+if('serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(function(){ }); }
 </script>
 </body>
 </html>
