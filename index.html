@@ -657,6 +657,19 @@
             <input type="time" id="evmEnd" value="19:00">
           </div>
           <div class="meta" id="evmMsg" style="margin-top:10px"></div>
+          <div class="evrow" id="evmRepeatRow">
+            <label for="evmRepeat">Repeat weekly</label>
+            <select id="evmRepeat">
+              <option value="1" selected>Just once</option>
+              <option value="2">&#215;2 (2 weeks)</option>
+              <option value="3">&#215;3 (3 weeks)</option>
+              <option value="4">&#215;4 (4 weeks)</option>
+              <option value="5">&#215;5 (5 weeks)</option>
+              <option value="6">&#215;6 (6 weeks)</option>
+              <option value="7">&#215;7 (7 weeks)</option>
+              <option value="8">&#215;8 (8 weeks)</option>
+            </select>
+          </div>
           <div class="evfoot">
             <button class="btn ghost" id="evmCancel" type="button">Cancel</button>
             <button class="btn" id="evmSave" type="button">Add event</button>
@@ -3221,6 +3234,96 @@ selectRecipe = function(i){
       b.textContent = '\u2715';
       setTimeout(function(){ b.textContent = orig; b.disabled = false; }, 1600);
     }
+  }, true);
+})();
+</script>
+<style>
+#evmRepeatRow{margin-top:10px;gap:8px;align-items:center}
+#evmRepeatRow select{background:var(--panel2,#1c1c1f);color:inherit;border:1px solid var(--line,#333);border-radius:8px;padding:6px 8px;font-size:14px}
+@media print{#evmRepeatRow{display:none!important}}
+</style>
+<script>
+// ---- Cycle 30: Recurring Event Quick-Add (Repeat weekly x2-x8) ----
+(function(){
+  function parseCount(v){
+    var n = parseInt(v, 10);
+    if(isNaN(n) || n < 1) return 1;
+    if(n > 8) return 8;
+    return n;
+  }
+  function buildCopies(title, start, n, allDay, addedBy){
+    var count = parseCount(n);
+    var out = [];
+    for(var i = 0; i < count; i++){
+      var d = new Date(start.getFullYear(), start.getMonth(), start.getDate(), start.getHours(), start.getMinutes(), start.getSeconds());
+      d.setDate(d.getDate() + 7 * i);
+      out.push({title: title, starts_at: d.toISOString(), notes: allDay ? 'All day' : '', added_by: addedBy});
+    }
+    return out;
+  }
+  window._evRepeat = { parseCount: parseCount, buildCopies: buildCopies };
+  // Reset the select to "Just once" each time the modal opens.
+  var modal = document.getElementById('evModal');
+  var sel = document.getElementById('evmRepeat');
+  if(modal && sel && window.MutationObserver){
+    new MutationObserver(function(){
+      if(!modal.hidden){ try{ sel.value = '1'; }catch(_){ } }
+    }).observe(modal, {attributes: true, attributeFilter: ['hidden']});
+  }
+  // Capture-phase intercept: only for repeat > 1; x1 falls through to the original handler.
+  document.addEventListener('click', async function(e){
+    var b = e.target.closest ? e.target.closest('#evmSave') : null;
+    if(!b) return;
+    var selEl = document.getElementById('evmRepeat');
+    var n = parseCount(selEl ? selEl.value : '1');
+    if(n <= 1) return;
+    e.stopPropagation(); e.preventDefault();
+    if(typeof previewMode !== 'undefined' && previewMode) return;
+    var titleEl = document.getElementById('evmTitle');
+    var msg = document.getElementById('evmMsg');
+    var title = titleEl ? titleEl.value.trim() : '';
+    if(!title){ if(msg) msg.textContent = 'Give the event a title first.'; return; }
+    if(typeof requirePerson === 'function' && !requirePerson()){
+      if(typeof closeEvModal === 'function') closeEvModal();
+      return;
+    }
+    var allDayEl = document.getElementById('evmAllDay');
+    var allDay = !!(allDayEl && allDayEl.checked);
+    var baseDay = null;
+    try{ if(typeof evmDay !== 'undefined' && evmDay) baseDay = new Date(evmDay); }catch(_){ }
+    if(!baseDay || isNaN(baseDay)){
+      var selDay = document.querySelector('#evmGrid .mday.sel');
+      if(selDay && selDay.dataset && selDay.dataset.day){
+        var p = selDay.dataset.day.split('-');
+        baseDay = new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+      } else { baseDay = new Date(); }
+    }
+    var start;
+    if(allDay){ start = new Date(baseDay); start.setHours(9, 0, 0, 0); }
+    else {
+      var stEl = document.getElementById('evmStart');
+      var t = ((stEl && stEl.value) || '18:00').split(':');
+      start = new Date(baseDay); start.setHours(Number(t[0]), Number(t[1]), 0, 0);
+    }
+    var addedBy = '';
+    try{ if(typeof person !== 'undefined') addedBy = person; }catch(_){ }
+    var copies = buildCopies(title, start, n, allDay, addedBy);
+    b.disabled = true;
+    try{
+      var res = await sb.from('events').insert(copies);
+      if(res && res.error) throw res.error;
+    }catch(err){
+      b.disabled = false;
+      if(msg) msg.textContent = 'Could not save \u2014 check your connection and try again.';
+      return;
+    }
+    b.disabled = false;
+    try{
+      if(typeof calSel !== 'undefined') calSel = new Date(baseDay);
+      if(typeof calCursor !== 'undefined') calCursor = new Date(baseDay.getFullYear(), baseDay.getMonth(), 1);
+    }catch(_){ }
+    if(typeof closeEvModal === 'function') closeEvModal();
+    if(typeof loadAll === 'function') loadAll(true);
   }, true);
 })();
 </script>
