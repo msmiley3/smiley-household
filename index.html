@@ -3327,5 +3327,103 @@ selectRecipe = function(i){
   }, true);
 })();
 </script>
+<style>
+#presencePill{display:none;margin-left:6px;font-size:12px;color:#9be29b;white-space:nowrap;align-items:center;gap:4px}
+#presencePill.on{display:inline-flex}
+#presencePill .pdot{width:7px;height:7px;border-radius:50%;background:#58c958;display:inline-block;flex:none}
+@media print{#presencePill{display:none!important}}
+</style>
+<script>
+// ---- Cycle 31: Who's Around presence dots (fail-silent) ----
+(function(){
+  function othersIn(state, me){
+    var out = [];
+    if(!state) return out;
+    for(var k in state){
+      if(!Object.prototype.hasOwnProperty.call(state, k)) continue;
+      if(k === me) continue;
+      var arr = state[k];
+      if(arr && arr.length) out.push(k);
+    }
+    out.sort();
+    return out;
+  }
+  function labelFor(others){
+    if(!others || !others.length) return '';
+    if(others.length === 1) return others[0] + '\u2019s here';
+    return others.join(' & ') + ' are here';
+  }
+  window._presence = { othersIn: othersIn, labelFor: labelFor };
+  var pill = null, ch = null, myKey = '', disabled = false, subTimer = null;
+  function getPerson(){
+    try{ if(typeof person !== 'undefined' && person) return person; }catch(_){ }
+    try{ return localStorage.getItem('sf_person') || ''; }catch(_){ return ''; }
+  }
+  function ensurePill(){
+    if(pill) return pill;
+    var chip = document.getElementById('personChip');
+    if(!chip || !chip.parentNode) return null;
+    pill = document.createElement('span');
+    pill.id = 'presencePill';
+    pill.innerHTML = '<span class="pdot"></span><span class="ptxt"></span>';
+    chip.parentNode.insertBefore(pill, chip.nextSibling);
+    return pill;
+  }
+  function render(){
+    var p = ensurePill(); if(!p) return;
+    var others = [];
+    try{ if(ch && typeof ch.presenceState === 'function') others = othersIn(ch.presenceState(), myKey); }catch(_){ others = []; }
+    var label = labelFor(others);
+    if(label){ p.querySelector('.ptxt').textContent = label; p.classList.add('on'); }
+    else { p.classList.remove('on'); }
+  }
+  function teardown(){
+    if(subTimer){ clearTimeout(subTimer); subTimer = null; }
+    if(ch){ try{ if(typeof sb !== 'undefined' && sb.removeChannel) sb.removeChannel(ch); }catch(_){ } ch = null; }
+    myKey = '';
+    if(pill) pill.classList.remove('on');
+  }
+  function setup(me){
+    if(disabled || !me) return;
+    if(typeof sb === 'undefined' || !sb || typeof sb.channel !== 'function'){ disabled = true; return; }
+    teardown();
+    myKey = me;
+    try{
+      ch = sb.channel('household-presence', { config: { presence: { key: me } } });
+      ch.on('presence', { event: 'sync' }, render);
+      ch.on('presence', { event: 'join' }, render);
+      ch.on('presence', { event: 'leave' }, render);
+      var settled = false;
+      subTimer = setTimeout(function(){ if(!settled){ disabled = true; teardown(); } }, 9000);
+      ch.subscribe(function(status){
+        if(status === 'SUBSCRIBED'){
+          settled = true;
+          if(subTimer){ clearTimeout(subTimer); subTimer = null; }
+          try{ ch.track({ name: me, at: Date.now() }); }catch(_){ }
+          render();
+        } else if(status === 'CHANNEL_ERROR' || status === 'TIMED_OUT'){
+          disabled = true; teardown();
+        }
+      });
+    }catch(_){ disabled = true; teardown(); }
+  }
+  function tick(){
+    if(disabled) return;
+    var me = getPerson();
+    if(!me){ if(ch) teardown(); return; }
+    if(me !== myKey || !ch) setup(me);
+  }
+  tick();
+  setInterval(tick, 4000);
+  document.addEventListener('visibilitychange', function(){
+    if(!ch || !myKey) return;
+    try{
+      if(document.hidden){ if(typeof ch.untrack === 'function') ch.untrack(); }
+      else if(typeof ch.track === 'function'){ ch.track({ name: myKey, at: Date.now() }); }
+    }catch(_){ }
+    setTimeout(render, 300);
+  });
+})();
+</script>
 </body>
 </html>
