@@ -2547,5 +2547,119 @@ selectRecipe = function(i){
   }
 })();
 </script>
+<style>
+#listFilter{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:2px 0 10px}
+#listFilter .lf-lab{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+#listFilter .qchip.on{background:#5E6AD2;border-color:#5E6AD2;color:#fff}
+.lf-empty{padding:10px 2px;color:var(--muted);font-size:13px}
+</style>
+<script>
+// ---- Cycle 22: Lists Mine Filter ----
+(function(){
+  var KEY = 'sf_listfilter';
+  var LISTS = ['shopList','todoList','babyList'];
+  var applying = false, queued = false;
+  function getFilter(){ try{ var v = localStorage.getItem(KEY) || 'all'; return ['all','mine','Mike','Kelly'].indexOf(v) > -1 ? v : 'all'; }catch(_){ return 'all'; } }
+  function setFilter(v){ try{ localStorage.setItem(KEY, v); }catch(_){ } }
+  function getPerson(){ try{ return localStorage.getItem('sf_person') || ''; }catch(_){ return ''; } }
+  function targetFor(f){
+    if(f === 'all') return null;
+    if(f === 'mine'){ var p = getPerson(); return p || null; }
+    return f;
+  }
+  function ownerOf(item){
+    var w = item.querySelector('.who-txt');
+    if(!w) return '';
+    var t = (w.textContent || '').trim();
+    return (t === 'Mike' || t === 'Kelly') ? t : '';
+  }
+  function paintChips(){
+    var bar = document.getElementById('listFilter'); if(!bar) return;
+    var f = getFilter();
+    var btns = bar.querySelectorAll('[data-lf]');
+    for(var i = 0; i < btns.length; i++){ btns[i].classList.toggle('on', btns[i].getAttribute('data-lf') === f); }
+  }
+  function applyList(el, target){
+    var items = el.querySelectorAll('.item');
+    var visible = 0;
+    for(var i = 0; i < items.length; i++){
+      var show = (target === null) || (ownerOf(items[i]) === target);
+      items[i].style.display = show ? '' : 'none';
+      if(show) visible++;
+    }
+    // Group headers: visible only if a following sibling item (before next .grp) is visible.
+    var kids = el.children, pendingGrp = null, grpHasVisible = false;
+    function flushGrp(){ if(pendingGrp) pendingGrp.style.display = grpHasVisible ? '' : 'none'; }
+    for(var j = 0; j < kids.length; j++){
+      var k = kids[j];
+      if(k.classList && k.classList.contains('grp')){ flushGrp(); pendingGrp = k; grpHasVisible = false; }
+      else if(k.classList && k.classList.contains('item')){ if(k.style.display !== 'none') grpHasVisible = true; }
+    }
+    flushGrp();
+    // Filtered-empty note
+    var note = el.querySelector('.lf-empty');
+    if(items.length > 0 && visible === 0 && target !== null){
+      if(!note){
+        note = document.createElement('div'); note.className = 'lf-empty';
+        el.appendChild(note);
+      }
+      note.textContent = 'Nothing here for ' + target + ' \u2014 tap All to see everything.';
+      note.style.display = '';
+    } else if(note){ note.style.display = 'none'; }
+    return visible;
+  }
+  function applyFilter(){
+    if(applying){ queued = true; return; }
+    applying = true;
+    try{
+      ensureBar();
+      paintChips();
+      var target = targetFor(getFilter());
+      LISTS.forEach(function(id){
+        var el = document.getElementById(id); if(el) applyList(el, target);
+      });
+    }catch(_){ }
+    applying = false;
+    if(queued){ queued = false; setTimeout(applyFilter, 30); }
+  }
+  function schedule(){ setTimeout(applyFilter, 0); }
+  function ensureBar(){
+    if(document.getElementById('listFilter')) return;
+    var shop = document.getElementById('s-shop'); if(!shop) return;
+    var list = document.getElementById('shopList'); if(!list) return;
+    var bar = document.createElement('div');
+    bar.id = 'listFilter';
+    bar.innerHTML = '<span class="lf-lab">Show</span>' +
+      '<button class="qchip" type="button" data-lf="all">All</button>' +
+      '<button class="qchip" type="button" data-lf="mine">Mine</button>' +
+      '<button class="qchip" type="button" data-lf="Mike">Mike\u2019s</button>' +
+      '<button class="qchip" type="button" data-lf="Kelly">Kelly\u2019s</button>';
+    shop.insertBefore(bar, list);
+    bar.addEventListener('click', function(e){
+      var b = e.target.closest ? e.target.closest('[data-lf]') : null; if(!b) return;
+      setFilter(b.getAttribute('data-lf'));
+      applyFilter();
+    });
+  }
+  ensureBar();
+  paintChips();
+  // Reapply after every list re-render (realtime sync, loadAll, group toggle).
+  if(typeof MutationObserver === 'function'){
+    var obs = new MutationObserver(function(){ if(!applying) schedule(); });
+    LISTS.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el) obs.observe(el, {childList: true});
+    });
+  }
+  // Person switches change what "Mine" means.
+  ['pickMike','pickKelly'].forEach(function(id){
+    var b = document.getElementById(id);
+    if(b) b.addEventListener('click', function(){ setTimeout(applyFilter, 60); });
+  });
+  // Initial pass once lists have rendered.
+  setTimeout(applyFilter, 400);
+  setTimeout(applyFilter, 1500);
+})();
+</script>
 </body>
 </html>
