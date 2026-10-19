@@ -2860,5 +2860,80 @@ selectRecipe = function(i){
   setTimeout(paintGrid, 600);
 })();
 </script>
+<style>
+#backupRow{margin-top:8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#backupMsg{font-size:12px;color:var(--muted,#9a9aa3)}
+@media print{#backupRow{display:none!important}}
+</style>
+<script>
+// ---- Cycle 25: One-Tap Family Backup Export ----
+(function(){
+  var busy = false;
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  function backupFilename(d){
+    return 'smiley-backup-' + d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + '.json';
+  }
+  function backupSummary(c){
+    return c.shopping_items + ' shopping items, ' + c.todos + ' to-dos, ' + c.events + ' events, ' + c.baby_items + ' baby items, ' + c.notes + ' notes';
+  }
+  window._backupFns = { filename: backupFilename, summary: backupSummary };
+  function ensureBtn(){
+    var card = document.getElementById('s-usage'); if(!card) return;
+    if(document.getElementById('backupBtn')) return;
+    var row = document.createElement('div'); row.id = 'backupRow';
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'iconbtn'; b.id = 'backupBtn';
+    b.textContent = '\uD83D\uDCE6 Download backup';
+    var m = document.createElement('span'); m.id = 'backupMsg'; m.className = 'meta';
+    row.appendChild(b); row.appendChild(m);
+    card.appendChild(row);
+    b.addEventListener('click', doBackup);
+  }
+  async function fetchTable(name, col){
+    var q = sb.from(name).select('*');
+    if(col) q = q.order(col, {ascending:true});
+    var res = await q;
+    if(res.error) throw new Error(name + ': ' + (res.error.message || 'read failed'));
+    return res.data || [];
+  }
+  async function doBackup(){
+    if(busy) return; busy = true;
+    var b = document.getElementById('backupBtn');
+    var m = document.getElementById('backupMsg');
+    var old = b ? b.textContent : '';
+    try{
+      if(b){ b.disabled = true; b.textContent = 'Preparing\u2026'; }
+      if(m) m.textContent = '';
+      var tables = ['shopping_items','todos','events','baby_items','notes'];
+      var cols = {shopping_items:'created_at', todos:'created_at', events:'starts_at', baby_items:'created_at', notes:'created_at'};
+      var out = { app:'Smiley Household', format:'smiley-backup-1', exportedAt:new Date().toISOString() };
+      var counts = {};
+      for(var i = 0; i < tables.length; i++){
+        var rows = await fetchTable(tables[i], cols[tables[i]]);
+        out[tables[i]] = rows; counts[tables[i]] = rows.length;
+      }
+      out.counts = counts;
+      out.summary = 'Smiley Household backup \u2014 ' + backupSummary(counts) + '. Keep this file somewhere safe (Drive or email); it can be used to restore the family lists, calendar, baby checklist and family note.';
+      var blob = new Blob([JSON.stringify(out, null, 2)], {type:'application/json'});
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = backupFilename(new Date());
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){ try{ URL.revokeObjectURL(url); }catch(_){ } }, 4000);
+      if(m) m.textContent = 'Saved \u2713 \u2014 ' + backupSummary(counts);
+      if(b) b.textContent = 'Saved \u2713';
+    }catch(e){
+      if(m) m.textContent = 'Backup failed \u2014 check your connection and try again.';
+      if(b) b.textContent = old || '\uD83D\uDCE6 Download backup';
+    }finally{
+      busy = false;
+      if(b){ b.disabled = false; setTimeout(function(){ b.textContent = '\uD83D\uDCE6 Download backup'; }, 2600); }
+    }
+  }
+  ensureBtn();
+  setTimeout(ensureBtn, 600);
+  setTimeout(ensureBtn, 2000);
+})();
+</script>
 </body>
 </html>
