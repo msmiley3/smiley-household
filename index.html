@@ -2313,5 +2313,100 @@ selectRecipe = function(i){
   });
 })();
 </script>
+<style>
+#shopMemChips .qchip{border-style:dashed}
+#shopMemChips .memlbl{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);align-self:center;margin-right:2px}
+</style>
+<script>
+// ---- Cycle 19: Shopping Memory (Recents + Remembered Stores) ----
+(function(){
+  var KEY = 'sf_shopmem';
+  function loadMem(){
+    try{ var a = JSON.parse(localStorage.getItem(KEY) || '[]'); return Array.isArray(a) ? a : []; }catch(_){ return []; }
+  }
+  function saveMem(a){ try{ localStorage.setItem(KEY, JSON.stringify(a)); }catch(_){ } }
+  function norm(t){ return String(t || '').trim().toLowerCase(); }
+  function sortedMem(){
+    return loadMem().slice().sort(function(a, b){
+      return (b.count || 0) - (a.count || 0) || (b.last || 0) - (a.last || 0);
+    });
+  }
+  function record(item, store){
+    var n = norm(item); if(!n) return;
+    var a = loadMem(), hit = null;
+    for(var i = 0; i < a.length; i++){ if(norm(a[i].name) === n){ hit = a[i]; break; } }
+    if(hit){
+      hit.count = (hit.count || 0) + 1; hit.last = Date.now();
+      hit.name = String(item).trim();
+      if(store) hit.store = String(store).trim();
+    } else {
+      a.push({name: String(item).trim(), store: String(store || '').trim(), count: 1, last: Date.now()});
+    }
+    a.sort(function(x, y){ return (y.count || 0) - (x.count || 0) || (y.last || 0) - (x.last || 0); });
+    saveMem(a.slice(0, 40));
+    renderMem();
+  }
+  function escX(t){ return (typeof esc === 'function') ? esc(t) : String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+  function renderMem(){
+    var host = document.getElementById('shopChips'); if(!host) return;
+    var row = document.getElementById('shopMemChips');
+    var top = sortedMem().slice(0, 8);
+    if(!top.length){ if(row) row.remove(); return; }
+    if(!row){
+      row = document.createElement('div');
+      row.className = 'qchips'; row.id = 'shopMemChips';
+      host.parentNode.insertBefore(row, host.nextSibling);
+    }
+    row.innerHTML = '<span class="memlbl">Recent</span>' + top.map(function(m){
+      return '<button class="qchip" type="button" data-qmem="' + escX(m.name) + '">&#8635; ' + escX(m.name) + '</button>';
+    }).join('');
+  }
+  // Learn from every add through the normal form path (typed, quick chips,
+  // voice, recipe follow-ups and the recent chips themselves all submit here).
+  var form = document.getElementById('shopForm');
+  if(form){
+    form.addEventListener('submit', function(){
+      var itemEl = document.getElementById('shopItem');
+      var storeEl = document.getElementById('shopStore');
+      record(itemEl ? itemEl.value : '', storeEl ? storeEl.value : '');
+    });
+  }
+  // Tapping a recent chip re-adds the item with its remembered store.
+  document.addEventListener('click', function(e){
+    var q = e.target && e.target.closest ? e.target.closest('[data-qmem]') : null;
+    if(!q) return;
+    var name = q.getAttribute('data-qmem');
+    var mem = sortedMem();
+    var hit = null;
+    for(var i = 0; i < mem.length; i++){ if(norm(mem[i].name) === norm(name)){ hit = mem[i]; break; } }
+    var itemEl = document.getElementById('shopItem');
+    var storeEl = document.getElementById('shopStore');
+    var f = document.getElementById('shopForm');
+    if(!itemEl || !f) return;
+    itemEl.value = name;
+    if(storeEl && hit && hit.store) storeEl.value = hit.store;
+    f.requestSubmit();
+  });
+  // Typing a remembered item prefills its store (only if store is empty).
+  var itemInput = document.getElementById('shopItem');
+  if(itemInput){
+    itemInput.addEventListener('input', function(){
+      var storeEl = document.getElementById('shopStore');
+      if(!storeEl || storeEl.value.trim()) return;
+      var n = norm(itemInput.value); if(!n) return;
+      var mem = loadMem();
+      for(var i = 0; i < mem.length; i++){
+        if(norm(mem[i].name) === n && mem[i].store){ storeEl.value = mem[i].store; break; }
+      }
+    });
+  }
+  // Refresh the chip row whenever the shopping list re-renders.
+  if(typeof renderShop === 'function'){
+    var _rs62 = renderShop;
+    renderShop = function(rows){ _rs62(rows); renderMem(); };
+  }
+  renderMem();
+})();
+</script>
 </body>
 </html>
