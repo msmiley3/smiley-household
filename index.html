@@ -401,6 +401,10 @@
     a{text-decoration:none!important}
     .rcard img,.newsimg,.wthumb{display:none!important}
   }
+  .item.dueover{box-shadow:inset 3px 0 0 var(--danger)}
+  .item.dueover .meta{color:#e58a84;font-weight:600}
+  .item.duetoday{box-shadow:inset 3px 0 0 #e8c37a}
+  .item.duetoday .meta{color:#e8c37a;font-weight:600}
 </style>
 </head>
 <body>
@@ -1976,6 +1980,63 @@ loadContent = async function(){
 </script>
 <script>
 if('serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(function(){ }); }
+</script>
+<script>
+(function(){
+  var MONTHS = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
+  function parseDue(txt){
+    if(!txt) return null;
+    var t = txt.toLowerCase().trim();
+    var now = new Date(); var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    if(t === 'today') return today;
+    if(t === 'tomorrow'){ var d = new Date(today); d.setDate(d.getDate() + 1); return d; }
+    var iso = t.match(/(20\d\d)-(\d{1,2})-(\d{1,2})/);
+    if(iso) return new Date(+iso[1], +iso[2] - 1, +iso[3]);
+    var m = t.match(/(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+(\d{1,2})/);
+    if(m){ var d2 = new Date(today.getFullYear(), MONTHS[m[1]], +m[2]); if(d2.getTime() < today.getTime() - 30 * 864e5) d2.setFullYear(d2.getFullYear() + 1); return d2; }
+    return null;
+  }
+  function enhance(){
+    var list = document.getElementById('todoList'); if(!list) return;
+    var items = Array.prototype.slice.call(list.querySelectorAll('.item'));
+    if(!items.length) return;
+    var now = new Date(); var today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+    var open = [];
+    items.forEach(function(it, idx){
+      it._ord = idx;
+      if(it.classList.contains('done')) return;
+      var meta = it.querySelector('.meta');
+      var due = null;
+      if(meta){ var mm = (meta.textContent || '').match(/Due (.+?)(?:\s·\s|$)/); if(mm) due = parseDue(mm[1]); }
+      it.classList.remove('dueover', 'duetoday');
+      var rank = 4, key = 0;
+      if(due){
+        var dt = due.getTime();
+        if(dt < today){ rank = 0; key = dt; it.classList.add('dueover'); }
+        else if(dt === today){ rank = 1; it.classList.add('duetoday'); }
+        else if(dt === today + 864e5){ rank = 2; key = dt; }
+        else { rank = 3; key = dt; }
+      }
+      open.push({ el: it, rank: rank, key: key, ord: idx });
+    });
+    var sorted = open.slice().sort(function(a, b){ return a.rank - b.rank || a.key - b.key || a.ord - b.ord; });
+    var changed = sorted.some(function(o, i){ return o.el !== open[i].el; });
+    if(changed){
+      window._dueSorting = true;
+      var parent = items[0].parentNode;
+      var kids = Array.prototype.slice.call(parent.children);
+      var seq = [], si = 0;
+      kids.forEach(function(k){ seq.push(k.classList && k.classList.contains('item') && !k.classList.contains('done') ? sorted[si++].el : k); });
+      seq.forEach(function(el){ parent.appendChild(el); });
+      window._dueSorting = false;
+    }
+  }
+  var t = null;
+  function schedule(){ if(window._dueSorting) return; clearTimeout(t); t = setTimeout(enhance, 80); }
+  var list = document.getElementById('todoList');
+  if(list && window.MutationObserver){ new MutationObserver(schedule).observe(list, {childList: true}); }
+  schedule();
+})();
 </script>
 </body>
 </html>
