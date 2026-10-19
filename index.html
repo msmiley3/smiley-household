@@ -2661,5 +2661,48 @@ selectRecipe = function(i){
   setTimeout(applyFilter, 1500);
 })();
 </script>
+<style>
+#offlinePill{position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:210;background:rgba(120,72,10,.96);border:1px solid rgba(255,190,80,.55);color:#ffe1a8;font-size:12.5px;font-weight:650;padding:7px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.45);white-space:nowrap}
+#offlinePill[hidden]{display:none!important}
+@media print{#offlinePill{display:none!important}}
+</style>
+<script>
+// ---- Cycle 23: Offline Indicator ----
+(function(){
+  var pill = null;
+  function ensurePill(){
+    pill = document.getElementById('offlinePill');
+    if(!pill){
+      pill = document.createElement('div');
+      pill.id = 'offlinePill';
+      pill.setAttribute('role', 'status');
+      pill.setAttribute('aria-live', 'polite');
+      pill.textContent = '\uD83D\uDCF4 Offline \u2014 showing saved copy';
+      pill.hidden = true;
+      document.body.appendChild(pill);
+    }
+    return pill;
+  }
+  function paint(force){
+    try{
+      var off = (typeof force === 'boolean') ? force : (typeof navigator !== 'undefined' && navigator.onLine === false);
+      ensurePill().hidden = !off;
+    }catch(_){ }
+  }
+  function goOffline(){ paint(true); }
+  function backOnline(){
+    paint(false);
+    // Catch up the moment signal returns (bonus from backlog spec).
+    try{ if(typeof refreshSoon === 'function') refreshSoon(); }catch(_){ }
+  }
+  ensurePill();
+  paint();
+  window.addEventListener('offline', goOffline);
+  window.addEventListener('online', backOnline);
+  // Some browsers flip onLine without an event reaching a backgrounded tab; re-check on return.
+  document.addEventListener('visibilitychange', function(){ if(!document.hidden) paint(); });
+  setTimeout(paint, 400);
+})();
+</script>
 </body>
 </html>
