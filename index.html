@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0b0e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Smiley Home">
 <title>Smiley Family — Household</title>
 <meta name="description" content="Smiley Family household hub: shopping list, to-dos, family calendar, deals, recipes, local events, headlines, baby checklist and photos.">
 <style>
@@ -384,6 +389,15 @@
   .bbar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#4CAF76,#86d99b);border-radius:99px;transition:width .45s ease}
   .nchips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
   #ptrToast{position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:200;background:rgba(18,20,26,.92);border:1px solid rgba(255,255,255,.14);color:#fff;font-size:12.5px;font-weight:600;padding:7px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+  @media print{
+    body{background:#fff!important}
+    .stickyhead,.tabbar,.ticker,#ptrToast,.add,.qchips,.nchips,.jumpbar,.clearbtn,.gbtn,.evadd,#shopCopy,#groupStoreBtn,#rSurprise,.rfav,.del,.edbtn,form{display:none!important}
+    .card,section{background:#fff!important;box-shadow:none!important;border:1px solid #ddd!important;animation:none!important}
+    section{display:block!important}
+    *{color:#111!important;border-color:#ddd!important}
+    a{text-decoration:none!important}
+    .rcard img,.newsimg,.wthumb{display:none!important}
+  }
 </style>
 </head>
 <body>
@@ -1946,6 +1960,15 @@ loadContent = async function(){
     if(toast){ toast.hidden = false; setTimeout(function(){ toast.hidden = true; }, 1400); }
     loadAll(); loadContent();
   }, {passive: true});
+})();
+</script>
+<script>
+(function(){
+  function buzz(){ try{ if(navigator.vibrate) navigator.vibrate(8); }catch(_){ } }
+  var _svOrig = switchView;
+  switchView = function(v){ _svOrig(v); buzz(); };
+  document.addEventListener('change', function(e){ var t = e.target; if(t && t.type === 'checkbox' && t.dataset && t.dataset.kind) buzz(); });
+  document.addEventListener('click', function(e){ if(e.target.closest && e.target.closest('[data-fav]')) buzz(); }, true);
 })();
 </script>
 </body>
