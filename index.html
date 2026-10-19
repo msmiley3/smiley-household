@@ -567,6 +567,17 @@
           <div id="rDetail"></div>
         </section>
 
+        <section class="card span2" id="s-savedrecipes">
+          <div class="cardhead"><h2>🔖 Saved Recipes</h2><span class="sub" id="srSub"></span></div>
+          <div id="srList"><div class="empty">Loading saved recipes\u2026</div></div>
+          <form class="add" id="srForm">
+            <input id="srTitle" placeholder="Recipe name (optional with a link)">
+            <input id="srUrl" type="url" inputmode="url" placeholder="Paste a recipe link\u2026">
+            <button type="submit">Save</button>
+          </form>
+          <div class="meta" id="srMsg" style="margin-top:6px">Paste a link from any recipe site and tap Save \u2014 it shows up here on both phones.</div>
+        </section>
+
         <section class="card span2" id="s-events">
           <div class="cardhead"><h2>🎃 This Week Around Us</h2><span class="sub" id="eventsRange"></span></div>
           <div id="eventsWrap"><div class="empty">Loading events…</div></div>
@@ -3504,6 +3515,164 @@ selectRecipe = function(i){
   document.addEventListener('toggle', function(){ setTimeout(update, 0); }, true);
   update();
   setTimeout(update, 600);
+})();
+</script>
+
+<style>
+  #s-savedrecipes .sr-name{font-weight:600;color:var(--text);text-decoration:none}
+  #s-savedrecipes a.sr-name:hover{color:#aab4ff;text-decoration:underline}
+  #s-savedrecipes .sr-ext{color:var(--faint);font-size:11px;font-weight:400}
+  #s-savedrecipes .item.gracing{opacity:.45}
+  #s-savedrecipes .item.gracing .txt{text-decoration:line-through}
+  #s-savedrecipes .del.undo{color:#e8c37a;opacity:1;font-size:12px;font-weight:650;width:auto}
+</style>
+<script>
+/* Cycle 32 \u2014 Saved Recipes (Supabase `recipes` table). Additive only:
+   mirrors #s-recipes visibility (same Discover view), own fold button,
+   person-stamped adds, 6s undo-grace deletes like the other lists. */
+(function(){
+  'use strict';
+  var sec = document.getElementById('s-savedrecipes');
+  if(!sec || !window.sb) return;
+  function $(id){ return document.getElementById(id); }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function getPerson(){ try{ return localStorage.getItem('sf_person') || ''; }catch(_){ return ''; } }
+  function who(name){
+    if(!name) return '';
+    var cls = name === 'Kelly' ? 'kelly' : 'mike';
+    return '<span class="who-txt ' + cls + '"><span class="dot ' + cls + '"></span>' + esc(name) + '</span>';
+  }
+  function normUrl(u){
+    u = String(u || '').trim();
+    if(!u) return '';
+    if(!/^[a-z][a-z0-9+.-]*:/i.test(u)) u = 'https://' + u;
+    return u;
+  }
+  function domainOf(u){
+    try{ return new URL(normUrl(u)).hostname.replace(/^www\./, ''); }catch(_){ return ''; }
+  }
+  function titleFromUrl(u){
+    try{
+      var p = new URL(normUrl(u)).pathname.split('/').filter(Boolean);
+      for(var i = p.length - 1; i >= 0; i--){
+        var seg = decodeURIComponent(p[i]).replace(/\.[a-z0-9]+$/i, '');
+        if(/^\d+$/.test(seg) || /^(recipe|recipes|amp|print)$/i.test(seg)) continue;
+        var t = seg.replace(/[-_]+/g, ' ').replace(/\b\d+\b/g, ' ').replace(/\s+/g, ' ').trim();
+        if(t.length < 3) continue;
+        return t.replace(/\b\w/g, function(c){ return c.toUpperCase(); });
+      }
+    }catch(_){ }
+    var d = domainOf(u);
+    return d ? d + ' recipe' : 'Saved recipe';
+  }
+  function msg(t){ var m = $('srMsg'); if(m) m.textContent = t; }
+
+  /* visibility: same view as #s-recipes (Discover) */
+  function syncVis(){
+    var r = $('s-recipes');
+    if(r) sec.style.display = r.style.display;
+  }
+  var rec = $('s-recipes');
+  if(rec && window.MutationObserver){
+    new MutationObserver(syncVis).observe(rec, {attributes: true, attributeFilter: ['style']});
+  }
+  document.addEventListener('click', function(){ setTimeout(syncVis, 30); }, true);
+  syncVis();
+
+  /* fold button (same sf_folded store the app uses) */
+  (function(){
+    var head = sec.querySelector('.cardhead'); if(!head) return;
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'foldbtn'; b.textContent = '\u25BE'; b.setAttribute('aria-label', 'Fold section');
+    head.appendChild(b);
+    var folded = [];
+    try{ folded = JSON.parse(localStorage.getItem('sf_folded') || '[]'); }catch(_){ }
+    if(folded.indexOf('s-savedrecipes') >= 0){ sec.classList.add('folded'); b.textContent = '\u25B8'; }
+    b.addEventListener('click', function(){
+      var on = sec.classList.toggle('folded');
+      b.textContent = on ? '\u25B8' : '\u25BE';
+      try{
+        var arr = JSON.parse(localStorage.getItem('sf_folded') || '[]');
+        arr = arr.filter(function(x){ return x !== 's-savedrecipes'; });
+        if(on) arr.push('s-savedrecipes');
+        localStorage.setItem('sf_folded', JSON.stringify(arr));
+      }catch(_){ }
+    });
+  })();
+
+  /* ---------- data ---------- */
+  var timers = {};
+  function render(rows){
+    var list = $('srList'), sub = $('srSub');
+    if(sub) sub.textContent = rows.length ? rows.length + ' saved' : '';
+    if(!rows.length){
+      list.innerHTML = '<div class="empty">No saved recipes yet \u2014 paste a link below to save the first one.</div>';
+      return;
+    }
+    list.innerHTML = rows.map(function(r){
+      var name = r.url
+        ? '<a class="sr-name" href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + ' <span class="sr-ext">\u2197</span></a>'
+        : '<span class="sr-name">' + esc(r.title) + '</span>';
+      var bits = [];
+      var d = r.url ? domainOf(r.url) : '';
+      if(d) bits.push(esc(d));
+      if(r.added_by) bits.push(who(r.added_by));
+      if(r.created_at) bits.push(new Date(r.created_at).toLocaleDateString('en-US', {month: 'short', day: 'numeric'}));
+      if(r.notes) bits.push(esc(r.notes));
+      return '<div class="item" data-sr="' + r.id + '"><div class="txt"><div>' + name + '</div>' +
+        (bits.length ? '<div class="meta">' + bits.join(' \u00B7 ') + '</div>' : '') +
+        '</div><button class="del" type="button" data-sr-del="' + r.id + '" aria-label="Delete">\u2715</button></div>';
+    }).join('');
+  }
+  async function load(){
+    try{
+      var res = await sb.from('recipes').select('*').order('created_at', {ascending: false}).limit(200);
+      if(res.error){ $('srList').innerHTML = '<div class="empty">Could not load saved recipes.</div>'; return; }
+      render(res.data || []);
+    }catch(_){
+      $('srList').innerHTML = '<div class="empty">Could not load saved recipes.</div>';
+    }
+  }
+  window._srLoad = load;
+
+  $('srList').addEventListener('click', function(e){
+    var b = e.target.closest ? e.target.closest('[data-sr-del]') : null;
+    if(!b) return;
+    var id = b.getAttribute('data-sr-del');
+    var row = b.closest('.item');
+    if(timers[id]){ /* undo */
+      clearTimeout(timers[id]); delete timers[id];
+      if(row){ row.classList.remove('gracing'); }
+      b.textContent = '\u2715'; b.classList.remove('undo');
+      return;
+    }
+    if(row) row.classList.add('gracing');
+    b.textContent = 'Undo?'; b.classList.add('undo');
+    timers[id] = setTimeout(async function(){
+      delete timers[id];
+      await sb.from('recipes').delete().eq('id', id);
+      load();
+    }, 6000);
+  });
+
+  $('srForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var person = getPerson();
+    if(!person){ msg('Pick who\u2019s using this phone first \u2014 tap the \uD83D\uDC64 chip at the top, then Save.'); return; }
+    var title = $('srTitle').value.trim();
+    var url = normUrl($('srUrl').value);
+    if(url && !domainOf(url)){ msg('That link doesn\u2019t look right \u2014 check it and try again.'); return; }
+    if(!title && url) title = titleFromUrl(url);
+    if(!title){ msg('Give it a name, or paste a link, first.'); return; }
+    var res = await sb.from('recipes').insert({title: title, url: url || null, added_by: person});
+    if(res.error){ msg('Could not save \u2014 try again in a moment.'); return; }
+    $('srTitle').value = ''; $('srUrl').value = '';
+    msg('Saved \u2713 \u2014 \u201C' + title + '\u201D is now on both phones.');
+    load();
+  });
+
+  load();
+  document.addEventListener('visibilitychange', function(){ if(!document.hidden) load(); });
 })();
 </script>
 </body>
