@@ -2704,5 +2704,161 @@ selectRecipe = function(i){
   setTimeout(paint, 400);
 })();
 </script>
+<style>
+.ph .favbtn{position:absolute;top:2px;left:2px;background:rgba(0,0,0,.55);border:0;border-radius:6px;color:#fff;font-size:13px;line-height:1.5;padding:1px 7px;cursor:pointer;z-index:2}
+.ph .favbtn.on{color:#ff6b8a}
+#ssFavBtn{position:absolute;top:14px;left:16px;z-index:5;background:rgba(0,0,0,.45);border:0;border-radius:999px;color:#fff;font-size:16px;line-height:1.4;padding:4px 12px;cursor:pointer}
+#ssFavBtn.on{color:#ff6b8a}
+#favEmpty{grid-column:1/-1}
+@media print{.ph .favbtn,#ssFavBtn{display:none!important}}
+</style>
+<script>
+// ---- Cycle 24: Favorite Photos + Favorites filter ----
+(function(){
+  var KEY = 'sf_photofavs';
+  var favMode = false;
+  function favs(){
+    try{ var a = JSON.parse(localStorage.getItem(KEY) || '[]'); return Array.isArray(a) ? a.filter(function(x){ return typeof x === 'string'; }) : []; }
+    catch(_){ return []; }
+  }
+  function saveFavs(a){ try{ localStorage.setItem(KEY, JSON.stringify(a)); }catch(_){ } }
+  function isFav(n){ return favs().indexOf(n) > -1; }
+  function toggleFav(n){
+    var a = favs(), i = a.indexOf(n);
+    if(i > -1) a.splice(i, 1); else a.push(n);
+    saveFavs(a);
+  }
+  function tileName(ph){
+    var d = ph.querySelector('button.del[data-name]');
+    return d ? d.getAttribute('data-name') : null;
+  }
+  function applyFavFilter(){
+    var grid = document.getElementById('photoGrid'); if(!grid) return;
+    var a = favs();
+    var kids = Array.prototype.slice.call(grid.children);
+    kids.forEach(function(node){
+      if(node.classList && node.classList.contains('photos')){
+        var any = false;
+        Array.prototype.forEach.call(node.querySelectorAll('.ph'), function(ph){
+          var n = tileName(ph);
+          var show = !favMode || (n && a.indexOf(n) > -1);
+          ph.style.display = show ? '' : 'none';
+          if(show) any = true;
+        });
+        node.style.display = (favMode && !any) ? 'none' : '';
+        var prev = node.previousElementSibling;
+        if(prev && prev.classList && prev.classList.contains('grp')) prev.style.display = (favMode && !any) ? 'none' : '';
+      }
+    });
+    var old = document.getElementById('favEmpty');
+    if(favMode && !a.length){
+      if(!old){
+        old = document.createElement('div');
+        old.id = 'favEmpty'; old.className = 'empty';
+        old.textContent = 'No favorites yet \u2014 tap the \u2661 on any photo to save it here.';
+        grid.appendChild(old);
+      }
+    } else if(old){ old.remove(); }
+  }
+  function paintGrid(){
+    var grid = document.getElementById('photoGrid'); if(!grid) return;
+    var a = favs();
+    Array.prototype.forEach.call(grid.querySelectorAll('.ph'), function(ph){
+      var n = tileName(ph); if(!n) return;
+      var b = ph.querySelector('.favbtn');
+      if(!b){
+        b = document.createElement('button');
+        b.type = 'button'; b.className = 'favbtn';
+        b.setAttribute('data-favname', n);
+        b.setAttribute('aria-label', 'Favorite photo');
+        ph.appendChild(b);
+      }
+      var on = a.indexOf(n) > -1;
+      b.textContent = on ? '\u2665' : '\u2661';
+      b.classList.toggle('on', on);
+    });
+    var chips = grid.querySelector('.gchips');
+    if(chips){
+      var fc = chips.querySelector('[data-pfav]');
+      if(!fc){
+        fc = document.createElement('button');
+        fc.type = 'button'; fc.className = 'gchip';
+        fc.setAttribute('data-pfav', '1');
+        chips.appendChild(fc);
+      }
+      fc.textContent = '\u2665 Favorites \u00B7 ' + a.length;
+      fc.classList.toggle('on', favMode);
+      if(favMode){
+        Array.prototype.forEach.call(chips.querySelectorAll('[data-pf]'), function(c){ c.classList.remove('on'); });
+      }
+    }
+    applyFavFilter();
+  }
+  function currentPhoto(){
+    var list = window._photoUrls || []; if(!list.length) return null;
+    try{ if(typeof ssIdx === 'number'){ var p = list[ssIdx % list.length]; if(p) return p; } }catch(_){ }
+    var img = document.getElementById('ssImg');
+    var src = img ? (img.getAttribute('src') || '') : '';
+    for(var i = 0; i < list.length; i++){ if(list[i].url === src) return list[i]; }
+    return null;
+  }
+  function paintSs(){
+    var ss = document.getElementById('slideshow'); if(!ss) return;
+    var b = document.getElementById('ssFavBtn');
+    if(!b){
+      b = document.createElement('button');
+      b.type = 'button'; b.id = 'ssFavBtn';
+      b.setAttribute('aria-label', 'Favorite this photo');
+      ss.appendChild(b);
+    }
+    var p = currentPhoto();
+    var on = !!(p && p.name && isFav(p.name));
+    b.textContent = on ? '\u2665' : '\u2661';
+    b.classList.toggle('on', on);
+    b.style.display = p ? '' : 'none';
+  }
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    var fb = t.closest ? t.closest('[data-favname]') : null;
+    if(fb){
+      e.stopPropagation(); e.preventDefault();
+      toggleFav(fb.getAttribute('data-favname'));
+      paintGrid(); paintSs();
+      return;
+    }
+    if(t.closest && t.closest('#ssFavBtn')){
+      e.stopPropagation(); e.preventDefault();
+      var p = currentPhoto();
+      if(p && p.name){ toggleFav(p.name); paintGrid(); paintSs(); }
+      return;
+    }
+    var fc = t.closest ? t.closest('[data-pfav]') : null;
+    if(fc){
+      e.stopPropagation(); e.preventDefault();
+      favMode = true;
+      paintGrid();
+      return;
+    }
+    if(t.closest && t.closest('[data-pf]')){
+      // A real area chip exits favorite mode; the app's own handler re-renders.
+      favMode = false;
+    }
+  }, true);
+  var grid = document.getElementById('photoGrid');
+  if(grid && window.MutationObserver){
+    var pending = false;
+    new MutationObserver(function(){
+      if(pending) return; pending = true;
+      setTimeout(function(){ pending = false; paintGrid(); }, 30);
+    }).observe(grid, {childList: true});
+  }
+  setInterval(function(){
+    var ss = document.getElementById('slideshow');
+    if(ss && !ss.hidden) paintSs();
+  }, 800);
+  paintGrid();
+  setTimeout(paintGrid, 600);
+})();
+</script>
 </body>
 </html>
