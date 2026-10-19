@@ -2408,5 +2408,75 @@ selectRecipe = function(i){
   renderMem();
 })();
 </script>
+<style>
+#babyGroups{margin-top:10px;border-top:1px solid rgba(255,255,255,.07);padding-top:10px;display:grid;gap:8px}
+#babyGroups .bgrp{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center}
+#babyGroups .bgrp .blab{font-size:12.5px;font-weight:600;color:var(--text,#e6e6e6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#babyGroups .bgrp .bnum{font-size:11.5px;color:var(--muted);white-space:nowrap}
+#babyGroups .bgrp .bbar{grid-column:1/-1;margin:0;height:5px}
+#babyToast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);z-index:300;background:rgba(18,20,26,.96);border:1px solid rgba(255,255,255,.16);color:#fff;padding:10px 16px;border-radius:999px;display:none;font-size:13.5px;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.5);overflow:visible;white-space:nowrap}
+#babyToast .cf{position:absolute;top:-2px;width:6px;height:6px;border-radius:50%;pointer-events:none;animation:babyCf 1.1s ease-out forwards}
+@keyframes babyCf{0%{transform:translateY(0) scale(1);opacity:1}100%{transform:translateY(-34px) scale(.4);opacity:0}}
+</style>
+<script>
+// ---- Cycle 20: Baby Prep Milestones & Per-Bag Progress ----
+(function(){
+  var KEY = 'sf_babypct';
+  function escX(t){ return (typeof esc === 'function') ? esc(t) : String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+  function celebrate(pct){
+    var t = document.getElementById('babyToast');
+    if(!t){
+      t = document.createElement('div'); t.id = 'babyToast';
+      document.body.appendChild(t);
+    }
+    var msg = pct >= 100 ? 'All baby prep done! \uD83C\uDF89' : pct >= 75 ? '75% packed \u2014 almost there! \uD83C\uDF89' : pct >= 50 ? 'Halfway packed! \uD83C\uDF89' : '25% of baby prep done! \uD83C\uDF89';
+    var dots = '';
+    var colors = ['#5E6AD2','#4CAF76','#f2c14e','#e879a6','#86d99b'];
+    for(var i = 0; i < 10; i++){
+      var left = 8 + Math.round((i / 9) * 84);
+      dots += '<span class="cf" style="left:' + left + '%;background:' + colors[i % colors.length] + ';animation-delay:' + (i * 60) + 'ms"></span>';
+    }
+    t.innerHTML = escX(msg) + dots;
+    t.style.display = 'block';
+    setTimeout(function(){ t.style.display = 'none'; }, 3600);
+  }
+  function checkMilestone(pct){
+    var prev = null;
+    try{ var v = localStorage.getItem(KEY); if(v !== null && v !== '') prev = parseFloat(v); }catch(_){ }
+    if(prev === null){ try{ localStorage.setItem(KEY, String(pct)); }catch(_){ } return; }
+    if(pct <= prev){ try{ localStorage.setItem(KEY, String(pct)); }catch(_){ } return; }
+    var thresholds = [25, 50, 75, 100], crossed = null;
+    for(var i = 0; i < thresholds.length; i++){ if(prev < thresholds[i] && pct >= thresholds[i]) crossed = thresholds[i]; }
+    try{ localStorage.setItem(KEY, String(pct)); }catch(_){ }
+    if(crossed !== null) celebrate(crossed);
+  }
+  function renderGroups(rows){
+    var host = document.getElementById('s-babyfun'); if(!host) return;
+    var box = document.getElementById('babyGroups');
+    if(!rows || !rows.length){ if(box) box.remove(); return; }
+    var cats = [], byCat = {};
+    rows.forEach(function(r){
+      var c = r.category || 'General';
+      if(!byCat[c]){ byCat[c] = {done: 0, total: 0}; cats.push(c); }
+      byCat[c].total++; if(r.done) byCat[c].done++;
+    });
+    if(!box){
+      box = document.createElement('div'); box.id = 'babyGroups';
+      host.appendChild(box);
+    }
+    box.innerHTML = cats.map(function(c){
+      var g = byCat[c], pct = g.total ? Math.round(g.done / g.total * 100) : 0;
+      return '<div class="bgrp"><span class="blab">' + escX(c) + '</span><span class="bnum">' + g.done + ' of ' + g.total + ' \u00B7 ' + pct + '%</span><div class="bbar"><i style="width:' + pct + '%"></i></div></div>';
+    }).join('');
+    var done = rows.filter(function(r){ return r.done; }).length;
+    var pctAll = rows.length ? Math.round(done / rows.length * 100) : 0;
+    checkMilestone(pctAll);
+  }
+  if(typeof renderBaby === 'function'){
+    var _rb63 = renderBaby;
+    renderBaby = function(rows){ _rb63(rows); renderGroups(rows); };
+  }
+})();
+</script>
 </body>
 </html>
