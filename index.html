@@ -382,6 +382,7 @@
   .cal-dots{display:flex;gap:3px;justify-content:center}
   .bbar{height:6px;background:var(--surface2);border-radius:99px;overflow:hidden;margin:0 0 10px}
   .bbar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#4CAF76,#86d99b);border-radius:99px;transition:width .45s ease}
+  .nchips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 </style>
 </head>
 <body>
@@ -499,10 +500,10 @@
           <div class="cardhead"><h2>🛒 Shopping List</h2><span class="sub" id="shopSub"></span><button class="iconbtn clearbtn" data-clear="shop" type="button">Clear done</button><button class="iconbtn" id="groupStoreBtn" type="button">Group by store</button><button class="iconbtn" id="shopCopy" type="button">⧉ Copy list</button></div>
           <div id="shopList"><div class="empty">Loading…</div></div>
           <div class="qchips" id="shopChips"><button class="qchip" type="button" data-qadd="Milk">+ Milk</button><button class="qchip" type="button" data-qadd="Eggs">+ Eggs</button><button class="qchip" type="button" data-qadd="Bread">+ Bread</button><button class="qchip" type="button" data-qadd="Butter">+ Butter</button><button class="qchip" type="button" data-qadd="Shredded cheese">+ Shredded cheese</button><button class="qchip" type="button" data-qadd="Coffee">+ Coffee</button><button class="qchip" type="button" data-qadd="Bananas">+ Bananas</button><button class="qchip" type="button" data-qadd="Chicken breast">+ Chicken breast</button><button class="qchip" type="button" data-qadd="Ground beef">+ Ground beef</button><button class="qchip" type="button" data-qadd="Paper towels">+ Paper towels</button><button class="qchip" type="button" data-qadd="Diapers">+ Diapers</button><button class="qchip" type="button" data-qadd="Wipes">+ Wipes</button><button class="qchip" type="button" data-qadd="Dog food">+ Dog food</button><button class="qchip" type="button" data-qadd="Laundry detergent">+ Laundry detergent</button></div>
-          <form class="add" id="shopForm">
+          <form class="add" id="shopForm"><datalist id="storeList"></datalist>
             <input id="shopItem" placeholder="Add an item…" required>
             <input id="shopQty" placeholder="Qty" style="flex:0 0 64px;min-width:56px">
-            <input id="shopStore" placeholder="Store" style="flex:0 0 84px;min-width:72px">
+            <input id="shopStore" list="storeList" placeholder="Store" style="flex:0 0 84px;min-width:72px">
             <button type="submit">Add</button>
           </form>
         </section>
@@ -555,7 +556,7 @@
 
         <section class="card span2" id="s-news">
           <div class="cardhead"><h2>🗞️ News</h2><span class="sub" id="headlinesDate"></span></div>
-          <div class="newsfilter"><input id="newsFilter" type="search" placeholder="Filter headlines… try Browns, tariffs, AI"></div>
+          <div class="newsfilter"><input id="newsFilter" type="search" placeholder="Filter headlines… try Browns, tariffs, AI"><div class="nchips" id="newsChips"></div></div>
           <div id="headlinesWrap"><div class="empty">Loading headlines…</div></div>
         </section>
 
@@ -1876,6 +1877,45 @@ document.addEventListener('click', function(e){
   else inp.value = '';
   document.getElementById('todoTask').focus();
 });
+</script>
+<script>
+window._newsCat = 'All';
+function applyNewsFull(){
+  var wrap = document.getElementById('headlinesWrap'); if(!wrap) return;
+  var inp = document.getElementById('newsFilter');
+  var q = inp ? (inp.value || '').toLowerCase().trim() : '';
+  var cat = window._newsCat || 'All';
+  var kids = Array.prototype.slice.call(wrap.children);
+  var lastGrp = null, grpHas = false, anyVisible = false, curCat = '';
+  kids.forEach(function(k){
+    if(k.id === 'newsNone') return;
+    if(k.classList.contains('grp')){ if(lastGrp) lastGrp.style.display = grpHas ? '' : 'none'; lastGrp = k; curCat = k.textContent.trim(); grpHas = false; }
+    else if(k.tagName === 'DETAILS'){ var catOk = cat === 'All' || curCat.toUpperCase() === cat.toUpperCase(); var hit = catOk && (!q || k.textContent.toLowerCase().indexOf(q) >= 0); k.style.display = hit ? '' : 'none'; if(hit){ grpHas = true; anyVisible = true; } }
+  });
+  if(lastGrp) lastGrp.style.display = grpHas ? '' : 'none';
+  var nn = document.getElementById('newsNone');
+  if(nn) nn.style.display = ((q || cat !== 'All') && !anyVisible) ? '' : 'none';
+  var chips = document.getElementById('newsChips');
+  if(chips && CONTENT.headlines){
+    var names = ['All'].concat(CONTENT.headlines.cats.map(function(c){ return c.name; }));
+    chips.innerHTML = names.map(function(n){ return '<button class="gchip' + (n === cat ? ' on' : '') + '" type="button" data-ncat="' + esc(n) + '">' + esc(n) + '</button>'; }).join('');
+  }
+}
+var _rc9 = renderContent;
+renderContent = function(){ _rc9(); applyNewsFull(); };
+document.getElementById('newsFilter').addEventListener('input', applyNewsFull);
+document.addEventListener('click', function(e){
+  var c = e.target.closest ? e.target.closest('[data-ncat]') : null;
+  if(c){ window._newsCat = c.getAttribute('data-ncat'); applyNewsFull(); }
+});
+var _rs9 = renderShop;
+renderShop = function(rows){
+  _rs9(rows);
+  var dl = document.getElementById('storeList'); if(!dl) return;
+  var seen = {}, out = [];
+  ['Meijer', 'Giant Eagle', "Heinen's", 'Miles Farmers Market', 'Aldi', 'Walmart', 'Target', 'Costco'].concat((rows || []).map(function(r){ return r.store; })).forEach(function(st){ if(st && !seen[st]){ seen[st] = 1; out.push(st); } });
+  dl.innerHTML = out.map(function(st){ return '<option value="' + esc(st) + '">'; }).join('');
+};
 </script>
 </body>
 </html>
