@@ -2478,5 +2478,74 @@ selectRecipe = function(i){
   }
 })();
 </script>
+<style>
+#nextUpHero{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0 2px;padding:8px 10px;border:1px solid rgba(94,106,210,.38);background:rgba(94,106,210,.10);border-radius:10px;font-size:13px;min-width:0}
+#nextUpHero .nextup-lab{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#aab4ff;white-space:nowrap}
+#nextUpHero .nextup-title{font-weight:650;color:var(--text,#e6e6e6);min-width:0;overflow:hidden;text-overflow:ellipsis}
+#nextUpHero .nextup-when{color:var(--muted);white-space:nowrap}
+#eventList .agday .relchip{display:inline-block;background:#5E6AD2;color:#fff;border-radius:999px;padding:1px 7px;font-size:10.5px;font-weight:700;letter-spacing:.03em;margin-right:6px;vertical-align:1px;text-transform:none}
+</style>
+<script>
+// ---- Cycle 21: Calendar Next Up Hero + Relative Day Labels ----
+(function(){
+  function escX(t){ return (typeof esc === 'function') ? esc(t) : String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+  function dayDiff(d){
+    var now = new Date();
+    var a = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var b = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    return Math.round((b - a) / 86400000);
+  }
+  function isAllDayRow(r){ return (r.notes || '') === 'All day'; }
+  function whenText(r, diff){
+    var d = new Date(r.starts_at);
+    var time = isAllDayRow(r) ? 'All day' : d.toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
+    if(diff === 0) return 'Today \u00B7 ' + time;
+    if(diff === 1) return 'Tomorrow \u00B7 ' + time;
+    var wd = d.toLocaleDateString('en-US', {weekday:'short'});
+    var md = d.toLocaleDateString('en-US', {month:'short', day:'numeric'});
+    return wd + ' in ' + diff + ' days \u00B7 ' + md + (isAllDayRow(r) ? ' \u00B7 All day' : ' \u00B7 ' + time);
+  }
+  function renderNextUp(rows){
+    var host = document.getElementById('s-cal'); if(!host) return;
+    var hero = document.getElementById('nextUpHero');
+    var list = (rows || []).slice().sort(function(a, b){ return new Date(a.starts_at) - new Date(b.starts_at); });
+    var now = new Date(), next = null, nextDiff = 0;
+    for(var i = 0; i < list.length; i++){
+      var d = new Date(list[i].starts_at); if(isNaN(d)) continue;
+      var diff = dayDiff(d);
+      if(d >= now || (isAllDayRow(list[i]) && diff === 0)){ next = list[i]; nextDiff = diff; break; }
+    }
+    if(!next){ if(hero) hero.remove(); return; }
+    if(!hero){
+      hero = document.createElement('div'); hero.id = 'nextUpHero';
+      var wk = host.querySelector('.wkrow');
+      if(wk) host.insertBefore(hero, wk); else host.appendChild(hero);
+    }
+    hero.innerHTML = '<span class="nextup-lab">Next up</span><span class="nextup-title">' + escX(next.title || 'Event') + '</span><span class="nextup-when">' + escX(whenText(next, nextDiff)) + '</span>';
+  }
+  function renderRelChips(rows){
+    var keys = [], seen = {};
+    (rows || []).forEach(function(r){
+      var d = new Date(r.starts_at); if(isNaN(d)) return;
+      var k = (typeof dstr === 'function') ? dstr(d) : d.toISOString().slice(0, 10);
+      if(!seen[k]){ seen[k] = 1; keys.push({k: k, d: d}); }
+    });
+    var nodes = document.querySelectorAll('#eventList .agday');
+    for(var i = 0; i < nodes.length && i < keys.length; i++){
+      if(nodes[i].querySelector('.relchip')) continue;
+      var diff = dayDiff(keys[i].d);
+      if(diff !== 0 && diff !== 1) continue;
+      var chip = document.createElement('span');
+      chip.className = 'relchip';
+      chip.textContent = diff === 0 ? 'Today' : 'Tomorrow';
+      nodes[i].insertBefore(chip, nodes[i].firstChild);
+    }
+  }
+  if(typeof renderAgenda === 'function'){
+    var _ra64 = renderAgenda;
+    renderAgenda = function(rows){ _ra64(rows); renderNextUp(rows); renderRelChips(rows); };
+  }
+})();
+</script>
 </body>
 </html>
