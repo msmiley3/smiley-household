@@ -2935,5 +2935,71 @@ selectRecipe = function(i){
   setTimeout(ensureBtn, 2000);
 })();
 </script>
+<style>
+.dealEnd{display:inline-block;margin-left:8px;padding:1px 7px;border-radius:999px;font-size:11px;font-weight:650;vertical-align:middle;white-space:nowrap}
+.dealEnd.soon{background:rgba(245,158,11,.16);color:#f5b04c;border:1px solid rgba(245,158,11,.35)}
+.dealEnd.today{background:rgba(239,68,68,.16);color:#f87171;border:1px solid rgba(239,68,68,.4)}
+</style>
+<script>
+// ---- Cycle 26: Deals Ending Soon badges ----
+(function(){
+  var MONTHS = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
+  function parseEnd(text, now){
+    if(!text) return null;
+    var m = /([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2})\s*[\u2013\u2014\-]\s*(?:([A-Za-z]{3})[a-z]*\.?\s+)?(\d{1,2})/.exec(String(text));
+    if(!m) return null;
+    var sm = MONTHS[m[1].slice(0,3).toLowerCase()];
+    var em = m[3] ? MONTHS[m[3].slice(0,3).toLowerCase()] : sm;
+    if(sm === undefined || em === undefined) return null;
+    var endDay = parseInt(m[4], 10);
+    if(!(endDay >= 1 && endDay <= 31)) return null;
+    var ref = now || new Date();
+    var end = new Date(ref.getFullYear(), em, endDay);
+    var today = new Date(ref.getFullYear(), ref.getMonth(), ref.getDate());
+    var diff = Math.round((end - today) / 86400000);
+    if(diff < -180){ end = new Date(ref.getFullYear() + 1, em, endDay); }
+    else if(diff > 180){ end = new Date(ref.getFullYear() - 1, em, endDay); }
+    return end;
+  }
+  function daysLeft(end, now){
+    if(!end) return null;
+    var ref = now || new Date();
+    var today = new Date(ref.getFullYear(), ref.getMonth(), ref.getDate());
+    var e = new Date(end.getFullYear(), end.getMonth(), end.getDate());
+    return Math.round((e - today) / 86400000);
+  }
+  function label(days){
+    if(days === 0) return 'Ad ends today';
+    if(days === 1) return 'Ad ends tomorrow';
+    if(days === 2) return 'Ad ends in 2 days';
+    return null;
+  }
+  window._dealEnds = { parseEnd: parseEnd, daysLeft: daysLeft, label: label };
+  function paintDealEnds(){
+    try{
+      if(!(window.CONTENT && CONTENT.deals && CONTENT.deals.stores)) return;
+      var wrap = document.getElementById('dealsWrap'); if(!wrap) return;
+      var panels = wrap.querySelectorAll('details.flat');
+      CONTENT.deals.stores.forEach(function(store, i){
+        var panel = panels[i]; if(!panel) return;
+        var old = panel.querySelector('.dealEnd'); if(old) old.remove();
+        var end = parseEnd(store && store.note, new Date()) || parseEnd(CONTENT.deals.range, new Date());
+        var d = daysLeft(end, new Date());
+        if(d === null || d < 0 || d > 2) return;
+        var txt = label(d); if(!txt) return;
+        var sum = panel.querySelector('summary'); if(!sum) return;
+        var b = document.createElement('span');
+        b.className = 'dealEnd ' + (d === 0 ? 'today' : 'soon');
+        b.textContent = txt;
+        var rhs = sum.querySelector('.rhs');
+        if(rhs) sum.insertBefore(b, rhs); else sum.appendChild(b);
+      });
+    }catch(_){ }
+  }
+  var _rc69 = renderContent;
+  renderContent = function(){ _rc69(); paintDealEnds(); };
+  paintDealEnds();
+})();
+</script>
 </body>
 </html>
