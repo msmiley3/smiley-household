@@ -3675,5 +3675,93 @@ selectRecipe = function(i){
   document.addEventListener('visibilitychange', function(){ if(!document.hidden) load(); });
 })();
 </script>
+
+<style>
+/* Polish 2026-10-19 (Apple): Readability — text-size toggle, Dynamic Type pattern.
+   Content text scales; navigation chrome, tab bar and form inputs (already 16px,
+   iOS zoom-safe) stay put, like Apple apps. Per-device, localStorage only. */
+.ts-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px}
+.ts-lab{font-size:12.5px;color:var(--muted);font-weight:600}
+.ts-seg{display:inline-flex;background:var(--surface2);border:1px solid var(--line);border-radius:999px;padding:2px;gap:2px}
+.ts-seg button{background:none;border:none;color:var(--muted);border-radius:999px;padding:5px 12px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit;transition:color .15s ease,background .15s ease,transform .12s ease}
+.ts-seg button:active{transform:scale(.96)}
+.ts-seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+@media print{.ts-row{display:none!important}}
+html.sf-ts-comfort body{font-size:15px;line-height:1.52}
+html.sf-ts-comfort .brief p{font-size:15.5px;line-height:1.62}
+html.sf-ts-comfort .babytext{font-size:15px;line-height:1.62}
+html.sf-ts-comfort .item .txt,html.sf-ts-comfort .listcard .item .txt{font-size:15px}
+html.sf-ts-comfort details.inner .body,html.sf-ts-comfort details.flat.inner .body{font-size:14px;line-height:1.58}
+html.sf-ts-comfort #noteText{font-size:15.5px;line-height:1.62}
+html.sf-ts-comfort .deal{font-size:14.5px}
+html.sf-ts-comfort .ing{font-size:14px;line-height:1.62}
+html.sf-ts-comfort .rnut{font-size:13.5px}
+html.sf-ts-comfort summary{font-size:15px}
+html.sf-ts-comfort details.inner summary{font-size:14.5px}
+html.sf-ts-comfort details.flat summary{font-size:14.5px}
+html.sf-ts-comfort .empty{font-size:14px}
+html.sf-ts-comfort .meta,html.sf-ts-comfort .item .meta{font-size:12.5px}
+html.sf-ts-large body{font-size:16px;line-height:1.58}
+html.sf-ts-large .brief p{font-size:17px;line-height:1.68}
+html.sf-ts-large .babytext{font-size:16px;line-height:1.68}
+html.sf-ts-large .item .txt,html.sf-ts-large .listcard .item .txt{font-size:16.5px}
+html.sf-ts-large details.inner .body,html.sf-ts-large details.flat.inner .body{font-size:15.5px;line-height:1.65}
+html.sf-ts-large #noteText{font-size:17px;line-height:1.68}
+html.sf-ts-large .deal{font-size:15.5px}
+html.sf-ts-large .ing{font-size:15.5px;line-height:1.68}
+html.sf-ts-large .rnut{font-size:14.5px}
+html.sf-ts-large summary{font-size:16px}
+html.sf-ts-large details.inner summary{font-size:15.5px}
+html.sf-ts-large details.flat summary{font-size:15.5px}
+html.sf-ts-large .empty{font-size:15px}
+html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
+</style>
+<script>
+// ---- Polish 2026-10-19 (Apple): Text Size toggle (backlog #19) ----
+(function(){
+  var MODES = ['standard','comfort','large'];
+  var LABELS = {standard:'Standard', comfort:'Comfort', large:'Large'};
+  function getMode(){
+    try{ var v = localStorage.getItem('sf_textsize'); return MODES.indexOf(v) > -1 ? v : 'standard'; }
+    catch(_){ return 'standard'; }
+  }
+  function applyMode(m){
+    if(MODES.indexOf(m) < 0) m = 'standard';
+    var el = document.documentElement;
+    el.classList.remove('sf-ts-comfort'); el.classList.remove('sf-ts-large');
+    if(m !== 'standard') el.classList.add('sf-ts-' + m);
+    try{ localStorage.setItem('sf_textsize', m); }catch(_){ }
+    document.querySelectorAll('.ts-seg button[data-ts]').forEach(function(b){
+      b.setAttribute('aria-pressed', b.getAttribute('data-ts') === m ? 'true' : 'false');
+    });
+    return m;
+  }
+  window._textSize = { modes: MODES, get: getMode, apply: applyMode };
+  function ensureRow(){
+    if(document.getElementById('tsRow')) return;
+    var card = document.getElementById('s-usage');
+    if(!card) return;
+    var row = document.createElement('div');
+    row.className = 'ts-row'; row.id = 'tsRow';
+    var lab = document.createElement('span');
+    lab.className = 'ts-lab'; lab.textContent = 'Text size';
+    var seg = document.createElement('div');
+    seg.className = 'ts-seg'; seg.setAttribute('role','group'); seg.setAttribute('aria-label','Text size');
+    MODES.forEach(function(m){
+      var b = document.createElement('button');
+      b.type = 'button'; b.setAttribute('data-ts', m); b.textContent = LABELS[m];
+      b.addEventListener('click', function(){ applyMode(m); });
+      seg.appendChild(b);
+    });
+    row.appendChild(lab); row.appendChild(seg);
+    card.appendChild(row);
+    applyMode(getMode());
+  }
+  applyMode(getMode());
+  ensureRow();
+  setTimeout(ensureRow, 600);
+})();
+</script>
+
 </body>
 </html>
