@@ -383,6 +383,7 @@
   .bbar{height:6px;background:var(--surface2);border-radius:99px;overflow:hidden;margin:0 0 10px}
   .bbar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#4CAF76,#86d99b);border-radius:99px;transition:width .45s ease}
   .nchips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+  #ptrToast{position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:200;background:rgba(18,20,26,.92);border:1px solid rgba(255,255,255,.14);color:#fff;font-size:12.5px;font-weight:600;padding:7px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.4)}
 </style>
 </head>
 <body>
@@ -407,6 +408,7 @@
   </div>
 
   <!-- APP VIEW -->
+  <div id="ptrToast" hidden>↻ Refreshing…</div>
   <div id="appView" hidden>
     <div class="stickyhead">
       <div class="topbar">
@@ -1916,6 +1918,35 @@ renderShop = function(rows){
   ['Meijer', 'Giant Eagle', "Heinen's", 'Miles Farmers Market', 'Aldi', 'Walmart', 'Target', 'Costco'].concat((rows || []).map(function(r){ return r.store; })).forEach(function(st){ if(st && !seen[st]){ seen[st] = 1; out.push(st); } });
   dl.innerHTML = out.map(function(st){ return '<option value="' + esc(st) + '">'; }).join('');
 };
+</script>
+<script>
+var _lcOrig = loadContent;
+loadContent = async function(){
+  try{
+    var c = JSON.parse(localStorage.getItem('sf_content') || 'null');
+    if(c && !(CONTENT && CONTENT.headlines)){ CONTENT = c; renderContent(); }
+  }catch(_){ }
+  var r = await _lcOrig();
+  try{ localStorage.setItem('sf_content', JSON.stringify(CONTENT)); }catch(_){ }
+  return r;
+};
+(function(){
+  var startY = 0, startX = 0, armed = false;
+  document.addEventListener('touchstart', function(e){
+    if(e.touches.length !== 1 || window.scrollY > 0) { armed = false; return; }
+    var t = e.target;
+    if(t.closest && (t.closest('#evModal') || t.closest('#slideshow'))) { armed = false; return; }
+    startY = e.touches[0].clientY; startX = e.touches[0].clientX; armed = true;
+  }, {passive: true});
+  document.addEventListener('touchend', function(e){
+    if(!armed) return; armed = false;
+    var dy = e.changedTouches[0].clientY - startY, dx = e.changedTouches[0].clientX - startX;
+    if(dy < 84 || Math.abs(dx) > dy * 0.7) return;
+    var toast = document.getElementById('ptrToast');
+    if(toast){ toast.hidden = false; setTimeout(function(){ toast.hidden = true; }, 1400); }
+    loadAll(); loadContent();
+  }, {passive: true});
+})();
 </script>
 </body>
 </html>
