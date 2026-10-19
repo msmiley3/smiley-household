@@ -3001,5 +3001,34 @@ selectRecipe = function(i){
   paintDealEnds();
 })();
 </script>
+<script>
+// ---- Cycle 27: Re-tap active tab = smooth top + refresh ----
+(function(){
+  function isRetap(cur, tapped){
+    if(!cur || !tapped) return false;
+    return cur === tapped;
+  }
+  function activeView(){
+    var a = document.querySelector('#tabbar .tab.active');
+    if(a && a.dataset && a.dataset.view) return a.dataset.view;
+    var h = (location.hash || '').replace('#/', '');
+    return h || null;
+  }
+  window._retap = { isRetap: isRetap, activeView: activeView };
+  document.addEventListener('click', function(e){
+    var t = e.target && e.target.closest ? e.target.closest('#tabbar .tab') : null;
+    if(!t) return;
+    var tapped = t.dataset ? t.dataset.view : null;
+    if(!isRetap(activeView(), tapped)) return;
+    // Re-tap of the current tab: keep the app's own tab handler (and its
+    // instant scrollTo in switchView) out of this one.
+    e.preventDefault();
+    e.stopPropagation();
+    try{ window.scrollTo({top: 0, behavior: 'smooth'}); }catch(_){ window.scrollTo(0, 0); }
+    try{ if(navigator.vibrate) navigator.vibrate(8); }catch(_){ }
+    try{ if(typeof refreshSoon === 'function') refreshSoon(); }catch(_){ }
+  }, true);
+})();
+</script>
 </body>
 </html>
