@@ -3425,5 +3425,86 @@ selectRecipe = function(i){
   });
 })();
 </script>
+
+<style>
+/* Polish 2026-10-19 (Todoist): News inbox-zero — mark-all-read row */
+.markread-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}
+.markread-note{font-size:12px;color:var(--faint);line-height:1.35}
+#markAllRead{background:var(--surface2);border:1px solid var(--line2);color:var(--muted);border-radius:999px;padding:5px 11px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;transition:color .15s ease,border-color .15s ease,transform .12s ease}
+#markAllRead:active{transform:scale(.96)}
+#markAllRead:not([disabled]):hover{border-color:var(--accent);color:#c6ccff}
+#markAllRead[disabled]{opacity:.6;cursor:default;color:#9be29b;border-color:rgba(88,201,88,.35)}
+@media print{.markread-row{display:none!important}}
+</style>
+<script>
+// ---- Polish 2026-10-19 (Todoist): Mark All News as Read ----
+(function(){
+  function mergeTitles(existing, all){
+    var out = (existing || []).slice();
+    (all || []).forEach(function(t){ if(t && out.indexOf(t) < 0) out.push(t); });
+    return out;
+  }
+  function titlesFromDOM(){
+    var out = [];
+    document.querySelectorAll('#headlinesWrap details').forEach(function(d){
+      var sum = d.querySelector('summary'); if(!sum) return;
+      var t = sum.textContent.replace('\u25be', '').trim();
+      if(t && out.indexOf(t) < 0) out.push(t);
+    });
+    if(!out.length && typeof CONTENT !== 'undefined' && CONTENT && CONTENT.headlines){
+      (CONTENT.headlines.cats || []).forEach(function(c){ (c.items || []).forEach(function(x){ if(x.title && out.indexOf(x.title) < 0) out.push(x.title); }); });
+    }
+    return out;
+  }
+  window._markAllRead = { mergeTitles: mergeTitles, titlesFromDOM: titlesFromDOM };
+  var btn = null, note = null;
+  function ensureRow(){
+    if(btn) return btn;
+    var filter = document.querySelector('#s-news .newsfilter');
+    if(!filter) return null;
+    var row = document.createElement('div');
+    row.className = 'markread-row';
+    note = document.createElement('span');
+    note.className = 'markread-note'; note.id = 'markReadNote';
+    btn = document.createElement('button');
+    btn.type = 'button'; btn.id = 'markAllRead'; btn.textContent = 'Mark all read \u2713';
+    btn.addEventListener('click', function(){
+      try{
+        if(typeof _readSet !== 'function') return;
+        var all = titlesFromDOM(); if(!all.length) return;
+        var R = _readSet();
+        R.titles = mergeTitles(R.titles, all);
+        try{ localStorage.setItem('sf_read', JSON.stringify(R)); }catch(_){ }
+        if(typeof paintRead === 'function') paintRead();
+        update();
+      }catch(_){ }
+    });
+    row.appendChild(note); row.appendChild(btn);
+    filter.appendChild(row);
+    return btn;
+  }
+  function update(){
+    var b = ensureRow(); if(!b || !note) return;
+    try{
+      if(typeof _readSet !== 'function'){ b.style.display = 'none'; note.textContent = ''; return; }
+      var all = titlesFromDOM();
+      if(!all.length){ b.style.display = 'none'; note.textContent = ''; return; }
+      b.style.display = '';
+      var R = _readSet();
+      var unread = all.filter(function(t){ return R.titles.indexOf(t) < 0; }).length;
+      if(unread === 0){ b.disabled = true; b.textContent = 'All caught up \u2713'; note.textContent = 'All ' + all.length + ' stories read'; }
+      else { b.disabled = false; b.textContent = 'Mark all read \u2713'; note.textContent = unread + ' unread of ' + all.length; }
+    }catch(_){ }
+  }
+  window._markAllRead.update = update;
+  if(typeof renderContent === 'function'){
+    var _rcMR = renderContent;
+    renderContent = function(){ _rcMR(); update(); };
+  }
+  document.addEventListener('toggle', function(){ setTimeout(update, 0); }, true);
+  update();
+  setTimeout(update, 600);
+})();
+</script>
 </body>
 </html>
