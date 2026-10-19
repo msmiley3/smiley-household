@@ -3030,5 +3030,102 @@ selectRecipe = function(i){
   }, true);
 })();
 </script>
+<style>
+#ssShareBtn{position:absolute;top:14px;left:84px;z-index:5;background:rgba(0,0,0,.45);border:0;border-radius:999px;color:#fff;font-size:13px;line-height:1.4;padding:5px 12px;cursor:pointer}
+@media print{#ssShareBtn{display:none!important}}
+</style>
+<script>
+// ---- Cycle 28: Share a Photo (Web Share API, layered fallbacks) ----
+(function(){
+  function fileNameFor(p){
+    var n = (p && p.name) ? String(p.name) : '';
+    n = n.split('/').pop().replace(/[^A-Za-z0-9._-]+/g, '_');
+    if(!n || n.indexOf('.') < 0) n = (n || 'photo') + '.jpg';
+    return n;
+  }
+  function pickMode(canFiles, canUrl){
+    if(canFiles) return 'files';
+    if(canUrl) return 'url';
+    return 'copy';
+  }
+  function currentPhoto(){
+    var list = window._photoUrls || []; if(!list.length) return null;
+    try{ if(typeof ssIdx === 'number'){ var p = list[ssIdx % list.length]; if(p) return p; } }catch(_){ }
+    var img = document.getElementById('ssImg');
+    var src = img ? (img.getAttribute('src') || '') : '';
+    for(var i = 0; i < list.length; i++){ if(list[i].url === src) return list[i]; }
+    return list[0] || null;
+  }
+  window._photoShare = { fileNameFor: fileNameFor, pickMode: pickMode, currentPhoto: currentPhoto };
+  function ensureBtn(){
+    var ss = document.getElementById('slideshow'); if(!ss) return null;
+    var b = document.getElementById('ssShareBtn');
+    if(!b){
+      b = document.createElement('button');
+      b.type = 'button'; b.id = 'ssShareBtn';
+      b.setAttribute('aria-label', 'Share this photo');
+      b.textContent = '\uD83D\uDCE4 Share';
+      ss.appendChild(b);
+    }
+    return b;
+  }
+  function feedback(b, txt){
+    if(!b) return;
+    var orig = '\uD83D\uDCE4 Share';
+    b.textContent = txt;
+    setTimeout(function(){ b.textContent = orig; }, 2200);
+  }
+  var busy = false;
+  async function doShare(b){
+    if(busy) return;
+    var p = currentPhoto();
+    if(!p || !p.url){ feedback(b, 'No photo'); return; }
+    busy = true;
+    try{
+      var file = null;
+      var canFiles = false, canUrl = !!(navigator.share);
+      // Try to build a File from the photo URL the page already loads.
+      try{
+        var res = await fetch(p.url);
+        if(res && res.ok){
+          var blob = await res.blob();
+          if(blob && blob.size){
+            var fname = fileNameFor(p);
+            try{ file = new File([blob], fname, {type: blob.type || 'image/jpeg'}); }catch(_){ file = null; }
+          }
+        }
+      }catch(_){ file = null; }
+      if(file && navigator.canShare){
+        try{ canFiles = !!navigator.canShare({files: [file]}); }catch(_){ canFiles = false; }
+      }
+      var mode = pickMode(canFiles, canUrl);
+      if(mode === 'files'){
+        await navigator.share({files: [file], title: 'Smiley family photo'});
+        feedback(b, '\u2713 Shared');
+      } else if(mode === 'url'){
+        await navigator.share({url: p.url, title: 'Smiley family photo'});
+        feedback(b, '\u2713 Shared');
+      } else {
+        var copied = false;
+        try{ await navigator.clipboard.writeText(p.url); copied = true; }catch(_){ }
+        feedback(b, copied ? '\u2713 Link copied' : 'Copy failed');
+      }
+    }catch(err){
+      // User cancelling the share sheet (AbortError) is not an error.
+      if(!(err && err.name === 'AbortError')) feedback(b, 'Share failed');
+    }finally{ busy = false; }
+  }
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    if(t.closest && t.closest('#ssShareBtn')){
+      e.stopPropagation(); e.preventDefault();
+      doShare(e.target.closest('#ssShareBtn'));
+    }
+  }, true);
+  // Create the button as soon as the slideshow exists; keep it present.
+  ensureBtn();
+  setTimeout(ensureBtn, 600);
+})();
+</script>
 </body>
 </html>
