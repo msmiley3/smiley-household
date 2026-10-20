@@ -2196,6 +2196,19 @@ selectRecipe = function(i){
   b.addEventListener('click', async function(){
     if(!requirePerson()) return;
     var have = (window._shopRows || []).filter(function(x){ return !x.got_it; }).map(function(x){ return (x.item || '').toLowerCase().trim(); });
+    /* Cycle 61 (N9): dupe = same normalized tokens, not a raw substring */
+    var RD_MODS = ['fresh','large','small','medium','whole','shredded','sliced','diced','chopped','minced','grated','crushed','dried','frozen','organic','boneless','skinless','lean','raw','cooked','unsalted','salted','ground'];
+    function rdSing(t){ if(t.length > 3 && /ies$/.test(t)) return t.slice(0,-3) + 'y'; if(/(oes|ches|shes|sses|xes|zes)$/.test(t)) return t.slice(0,-2); if(t.length > 1 && /s$/.test(t) && !/ss$/.test(t)) return t.slice(0,-1); return t; }
+    function rdTokens(str){ return String(str || '').toLowerCase().replace(/[^a-z0-9 ]+/g,' ').split(/\s+/).filter(Boolean).map(rdSing).filter(function(t){ return RD_MODS.indexOf(t) < 0; }); }
+    function rdIsDup(key, h){
+      if(!key || !h) return false;
+      var a = rdTokens(key), b = rdTokens(h);
+      if(!a.length || !b.length || a.length !== b.length) return false;
+      var bs = b.slice().sort(), as = a.slice().sort();
+      for(var i = 0; i < as.length; i++){ if(as[i] !== bs[i]) return false; }
+      return true;
+    }
+    window._recipeDedupe = { isDup: rdIsDup, tokens: rdTokens };
     var adds = [], skipped = 0;
     r.ingredients.forEach(function(g){
       var raw = String(g);
@@ -2205,7 +2218,7 @@ selectRecipe = function(i){
       var qty = parts.length > 1 ? parts.slice(1).join(',').replace(/\(.*$/, '').trim() : '';
       if(!name){ skipped++; return; }
       var key = name.toLowerCase();
-      var dup = have.some(function(h){ return h && (h === key || h.indexOf(key) > -1 || key.indexOf(h) > -1); });
+      var dup = have.some(function(h){ return rdIsDup(key, h); }); /* Cycle 61 (N9) */
       if(dup){ skipped++; return; }
       have.push(key);
       adds.push({ item: name, qty: qty, store: '', added_by: personName() });
