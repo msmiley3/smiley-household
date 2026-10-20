@@ -4328,7 +4328,7 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
 @media print{#noteSaveBtn.unsaved{border-color:inherit;color:inherit}}
 </style>
 <script>
-/* Cycle 41 — Family Note Draft Safety Net (backlog-round2 #7). localStorage only;
+/* Cycle 41 — Family Note Draft Safety Net (backlog-round2 #7), v8.5 reload fix. localStorage only;
    the server copy in the notes table stays the source of truth. */
 (function(){
   'use strict';
@@ -4387,8 +4387,11 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
     var el = ta(); if(!el) return;
     if(document.activeElement === el) return; // focused: server body unknown, original guard held
     var serverBody = el.value;
-    baseKnown = serverBody;
     var d = readDraft();
+    // Guard: an empty textarea before the first successful load (or after a
+    // failed load) is NOT the server body — never judge a draft against it.
+    if(serverBody === '' && d && d.base) return;
+    baseKnown = serverBody;
     var act = decide(d, serverBody);
     if(act === 'restore'){
       applying = true;
@@ -4429,8 +4432,8 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
 
   var el0 = ta();
   if(el0) el0.addEventListener('input', onInput);
-  // loadNote may already have run before this block executed.
-  try{ restorePass(); }catch(_){}
+  // No parse-time restorePass (final84 bug): the textarea is still empty here,
+  // which misjudged real drafts as stale. Restores run only via wrapped loadNote.
 })();
 </script>
 </body>
