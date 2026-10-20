@@ -4867,5 +4867,73 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   setTimeout(paintHeard, 800);
 })();
 </script>
+
+<style>
+/* Cycle 46 — Around Town directions links */
+.dir-link{flex:none;display:inline-flex;align-items:center;gap:3px;margin-left:4px;padding:5px 8px;border-radius:999px;border:1px solid var(--line);background:var(--surface2);color:var(--text);font-size:11.5px;line-height:1;text-decoration:none;white-space:nowrap;cursor:pointer}
+.dir-link:active{transform:scale(.95)}
+@media print{.dir-link{display:none!important}}
+</style>
+<script>
+/* Cycle 46 — Around Town "One-Tap Directions" (backlog-round2 #12). Read-only. */
+(function(){
+  'use strict';
+  function clean(v){ return typeof v === 'string' ? v.trim() : ''; }
+  function mapsUrl(where, areaName){
+    var w = clean(where);
+    if(!w) return null;
+    var a = clean(areaName);
+    var q = a ? w + ' ' + a : w;
+    return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
+  }
+  function itemFor(key){
+    if(!key || typeof CONTENT === 'undefined' || !CONTENT || !CONTENT.events || !Array.isArray(CONTENT.events.areas)) return null;
+    var p = String(key).split(':');
+    var area = CONTENT.events.areas[+p[0]];
+    if(!area || !Array.isArray(area.items)) return null;
+    var item = area.items[+p[1]];
+    if(!item) return null;
+    return { item: item, areaName: area.name || '' };
+  }
+  window._townDir = { mapsUrl: mapsUrl, itemFor: itemFor };
+
+  function paintDir(){
+    try{
+      document.querySelectorAll('[data-evadd]').forEach(function(b){
+        var key = b.getAttribute('data-evadd') || '';
+        var found = itemFor(key);
+        if(!found) return;
+        var url = mapsUrl(found.item.where, found.areaName);
+        if(!url) return;
+        var row = b.parentNode;
+        if(!row) return;
+        var existing = row.querySelector('.dir-link[data-dir-for="' + key + '"]');
+        if(existing){ if(existing.getAttribute('href') !== url) existing.setAttribute('href', url); return; }
+        var a = document.createElement('a');
+        a.className = 'dir-link';
+        a.setAttribute('data-dir-for', key);
+        a.setAttribute('href', url);
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener');
+        a.setAttribute('aria-label', 'Directions to ' + clean(found.item.where));
+        a.title = 'Directions';
+        a.textContent = '\uD83D\uDCCD Directions';
+        row.insertBefore(a, b.nextSibling);
+      });
+    }catch(_){ }
+  }
+
+  if(typeof renderContent === 'function'){
+    var _rc90 = renderContent;
+    renderContent = function(){ _rc90(); paintDir(); };
+  }
+  if(typeof renderDayEvents === 'function'){
+    var _rde90 = renderDayEvents;
+    renderDayEvents = function(r){ _rde90(r); paintDir(); };
+  }
+  paintDir();
+  setTimeout(paintDir, 800);
+})();
+</script>
 </body>
 </html>
