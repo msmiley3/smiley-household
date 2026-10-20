@@ -1343,8 +1343,15 @@
   });
   /* ---------- Foldable sections ---------- */
   var FOLDABLE = ['s-daily','s-brief','s-recipes','s-shop','s-todo','s-cal','s-deals','s-events','s-news','s-baby','s-photos','s-notes','s-usage','acctHead'];
+  function preservedFolded(existing){ /* Cycle 57 (N5): ids saveFolded does not own (e.g. s-savedrecipes) */
+    if(!Array.isArray(existing)) return [];
+    return existing.filter(function(id){ return FOLDABLE.indexOf(id) < 0; });
+  }
+  window._foldPreserve = { preservedFolded: preservedFolded }; /* Cycle 57 (N5): fold preserve */
   function saveFolded(){
-    var arr = [];
+    var existing = [];
+    try{ existing = JSON.parse(localStorage.getItem('sf_folded') || '[]'); }catch(e){}
+    var arr = preservedFolded(existing); /* Cycle 57 (N5): keep foreign ids, then apply own states */
     FOLDABLE.forEach(function(id){ var el = document.getElementById(id); if(el && el.classList.contains('folded')) arr.push(id); });
     try{ localStorage.setItem('sf_folded', JSON.stringify(arr)); }catch(e){}
   }
