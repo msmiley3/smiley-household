@@ -1742,8 +1742,7 @@ function applyNewsFilter(){
 function _readSet(){ try{ var o = JSON.parse(localStorage.getItem('sf_read') || '{}'); var d = ((CONTENT && CONTENT.headlines) || {}).date; return o.date === d ? o : {date: d, titles: []}; }catch(_){ return {date: null, titles: []}; } }
 function paintRead(){ var R = _readSet(); document.querySelectorAll('#headlinesWrap details').forEach(function(d){ var sum = d.querySelector('summary'); if(!sum) return; var t = sum.textContent.replace('▾', '').trim(); d.classList.toggle('wasread', R.titles.indexOf(t) >= 0); }); }
 var _rc2 = renderContent;
-renderContent = function(){ _rc2(); applyNewsFilter(); paintRead(); };
-document.getElementById('newsFilter').addEventListener('input', applyNewsFilter);
+renderContent = function(){ _rc2(); paintRead(); }; /* Cycle 51 (M8): applyNewsFilter pass retired — applyNewsFull is the single filter entry point */
 document.addEventListener('toggle', function(e){
   var d = e.target;
   if(!d || !d.open || !d.closest || !d.closest('#headlinesWrap')) return;
@@ -1978,11 +1977,13 @@ function applyNewsFull(){
   });
   if(lastGrp) lastGrp.style.display = grpHas ? '' : 'none';
   var nn = document.getElementById('newsNone');
-  if(nn) nn.style.display = ((q || cat !== 'All') && !anyVisible) ? '' : 'none';
+  if(!nn){ nn = document.createElement('div'); nn.id = 'newsNone'; nn.className = 'empty'; nn.textContent = 'No stories match that \u2014 try another word.'; wrap.appendChild(nn); }
+  nn.style.display = ((q || cat !== 'All') && !anyVisible) ? '' : 'none';
   var chips = document.getElementById('newsChips');
   if(chips && CONTENT && CONTENT.headlines){
     var names = ['All'].concat(CONTENT.headlines.cats.map(function(c){ return c.name; }));
-    chips.innerHTML = names.map(function(n){ return '<button class="gchip' + (n === cat ? ' on' : '') + '" type="button" data-ncat="' + esc(n) + '">' + esc(n) + '</button>'; }).join('');
+    var sig = names.join('|') + '::' + cat;
+    if(window._newsChipSig !== sig || !chips.children.length){ window._newsChipSig = sig; chips.innerHTML = names.map(function(n){ return '<button class="gchip' + (n === cat ? ' on' : '') + '" type="button" data-ncat="' + esc(n) + '">' + esc(n) + '</button>'; }).join(''); }
   }
 }
 var _rc9 = renderContent;
