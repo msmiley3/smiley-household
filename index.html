@@ -986,6 +986,26 @@
       return '<div class="grp">'+esc(c)+'</div>'+items;
     }).join('');
   }
+  function renderPhotoGrid(){
+    var grid=document.getElementById('photoGrid');
+    if(!grid) return;
+    var byArea = {};
+    (window._photoUrls || []).forEach(function(p){ if(!byArea[p.area]) byArea[p.area] = []; byArea[p.area].push(p); });
+    var order = ['Family','Moose','Baby','House','Food'];
+    var html = '';
+    var _ord = ['All'].concat(order.filter(function(a){ return byArea[a]; }));
+    html += '<div class="gchips">' + _ord.map(function(a){ var n = a === 'All' ? (window._photoUrls || []).length : byArea[a].length; var on = (window._photoFilter || 'All') === a ? ' on' : ''; return '<button class="gchip' + on + '" type="button" data-pf="' + a + '">' + (a === 'All' ? 'All' : esc(AREA_LABELS[a])) + ' · ' + n + '</button>'; }).join('') + '</div>';
+    order.forEach(function(a){
+      if(!byArea[a]) return;
+      if(window._photoFilter && window._photoFilter !== 'All' && window._photoFilter !== a) return;
+      html += '<div class="grp">'+esc(AREA_LABELS[a])+'</div><div class="photos">' + byArea[a].map(function(p){
+        var cap = p.who ? '<div class="cap"><span class="dot '+(p.who==='Kelly'?'kelly':'mike')+'"></span>'+p.who+'</div>' : '';
+        return '<div class="ph"><img src="'+esc(p.url)+'" alt="Family photo">'+cap+'<button class="del" data-kind="photo" data-name="'+esc(p.name)+'" aria-label="Delete photo">✕</button></div>';
+      }).join('') + '</div>';
+    });
+    grid.innerHTML = html;
+  }
+  window._renderPhotoGrid = renderPhotoGrid; /* Cycle 53 (M10): local photo-grid renderer over cached _photoUrls */
   async function loadPhotos(){
     var grid=document.getElementById('photoGrid');
     var res = await sb.storage.from('household-photos').list('', {limit:300, sortBy:{column:'created_at', order:'desc'}});
@@ -1017,19 +1037,7 @@
     }
     document.getElementById('photoSub').textContent = window._photoUrls.length ? window._photoUrls.length + (window._photoUrls.length === 1 ? ' photo' : ' photos') : '';
     if(!window._photoUrls.length){ grid.innerHTML='<div class="empty" style="grid-column:1/-1">'+(files.length?'Photos could not load — try refreshing.':'No photos yet — upload the first Moose pic below 🐶')+'</div>'; startTopShow(); return; }
-    var order = ['Family','Moose','Baby','House','Food'];
-    var html = '';
-    var _ord = ['All'].concat(order.filter(function(a){ return byArea[a]; }));
-    html += '<div class="gchips">' + _ord.map(function(a){ var n = a === 'All' ? files.length : byArea[a].length; var on = (window._photoFilter || 'All') === a ? ' on' : ''; return '<button class="gchip' + on + '" type="button" data-pf="' + a + '">' + (a === 'All' ? 'All' : esc(AREA_LABELS[a])) + ' · ' + n + '</button>'; }).join('') + '</div>';
-    order.forEach(function(a){
-      if(!byArea[a]) return;
-      if(window._photoFilter && window._photoFilter !== 'All' && window._photoFilter !== a) return;
-      html += '<div class="grp">'+esc(AREA_LABELS[a])+'</div><div class="photos">' + byArea[a].map(function(p){
-        var cap = p.who ? '<div class="cap"><span class="dot '+(p.who==='Kelly'?'kelly':'mike')+'"></span>'+p.who+'</div>' : '';
-        return '<div class="ph"><img src="'+esc(p.url)+'" alt="Family photo">'+cap+'<button class="del" data-kind="photo" data-name="'+esc(p.name)+'" aria-label="Delete photo">✕</button></div>';
-      }).join('') + '</div>';
-    });
-    grid.innerHTML = html;
+    renderPhotoGrid();
     setBadge('badgePhotos', (window._photoUrls || []).length);
     var _tb = document.querySelector('#tabbar [data-view="photos"]');
     if(_tb && window._photoUrls && window._photoUrls.length){
@@ -1718,7 +1726,7 @@ document.addEventListener('click', function(e){
   var f = t.closest ? t.closest('[data-fav]') : null;
   if(f){ e.stopPropagation(); e.preventDefault(); var i = Number(f.getAttribute('data-fav')); var r = (window._recipes || [])[i]; if(r){ var F = _favs(); var k = F.indexOf(r.name); if(k >= 0) F.splice(k, 1); else F.push(r.name); try{ localStorage.setItem('sf_favs', JSON.stringify(F)); }catch(_){ } paintFavs(); } return; }
   var pf = t.closest ? t.closest('[data-pf]') : null;
-  if(pf){ window._photoFilter = pf.getAttribute('data-pf'); loadPhotos(); return; }
+  if(pf){ window._photoFilter = pf.getAttribute('data-pf'); if(window._photoUrls && window._photoUrls.length && window._renderPhotoGrid){ window._renderPhotoGrid(); } else { loadPhotos(); } return; } /* Cycle 53 (M10): filter taps re-render from cached _photoUrls, no bucket re-list/re-sign */
   if(t.closest && t.closest('#rSurprise')){ var n = (window._recipes || []).length; if(n){ selectRecipe(Math.floor(Math.random() * n)); var d = document.getElementById('rDetail'); if(d) setTimeout(function(){ d.scrollIntoView({behavior: 'smooth', block: 'nearest'}); }, 60); } }
 }, true);
 </script>
