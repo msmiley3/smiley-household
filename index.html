@@ -3902,5 +3902,125 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   setTimeout(updateBadge, 600);
 })();
 </script>
+
+<style>
+/* Cycle 38 — Saved Stories */
+.svstar{background:none;border:none;padding:2px 4px;margin-left:6px;cursor:pointer;font-size:15px;line-height:1;vertical-align:middle;color:#c9a227}
+.svstar::before{content:"\2606"}
+.svstar.on::before{content:"\2605";color:#e3b341}
+#savedNewsWrap{margin:0 0 6px}
+#savedNewsWrap .svrow{display:flex;align-items:flex-start;gap:8px;padding:7px 0;border-bottom:1px solid var(--line)}
+#savedNewsWrap .svrow:last-child{border-bottom:none}
+#savedNewsWrap .svrow a{flex:1;color:var(--text);text-decoration:none;font-size:13.5px;font-weight:600;line-height:1.4}
+#savedNewsWrap .svmeta{font-size:11.5px;color:var(--faint);white-space:nowrap;padding-top:2px}
+#savedNewsWrap .svunsave{background:none;border:none;cursor:pointer;color:#e3b341;font-size:15px;padding:2px 4px;line-height:1}
+#savedNewsWrap details.flat>summary{font-size:13px}
+@media print{#savedNewsWrap,.svstar{display:none!important}}
+</style>
+<script>
+/* Cycle 38 — Saved Stories (backlog-round2 #4). Additive only, localStorage only.
+   sf_savednews: [{title,url,source,savedOn}] cap 30, dedupe by url, newest first.
+   Star button is empty (glyph via CSS ::before) so summary textContent used by
+   paintRead / _newsBadge title extraction stays exactly the headline title. */
+(function(){
+  'use strict';
+  var KEY = 'sf_savednews', CAP = 30;
+  function loadSaved(){
+    try{ var v = JSON.parse(localStorage.getItem(KEY) || '[]'); return Array.isArray(v) ? v.filter(function(x){ return x && x.url && x.title; }) : []; }catch(_){ return []; }
+  }
+  function storeSaved(list){
+    try{ localStorage.setItem(KEY, JSON.stringify(list || [])); }catch(_){}
+  }
+  function dedupeCap(list){
+    var seen = {}, out = [];
+    (list || []).forEach(function(x){ if(x && x.url && !seen[x.url]){ seen[x.url] = 1; out.push(x); } });
+    return out.slice(0, CAP);
+  }
+  function applyToggle(list, item){
+    var cur = dedupeCap(list || []);
+    if(!item || !item.url) return cur;
+    var exists = cur.some(function(x){ return x.url === item.url; });
+    if(exists) return cur.filter(function(x){ return x.url !== item.url; });
+    return dedupeCap([item].concat(cur));
+  }
+  function isSaved(list, url){ return (list || []).some(function(x){ return x.url === url; }); }
+  window._savedNews = { load: loadSaved, store: storeSaved, dedupeCap: dedupeCap, applyToggle: applyToggle, isSaved: isSaved, KEY: KEY, CAP: CAP };
+
+  function escHtml(t){ return (typeof esc === 'function') ? esc(t) : String(t == null ? '' : t).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function storyFromDetails(d){
+    var sum = d.querySelector('summary'); if(!sum) return null;
+    var title = sum.textContent.replace('\u25be', '').replace(/[\u2605\u2606]/g, '').trim();
+    var a = d.querySelector('.body a[href]');
+    if(!a || !title) return null;
+    var url = a.getAttribute('href') || '';
+    if(!/^https?:\/\//i.test(url)) return null;
+    var source = (a.textContent || '').replace(/^Read at\s*/i, '').replace(/\s*\u203a\s*$/, '').trim();
+    return { title: title, url: url, source: source, savedOn: new Date().toISOString().slice(0, 10) };
+  }
+  function decorate(){
+    var list = loadSaved();
+    document.querySelectorAll('#headlinesWrap details').forEach(function(d){
+      var sum = d.querySelector('summary'); if(!sum) return;
+      var item = storyFromDetails(d);
+      var btn = sum.querySelector('button.svstar');
+      if(!item){ if(btn) btn.remove(); return; }
+      if(!btn){
+        btn = document.createElement('button');
+        btn.type = 'button'; btn.className = 'svstar'; btn.setAttribute('data-save-news', '1');
+        var chev = sum.querySelector('.chev');
+        if(chev) sum.insertBefore(btn, chev); else sum.appendChild(btn);
+      }
+      var on = isSaved(list, item.url);
+      btn.classList.toggle('on', on);
+      btn.setAttribute('aria-label', on ? 'Remove saved story' : 'Save story');
+      btn.title = on ? 'Saved — tap to remove' : 'Save story';
+    });
+  }
+  function renderSaved(){
+    var newsSec = document.getElementById('s-news'); if(!newsSec) return;
+    var wrap = document.getElementById('savedNewsWrap');
+    var list = dedupeCap(loadSaved());
+    if(!list.length){ if(wrap) wrap.remove(); return; }
+    if(!wrap){
+      wrap = document.createElement('div'); wrap.id = 'savedNewsWrap';
+      var hw = document.getElementById('headlinesWrap');
+      if(hw) newsSec.insertBefore(wrap, hw); else newsSec.appendChild(wrap);
+    }
+    var rows = list.map(function(x){
+      var meta = escHtml(x.source || '') + (x.savedOn ? ' \u00b7 ' + escHtml(x.savedOn) : '');
+      return '<div class="svrow"><a href="' + escHtml(x.url) + '" target="_blank" rel="noopener">' + escHtml(x.title) + '</a><span class="svmeta">' + meta + '</span><button type="button" class="svunsave" data-unsave-news="' + escHtml(x.url) + '" aria-label="Remove saved story">\u2605</button></div>';
+    }).join('');
+    wrap.innerHTML = '<details class="flat"><summary>Saved stories<span class="rhs"><span class="cnt">' + list.length + ' saved</span><span class="chev">\u25be</span></span></summary><div class="body">' + rows + '</div></details>';
+  }
+  function refresh(){ decorate(); renderSaved(); }
+  window._savedNews.refresh = refresh;
+
+  document.addEventListener('click', function(e){
+    var t = e.target && e.target.closest ? e.target : null; if(!t) return;
+    var unsave = t.closest ? t.closest('[data-unsave-news]') : null;
+    if(unsave){
+      e.preventDefault(); e.stopPropagation();
+      var url = unsave.getAttribute('data-unsave-news');
+      storeSaved(applyToggle(loadSaved(), { url: url, title: 'x' }));
+      refresh(); return;
+    }
+    var star = t.closest ? t.closest('[data-save-news]') : null;
+    if(star){
+      e.preventDefault(); e.stopPropagation();
+      var d = star.closest('details'); if(!d) return;
+      var item = storyFromDetails(d); if(!item) return;
+      storeSaved(applyToggle(loadSaved(), item));
+      refresh();
+    }
+  }, true);
+
+  if(typeof renderContent === 'function'){
+    var _rcSN = renderContent;
+    renderContent = function(){ _rcSN(); refresh(); };
+  }
+  refresh();
+  setTimeout(refresh, 600);
+})();
+</script>
 </body>
 </html>
