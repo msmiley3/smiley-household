@@ -2441,11 +2441,21 @@ selectRecipe = function(i){
   }
   // Learn from every add through the normal form path (typed, quick chips,
   // voice, recipe follow-ups and the recent chips themselves all submit here).
+  // Cycle 56 (N4): only learn adds the app handler itself would accept —
+  // it returns early when no person is set (requirePerson) or the item
+  // is empty, so the memory must apply the same two gates or it learns
+  // phantom items that never landed on the list.
+  function getPersonMem(){ try{ return localStorage.getItem('sf_person') || ''; }catch(_){ return ''; } }
+  function shouldRecord(personVal, itemVal){
+    return !!String(personVal || '').trim() && !!String(itemVal || '').trim();
+  }
+  window._shopMem = { shouldRecord: shouldRecord, getPerson: getPersonMem }; /* Cycle 56 (N4): shopping-memory gate */
   var form = document.getElementById('shopForm');
   if(form){
     form.addEventListener('submit', function(){
       var itemEl = document.getElementById('shopItem');
       var storeEl = document.getElementById('shopStore');
+      if(!shouldRecord(getPersonMem(), itemEl ? itemEl.value : '')) return; /* Cycle 56 (N4): skip phantom learns (no person / empty item) */
       record(itemEl ? itemEl.value : '', storeEl ? storeEl.value : '');
     });
   }
