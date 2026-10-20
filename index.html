@@ -4436,5 +4436,54 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   // which misjudged real drafts as stale. Restores run only via wrapped loadNote.
 })();
 </script>
+
+<style>
+/* Cycle 42 — iPhone Add to Home Screen hint */
+#a2hsHint{margin-top:10px;padding:10px 12px;border:1px solid #2c3040;border-radius:10px;background:rgba(94,106,210,.08)}
+#a2hsHint .a2hs-t{font-size:13.5px;line-height:1.5}
+#a2hsHint .a2hs-b{margin-top:8px}
+@media print{#a2hsHint{display:none!important}}
+</style>
+<script>
+/* Cycle 42 — iPhone Add to Home Screen Hint (backlog-round2 #8). localStorage only. */
+(function(){
+  'use strict';
+  var KEY = 'sf_a2hs';
+  function shouldShow(ua, standalone, dismissed, displayStandalone){
+    if(dismissed) return false;
+    if(displayStandalone) return false;
+    if(standalone !== false) return false;
+    return /iphone|ipad/i.test(String(ua || ''));
+  }
+  window._a2hs = { KEY: KEY, shouldShow: shouldShow };
+
+  var dismissed = false;
+  try{ dismissed = !!localStorage.getItem(KEY); }catch(_){}
+  var displayStandalone = false;
+  try{ displayStandalone = !!(window.matchMedia && window.matchMedia('(display-mode: standalone)').matches); }catch(_){}
+  var standalone = (typeof navigator !== 'undefined') ? navigator.standalone : undefined;
+  if(!shouldShow(navigator.userAgent, standalone, dismissed, displayStandalone)) return;
+
+  var card = document.getElementById('s-usage');
+  if(!card || document.getElementById('a2hsHint')) return;
+  var hint = document.createElement('div');
+  hint.id = 'a2hsHint';
+  var t = document.createElement('div');
+  t.className = 'a2hs-t';
+  t.textContent = '\uD83D\uDCF2 Add this app to your Home Screen: tap the Share button, then \u201CAdd to Home Screen\u201D \u2014 it opens full-screen like a real app, with the Moose icon.';
+  var b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'iconbtn a2hs-b';
+  b.id = 'a2hsGotIt';
+  b.textContent = 'Got it';
+  b.addEventListener('click', function(){
+    try{ localStorage.setItem(KEY, '1'); }catch(_){}
+    if(hint.parentNode) hint.parentNode.removeChild(hint);
+  });
+  hint.appendChild(t);
+  hint.appendChild(b);
+  card.appendChild(hint);
+})();
+</script>
 </body>
 </html>
