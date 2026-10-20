@@ -988,17 +988,29 @@
   }
   async function loadPhotos(){
     var grid=document.getElementById('photoGrid');
-    var res = await sb.storage.from('household-photos').list('', {limit:60, sortBy:{column:'created_at', order:'desc'}});
+    var res = await sb.storage.from('household-photos').list('', {limit:300, sortBy:{column:'created_at', order:'desc'}});
     if(res.error){ grid.innerHTML='<div class="empty">Photos could not load.</div>'; return; }
     var files=(res.data||[]).filter(function(f){return f.name && !f.name.startsWith('.')});
     if(!files.length){ grid.innerHTML='<div class="empty" style="grid-column:1/-1">No photos yet — upload the first Moose pic below 🐶</div>'; return; }
     window._photoUrls = [];
     var byArea = {};
+    var _signed = {};
+    try{
+      var _batch = await sb.storage.from('household-photos').createSignedUrls(files.map(function(f){return f.name;}), 3600);
+      if(_batch && !_batch.error && Array.isArray(_batch.data)){
+        _batch.data.forEach(function(r){ if(r && r.path && (r.signedUrl || r.signedURL)) _signed[r.path] = r.signedUrl || r.signedURL; });
+      }
+    }catch(_be){ _signed = {}; }
+    window._photoBatch = { indexSigned: function(rows){ var m = {}; (rows || []).forEach(function(r){ if(r && r.path && (r.signedUrl || r.signedURL)) m[r.path] = r.signedUrl || r.signedURL; }); return m; } };
     for(var i=0;i<files.length;i++){
-      var s = await sb.storage.from('household-photos').createSignedUrl(files[i].name, 3600);
-      if(!(s.data && s.data.signedUrl)) continue;
+      var _url = _signed[files[i].name] || null;
+      if(!_url){
+        var s = await sb.storage.from('household-photos').createSignedUrl(files[i].name, 3600);
+        if(s.data && s.data.signedUrl) _url = s.data.signedUrl;
+      }
+      if(!_url) continue;
       var meta = parsePhotoName(files[i].name);
-      var entry = {url:s.data.signedUrl, who:meta.who, area:meta.area, name:files[i].name};
+      var entry = {url:_url, who:meta.who, area:meta.area, name:files[i].name};
       window._photoUrls.push(entry);
       if(!byArea[meta.area]) byArea[meta.area] = [];
       byArea[meta.area].push(entry);
