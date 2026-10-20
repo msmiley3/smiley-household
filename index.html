@@ -2876,9 +2876,7 @@ selectRecipe = function(i){
       }
       fc.textContent = '\u2665 Favorites \u00B7 ' + a.length;
       fc.classList.toggle('on', favMode);
-      if(favMode){
-        Array.prototype.forEach.call(chips.querySelectorAll('[data-pf]'), function(c){ c.classList.remove('on'); });
-      }
+      Array.prototype.forEach.call(chips.querySelectorAll('[data-pf]'), function(c){ c.classList.toggle('on', !favMode && c.getAttribute('data-pf') === (window._photoFilter || 'All')); }); /* Cycle 55: chip highlight follows the active filter in both modes (toggle-off restores the area chip) */
     }
     applyFavFilter();
   }
