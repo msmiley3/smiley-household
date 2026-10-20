@@ -4935,5 +4935,183 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   setTimeout(paintDir, 800);
 })();
 </script>
+
+<script>
+/* Cycle 47 — Offline Outbox for List Adds (backlog-round2 #13). */
+(function(){
+  'use strict';
+  var KEY = 'sf_outbox';
+  var OFFLINE_TXT = '\uD83D\uDCF4 Offline \u2014 showing saved copy';
+  var pendings = [];
+  var flushing = false;
+
+  function loadQ(){
+    try{
+      var a = JSON.parse(localStorage.getItem(KEY) || '[]');
+      if(!Array.isArray(a)) return [];
+      return a.filter(function(e){ return e && (e.table === 'shopping_items' || e.table === 'todos') && e.payload && typeof e.payload === 'object'; });
+    }catch(_){ return []; }
+  }
+  function saveQ(q){ try{ localStorage.setItem(KEY, JSON.stringify(q.slice(0, 50))); }catch(_){ } }
+  function norm(v){ return String(v == null ? '' : v).trim().toLowerCase(); }
+  function nameOf(table, payload){ return table === 'todos' ? norm(payload && payload.task) : norm(payload && payload.item); }
+  function ownerOfP(payload){ return String((payload && (payload.added_by || payload.owner)) || ''); }
+  function isMatch(table, payload, row){
+    if(!row) return false;
+    var rn = table === 'todos' ? norm(row.task) : norm(row.item);
+    if(!rn || rn !== nameOf(table, payload)) return false;
+    var ro = String(row.added_by || row.owner || '');
+    var po = ownerOfP(payload);
+    return !po || !ro || ro === po;
+  }
+  function countMatches(table, payload, rows){
+    var n = 0;
+    (rows || []).forEach(function(r){ if(isMatch(table, payload, r)) n++; });
+    return n;
+  }
+  function sameEntry(a, b){
+    return !!(a && b && a.table === b.table && nameOf(a.table, a.payload) === nameOf(b.table, b.payload) && ownerOfP(a.payload) === ownerOfP(b.payload));
+  }
+  function pushQ(entry){
+    var q = loadQ();
+    for(var i = 0; i < q.length; i++){ if(sameEntry(q[i], entry)) return false; }
+    q.push(entry); saveQ(q); return true;
+  }
+  function isOffline(){ return typeof navigator !== 'undefined' && navigator.onLine === false; }
+  function inPreview(){ try{ return typeof previewMode !== 'undefined' && !!previewMode; }catch(_){ return false; } }
+  function sbReady(){ return typeof sb !== 'undefined' && !!sb && typeof sb.from === 'function'; }
+
+  function paint(){
+    try{
+      var pill = document.getElementById('offlinePill');
+      if(!pill) return;
+      var n = loadQ().length;
+      var off = isOffline();
+      if(n > 0){
+        var w = n + ' add' + (n === 1 ? '' : 's') + ' waiting';
+        pill.textContent = off ? (OFFLINE_TXT + ' \u00B7 ' + w) : ('\u23F3 ' + w + ' to sync');
+        pill.hidden = false;
+      } else if(off){
+        pill.textContent = OFFLINE_TXT;
+        pill.hidden = false;
+      } else {
+        pill.textContent = OFFLINE_TXT;
+        pill.hidden = true;
+      }
+    }catch(_){ }
+  }
+
+  async function serverRows(table){
+    var res = await sb.from(table).select('*');
+    if(res && res.error) throw res.error;
+    return (res && res.data) || [];
+  }
+
+  async function flush(){
+    if(flushing || isOffline() || inPreview() || !sbReady()) { paint(); return; }
+    var q = loadQ();
+    if(!q.length){ paint(); return; }
+    flushing = true;
+    var changed = false;
+    try{
+      while(q.length){
+        var e = q[0];
+        var rows = null;
+        try{ rows = await serverRows(e.table); }catch(_){ break; }
+        if(countMatches(e.table, e.payload, rows) > 0){ q.shift(); saveQ(q); changed = true; continue; }
+        var res = null;
+        try{ res = await sb.from(e.table).insert(e.payload); }catch(_){ break; }
+        if(res && res.error) break;
+        q.shift(); saveQ(q); changed = true;
+      }
+    }catch(_){ }
+    flushing = false;
+    paint();
+    if(changed){ try{ if(typeof refreshSoon === 'function') refreshSoon(); }catch(_){ } }
+  }
+
+  function getPerson(){
+    try{ var p = localStorage.getItem('sf_person') || ''; if(p) return p; }catch(_){ }
+    try{ return (typeof person !== 'undefined' && person) ? String(person) : ''; }catch(_){ return ''; }
+  }
+  function localRows(table){
+    var out = [], seen = {};
+    function add(r){
+      if(!r || typeof r !== 'object') return;
+      var k = r.id != null ? ('id:' + r.id) : null;
+      if(k){ if(seen[k]) return; seen[k] = 1; }
+      out.push(r);
+    }
+    try{
+      if(table === 'shopping_items' && Array.isArray(window._shopRows)) window._shopRows.forEach(add);
+      var reg = window._rows || {};
+      Object.keys(reg).forEach(function(k){
+        if(table === 'shopping_items' && k.indexOf('shop:') === 0) add(reg[k]);
+        if(table === 'todos' && k.indexOf('todo:') === 0) add(reg[k]);
+      });
+    }catch(_){ }
+    return out;
+  }
+
+  function queuePending(p){
+    p.done = true;
+    var i = pendings.indexOf(p); if(i > -1) pendings.splice(i, 1);
+    if(pushQ(p.entry)){
+      paint();
+      if(!isOffline()) setTimeout(flush, 10000);
+    }
+  }
+  async function checkPending(p, attempt){
+    if(p.done) return;
+    if(!isOffline() && !inPreview() && sbReady()){
+      try{
+        var rows = await serverRows(p.table);
+        if(countMatches(p.table, p.payload, rows) > p.baseline){
+          p.done = true;
+          var i = pendings.indexOf(p); if(i > -1) pendings.splice(i, 1);
+          return;
+        }
+        queuePending(p);
+        return;
+      }catch(_){ /* server unreachable: retry once, then queue */ }
+    }
+    if(attempt >= 2 || isOffline()){ queuePending(p); return; }
+    setTimeout(function(){ checkPending(p, attempt + 1); }, 5500);
+  }
+
+  window.addEventListener('submit', function(e){
+    try{
+      if(inPreview()) return;
+      var f = e.target;
+      if(!f || !f.id) return;
+      var who = getPerson(); if(!who) return;
+      var table = null, payload = null;
+      function val(id){ var el = document.getElementById(id); return el ? String(el.value || '').trim() : ''; }
+      if(f.id === 'shopForm'){
+        var item = val('shopItem'); if(!item) return;
+        payload = { item: item, qty: val('shopQty'), store: val('shopStore'), added_by: who };
+        table = 'shopping_items';
+      } else if(f.id === 'todoForm'){
+        var task = val('todoTask'); if(!task) return;
+        payload = { task: task, owner: who, due: val('todoDue'), added_by: who };
+        table = 'todos';
+      } else return;
+      var p = { table: table, payload: payload, entry: { table: table, payload: payload, queuedAt: Date.now() },
+                baseline: countMatches(table, payload, localRows(table)), done: false };
+      pendings.push(p);
+      setTimeout(function(){ checkPending(p, 1); }, 3500);
+    }catch(_){ }
+  }, true);
+
+  window._outbox = { load: loadQ, push: pushQ, norm: norm, isMatch: isMatch, countMatches: countMatches, sameEntry: sameEntry, flush: flush, paint: paint };
+
+  window.addEventListener('online', function(){ paint(); setTimeout(flush, 600); });
+  window.addEventListener('offline', function(){ paint(); });
+  document.addEventListener('visibilitychange', function(){ if(!document.hidden){ paint(); setTimeout(flush, 800); } });
+  setInterval(paint, 4000);
+  setTimeout(function(){ paint(); flush(); }, 5000);
+  paint();
+})();
+</script>
 </body>
 </html>
