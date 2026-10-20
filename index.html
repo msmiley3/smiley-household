@@ -5292,5 +5292,107 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   setInterval(paint, 3000);
 })();
 </script>
+<style>
+#whoBar{display:flex;gap:6px;align-items:center;padding:5px 12px 7px;flex-wrap:wrap}
+.whochip{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:2px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.09);color:#8a8f9c;background:rgba(255,255,255,.03);white-space:nowrap}
+.whochip .wdot{width:7px;height:7px;border-radius:50%;background:#565d6e;flex:none}
+.whochip .wseen{color:#6d7280;font-size:11px}
+.whochip.on-Mike{color:#a5aef5;border-color:rgba(94,106,210,.45);background:rgba(94,106,210,.13)}
+.whochip.on-Mike .wdot{background:#5E6AD2;box-shadow:0 0 6px rgba(94,106,210,.9)}
+.whochip.on-Kelly{color:#f4b8c9;border-color:rgba(224,122,158,.45);background:rgba(224,122,158,.12)}
+.whochip.on-Kelly .wdot{background:#e07a9e;box-shadow:0 0 6px rgba(224,122,158,.9)}
+#presencePill{display:none!important}
+@media print{#whoBar{display:none!important}}
+</style>
+<script>
+(function(){
+  var PEOPLE = ['Mike', 'Kelly'];
+  function myName(){ try{ return localStorage.getItem('sf_person') || ''; }catch(_){ return ''; } }
+  var me = myName();
+  var online = {};   // person -> true
+  var seen = {};     // person -> ISO string
+  var bar = null;
+  function ensureBar(){
+    if(bar) return bar;
+    var tb = document.querySelector('.topbar');
+    if(!tb || !tb.parentNode) return null;
+    bar = document.createElement('div');
+    bar.id = 'whoBar';
+    tb.parentNode.insertBefore(bar, tb.nextSibling);
+    return bar;
+  }
+  function fmtTime(d){
+    var h = d.getHours(), m = d.getMinutes();
+    var ap = h >= 12 ? 'PM' : 'AM'; h = h % 12; if(h === 0) h = 12;
+    return h + ':' + (m < 10 ? '0' : '') + m + ' ' + ap;
+  }
+  function fmtSeen(iso){
+    if(!iso) return '';
+    var d = new Date(iso); if(isNaN(d.getTime())) return '';
+    var now = new Date();
+    var startOf = function(x){ var t = new Date(x); t.setHours(0,0,0,0); return t.getTime(); };
+    var days = Math.round((startOf(now) - startOf(d)) / 86400000);
+    if(days <= 0) return 'last seen ' + fmtTime(d);
+    if(days === 1) return 'last seen yesterday ' + fmtTime(d);
+    if(days < 7) return 'last seen ' + ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()] + ' ' + fmtTime(d);
+    return 'last seen ' + ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getMonth()] + ' ' + d.getDate();
+  }
+  function render(){
+    var b = ensureBar(); if(!b) return;
+    b.innerHTML = PEOPLE.map(function(p){
+      var on = !!online[p];
+      var cls = 'whochip' + (on ? ' on-' + p : '');
+      var tail = on ? '' : (seen[p] ? '<span class="wseen">\u00B7 ' + fmtSeen(seen[p]) + '</span>' : '');
+      return '<span class="' + cls + '"><span class="wdot"></span>' + p + (tail ? ' ' + tail : '') + '</span>';
+    }).join('');
+  }
+  function beat(){
+    if(!me || PEOPLE.indexOf(me) < 0) return;
+    try{
+      sb.from('presence_log').upsert({ person: me, last_seen: new Date().toISOString() }, { onConflict: 'person' })
+        .then(function(){}, function(){});
+    }catch(_){ }
+  }
+  function fetchSeen(){
+    try{
+      sb.from('presence_log').select('person,last_seen').then(function(res){
+        if(res && res.data) res.data.forEach(function(r){ if(r && r.person) seen[r.person] = r.last_seen; });
+        render();
+      }, function(){});
+    }catch(_){ }
+  }
+  function start(){
+    if(typeof sb === 'undefined' || !sb){ setTimeout(start, 1200); return; }
+    render(); fetchSeen(); beat();
+    try{
+      var ch = sb.channel('household-whosaround', { config: { presence: { key: me || ('guest-' + Math.random().toString(36).slice(2, 8)) } } });
+      function sync(){
+        try{
+          var st = ch.presenceState() || {};
+          var now = {};
+          Object.keys(st).forEach(function(k){ if(PEOPLE.indexOf(k) >= 0) now[k] = true; });
+          online = now;
+        }catch(_){ }
+        render();
+      }
+      ch.on('presence', { event: 'sync' }, function(){ sync(); fetchSeen(); });
+      ch.on('presence', { event: 'join' }, sync);
+      ch.on('presence', { event: 'leave' }, function(){ sync(); fetchSeen(); });
+      ch.subscribe(function(status){
+        if(status === 'SUBSCRIBED' && me && PEOPLE.indexOf(me) >= 0){
+          try{ ch.track({ at: new Date().toISOString() }); }catch(_){ }
+          beat();
+        }
+      });
+    }catch(_){ }
+    setInterval(function(){ if(document.visibilityState === 'visible'){ beat(); fetchSeen(); } }, 60000);
+    document.addEventListener('visibilitychange', function(){
+      if(document.visibilityState === 'visible'){ me = myName(); beat(); fetchSeen(); render(); }
+    });
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
+})();
+</script>
 </body>
 </html>
