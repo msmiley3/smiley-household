@@ -5113,5 +5113,84 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   paint();
 })();
 </script>
+
+<style>
+/* Cycle 48 — Text It button */
+#shopText:disabled{opacity:.45;cursor:default}
+#s-shop.storemode #shopText{display:none!important}
+@media print{#shopText{display:none!important}}
+</style>
+<script>
+/* Cycle 48 — "Text It" Shopping List via SMS (backlog-round2 #14). Read-only. */
+(function(){
+  'use strict';
+  function getFilter(){
+    try{ var v = localStorage.getItem('sf_listfilter') || 'all'; return ['all','mine','Mike','Kelly'].indexOf(v) > -1 ? v : 'all'; }catch(_){ return 'all'; }
+  }
+  function getPerson(){ try{ return localStorage.getItem('sf_person') || ''; }catch(_){ return ''; } }
+  function targetFor(f){
+    if(!f || f === 'all') return null;
+    if(f === 'mine'){ var p = getPerson(); return p || null; }
+    return f;
+  }
+  function ownerOf(r){ return String((r && (r.added_by || r.owner)) || ''); }
+  function visibleRows(rows){
+    var target = targetFor(getFilter());
+    return (rows || []).filter(function(r){
+      if(!r || r.got_it) return false;
+      if(target && ownerOf(r) !== target) return false;
+      return true;
+    });
+  }
+  function buildText(rows){
+    var vis = visibleRows(rows);
+    if(!vis.length) return null;
+    var lines = vis.map(function(r){ return '\u2022 ' + r.item + (r.qty ? ' (' + r.qty + ')' : '') + (r.store ? ' \u2014 ' + r.store : ''); });
+    return '\uD83D\uDED2 Shopping list (' + vis.length + ')\n' + lines.join('\n');
+  }
+  function smsUrl(rows){
+    var t = buildText(rows);
+    return t ? ('sms:?&body=' + encodeURIComponent(t)) : null;
+  }
+  window._shopText = { buildText: buildText, smsUrl: smsUrl, visibleRows: visibleRows, targetFor: targetFor };
+
+  function ensureBtn(){
+    var copy = document.getElementById('shopCopy');
+    if(!copy || !copy.parentNode) return null;
+    var btn = document.getElementById('shopText');
+    if(btn) return btn;
+    btn = document.createElement('button');
+    btn.className = 'iconbtn';
+    btn.id = 'shopText';
+    btn.type = 'button';
+    btn.textContent = '\uD83D\uDCAC Text it';
+    btn.setAttribute('aria-label', 'Text the shopping list');
+    copy.parentNode.insertBefore(btn, copy.nextSibling);
+    btn.addEventListener('click', function(){
+      var url = smsUrl(window._shopRows || []);
+      if(!url) return;
+      window.location.href = url;
+    });
+    return btn;
+  }
+  function paint(){
+    try{
+      var btn = ensureBtn(); if(!btn) return;
+      var has = visibleRows(window._shopRows || []).length > 0;
+      btn.disabled = !has;
+    }catch(_){ }
+  }
+  if(typeof renderShop === 'function'){
+    var _rs92 = renderShop;
+    renderShop = function(rows){ _rs92(rows); paint(); };
+  }
+  document.addEventListener('click', function(e){
+    try{ if(e.target && e.target.closest && e.target.closest('[data-lf]')) setTimeout(paint, 60); }catch(_){ }
+  });
+  paint();
+  setTimeout(paint, 600);
+  setInterval(paint, 3000);
+})();
+</script>
 </body>
 </html>
