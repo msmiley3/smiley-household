@@ -2302,6 +2302,23 @@ selectRecipe = function(i){
   function saveChecked(name, arr){
     try{ localStorage.setItem(key(name), JSON.stringify(arr)); }catch(_){ }
   }
+  /* Cycle 59 (N7): check-offs keyed by ingredient text, not position */
+  function migrateChecked(arr, r){
+    var ings = (r && r.ingredients) || [];
+    var out = [];
+    (Array.isArray(arr) ? arr : []).forEach(function(v){
+      var t = (typeof v === 'number') ? ings[v] : v;
+      if(typeof t === 'string' && t && out.indexOf(t) < 0) out.push(t);
+    });
+    return out;
+  }
+  function toggleChecked(arr, text){
+    var out = (Array.isArray(arr) ? arr : []).slice();
+    var k = out.indexOf(text);
+    if(k >= 0) out.splice(k, 1); else if(text) out.push(text);
+    return out;
+  }
+  window._cookCheck = { migrateChecked: migrateChecked, toggleChecked: toggleChecked };
   function releaseWL(){ try{ if(cookWL){ cookWL.release(); cookWL = null; } }catch(_){ cookWL = null; } }
   function requestWL(){
     try{
@@ -2320,9 +2337,9 @@ selectRecipe = function(i){
   function transformIngredients(r){
     var d = document.getElementById('rDetail'); if(!d || !r) return;
     var ul = d.querySelector('ul.ing'); if(!ul) return;
-    var checked = loadChecked(r.name);
+    var checked = migrateChecked(loadChecked(r.name), r); /* Cycle 59 (N7) */
     ul.innerHTML = (r.ingredients || []).map(function(x, idx){
-      var done = checked.indexOf(idx) >= 0;
+      var done = checked.indexOf(x) >= 0; /* Cycle 59 (N7): by text, not idx */
       return '<li class="cook-ing' + (done ? ' done' : '') + '" data-ci="' + idx + '"><span class="cook-ring">' + (done ? '&#10003;' : '') + '</span><span class="cook-txt">' + escX(x) + '</span></li>';
     }).join('');
   }
@@ -2376,13 +2393,14 @@ selectRecipe = function(i){
     if(!row) return;
     var r = currentRecipe(); if(!r) return;
     var idx = Number(row.getAttribute('data-ci'));
-    var checked = loadChecked(r.name);
-    var k = checked.indexOf(idx);
-    if(k >= 0) checked.splice(k, 1); else checked.push(idx);
+    var text = (r.ingredients || [])[idx]; /* Cycle 59 (N7) */
+    if(typeof text !== 'string' || !text) return;
+    var checked = toggleChecked(migrateChecked(loadChecked(r.name), r), text);
     saveChecked(r.name, checked);
-    row.classList.toggle('done', k < 0);
+    var nowDone = checked.indexOf(text) >= 0;
+    row.classList.toggle('done', nowDone);
     var ring = row.querySelector('.cook-ring');
-    if(ring) ring.innerHTML = k < 0 ? '&#10003;' : '';
+    if(ring) ring.innerHTML = nowDone ? '&#10003;' : '';
     try{ if(navigator.vibrate) navigator.vibrate(8); }catch(_){ }
   });
   // Release the wake lock when leaving Discover
@@ -2391,6 +2409,7 @@ selectRecipe = function(i){
     switchView = function(v){
       _sv61(v);
       if(v !== 'discover' && cookWL) releaseWL();
+      if(v === 'discover' && cookOn && !cookWL) requestWL(); /* Cycle 59 (N7) */
     };
   }
   document.addEventListener('visibilitychange', function(){
