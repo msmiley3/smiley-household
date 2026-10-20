@@ -4321,5 +4321,117 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   setTimeout(function(){ ensureZones(); bindSwipe(); }, 600);
 })();
 </script>
+
+<style>
+/* Cycle 41 — Family Note Draft Safety Net */
+#noteSaveBtn.unsaved{border-color:#d9a441;color:#f2c66d}
+@media print{#noteSaveBtn.unsaved{border-color:inherit;color:inherit}}
+</style>
+<script>
+/* Cycle 41 — Family Note Draft Safety Net (backlog-round2 #7). localStorage only;
+   the server copy in the notes table stays the source of truth. */
+(function(){
+  'use strict';
+  var KEY = 'sf_notedraft';
+  function parseDraft(raw){
+    if(!raw) return null;
+    try{
+      var d = JSON.parse(raw);
+      if(!d || typeof d.body !== 'string') return null;
+      return { body: d.body, base: (typeof d.base === 'string' ? d.base : null) };
+    }catch(_){ return null; }
+  }
+  function decide(draft, serverBody){
+    if(!draft) return 'none';
+    if(typeof serverBody !== 'string') return 'none';
+    if(draft.base === null){
+      return draft.body === serverBody ? 'drop-same' : 'restore';
+    }
+    if(draft.base !== serverBody) return 'drop-stale';
+    if(draft.body === serverBody) return 'drop-same';
+    return 'restore';
+  }
+  window._noteDraft = { KEY: KEY, parseDraft: parseDraft, decide: decide };
+
+  var baseKnown = null, saveTimer = null, applying = false;
+  function ta(){ return document.getElementById('noteText'); }
+  function btn(){ return document.getElementById('noteSaveBtn'); }
+  function readDraft(){ try{ return parseDraft(localStorage.getItem(KEY)); }catch(_){ return null; } }
+  function writeDraft(d){ try{ localStorage.setItem(KEY, JSON.stringify(d)); }catch(_){} }
+  function clearDraft(){ try{ localStorage.removeItem(KEY); }catch(_){} }
+
+  function paint(){
+    var b = btn(); if(!b) return;
+    var t = b.textContent || '';
+    // Only manage the two steady states; never clobber Saving… / Saved ✓.
+    if(t !== 'Save note' && t !== 'Save note \u2022 Unsaved') return;
+    var el = ta();
+    var unsaved = !!(el && baseKnown !== null && el.value !== baseKnown);
+    b.textContent = unsaved ? 'Save note \u2022 Unsaved' : 'Save note';
+    b.classList.toggle('unsaved', unsaved);
+  }
+
+  function onInput(){
+    var el = ta(); if(!el || applying) return;
+    if(saveTimer) clearTimeout(saveTimer);
+    saveTimer = setTimeout(function(){
+      saveTimer = null;
+      var el2 = ta(); if(!el2) return;
+      if(baseKnown !== null && el2.value === baseKnown){ clearDraft(); }
+      else { writeDraft({ body: el2.value, base: baseKnown }); }
+      paint();
+    }, 400);
+  }
+
+  function restorePass(){
+    var el = ta(); if(!el) return;
+    if(document.activeElement === el) return; // focused: server body unknown, original guard held
+    var serverBody = el.value;
+    baseKnown = serverBody;
+    var d = readDraft();
+    var act = decide(d, serverBody);
+    if(act === 'restore'){
+      applying = true;
+      el.value = d.body;
+      if(d.base === null) writeDraft({ body: d.body, base: serverBody });
+      applying = false;
+    } else if(act === 'drop-stale' || act === 'drop-same'){
+      clearDraft();
+    }
+    paint();
+  }
+
+  // Wrap loadNote: the original sets an unfocused textarea to the server body,
+  // so running restorePass right after it captures base + restores any draft.
+  try{
+    if(typeof loadNote === 'function' && !loadNote._noteDraftWrapped){
+      var _origLoad = loadNote;
+      var wrappedLoad = async function(){
+        await _origLoad();
+        try{ restorePass(); }catch(_){}
+      };
+      wrappedLoad._noteDraftWrapped = true;
+      loadNote = wrappedLoad;
+    }
+  }catch(_){}
+
+  // A successful save shows "Saved ✓" in the app's own handler: on seeing it,
+  // drop the draft and rebase to the just-saved text.
+  setInterval(function(){
+    var b = btn(); if(!b) return;
+    if((b.textContent || '') === 'Saved \u2713'){
+      var el = ta();
+      if(el) baseKnown = el.value;
+      clearDraft();
+    }
+    paint();
+  }, 500);
+
+  var el0 = ta();
+  if(el0) el0.addEventListener('input', onInput);
+  // loadNote may already have run before this block executed.
+  try{ restorePass(); }catch(_){}
+})();
+</script>
 </body>
 </html>
