@@ -4601,5 +4601,165 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   setTimeout(apply, 1500);
 })();
 </script>
+
+<style>
+/* Cycle 44 — Dinner Rotation Memory: last-cooked lines */
+.lc-line{font-size:12px;color:var(--muted);margin-top:3px}
+#rDetail .lc-line{font-size:12.5px;margin:2px 0 0}
+@media print{.lc-line{display:none!important}}
+</style>
+<script>
+/* Cycle 44 — Dinner Rotation Memory (backlog-round2 #10). localStorage only. */
+(function(){
+  'use strict';
+  var KEY = 'sf_cookedlog';
+  var MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  function todayKey(d){
+    var t = d || new Date();
+    return t.getFullYear() + '-' + pad(t.getMonth() + 1) + '-' + pad(t.getDate());
+  }
+  function parseDay(str){
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(str || ''));
+    if(!m) return null;
+    return Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+  }
+  function daysAgo(todayStr, dateStr){
+    var a = parseDay(todayStr), b = parseDay(dateStr);
+    if(a === null || b === null) return null;
+    return Math.round((a - b) / 86400000);
+  }
+  function isRecent(todayStr, dateStr){
+    var d = daysAgo(todayStr, dateStr);
+    return d !== null && d >= 0 && d < 7;
+  }
+  function formatLabel(dateStr, todayStr){
+    var b = parseDay(dateStr); if(b === null) return '';
+    var dt = new Date(b);
+    var out = MON[dt.getUTCMonth()] + ' ' + dt.getUTCDate();
+    var ty = Number(String(todayStr || '').slice(0, 4));
+    if(ty && dt.getUTCFullYear() !== ty) out += ', ' + dt.getUTCFullYear();
+    return out;
+  }
+  function fairPool(names, log, todayStr){
+    var all = [], fresh = [];
+    (names || []).forEach(function(n, i){
+      all.push(i);
+      var when = log ? log[n] : null;
+      if(!when || !isRecent(todayStr, when)) fresh.push(i);
+    });
+    return fresh.length ? fresh : all;
+  }
+  function recordCooked(log, name, todayStr){
+    var out = {};
+    if(log) for(var k in log) out[k] = log[k];
+    if(name) out[name] = todayStr;
+    return out;
+  }
+  window._cookedLog = { KEY: KEY, todayKey: todayKey, daysAgo: daysAgo, isRecent: isRecent,
+    formatLabel: formatLabel, fairPool: fairPool, recordCooked: recordCooked };
+
+  function loadLog(){
+    try{ var o = JSON.parse(localStorage.getItem(KEY) || '{}'); return (o && typeof o === 'object' && !Array.isArray(o)) ? o : {}; }catch(_){ return {}; }
+  }
+  function saveLog(o){ try{ localStorage.setItem(KEY, JSON.stringify(o)); }catch(_){ } }
+  function checkedCount(name){
+    try{ var a = JSON.parse(localStorage.getItem('sf_cook_' + String(name || '')) || '[]'); return Array.isArray(a) ? a.length : 0; }catch(_){ return 0; }
+  }
+  function currentRecipe(){
+    var i = (typeof window._selRecipe === 'number') ? window._selRecipe : -1;
+    return (window._recipes || [])[i] || null;
+  }
+  function labelFor(name){
+    var log = loadLog(), when = name ? log[name] : null;
+    if(!when) return '';
+    var f = formatLabel(when, todayKey());
+    return f ? ('\uD83C\uDF73 Last cooked ' + f) : '';
+  }
+
+  /* ---- paints (idempotent) ---- */
+  function paintCards(){
+    try{
+      document.querySelectorAll('#rTrack .rcard').forEach(function(card){
+        var old = card.querySelector('.lc-line'); if(old) old.remove();
+        var r = (window._recipes || [])[Number(card.getAttribute('data-ridx'))];
+        if(!r) return;
+        var txt = labelFor(r.name); if(!txt) return;
+        var div = document.createElement('div');
+        div.className = 'lc-line';
+        div.textContent = txt;
+        card.appendChild(div);
+      });
+    }catch(_){ }
+  }
+  function paintDetail(i){
+    try{
+      var d = document.getElementById('rDetail'); if(!d) return;
+      var old = d.querySelector('.lc-line'); if(old) old.remove();
+      var idx = (typeof i === 'number') ? i : ((typeof window._selRecipe === 'number') ? window._selRecipe : -1);
+      var r = (window._recipes || [])[idx]; if(!r) return;
+      var txt = labelFor(r.name); if(!txt) return;
+      var host = d.querySelector('.rdetail .rgrid > div:last-child') || d.querySelector('.rdetail') || d;
+      var div = document.createElement('div');
+      div.className = 'lc-line';
+      div.textContent = txt;
+      var stats = host.querySelector ? host.querySelector('.rstats') : null;
+      if(stats) host.insertBefore(div, stats); else host.appendChild(div);
+    }catch(_){ }
+  }
+
+  /* ---- record on Done cooking ---- */
+  var touched = {};
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    var row = t && t.closest ? t.closest('.cook-ing') : null;
+    if(row){ var r0 = currentRecipe(); if(r0) touched[r0.name] = true; }
+  });
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    var b = t && t.closest ? t.closest('#rCookBtn') : null;
+    if(!b) return;
+    // Capture phase: the button's own toggle handler has not run yet, so
+    // the label still says "Done cooking" when (and only when) cook mode
+    // is on and this click ends the session.
+    if((b.textContent || '').indexOf('Done cooking') < 0) return;
+    var r = currentRecipe(); if(!r) return;
+    if(checkedCount(r.name) < 1 && !touched[r.name]) return;
+    saveLog(recordCooked(loadLog(), r.name, todayKey()));
+    delete touched[r.name];
+    setTimeout(function(){ paintCards(); paintDetail(); }, 180);
+  }, true);
+
+  /* ---- stamp cards + detail through the normal render paths ---- */
+  if(typeof renderContent === 'function'){
+    var _rc88 = renderContent;
+    renderContent = function(){ _rc88(); paintCards(); };
+  }
+  if(typeof selectRecipe === 'function'){
+    var _sr88 = selectRecipe;
+    selectRecipe = function(i){ _sr88(i); paintDetail(i); };
+  }
+
+  /* ---- fair Surprise-me (window capture beats the original picker) ---- */
+  window.addEventListener('click', function(e){
+    var t = e.target;
+    var b = t && t.closest ? t.closest('#rSurprise') : null;
+    if(!b) return;
+    var list = window._recipes || [];
+    if(!list.length || typeof selectRecipe !== 'function') return; // let the original handle the empty case
+    e.preventDefault();
+    e.stopPropagation();
+    var names = list.map(function(r){ return r.name; });
+    var pool = fairPool(names, loadLog(), todayKey());
+    var pick = pool[Math.floor(Math.random() * pool.length)];
+    selectRecipe(pick);
+    var d = document.getElementById('rDetail');
+    if(d) setTimeout(function(){ d.scrollIntoView({behavior: 'smooth', block: 'nearest'}); }, 60);
+  }, true);
+
+  paintCards();
+  setTimeout(paintCards, 800);
+})();
+</script>
 </body>
 </html>
