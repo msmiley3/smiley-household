@@ -3210,7 +3210,7 @@ selectRecipe = function(i){
     var img = document.getElementById('ssImg');
     var src = img ? (img.getAttribute('src') || '') : '';
     for(var i = 0; i < list.length; i++){ if(list[i].url === src) return list[i]; }
-    return list[0] || null;
+    return null; /* Cycle 62 (N10): no list[0] fallback -- never share the wrong photo */
   }
   window._photoShare = { fileNameFor: fileNameFor, pickMode: pickMode, currentPhoto: currentPhoto };
   function ensureBtn(){
