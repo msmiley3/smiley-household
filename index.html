@@ -3561,7 +3561,12 @@ selectRecipe = function(i){
   #s-savedrecipes .sr-ext{color:var(--faint);font-size:11px;font-weight:400}
   #s-savedrecipes .item.gracing{opacity:.45}
   #s-savedrecipes .item.gracing .txt{text-decoration:line-through}
-  #s-savedrecipes .del.undo{color:#e8c37a;opacity:1;font-size:12px;font-weight:650;width:auto}
+  /* Cycle 49: SR deletes use .sr-del, outside the global .del grace namespace (code-review-2 N1) */
+  #s-savedrecipes .sr-del{background:none;border:none;color:var(--faint);font-size:15px;cursor:pointer;padding:4px 6px;flex:none;line-height:1;opacity:.55;border-radius:6px}
+  #s-savedrecipes .sr-del:active{color:var(--danger);opacity:1}
+  @media(hover:hover){#s-savedrecipes .sr-del:hover{opacity:1;background:rgba(255,255,255,.05)}}
+  #s-savedrecipes .sr-del.undo{color:#e8c37a;opacity:1;font-size:12px;font-weight:650;width:auto}
+  @media print{#s-savedrecipes .sr-del{display:none!important}}
 </style>
 <script>
 /* Cycle 32 \u2014 Saved Recipes (Supabase `recipes` table). Additive only:
@@ -3658,7 +3663,7 @@ selectRecipe = function(i){
       if(r.notes) bits.push(esc(r.notes));
       return '<div class="item" data-sr="' + r.id + '"><div class="txt"><div>' + name + '</div>' +
         (bits.length ? '<div class="meta">' + bits.join(' \u00B7 ') + '</div>' : '') +
-        '</div><button class="del" type="button" data-sr-del="' + r.id + '" aria-label="Delete">\u2715</button></div>';
+        '</div><button class="sr-del" type="button" data-sr-del="' + r.id + '" aria-label="Delete">\u2715</button></div>';
     }).join('');
   }
   async function load(){
