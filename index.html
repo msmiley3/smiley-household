@@ -1999,7 +1999,8 @@ renderShop = function(rows){
   var dl = document.getElementById('storeList'); if(!dl) return;
   var seen = {}, out = [];
   ['Meijer', 'Giant Eagle', "Heinen's", 'Miles Farmers Market', 'Aldi', 'Walmart', 'Target', 'Costco'].concat((rows || []).map(function(r){ return r.store; })).forEach(function(st){ if(st && !seen[st]){ seen[st] = 1; out.push(st); } });
-  dl.innerHTML = out.map(function(st){ return '<option value="' + esc(st) + '">'; }).join('');
+  var sig = out.join('|');
+  if(window._storeListSig !== sig || !dl.children.length){ window._storeListSig = sig; dl.innerHTML = out.map(function(st){ return '<option value="' + esc(st) + '">'; }).join(''); } /* Cycle 52 (M9): rebuild datalist only when the store set changes */
 };
 </script>
 <script>
