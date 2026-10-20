@@ -4761,5 +4761,111 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   setTimeout(paintCards, 800);
 })();
 </script>
+
+<style>
+/* Cycle 45 — Watch & Listen heard tracking */
+.heard-wrap{position:relative;border-top:1px solid var(--line)}
+.heard-wrap:first-child{border-top:none}
+.heard-wrap .wrow{border-top:none;padding-right:38px}
+.heard-wrap:first-child .wrow{padding-top:2px}
+.wrow.washeard{opacity:.52}
+.wrow.washeard .wt{color:var(--faint)}
+.heard-btn{position:absolute;top:8px;right:0;width:28px;height:28px;border-radius:50%;border:1px solid var(--line2);background:var(--surface2);color:var(--muted);font-size:14px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2;padding:0}
+.heard-btn.on{background:rgba(94,106,210,.25);border-color:var(--accent);color:#c6ccff}
+.heard-btn:active{transform:scale(.94)}
+@media print{.heard-btn{display:none!important}}
+</style>
+<script>
+/* Cycle 45 — Watch & Listen "Heard It" (backlog-round2 #11). localStorage only. */
+(function(){
+  'use strict';
+  var KEY = 'sf_heard';
+  function cleanList(list){
+    var out = [];
+    if(Array.isArray(list)) list.forEach(function(u){
+      if(typeof u === 'string' && u && out.indexOf(u) < 0) out.push(u);
+    });
+    return out;
+  }
+  function toggleHeard(list, url){
+    var out = cleanList(list);
+    if(!url) return out;
+    var i = out.indexOf(url);
+    if(i >= 0) out.splice(i, 1); else out.push(url);
+    return out;
+  }
+  function orderUrls(urls, heard){
+    var h = cleanList(heard), fresh = [], done = [];
+    (urls || []).forEach(function(u){ (h.indexOf(u) >= 0 ? done : fresh).push(u); });
+    return fresh.concat(done);
+  }
+  window._heard = { KEY: KEY, cleanList: cleanList, toggleHeard: toggleHeard, orderUrls: orderUrls };
+
+  function loadHeard(){
+    try{ return cleanList(JSON.parse(localStorage.getItem(KEY) || '[]')); }catch(_){ return []; }
+  }
+  function saveHeard(list){ try{ localStorage.setItem(KEY, JSON.stringify(cleanList(list))); }catch(_){ } }
+
+  function paintHeard(){
+    try{
+      var wrap = document.getElementById('watchWrap'); if(!wrap) return;
+      var heard = loadHeard();
+      var rows = Array.prototype.slice.call(wrap.querySelectorAll('a.wrow'));
+      if(!rows.length) return;
+      rows.forEach(function(a){
+        var url = a.getAttribute('href') || '';
+        var host = a.parentNode;
+        if(!host || !host.classList || !host.classList.contains('heard-wrap')){
+          var div = document.createElement('div');
+          div.className = 'heard-wrap';
+          a.parentNode.insertBefore(div, a);
+          div.appendChild(a);
+          host = div;
+        }
+        var btn = host.querySelector('.heard-btn');
+        if(!btn){
+          btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'heard-btn';
+          btn.textContent = '\u2713';
+          host.appendChild(btn);
+        }
+        btn.setAttribute('data-url', url);
+        var on = heard.indexOf(url) >= 0;
+        btn.classList.toggle('on', on);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        btn.setAttribute('aria-label', on ? 'Heard — tap to unmark' : 'Mark as heard');
+        btn.title = on ? 'Heard' : 'Mark as heard';
+        a.classList.toggle('washeard', on);
+      });
+      // Stable sink: unheard wrappers first, heard wrappers after.
+      var wraps = rows.map(function(a){ return a.parentNode; });
+      var ordered = orderUrls(wraps.map(function(w){ return w.querySelector('a.wrow').getAttribute('href') || ''; }), heard);
+      if(ordered.join('\n') !== wraps.map(function(w){ return w.querySelector('a.wrow').getAttribute('href') || ''; }).join('\n')){
+        var byUrl = {};
+        wraps.forEach(function(w){ byUrl[w.querySelector('a.wrow').getAttribute('href') || ''] = w; });
+        ordered.forEach(function(u){ wrap.appendChild(byUrl[u]); });
+      }
+    }catch(_){ }
+  }
+
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    var b = t && t.closest ? t.closest('.heard-btn') : null;
+    if(!b) return;
+    e.preventDefault();
+    e.stopPropagation();
+    saveHeard(toggleHeard(loadHeard(), b.getAttribute('data-url') || ''));
+    paintHeard();
+  });
+
+  if(typeof renderContent === 'function'){
+    var _rc89 = renderContent;
+    renderContent = function(){ _rc89(); paintHeard(); };
+  }
+  paintHeard();
+  setTimeout(paintHeard, 800);
+})();
+</script>
 </body>
 </html>
