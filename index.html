@@ -2795,6 +2795,14 @@ selectRecipe = function(i){
 (function(){
   var KEY = 'sf_photofavs';
   var favMode = false;
+  function favEmptyState(on, favCount, visibleCount){
+    if(!on || visibleCount > 0) return '';
+    return favCount ? 'none-visible' : 'none-yet';
+  }
+  function favEnterPlan(on, area){
+    return { mode: !on, clearArea: !on && !!area && area !== 'All' };
+  }
+  window._favFilter = { emptyState: favEmptyState, enterPlan: favEnterPlan, isOn: function(){ return favMode; } }; /* Cycle 54 (N3): favorites filter helpers */
   function favs(){
     try{ var a = JSON.parse(localStorage.getItem(KEY) || '[]'); return Array.isArray(a) ? a.filter(function(x){ return typeof x === 'string'; }) : []; }
     catch(_){ return []; }
@@ -2813,6 +2821,7 @@ selectRecipe = function(i){
   function applyFavFilter(){
     var grid = document.getElementById('photoGrid'); if(!grid) return;
     var a = favs();
+    var favAnyVisible = false;
     var kids = Array.prototype.slice.call(grid.children);
     kids.forEach(function(node){
       if(node.classList && node.classList.contains('photos')){
@@ -2821,7 +2830,7 @@ selectRecipe = function(i){
           var n = tileName(ph);
           var show = !favMode || (n && a.indexOf(n) > -1);
           ph.style.display = show ? '' : 'none';
-          if(show) any = true;
+          if(show){ any = true; favAnyVisible = true; }
         });
         node.style.display = (favMode && !any) ? 'none' : '';
         var prev = node.previousElementSibling;
@@ -2829,13 +2838,14 @@ selectRecipe = function(i){
       }
     });
     var old = document.getElementById('favEmpty');
-    if(favMode && !a.length){
+    var es = favEmptyState(favMode, a.length, favAnyVisible ? 1 : 0);
+    if(es){
       if(!old){
         old = document.createElement('div');
         old.id = 'favEmpty'; old.className = 'empty';
-        old.textContent = 'No favorites yet \u2014 tap the \u2661 on any photo to save it here.';
         grid.appendChild(old);
       }
+      old.textContent = es === 'none-yet' ? 'No favorites yet \u2014 tap the \u2661 on any photo to save it here.' : 'No favorites to show here \u2014 tap All above, or tap \u2665 Favorites again to turn this filter off.';
     } else if(old){ old.remove(); }
   }
   function paintGrid(){
@@ -2913,7 +2923,12 @@ selectRecipe = function(i){
     var fc = t.closest ? t.closest('[data-pfav]') : null;
     if(fc){
       e.stopPropagation(); e.preventDefault();
-      favMode = true;
+      var plan = favEnterPlan(favMode, window._photoFilter || 'All');
+      favMode = plan.mode;
+      if(plan.clearArea){
+        window._photoFilter = 'All';
+        if(window._photoUrls && window._photoUrls.length && window._renderPhotoGrid){ window._renderPhotoGrid(); }
+      }
       paintGrid();
       return;
     }
