@@ -1788,7 +1788,7 @@ document.addEventListener('click', async function(e){
   b.disabled = true; b.textContent = 'Adding…';
   var res = await sb.from('events').insert({title: x.title, starts_at: pw.start.toISOString(), ends_at: pw.end.toISOString(), notes: pw.allDay ? 'All day' : ('Around town · ' + (x.where || '')), added_by: person});
   if(res.error){ b.disabled = false; b.textContent = '＋ Cal'; return; }
-  b.textContent = '✓ Added';
+  b.dataset.evDone = '1'; b.textContent = '✓ Added';
   refreshSoon();
 });
 </script>
@@ -2145,17 +2145,24 @@ var _rc58 = renderContent;
 renderContent = function(){ _rc58(); _markEv(); };
 var _rde58 = renderDayEvents;
 renderDayEvents = function(r){ _rde58(r); _markEv(); };
+window._evGate = { shouldRecord: function(btn){ return !!(btn && btn.dataset && btn.dataset.evDone === '1'); }, isPending: function(btn){ return !!(btn && btn.textContent === 'Adding…'); } };
 document.addEventListener('click', function(e){
   var b = e.target.closest ? e.target.closest('[data-evadd]') : null;
   if(!b) return;
   var key = _evKey(b);
   if(_evSet().indexOf(key) > -1){ e.preventDefault(); e.stopPropagation(); return; }
-  setTimeout(function(){
-    if(!personName()) return;
-    var set = _evSet();
-    if(set.indexOf(key) === -1){ set.push(key); try{ localStorage.setItem('sf_evadded', JSON.stringify(set)); }catch(_){ } }
-    b.disabled = true; b.textContent = '✓ Added';
-  }, 1200);
+  var _tries = 0;
+  function _evPoll(){
+    if(window._evGate.shouldRecord(b)){
+      if(!personName()) return;
+      var set = _evSet();
+      if(set.indexOf(key) === -1){ set.push(key); try{ localStorage.setItem('sf_evadded', JSON.stringify(set)); }catch(_){ } }
+      b.disabled = true; b.textContent = '✓ Added';
+      return;
+    }
+    if(window._evGate.isPending(b) && _tries < 6){ _tries++; setTimeout(_evPoll, 800); }
+  }
+  setTimeout(_evPoll, 1200);
 }, true);
 </script>
 <script>
