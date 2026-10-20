@@ -4173,5 +4173,153 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   ensureBtn(); ensureProg();
 })();
 </script>
+
+<style>
+/* Cycle 40 — Slideshow Navigation */
+#ssZoneL,#ssZoneR{position:absolute;top:0;bottom:0;width:28%;z-index:3;cursor:pointer;-webkit-tap-highlight-color:transparent}
+#ssZoneL{left:0}
+#ssZoneR{right:0}
+#ssZoneL:after,#ssZoneR:after{position:absolute;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.38);font-size:44px;line-height:1;text-shadow:0 1px 8px rgba(0,0,0,.6);pointer-events:none}
+#ssZoneL:after{content:'\2039';left:14px}
+#ssZoneR:after{content:'\203A';right:14px}
+#slideshow .ss-hint{z-index:6;pointer-events:none}
+#slideshow .ss-cap{z-index:2;pointer-events:none}
+@media print{#ssZoneL,#ssZoneR{display:none!important}}
+</style>
+<script>
+/* Cycle 40 — Slideshow Navigation (backlog-round2 #6). View-layer only; no data writes. */
+(function(){
+  'use strict';
+  function parseStamp(name){
+    if(!name || typeof name !== 'string') return null;
+    var m = /(\d{13})/.exec(name);
+    if(!m) return null;
+    var t = Number(m[1]);
+    if(!isFinite(t)) return null;
+    var y = new Date(t).getFullYear();
+    if(y < 2020 || y > 2035) return null;
+    return t;
+  }
+  function formatStamp(t){
+    if(t == null) return '';
+    var d = new Date(t);
+    if(isNaN(d.getTime())) return '';
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+  function stepIndex(cur, dir, len){
+    if(!len || len < 1) return 0;
+    return (((cur + dir) % len) + len) % len;
+  }
+  function captionSuffix(p, idx, len){
+    if(!len) return '';
+    var eff = (((idx % len) + len) % len);
+    var out = ' \u00b7 ' + (eff + 1) + ' / ' + len;
+    var st = p ? parseStamp(p.name) : null;
+    var ds = st != null ? formatStamp(st) : '';
+    if(ds) out += ' \u00b7 ' + ds;
+    return out;
+  }
+  window._ssNav = { parseStamp: parseStamp, formatStamp: formatStamp, stepIndex: stepIndex, captionSuffix: captionSuffix };
+
+  function restartTimer(){
+    try{
+      if(typeof ssTimer !== 'undefined' && ssTimer){ clearInterval(ssTimer); ssTimer = null; }
+      var ss = document.getElementById('slideshow');
+      if(ss && !ss.hidden && typeof ssShow === 'function'){
+        ssTimer = setInterval(function(){ ssIdx++; ssShow(); }, 6000);
+      }
+    }catch(_){}
+  }
+  function nav(dir){
+    var list = window._photoUrls || [];
+    if(list.length < 2) return;
+    try{
+      if(typeof ssIdx === 'undefined' || typeof ssShow !== 'function') return;
+      ssIdx = stepIndex(ssIdx, dir, list.length);
+      ssShow();
+      restartTimer();
+      try{ if(navigator.vibrate) navigator.vibrate(6); }catch(_){}
+    }catch(_){}
+  }
+  window._ssNav.nav = nav;
+
+  // Wrap ssShow once: original sets the caption (area / who); append counter + date.
+  try{
+    if(typeof ssShow === 'function' && !ssShow._ssNavWrapped){
+      var _origShow = ssShow;
+      var wrapped = function(){
+        _origShow();
+        try{
+          var list = window._photoUrls || [];
+          if(!list.length) return;
+          var idx = (typeof ssIdx !== 'undefined') ? ssIdx : 0;
+          var eff = (((idx % list.length) + list.length) % list.length);
+          var p = list[eff];
+          var cap = document.getElementById('ssCap');
+          if(cap && p) cap.textContent = (cap.textContent || '') + captionSuffix(p, idx, list.length);
+        }catch(_){}
+      };
+      wrapped._ssNavWrapped = true;
+      ssShow = wrapped;
+    }
+  }catch(_){}
+
+  function ensureZones(){
+    var ss = document.getElementById('slideshow'); if(!ss) return;
+    [['ssZoneL', -1, 'Previous photo'], ['ssZoneR', 1, 'Next photo']].forEach(function(cfg){
+      if(document.getElementById(cfg[0])) return;
+      var z = document.createElement('div');
+      z.id = cfg[0]; z.setAttribute('role', 'button'); z.setAttribute('aria-label', cfg[2]);
+      (function(dir){
+        z.addEventListener('click', function(e){
+          e.stopPropagation(); e.preventDefault();
+          if(Date.now() - swipedAt < 400) return;
+          nav(dir);
+        });
+      })(cfg[1]);
+      ss.appendChild(z);
+    });
+    var hint = ss.querySelector('.ss-hint');
+    if(hint) hint.textContent = 'Tap sides or swipe to flip \u00b7 center tap to exit \u2715';
+  }
+
+  var sx = 0, sy = 0, swipedAt = 0;
+  function isButtonTarget(e){
+    return !!(e.target && e.target.closest && (e.target.closest('#ssFavBtn') || e.target.closest('#ssShareBtn')));
+  }
+  function bindSwipe(){
+    var ss = document.getElementById('slideshow'); if(!ss || ss._ssNavSwipe) return;
+    ss._ssNavSwipe = true;
+    ss.addEventListener('touchstart', function(e){
+      if(e.touches.length !== 1 || isButtonTarget(e)) return;
+      sx = e.touches[0].clientX; sy = e.touches[0].clientY;
+    }, { passive: true });
+    ss.addEventListener('touchend', function(e){
+      if(isButtonTarget(e)) return;
+      if(!e.changedTouches || !e.changedTouches.length) return;
+      var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+      if(Math.abs(dx) >= 40 && Math.abs(dy) < Math.abs(dx) * 0.7){
+        swipedAt = Date.now();
+        nav(dx < 0 ? 1 : -1);
+      }
+    }, { passive: true });
+  }
+  // A swipe's follow-up click must not close the slideshow (original click-to-close).
+  document.addEventListener('click', function(e){
+    if(Date.now() - swipedAt >= 400) return;
+    var t = e.target && e.target.closest ? e.target.closest('#slideshow') : null;
+    if(!t || isButtonTarget(e)) return;
+    e.stopPropagation(); e.preventDefault();
+  }, true);
+  document.addEventListener('keydown', function(e){
+    var ss = document.getElementById('slideshow');
+    if(!ss || ss.hidden) return;
+    if(e.key === 'ArrowLeft'){ e.preventDefault(); nav(-1); }
+    else if(e.key === 'ArrowRight'){ e.preventDefault(); nav(1); }
+  });
+  ensureZones(); bindSwipe();
+  setTimeout(function(){ ensureZones(); bindSwipe(); }, 600);
+})();
+</script>
 </body>
 </html>
