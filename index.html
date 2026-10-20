@@ -2227,6 +2227,25 @@ selectRecipe = function(i){
   var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if(!SR) return;
   function clean(t){ return String(t || '').trim().replace(/[.]+$/, '').trim(); }
+  /* Cycle 60 (N8): only split on " and " in a comma list; compounds stay whole */
+  var VOICE_COMPOUNDS = ['mac and cheese','salt and pepper','salt and pepper shakers','oil and vinegar','oil and vinegar set','peanut butter and jelly'];
+  function isCompound(seg){
+    return VOICE_COMPOUNDS.indexOf(clean(seg).toLowerCase()) >= 0;
+  }
+  function splitItems(transcript){
+    var t = clean(transcript);
+    if(!t) return [];
+    if(t.indexOf(',') < 0) return [t];
+    var parts = [];
+    t.split(',').forEach(function(seg){
+      seg = clean(seg);
+      if(!seg) return;
+      if(isCompound(seg)){ parts.push(seg); return; }
+      seg.split(/ and /i).forEach(function(p){ p = clean(p); if(p) parts.push(p); });
+    });
+    return parts;
+  }
+  window._voiceSplit = { splitItems: splitItems, isCompound: isCompound };
   function makeMic(formId, inputId, isShop){
     var form = document.getElementById(formId);
     var input = document.getElementById(inputId);
@@ -2256,10 +2275,7 @@ selectRecipe = function(i){
           form.requestSubmit();
           return;
         }
-        var parts = [];
-        transcript.split(',').forEach(function(seg){
-          seg.split(/ and /i).forEach(function(p){ p = clean(p); if(p) parts.push(p); });
-        });
+        var parts = splitItems(transcript); /* Cycle 60 (N8) */
         if(!parts.length) parts = [transcript];
         var idx = 0;
         (function next(){
