@@ -3840,5 +3840,67 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   }, true);
 })();
 </script>
+
+<script>
+/* Cycle 37 — News Badge = Unread Count (backlog-round2 #3). Additive only:
+   after renderContent sets the total, recompute unread from sf_read using the
+   same title extraction paintRead() uses, and set badgeNews to unread.
+   Also recompute after paintRead and on headline toggle so opening a story
+   or Mark All Read moves the badge live. Display-only; sf_read unchanged. */
+(function(){
+  'use strict';
+  function titlesFromDOM(){
+    var out = [];
+    document.querySelectorAll('#headlinesWrap details').forEach(function(d){
+      var sum = d.querySelector('summary'); if(!sum) return;
+      var t = sum.textContent.replace('\u25be', '').trim();
+      if(t && out.indexOf(t) < 0) out.push(t);
+    });
+    return out;
+  }
+  function titlesFromContent(){
+    var out = [];
+    try{
+      if(typeof CONTENT !== 'undefined' && CONTENT && CONTENT.headlines){
+        (CONTENT.headlines.cats || []).forEach(function(c){ (c.items || []).forEach(function(x){ if(x && x.title && out.indexOf(x.title) < 0) out.push(x.title); }); });
+      }
+    }catch(_){}
+    return out;
+  }
+  function computeUnread(allTitles, readTitles){
+    var read = readTitles || [];
+    var n = 0;
+    (allTitles || []).forEach(function(t){ if(read.indexOf(t) < 0) n++; });
+    return n;
+  }
+  function updateBadge(){
+    try{
+      if(typeof _readSet !== 'function' || typeof setBadge !== 'function') return;
+      var all = titlesFromDOM();
+      if(!all.length) all = titlesFromContent();
+      if(!all.length) return;
+      var R = _readSet();
+      var unread = computeUnread(all, R.titles || []);
+      setBadge('badgeNews', unread);
+    }catch(_){}
+  }
+  window._newsBadge = { computeUnread: computeUnread, titlesFromDOM: titlesFromDOM, titlesFromContent: titlesFromContent, update: updateBadge };
+  if(typeof renderContent === 'function'){
+    var _rcNB = renderContent;
+    renderContent = function(){ _rcNB(); updateBadge(); };
+  }
+  if(typeof paintRead === 'function'){
+    var _prNB = paintRead;
+    paintRead = function(){ _prNB(); updateBadge(); };
+  }
+  document.addEventListener('toggle', function(){ setTimeout(updateBadge, 0); }, true);
+  // Mark-all-read writes sf_read then calls paintRead/update; also poll briefly after clicks on it
+  document.addEventListener('click', function(e){
+    try{ if(e.target && e.target.id === 'markAllRead') setTimeout(updateBadge, 50); }catch(_){}
+  }, true);
+  updateBadge();
+  setTimeout(updateBadge, 600);
+})();
+</script>
 </body>
 </html>
