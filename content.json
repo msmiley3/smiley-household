@@ -1,42 +1,45 @@
 {
   "dailyBrief": {
-    "date": "Monday, October 19, 2026",
-    "text": "Big night ahead, Cleveland: the Guardians face elimination in ALCS Game 6 at Tampa Bay at 8 PM, after Tampa Bay took Sunday's Game 5, 3–1, for a 3–2 series lead. The Browns gave you a walk-off win yesterday — 13–10 over Baltimore and a share of first place — so the city starts the week in a fighting mood. Overnight, Ukraine launched more than 1,000 drones at Russia, setting St. Petersburg oil sites ablaze, while Washington argued over intelligence sharing and the Russia sanctions waiver. Solon woke up clear and frosty at 34°, but it's a sunny, dry day ahead with a high near 67°. Tonight in town: Solon Council votes on the park and trail notes, the Jonas Brothers play Rocket Arena, and the Cleveland Orchestra trio performs at Severance — both shows at 7:30.",
+    "date": "Tuesday, October 20, 2026",
+    "text": "Tough morning, Cleveland: the Guardians' season ended last night in St. Petersburg, a 7-3 loss to Tampa Bay in ALCS Game 6 that sends the Rays to the World Series instead. Overnight, Zelenskiy arrived in Oslo for talks with U.S. envoy Witkoff and European leaders on ending the war, even as a Russian drone killed three people on the highway south of Kyiv. Closer to home, Nestlé confirmed it will close its Solon factory by the end of 2027 and move production to South Carolina — the campus stays, and the city is promising job help for affected workers. Solon woke up clear and cold at 37°, but it's a sunny, dry day ahead with a high near 68°. Today in town: the CLEO on the Go Luncheon at Mavis Public House at 11:30, and the Browns get a quiet week to enjoy first place before Sunday at Tennessee.",
     "chips": [
-      "☀️ Frosty 34° start → sunny, high 67°",
+      "☀️ Clear 37° start → sunny, high 68°",
       {
-        "label": "⚾ Guardians Game 6 · 8 PM at Tampa Bay",
-        "url": "https://www.si.com/fannation/mlb/fastball/news/probable-pitchers-in-guardians-do-or-die-alcs-game-6-against-rays-justin3"
+        "label": "⚾ Guardians fall 7-3 · season over",
+        "url": "https://clevelandmagazine.com/articles/guards-fall-in-alcs-cle-daily/"
       },
       {
-        "label": "🏈 Browns 13-10 · tied for 1st",
-        "url": "https://www.reuters.com/sports/nfl/browns-get-walk-off-winner-catch-ravens-afc-north--flm-2026-10-18/"
+        "label": "🇺🇦 Zelenskiy in Oslo for talks today",
+        "url": "https://www.reuters.com/world/ukraines-zelenskiy-travels-norway-talks-war-security-tuesday-2026-10-20/"
       },
-      "🎶 Jonas Brothers + Cleveland Orchestra tonight",
       {
-        "label": "🗳️ Early voting open — 66 precincts moved",
-        "url": "https://boe.cuyahogacounty.gov/voters/vote-early-in-person"
-      }
+        "label": "🏭 Nestlé to close Solon factory by end of 2027",
+        "url": "https://www.wnir.com/2026/10/19/nestle-closing-solon-location/"
+      },
+      "🏈 Browns alone in 1st · at Titans Sun"
     ],
     "links": [
       {
-        "phrase": "Ukraine launched more than 1,000 drones at Russia",
-        "url": "https://www.military.com/st-petersburg-oil-facilities-ablaze-as-ukraine-launches-more-than-1000-drones-at-russia"
+        "phrase": "Zelenskiy arrived in Oslo",
+        "url": "https://www.reuters.com/world/ukraines-zelenskiy-travels-norway-talks-war-security-tuesday-2026-10-20/"
       },
       {
-        "phrase": "Solon Council votes on the park and trail notes",
-        "url": "https://www.chagrinvalleytoday.com/communities/article_2a294287-d9f4-4558-9aa3-2d8f4e8c0056.html"
+        "phrase": "Nestlé confirmed it will close its Solon factory",
+        "url": "https://www.wnir.com/2026/10/19/nestle-closing-solon-location/"
+      },
+      {
+        "phrase": "a 7-3 loss to Tampa Bay in ALCS Game 6",
+        "url": "https://clevelandmagazine.com/articles/guards-fall-in-alcs-cle-daily/"
       }
     ]
   },
   "babyDue": null,
   "weekBrief": {
-    "text": "It's a classic crisp fall week in Solon: dry and sunny almost every day, highs in the mid-to-upper 60s and chilly nights in the 30s — good weather for getting outside and for playoff baseball. The Guardians need two wins in Florida to reach the World Series, with a possible Game 7 Tuesday and the Series itself starting Friday. The Browns take their share of first place to Tennessee on Sunday, the Cavs open at Philadelphia on Thursday and play their home opener Saturday against Brooklyn, and Ohio State gets a bye to heal up at quarterback after Saturday's win at Indiana. Around town: trunk-or-treat Thursday in Solon, Heinen's clam bake Friday in Chagrin Falls, and Barack Obama campaigns in Cleveland on Saturday for the fall races. Grocery play of the week is still Giant Eagle's free-turkey deal — spend $350 by November 8 — and the baby countdown is very much on, so it's a good week to knock a few more checklist items off together.",
+    "text": "It's a crisp, dry fall week in Solon: sunny skies almost every day, highs in the mid-to-upper 60s and chilly nights in the 30s and 40s, with today topping out near 68°. The Guardians' October run is over after Monday's Game 6 loss, so the sports baton passes on: the Cavs open Thursday night at Philadelphia and play their home opener Saturday against Brooklyn, and the first-place Browns head to Tennessee on Sunday. Around town it's a full week — trunk-or-treat Thursday in Solon, Heinen's clam bake Friday in Chagrin Falls, and Barack Obama rallying in Cleveland on Saturday for the fall races, while Solon digests the news that Nestlé will wind down its factory here by the end of 2027. Grocery play of the week is still Giant Eagle's free-turkey deal — spend $350 by November 8 — and with the baby countdown very much on, it's a good week to knock a few more checklist items off together.",
     "chips": [
-      "☀️ Dry & sunny, highs 65–69° all week",
-      "⚾ Guardians Game 6 Mon · Game 7 Tue if needed",
+      "☀️ Sunny & dry, highs 65–68° all week",
       {
-        "label": "🏀 Cavs opener Thu · home Sat",
+        "label": "🏀 Cavs opener Thu · home Sat vs Brooklyn",
         "url": "#s-news"
       },
       {
@@ -46,6 +49,10 @@
       {
         "label": "🎃 Trunk-or-treat Thu in Solon",
         "url": "https://allevents.in/solon-oh/trunk-or-treat"
+      },
+      {
+        "label": "🏭 Nestlé Solon factory to close by end of 2027",
+        "url": "https://www.wnir.com/2026/10/19/nestle-closing-solon-location/"
       }
     ],
     "links": [
@@ -56,6 +63,10 @@
       {
         "phrase": "Heinen's clam bake Friday in Chagrin Falls",
         "url": "https://www.heinens.com/stores/chagrin-falls/"
+      },
+      {
+        "phrase": "Nestlé will wind down its factory here by the end of 2027",
+        "url": "https://www.wnir.com/2026/10/19/nestle-closing-solon-location/"
       }
     ]
   },
@@ -308,46 +319,46 @@
     "range": "Sun Oct 18 – Sun Oct 25"
   },
   "headlines": {
-    "date": "Monday, October 19, 2026",
+    "date": "Tuesday, October 20, 2026",
     "cats": [
       {
         "name": "World",
         "items": [
           {
-            "title": "Trump says Ukraine needs a new negotiator — as U.S. envoys head to Norway for peace talks",
-            "summary": "The public fight between President Trump and Ukrainian President Volodymyr Zelenskiy escalated again on Monday, even as Washington quietly lined up a fresh round of diplomacy. Speaking to reporters on the South Lawn before a campaign trip to Kansas, Trump said it was time for somebody else to negotiate on Ukraine's behalf and defended Russia's conduct in the war, saying Moscow had, in his words, been fine on Ukraine. Zelenskiy, in a Bloomberg interview, accused the administration of pressuring Kyiv to yield to Russia and said he had offered to stop targeting Russian refineries — a step aimed at diesel prices — in exchange for more Patriot air-defense missiles.\n\nAgainst that backdrop, Reuters reports that Trump's son-in-law Jared Kushner and envoy Steve Witkoff are expected to travel to Norway this week for the next round of talks on ending the war, with Zelenskiy expected to attend, according to people familiar with the plans. The schedule is tentative, and the White House did not immediately comment. The dispute has also widened beyond words: Zelenskiy says the speed of Ukraine's Starshield satellite service was reduced by a U.S. policy decision and that intelligence sharing has been limited, claims U.S. officials deny.\n\nThe Norway meetings matter because they test whether the argument is a negotiating tactic or a genuine break. Ukraine relies on Starshield, built by SpaceX, for battlefield communications and drone operations, and Ukrainian officials say slower service hampered efforts to intercept Russian strikes. If the talks produce even a framework, the pressure campaign may read as leverage; if they stall, Kyiv faces the prospect of fighting on with a cooler Washington.\n\nWatch for confirmation of the Norway schedule and whether Zelenskiy and the U.S. envoys actually sit down together this week.",
+            "title": "Zelenskiy arrives in Oslo for talks as U.S. envoy Witkoff joins the push to end the war",
+            "summary": "Ukrainian President Volodymyr Zelenskiy arrived in Oslo on Tuesday for talks on the war and European security, hosted by Norway with Finland taking part. U.S. special envoy Steve Witkoff was expected at the meetings, along with representatives from Britain, France, Germany and Poland and officials from the EU and NATO.\n\nThe meeting comes at a strained moment between Kyiv and Washington. President Trump has waived some sanctions on Russia, praised Moscow's conduct and said Ukraine should find somebody else to negotiate, while Kyiv says it has lately missed early warnings of Russian missile launches, seen its Starshield satellite links throttled and waited on air defenses its European allies already paid for.\n\nThat is why Oslo matters beyond the photo opportunity. If the U.S. envoy, the Europeans and Zelenskiy leave with a shared position, the peace track still has a shape. If they do not, Ukraine faces a winter of heavier Russian strikes with cooler support from its most important partner.\n\nWatch for the joint press conference with Zelenskiy, Finland's President Alexander Stubb and Norway's Prime Minister Jonas Gahr Stoere later Tuesday.",
             "source": "Reuters",
-            "url": "https://www.reuters.com/world/europe/us-officials-plan-travel-norway-ukraine-talks-sources-say-2026-10-19/"
+            "url": "https://www.reuters.com/world/ukraines-zelenskiy-travels-norway-talks-war-security-tuesday-2026-10-20/"
           },
           {
-            "title": "Egypt puts off a vote on backing Saudi Arabia militarily until October 26",
-            "summary": "Egypt's parliament has delayed until October 26 a vote on whether to authorize the country's armed forces to support Saudi Arabia if Riyadh requests it. Lawmakers adjourned a second closed-door session on Monday that was meant to debate President Abdel Fattah al-Sisi's request, extending a decision that could pull Egypt deeper into the conflict with Yemen's Houthis.\n\nSisi said on Saturday that Egypt would take any measure necessary to protect its Gulf allies after Houthi attacks on Saudi oil and other infrastructure. Egypt's constitution requires a two-thirds parliamentary majority, after consultation with the National Defence Council, before the military can be sent on a combat mission abroad. The Egyptian Social Democratic Party told its lawmakers to abstain, arguing parliament still lacks basic information about the mission's objectives, scope, duration, cost and risks.\n\nMoney hangs over the debate as well. Saudi Arabia has a $5.3 billion deposit at Egypt's central bank due this month, plus about $267 million in interest, which gives Cairo both a reason to stand by Riyadh and a reason to avoid an open-ended commitment while its economy is under pressure. Al-Azhar's grand imam has also called for an urgent Arab and Muslim mediation effort.\n\nThe delay keeps Egypt's options open for another week, but the October 26 vote will show how far Cairo is willing to go beyond words.",
+            "title": "Russian drone strike near a highway south of Kyiv kills three people",
+            "summary": "A Russian drone struck near a petrol station on the highway running south from Kyiv toward the Black Sea port of Odesa on Tuesday, killing three people, according to the Kyiv regional prosecutor's office. Several cars caught fire and four more people were wounded.\n\nUkrainian emergency services released footage of firefighters working through twisted wreckage in the dark. The strike is part of a pattern both sides have settled into: Russia hitting Ukrainian cities, energy systems and transport routes while Ukraine targets Russian energy infrastructure in return.\n\nCivilian road traffic has become part of the risk map in Ukraine, not just front-line towns. Each strike like this also hardens Kyiv's argument in Oslo and Washington that air defense deliveries are the difference between intercepted drones and funerals.",
             "source": "Reuters",
-            "url": "https://www.reuters.com/world/middle-east/egypt-delays-vote-military-support-saudi-arabia-until-october-26-2026-10-19/"
+            "url": "https://www.reuters.com/world/europe/russian-drone-strike-kills-three-near-kyiv-ukrainian-prosecutors-say-2026-10-20/"
           },
           {
-            "title": "U.N. food agency cuts Gaza aid for about 500,000 people over a funding shortfall",
-            "summary": "The U.N. World Food Programme says funding shortages are forcing it to shrink its Gaza operation, cutting monthly food assistance from a planned 1.6 million people to about 1.1 million. That leaves roughly 500,000 people without the monthly aid the agency had intended to provide.\n\nThe need remains severe: about two-thirds of Gaza's population is still acutely food insecure, according to the agency. Briefing coverage put the programme's funding need at roughly $450 million for the next six months and estimated about 1.4 million people in the territory already face crisis-level hunger or worse.\n\nThe cut is a reminder that relief in Gaza is now constrained less by logistics alone than by donor money. When a flagship U.N. agency trims its rolls by nearly a third, families who were counted in its plans have to fall back on markets, charities or nothing at all.\n\nWhat to watch is whether donor governments close the gap in the coming weeks, or whether the smaller caseload becomes the new normal heading into winter.",
+            "title": "Kremlin says it hopes Witkoff can brief Putin soon after the Oslo talks",
+            "summary": "The Kremlin said Tuesday it hopes a meeting in Russia between President Vladimir Putin and U.S. envoy Steve Witkoff can be arranged in the near future. Spokesman Dmitry Peskov said Witkoff could brief Putin on what he hears from the Ukrainians and Europeans in Oslo.\n\nPeskov called such meetings timely and substantive and praised the American mediation effort. Some U.S. media have reported Witkoff could meet Putin as early as Wednesday in St. Petersburg, though Moscow gave no date.\n\nThe comment shows Moscow wants to stay inside the negotiating loop even as its forces step up attacks. A recent Trump-Putin call produced a Russian diesel supply agreement that Trump said could lower U.S. fuel prices, a deal that alarmed Ukraine and its European allies.\n\nWatch whether a Witkoff-Putin meeting is confirmed, and whether it produces anything more concrete than another round of statements.",
             "source": "Reuters",
-            "url": "https://www.reuters.com/world/middle-east/world-food-programme-cuts-aid-500000-palestinians-gaza-citing-funding-shortages-2026-10-19/"
+            "url": "https://www.reuters.com/world/europe/kremlin-hopes-witkoff-can-brief-putin-soon-latest-ukrainianeuropean-thinking-2026-10-20/"
           },
           {
-            "title": "Fast-moving grass fire at a Canadian military base kills 4 soldiers and critically injures 19",
-            "summary": "A grass fire that officials thought was under control turned deadly at Canadian Forces Base Wainwright in Alberta, killing four service members and critically injuring 19 others. Thirty-nine people were hospitalized after the fire, which began on the afternoon of October 17 in a training area, shifted from a smoldering grass fire into a fast-moving blaze pushed by winds reaching about 60 mph.\n\nPrime Minister Mark Carney called it one of the worst tragedies to befall Canadian forces in peacetime and ordered flags on federal buildings lowered to half-staff. Maj. Gen. Wade Rutland, commander of the 1st Canadian Division, said crews knew about the fire for hours but believed it was contained — until the wind shifted and it covered a kilometer in about 36 seconds, a speed he described as abnormal.\n\nThe soldiers killed were identified as Sgt. Morgan Wong of the Loyal Edmonton Regiment and Privates Shaun Farrell, Aidan Goulding and Hayden Lykkemark of the 3rd Battalion, Princess Patricia's Canadian Light Infantry.\n\nInvestigators will now focus on how a monitored training-area fire was judged safe hours before it turned fatal — a question with implications for every base that trains in dry, windy country.",
-            "source": "USA TODAY",
-            "url": "https://www.usatoday.com/story/news/world/2026/10/18/deaths-fire-canada-military-base/92316966007/"
-          },
-          {
-            "title": "The Louvre stays shut on Monday as protesters barricade its entrances in Paris",
-            "summary": "Visitors who arrived at the Louvre on Monday morning found the world's most-visited museum closed, its glass pyramid and the Carrousel du Louvre and Passage Richelieu entrances barricaded by protesters. The museum posted a notice blaming student strikes and apologizing for the inconvenience, according to Le Monde, and no reopening time was announced.\n\nThe blockade was organized by students from the École du Louvre in solidarity with the nationwide protest movement over the cost of living and recent police actions — the same unrest that produced a weekend of riots, looting and thousands of arrests across France. On a busy day the Louvre can draw up to 20,000 visitors, so a full-day closure is both a logistical headache and a loud symbolic statement.\n\nThat symbolism is the point. Shutting a global landmark extends the protests beyond the streets and into France's cultural and tourism economy, keeping the pressure on the government even on a day when the rioting itself had subsided.\n\nWatch whether the museum reopens Tuesday and whether other landmarks or universities join the barricade tactic this week.",
-            "source": "New York Post",
-            "url": "https://nypost.com/2026/10/19/world-news/iconic-paris-tourist-spot-closed-after-rioters-barricade-doors/"
-          },
-          {
-            "title": "French markets tumble as the riots deepen the government's budget headache",
-            "summary": "Investors marked France down sharply on Monday as the weekend's unrest collided with the country's already difficult finances. French bonds, Paris-listed stocks and the euro all fell, with France's 10-year yield jumping 13 basis points to 4.9% — on track for its biggest one-day rise since late September — and the gap over Germany's benchmark yield widening to 146 basis points, the highest in two weeks.\n\nThe government spent the day trying to restore order and confidence at once. Prime Minister Sebastien Lecornu asked local authorities to impose partial curfews this evening, said a state of emergency remained an option if needed, and ruled out putting all of Paris under curfew. Mayors of the biggest cities, meanwhile, demanded answers over what they called inadequate preparation, and several European governments warned their citizens in France to avoid crowds.\n\nThe market move matters because it prices the politics directly into France's borrowing costs. A government already struggling to cut a large deficit now faces riot damage, compensation demands and a higher interest bill at the same time, six months before a presidential election.\n\nWhat to watch is whether calm holds through the week — another violent weekend would likely push yields closer to the 4.99% level last seen, before this month, in 2002.",
+            "title": "Attack on an Australian lawmaker follows years of rising threats to public figures",
+            "summary": "An Australian independent lawmaker, Helen Haines, was seriously injured Monday when a man rammed a car into her outside her electorate office in Wangaratta, about 150 miles from Melbourne. Media and officials said she lost a leg, with doctors working to save the other, and police have not yet stated a motive.\n\nThe attack landed in a country already debating how toxic its political conversation has become. Health Minister Mark Butler said Australians have seen a level of hate and intolerance in public debate that the country did not used to see, and opposition figures echoed that threats against lawmakers are increasing, not decreasing.\n\nA 2025 parliamentary report found as many as 85% of federal lawmakers and their staff had experienced violent, threatening or volatile behavior, with incidents reported more than once a month by nearly half of respondents. Australian politicians traditionally live in their communities with minimal security and easy public access.\n\nThe case now tests whether that open style can survive, and what new security arrangements Parliament puts in place.",
             "source": "Reuters",
-            "url": "https://www.reuters.com/business/finance/french-markets-tumble-riots-add-political-crisis-2026-10-19/"
+            "url": "https://www.reuters.com/world/asia-pacific/attack-australian-politician-follows-years-threats-public-figures-2026-10-20/"
+          },
+          {
+            "title": "Giant 'heat storms' are reshaping weather around the world, a Reuters investigation finds",
+            "summary": "This decade, so-called heat storms have swarmed the planet at an average of about 102 a year, according to a Reuters examination of the phenomenon. One of them drove this summer's deadly heat in Europe, producing the highest June temperatures ever recorded in Bordeaux, Budapest and Bilbao, where it reached 108.9 degrees.\n\nGovernments estimated more than 10,000 excess deaths in a single week during that European event, as heat warped steel railroad tracks and zookeepers fed tigers meat frozen in ice. The largest heat storm on record lasted 367 days across 2023 and 2024 and at its reach covered almost 85% of the globe.\n\nThe same system that baked Europe also sat over southern Louisiana for months, worsening a historic drought and wildfires, and later helped create a blinding 'super fog' tied to a 158-car highway pile-up that killed seven people. Researchers say these sprawling, slow-moving heat systems connect disasters that once looked unrelated.\n\nFor Ohio readers, the takeaway is practical: extreme heat is increasingly a systems problem, hitting power grids, roads, schools and health at the same time.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/sustainability/cop/giant-heat-storms-are-scorching-earth-this-is-story-biggest-one-record-2026-10-20/"
+          },
+          {
+            "title": "South Korea's central bank is expected to hold rates Thursday, then hike in November",
+            "summary": "The Bank of Korea will keep its key policy rate unchanged at 3.00% on Thursday after two consecutive increases, according to all 34 economists in a Reuters poll conducted October 14 to 19. The same poll expects one more increase next month.\n\nInflation eased to 2.9% in September from 3.1% in August but remains above the bank's 2% target. Strong semiconductor-led growth, recovering domestic demand and elevated energy costs are expected to keep underlying price pressure firm.\n\nGovernor Shin Hyun Song has called for time to assess the back-to-back hikes already delivered, giving policymakers room to pause rather than deliver a third straight increase. Economists at BNP Paribas say the pause does not mean the tightening cycle is over, with risks still tilted toward higher prices.\n\nKorea's decision is a useful signal for the wider region, where chip-driven growth is running hot even as central banks try to finish the inflation fight.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/asia-pacific/south-korea-central-bank-hold-rates-october-22-hike-november-2026-10-20/"
           }
         ]
       },
@@ -355,40 +366,34 @@
         "name": "Politics",
         "items": [
           {
-            "title": "Appeals court blocks the Trump administration from overhauling fair-housing grants",
-            "summary": "A federal appeals court in Boston refused on Monday to let the Trump administration proceed with its overhaul of the Fair Housing Initiatives Program, the 1987 program that funds nonprofits which prevent and investigate housing discrimination. The ruling largely keeps in place a lower-court order blocking the changes while the case continues.\n\nThe administration had planned to steer $46 million of the $56 million Congress appropriated into just five grants — including $25 million to a single law school — instead of the program's usual pattern of more than 100 grants ranging from $75,000 to $425,000. Its plan also attached conditions barring funded work tied to what it called gender ideology or illegal immigration. The National Fair Housing Alliance and the Massachusetts Fair Housing Center sued in July.\n\nThe three-judge panel, all Democratic appointees, said the administration had not shown that District Judge Myong Joun exceeded his authority. The court lifted only the part of the order dealing with expired fiscal 2025 funding notices, after Congress extended that money's availability to September 30, 2027.\n\nFor the nonprofits that test landlords and investigate complaints, the ruling preserves the existing system for now — and adds one more courtroom loss to the administration's running fight over redirecting congressionally approved spending.",
+            "title": "House Republicans quietly scale back hopes for a big redistricting boost",
+            "summary": "House Republicans are quietly lowering expectations for the nationwide redistricting fight, Axios reports. Strategists who once talked about a 10-seat boost now privately worry, on their down days, that the whole effort could net the party only about one seat nationwide.\n\nTwo things changed the math: a souring political climate heading into the midterms, and polling showing a collapse in Republican support among Latino voters in Texas and Florida, two states that were supposed to anchor the gains.\n\nRedistricting was meant to insulate the House majority before a single vote was cast. If the maps deliver only a seat or so, control of the House goes back to being decided the old-fashioned way, district by district, in a difficult environment for the party in power.\n\nWatch the remaining state map fights and whether Latino polling moves again before Election Day, two weeks from today.",
+            "source": "Axios via Political Wire",
+            "url": "https://politicalwire.com/2026/10/20/republicans-see-shrinking-boost-from-redistricting/"
+          },
+          {
+            "title": "Defense Secretary Hegseth met Netanyahu in an unannounced visit to Israel, Axios reports",
+            "summary": "U.S. Defense Secretary Pete Hegseth met Israeli Prime Minister Benjamin Netanyahu during an unannounced visit to Israel on Monday, Axios reported, citing two sources with knowledge of the trip. Reuters said it could not immediately confirm the meeting, and the Pentagon and Israel's embassy in Washington did not immediately comment.\n\nHegseth said in a social media post that he had visited U.S. service members in the Central Command area, which covers the Middle East. Axios reported the talks came amid U.S.-Israeli discussions about potentially resuming major combat operations against Iran.\n\nThe visit landed one day after President Trump endorsed Netanyahu in next week's Israeli parliamentary election, the first since the October 7, 2023 Hamas attack. Polls suggest Netanyahu's coalition could lose its majority while the opposition may also struggle to form a government.\n\nWatch for any official readout from either government, and for whether the Iran question becomes public before Israelis vote on October 27.",
+            "source": "Axios",
+            "url": "https://www.tbsnews.net/worldbiz/middle-east/hegseth-meets-netanyahu-unannounced-visit-israel-axios-1577981"
+          },
+          {
+            "title": "Vance declines to endorse Netanyahu while Trump gives him a 'complete and total' backing",
+            "summary": "Vice President JD Vance declined Monday to endorse Israeli Prime Minister Benjamin Netanyahu for reelection, a day after President Trump gave him a full-throated endorsement ahead of Israel's October 27 election. Vance said he endorses American candidates and is focused on the November 3 U.S. midterms.\n\nTrump praised Netanyahu on social media as a great warrior prime minister and a partner in confronting Iran, adding that without him the United States might have to finish the fight against Tehran on its own. Netanyahu thanked him, writing that together they would complete the mission.\n\nThe split is notable because Vance traveled to Budapest earlier this year and endorsed Hungary's Viktor Orban in his election, which Orban lost. His refusal this time reads as a deliberate choice to keep distance from a foreign race where the outcome is genuinely uncertain.\n\nPolls suggest Netanyahu's religious-nationalist coalition could fall short of a majority, and the opposition may struggle to assemble one either.",
+            "source": "Newsmax / Wall Street Journal",
+            "url": "https://www.newsmax.com/politics/Vance-Declines-Netanyahu-Endorsement-as-Trump-Backs-Bibi/2026/10/19/id/1273336"
+          },
+          {
+            "title": "Kennedy Center donation that allegedly vanished puts Ric Grenell under White House scrutiny",
+            "summary": "The White House counsel's office is investigating former Kennedy Center executive director Ric Grenell over an alleged $5.6 million donation that was never deposited, the New York Post reports. Alina Habba told President Trump in an October 9 Oval Office meeting that her husband, Turkish billionaire Turhan Mildon, was duped into providing the funds.\n\nTexts first reported by Axios allegedly show Grenell promising Mildon access to administration events and the president himself once the money moved. Mildon provided records of a $17.6 million wire to a Texas defense software company, though Axios reported the money actually came from the Democratic Republic of Congo's finance ministry.\n\nGrenell reportedly denied sending the key text, pointing to its British spelling of 'Centre.' He did not respond to the Post's request for comment. The allegations remain unproven, and no charges have been announced.\n\nThis is a story to treat carefully: it is an active White House investigation built on contested texts and an unusual money trail, and what can be documented will matter more than the claims.",
+            "source": "New York Post / Axios",
+            "url": "https://nypost.com/2026/10/19/us-news/ric-grenell-offered-alina-habbas-turkish-billionaire-husband-access-to-trump-for-6m-kennedy-center-donation-that-vanished-texts-allege/"
+          },
+          {
+            "title": "Rubio, in Central Asia, says Ukraine and Russia should focus on ending the war",
+            "summary": "Secretary of State Marco Rubio told reporters during a visit to Uzbekistan on Monday that Ukraine and Russia should be focused on ending their war. Rubio landed in Samarkand Sunday night to meet officials of the C5+1 grouping of the United States and five Central Asian nations.\n\nAsked about a possible meeting of Presidents Trump, Putin and Xi to negotiate an end to the conflict, Rubio said talks of a meeting exist but nothing is finalized, and that the president has been clear he wants the war ended. He warned of a real risk the war spreads if a sabotage attack or a drone knocked off course wanders into a neighboring country.\n\nThe U.S. has been mediating while also clinching a diesel import deal with Russia and waiving some sanctions on Moscow, moves Trump says keep the Kremlin at the table and that Kyiv has criticized.\n\nRubio's trip also underlines Washington's courtship of Central Asia, a region where Russia and China both compete for influence and where Trump hosted leaders at the White House last November.",
             "source": "Reuters",
-            "url": "https://www.reuters.com/legal/government/trump-administration-cannot-overhaul-fair-housing-grant-program-appeals-court-2026-10-19/"
-          },
-          {
-            "title": "Trump names two more judge picks as the Senate plans a post-midterm confirmation push",
-            "summary": "President Trump announced two more nominees for lifetime seats on the federal bench on Monday, both of them Justice Department lawyers. Eric Hamilton, a deputy assistant attorney general and former Nebraska solicitor general, was nominated for a district court seat in Nebraska, and Joseph Falvey, a federal prosecutor who once clerked for Chief Justice John Roberts, was nominated for the Northern District of Indiana.\n\nTrump praised Hamilton for work defending the administration's tariffs, its effort to curtail birthright citizenship, National Guard deployments to cities including Los Angeles, and the dismantling of the Department of Education — a résumé that signals the White House is rewarding lawyers who carried its most contested policies.\n\nThe nominations set up a busy lame-duck stretch: Senate Judiciary Committee hearings are scheduled for November 10 and 18, after the November 3 midterms, in a push to confirm as many judges as possible before this Congress ends. Since January 2025 the Senate has confirmed 56 Trump judges, 10 of them to appeals courts, against 234 confirmed across his first term.\n\nThe stakes are straightforward — every seat filled before January is a seat the next Congress cannot fill differently, whatever happens on Election Day.",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/legal/government/trump-nominates-two-more-judges-ahead-us-midterm-elections-2026-10-19/"
-          },
-          {
-            "title": "Senator Slotkin's call for 'deterrence' investigations draws a sharp Trump backlash",
-            "summary": "Sen. Elissa Slotkin of Michigan has ignited a fight inside the midterm campaign with remarks at a University of Chicago event last week. Slotkin said that if Democrats regain Congress they should pursue signature corruption cases against Trump aides who carried out his bidding, not only against Trump himself, so that young graduates weighing jobs in a future administration think twice — in her words, she wants that deterrence message sent.\n\nPresident Trump responded on Monday by calling Slotkin a low life who is ruining her state and accusing Democrats of running a weaponized government. Sen. Mike Lee accused her of threatening young Americans, and conservative legal activist Mike Davis wrote that she should learn about the Second Amendment — a message Slotkin said amounted to suggesting she be shot, and which she said mobilized death threats against her and her staff.\n\nThe exchange captures how the accountability debate has moved beyond Trump personally to the officials around him. Slotkin's argument is that consequences for aides change behavior in the next administration; her critics argue the same idea criminalizes ordinary government service.\n\nWith control of Congress two weeks from being decided, the fight gives both parties a preview of how investigations would be framed if Democrats take a chamber.",
-            "source": "CNN",
-            "url": "https://www.cnn.com/2026/10/19/politics/elissa-slotkin-trump-young-republicans?cid=external-feeds_iluminar_meta"
-          },
-          {
-            "title": "Obama calls the federal probe of Rep. Ilhan Omar 'appalling'",
-            "summary": "Former President Barack Obama has weighed in on the federal investigation of Rep. Ilhan Omar, calling it an appalling use of state power in a lengthy social media post on Sunday that drew fresh coverage and fallout through Monday. Obama wrote that the government cannot selectively target individuals because of their political beliefs, and that the full weight of the federal government is being brought down on a law-abiding elected official for criticizing the president.\n\nThe investigation became public on October 12, when Homeland Security Investigations agents searched Omar's Washington home under a warrant tied to alleged immigration fraud and false statements, and some of her relatives were subpoenaed by the Justice Department. Reporting describes the inquiry as aimed at whether Omar or her relatives lied during her naturalization — a finding that could, in theory, be used to revoke her citizenship and deport her. Omar has called the search the latest step in a campaign of political intimidation and has not been charged.\n\nObama's intervention raises the profile of a case that sits at the intersection of immigration enforcement and political retaliation claims. A former president accusing the government of targeting a sitting member of Congress is the kind of statement designed to force the administration to defend the probe publicly.\n\nWhat to watch is whether prosecutors bring charges, produce evidence, or let the investigation sit — each path carries very different political consequences heading into the midterms.",
-            "source": "USA TODAY",
-            "url": "https://www.usatoday.com/story/news/politics/2026/10/19/barack-obama-ilhan-omar-trump-probe-citizenship/92331278007/"
-          },
-          {
-            "title": "The midterms are on track to be the most expensive ever, topping $15 billion raised",
-            "summary": "The 2026 midterms are on pace to be the most expensive in American history, with more than $15 billion raised to influence control of Congress, according to NPR's analysis of the last major campaign finance filings before Election Day.\n\nThe single largest force is Elon Musk, who has spent more than a quarter-billion dollars in recent months: $158 million to the Republican Senate super PAC, $89 million to his own America PAC, $20 million to a Republican House super PAC and $10 million to a pro-Ken Paxton super PAC in Texas. That $158 million Senate contribution alone exceeds what the Texas Senate campaigns of Paxton and Democrat James Talarico raised combined — Talarico reported more than $60 million from July through September.\n\nBelow the mega-donor level, Democrats outraised Republicans in about four of five Senate races last quarter, and in the 13 races rated competitive by the Cook Political Report, Republicans were outraised roughly five to one. About three-quarters of planned ad spending through Election Day sits in races favoring Republicans or rated toss-ups.\n\nThe money picture explains the air war voters are seeing: record fundraising does not mean an even fight everywhere, but a small set of Senate races absorbing historic sums from both parties — and from one donor in particular.",
-            "source": "NPR",
-            "url": "https://www.nprillinois.org/2026-10-19/democratic-candidates-and-republican-super-pacs-drive-record-fundraising-this-midterm"
-          },
-          {
-            "title": "2028 Democratic rivals are using the Texas governor's race to undercut Andy Beshear",
-            "summary": "An early fight in the 2028 Democratic presidential primary is playing out through the Texas governor's race. Axios reports that Kentucky Gov. Andy Beshear, who heads the Democratic Governors Association, is in open war with prominent Latino lawmakers over the association's spending choices.\n\nLatino leaders have pressed Beshear to invest heavily in Gina Hinojosa's campaign against Gov. Greg Abbott in Texas, and he has resisted, preferring to concentrate the group's money in other states. Meanwhile three potential 2028 rivals — Illinois Gov. JB Pritzker, California Gov. Gavin Newsom and Maryland Gov. Wes Moore — have each given money to Hinojosa's bid and earned praise from the same Latino lawmakers pressing Beshear.\n\nThe dispute matters beyond one race because it is really about Democrats' slide with Latino voters, one of the party's most urgent problems. Whoever is seen as the governor who took that problem seriously — or who ignored it — carries that reputation into 2028.\n\nTexas was always a long shot for Democrats, which is exactly why the argument is about signals and relationships rather than a realistic path to the governor's mansion this year.",
-            "source": "Political Wire",
-            "url": "https://politicalwire.com/2026/10/19/2028-democratic-rivals-target-andy-beshear/"
+            "url": "https://www.reuters.com/world/china/rubio-says-ukraine-russia-should-be-focused-ending-war-2026-10-19/"
           }
         ]
       },
@@ -396,41 +401,34 @@
         "name": "Tech & Business",
         "items": [
           {
-            "title": "Tech stocks rebound at Monday's close — Nasdaq jumps 1.1%, the Dow slips",
-            "summary": "Wall Street's Monday session ended with a tech-led rebound from last week's AI selloff. The Nasdaq Composite climbed 1.11% to close at 26,430.89, the S&P 500 rose 0.41% to 7,690.73, and the Dow Jones Industrial Average eased 0.07% to 51,966.03.\n\nMemory and storage stocks did the heavy lifting: Western Digital gained about 6%, SanDisk roughly 5.5%, Seagate about 3.4% and Micron about 3%, and the Philadelphia Semiconductor Index added 1.61% with 26 of its 30 stocks higher. The bounce followed a rough Friday, when the Nasdaq fell 2.15% and the S&P 500 lost 1.09%.\n\nUnderneath the headline gains, the rally was narrow — only about 176 of the S&P 500's stocks advanced in late trading, and technology was the only sector with a clearly positive average return. The 10-year Treasury yield rose to about 5.15% and Brent crude held near $109 a barrel, both reminders that the financing backdrop for the AI buildout is still expensive.\n\nThe week now turns to earnings, with Meta, Tesla, Netflix and SpaceX all reporting — results that will decide whether Monday was a genuine reset or just a pause in the selloff.",
-            "source": "TradingKey",
-            "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262224387-us-stock-market-close-nasdaq-rise-memory-micron-sandisk-tradingkey",
-            "img": "https://resource.tradingkey.com/uploads/20261019/4-ca24707f35954254b30c811e95d59944.png"
+            "title": "Anthropic and Nscale are reportedly in talks for a second $45 billion compute deal",
+            "summary": "Barely a month after announcing a $45 billion computing agreement, Anthropic and infrastructure provider Nscale are reportedly close to a second deal of the same size, Bloomberg reports via TechCrunch. Sources cautioned the talks are still underway and the details could change.\n\nReporting on Nscale's planned IPO puts the first agreement at about $44.6 billion and links the possible second facility to its Monarch data center campus in West Virginia, at roughly 460 megawatts of capacity. Neither company confirmed the specifics to TechCrunch.\n\nThe scale is the story. Frontier AI labs are locking down power and chips years ahead, and some investors worry the industry is spending far more on infrastructure than current revenue justifies. Both Anthropic and Nscale are pursuing public listings, and Nscale is reportedly facing pushback over a proposed $30 billion valuation.\n\nWatch for a formal announcement, and for whether IPO investors treat another mega-deal as confidence or as leverage piling up.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/"
           },
           {
-            "title": "Anthropic pledges 5% of its shares — roughly $48 billion — to a public benefit fund",
-            "summary": "Anthropic says it plans to set aside 5% of its equity for a new public-benefit fund, a stake worth about $48 billion at the company's last reported valuation. The plan still needs shareholder approval.\n\nThe company was valued at roughly $965 billion in a May funding round that raised $65 billion, and it is reportedly preparing for a possible November initial public offering that could seek a valuation near $1.5 trillion. Under the structure, the board could add another 2% of equity for every 50% increase in valuation above an undisclosed benchmark, and the fund could support nonprofits, direct distributions and work on the economic and social effects of AI.\n\nAnthropic has already committed $200 million to efforts addressing AI-related labor disruption, and as a public benefit corporation its directors are required to weigh the public interest alongside shareholder returns. A pledge of this size turns that legal structure into a concrete financial claim.\n\nIf the IPO prices anywhere near the reported range, the fund would instantly become one of the largest philanthropic pools in the tech industry — and a test of whether benefit-corporation promises survive contact with public markets.",
-            "source": "TechStartups",
-            "url": "https://techstartups.com/2026/10/19/top-tech-news-today-october-19-2026-anthropic-deepseek-idealab-meta-microsoft-more/"
+            "title": "Blackwall raises $100 million at a $2.2 billion valuation to filter bot and AI traffic",
+            "summary": "Estonia-based Blackwall said Tuesday it has raised $100 million in a Series C round at a $2.2 billion valuation, quadrupling its value since its previous raise in 2025. The round was led by AVP, with Dawn Capital, MMC Ventures and Tera Ventures taking part.\n\nBlackwall builds tools that help websites sort real visitors and legitimate automated traffic from malicious bots, scraping and DDoS attacks, a problem getting harder as AI agents crawl the web. Instead of selling directly to site owners, it sells white-label bundles through hosting, cloud and managed-service providers, which rebrand the tools for their own customers.\n\nThat channel model is its bet against giants like Cloudflare and Akamai: the host is often the only practical route to millions of smaller websites. The company says the new money will fund global expansion and a deeper platform.\n\nAs more of the internet's traffic becomes machines talking to machines, deciding which machines to let in is becoming a business of its own.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/20/blackwall-quadruples-valuation-to-2-2b-as-websites-wrangle-an-increasingly-crowded-internet/"
           },
           {
-            "title": "Homeland Security orders DeepSeek removed from all civilian federal systems",
-            "summary": "The Department of Homeland Security has ordered every civilian federal agency to remove DeepSeek products — and any third-party services built on its models — from their systems, and has barred future purchases of the Chinese AI tools.\n\nThe order, issued under the Federal Acquisition Supply Chain Security Act of 2018 and posted for publication in the Federal Register, covers departments including State, Treasury and Justice, while excluding defense agencies. Summaries of the action say the ban took effect at the end of July and became public on Monday. Officials cited the risk of sensitive data being transferred to China, the possibility of the models generating actionable intelligence on U.S. persons and agencies, and potential malware or security weaknesses.\n\nSeveral agencies, including Commerce and the Navy, and a number of states had already imposed narrower DeepSeek restrictions. Monday's order turns those patchwork bans into a government-wide civilian rule.\n\nThe move is the latest step in a widening U.S. effort to keep Chinese AI systems out of official infrastructure, and it puts pressure on vendors whose products quietly incorporate third-party models to prove what is running under the hood.",
-            "source": "Seeking Alpha",
-            "url": "https://seekingalpha.com/news/4654309-dhs-orders-deepseek-removal-from-all-federal-civilian-systems-and-bars-future-use"
-          },
-          {
-            "title": "SoftBank is in early talks to buy security giant Allied Universal in a deal that could reach $18 billion",
-            "summary": "SoftBank Group is in early-stage talks to acquire Allied Universal, one of the world's largest private-security companies, from Warburg Pincus and the Canadian pension fund La Caisse, according to The Wall Street Journal. A deal is far from certain, but if it happens it could value Allied at as much as $18 billion, excluding debt.\n\nAllied operates in more than 100 countries and territories and generates about $23 billion in annual revenue, much of it from the unglamorous work of staffing guards at offices, warehouses, hospitals and events. SoftBank shares fell about 2% in Tokyo on the report.\n\nThe logic is SoftBank's all-in turn toward AI and automation: the company has put $64 billion into OpenAI, is planning data centers, owns Arm, and last year agreed to buy ABB's industrial robotics business for $5.4 billion. A global security workforce is, among other things, one of the largest potential markets for patrol robots and AI monitoring.\n\nFor now this is a talks-stage story, but it shows how far SoftBank's buying spree has moved beyond software into the physical economy.",
-            "source": "The Wall Street Journal",
-            "url": "https://www.wsj.com/business/deals/softbank-in-early-talks-to-buy-allied-universal-2d582a66"
-          },
-          {
-            "title": "AI chip challenger Tenstorrent raises $1.5 billion at a $6.2 billion valuation",
-            "summary": "Tenstorrent, the Santa Clara chip startup trying to build an alternative to Nvidia's AI hardware, said Monday it has raised $1.5 billion in a late-stage funding round that values the company at $6.2 billion — more than double its December 2024 valuation.\n\nThe round was led by Trace Capital and Innovation X, with backing from Cathie Wood's ARK Invest, SanDisk, Morgan Stanley, T. Rowe Price and Tether Investments. The money will go toward scaling production of its Galaxy servers, which combine dozens of Tenstorrent chips into systems for chatbots, coding assistants and video generators.\n\nThe company's pitch is openness: its chips and software are built on RISC-V, the open-source architecture, rather than a proprietary stack. Its chief executive, Jim Keller, is a well-known chip designer who previously led Tesla's self-driving chip effort and held senior design roles at Apple and AMD. Its previous round, in December 2024, raised more than $693 million at a $2 billion pre-money valuation.\n\nA $1.5 billion raise in a market jittery about AI financing shows investors are still willing to fund credible challengers — especially ones selling the picks and shovels rather than the models.",
+            "title": "Japan's chip revival is being pulled into building America's semiconductor capacity instead",
+            "summary": "Japan will invest up to $21 billion to build two chip factories in New York state under a deal announced last week by GlobalFoundries, part of Tokyo's $550 billion U.S. investment pledge made with the Trump administration in return for lower tariffs. Under that deal, the U.S. president, not Japan, selects the projects.\n\nThat creates a tension at the heart of Japan's own semiconductor revival. Tokyo wants to rebuild domestic capability and supply-chain resilience, but experts say funding American plants does little for either, however much it buys goodwill in Washington.\n\nA Japanese government source described investment in the U.S. as ultimately a measure for dealing with Trump, essentially buying time to maintain the relationship. The dynamic has history: in the 1980s, a dominant Japan agreed to restrict chip exports to the U.S., a period officials in Tokyo still remember bitterly.\n\nSouth Korea and Taiwan have made similar pledges, so Japan is not alone in trading investment for tariff relief and security ties.",
             "source": "Reuters",
-            "url": "https://wtbx.com/2026/10/19/ai-chip-startup-tenstorrent-more-than-doubles-its-valuation-to-6-2-billion-in-funding-round/"
+            "url": "https://www.reuters.com/world/asia-pacific/japan-pursues-chip-industry-reboot-its-being-pressed-build-americas-2026-10-20/"
           },
           {
-            "title": "SpaceX reports earnings on Tuesday, with Wall Street expecting about $12.7 billion in revenue",
-            "summary": "Elon Musk's SpaceX steps into the earnings spotlight on Tuesday, in one of the most closely watched reports of the week. Consensus estimates center on about $12.7 billion in revenue and earnings of 14 cents a share.\n\nThe report lands in a noisy moment for the company: a public row over interrupted Starlink service to Ukraine, speculation about a possible combination with Musk's Tesla — which also reports this week — and broader market jitters about how AI infrastructure spending is being financed. At about $146, the SpaceX share price sits roughly 8% above its June IPO price, while Wall Street's median 12-month price target is $221.\n\nThat gap between the current price and the target is the story: analysts still see large upside, but the stock has to prove its growth can keep pace with a valuation built on launch dominance, Starlink subscriptions and government contracts.\n\nTesla's report later this week means Musk's two public companies will effectively be graded back to back — a rare double test of the premium investors put on his empire.",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-10-19/"
+            "title": "Cleveland-Cliffs swings back to profit and targets more than $4 billion in 2027 earnings",
+            "summary": "Cleveland-Cliffs reported a return to quarterly profitability on October 19, with third-quarter revenue rising to $5.61 billion from $4.73 billion a year earlier and adjusted EBITDA reaching $612 million. Management guided to about $715 million for the fourth quarter and more than $4 billion for 2027.\n\nThe steelmaker posted GAAP net income of $165 million, against a net loss of $234 million in the same quarter of 2025, with adjusted earnings of $0.28 per share. Executives credited better selling prices, volumes and operating costs after a difficult stretch of pricing pressure.\n\nSeparately, CEO Lourenco Goncalves used the earnings call to blame Canada's government for planned layoffs at Stelco in Ontario, saying Canada's galvanized steel market cannot support domestic producers plus an avalanche of imports under the current tariff-rate quota system. Cliffs temporarily laid off up to 500 Stelco workers in late September.\n\nFor Northeast Ohio, Cliffs remains a bellwether: the 2027 target assumes domestic steel prices and newly negotiated customer contracts hold up.",
+            "source": "Business News Today / Manufacturing Dive",
+            "url": "https://business-news-today.com/cleveland-cliffs-targets-more-than-4bn-in-2027-ebitda-after-q3-steel-earnings-rebound/"
+          },
+          {
+            "title": "Broadcom rolls out VMware HyperArmor as its market value sits near $1.6 trillion",
+            "summary": "Broadcom has introduced VMware HyperArmor, a new security offering for its VMware platform, as the company's market capitalization stands around $1.6 trillion as of October 19. The launch lands while Broadcom's fiscal third-quarter figures point to unusually rapid growth in its AI business.\n\nMarket reporting cited in the coverage put third-quarter revenue at $29.6 billion, up sharply year over year, and noted Goldman Sachs raised its price target to $540 in September. Broadcom's next earnings date is December 9.\n\nThe valuation is the tension. Investors are paying for Broadcom to convert intense AI demand and new VMware products into the fourth-quarter revenue it has guided to, which leaves little room for an execution slip in either chips or software.\n\nWatch the December earnings for whether AI orders and VMware renewals both keep pace with the price the market has already set.",
+            "source": "Ad Hoc News / MarketBeat",
+            "url": "https://www.ad-hoc-news.de/boerse/corporate-news/broadcom-introduces-vmware-hyperarmor-the-market-values-broadcom-stock-at/70371645"
           }
         ]
       },
@@ -438,34 +436,34 @@
         "name": "U.S. News",
         "items": [
           {
-            "title": "Homebuilder sentiment falls to its lowest since 2012 as mortgage rates reach 7.40%",
-            "summary": "America's homebuilders are as gloomy as they have been in more than a decade. The NAHB/Wells Fargo Housing Market Index dropped three points in October to 29, its lowest reading since June 2012 and below the 31 economists had forecast.\n\nThe backdrop is borrowing cost: the average 30-year fixed mortgage rate hit 7.40% last week, the highest in nearly three years, and it is squeezing buyers out of the market. The gauge of buyer traffic fell five points to 18, its lowest since April 2012 outside the pandemic shock, and 43% of builders said they cut prices in October, by an average of 6%.\n\nBuilders also flagged a newer pressure: NAHB chairman Bill Owens said more than a third of builders reported immigration enforcement activity in their market areas over the past month, causing construction delays — a labor problem layered on top of a rates problem.\n\nHousing was already the economy's weak spot; a sentiment reading in the 20s says builders expect it to stay that way until mortgage rates come down in a meaningful way.",
+            "title": "Justice Department charges 28 people in California with voting crimes",
+            "summary": "The Justice Department announced Monday it is charging 28 noncitizens in California, all described as green card holders, with illegally registering to vote or voting in U.S. elections, NPR reported in its morning brief. Eleven people were arrested Monday, and the charges are accusations; defendants are presumed innocent until proven guilty.\n\nThe department also filed an emergency court request to stop California from processing ballots from voters the federal government calls likely noncitizens. California officials say they asked how the federal government reached those conclusions and have not received the specifics.\n\nNoncitizen voting has never been found to be widespread in American elections, but the administration is devoting significant resources to the cases it does find, announcing new charges in batches as early voting runs. Critics in California call the timing a political stunt tied to a state voter ID ballot measure.\n\nWith Election Day two weeks away, expect the court fight over California's ballots to move faster than the criminal cases.",
+            "source": "NPR",
+            "url": "https://www.wcsufm.org/latest-from-npr/2026-10-20/morning-news-brief"
+          },
+          {
+            "title": "U.S. orders DeepSeek AI removed from most civilian government systems",
+            "summary": "The United States has ordered civilian government agencies to remove DeepSeek's artificial intelligence technology from their systems, citing privacy and security risks including potential transfers of sensitive data to China. The Department of Homeland Security made the order public on October 19, though the ban took effect at the end of July.\n\nThe order covers agencies including the Treasury, State and Justice departments, and it also reaches technology built using DeepSeek's AI models. Agencies under the Department of Defense are excluded from this order.\n\nThe move is the latest step in Washington's effort to wall Chinese AI tools out of federal systems, treating model access as a data-security question rather than just a software choice. For vendors, it means provenance of the underlying model now matters in government contracts.\n\nWatch for whether the exclusion expands to contractors and state governments, as earlier Chinese technology bans eventually did.",
+            "source": "Livemint / AP",
+            "url": "https://www.livemint.com/ai/us-bans-deepseek-ai-from-government-systems-what-the-official-notice-says-about-transfer-of-sensitive-data-to-china-11792466199324.html"
+          },
+          {
+            "title": "Trump says the U.S. and Mexico are close to a 'great' trade deal",
+            "summary": "President Trump said Monday in Kansas that the United States and Mexico are very close to agreeing to a trade deal he described as great. He made the remark at a political rally in Park City, Kansas, Reuters reported.\n\nNo terms were announced at the rally, and the brief report carried no Mexican government response. Mexico is one of America's largest trading partners, and any agreement would touch autos, agriculture and the supply chains that run through Ohio manufacturing.\n\nTrade announcements at rallies have a history of preceding the paperwork by days or weeks, so the substance will be in the text: tariff levels, rules of origin and enforcement, none of which are public yet.\n\nWatch for a formal statement from either government confirming what has actually been agreed.",
             "source": "Reuters",
-            "url": "https://www.reuters.com/business/us-homebuilder-sentiment-tumbles-near-14-12-year-low-october-2026-10-19/"
+            "url": "https://duke.fm/2026/10/19/trump-says-mexico-and-us-are-close-to-trade-deal/"
           },
           {
-            "title": "Ukrainians and Sudanese can keep temporary protected status for now, DHS says on the day it was set to expire",
-            "summary": "The Department of Homeland Security said on Monday — the very day their protections had been scheduled to expire — that immigrants from Ukraine and Sudan can keep Temporary Protected Status for now, with formal announcements to come at the appropriate time.\n\nAbout 240,000 Ukrainians who fled Russia's invasion have registered for TPS in the United States, and an estimated 6,800 holders come from Sudan, where a war between the army and a rival paramilitary force has produced a major humanitarian crisis. TPS shields holders from deportation and allows them to work legally.\n\nThe reprieve is the second in as many months: in September the administration allowed Salvadoran TPS holders to keep their protections too. That sits alongside moves to revoke TPS for people from Haiti, Venezuela, Somalia, Yemen, Syria and other countries, making the program a patchwork decided nationality by nationality.\n\nFor the families affected, Monday's statement removes an immediate cliff edge — but 'for now' leaves the longer-term question unanswered, and employers and schools still cannot plan far ahead.",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/legal/government/us-says-immigrants-ukraine-sudan-can-keep-protected-status-now-2026-10-19/"
+            "title": "Angel Reese's 30 points and 16 rebounds pull the Dream even in the WNBA Finals",
+            "summary": "Angel Reese had 30 points and 16 rebounds on Monday night as the Atlanta Dream beat the Golden State Valkyries 79-65 in San Francisco to even the best-of-seven WNBA Finals at one game apiece. Allisha Gray added 18 points, and Rhyne Howard set a Finals record with six steals.\n\nIt was Atlanta's first Finals victory after going winless in three previous trips. Reese became only the third player with at least 30 points and 15 rebounds in a Finals game, joining Jonquel Jones and Breanna Stewart, and at 24 the youngest with a 20-point double-double in Finals history.\n\nGolden State shot just 34.4% and never recovered after halftime. The Valkyries, playing in front of another sellout at Chase Center, got 14 points each from Gabby Williams and Tiffany Hayes.\n\nThe series shifts to Atlanta for Game 3 on Wednesday, moved to the Hawks' larger State Farm Arena to fit the bigger crowd.",
+            "source": "ESPN / AP",
+            "url": "https://www.espn.ph/wnba/story/_/id/50223797/angel-reese-30-points-16-rebounds-dream-even-wnba-finals-vs-valkyries"
           },
           {
-            "title": "Trump signs an order creating a new NIH women's health division and a White House task force",
-            "summary": "President Trump signed an executive order in the Rose Garden on Monday creating a Women's Health Division inside the National Institutes of Health and a White House Women's Health Task Force, the result of a push led by First Lady Melania Trump.\n\nThe task force will be led by White House Chief of Staff Susie Wiles — who recently announced she is free of breast cancer — together with Health and Human Services Secretary Robert F. Kennedy Jr. The new division must be set up inside an appropriate NIH institute or center within 90 days, and it will not replace the NIH Office of Research on Women's Health, which has existed since 1990.\n\nThe order emphasizes midlife conditions including osteoporosis, Alzheimer's disease, heart disease and stroke, along with maternal health, mental health and endometriosis. The NIH currently spends about $5 billion a year on women's health, roughly 10% of its budget, and the White House did not announce new funding alongside the order.\n\nThe test will be whether a new division and task force change research priorities in practice, or mainly reorganize the offices that already do this work.",
-            "source": "USA TODAY",
-            "url": "https://www.usatoday.com/story/life/health-wellness/2026/10/19/melania-trump-womens-health/92300028007/"
-          },
-          {
-            "title": "Justice Department charges 28 foreign nationals in California with illegal voting and registration crimes",
-            "summary": "The Justice Department announced Monday that it has charged 28 foreign nationals in California — all of them green card holders, according to the U.S. Attorney for the Central District — with combinations of unlawful voting by an alien, falsely claiming U.S. citizenship to vote or register, and depriving Californians of a fair election.\n\nEleven of the 28 are in custody, with the rest expected to be taken into custody soon, First Assistant U.S. Attorney Bill Essayli said. Nationwide, the department says it has now charged 113 people with illegal voting or registration offenses. The California cases come from a list of 20,000 people the department told state officials last week it believes are likely noncitizens registered to vote in the state, as part of an effort it calls Operation Protect the Vote, coordinated by California's four U.S. attorneys. Some of those charged are alleged to have voted in the 2024 general election.\n\nCalifornia Secretary of State Shirley Weber pushed back, saying she will not disenfranchise thousands of voters based on an unsupported and likely inaccurate belief, noting that ballots are already delivered and early voting for the midterms is underway in a state with more than 23 million registered voters.\n\nThe clash sets up a familiar fight — federal prosecutors presenting individual criminal cases while state officials warn against mass challenges to the rolls this close to an election.",
-            "source": "USA TODAY",
-            "url": "https://www.usatoday.com/story/news/state/california/2026/10/19/doj-noncitizen-voting-registration-arrests-california/92328717007/"
-          },
-          {
-            "title": "Powder-letter scare spreads, as Rep. Mark Pocan's Madison office becomes the latest target",
-            "summary": "A staffer in U.S. Rep. Mark Pocan's district office in Madison recognized a suspicious piece of mail on Monday afternoon and did not open it — the latest in a nationwide series of mailings containing an unidentified powdery substance. A Madison Fire Department hazmat crew responded to the office near the Wisconsin Capitol, and the item was sent for testing.\n\nThe pattern has been building for days: Rep. Gwen Moore's Milwaukee office received similar mail, confirmed October 16, and the Wisconsin Elections Commission got a similar piece on October 14. The FBI and the U.S. Postal Inspection Service are investigating mailings sent to congressional offices, secretaries of state and election offices around the country, including in Oklahoma, Louisiana and Ohio, with targets named so far including Senate Minority Leader Chuck Schumer and Sens. Kristen Gillibrand, Chris Murphy and Lisa Blunt Rochester.\n\nWhether the powder proves harmful or a hoax, the effect is the same: district offices and election administrators have to treat routine mail as a hazard in the middle of early voting. Pocan said House Democrats have a security call planned for Tuesday to discuss the mailings.\n\nInvestigators have not announced a suspect or a motive, so offices are working on pattern recognition alone — exactly what Pocan's staffer did.",
-            "source": "Milwaukee Journal Sentinel",
-            "url": "https://www.jsonline.com/story/news/politics/2026/10/19/u-s-rep-mark-pocans-office-is-the-latest-to-receive-suspicious-mail/92334929007/"
+            "title": "U.S. warns Americans across the Middle East about possible airspace closures",
+            "summary": "The United States issued security alerts on October 18 warning Americans across the Middle East about possible flight cancellations, airspace closures and rapidly escalating hostilities, according to an AP news summary. The warnings cover Saudi Arabia, the UAE, Kuwait, Jordan, Bahrain, Oman, Iran, Qatar, Iraq, Lebanon, Yemen and Israel.\n\nThe alerts arrived as Washington's posture in the region grew more entangled: the president endorsed Israel's prime minister for reelection, the defense secretary made an unannounced trip to Israel, and Egypt's top security body agreed to help Saudi Arabia defend itself against Houthi attacks while its parliament delayed a vote on military support.\n\nFor travelers, the practical meaning is simple: itineraries through Gulf and Israeli airspace can change with little notice, and Americans in the region are being told to monitor local conditions and embassy guidance closely.\n\nWatch airline schedules and State Department updates; airspace warnings like these usually precede, not follow, disruptions.",
+            "source": "AP",
+            "url": "https://news.tfionline.com/post/830978507528110080/tuesday-october-20-2026"
           }
         ]
       },
@@ -473,40 +471,40 @@
         "name": "Cleveland & Ohio",
         "items": [
           {
-            "title": "Nestlé will close its Solon factory by the end of 2027, moving production to South Carolina",
-            "summary": "Nestlé told employees at its Solon factory on Monday that the plant will close by the end of 2027. The Solon site is one of seven Nestlé facilities in Ohio, and the closure will affect hundreds of positions, though the company has not confirmed an exact number of jobs.\n\nProduction of Nestlé Professional Solutions pouches will gradually move to the company's Gaffney, South Carolina location over the coming months. The closure applies only to the Solon factory itself — the broader Solon campus will remain open, and Nestlé's Streetsboro distribution center and its West 25th Street factory in Cleveland will not be affected.\n\nFor Solon, this is a slow-motion blow rather than a sudden one: a major food-manufacturing employer is winding down over roughly a year, which gives workers time to plan but also means a long stretch of uncertainty about which roles move, which end early and what replaces the plant on the site.\n\nWatch for the city and the company to put numbers on the job losses, and for any discussion of what happens to the factory property once production leaves.",
-            "source": "WNIR 100 FM",
+            "title": "Guardians' season ends in St. Petersburg: Rays win Game 6, 7-3, and the ALCS, 4-2",
+            "summary": "The Guardians' run ended Monday night at Tropicana Field, where Tampa Bay won Game 6 of the ALCS 7-3 to take the series four games to two. Cleveland opened with Shawn Armstrong and a bullpen plan that unraveled by the second inning, while Freddy Peralta held the Guardians to one run over 5 1/3 innings and was named series MVP.\n\nJunior Caminero hit a two-run homer off the left-field foul pole in the seventh. Cleveland's one real swing came in the eighth, when a bases-loaded walk and a hit batter cut it to 5-3, but Kevin Kelly struck out Brayan Rocchio to end the threat, and former Guardian Yandy Diaz answered with a two-run homer in the bottom half.\n\nIt closes a year that included a 2-1 series lead in this ALCS and, earlier, a comeback from 0-2 down against the White Sox that only 11 of 96 teams have ever managed. The Rays now meet Milwaukee in the World Series starting Friday; two franchises with zero titles, and one of them finally gets one.\n\nFor Cleveland, the winter questions start immediately, beginning with an offense that disappeared at the wrong time and a roster built to contend again in 2027.",
+            "source": "Cleveland Magazine / USA Today",
+            "url": "https://clevelandmagazine.com/articles/guards-fall-in-alcs-cle-daily/"
+          },
+          {
+            "title": "Nestlé will close its Solon factory by the end of 2027 and move production to South Carolina",
+            "summary": "Nestlé USA told employees Monday it plans to close its Solon factory by the end of 2027, moving its Nestlé Professional Solutions frozen meal pouch production to its plant in Gaffney, South Carolina. Production in Solon is set to wind down by the third quarter of next year, with the shutdown in the final quarter of 2027.\n\nThe decision affects only the factory, not Nestlé's Solon campus or its West 25th Street plant in Cleveland, and the company has not said exactly how many jobs are affected; local reporting put the figure in the hundreds. Impacted employees are being offered separation and transition support and can apply for open roles at other Nestlé sites, including in Ohio.\n\nThe roots here run deep: Stouffer's built the Solon plant in 1968 and sold to Nestlé in 1973, and brands like Lean Cuisine and DiGiorno have been managed from Solon since. Mayor Edward Kraus called it difficult news and said the city will work with state and regional partners on job placement for affected workers.\n\nThis is the biggest local business story of the week for Solon, and the one to watch for follow-through on worker support.",
+            "source": "WNIR / WKYC reporting",
             "url": "https://www.wnir.com/2026/10/19/nestle-closing-solon-location/"
           },
           {
-            "title": "Guardians set their Game 6 lineup for tonight's elimination game — and save Gavin Williams for a possible Game 7",
-            "summary": "The Guardians' season comes down to tonight in St. Petersburg: Game 6 of the ALCS against Tampa Bay starts at 8:08 PM ET at Tropicana Field on TBS, with the Rays leading the series 3-2 after Sunday's 3-1 win in Game 5. Cleveland has posted its lineup — Steven Kwan leads off in left, followed by José Ramírez, Chase DeLauter, Jo Adell, Nathaniel Lowe, Travis Bazzana, Patrick Bailey, Petey Halpin and Brayan Rocchio.\n\nOn the mound, reliever Shawn Armstrong (2-1, 4.58 ERA) opens a bullpen game for Cleveland against Tampa Bay's Freddy Peralta (10-11, 4.42 ERA), who threw six scoreless innings against the Guardians in Game 2. The deliberate choice by manager Stephen Vogt is who is not pitching: ace Gavin Williams will not start on short rest, because the club wants him fully ready if the series reaches a Game 7 on Tuesday.\n\nTampa Bay's Yandy Díaz has been the series' quiet problem for Cleveland, with 8 hits in 23 at-bats, and the Rays are chasing their third World Series appearance after 2008 and 2020. Milwaukee, which swept the NLCS, awaits the winner.\n\nIt is a classic elimination-game bet: survive tonight with the bullpen, and tomorrow the Guardians get their ace with everything on the line.",
-            "source": "USA TODAY",
-            "url": "https://www.usatoday.com/story/sports/mlb/playoffs/2026/10/19/guardians-rays-watch-score-highlights-odds-game-6-alcs-channel--live/92324291007/"
+            "title": "Ohio's secretary of state race is a referendum on how elections should run",
+            "summary": "Republican Robert Sprague and Democrat Allison Russo offer sharply different views of Ohio elections in the race for secretary of state, Signal Ohio reports. The two disagree on the state's voter ID law, drop boxes, redistricting and how much election fraud is actually happening.\n\nSprague, finishing his second term as state treasurer, has backed upfront citizenship checks at registration and has reconsidered his earlier support for making Election Day a state holiday. Russo, a state representative, argues that if there were massive fraud it would have happened on Republicans' watch, since they run Ohio's elections now.\n\nThere is no debate scheduled, and each campaign blames the other for that. Sprague also called his 2011 vote for the anti-union Senate Bill 5 a mistake, a small sign of how Ohio Republican politics on labor have shifted.\n\nThe winner takes a seat on the Ohio Redistricting Commission and the Ballot Board, so this down-ballot race shapes maps and ballot language for years.",
+            "source": "Signal Ohio",
+            "url": "https://signalohio.org/whats-at-stake-in-ohios-secretary-of-state-race-in-november-2026-election/"
           },
           {
-            "title": "Cleveland-Cliffs stock jumps 15.7% on its strongest quarter in three years",
-            "summary": "Cleveland-Cliffs delivered the kind of quarter it has been promising for years, and the market noticed: shares surged 15.7% on Monday after the Cleveland steelmaker reported its strongest quarter in three years, well ahead of the roughly 10% jump seen earlier in the day.\n\nThird-quarter revenue was $5.61 billion, up from $4.73 billion a year earlier, with steel shipments of 4.2 million net tons at an average selling price of $1,177 per ton, up from $1,032. Adjusted EBITDA of $612 million beat the company's own $575 million guidance, and net income was $165 million, or 26 cents a share, against a loss of $251 million a year ago. The company guided fourth-quarter adjusted EBITDA to about $715 million.\n\nChief executive Lourenco Goncalves credited the administration's trade policy for what he called the best price environment in three years, forecast 2027 adjusted EBITDA above $4 billion, and blamed Canada's government for planned layoffs of hundreds of workers at the Stelco operations in Ontario, including an idled Hamilton galvanizing line.\n\nFor Northeast Ohio, Cliffs is a bellwether: when its order book and prices run hot, the region's steel supply chain — and a lot of local paychecks — tend to feel it.",
-            "source": "Seeking Alpha",
-            "url": "https://www.tradingview.com/news/seekingalpha:8b2f3af1d094b:0-cleveland-cliffs-ceo-praises-trump-after-big-q3-earnings-beat-blames-canada-for-stelco-layoffs/"
+            "title": "Cleveland Public Power wants to restructure rates, with summer bills rising about $7 to $8 a month",
+            "summary": "Cleveland Public Power is proposing to restructure its electric rates and raise them over the next three years, in legislation introduced in City Council in September that council has not yet approved. If passed, the new rates start next year and step up again in 2028 and 2029.\n\nThe new design charges residential customers a flat monthly fee plus three usage tiers: one rate for the first 250 kilowatt-hours, a higher rate for the next 250, and a higher rate still above 500. The current system has two tiers split at 1,000 kilowatt-hours.\n\nCPP has not published a typical-customer cost, but Signal's estimate puts winter bills up only a dollar or so while summer bills, when usage climbs, rise roughly $7 to $8 a month. Commissioner Ammon Danielson has said plainly that the utility needs upgrades and ratepayers ultimately bear those costs.\n\nCouncil's decision will land in the middle of what Mayor Justin Bibb himself calls a cost-of-living crisis, which is why the vote is worth watching.",
+            "source": "Signal Cleveland",
+            "url": "https://signalohio.bluelena.io/index.php?action=social&chash=182e6c2d3d78eef40e5dac7da77a748f.1796"
           },
           {
-            "title": "Acton's campaign attacks Ramaswamy over his New York attorney registration — a claim, not a ruling",
-            "summary": "The Ohio governor's race took a legalistic turn on Monday, when Dr. Amy Acton's campaign accused Vivek Ramaswamy of violating New York's attorney registration rules. This is a campaign allegation, not a finding by any court or regulator, and it is worth reading in that light.\n\nThe campaign's claim rests on addresses: it says that in July 2026 Ramaswamy listed a West Chester, Ohio residence as his home address on his New York State attorney registration, while his Ohio voter registration, filed in 2021, uses a Columbus residence. New York's rules require attorneys to list their home address and to amend the filing within 30 days of any change, with noncompliance open to disciplinary action.\n\nFrom there the campaign argues a fork: either the New York filing breaches registration rules, or, if West Chester is his real home, his Columbus voter registration violates Ohio law — which it characterizes as a fifth-degree felony. No independent adjudication of either claim was reported with the release.\n\nExpect the Ramaswamy campaign to answer with its own reading of the filings; until a regulator or court weighs in, this is best filed under hardball campaign lawyering rather than established misconduct.",
-            "source": "Acton for Governor (campaign)",
-            "url": "https://actonforgovernor.com/breaking-vivek-ramaswamy-appears-to-have-violated-new-york-state-bar-registration-rules/"
+            "title": "Cleveland City Council set to extend its data center moratorium into early 2027",
+            "summary": "Cleveland will likely take no new data centers at all in 2026. Legislation introduced Monday would extend the city's current pause, which was set to expire October 20, until January 29, 2027, while council finishes writing permanent rules.\n\nCouncilman Brian Kazy's Data Center Working Group studied laws across the country and heard hundreds of questions at three town halls. Residents, he said, want clear guidance on zoning, power grid strain and water usage before the AI building boom arrives in force.\n\nOhio already has 80 data centers operating and 189 planned, most clustered around Columbus, and about 125 Ohio communities had moratoriums as of September, including North Royalton, Kent and Grove City. A statehouse committee is working on statewide policy that will eventually shape House Bill 646.\n\nFor a city that wants the investment but fears the electricity bills, the extension buys time; the real decision is the permanent ordinance that follows.",
+            "source": "Cleveland Scene",
+            "url": "https://www.clevescene.com/news/cleveland-news/city-council-set-to-extend-data-center-moratorium-to-early-2027/"
           },
           {
-            "title": "Ohio State's trip to USC is set for 7:30 PM on NBC on October 31, as the bye week arrives",
-            "summary": "The Big Ten announced on Monday that Ohio State's game at USC on Saturday, October 31 will kick off at 7:30 PM ET on NBC — the Buckeyes' first NBC game of the season, and a 4:30 PM local start in Los Angeles. It will be Ohio State's first trip to the L.A. Coliseum since 2008, when it lost 35-3; the teams last met in the 2017 Cotton Bowl, a 27-21 Ohio State win.\n\nThe timing gives No. 3 Ohio State (6-1) a full bye week — its only one of the regular season — to prepare, and to get its quarterback situation settled. True freshman Luke Fahey, a Southern Californian, is in line to make his first career start at USC after starter Julian Sayin was hurt against Indiana; coach Ryan Day has said Sayin, whose right arm was in a sling after the October 17 game, will probably be out for several weeks.\n\nOhio State reached the bye with momentum, beating No. 5 Indiana 19-15 on Saturday to climb to No. 3 in the AP poll. USC sits 16th in the AP Top 25.\n\nA freshman quarterback making his first start in the Coliseum, at night, on national television: the bye week will be spent trying to make that sentence sound less dramatic than it is.",
-            "source": "Eleven Warriors",
-            "url": "https://WWW.ELEVENWARRIORS.COM/ohio-state-football/2026/10/164741/ohio-state-s-road-game-at-usc-set-for-730-kickoff-on-nbc"
-          },
-          {
-            "title": "Browns safety Grant Delpit left Sunday's win over Baltimore with a concussion",
-            "summary": "Cleveland's 13-10 win over the Ravens on Sunday came with a defensive cost: starting safety Grant Delpit was ruled out with a concussion in the first quarter, after going down while tackling Zay Flowers on a jet sweep with 11:21 left in the period.\n\nThe Browns offered no postgame update on Delpit's status. He finished with 2 tackles, bringing him to 25 for the season with a sack, an interception and three passes defensed — production that comes with context: he signed a three-year, $45 million extension on July 30 and has been managing a shoulder injury for most of the season.\n\nRookie Emmanuel McNeil-Warren stepped into Delpit's role and played well, finishing with six tackles, a tackle for loss and a pass defensed, while Daniel Thomas added three tackles as the third safety.\n\nCleveland, 4-2 and sharing first place in the AFC North, travels to face the 1-5 Titans in Nashville on Sunday, October 25. Whether Delpit clears concussion protocol by then is the defense's main question of the week.",
-            "source": "Akron Beacon Journal",
-            "url": "https://www.beaconjournal.com/story/sports/pro/browns/2026/10/18/browns-grant-delpit-injury-concussion-ravens/91820580007/"
+            "title": "Obama's October 24 Cleveland rally makes Cuyahoga County the center of Ohio's fall races",
+            "summary": "Former President Barack Obama will host a joint rally in Cleveland on October 24 with Dr. Amy Acton, the Democratic nominee for governor, and former Senator Sherrod Brown, who is running for Senate again. A Columbus Dispatch column argues the visit is the clearest signal of how badly Democrats want to win Ohio's two biggest races.\n\nActon's opponent is Vivek Ramaswamy, who has poured more than $36 million of his own money into the race and has campaigned with President Trump, most recently in Youngstown on October 12. Brown faces appointed Senator Jon Husted. Recent polling cited in market coverage shows Acton with narrow, consistent leads in most surveys.\n\nThe Cleveland logic is turnout. Cuyahoga County cast 667,000 ballots when Obama first carried Ohio in 2008 and 582,000 in 2024, and Ohio history is full of statewide races decided by the county's margin, from Truman in 1948 to Carter in 1976.\n\nSaturday's crowd size, and whether it converts into early votes in the county, is the measurable to watch.",
+            "source": "Columbus Dispatch",
+            "url": "https://www.dispatch.com/story/opinion/columns/2026/10/18/barack-obama-cleveland-amy-acton-sherrod-brown/92248369007/"
           }
         ]
       }
@@ -773,45 +771,45 @@
     }
   ],
   "tickerExtras": [
-    "⚾ Guardians face elimination TONIGHT — ALCS Game 6 at Tampa Bay, 8:08 PM ET on TBS · Armstrong opens vs Peralta · Win forces Game 7 Tue with Gavin Williams · Rays lead 3-2",
-    "🏈 Browns 13-10 over Ravens on Szmyt's walk-off FG — Cleveland tied for 1st in the AFC North at 4-2 · Next: at Titans Sun Oct 25",
-    "📰 Top story: Trump says Ukraine needs a new negotiator as U.S. envoys Kushner and Witkoff head to Norway this week for peace talks",
-    "🏷️ Deal of the day: Giant Eagle — spend $350 by Nov 8, earn a free frozen turkey",
-    "🚗 Roads: Solon-area roads normal — no ODOT alerts for I-271, US-422 or Aurora Rd this morning",
-    "🏀 Cavs open the season Thu Oct 22 at Philadelphia · Home opener Sat vs Brooklyn"
+    "⚾ Guardians' season is over — Rays win ALCS Game 6, 7-3, and the series 4-2 · Peralta named MVP · World Series: Rays at Brewers, Game 1 Fri",
+    "🏈 Browns 4-2 and alone in 1st in the AFC North · Next: at Titans Sun Oct 25, 1 PM ET on CBS",
+    "📰 Top story: Zelenskiy in Oslo today for talks with U.S. envoy Witkoff and European leaders on ending the war",
+    "🏷️ Deal of the day: Giant Eagle — spend $350 on qualifying items by Nov 8, earn a free frozen turkey",
+    "🚗 Roads: I-271 south ramp to SR 8 south reopens Tue afternoon (one lane) after the weekend tanker crash · Solon-area roads otherwise normal — no ODOT alerts for US-422 or Aurora Rd",
+    "🏀 Cavs open the season Thu Oct 22 at Philadelphia, 7 PM ET · Home opener Sat vs Brooklyn"
   ],
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "baby": {
-    "tip": "Car-seat week: get the Aria's base installed now and practice clicking the seat in and out a few times while there's no rush — and if your hospital or local fire department offers a free installation check, book it before the due date gets any closer.",
-    "fact": "Newborns see best at about 8–12 inches away — almost exactly the distance from a feeding parent's arms to their face. The blurry first view is basically designed for bonding.",
-    "fun": "🎈 Prep mission: pick the going-home outfit (one newborn size, one 0–3 month, just in case) and snap a photo of it flat-laid on the nursery floor — first outfit, officially documented."
+    "tip": "Car seat week: install the Aria base now, while there's no deadline pressure, and get the install checked — many local fire departments and hospitals offer free checks. Practice the click-in and the harness snug test (you shouldn't be able to pinch webbing at the shoulder) so it's second nature at 2 AM.",
+    "fact": "By late pregnancy your baby can already recognize familiar voices and even the rhythm of songs and stories heard often — newborns turn toward their parents' voices in the first days because they've been listening for months.",
+    "fun": "Tiny mission for today: pick one song to be 'the song' — the one you both sing or play on the drive home from the hospital — and play it once tonight so it's already a familiar sound."
   },
   "watch": {
-    "date": "Monday, October 19, 2026",
+    "date": "Tuesday, October 20, 2026",
     "items": [
       {
-        "title": "The Allagash Abduction: Two Witnesses Reveal What Happened Inside the UFO | Ep 791",
+        "title": "Ron James on UFO Disclosure, UAP File Releases and Accidental Truth NEXT",
         "channel": "Podcast UFO",
-        "url": "https://www.youtube.com/watch?v=3qQearTtljE",
-        "why": "Original 1976 Allagash witnesses Charlie Foltz and Jim Weiner tell the canoe, glowing-sphere and missing-time story firsthand, 50 years later. New to your list this week."
+        "url": "https://www.youtube.com/watch?v=0okel4jVhrY",
+        "why": "Live tonight at 8 PM ET: MUFON's Ron James on the newest UAP file releases, Avi Loeb's science council and who is shaping the disclosure story."
       },
       {
         "title": "1976 Abair Road Bigfoot Incident, Officer Brian Gosselin Tells His Story 50 Years Later: Ep228",
         "channel": "The Cryptid Podcast",
         "url": "https://www.youtube.com/watch?v=MCLgdr0RoCI",
-        "why": "A retired cop recounts the 1976 Abair Road sighting in Whitehall, NY, 50 years on — still the freshest episode in your core lane."
+        "why": "A retired cop recounts the 1976 Abair Road sighting in Whitehall, NY, 50 years on — firsthand witness interview, right in your core lane."
       },
       {
-        "title": "Dave Scott: UFO Disclosure, Government Secrets, Bigfoot & the Flight 21 Mystery | Ep 792",
-        "channel": "Podcast UFO",
-        "url": "https://www.youtube.com/watch?v=Tk1r-cfz-uI",
-        "why": "Spaced Out Radio's Dave Scott on disclosure skepticism plus Sasquatch activity at BC's Flight 21 crash site — UFOs and Bigfoot in one interview."
+        "title": "Ed Stafford: The Amazon, 60 Days Alone & Why He Won’t Do Naked and Afraid with Steven Kelly",
+        "channel": "Survival Debrief",
+        "url": "https://www.youtube.com/watch?v=JZpz0ocGxWw",
+        "why": "Ed Stafford on 860 days walking the Amazon, being held at gunpoint, and 60 days alone — survival storytelling at its best."
       },
       {
-        "title": "I Call Him Littlefoot - My Bigfoot Sighting Episode 232",
-        "channel": "My Bigfoot Sighting",
-        "url": "https://www.youtube.com/watch?v=S4CeJ3jGPzY",
-        "why": "A witness describes encounters since 2011 with a whole Sasquatch family around her home, including a juvenile she calls Littlefoot."
+        "title": "71 Days on ALONE: Andrew Price Reveals What TV Didn't Show with Steven Kelly | Survival Debrief",
+        "channel": "Survival Debrief",
+        "url": "https://www.youtube.com/watch?v=ZSx_0ddgass",
+        "why": "71 days solo in the Canadian Arctic on ALONE — starvation, fishing and the mental battle the TV edit never aired."
       },
       {
         "title": "A Tale of Blood and Ashes: The Exeter Vampires | Halloween Season",
@@ -821,10 +819,10 @@
         "why": "Tim Harford on the 1800s Exeter vampire panic — masterful storytelling, perfect Halloween-season listening at work."
       },
       {
-        "title": "71 Days on ALONE: Andrew Price Reveals What TV Didn't Show with Steven Kelly | Survival Debrief",
-        "channel": "Survival Debrief",
-        "url": "https://www.youtube.com/watch?v=ZSx_0ddgass",
-        "why": "71 days solo in the Canadian Arctic on ALONE — starvation, fishing and the mental battle the TV edit never aired."
+        "title": "I Call Him Littlefoot - My Bigfoot Sighting Episode 232",
+        "channel": "My Bigfoot Sighting",
+        "url": "https://www.youtube.com/watch?v=S4CeJ3jGPzY",
+        "why": "A witness describes encounters since 2011 with a whole Sasquatch family around her home, including a juvenile she calls Littlefoot."
       }
     ]
   }
