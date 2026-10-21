@@ -582,6 +582,24 @@
           <div id="headlinesWrap"><div class="empty">Loading headlines…</div></div>
         </section>
 
+
+        <section class="card" id="s-babyprofile">
+          <div class="cardhead"><h2>👶 Baby Profile</h2><span class="sub">Key details · shared on both phones</span></div>
+          <div class="bpgrid">
+            <div class="bpfield"><label for="bpName">Baby's name</label><input id="bpName" type="text" placeholder="Not set yet" autocomplete="off"></div>
+            <div class="bpfield"><label for="bpDue">Due date</label><input id="bpDue" type="date"><div class="meta" id="bpDueMeta"></div></div>
+            <div class="bpfield"><label for="bpPedName">Pediatrician</label><input id="bpPedName" type="text" placeholder="Not chosen yet" autocomplete="off"></div>
+            <div class="bpfield"><label for="bpPedPhone">Pediatrician phone</label><input id="bpPedPhone" type="tel" placeholder="Not set yet" autocomplete="off"><div class="meta" id="bpPedCall"></div></div>
+            <div class="bpfield"><label for="bpHospName">Hospital</label><input id="bpHospName" type="text" placeholder="Not set yet" autocomplete="off"></div>
+            <div class="bpfield"><label for="bpHospAddr">Hospital address</label><input id="bpHospAddr" type="text" placeholder="Not set yet" autocomplete="off"></div>
+            <div class="bpfield bpfull"><label for="bpEmerg">Emergency note</label><textarea id="bpEmerg" rows="2" placeholder="Allergies, key contacts, anything first responders should know…"></textarea></div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;margin-top:10px">
+            <button class="btn" id="bpSave" type="button">Save profile</button>
+            <span class="meta" id="bpMeta"></span>
+          </div>
+        </section>
+
         <section class="card listcard" id="s-baby">
           <div class="cardhead"><h2>👶 Baby Checklist</h2><span class="sub" id="babySub"></span><button class="iconbtn clearbtn" data-clear="baby" type="button">Clear done</button></div>
           <div class="bbar"><i id="babyBarFill"></i></div>
@@ -591,6 +609,49 @@
             <input id="babyCat" placeholder="Section (e.g. Nursery)" style="flex:0 0 140px;min-width:120px">
             <button type="submit">Add</button>
           </form>
+        </section>
+
+
+        <section class="card" id="s-babyrsv">
+          <div class="cardhead"><h2>🩺 RSV &amp; Flu — Call Sheet</h2><span class="sub">2026–2027 season · for the OB &amp; pediatrician calls</span></div>
+          <p class="rsvintro">Two ways to protect a newborn from RSV — this sheet lays out both routes and the questions to ask, so the choice can be made with the OB and the pediatrician. It is information to discuss with them, not medical advice.</p>
+          <div class="meta" id="rsvDue" style="margin-bottom:8px">Due date: ______</div>
+          <div class="rsvcols">
+            <div class="rsvcol">
+              <div class="rsvtag">Route 1 · During pregnancy</div>
+              <div class="rsvtitle">RSV vaccine for Kelly (Abrysvo)</div>
+              <ul class="rsvlist">
+                <li>One shot at <b>32–36 weeks</b> of pregnancy</li>
+                <li>Seasonal window: <b>September 1 – March 1</b></li>
+                <li>Antibodies pass to the baby before birth, so protection is in place from delivery</li>
+              </ul>
+            </div>
+            <div class="rsvcol">
+              <div class="rsvtag">Route 2 · After birth</div>
+              <div class="rsvtitle">RSV antibody shot for baby</div>
+              <ul class="rsvlist">
+                <li>A long-acting antibody shot given to the baby after birth</li>
+                <li>Seasonal window: <b>October – March</b></li>
+                <li>Ask whether it happens at the hospital or at the pediatrician's office</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rsvflu"><b>Flu:</b> Kelly's flu shot by the <b>end of October</b> — separate from the RSV choice, it is about flu-season timing.</div>
+          <div class="rsvh">Questions for the OB</div>
+          <ul class="rsvlist">
+            <li>Given our due date, which route fits our timing — the vaccine during pregnancy, or the antibody shot after birth?</li>
+            <li>If the vaccine: in which week should it be scheduled, and can it be done at a regular appointment?</li>
+            <li>Is there anything about this pregnancy that changes the timing or the choice?</li>
+            <li>What paperwork or records will the hospital need from you?</li>
+          </ul>
+          <div class="rsvh">Questions for the pediatrician</div>
+          <ul class="rsvlist">
+            <li>If we skip the pregnancy vaccine, can the baby get the antibody shot at the hospital right after delivery — or does it happen at your office?</li>
+            <li>When in the October – March window should the baby get it?</li>
+            <li>What does our insurance cover for each route, and is anything billed to us?</li>
+            <li>What records do you need from the hospital and the OB, and who sends them?</li>
+          </ul>
+          <p class="meta" style="margin-top:8px">Season windows shown are for the 2026–2027 season — confirm current guidance on the calls.</p>
         </section>
 
         <section class="card" id="s-photos">
@@ -1106,19 +1167,20 @@
   });
   /* ---------- Family Note (one shared master note) ---------- */
   var MASTER_NOTE_ID = '00000000-0000-0000-0000-000000000001';
+  var BABY_PROFILE_ID = '00000000-0000-0000-0000-000000000002'; /* Baby Profile lives in `notes` as its own row (JSON body) — never part of the family note */
   async function loadNote(){
     var ta = document.getElementById('noteText'); if(!ta) return;
     var res = await sb.from('notes').select('*').eq('id', MASTER_NOTE_ID).maybeSingle();
     var master = res.data;
     if(!master){
       var all = await sb.from('notes').select('*').order('created_at', {ascending:true});
-      var rows = all.data || [];
+      var rows = (all.data || []).filter(function(r){ return r.id !== BABY_PROFILE_ID; });
       var body = rows.map(function(r){ return r.body; }).filter(Boolean).join('\n');
       var lastBy = rows.length ? (rows[rows.length-1].added_by || '') : '';
       var ins = await sb.from('notes').upsert({id: MASTER_NOTE_ID, body: body, added_by: lastBy, created_at: new Date().toISOString()});
       if(!ins.error){
         master = {body: body, added_by: lastBy, created_at: new Date().toISOString()};
-        if(rows.length) await sb.from('notes').delete().neq('id', MASTER_NOTE_ID);
+        if(rows.length) await sb.from('notes').delete().neq('id', MASTER_NOTE_ID).neq('id', BABY_PROFILE_ID);
       }
     }
     if(!master) return;
@@ -1193,6 +1255,7 @@
     if(window.buildCountdowns) buildCountdowns();
     renderBaby(babyRows);
     loadNote();
+    loadBabyProfile();
     var sGot = shopRows.filter(function(r){return r.got_it}).length;
     document.getElementById('shopSub').textContent = shopRows.length ? (shopRows.length - sGot)+' to get · '+sGot+' in cart' : '';
     var tDone = todoRows.filter(function(r){return r.done}).length;
@@ -1342,7 +1405,7 @@
     loadAll(true);
   });
   /* ---------- Foldable sections ---------- */
-  var FOLDABLE = ['s-daily','s-brief','s-recipes','s-shop','s-todo','s-cal','s-deals','s-events','s-news','s-baby','s-photos','s-notes','s-usage','acctHead'];
+  var FOLDABLE = ['s-daily','s-brief','s-recipes','s-shop','s-todo','s-cal','s-deals','s-events','s-news','s-baby','s-babyprofile','s-babyrsv','s-photos','s-notes','s-usage','acctHead'];
   function preservedFolded(existing){ /* Cycle 57 (N5): ids saveFolded does not own (e.g. s-savedrecipes) */
     if(!Array.isArray(existing)) return [];
     return existing.filter(function(id){ return FOLDABLE.indexOf(id) < 0; });
@@ -1455,7 +1518,7 @@
     if(n > 0){ b.textContent = n > 99 ? '99' : String(n); b.hidden = false; }
     else b.hidden = true;
   }
-  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-jump':'home','s-babyfun':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'home','s-watch':'discover','s-news':'news','s-photos':'photos'};
+  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-jump':'home','s-babyfun':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-babyprofile':'lists','s-babyrsv':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'home','s-watch':'discover','s-news':'news','s-photos':'photos'};
   var currentView = 'home';
   function switchView(v){
     if(!v) return;
@@ -5438,5 +5501,79 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
 .date,.cardhead .sub,.ghead .sub,.item .meta,.meta,.empty,.grp,summary .cnt,.deal .tag,.src,.meal .dow,.rcard .rp,.rest,footer,.cal-dow,.cday .dw,.greet,.markread-note,#s-savedrecipes .sr-ext,#savedNewsWrap .svmeta,.lf-empty,.bf-empty{color:#8e8e99}
 @media print{.date,.cardhead .sub,.ghead .sub,.item .meta,.meta,.empty,.grp,summary .cnt,.deal .tag,.src,.meal .dow,.rcard .rp,.rest,footer,.cal-dow,.cday .dw,.greet,.markread-note,#s-savedrecipes .sr-ext,#savedNewsWrap .svmeta,.lf-empty,.bf-empty{color:#62626a}}
 </style>
+
+<style>
+  /* Baby dashboard (final111): profile fields + RSV call sheet */
+  .bpgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px}
+  @media (max-width:560px){ .bpgrid{grid-template-columns:1fr} }
+  .bpfield label{display:block;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .bpfield input,.bpfield textarea{width:100%;box-sizing:border-box;background:var(--surface2,#171a21);border:1px solid var(--line);border-radius:8px;color:var(--text);padding:8px 10px;font-size:16px;font-family:inherit}
+  .bpfield input:focus,.bpfield textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(94,106,210,.18)}
+  .bpfield .meta{margin-top:4px}
+  .bpfull{grid-column:1/-1}
+  .rsvintro{font-size:13.5px;line-height:1.5;margin:0 0 10px}
+  .rsvcols{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media (max-width:560px){ .rsvcols{grid-template-columns:1fr} }
+  .rsvcol{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--surface2,#171a21)}
+  .rsvtag{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+  .rsvtitle{font-weight:650;font-size:14.5px;margin-bottom:6px}
+  .rsvlist{margin:0;padding-left:18px;font-size:13.5px;line-height:1.55}
+  .rsvlist li{margin:2px 0}
+  .rsvflu{border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin-top:10px;font-size:13.5px}
+  .rsvh{font-weight:650;font-size:13px;margin:12px 0 4px}
+</style>
+<script>
+  /* Baby Profile + RSV sheet wiring (final111) — profile stored in `notes` row BABY_PROFILE_ID */
+  function bpEl(id){ return document.getElementById(id); }
+  function bpSet(id, val){ var el = bpEl(id); if(el && document.activeElement !== el) el.value = val || ''; }
+  function bpRender(p){
+    p = p || {};
+    bpSet('bpName', p.baby_name); bpSet('bpDue', p.due_date); bpSet('bpPedName', p.pediatrician_name);
+    bpSet('bpPedPhone', p.pediatrician_phone); bpSet('bpHospName', p.hospital_name);
+    bpSet('bpHospAddr', p.hospital_address); bpSet('bpEmerg', p.emergency_note);
+    var due = p.due_date || '', dm = bpEl('bpDueMeta'), rd = bpEl('rsvDue');
+    if(due){
+      var d = new Date(due + 'T12:00:00');
+      var days = Math.round((d.getTime() - new Date(new Date().toDateString()).getTime()) / 86400000);
+      var nice = d.toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric', year:'numeric'});
+      if(dm) dm.textContent = days > 0 ? days + ' days to go · ' + nice : (days === 0 ? 'Due today! · ' + nice : Math.abs(days) + ' days past · ' + nice);
+      if(rd) rd.textContent = 'Due date: ' + nice;
+    } else {
+      if(dm) dm.textContent = '';
+      if(rd) rd.textContent = 'Due date: ______ (set it in Baby Profile, in the Lists tab)';
+    }
+    var ph = (p.pediatrician_phone || '').trim(), call = bpEl('bpPedCall');
+    if(call) call.innerHTML = ph ? '<a href="tel:' + esc(ph.replace(/[^+0-9]/g, '')) + '">📞 Call ' + esc(ph) + '</a>' : '';
+  }
+  async function loadBabyProfile(){
+    if(previewMode) return;
+    var res = await sb.from('notes').select('*').eq('id', BABY_PROFILE_ID).maybeSingle();
+    var p = {};
+    if(res.data && res.data.body){ try{ p = JSON.parse(res.data.body) || {}; }catch(e){ p = {}; } }
+    window._babyProfile = p;
+    bpRender(p);
+  }
+  document.getElementById('bpSave').addEventListener('click', async function(){
+    if(previewMode) return;
+    if(!requirePerson()) return;
+    var btn = this; btn.textContent = 'Saving…';
+    var p = {
+      baby_name: bpEl('bpName').value.trim(),
+      due_date: bpEl('bpDue').value,
+      pediatrician_name: bpEl('bpPedName').value.trim(),
+      pediatrician_phone: bpEl('bpPedPhone').value.trim(),
+      hospital_name: bpEl('bpHospName').value.trim(),
+      hospital_address: bpEl('bpHospAddr').value.trim(),
+      emergency_note: bpEl('bpEmerg').value.trim()
+    };
+    var res = await sb.from('notes').upsert({id: BABY_PROFILE_ID, body: JSON.stringify(p), added_by: person, created_at: new Date().toISOString()});
+    var meta = bpEl('bpMeta');
+    if(res.error){ btn.textContent = 'Save profile'; if(meta) meta.textContent = 'Could not save — check your connection and try again.'; return; }
+    btn.textContent = 'Saved ✓';
+    if(meta) meta.textContent = 'Saved by ' + person + ' · shows on both phones';
+    window._babyProfile = p; bpRender(p);
+    setTimeout(function(){ btn.textContent = 'Save profile'; }, 1600);
+  });
+</script>
 </body>
 </html>
