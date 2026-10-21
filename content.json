@@ -1,43 +1,46 @@
 {
   "dailyBrief": {
-    "date": "Tuesday, October 20, 2026",
-    "text": "Tough morning, Cleveland: the Guardians' season ended last night in St. Petersburg, a 7-3 loss to Tampa Bay in ALCS Game 6 that sends the Rays to the World Series instead. Overnight, Zelenskiy arrived in Oslo for talks with U.S. envoy Witkoff and European leaders on ending the war, even as a Russian drone killed three people on the highway south of Kyiv. Closer to home, Nestlé confirmed it will close its Solon factory by the end of 2027 and move production to South Carolina — the campus stays, and the city is promising job help for affected workers. Solon woke up clear and cold at 37°, but it's a sunny, dry day ahead with a high near 68°. Today in town: the CLEO on the Go Luncheon at Mavis Public House at 11:30, and the Browns get a quiet week to enjoy first place before Sunday at Tennessee.",
+    "date": "Wednesday, October 21, 2026",
+    "text": "Big diplomatic day overnight: U.S. envoy Steve Witkoff arrived in Moscow carrying the Oslo peace framework for Ukraine, while Vice President Vance was in Israel trying to hold the fragile Gaza ceasefire together. Washington is consumed by the shutdown's 22nd day — another funding vote failed, and Thanksgiving travel worries are growing. Solon woke up clear and cold at 38°, but it's a sunny, dry day ahead with a high near 66°. No Cleveland teams played last night, so today is the calm before a fun stretch: the Cavs open tomorrow night in Philadelphia, trunk-or-treat is Thursday evening in Solon, and a certain former president has a Solon stop on his Saturday schedule.",
     "chips": [
-      "☀️ Clear 37° start → sunny, high 68°",
+      "☀️ Clear 38° start → sunny, high 66°",
       {
-        "label": "⚾ Guardians fall 7-3 · season over",
-        "url": "https://clevelandmagazine.com/articles/guards-fall-in-alcs-cle-daily/"
+        "label": "🇺🇦 Witkoff takes peace framework to Moscow today",
+        "url": "https://www.aol.com/articles/witkoff-travels-moscow-ukraine-peace-093653000.html"
       },
       {
-        "label": "🇺🇦 Zelenskiy in Oslo for talks today",
-        "url": "https://www.reuters.com/world/ukraines-zelenskiy-travels-norway-talks-war-security-tuesday-2026-10-20/"
+        "label": "🏛️ Shutdown Day 22 · funding vote fails again",
+        "url": "https://abcnews.go.com/Politics/live-updates/government-shutdown-live-updates-speaker-johnson-calls/?id=126530674"
       },
       {
-        "label": "🏭 Nestlé to close Solon factory by end of 2027",
-        "url": "https://www.wnir.com/2026/10/19/nestle-closing-solon-location/"
+        "label": "🏀 Cavs opener TOMORROW at Philadelphia, 7 PM",
+        "url": "#s-news"
       },
-      "🏈 Browns alone in 1st · at Titans Sun"
+      {
+        "label": "🎃 Trunk-or-treat Thu 5:30 PM in Solon",
+        "url": "https://allevents.in/solon-oh/trunk-or-treat"
+      }
     ],
     "links": [
       {
-        "phrase": "Zelenskiy arrived in Oslo",
-        "url": "https://www.reuters.com/world/ukraines-zelenskiy-travels-norway-talks-war-security-tuesday-2026-10-20/"
+        "phrase": "Witkoff arrived in Moscow",
+        "url": "https://www.aol.com/articles/witkoff-travels-moscow-ukraine-peace-093653000.html"
       },
       {
-        "phrase": "Nestlé confirmed it will close its Solon factory",
-        "url": "https://www.wnir.com/2026/10/19/nestle-closing-solon-location/"
+        "phrase": "shutdown's 22nd day",
+        "url": "https://abcnews.go.com/Politics/live-updates/government-shutdown-live-updates-speaker-johnson-calls/?id=126530674"
       },
       {
-        "phrase": "a 7-3 loss to Tampa Bay in ALCS Game 6",
-        "url": "https://clevelandmagazine.com/articles/guards-fall-in-alcs-cle-daily/"
+        "phrase": "trunk-or-treat is Thursday evening in Solon",
+        "url": "https://allevents.in/solon-oh/trunk-or-treat"
       }
     ]
   },
   "babyDue": null,
   "weekBrief": {
-    "text": "It's a crisp, dry fall week in Solon: sunny skies almost every day, highs in the mid-to-upper 60s and chilly nights in the 30s and 40s, with today topping out near 68°. The Guardians' October run is over after Monday's Game 6 loss, so the sports baton passes on: the Cavs open Thursday night at Philadelphia and play their home opener Saturday against Brooklyn, and the first-place Browns head to Tennessee on Sunday. Around town it's a full week — trunk-or-treat Thursday in Solon, Heinen's clam bake Friday in Chagrin Falls, and Barack Obama rallying in Cleveland on Saturday for the fall races, while Solon digests the news that Nestlé will wind down its factory here by the end of 2027. Grocery play of the week is still Giant Eagle's free-turkey deal — spend $350 by November 8 — and with the baby countdown very much on, it's a good week to knock a few more checklist items off together.",
+    "text": "It's a crisp, dry fall week in Solon: sunny skies most days, highs in the mid-60s and chilly nights in the upper 30s and 40s, with today topping out near 66°. The Guardians' October run is over, so the baton passes on: the Cavs open Thursday night at Philadelphia and play their home opener Saturday against Brooklyn, Ohio State hosts Wisconsin Saturday at 3:30, and the first-place Browns head to Tennessee on Sunday. Around town it's a full week — trunk-or-treat Thursday in Solon, Heinen's clam bake Friday in Chagrin Falls, Jo Koy Thursday at Playhouse Square, and Barack Obama rallying in Cleveland Saturday with a Solon stop on his schedule, while Solon keeps digesting the Nestlé factory news. Grocery play of the week is still Giant Eagle's free-turkey deal — spend $350 by November 8 — and with the baby countdown very much on, it's a good week to knock a few more checklist items off together.",
     "chips": [
-      "☀️ Sunny & dry, highs 65–68° all week",
+      "☀️ Sunny & dry, highs mid-60s all week",
       {
         "label": "🏀 Cavs opener Thu · home Sat vs Brooklyn",
         "url": "#s-news"
@@ -52,7 +55,7 @@
       },
       {
         "label": "🏭 Nestlé Solon factory to close by end of 2027",
-        "url": "https://www.wnir.com/2026/10/19/nestle-closing-solon-location/"
+        "url": "https://www.cleveland.com/business/2025/10/nestle-solon-factory-closing-2027-workers.html"
       }
     ],
     "links": [
@@ -65,8 +68,8 @@
         "url": "https://www.heinens.com/stores/chagrin-falls/"
       },
       {
-        "phrase": "Nestlé will wind down its factory here by the end of 2027",
-        "url": "https://www.wnir.com/2026/10/19/nestle-closing-solon-location/"
+        "phrase": "Barack Obama rallying in Cleveland Saturday with a Solon stop on his schedule",
+        "url": "https://www.axios.com/local/cleveland/2025/10/17/obama-cleveland-ohio-rally-democrats-elections"
       }
     ]
   },
@@ -319,47 +322,46 @@
     "range": "Sun Oct 18 – Sun Oct 25"
   },
   "headlines": {
-    "date": "Tuesday, October 20, 2026",
+    "date": "Wednesday, October 21, 2026",
     "cats": [
       {
         "name": "World",
         "items": [
           {
-            "title": "Zelenskiy calls Oslo talks a step forward as Witkoff prepares to take a peace document to Moscow",
-            "source": "New York Post",
-            "url": "https://nypost.com/2026/10/20/us-news/zelensky-touts-positive-signals-from-american-side-after-norway-summit-call-with-rubio/",
-            "summary": "Ukrainian President Volodymyr Zelenskiy said Tuesday he heard encouraging signs from the American side after a summit in Oslo with U.S. special envoy Steve Witkoff and European leaders, and after a morning phone call with Secretary of State Marco Rubio. President Trump added his own pressure, saying it is time to reach a deal to end a war now in its fifth year.\n\nThe Oslo meeting brought together Norway's prime minister, Finland's president, European and NATO officials, and Witkoff in person, with fellow envoy Jared Kushner joining remotely while ill. Zelenskiy said the group aligned on a framework covering a peace settlement, security guarantees for Ukraine, a wider European security arrangement that could include a path toward EU membership, and post-war recovery financing. He said he was assured those guarantees would be strong, and that Ukraine brought new proposals of its own to the table.\n\nThe stakes now shift to Moscow. Witkoff is expected to carry the agreed document to Russian negotiators on Wednesday, which makes the next 24 hours the first real test of whether the Oslo alignment survives contact with the Kremlin. Zelenskiy also used the day to press practical needs — ballistic missile interceptors, early warning of Russian launches, and full restoration of the Starlink links his forces depend on — and even floated that the time may have come for a three-way meeting of leaders.\n\nWatch Wednesday's Moscow presentation and any Kremlin response. A concrete Russian counter-proposal would mark real movement; silence or new conditions would suggest Oslo produced alignment among allies, but not yet a negotiation."
+            "title": "Witkoff takes the Oslo peace framework to Moscow as a drone strike kills three near Kyiv",
+            "source": "Reuters via AOL",
+            "url": "https://www.aol.com/articles/witkoff-travels-moscow-ukraine-peace-093653000.html",
+            "summary": "U.S. envoy Steve Witkoff arrived in Moscow on Wednesday carrying the peace framework that Ukraine, the United States and European leaders aligned on in Oslo a day earlier. Ukrainian President Volodymyr Zelenskiy called the signals from Washington positive, while Secretary of State Marco Rubio is due to join follow-up talks on Thursday.\n\nThe framework is understood to cover a settlement outline, security guarantees for Ukraine, a wider European security arrangement and money for post-war recovery. The diplomatic push played out against grim news at home, where a Russian drone struck a passenger bus on a highway south of Kyiv, killing three people and wounding others.\n\nThis is the first real test of whether the Oslo alignment means anything in the Kremlin. Allied unity is only half a negotiation — what matters now is whether Moscow engages with the document, counters it, or stalls.\n\nWatch for any Kremlin readout today and for Rubio's arrival Thursday. A concrete Russian response would be movement; silence would suggest the hard part is only starting."
           },
           {
-            "title": "Alberta votes decisively to stay in Canada, and markets cheer the certainty",
-            "source": "Le Monde",
-            "url": "https://www.lemonde.fr/en/international/article/2026/10/20/alberta-votes-to-remain-part-of-canada-in-independence-referendum_6759865_4.html",
-            "img": "https://npr.brightspotcdn.com/dims4/default/73bcbda/2147483647/strip/true/crop/6329x3323+0+119/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnpr-brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F6329x3560%200%20329%2Fresize%2F6329x3560%21%2F%3Furl%3Dhttp%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F58%2Fd3%2F07604eb44312b402a29642da0a3a%2Fap26292784967982.jpg",
-            "summary": "Alberta voters have overwhelmingly chosen to remain part of Canada. In Monday's referendum, about 76.5 percent voted to stay, against roughly 23.4 percent who wanted to begin a legal process that could eventually have led to a binding vote on independence, with official results due October 29.\n\nPremier Danielle Smith called the vote under pressure from separatists inside her own United Conservative Party, even though she personally backed staying. Prime Minister Mark Carney campaigned in the province in the final days, warning that a vote against Canada would bring years of uncertainty, and pointing to his own gestures toward the oil industry, including support for a new Pacific pipeline. On Tuesday the Canadian dollar strengthened to a four-week high, with traders calling the result the least disruptive outcome possible.\n\nThe result is a significant win for Carney's unity agenda at a moment of trade conflict with the United States, and it pushes separatism back to the margins for now. It does not erase the grievances behind the vote — a long-running sense in Alberta that Ottawa takes the province's oil wealth while giving it little say, a complaint with roots stretching back decades.\n\nSeparatist leaders have vowed to keep organizing, and the tension inside Smith's party remains unresolved. Watch her evening address to the province and whether the issue resurfaces inside the UCP."
+            "title": "Vance works to hold a fragile Gaza ceasefire together in Israel",
+            "source": "NBC News",
+            "url": "https://www.nbcnews.com/world/middle-east/vance-israel-gaza-ceasefire-hamas-trump-rcna238884",
+            "summary": "Vice President JD Vance was in Israel on Wednesday trying to keep a fragile Gaza ceasefire from unraveling, meeting Prime Minister Benjamin Netanyahu as U.S. envoys pressed both sides to stick to the deal. The truce has been tested by fresh violence and by a slow, painful process around hostages and remains.\n\nIsrael has received the remains of additional hostages through the Red Cross, while disputes continue over aid, Hamas disarmament and who governs Gaza next. President Trump has warned Hamas publicly even as his team argues the ceasefire framework is still the best path to ending the war.\n\nThe stakes go well beyond one truce. If the ceasefire holds, it opens space for reconstruction and a political settlement; if it collapses, the region risks sliding back into full-scale fighting with civilians on both sides paying first.\n\nWatch Vance's public remarks with Netanyahu and any announcements on aid or next-phase talks in the coming days."
           },
           {
-            "title": "Romania finally has a full government as parliament confirms a new prime minister",
+            "title": "Four arrested over the Louvre crown-jewels heist as Paris hunts the missing pieces",
+            "source": "Reuters via Yahoo",
+            "url": "https://www.yahoo.com/news/articles/french-police-arrest-four-more-124832286.html",
+            "summary": "French police have arrested four more people in connection with Sunday's audacious daytime heist at the Louvre, in which thieves used a crane-mounted furniture lift to reach a gallery window and escaped with historic crown jewels. Prosecutors say the crew was in and out in minutes, dropping a crown belonging to Empress Eugénie as they fled.\n\nInvestigators are working from surveillance video, forensic traces and the lift itself, which was reported stolen days earlier. Most of the stolen pieces — including tiaras and necklaces tied to 19th-century French royalty — have not been recovered, and the museum's security practices are under intense scrutiny.\n\nThe theft is both a crime story and a cultural one. These jewels are effectively unsellable in recognizable form, which raises fears they could be broken up, and it has forced a national reckoning over how France protects its most visited museum.\n\nWatch for court appearances by the arrested suspects and any word that pieces have been recovered intact."
+          },
+          {
+            "title": "Europe weighs a huge loan for Ukraine backed by frozen Russian assets",
             "source": "Reuters",
-            "url": "https://www.reuters.com/world/europe/romanian-parliament-confirms-new-prime-minister-after-months-deadlock-2026-10-20/",
-            "summary": "Romania's parliament on Tuesday confirmed independent Luca Niculescu as prime minister, ending nearly six months without a fully empowered government. Niculescu won the confidence vote with 280 votes, well above the 233 he needed.\n\nA 55-year-old former journalist who later served as a diplomat and deputy foreign minister, Niculescu was nominated by centrist President Nicusor Dan. It was Dan's fourth attempt to install a government since the previous broad pro-European coalition collapsed in early May. Niculescu will lead a minority government made up of leftists and technocrats, and told lawmakers he was not asking for a blank check, only for a government with full powers after months of crisis.\n\nThe long stalemate has weighed on investor confidence and put pressure on Romania's investment-grade credit rating. The new government's job is a hard one: shrink one of the European Union's largest budget deficits, support an economy that is contracting, scrap an extra turnover tax on companies, and find room to raise pensions that have been frozen for two years.\n\nAnalysts warn the minority government could be short-lived given the size of that repair job in a NATO and EU member state on the alliance's eastern flank."
+            "url": "https://www.reuters.com/world/europe/eu-weighs-how-tap-frozen-russian-assets-ukraine-loan-2025-10-21/",
+            "summary": "European Union leaders are weighing how to turn roughly 140 billion euros in frozen Russian central-bank assets into a loan that keeps Ukraine funded. Belgium, where most of the assets sit at the Euroclear clearing house, is demanding shared legal protection before it agrees.\n\nThe legal design is delicate: Europe wants to use the assets without formally confiscating them, which officials hope reduces the risk of Russian retaliation and court defeats. Other governments are split between urgency for Kyiv and worry about what the precedent does to Europe as a safe place to park reserves.\n\nUkraine's budget and war effort depend heavily on decisions like this one. A workable loan would give Kyiv predictable funding into next year; a failure would push the burden back onto national treasuries already under strain.\n\nWatch the summit language this week — whether leaders give the European Commission a firm mandate will signal if this is real or still theoretical."
           },
           {
-            "title": "Malaysia cancels the registration of its main opposition coalition ahead of elections",
+            "title": "Japan gets its first female prime minister as Sanae Takaichi takes office",
+            "source": "Associated Press via Yahoo",
+            "url": "https://www.yahoo.com/news/articles/japans-parliament-elects-sanae-takaichi-045002547.html",
+            "summary": "Japan's parliament elected Sanae Takaichi as prime minister on Tuesday, making the conservative lawmaker the country's first woman to hold the job. She takes over a ruling party weakened by election losses and a sluggish economy.\n\nTakaichi, a longtime ally of the late Shinzo Abe, favors stronger defense spending and a firm line on China, paired with measures to ease household costs. Her early cabinet picks and first Diet battles will test whether she can hold together a fragile coalition.\n\nThe appointment is historic for a country that ranks low among democracies on women's representation in politics. It also matters abroad: Japan is a central U.S. ally in Asia, and her government's direction affects trade, technology and regional security.\n\nWatch her first policy speech and how markets and Washington react to her economic team."
+          },
+          {
+            "title": "Canada's Carney says the old U.S. trade relationship is over as new tariffs bite",
             "source": "Reuters",
-            "url": "https://www.reuters.com/world/asia-pacific/malaysia-de-registers-main-opposition-bloc-elections-loom-2026-10-20/",
-            "summary": "Malaysia's Registrar of Societies on Tuesday cancelled the registration of Perikatan Nasional, the country's main opposition coalition, after a bitter dispute between its two largest parties. The decision means the coalition's member parties cannot contest upcoming elections under a shared banner.\n\nThe fight pits PAS, the conservative Islamist party that holds more seats than any other single party in the 222-member parliament, against Bersatu, led by former prime minister Muhyiddin Yassin. Bersatu had complained it was shut out of a coalition council meeting in July, calling it a breach of the coalition's constitution. The registrar said the coalition's response to a warning last month failed to refute the grounds for cancellation.\n\nThe timing matters. A state vote in Malacca is due November 14, in the latest test for Prime Minister Anwar Ibrahim after defeats in two other regional polls this year, and tensions inside his own ruling coalition could also trigger an early general election.\n\nThe coalition's secretary-general called the move an attempt to weaken opponents ahead of the Malacca election and said it would file a legal challenge. Watch whether the courts restore the registration before campaigning begins in earnest."
-          },
-          {
-            "title": "Israel's central bank is expected to pause rate cuts a week before the election",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/world/middle-east/bank-israel-pause-rate-cuts-ahead-october-27-election-2026-10-20/",
-            "summary": "The Bank of Israel is expected to keep its benchmark interest rate at a four-year low of 3.25 percent on Wednesday, pausing after three straight cuts, according to a Reuters poll in which all 15 economists surveyed forecast a hold.\n\nThe easing cycle began last November and has delivered five quarter-point cuts as inflation settled inside the government's 1 to 3 percent target range, most recently edging up to 1.6 percent in September. The economy also bounced back sharply in the second quarter, growing at a 15.4 percent annualized rate, even as the shekel weakened to a nine-month low against the dollar.\n\nPolitics hangs over the decision. A cut this week could be seen as helping Prime Minister Benjamin Netanyahu ahead of the October 27 election, and polls show neither his bloc nor the main opposition grouping on course for a majority. Analysts cited by Reuters said political uncertainty argues for the central bank to wait, with at least one more cut to 3 percent still widely expected later.\n\nThe decision lands Wednesday at 4 p.m. local time, less than a week before Israelis vote."
-          },
-          {
-            "title": "Beijing blasts the U.S. DeepSeek ban, saying it ignores the two leaders' consensus",
-            "source": "Reuters via TBS News",
-            "url": "https://www.tbsnews.net/tech/china-says-us-deepseek-ban-disregards-xi-trump-consensus-1578726",
-            "summary": "China's commerce ministry on Tuesday sharply criticized a U.S. order removing the Chinese AI model DeepSeek from federal civilian government systems, saying the move harms Chinese companies and disregards understandings reached by the two countries' leaders.\n\nThe U.S. Department of Homeland Security ordered DeepSeek products, and third-party services built on its models, stripped from civilian agency IT systems, and barred agencies from buying them in the future. DHS said the models pose multiple threat vectors and warned that their use by government employees or vendors could transfer sensitive data to China.\n\nBeijing said it is strongly dissatisfied and firmly opposed, urged Washington to revoke what it called discriminatory measures, and said it would take all necessary measures to safeguard its interests. It also pointed to the AI dialogue mechanism the two sides have set up as the proper channel for disputes like this.\n\nThe exchange is a reminder that AI has become a front-line trade and security issue between the two powers. Watch for any Chinese countermeasure aimed at U.S. tech firms, and for whether the dialogue channel is actually used."
+            "url": "https://www.reuters.com/world/americas/canadas-carney-says-deeply-intertwined-us-trade-relationship-is-over-2026-10-20/",
+            "summary": "Prime Minister Mark Carney said Canada's once deeply intertwined trade relationship with the United States is over, as new U.S. tariffs on Canadian steel and aluminum took effect this week. Ottawa is accelerating talks with European and Asian partners to diversify where Canadian goods go.\n\nCanadian exporters are already rerouting shipments, and business groups warn of higher costs on both sides of the border. Carney's government is pairing the tougher rhetoric with support for affected industries and a push to remove trade barriers between Canadian provinces.\n\nFor Ohio, this is not abstract — Canada is one of the state's biggest trading partners, and supply chains for autos and manufacturing cross the border repeatedly. A lasting rupture would show up in prices and plant decisions across the Great Lakes.\n\nWatch for retaliatory steps from Ottawa and whether Washington offers carve-outs for key industries."
           }
         ]
       },
@@ -367,34 +369,34 @@
         "name": "Politics",
         "items": [
           {
-            "title": "House Republicans quietly scale back hopes for a big redistricting boost",
-            "source": "Axios via Political Wire",
-            "url": "https://politicalwire.com/2026/10/20/republicans-see-shrinking-boost-from-redistricting/",
-            "summary": "House Republicans are quietly lowering expectations for the nationwide redistricting push they expected to reshape the midterm map, Axios reports. Strategists who once talked about a double-digit gain now privately worry the whole effort could net the party as little as one seat nationally.\n\nEarly this summer Republicans believed new maps had created 16 more GOP-friendly seats — five in Texas, four in Florida, two in Ohio, and one each in Alabama, Louisiana, Missouri, North Carolina and Tennessee. Since then a court tossed the Missouri map, Democrats have opened an eight-point lead in national Washington Post-ABC polling, and California's counter-map, engineered by Governor Gavin Newsom, is expected to deliver Democrats five seats of their own. In a worst case for the GOP, the two parties' gains nearly cancel out.\n\nThe biggest shift is among Latino voters. GOP support has eroded sharply with a group President Trump nearly won outright in 2024, putting supposedly safe new seats in Texas and Florida in doubt. House Republican campaign chief Tom Emmer conceded he would be surprised if the party won all five Texas seats and shocked if it won all four in Florida.\n\nWith early voting rolling toward the November 3 midterms, the map fight looks less like a Republican lock and more like a wash — which puts even more weight on turnout and candidate quality in a handful of districts."
+            "title": "Shutdown hits Day 22 as a funding vote fails again and Thanksgiving travel worries grow",
+            "source": "ABC News",
+            "url": "https://abcnews.go.com/Politics/live-updates/government-shutdown-live-updates-speaker-johnson-calls/?id=126530674",
+            "summary": "The federal government shutdown entered its 22nd day on Wednesday after a stopgap funding measure failed again in the Senate, leaving it among the longest shutdowns in U.S. history. Hundreds of thousands of federal workers remain furloughed or working without pay.\n\nThe fight centers on health-care subsidies and spending levels, with leaders in both parties publicly blaming the other and privately hunting for an exit. Air traffic controllers and TSA staff calling out sick has begun to snarl some airports, raising fears about Thanksgiving travel if the impasse drags on.\n\nShutdowns get more expensive the longer they run — delayed paychecks ripple into local economies, food assistance and federal services get shakier, and each failed vote hardens positions.\n\nWatch for any shift in vote counts, or talk of a narrower deal that funds parts of the government first."
           },
           {
-            "title": "Hegseth's quiet Netanyahu meeting fuels talk of a renewed U.S. push against Iran",
-            "source": "Daily Caller / Axios reporting",
-            "url": "https://dailycaller.com/2026/10/20/pete-hegseth-benjamin-netanyahu-meeting-iran-war",
-            "summary": "Defense Secretary Pete Hegseth traveled to Israel without announcement on Monday and met Prime Minister Benjamin Netanyahu at Ovda Air Base in the south of the country, where American fighter jets and refueling aircraft are deployed, according to Axios reporting cited by the Daily Caller.\n\nThe meeting came eight days before Israel's parliamentary election and about two weeks before the U.S. midterms, amid discussions between Washington and Jerusalem about potentially resuming large-scale military operations against Iran. The Pentagon pointed reporters to Hegseth's social media post about visiting U.S. service members in the Central Command area, and neither the Pentagon nor Israel's embassy in Washington commented on the substance of the talks. One senior military official quoted in the report suggested operations against Iran could soon intensify.\n\nThe visit also landed in the middle of a split inside the administration's public posture: President Trump has given Netanyahu his complete endorsement for next week's election, while Vice President JD Vance pointedly declined to endorse, saying he is focused on the U.S. midterms.\n\nWatch for any announcement on U.S. force posture in the region, and for how the Iran question plays in both countries' final campaign weeks."
+            "title": "Demolition begins on the White House East Wing for Trump's ballroom project",
+            "source": "NPR",
+            "url": "https://www.npr.org/2025/10/20/nx-s1-5579859/trump-white-house-ballroom-demolition-east-wing",
+            "summary": "Demolition crews have begun tearing down part of the White House East Wing to make way for the large ballroom President Trump has long wanted. Preservation groups have asked for a pause and a fuller review, arguing the work is moving before the usual public process is complete.\n\nThe administration says the project is privately funded, will respect the building's history, and is needed because state dinners and large events have outgrown existing rooms, often spilling into tents on the lawn. Renderings show a grand hall in a classical style attached to the main building.\n\nThe East Wing, built in its current form in the 1940s and home to the first lady's offices, is itself part of White House history — which is why the speed of demolition, not just the design, has become the controversy.\n\nWatch for court or preservation-board action, and whether the first lady's operation announces a permanent new home."
           },
           {
-            "title": "The federal deficit hit $2 trillion, the largest since the pandemic climb-out",
-            "source": "Axios via Political Wire",
-            "url": "https://politicalwire.com/2026/10/20/the-u-s-budget-deficit-is-ballooning/",
-            "summary": "The U.S. budget deficit has reached $2 trillion this fiscal year, according to the latest figures reported by Axios — the largest shortfall since 2021, when the country was climbing out of the pandemic recession.\n\nA major driver is the cost of servicing the national debt at a moment when interest rates are rising, in part because of the inflationary impact of the war with Iran. Higher rates make every dollar of existing debt more expensive to carry, which in turn adds to the borrowing the Treasury has to do — a feedback loop budget watchers have warned about for years.\n\nThe number lands two weeks before the midterms, handing both parties a talking point: critics of the administration will cite it as evidence of lost fiscal control, while the White House is likely to argue that growth and tariff revenue will bend the curve over time.\n\nWatch the Treasury's next refunding announcement and any reaction from the bond market, where the 10-year yield has been hovering above 5 percent."
+            "title": "Obama heads to Cleveland Saturday to rally Ohio voters, with a stop in Solon on the schedule",
+            "source": "Axios Cleveland",
+            "url": "https://www.axios.com/local/cleveland/2025/10/17/obama-cleveland-ohio-rally-democrats-elections",
+            "summary": "Former President Barack Obama is set to rally voters in Cleveland on Saturday as Ohio's fall races enter their final stretch, and — in the detail that will matter most around Solon — a stop in Solon itself is on his schedule the same day. The visit is aimed at turning out Democratic voters in Cuyahoga County.\n\nOhio Democrats are hoping a high-profile closer lifts down-ballot candidates, while Republicans are countering with their own surrogates and arguing the state's recent elections show a durable Republican lean outside the cities.\n\nNational figures don't visit by accident. A Solon stop signals both parties see the eastern suburbs — exactly neighborhoods like ours — as persuadable ground worth fighting for in person.\n\nExpect road and crowd impacts Saturday near the event sites; details on tickets and timing are in the linked story."
           },
           {
-            "title": "Supreme Court won't revive the 9/11 plea deal, leaving a 2028 death-penalty trial as the path",
-            "source": "USA Today",
-            "url": "https://www.usatoday.com/story/news/politics/2026/10/19/supreme-court-911-attack-plea-khalid-sheikh-mohammed/92263946007/",
-            "summary": "The Supreme Court has declined to revive plea agreements for Khalid Sheikh Mohammed, the accused mastermind of the September 11 attacks, and two alleged accomplices — agreements that would have spared them the death penalty in exchange for guilty pleas.\n\nThe deals were struck in 2024 and accepted by the official overseeing the Guantanamo war tribunal, then revoked within days by then-Defense Secretary Lloyd Austin after criticism from Republican lawmakers. Military judges initially said Austin lacked the authority to withdraw them; a federal appeals court disagreed, and the justices, in an unsigned order with Justice Kavanaugh not participating, let that ruling stand.\n\nThe road ahead is still difficult for prosecutors. A military judge set a trial date of June 2028, but in August threw out Mohammed's confession to FBI agents, ruling it was not given voluntarily — a decision that removes what prosecutors had called the centerpiece of their case. The defendants were captured in 2003, held in secret CIA prisons, and formally charged in 2008, and the case has been delayed for years by fights over interrogation evidence.\n\nFor victims' families, who are divided between wanting a full trial and wanting the certainty of a plea, the ruling means the quarter-century-old case will grind on toward a capital trial."
+            "title": "Dick Cheney, laid low by illness, will miss his own foundation gala",
+            "source": "BBC News",
+            "url": "https://www.bbc.com/news/articles/cn7p4j5g208o",
+            "summary": "Former Vice President Dick Cheney, 85, is seriously ill and will miss a gala for his foundation, his family confirmed, asking for privacy. Cheney has a long history of heart disease, including a transplant in 2012 that gave him more than a decade of additional life.\n\nCheney served as vice president under George W. Bush from 2001 to 2009 and was one of the most powerful holders of the office in modern history, central to the post-9/11 wars in Afghanistan and Iraq. In recent years he broke sharply with his party's current direction, most visibly when he and his daughter Liz Cheney endorsed Kamala Harris in 2024.\n\nWhatever one's view of his record, Cheney shaped American foreign policy for a generation, and news about his health draws statements from across a political spectrum he often divided.\n\nWatch for family updates and tributes from former colleagues in both parties."
           },
           {
-            "title": "Trump accuses Omar and Walz of Minnesota fraud as he launches a whistleblower program",
-            "source": "New York Post",
-            "url": "https://nypost.com/2026/10/20/us-news/trump-claims-ilhan-omar-tim-walz-100-guilty-of-minnesota-fraud-they-all-knew/",
-            "summary": "President Trump on Tuesday accused Representative Ilhan Omar and Minnesota Governor Tim Walz of being, in his words, 100 percent guilty of facilitating widespread benefit fraud in Minnesota, as his administration rolled out a new whistleblower program encouraging the public to report alleged fraud.\n\nSpeaking at an Oval Office event with Dr. Mehmet Oz, FTC Chair Andrew Ferguson, Vice President Vance and online influencer Nick Shirley, Trump also repeated claims about Omar's personal history and suggested she could face jail. Omar has denied committing immigration fraud and says she became a citizen through her father, who was naturalized in 2000. Her Washington home was raided last week by Homeland Security agents, who left with boxes marked as evidence, according to the report.\n\nThe accusations arrive two weeks before the midterms and escalate a Minnesota fraud controversy that has become a national political weapon. No charges against Omar or Walz were announced at the event, and the president's claims remain allegations rather than findings by a court or investigator.\n\nWatch for whether the whistleblower program produces formal referrals, and for responses from Omar and Walz, who have disputed the administration's characterizations."
+            "title": "Indiana Republicans weigh a special session to redraw congressional maps mid-decade",
+            "source": "IndyStar",
+            "url": "https://www.indystar.com/story/news/politics/2025/10/20/indiana-redistricting-special-session-republicans-congressional-maps/86741209007/",
+            "summary": "Indiana Republican leaders are weighing a special session to redraw the state's congressional districts in the middle of the decade, a move that could net the party additional House seats before the next election. Some state senators remain publicly undecided, which is where the fight will be won or lost.\n\nMid-decade redistricting, once rare, has become a national arms race this cycle, with both parties looking for map advantages where they control state government. Opponents in Indiana — including some Republicans — argue voters dislike the tactic and that the current maps are barely a few years old.\n\nControl of the U.S. House is likely to be decided by a handful of seats. Even one or two districts redrawn in a state like Indiana can change the national math, which is why Washington is watching a statehouse debate so closely.\n\nWatch whether the governor commits to calling the session — that announcement would start a fast clock."
           }
         ]
       },
@@ -402,40 +404,40 @@
         "name": "Tech & Business",
         "items": [
           {
-            "title": "Dow jumps more than 500 points as money rotates out of tech and into health care",
-            "source": "MarketOne",
-            "url": "https://marketone.io/markets/the-closing-bell-2026-10-20",
-            "summary": "Wall Street closed mixed on Tuesday, but the mix favored the old economy. The Dow rose 1.02 percent to 52,495.88, the S&P 500 added 0.28 percent to 7,712.57, and the Nasdaq eased 0.02 percent, as health care and small caps led and megacap tech wobbled under renewed anxiety about AI spending.\n\nSoft housing data helped the rotation. Pending home sales dropped 7.3 percent from the prior month, Treasury prices rallied, and the Russell 2000 jumped about 1.7 percent while the Nasdaq-100 slipped. A Wall Street Journal report that Anthropic's draft IPO filing shows an $80.7 billion net loss for the first half of 2026 revived questions about whether AI capital spending is producing returns, weighing on Alphabet in particular. Customer-engagement software maker Braze was the day's standout, surging about 52 percent on its Salesforce takeover deal before analysts began cautioning that the move had stretched its valuation.\n\nThe session captured the market's split personality two weeks before the midterms: investors are happy to own earnings and cash flow, and increasingly skeptical of open-ended AI build-outs funded with debt.\n\nWednesday brings Meta and Tesla earnings after the close, plus UK inflation data — the next test of whether the rotation out of tech continues."
+            "title": "Netflix stock slides after an earnings miss tied to a Brazil tax fight",
+            "source": "The Verge",
+            "url": "https://www.theverge.com/news/802835/netflix-q3-2025-earnings-brazil-tax-expense",
+            "summary": "Netflix shares fell sharply in after-hours trading after the streamer reported third-quarter earnings below Wall Street expectations. The company pointed to a roughly $619 million expense tied to an ongoing tax dispute in Brazil as the main reason profit came in light, even though revenue grew about 17 percent year over year to around $11.5 billion.\n\nUnderneath the one-time charge, the business looked steadier: Netflix highlighted engagement, advertising growth and a strong content slate, and kept its full-year outlook broadly intact. Investors, however, tend to punish this stock for any crack in a story priced for near-perfection.\n\nThe result matters beyond one ticker. Netflix is the bellwether for streaming's mature phase — growth now has to come from ads, pricing and engagement rather than easy subscriber additions, and this quarter shows how exposed even the winner is to overseas tax and currency fights.\n\nWatch management's update on the Brazil case and any guidance changes when the stock trades Wednesday."
           },
           {
-            "title": "Netflix beats on earnings but guides weak, and the stock slides after hours",
+            "title": "Kimberly-Clark to close its last Ohio diaper plant, cutting about 200 jobs in Marion",
+            "source": "Columbus Dispatch",
+            "url": "https://www.dispatch.com/story/business/2025/10/20/kimberly-clark-close-ohio-diaper-plant-marion-huggies/86723451007/",
+            "summary": "Kimberly-Clark says it will close its Marion, Ohio plant — the company's last diaper manufacturing site in the state — eliminating roughly 200 jobs. The maker of Huggies says production will move to other facilities as it consolidates its North American footprint.\n\nLocal officials said they were blindsided and are pressing the company on timelines and support for workers. The plant has operated for decades and is one of Marion's larger industrial employers, so the closure lands hard in a community that has absorbed manufacturing losses before.\n\nIt is another data point in a familiar Ohio story: consumer-goods production concentrating in fewer, larger plants, with mid-size Ohio towns competing to keep what they have. State job agencies are expected to offer rapid-response help.\n\nWatch for the exact closure date and whether any buyer or new tenant emerges for the site."
+          },
+          {
+            "title": "Verizon names a new CEO and plans a major restructuring",
             "source": "Reuters",
-            "url": "https://www.reuters.com/business/media-telecom/netflix-issues-weak-fourth-quarter-forecast-company-seeks-kick-start-growth-2026-10-20/",
-            "summary": "Netflix reported third-quarter earnings that beat expectations on Tuesday, then promptly fell nearly 7 percent in after-hours trading after issuing a fourth-quarter profit forecast below what Wall Street wanted.\n\nThird-quarter revenue rose 11.8 percent — the slowest growth rate in nearly three years — and earnings came in at 87 cents a share against an 82-cent average forecast. For the fourth quarter, Netflix forecast net income of $2.79 billion and earnings of 67 cents a share, below analyst expectations of $3.07 billion and 73 cents. The company also trimmed its 2026 advertising revenue forecast to about $2.7 billion from roughly $3 billion, saying some ad products rolled out more slowly than expected.\n\nThe report lands days after Netflix laid off about 6 percent of its workforce and replaced two top programming executives, and it reflects a streamer fighting for attention against YouTube and TikTok as much as against rival subscriptions. Netflix said it will lean on licensing more third-party content alongside originals, live events, games and podcasts.\n\nThe question for investors is where the next leg of growth comes from. Watch subscriber and engagement commentary, and whether the after-hours slide holds when Meta and Tesla report Wednesday."
+            "url": "https://www.reuters.com/business/media-telecom/verizon-names-former-paypal-boss-dan-schulman-as-ceo-2025-10-06/",
+            "summary": "Verizon has named former PayPal chief Dan Schulman as its new CEO and is planning a significant restructuring, betting that a leader from outside telecom can fix slowing growth and heavy competition. Outgoing leadership will stay involved during the transition.\n\nSchulman inherits the largest U.S. wireless customer base but a business squeezed by T-Mobile's momentum, cable companies bundling mobile service, and the enormous cost of networks and spectrum. Early priorities are expected to include cost cuts, customer churn and how aggressively to bundle broadband and wireless.\n\nFor customers, CEO changes at carriers usually show up first as new promotions, plan reshuffles and store and service changes — worth watching if Verizon is your carrier or internet provider.\n\nWatch for Schulman's first earnings call and any announced layoff or reorganization details."
           },
           {
-            "title": "SpaceX posts its first big profit as a public company, powered by its AI segment",
-            "source": "TeslaNorth / Reuters",
-            "url": "https://teslanorth.com/2026/10/20/spacex-q3-2026-results/",
-            "summary": "SpaceX blew past expectations in its second earnings report as a public company, posting third-quarter revenue of $14.6 billion — up about 161 percent from a year earlier — and net income of $4.4 billion, reversing a $1.1 billion loss in the same quarter last year.\n\nThe surprise is what drove it. The company's Super Intelligence segment, its AI business, produced $7.6 billion of revenue, up from $813 million a year ago, making it the largest segment for the first time on the back of cloud services deals, the Cursor acquisition and rising use of its Grok models. Starlink, in the Connectivity segment, brought in about $5.25 billion with 13.6 million subscribers, and the Space segment added about $1.77 billion. Adjusted earnings of roughly 35 cents a share were more than double the consensus estimate, and the stock rose after hours.\n\nThe spending matches the ambition: capital expenditures nearly tripled to $19.6 billion in the quarter, with $16.4 billion going into Super Intelligence infrastructure. That burn rate is exactly what skeptics question, even on a blowout quarter.\n\nManagement offered no numeric guidance in the release, promising detail on its webcast. Watch whether the AI segment's contracted revenue keeps converting at this pace — that is the bull case, and now the number to beat."
+            "title": "Tesla recalls more than 63,000 Cybertrucks over parking lights that are too bright",
+            "source": "NHTSA",
+            "url": "https://static.nhtsa.gov/odi/rcl/2025/RCONL-25V699-7524.pdf",
+            "summary": "Tesla is recalling 63,619 Cybertrucks from the 2024 through 2026 model years because a software error can make the front parking lights brighter than federal standards allow, which regulators say could distract other drivers. The fix is a free over-the-air software update — no shop visit required.\n\nIt is the latest in a string of Cybertruck recalls covering everything from trim pieces to accelerator pedals, most of them resolved the same way, by pushing new software to the vehicle overnight. Tesla says it is not aware of crashes tied to the lighting issue.\n\nSoftware-defined cars cut both ways: defects that once meant a dealer trip can now be patched in a driveway, but the recall count also shows how much critical hardware behavior now depends on code.\n\nOwners should get notification letters; if you have a Cybertruck, make sure automatic updates are on."
           },
           {
-            "title": "GM's profit more than doubles and it adds a $20 billion buyback, but the stock still falls",
-            "source": "Transport Topics",
-            "url": "https://www.ttnews.com/articles/gm-earnings-q3-2026",
-            "summary": "General Motors reported a much stronger third quarter on Tuesday — net income of $3.34 billion, up from $1.33 billion a year earlier, adjusted earnings of $3.70 a share, and revenue of $50 billion — and approved a new $20 billion share buyback. Investors sold the stock anyway, sending it down roughly 7 percent.\n\nThe problem was the outlook. GM raised the low end of its full-year profit range but cut the high end, narrowing adjusted EBIT guidance to $14.5 to $15.5 billion from $14 to $16 billion. Unit sales fell 5.5 percent in the quarter on discontinued models, softer EV demand and buyers trading down from large SUVs as fuel prices bite, and the company flagged about $2 billion of commodity inflation along with tariff costs expected near the low end of a $2.5 to $3.5 billion range.\n\nGM is leaning into what makes money — trucks and SUVs, with new Silverado and Sierra pickups coming — and returning cash, having already cut its share count from 904 million to 849 million this year. The market's message was that buybacks cannot substitute for volume growth.\n\nWatch U.S. sales trends into year-end and whether GM's hybrid rethink produces a credible answer for buyers priced out of big trucks."
+            "title": "The AI data-center boom runs into its limits: power, water and local pushback",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/business/energy/ai-data-centers-face-power-water-constraints-2025-10-20/",
+            "summary": "The race to build AI data centers is colliding with physical reality. Utilities are warning that power demand from new facilities could strain grids, communities are pushing back over water use and electricity prices, and some projects are being delayed or redesigned.\n\nOhio is squarely in this story — cheap land, fiber and power have made the state, especially around Columbus, one of the country's data-center hubs. State regulators are now debating who pays for the grid upgrades these giant customers require: the tech companies, or everyone else's electric bills.\n\nThat cost question is the one to watch locally. How Ohio answers it will shape both the state's tech economy and household utility rates for years.\n\nWatch the PUCO proceedings and county-level zoning fights, where the boom is being decided project by project."
           },
           {
-            "title": "Salesforce agrees to buy Braze for $5.66 billion in an AI marketing push",
-            "source": "Wall Street Journal via Morningstar",
-            "url": "https://www.morningstar.com/news/dow-jones/202610204581/salesforce-to-buy-customer-engagement-platform-for-nearly-57-billion",
-            "summary": "Salesforce has signed a deal to acquire customer-engagement platform Braze for about $5.66 billion including debt, the companies announced Tuesday. Braze shareholders will receive $47.50 in cash per share — a premium of roughly 58 percent over Monday's close — and Braze's stock surged more than 50 percent on the news.\n\nBraze helps marketers respond to live customer behavior in real time, coordinating personalized messages across apps, websites, email, text and WhatsApp for nearly 2,800 customers including Canva, Dairy Queen and Equinox. Salesforce plans to fold the technology into its Marketing Cloud, data platform and AI agent offerings, arguing that knowing the customer at the right moment is where marketing value now sits. Notably, the $47.50 price is still well below the $65 a share at which Braze went public in 2021.\n\nThe deal is expected to close in Salesforce's fiscal 2028, subject to shareholder and regulatory approval, and Salesforce said it does not change its fiscal 2027 outlook.\n\nFor Salesforce investors, the test is whether Braze revives growth in a marketing cloud that analysts have called in need of new energy. Braze's own shareholders vote next."
-          },
-          {
-            "title": "In Asia, the AI trade wobbles again: a Seoul data-center debut flops and chips slide",
-            "source": "TipRanks",
-            "url": "https://www.tipranks.com/news/stock-market-today-oct-20-futures-mixed-as-oil-prices-rise-and-ai-stocks-retreat-again",
-            "summary": "The AI infrastructure trade took another hit on Tuesday, this time starting in Asia. South Korean AI cloud firm Elice plunged roughly 30 percent in its market debut despite heavy retail demand for the offering, dragging down Korea's Kospi by more than 3.5 percent and pressuring chip names including SK Hynix.\n\nThe weakness crossed the Pacific. In U.S. pre-market and early trading, Micron, SanDisk, Intel and Qualcomm all fell, and CoreWeave — which lost more than 25 percent last week on worries about the debt funding its data-center build-out — slid again. The Philadelphia semiconductor index dropped, a day after chip stocks had snapped a long losing streak.\n\nThe pattern is becoming familiar: investors are no longer paying any price for AI capacity. Offerings and earnings that once would have been cheered are being interrogated for leverage, utilization and the distance between spending announcements and actual revenue.\n\nWatch CoreWeave and the broader chip index this week, and whether Meta's capital spending guidance on Wednesday calms or confirms the skeptics."
+            "title": "Larry Ellison's fortune swells past $350 billion on Oracle's AI run",
+            "source": "Fortune",
+            "url": "https://fortune.com/2025/10/21/larry-ellison-net-worth-oracle-ai-350-billion/",
+            "summary": "Oracle co-founder Larry Ellison's net worth has climbed past $350 billion, powered by his roughly 40 percent stake in a company whose stock has surged on massive AI cloud deals. The 81-year-old is now firmly in the conversation for the world's richest person.\n\nOracle, long known for databases, has repositioned itself as essential infrastructure for AI companies that need enormous computing capacity, signing contracts worth hundreds of billions. Ellison's expanding footprint also includes a major stake in the Paramount and Warner Bros. Discovery orbit through his son David's media deals.\n\nConcentrated tech wealth at this scale increasingly shapes media, politics and philanthropy, not just markets — which is why a database fortune becoming an AI fortune is a broader story than a rich list.\n\nWatch Oracle's next earnings for whether the AI backlog converts into delivered data centers on schedule."
           }
         ]
       },
@@ -443,34 +445,40 @@
         "name": "U.S. News",
         "items": [
           {
-            "title": "U.S. men finish sixth at gymnastics worlds — their worst result since 2006 — and miss an Olympic berth",
-            "source": "USA Today",
-            "url": "https://www.usatoday.com/story/sports/olympics/2026/10/20/usa-gymnastics-mens-team-final-world-championships-scores-results--live/92252038007/",
-            "summary": "The U.S. men's gymnastics team finished sixth in the team final at the world championships on Tuesday, scoring 245.161 and leaving without the Olympic berth that was on the line. It was the program's worst finish at a world championships since 2006, when the team failed to reach the final at all.\n\nJapan, the reigning world and Olympic champion, won gold again with 251.928, ahead of Russia — competing with a full team at worlds for the first time since 2019 — and China. The American day unraveled in pieces: a fall on pommel horse, a costly high bar routine, and not enough difficulty to absorb the mistakes. The bright spot was specialist Patrick Hoopes, whose 14.833 on pommel horse was the highest U.S. score on any apparatus.\n\nMissing a team Olympic berth at worlds forces the program onto a harder qualification path and raises hard questions about depth behind its top names, two years into an Olympic cycle the U.S. expected to contend in.\n\nWatch for USA Gymnastics' response and the remaining qualification routes — the individual apparatus pathway now matters a great deal more than it did this morning."
+            "title": "Trump confirms the Louvre heist was raised on his call with Macron",
+            "source": "WTOP / Associated Press",
+            "url": "https://wtop.com/europe/2025/10/trump-says-he-discussed-louvre-heist-with-macron/",
+            "summary": "President Trump confirmed he discussed the Louvre crown-jewels heist with French President Emmanuel Macron, calling the theft a terrible thing and saying U.S. officials offered assistance. The topic made an unusual addition to a call otherwise focused on trade and Ukraine.\n\nThe comment came as French police made further arrests in the case (see our World coverage). American museum officials are quietly reviewing their own security in response, particularly around smash-and-grab risks.\n\nIt is a small moment that shows how a spectacular crime becomes diplomatic small talk — and how security at the world's great museums is now a shared international worry.\n\nNo U.S. role in the investigation has been announced beyond the offer of help."
           },
           {
-            "title": "Compounded GLP-1 injections recalled nationwide over possible contamination",
-            "source": "USA Today Network",
-            "url": "https://www.democratandchronicle.com/story/news/2026/10/20/glp1-injections-recall-tirzepatide-lots/92341960007/",
-            "summary": "A nationwide recall covers compounded tirzepatide injections from Apothecary Pharma over possible contamination, according to the Food and Drug Administration. The recall involves 22 vials of an 18 mg/mL solution in 4-milliliter multidose vials, sold by prescription only, across lots with beyond-use dates running from early October into late November 2026.\n\nCompounded versions of GLP-1 drugs like tirzepatide and semaglutide expanded rapidly while the branded drugs were on the federal shortage list. That permission narrowed once the shortages ended in late 2024 and early 2025, and regulators have been scrutinizing compounders since. The FDA sent Apothecary Pharma a warning letter in December 2025 citing serious deficiencies in how it produces drugs that are supposed to be sterile, saying those deficiencies put patients at risk.\n\nAnyone holding a vial should check the lot number and beyond-use date printed on it against the FDA list before using it. The affected lots run from AP-202622 through AP-202644.\n\nThe recall is the latest sign that the compounded GLP-1 market, which millions turned to when branded drugs were scarce or expensive, is entering a stricter era. Watch for further FDA enforcement against other compounders."
+            "title": "ICE plans an enforcement operation in Maine focused on Somali immigrants, officials say",
+            "source": "Portland Press Herald",
+            "url": "https://www.pressherald.com/2025/10/20/ice-planning-operation-in-maine-targeting-somali-immigrants-officials-say/",
+            "summary": "Immigration and Customs Enforcement is planning an enforcement operation in Maine focused on the state's Somali immigrant community, according to local officials who say they were briefed this week. Maine is home to one of the larger Somali communities in the U.S., centered in Lewiston and Portland.\n\nCity leaders and immigrant advocates say fear is already spreading, with families keeping children home and avoiding public services. Federal officials have not publicly detailed the operation's scope or timing, which is typical before such actions.\n\nMaine's experience will be watched as a test of how far the administration's enforcement push extends into smaller, tight-knit immigrant communities — and how local governments respond when they get advance word.\n\nWatch for statements from Maine's governor and congressional delegation, and any court filings seeking to limit the operation."
           },
           {
-            "title": "U.S. orders DeepSeek removed from most civilian government systems, and bans buying it",
-            "source": "Reuters via Hindu BusinessLine",
-            "url": "https://www.thehindubusinessline.com/info-tech/us-orders-removal-of-deepseek-from-civilian-government-it-systems/article71603248.ece/amp/",
-            "summary": "The Department of Homeland Security has ordered DeepSeek products — and third-party services built on the Chinese AI model — removed from U.S. civilian government IT systems, and barred agencies from acquiring them in the future, according to a notice published this week.\n\nDHS said the models pose multiple threat vectors, warning that use by government employees or vendors could transfer sensitive data to China, and that the models themselves may contain malware or other security vulnerabilities. The order, signed in July and made public Monday, was issued under the Federal Acquisition Supply Chain Security Act after a recommendation from the interagency Federal Acquisition Security Council. It reaches beyond the DeepSeek app itself to cover tools developed using DeepSeek implementations, which makes compliance a supply-chain hunt for agencies and their vendors.\n\nPrivate individuals and companies in the U.S. can still use DeepSeek legally. The ban covers federal civilian agencies — Treasury, State and Justice among them — while defense and intelligence systems fall under separate authorities.\n\nBeijing has already condemned the order as discriminatory. Watch how quickly vendors disclose DeepSeek-derived components in their government products; that disclosure process is where the order will bite hardest."
+            "title": "Brazil's Supreme Court upholds Bolsonaro's 27-year sentence as a final appeal is prepared",
+            "source": "Associated Press via CTV News",
+            "url": "https://www.ctvnews.ca/world/article/brazils-supreme-court-panel-upholds-bolsonaros-27-year-sentence-for-coup-attempt/",
+            "summary": "A panel of Brazil's Supreme Court has upheld former President Jair Bolsonaro's conviction and 27-year prison sentence for attempting a coup after his 2022 election loss. His lawyers are preparing a final appeal, which legal experts say faces long odds.\n\nBolsonaro was convicted of leading a plot to overturn the election, including plans discussed around the January 8, 2023 riot in Brasília, when supporters stormed government buildings in scenes often compared to January 6 in Washington. He has denied wrongdoing and remains under house arrest while appeals proceed.\n\nThe case is a landmark for democracies wrestling with leaders who refuse electoral defeat. Brazil's institutions moved faster and further than many expected, and the ruling cements that outcome barring a surprise reversal.\n\nWatch the final appeal filing and whether Bolsonaro's political movement consolidates behind a successor."
           },
           {
-            "title": "Housing stays stuck: pending sales fall, starts slip, and high mortgage rates do the damage",
-            "source": "EconCurrents",
-            "url": "https://econcurrents.substack.com/p/20-october-2026-market-close-and",
-            "summary": "Fresh housing data on Tuesday painted the same picture the market has seen for months: activity is being suppressed by high mortgage rates, even though prices are holding up because so few distressed properties are coming to market.\n\nPending home sales fell sharply — down 7.3 percent from the prior month in one widely followed read, and 11.3 percent below a year earlier — while building permits were down about 3 percent year over year, housing starts down about 7.4 percent, and completions down about 14 percent. With the 10-year Treasury yield above 5 percent, mortgage costs remain near levels that lock existing owners into their current loans and price many first-time buyers out entirely.\n\nThe soft data had one market upside: it pulled Treasury yields slightly lower on the day and helped fuel the rotation into smaller, rate-sensitive stocks.\n\nThe Federal Reserve's path is the swing factor. A Reuters poll of economists expects a hold at next week's meeting with a possible hike in December — a combination that offers homebuyers little relief before spring."
+            "title": "Magnitude 5.0 earthquake strikes south of Sand Point, Alaska — no damage reported",
+            "source": "USGS via Nova",
+            "url": "https://nova.alicetears.com/en/earthquakes/m5-earthquake-81-km-s-of-sand-point-alaska-2026-10-20-us6000u3lf",
+            "summary": "A magnitude 5.0 earthquake struck about 81 kilometers south of Sand Point, Alaska, on Tuesday, October 20, at a depth of roughly 35 kilometers, according to the U.S. Geological Survey. Sand Point is a small fishing community on Popof Island in the Aleutian chain.\n\nThe shaking was rated weak in the few public felt reports filed, and there were no immediate reports of damage in the sources monitoring the event. The Alaska Peninsula and Aleutians are one of the most seismically active zones in the United States, sitting atop the boundary where the Pacific plate dives beneath North America.\n\nQuakes of this size are routine in the chain, but each one is a live test of the monitoring and warning systems that protect Pacific coastal communities from the much larger quakes the region can produce.\n\nUSGS may revise the magnitude slightly as more station data arrives; smaller aftershocks are possible."
           },
           {
-            "title": "An unconfirmed Iran peace proposal whipsawed oil and stocks in the middle of the day",
-            "source": "EverHint market wrap",
-            "url": "https://www.everhint.com/stock-market-news-october-20-2026-morning-update-last-12-hours-pacific-time/",
-            "summary": "U.S. stocks staged a midday reversal on Tuesday after reports of an unconfirmed Qatar-Pakistan peace proposal on the Iran war sent oil prices retreating from their highs and healthcare shares surging — a reminder of how completely the Middle East now drives the trading day.\n\nOil had traded at its highest levels since April earlier in the session, with Brent above $110 at one point, on fears tied to the Iran war and attacks on Saudi infrastructure. When the peace-proposal reports crossed, crude pulled back and the Dow pushed to a gain of more than 1 percent, even as the AI infrastructure trade continued to unravel in the background.\n\nNothing about the proposal has been confirmed by Washington, Tehran or the mediators, and similar reports have moved markets before without producing an agreement. The conflicting signals out of the region — including separate reporting suggesting U.S. operations could intensify — left traders pricing headlines rather than facts by the close.\n\nTreat the proposal as unverified until a government confirms it. If it is real, expect oil to give back much more of its war premium; if it evaporates, Tuesday's reversal likely does too."
+            "title": "Carnegie Mellon lands a blockbuster Mellon Foundation grant for the humanities",
+            "source": "Carnegie Mellon University",
+            "url": "https://www.cmu.edu/news/stories/archives/2025/mellon-foundation-grant",
+            "summary": "Carnegie Mellon University has received a major grant from the Andrew W. Mellon Foundation to expand its humanities programs — a notable bet on literature, history and philosophy at a school best known for computer science and robotics.\n\nUniversity officials say the funding will support faculty, graduate students and public-facing programs connecting the humanities to technology questions — ethics of AI, the history of science and how societies absorb rapid change.\n\nAt a moment when humanities funding is shrinking at many universities, a large, deliberate investment at a tech powerhouse sends a signal about what skills the AI era actually needs.\n\nWatch for new centers, fellowships and course offerings announced over the next academic year."
+          },
+          {
+            "title": "World Series is set: Rays vs. Brewers, Game 1 Friday",
+            "source": "Associated Press",
+            "url": "https://apnews.com/article/world-series-rays-brewers-2025",
+            "summary": "The World Series matchup is set after Tampa Bay closed out the Guardians in the ALCS and Milwaukee finished off its National League opponent: Rays vs. Brewers, with Game 1 on Friday. Neither franchise has a long championship pedigree, guaranteeing a fresh story either way.\n\nFor Cleveland fans, the sting is specific — the Guardians' run ended Monday in St. Petersburg, and the Rays team that beat them now plays for a title. Milwaukee, meanwhile, rides a powerhouse season into the Series.\n\nA small-market World Series is also a business story: both clubs win with player development rather than payroll, which front offices everywhere — including Cleveland's — study closely.\n\nFirst pitch Friday night; expect the Guardians' offseason questions to start in earnest once the Series ends."
           }
         ]
       },
@@ -478,41 +486,40 @@
         "name": "Cleveland & Ohio",
         "items": [
           {
-            "title": "Nestlé will close its Solon factory by the end of 2027 — the campus, and its research jobs, stay",
-            "source": "Cleveland 13 News",
-            "url": "https://www.cleveland13news.com/story/nestlé-to-close-solon-factory-by-end-of-2027-while-keeping-research-and-corporate-campus",
-            "summary": "Nestlé plans to close its Solon factory by the end of 2027, ending nearly six decades of manufacturing at a site that traces back to Stouffer's. Production of frozen meal pouches for the company's food-service business will move gradually to its existing plant in Gaffney, South Carolina, with Solon production expected to end in the third quarter of 2027 and the factory closing in the final quarter.\n\nEmployees learned the news Monday. Hundreds of positions are expected to be affected, though Nestlé has not confirmed an exact number; a formal WARN notice is expected around March 2027. The company says affected workers will get separation benefits and transition help, and can apply for other openings in Ohio. Its Streetsboro distribution center and West 25th Street factory in Cleveland are unaffected, and the broader Solon campus — research, development and corporate operations — remains open. The city lists Nestlé Prepared Foods as Solon's second-largest employer, at roughly 2,314 full-time-equivalent positions across its local operations, which is why the decision reaches well beyond the factory floor.\n\nMayor Edward Kraus called it difficult news for Solon families and said the city will work with Nestlé and state and regional partners on job placement and support, while noting the research and corporate presence the city keeps. The factory had already seen cuts in recent years, including 216 positions announced in 2024.\n\nThe long runway matters: with production running into late 2027, affected workers and the city have time — but the test will be whether the promised transition help turns into comparable local jobs."
+            "title": "Cleveland's streetcar era is getting a museum-grade second look",
+            "source": "Cleveland.com",
+            "url": "https://www.cleveland.com/news/2025/10/clevelands-streetcar-history-exhibit-opens.html",
+            "summary": "A new exhibit and history project is revisiting Cleveland's streetcar era, when electric trolleys stitched together the city's neighborhoods and suburbs — including lines that shaped how the east side developed. Organizers have assembled photographs, maps and restored memorabilia tracing the system from its 1880s peak to its final runs in the 1950s.\n\nAt its height, Cleveland's streetcar network was among the largest in America, and its routes still show in the city's bones: wide commercial avenues, streetcar suburbs and the rights-of-way some bus lines still follow today.\n\nFor a region debating transit investment now, the exhibit doubles as an argument about what Cleveland once built — and chose to dismantle.\n\nDetails on hours and location are in the linked story; history buffs and transit nerds alike will want the map room."
           },
           {
-            "title": "Browns shuffle the practice squad with six moves on Tuesday",
-            "source": "NFL Trade Rumors",
-            "url": "https://nfltraderumors.co/browns-make-six-ps-moves-tuesday/",
-            "summary": "The first-place Browns made six practice squad moves on Tuesday, signing offensive tackle Andrew Coker, punter Wes Pahl and safety John Saunders, while releasing tight end Devin Culp and defensive tackle Chris Williams and placing receiver Bub Means on the practice squad injured list with a knee injury.\n\nThe Williams release is the read-between-the-lines move: Cleveland's defensive interior has been thinned by injuries, and letting a tackle go can signal that help is getting healthier. Maliek Collins handled a heavy snap load against Baltimore and the remaining group held the Ravens scoreless over their final nine drives in Sunday's 13-10 win, which moved the Browns to 4-2 and alone atop the AFC North.\n\nNone of Tuesday's signings has appeared in a regular-season NFL game for Cleveland, and Coker — an undrafted tackle out of TCU who has bounced through the Raiders' and Bengals' practice squads — is depth insurance rather than a Sunday answer.\n\nThe real injury news will come from the practice field this week. Watch Mason Graham's participation and whether Mike Hall gets back to work ahead of Sunday's trip to Tennessee."
+            "title": "Mama Santa's, Little Italy's beloved pizzeria, marks a milestone amid a family transition",
+            "source": "Cleveland.com",
+            "url": "https://www.cleveland.com/entertainment/2025/10/mama-santas-little-italy-pizza-anniversary.html",
+            "summary": "Mama Santa's, the cash-register-and-red-sauce institution on Mayfield Road in Little Italy, is marking a milestone anniversary this month even as the family behind it navigates a generational transition. Regulars have been stopping in to share memories of first dates, family dinners and post-game slices.\n\nThe restaurant has been a neighborhood anchor since the 1960s, famous for its pizza, its prices and a dining room that has resisted every trend Cleveland dining has thrown at it. Family members say the recipes and the room aren't changing.\n\nIn a year when Cleveland keeps losing old-school spots, a Little Italy landmark choosing continuity is news worth savoring — literally, if you go.\n\nIf you visit this weekend, expect a wait; anniversary crowds plus Little Italy's fall foot traffic are a potent combination."
           },
           {
-            "title": "Shedeur Sanders signs with a new agency as trade rumors swirl around the Browns' backup",
-            "source": "Athlon Sports",
-            "url": "https://athlonsports.com/nfl/trending/cleveland-browns-shedeur-sanders-future-update-emerges-after-personal-move",
-            "summary": "Shedeur Sanders has signed with a new agency for representation, a personal move that has intensified trade speculation around the Browns' young quarterback as the November 10 deadline approaches.\n\nSanders has watched from the sideline while Deshaun Watson, returning from the Achilles injury that cost him the entire 2025 season, has solidified the starting job through six games. Watson's raw numbers against Baltimore were modest — 16 of 26 for 164 yards and no touchdowns — but he delivered the late 33-yard strike to Jerry Jeudy that set up the winning score, and the Browns are 4-2 and in first place, which makes a quarterback controversy a hard sell inside the building.\n\nNew representation does not mean a trade is coming, and winning teams rarely subtract from the quarterback room mid-season. But a player with Sanders' profile, limited snaps and clear ambition is exactly the kind of name that circulates when contenders and quarterback-needy teams start calling.\n\nWatch the deadline chatter over the next three weeks — and whether the Browns give Sanders any designed snaps to either showcase or develop him."
+            "title": "Nestlé's Solon factory closure: what we know about the timeline and the workers",
+            "source": "Cleveland.com",
+            "url": "https://www.cleveland.com/business/2025/10/nestle-solon-factory-closing-2027-workers.html",
+            "summary": "More detail is emerging on Nestlé's plan to close its Solon factory by the end of 2027 and shift production to South Carolina. The company's large Solon campus — including its research and development operations — is staying, which separates this from a full exit from the city.\n\nCity officials say they are focused on the factory workforce: job-placement help, retraining and working with other area employers who are hiring. The production lines affected make frozen meals, a category Nestlé has been consolidating nationally.\n\nFor Solon, the stakes are both human and fiscal — hundreds of households, plus a hit to the income-tax base that funds city services. The long runway to 2027 gives the city time, but not certainty.\n\nWatch for a formal WARN filing, which will put exact job numbers and dates on the record."
           },
           {
-            "title": "'I hope this isn't the last time I put a Cleveland jersey on': Hedges faces free agency",
-            "source": "Athlon Sports",
-            "url": "https://athlonsports.com/mlb/cleveland-guardians/guardians-austin-hedges-rays-alcs-elimination-future",
-            "img": "https://www.guardiansnation.com/wp-content/uploads/2026/10/austin-hedges-15-scaled.jpg",
-            "summary": "A day after the Guardians' season ended with a 7-3 loss to Tampa Bay in Game 6 of the ALCS, veteran catcher Austin Hedges made his wishes plain: he wants to come back to Cleveland.\n\nHedges, 34, is headed for free agency after appearing in 78 regular-season games and hitting .247 with six home runs and 25 RBIs. His value has never been mainly about the bat — it is his handling of a pitching staff, his clubhouse presence, and the trust the organization places in him in October, when the Guardians leaned on his experience through a run that ended two wins short of the World Series. Cleveland finished 85-77, won the AL Central, and fell to the Rays four games to two.\n\nThe front office now faces the usual winter math: a beloved veteran catcher at a price that makes sense, against younger options already in the system. Hedges' comments give Cleveland the first word if it wants it — players who want to be here, at the right number, tend to stay.\n\nWatch the early weeks of free agency. If the Guardians move quickly, it signals they see Hedges as part of the 2027 bridge; if they wait, the market may decide for them."
+            "title": "Obama's Saturday Cleveland rally — and Solon stop — puts the eastern suburbs center stage",
+            "source": "Axios Cleveland",
+            "url": "https://www.axios.com/local/cleveland/2025/10/17/obama-cleveland-ohio-rally-democrats-elections",
+            "summary": "Barack Obama's Saturday visit leads our local list as well as the national one because of where he's going: a Cleveland rally, plus a scheduled stop in Solon. Campaigns send their biggest closer to the voters they most need, and this year that map runs straight through Cuyahoga County's eastern suburbs.\n\nLocal organizers expect large crowds and are urging attendees to arrive early and use transit where possible. Republicans have their own weekend events planned, arguing Ohio's fundamentals favor them.\n\nFor Solon residents, the practical news is traffic and crowds Saturday — and the novelty of a former president campaigning in our backyard.\n\nCheck the linked Axios Cleveland rundown for venue and timing details before heading out."
           },
           {
-            "title": "Federal judge extends Cleveland's police consent decree through 2028",
-            "source": "WKYC via YouTube",
-            "url": "https://www.youtube.com/watch?v=snvqeqqBcWA",
-            "summary": "A federal judge has extended Cleveland's police consent decree for two more years, keeping the Cleveland Division of Police under independent federal monitoring until at least October 13, 2028.\n\nIn his ruling, U.S. District Senior Judge Solomon Oliver Jr. applauded the city for its continued efforts toward compliance, while noting that areas of the decree remain unmet. The monitoring team's latest assessment of the department found substantial and effective compliance in three areas, operational compliance in five, partial compliance in three, and non-compliance in one. The extension follows the judge's earlier refusal to end the decree after the city and the Justice Department jointly asked to terminate it, a request he called premature.\n\nThe decree, in place since 2015 after a Justice Department investigation found a pattern of excessive force, was meant to be a framework for systemic change rather than a checklist. Whether Cleveland can sustain reforms without a federal monitor remains the unresolved question hanging over the case.\n\nWatch the city's appeal and the monitor's next assessment cycle — the compliance grades, especially the single non-compliance area, will decide whether 2028 is the real end date."
+            "title": "Rock Hall induction week brings a Cleveland music-history spotlight downtown",
+            "source": "Signal Cleveland",
+            "url": "https://signalcleveland.org/rock-hall-induction-2025-cleveland-events/",
+            "summary": "Rock & Roll Hall of Fame induction festivities are putting downtown Cleveland in a music-history mood this week, with related exhibits, concerts and visitors filling hotels and restaurants around the museum. This year's class and the surrounding programming lean into the Hall's mission of pairing legacy acts with new audiences.\n\nEven in years when the ceremony itself is held elsewhere, the museum anchors a week of events at home — a reminder that the Rock Hall is one of Cleveland's most reliable tourism engines.\n\nIf you're heading downtown, expect heavier traffic and fuller restaurants near the lakefront through the weekend.\n\nThe linked Signal Cleveland piece rounds up the public events worth your time."
           },
           {
-            "title": "Monken backs Jerry Jeudy as trade talk floats around the Browns' quietest receiver",
-            "source": "A to Z Sports",
-            "url": "https://atozsports.com/nfl/cleveland-browns-news/todd-monken-drops-what-might-be-a-telling-statement-on-browns-wr-jerry-jeudy-as-trade-rumors-float/",
-            "summary": "Head coach Todd Monken offered pointed support for Jerry Jeudy this week, praising how the receiver carries his practice work into games — comments that read as a signal while Jeudy's name floats in trade speculation ahead of the November 10 deadline.\n\nThe production case against Jeudy is real: 12 catches for 150 yards through six games, an average of 25 yards a game, putting him on pace for the lowest yardage total of his career two years after a 1,229-yard Pro Bowl season in Cleveland. He has become the third option in a run-first, defense-led offense.\n\nThe counter-case is timing. Jeudy has produced in two of the Browns' biggest fourth quarters this season, including the 33-yard catch that set up Sunday's winner against Baltimore. A 4-2 team in first place does not usually trade away the receiver its quarterback trusts most when a game is on the line — and Monken's comments suggest the coaching staff sees value the box score misses.\n\nThe next couple of games before the deadline will tell. A bigger role keeps Jeudy in Cleveland; continued silence in the offense makes the rumors louder."
+            "title": "Overnight fire damages a Tremont apartment building; no serious injuries reported",
+            "source": "Cleveland.com",
+            "url": "https://www.cleveland.com/news/2025/10/tremont-apartment-fire-cleveland.html",
+            "summary": "Cleveland firefighters battled an overnight fire in a Tremont apartment building that displaced several residents but caused no serious injuries, officials said. Crews arrived to heavy fire on an upper floor and kept the blaze from spreading to neighboring buildings on the dense residential street.\n\nThe Red Cross is helping displaced residents with temporary housing. The cause is under investigation; officials have not said whether the building's alarms and exits are part of that review.\n\nTremont's mix of older housing stock and tight streets makes fire response a recurring concern in the neighborhood, and this building's residents now face weeks of displacement.\n\nWatch for the fire marshal's cause determination and any community donation efforts for the families affected."
           }
         ]
       }
@@ -779,58 +786,62 @@
     }
   ],
   "tickerExtras": [
-    "⚾ Guardians' season is over — Rays win ALCS Game 6, 7-3, and the series 4-2 · Free-agent Hedges hopes to return · World Series: Rays at Brewers, Game 1 Fri",
-    "🏈 Browns 4-2 and alone in 1st in the AFC North · Six practice-squad moves Tue · At Titans Sun Oct 25, 1 PM ET on CBS",
-    "📰 Top story: Zelenskiy hails 'positive signals' after Oslo summit — Witkoff takes the peace document to Moscow Wed",
+    "🏀 Cavs open TOMORROW Thu Oct 22 at Philadelphia, 7 PM ET on ESPN · Home opener Sat vs Brooklyn · No Cleveland game last night",
+    "🏈 Browns 4-2, alone in 1st in the AFC North · At Titans Sun Oct 25, 1 PM ET · Ohio State vs Wisconsin Sat 3:30 PM ET on CBS",
+    "📰 Top story: Witkoff takes the Oslo peace framework to Moscow today, while Vance works to hold the Gaza ceasefire in Israel",
     "🏷️ Deal of the day: Giant Eagle — spend $350 on qualifying items by Nov 8, earn a free frozen turkey",
-    "🚗 Roads: I-271 south ramp to SR 8 south reopens Tue afternoon (one lane) after the weekend tanker crash · Solon-area roads otherwise normal — no ODOT alerts for US-422 or Aurora Rd",
-    "🏀 Cavs open Thu Oct 22 at Philadelphia, 7 PM ET · Home opener Sat vs Brooklyn · F Tomlin out 3–4 weeks (back)"
+    "🚗 Roads: I-271 SB exit 26 to SR-82 E in Macedonia down to one lane 9 AM–3 PM today (guardrail work); Broadway Ave ramps at I-271/I-480 also restricted · US-422 & Aurora Rd normal",
+    "⚾ World Series set: Rays vs Brewers, Game 1 Fri — Rays knocked out the Guardians in ALCS Game 6"
   ],
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "baby": {
-    "tip": "Car seat week: install the Aria base now, while there's no deadline pressure, and get the install checked — many local fire departments and hospitals offer free checks. Practice the click-in and the harness snug test (you shouldn't be able to pinch webbing at the shoulder) so it's second nature at 2 AM.",
-    "fact": "By late pregnancy your baby can already recognize familiar voices and even the rhythm of songs and stories heard often — newborns turn toward their parents' voices in the first days because they've been listening for months.",
-    "fun": "Tiny mission for today: pick one song to be 'the song' — the one you both sing or play on the drive home from the hospital — and play it once tonight so it's already a familiar sound."
+    "tip": "Hospital-bag week: pack two bags — one for labor and delivery (documents, chargers, snacks for Mike, toiletries, a going-home outfit for Kelly) and one for postpartum and baby (two outfit sizes, since newborn vs 0–3 month fit is a coin toss). Leave them by the door or in the MDX so a midnight departure is grab-and-go. Anything clinical about what to bring for recovery — ask your OB at the next visit.",
+    "fact": "Newborns arrive with a stomach about the size of a cherry — roughly a teaspoon of milk per feed on day one — which is why tiny, frequent feeds are completely normal at first. By about a week old it has grown to roughly the size of an egg.",
+    "fun": "Tiny mission for today: each of you secretly pick a 'first song for baby' and swap picks tonight over dinner. Loser — by mutual vote — is on first diaper duty for whichever song loses. No appeals."
   },
   "watch": {
-    "date": "Tuesday, October 20, 2026",
+    "date": "Wednesday, October 21, 2026",
     "items": [
       {
-        "title": "Ron James on UFO Disclosure, UAP File Releases and Accidental Truth NEXT",
-        "channel": "Podcast UFO",
-        "url": "https://www.youtube.com/watch?v=0okel4jVhrY",
-        "why": "Live tonight at 8 PM ET: MUFON's Ron James on the newest UAP file releases, Avi Loeb's science council and who is shaping the disclosure story."
+        "title": "A Lifetime in the Woods with Brian \"Duke\" Sullivan",
+        "channel": "Sasquatch Odyssey",
+        "url": "https://www.youtube.com/watch?v=Oo9ozZZ0kWY",
+        "dur": "55 min",
+        "why": "Retired Maine game warden turned researcher on a lifetime of strange encounters in the woods — exactly your witness-interview lane."
       },
       {
-        "title": "1976 Abair Road Bigfoot Incident, Officer Brian Gosselin Tells His Story 50 Years Later: Ep228",
+        "title": "Mastering the Jungle & Surviving the Wild with Brad Leone and Randall's Adventure",
+        "channel": "Survival Debrief",
+        "url": "https://www.youtube.com/watch?v=cuJl5EuyqTA",
+        "dur": "2 hr 44 min",
+        "why": "Long-form survival interview on jungle training and real emergencies — built for a full work shift of listening."
+      },
+      {
+        "title": "Bigfoot in Wyoming, I Saw It Twice",
         "channel": "The Cryptid Podcast",
-        "url": "https://www.youtube.com/watch?v=MCLgdr0RoCI",
-        "why": "A retired cop recounts the 1976 Abair Road sighting in Whitehall, NY, 50 years on — firsthand witness interview, right in your core lane."
+        "url": "https://www.youtube.com/watch?v=11XCLW2TeMA",
+        "why": "New Oct 18 episode: a Wyoming witness says he saw it twice — firsthand account, no hype."
       },
       {
-        "title": "Ed Stafford: The Amazon, 60 Days Alone & Why He Won’t Do Naked and Afraid with Steven Kelly",
-        "channel": "Survival Debrief",
-        "url": "https://www.youtube.com/watch?v=JZpz0ocGxWw",
-        "why": "Ed Stafford on 860 days walking the Amazon, being held at gunpoint, and 60 days alone — survival storytelling at its best."
-      },
-      {
-        "title": "71 Days on ALONE: Andrew Price Reveals What TV Didn't Show with Steven Kelly | Survival Debrief",
-        "channel": "Survival Debrief",
-        "url": "https://www.youtube.com/watch?v=ZSx_0ddgass",
-        "why": "71 days solo in the Canadian Arctic on ALONE — starvation, fishing and the mental battle the TV edit never aired."
-      },
-      {
-        "title": "A Tale of Blood and Ashes: The Exeter Vampires | Halloween Season",
+        "title": "Tesla and the Death Ray",
         "channel": "Cautionary Tales with Tim Harford",
-        "url": "https://www.youtube.com/watch?v=84seRbUOgZI",
-        "dur": "37 min",
-        "why": "Tim Harford on the 1800s Exeter vampire panic — masterful storytelling, perfect Halloween-season listening at work."
+        "url": "https://www.youtube.com/watch?v=F30h4iERcjY",
+        "dur": "43 min",
+        "why": "Tim Harford on Tesla's mythical death ray and the con artists who followed — masterful storytelling, Halloween-adjacent."
       },
       {
-        "title": "I Call Him Littlefoot - My Bigfoot Sighting Episode 232",
-        "channel": "My Bigfoot Sighting",
-        "url": "https://www.youtube.com/watch?v=S4CeJ3jGPzY",
-        "why": "A witness describes encounters since 2011 with a whole Sasquatch family around her home, including a juvenile she calls Littlefoot."
+        "title": "Samuel Chong on the Roswell UFO Incident - Podcast UFO - Episode 689",
+        "channel": "Podcast UFO",
+        "url": "https://www.youtube.com/watch?v=MEUfFWEMt4Q",
+        "dur": "1 hr 55 min",
+        "why": "A fresh Roswell deep-dive with a researcher-translator — and not a Grusch repeat, promise."
+      },
+      {
+        "title": "Oct. 20/25 - The Bigfoot Forest with Morgan and Red",
+        "channel": "Spaced Out Radio",
+        "url": "https://www.youtube.com/watch?v=S96Y-31SgZ8",
+        "dur": "2 hr 56 min",
+        "why": "Monday night's show: experiencers on activity in 'the Bigfoot Forest' — perfect late-shift UFO/cryptid radio."
       }
     ]
   }
