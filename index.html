@@ -653,6 +653,44 @@
           </ul>
           <p class="meta" style="margin-top:8px">Season windows shown are for the 2026–2027 season — confirm current guidance on the calls.</p>
         </section>
+        <section class="card" id="s-pedcall">
+          <div class="cardhead"><h2>📞 Pediatrician Call — What to Ask</h2><span class="sub">Dr. Svetlana Pomeranets · Solon Family Health Center</span></div>
+          <div class="rsvflu"><b>Call first:</b> <a href="tel:+12164445437" style="color:#5E6AD2;font-weight:650">216-444-5437</a> — Cleveland Clinic Children's</div>
+          <div class="rsvh">Opener script</div>
+          <p class="pedscript">“Hi, we’re expecting a baby and we’re choosing a pediatrician. We’d like to ask about Dr. Svetlana Pomeranets at Solon Family Health Center. I have three quick questions — about newborn acceptance, delivery hospital rounding, and adding the baby to our insurance.”</p>
+          <div class="rsvh">Questions to confirm</div>
+          <div class="pedq"><div class="pedqh">1. Newborn acceptance <span class="pedunv">UNVERIFIED</span></div><p class="pedqp">Is Dr. Pomeranets accepting newborns as new patients? If so, how do we register the baby before delivery, and when should the first visit be scheduled after birth?</p></div>
+          <div class="pedq"><div class="pedqh">2. Delivery hospital rounding <span class="pedunv">UNVERIFIED</span></div><p class="pedqp">At which hospital does Dr. Pomeranets — or the practice — round on newborns after delivery? If our delivery hospital is different, who sees the baby in the hospital, and how is the first office visit arranged?</p></div>
+          <div class="pedq"><div class="pedqh">3. Insurance add deadline <span class="pedunv">UNVERIFIED</span></div><p class="pedqp">What is the deadline and process for adding the newborn to our insurance so the baby is covered for the first visits? Is there any paperwork the office needs from us?</p></div>
+          <div class="rsvh">Capture the answers</div>
+          <ul class="rsvlist">
+            <li>Pediatrician name</li>
+            <li>Pediatrician phone</li>
+            <li>Hospital name</li>
+            <li>Newborn acceptance</li>
+            <li>Delivery hospital rounding</li>
+            <li>Insurance add deadline</li>
+          </ul>
+          <p class="meta" style="margin-top:8px">Once confirmed on the call, the name, phone, and hospital go in the Baby Profile card above.</p>
+        </section>
+        <section class="card" id="s-pedsay">
+          <div class="cardhead"><h2>🗣️ Pediatrician Call — What to Say</h2><span class="sub">Word-for-word script · Dr. Pomeranets · <a href="tel:+12164445437" style="color:#5E6AD2;font-weight:650">216-444-5437</a></span></div>
+          <div class="rsvh">Opening</div>
+          <p class="pedscript">"Hi, my name is Mike Smiley. My wife Kelly and I are expecting our first baby in early November, and we're looking for a pediatrician. We found Dr. Pomeranets through Cleveland Clinic, and I had a few quick questions if you've got a minute."</p>
+          <div class="rsvh">The questions</div>
+          <ol class="rsvlist">
+            <li>"Is Dr. Pomeranets accepting new newborn patients right now?"</li>
+            <li>"Which hospitals does she visit newborns at — does she do rounds after delivery, or would the hospital's doctor see the baby first and we'd come to her after?"</li>
+            <li>"How soon after we bring the baby home should the first visit be, and how do we book it — do we call from the hospital?"</li>
+            <li>"Is there any paperwork we should take care of now, before the birth, to get set up with the practice?"</li>
+            <li>"What do we need to know about adding the baby to our insurance — is there a deadline or anything you need from us on your end?"</li>
+            <li>"If something comes up at night or on a weekend, how does that work — is there an after-hours nurse line we call?"</li>
+          </ol>
+          <div class="rsvh">If she's not accepting newborns</div>
+          <p class="pedscript">"Okay, no problem — is there anyone else you'd recommend, either in the practice or nearby?"</p>
+          <div class="rsvh">Closing</div>
+          <p class="pedscript">"That's everything I had — appreciate your time. So just to confirm what I heard: [recap the answers]. We'll be in touch when the baby arrives. Thanks again."</p>
+        </section>
 
         <section class="card" id="s-photos">
           <div class="cardhead"><h2>🐶 Photos — Moose &amp; Family</h2><span class="sub" id="photoSub"></span><button class="iconbtn" id="slideshowBtn" type="button">▶ Slideshow</button></div>
@@ -1405,7 +1443,7 @@
     loadAll(true);
   });
   /* ---------- Foldable sections ---------- */
-  var FOLDABLE = ['s-daily','s-brief','s-recipes','s-shop','s-todo','s-cal','s-deals','s-events','s-news','s-baby','s-babyprofile','s-babyrsv','s-photos','s-notes','s-usage','acctHead'];
+  var FOLDABLE = ['s-daily','s-brief','s-recipes','s-shop','s-todo','s-cal','s-deals','s-events','s-news','s-baby','s-babyprofile','s-babyrsv','s-pedcall','s-pedsay','s-photos','s-notes','s-usage','acctHead'];
   function preservedFolded(existing){ /* Cycle 57 (N5): ids saveFolded does not own (e.g. s-savedrecipes) */
     if(!Array.isArray(existing)) return [];
     return existing.filter(function(id){ return FOLDABLE.indexOf(id) < 0; });
@@ -1518,7 +1556,7 @@
     if(n > 0){ b.textContent = n > 99 ? '99' : String(n); b.hidden = false; }
     else b.hidden = true;
   }
-  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-jump':'home','s-babyfun':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-babyprofile':'lists','s-babyrsv':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'home','s-watch':'discover','s-news':'news','s-photos':'photos'};
+  var VIEW_OF = {'s-top-photos':'home','s-daily':'home','s-brief':'home','s-notes':'home','s-jump':'home','s-babyfun':'home','s-usage':'home','acctHead':'home','s-shop':'lists','s-todo':'lists','s-baby':'lists','s-babyprofile':'lists','s-babyrsv':'lists','s-pedcall':'lists','s-pedsay':'lists','s-cal':'calendar','s-deals':'discover','s-recipes':'discover','s-events':'home','s-watch':'discover','s-news':'news','s-photos':'photos'};
   var currentView = 'home';
   function switchView(v){
     if(!v) return;
@@ -5521,6 +5559,11 @@ html.sf-ts-large .meta,html.sf-ts-large .item .meta{font-size:13px}
   .rsvlist li{margin:2px 0}
   .rsvflu{border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin-top:10px;font-size:13.5px}
   .rsvh{font-weight:650;font-size:13px;margin:12px 0 4px}
+  .pedscript{font-size:13.5px;line-height:1.55;border-left:3px solid var(--line);padding:6px 10px;margin:6px 0;font-style:italic}
+  .pedq{margin:9px 0}
+  .pedqh{font-weight:650;font-size:13.5px}
+  .pedunv{font-size:10px;font-weight:700;letter-spacing:.04em;border:1px solid var(--line);border-radius:99px;padding:1px 7px;margin-left:6px;opacity:.75;vertical-align:1px;white-space:nowrap}
+  .pedqp{font-size:13.5px;line-height:1.55;margin:3px 0 0}
 </style>
 <script>
   /* Baby Profile + RSV sheet wiring (final111) — profile stored in `notes` row BABY_PROFILE_ID */
