@@ -204,28 +204,16 @@
         "name": "Solon",
         "items": [
           {
-            "when": "Thu Oct 29 · 10:00–10:30 AM",
-            "title": "Preschool storytime — Solon library",
-            "where": "Cuyahoga County Public Library, Solon branch",
-            "link": "https://attend.cuyahogalibrary.org/event/10917976"
-          },
-          {
-            "when": "Fri Oct 30 · 10:00 AM–12:00 PM",
-            "title": "Design with Canva class — Solon library",
-            "where": "Cuyahoga County Public Library, Solon branch",
-            "link": "https://attend.cuyahogalibrary.org/event/10917976"
+            "when": "Sat Oct 31 · 11:00 AM",
+            "title": "North East Ohio Diwali Mela",
+            "where": "28500 Miles Rd, Solon",
+            "link": "https://allevents.in/solon-oh/festivals"
           },
           {
             "when": "Sat Oct 31 · 6:00–8:00 PM",
             "title": "Solon citywide trick-or-treat",
             "where": "Neighborhoods across Solon",
             "link": "https://www.northeastohioparent.com/things-to-do/2026-northeast-ohio-trick-or-treat-dates-and-times/"
-          },
-          {
-            "when": "Mon Nov 2 · 6:30–7:00 PM",
-            "title": "Evening storytime — Solon library",
-            "where": "Cuyahoga County Public Library, Solon branch",
-            "link": "https://attend.cuyahogalibrary.org/event/10917976"
           },
           {
             "when": "Tue Nov 3 · 6:30 AM–7:30 PM",
@@ -846,15 +834,17 @@
       "name": "Burntwood Tavern",
       "area": "Solon",
       "deals": [
-        "Free appetizer when you join Burntwood Rewards (sign up on their site)",
-        "Happy Hour Mon–Fri afternoons — their award-winning happy hour; terms in-house"
+        "Kids Eat Free Mondays (kids 12 & under, with entrée purchase)",
+        "Happy Hour Mon–Fri 3–6pm: $5 draughts, $9 cocktails, $9 apps",
+        "Football Sundays: 10 favorites for $10 each, 10am–4pm"
       ]
     },
     {
       "name": "Cowboy Food & Drink",
       "area": "Chagrin Falls",
       "deals": [
-        "Kids Eat Free Mondays: 2 kids free with an adult entrée $7+"
+        "Kids Eat Free Mondays: 2 kids free with an adult entrée $7+, 4pm–close",
+        "Half-Off Wings Tuesdays"
       ]
     },
     {
@@ -883,8 +873,16 @@
       "name": "Winking Lizard",
       "area": "Macedonia",
       "deals": [
-        "Wing nights after 3pm: traditional wings 90¢ Mon, boneless 85¢ Mon–Tue, dine-in",
-        "Burger Night Thursdays: $10 burgers, dine-in"
+        "Wing Night Mon–Tue, after 3pm, dine-in only"
+      ]
+    },
+    {
+      "name": "Condado Tacos",
+      "area": "Orange",
+      "deals": [
+        "Mon & Wed: $4 house margaritas + $6 street tacos (3 tacos)",
+        "Taco Tuesday: $4 select tacos",
+        "Kids Eat Free Sundays: 2 free kids meals with $12+ food purchase, dine-in"
       ]
     }
   ],
@@ -895,7 +893,7 @@
       "when": "Fri Dec 25",
       "date": "Series premiere · Christmas Day",
       "type": "New series",
-      "hook": "Season 1 covers Philosopher's Stone across 8 episodes — Dominic McLaughlin as Harry, John Lithgow as Dumbledore, Nick Frost as Hagrid. Already renewed for Season 2; no new casting or schedule news this week."
+      "hook": "Season 1 covers Philosopher's Stone across 8 episodes — Dominic McLaughlin as Harry, John Lithgow as Dumbledore, Nick Frost as Hagrid. Casting news Oct 26: James and Lily Potter are now cast, and Charlie Weasley — cut from the films entirely — makes his first on-screen appearance. Already renewed for Season 2."
     },
     {
       "title": "The Diplomat — Season 4",
@@ -948,10 +946,10 @@
     {
       "title": "Percy Jackson and the Olympians — Season 3",
       "service": "Disney+",
-      "when": "Wed Dec 10",
-      "date": "Expected Wed Dec 10",
+      "when": "Fri Nov 20",
+      "date": "Season premiere Fri Nov 20",
       "type": "New season",
-      "hook": "Adapts The Titan's Curse; the December date rests on a single source, per streaming roundups."
+      "hook": "Adapts The Titan's Curse — the first two episodes drop Nov 20, then pairs weekly. Walker Scobell, Leah Jeffries and Aryan Simhadri return, with Nico di Angelo joining the story."
     }
   ]
 }
