@@ -1,57 +1,56 @@
 {
   "dailyBrief": {
-    "date": "Wednesday, October 28, 2026",
-    "text": "Good morning — Solon gets a sunny, dry day today with a high near 72° after a clear 48° start, and Thursday warms further to about 76°. Overnight, the World Series refused to end: Tampa Bay scored twice in the 12th to walk off Milwaukee 4-3 and stave off a sweep, though the Brewers still lead 3-1 with Game 5 tonight at 8:08 PM. In Israel, the actual vote count kept both blocs short of a majority, with Netanyahu and Eisenkot staking rival claims, and at home the FEC's filing system was hit by hackers a week before the midterms. Tonight in Cleveland, the Cavs host Washington at Rocket Arena at 7 PM, and early in-person voting runs 7:30 AM to 7:30 PM today — with mailed ballots now needing to be received, not just postmarked, by 7:30 PM on Nov. 3.",
+    "date": "Thursday, October 29, 2026",
+    "text": "Good morning — Solon gets the warmest day of the week today: mostly sunny with a high near 76°, though showers arrive early tonight and Friday drops sharply to about 58°. Overnight, Milwaukee finished the job — the Brewers beat Tampa Bay 4-1 in Game 5 to win their first World Series title — and the Cavs rallied past Washington 121-111 behind Evan Mobley's 24 points before heading to Atlanta for tonight's 8 PM tip. In Spain, three days of national mourning begin as investigators ask why a train was authorised past a red signal in the crash that killed 68, and Ohio's election warning is urgent and practical: mail ballots must now be received by 7:30 PM on Nov. 3, so hand-deliver, don't mail. Early in-person voting runs 7:30 AM to 7:30 PM today.",
     "chips": [
-      "☀️ Sunny and dry today, high near 72°",
       {
-        "label": "🏀 Cavs host Washington tonight, 7 PM at Rocket Arena",
-        "url": "https://www.bulletsforever.com/washington-wizards-preview/73689/washington-wizards-cleveland-cavaliers-nba-game-preview"
+        "label": "☀️ Mostly sunny, high near 76° today · showers early tonight, low 46°",
+        "url": "https://weather.com/us/oh/city/solon/tenday"
       },
       {
-        "label": "⚾ World Series Game 5 tonight — Brewers lead Rays 3-1",
-        "url": "https://www.reuters.com/sports/baseball/rays-rally-2-12th-inning-extend-world-series-game-5--flm-2026-10-28/"
+        "label": "🏀 Cavs at Atlanta tonight, 8 PM ET on NBA TV",
+        "url": "https://www.dispatch.com/story/sports/nba/2026/10/29/why-a-cleveland-cavaliers-road-game-forced-early-wnba-finals-time/92476353007/"
       },
       {
-        "label": "🗳️ Early voting today 7:30 AM–7:30 PM · mail ballots must be received by Nov. 3",
-        "url": "https://www.cincinnati.com/story/news/politics/elections/2026/10/27/ohio-early-voting-hours-before-election-day/92461513007/"
+        "label": "⚾ Brewers win the World Series 4-1 over the Rays — first title in franchise history",
+        "url": "https://www.usatoday.com/story/sports/mlb/2026/10/28/brewers-rays-world-series-score-highlights-watch-channel-game-5--live/92481878007/"
       },
       {
-        "label": "🇮🇱 Israel count deadlocked — both blocs short of 61 seats",
-        "url": "https://www.reuters.com/world/middle-east/netanyahu-eisenkot-stake-rival-claims-lead-israel-after-deadlocked-vote-2026-10-28/"
+        "label": "🗳️ Don't mail that ballot — Ohio requires receipt by 7:30 PM Nov. 3",
+        "url": "https://www.dispatch.com/story/news/politics/elections/2026/10/28/ohio-mail-in-ballot-election-day-2026-drop-off-locations/92476291007/"
+      },
+      {
+        "label": "🇪🇸 Spain mourning: 68 dead, signal decision under investigation",
+        "url": "https://www.reuters.com/world/europe/how-high-speed-train-crash-unfolded-central-spain-2026-10-28/"
       }
     ],
     "links": [
       {
-        "phrase": "Tampa Bay scored twice in the 12th to walk off Milwaukee 4-3",
-        "url": "https://www.reuters.com/sports/baseball/rays-rally-2-12th-inning-extend-world-series-game-5--flm-2026-10-28/"
+        "phrase": "the Brewers beat Tampa Bay 4-1 in Game 5 to win their first World Series title",
+        "url": "https://www.usatoday.com/story/sports/mlb/2026/10/28/brewers-rays-world-series-score-highlights-watch-channel-game-5--live/92481878007/"
       },
       {
-        "phrase": "the actual vote count kept both blocs short of a majority",
-        "url": "https://www.reuters.com/world/middle-east/netanyahu-eisenkot-stake-rival-claims-lead-israel-after-deadlocked-vote-2026-10-28/"
+        "phrase": "the Cavs rallied past Washington 121-111",
+        "url": "https://www.reuters.com/sports/basketball/evan-mobley-cavaliers-spoil-aj-dybantsas-wizards-debut--flm-2026-10-29/"
       },
       {
-        "phrase": "the FEC's filing system was hit by hackers",
-        "url": "https://985theriver.com/2026/10/27/hacker-trying-to-breach-us-federal-election-commission-system-email-shows/"
-      },
-      {
-        "phrase": "early in-person voting runs 7:30 AM to 7:30 PM today",
-        "url": "https://www.cincinnati.com/story/news/politics/elections/2026/10/27/ohio-early-voting-hours-before-election-day/92461513007/"
+        "phrase": "mail ballots must now be received by 7:30 PM on Nov. 3",
+        "url": "https://www.dispatch.com/story/news/politics/elections/2026/10/28/ohio-mail-in-ballot-election-day-2026-drop-off-locations/92476291007/"
       }
     ]
   },
   "babyDue": null,
   "weekBrief": {
-    "text": "Solon rides a temperature swing this week: mostly sunny and 74° Thursday, a sharp cool-down to 59° Friday, then a dry, mostly cloudy Halloween at 60° before warming back to 68° Sunday — the day clocks fall back an hour — and the low 70s into Election Day. Halloween is the big night locally, with citywide trick-or-treat in Solon and Chagrin Falls from 6 to 8 PM, Jurassic Quest stomping into the Huntington Convention Center all weekend, and the Cavs' only home game of the week Monday night against Oklahoma City. Early in-person voting ends Sunday (1–5 PM) ahead of Election Day Tuesday, and the standout deal is Giant Eagle's BOGO-free sirloin tip roasts in the new ad starting Thursday. With the baby due in early November, this is officially any-day-now week — hospital bags by the door.",
+    "text": "The week swings and settles: today's mostly sunny 76° gives way to a chilly, sunny 58° Friday, a dry, mostly cloudy Halloween at 61° for trick-or-treat, then a mild rebound — 69° Sunday as clocks fall back, and low-to-mid 70s through Election Day with only a chance of Tuesday-morning showers. Halloween weekend is packed locally: Solon and Chagrin Falls trick-or-treat Saturday 6 to 8 PM, Jurassic Quest runs Friday through Sunday in Cleveland, and Ohio is offering $15 ride credits in Cuyahoga County all weekend to cut impaired driving. In sports, the Brewers are World Series champions, No. 2 Ohio State plays at USC Saturday night without injured QB Julian Sayin, the 5-2 Browns play at 5-2 Pittsburgh Sunday for first place, and the Cavs' only home game of the week is Monday against Oklahoma City. The standout deal is Giant Eagle's BOGO-free sirloin tip roasts in the ad that starts today — and with the baby due in early November, bags-by-the-door season is officially here.",
     "chips": [
-      "☀️ 74° Thu, chilly 59° Fri, dry Halloween 60°, 68° Sun (clocks fall back)",
-      {
-        "label": "🏀 Cavs host Oklahoma City Mon Nov 2, 7 PM at Rocket Arena",
-        "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?ac_link=NBA_TM_LCL_CLE_NBA_SPLASH_PRIMARY&home_away=home"
-      },
+      "🌡️ 76° Thu, 58° Fri, dry Halloween 61°, then 69–75° Sun–Tue (clocks fall back Sunday)",
       {
         "label": "🎃 Trick-or-treat Sat 6–8 PM in Solon & Chagrin Falls",
         "url": "https://www.northeastohioparent.com/things-to-do/2026-northeast-ohio-trick-or-treat-dates-and-times/"
+      },
+      {
+        "label": "🏈 Browns at Steelers Sun 1 PM · Ohio State at USC Sat 7:30 PM",
+        "url": "https://www.nbcsports.com/pressbox/press-releases/heisman-favorite-wr-jeremiah-smith-and-no-2-ohio-state-buckeyes-head-to-hollywood-to-face-usc-trojans-in-primetime-this-saturday-on-nbc-and-peacock"
       },
       {
         "label": "🗳️ Early voting ends Sun Nov 1 (1–5 PM) · Election Day Tue Nov 3",
@@ -61,16 +60,20 @@
     ],
     "links": [
       {
-        "phrase": "Jurassic Quest stomping into the Huntington Convention Center",
+        "phrase": "Jurassic Quest runs Friday through Sunday in Cleveland",
         "url": "https://www.northeastohioparent.com/event/jurassic-quest-cleveland-oh-2026/"
       },
       {
-        "phrase": "citywide trick-or-treat in Solon and Chagrin Falls from 6 to 8 PM",
-        "url": "https://www.northeastohioparent.com/things-to-do/2026-northeast-ohio-trick-or-treat-dates-and-times/"
+        "phrase": "Ohio is offering $15 ride credits in Cuyahoga County",
+        "url": "https://www.dispatch.com/story/news/state/2026/10/28/partying-this-halloween-weekend-ohio-offers-15-dollars-in-uber-lyft-credits-to-anyone-in-7-counties/92481244007/"
       },
       {
         "phrase": "Giant Eagle's BOGO-free sirloin tip roasts",
-        "url": "https://weeklyadhunters.com/giant-eagle-weekly-ad/"
+        "url": "https://www.gianteagle.com"
+      },
+      {
+        "phrase": "the Cavs' only home game of the week is Monday against Oklahoma City",
+        "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?ac_link=NBA_TM_LCL_CLE_NBA_SPLASH_PRIMARY&home_away=home"
       }
     ]
   },
@@ -290,46 +293,46 @@
     ]
   },
   "headlines": {
-    "date": "Wednesday, October 28, 2026",
+    "date": "Thursday, October 29, 2026",
     "cats": [
       {
         "name": "World",
         "items": [
           {
-            "title": "Spain train crash death toll climbs to at least 68 as residents of Urda rush to help survivors",
+            "title": "Spain begins three days of mourning as investigators probe why a train was waved past a red signal",
             "source": "Reuters",
             "url": "https://www.reuters.com/world/europe/how-high-speed-train-crash-unfolded-central-spain-2026-10-28/",
-            "summary": "The death toll from Wednesday morning's collision between two high-speed trains in central Spain rose sharply through the day to at least 68 people, with nearly 80 injured. The trains collided just before 9 a.m. near Urda in Toledo province, on the line from Madrid toward Seville, in what is now Spain's deadliest rail disaster since 2013.\n\nResidents of Urda were among the first to respond. The town's 78-year-old pharmacist drove to the scene with first aid supplies, painkillers and blankets after his daughter told him about the crash, and other locals brought water for evacuated passengers. One carriage was wedged inside another, and rescuers spent the day working through the most damaged cars.\n\nIt is the second collision between high-speed trains on the same line in nine months, following a January accident that killed 46 people. That history will put the safety record and signalling systems of one of Europe's flagship rail networks under intense scrutiny, and rail operator Adif has suspended service between Madrid, Ciudad Real and Andalusia.\n\nWhat to watch: investigators have not yet named a cause, and officials expect the toll could still change as recovery work continues."
+            "summary": "Spain entered three days of national mourning on Thursday for the 68 people killed when two high-speed trains collided near Urda, in Toledo province, on Wednesday morning. Nearly 80 people were injured, 15 of them very seriously. A Renfe train carrying 397 passengers struck the rear of a stationary Iryo train with 147 people aboard; two Iryo carriages derailed and at least three carriages slid down an embankment.\n\nAttention is now turning to a decision made in the minutes before the crash. Transport Minister Oscar Puente said a computer communications failure had triggered a red signal that automatically halted traffic, and that the Renfe train was then authorised to proceed anyway, despite the signal and the stopped train ahead. Renfe says its driver followed instructions, and exactly who decided what is a central question for the investigation.\n\nPrime Minister Pedro Sánchez visited the scene, promised a thorough inquiry and said any negligence would be brought into the open, while the opposition demanded independent government and judicial investigations. It is Spain's second fatal high-speed crash in nine months on the same corridor, after January's accident near Adamuz killed 46 people — a record that will put the maintenance and signalling of one of Europe's flagship rail networks under harsh scrutiny.\n\nWhat to watch: service between Madrid and Andalusia remains suspended, and investigators' first findings on the restart decision will shape whether this is treated as a one-off error or a systemic failure."
           },
           {
-            "title": "With 93% counted, Netanyahu's bloc leads 53-48 in Israel — but neither side is close to a majority",
+            "title": "Israel's count still produces no winner, with Netanyahu and Eisenkot both short of a majority",
             "source": "Reuters",
-            "url": "https://www.reuters.com/commentary/breakingviews/israels-vote-prolongs-middle-east-instability-2026-10-28/",
-            "summary": "The count in Israel moved further on Wednesday without producing a winner. With about 93% of ballots tallied, Prime Minister Benjamin Netanyahu's bloc of right-wing, far-right and ultra-Orthodox parties was projected at 53 seats, ahead of the opposition bloc led by former military chief Gadi Eisenkot at 48, with Arab parties holding 19. A majority in the 120-seat Knesset takes 61, and neither camp is near it.\n\nThe result is stronger for Netanyahu than Tuesday night's exit polls suggested, and it leaves him in place as caretaker prime minister while coalition talks play out. Eisenkot has argued that Netanyahu lost public support and should step aside, while Netanyahu has called for a strong right-wing national government and pointed to possible renewed joint action with the United States against Iran.\n\nThat stalemate matters well beyond Israel. A fragile or caretaker government prolongs uncertainty over Gaza, Iran and regional diplomacy, and markets reacted quickly — the shekel fell about 2% and Tel Aviv stocks dropped around 3% as the stronger-than-expected Netanyahu showing sank in.\n\nWhat to watch: double-envelope ballots are counted Thursday, official results are expected November 4, and only then does the president begin consultations on who gets the first chance to form a government. Failure by both sides would point to yet another election in 2027."
+            "url": "https://965wtou.com/2026/10/27/netanyahu-eisenkot-stake-rival-claims-to-lead-israel-after-deadlocked-vote/",
+            "summary": "Israel's first election since the October 7, 2023 attack ended in deadlock, with neither Prime Minister Benjamin Netanyahu's bloc nor the rival bloc led by former military chief Gadi Eisenkot reaching the 61 seats needed to govern in the 120-seat Knesset. Projections through the count kept both camps in the low-to-mid 50s at best, with Arab parties holding a potentially pivotal bloc of seats.\n\nTurnout reached 77.7%, the highest in more than two decades, and Arab parties surged on record turnout among Palestinian citizens of Israel. That arithmetic is awkward for both sides: Netanyahu's allies rule out governing with Arab parties, and Eisenkot has all but ruled it out too. Netanyahu called for a strong right-wing national government, while Eisenkot argued voters had withdrawn Netanyahu's mandate and urged him to retire.\n\nThe stalemate leaves Netanyahu in place as caretaker prime minister while coalition talks grind on, prolonging uncertainty over Gaza, Iran and regional diplomacy. Options on the table range from a unity government to a minority government, cross-bloc defections, or yet another election.\n\nWhat to watch: once results are certified, President Isaac Herzog begins consultations and gives one leader the first chance to build a coalition — a process that could take weeks."
           },
           {
-            "title": "Finland and Norway's leaders defend a rare 90-minute call with Putin ahead of Ukraine talks",
+            "title": "North Korea fires about 10 ballistic missiles into the sea as border tensions with the South rise",
             "source": "Reuters",
-            "url": "https://srnnews.com/norways-premier-says-call-with-putin-was-effort-to-present-european-views/",
-            "summary": "Norway's prime minister Jonas Gahr Stoere defended a rare three-way phone call with Russian President Vladimir Putin on Wednesday, saying the point was to make sure Putin heard European views directly, not only American ones. Stoere and Finnish President Alexander Stubb spoke with Putin for about 90 minutes on Tuesday.\n\nThe call broke a long-standing practice among Western European leaders of avoiding direct contact with the Kremlin, and it drew criticism from allies including Denmark's prime minister. It came ahead of expected face-to-face talks involving Russia, Ukraine and the United States in Abu Dhabi next month, and the two Nordic leaders spoke with Ukrainian President Volodymyr Zelensky afterward.\n\nStoere said the pair pressed de-escalation ideas such as stopping attacks on energy infrastructure, halting strikes on ships exporting Ukrainian grain, and carrying out prisoner exchanges. He was frank that Putin is unlikely to change his mind, but said some messages may not reach him through American intermediaries.\n\nWhat to watch: whether the Abu Dhabi talks happen as planned, and whether other European governments warm to direct contact or keep criticising the outreach as dividing Europe's position."
+            "url": "https://bworldonline.com/world/2026/10/29/790120/north-korea-fires-around-10-ballistic-missiles-toward-sea-off-east-coast-seoul-says/",
+            "summary": "North Korea launched around 10 short-range ballistic missiles toward the sea off its east coast on Thursday, South Korea's military said. The missiles were fired at about 12:30 p.m. from near the coastal city of Wonsan and each flew roughly 250 kilometres. Japan said no missile appeared to land inside its exclusive economic zone.\n\nSeoul convened an emergency national security meeting and condemned the launches as a serious violation of U.N. Security Council resolutions, while saying it was stepping up surveillance and sharing information closely with the United States and Japan. It was North Korea's first ballistic launch since October 12, in a year that has already seen more than 10 test days.\n\nThe firing lands in the middle of a sharper border standoff. Tensions have climbed since September mine explosions in the Demilitarized Zone wounded three South Korean soldiers — Seoul blames Pyongyang, which denies it — and North Korea has positioned artillery near the border and threatened to switch on propaganda loudspeakers along the frontier by the end of October.\n\nWhat to watch: whether Pyongyang meets its own loudspeaker deadline in the next two days, and whether Seoul's proposals for military talks get any response."
           },
           {
-            "title": "Australia still on track to get U.S. nuclear submarines in the early 2030s under AUKUS, defence minister says",
+            "title": "Uganda says 27 of its citizens are dead or presumed dead after enlisting to fight for Russia in Ukraine",
             "source": "Reuters",
-            "url": "https://www.reuters.com/world/asia-pacific/aukus-track-australia-subs-early-2030s-marles-says-2026-10-28/",
-            "summary": "Australia remains on track to acquire its first nuclear-powered submarines from the United States in the early 2030s, Defence Minister Richard Marles said on Wednesday. He described the AUKUS partnership with the U.S. and Britain as moving at the pace needed to deliver what the three countries call the optimal pathway.\n\nMarles spoke after meeting U.S. Defense Secretary Pete Hegseth on the sidelines of ASEAN meetings in the Philippines, calling the alliance as important as it has ever been. Prime Minister Anthony Albanese said in August that the pact remained, in his words, full steam ahead.\n\nThe Virginia-class boats are the centerpiece of Australia's biggest-ever defence project and a key piece of allied strategy in the Indo-Pacific. Any slippage would ripple through shipyard schedules in three countries and through the region's balance-of-power planning.\n\nWhat to watch: delivery depends on U.S. submarine production rates keeping up with both American and Australian demand, a constraint officials on both sides have flagged before."
+            "url": "https://www.reuters.com/world/africa/uganda-says-27-citizens-killed-or-presumed-dead-fighting-russia-ukraine-2026-10-29/",
+            "summary": "Twenty-seven Ugandans who enlisted to fight for Russia in Ukraine have been killed or are presumed dead, according to a letter from Uganda's embassy in Moscow that Reuters saw on Thursday. The embassy named 11 men confirmed dead and 16 more whose bodies could not be found anywhere, including among prisoners of war.\n\nThe embassy said the information came from Russia's foreign ministry through a formal diplomatic note, and a Ugandan foreign ministry official confirmed the letter is genuine. Russia's embassy in Kampala did not immediately comment.\n\nThe disclosure puts a concrete toll on a recruitment pipeline that has angered governments across Africa. Ukraine has said more than 1,400 citizens from three dozen African countries are fighting alongside Russian forces, some recruited through deception — men promised ordinary jobs who ended up on the front lines. Russian authorities deny illegally recruiting African citizens.\n\nWhat to watch: how Uganda's government responds publicly, whether families get identification and repatriation of remains, and whether other African governments publish tolls of their own."
           },
           {
-            "title": "Flavio Bolsonaro refuses to concede Brazil's runoff and says he will seek to annul the vote",
-            "source": "Reuters",
-            "url": "https://wixx.com/2026/10/25/bolsonaro-refuses-to-concede-says-he-will-seek-annulment-of-brazil-vote/",
-            "summary": "Senator Flavio Bolsonaro said he will not concede defeat in Brazil's presidential runoff and will seek to have the election annulled. President Luiz Inacio Lula da Silva won the vote, securing a fourth non-consecutive term in office.\n\nBolsonaro's stated objection centers on a Supreme Court ruling by Justice Cristiano Zanin that extended voting by two hours on election day, a decision he called unacceptable. His challenge now moves the contest from the ballot box into Brazil's courts and electoral authorities.\n\nA refusal to concede in Latin America's largest democracy raises the risk of protests and a drawn-out legal fight, even though Brazil's institutions ultimately managed a similar dispute after the 2022 election. Markets and neighboring governments are watching for any sign that the challenge gains traction beyond Bolsonaro's base.\n\nWhat to watch: separate reports on Wednesday said Bolsonaro's whereabouts were unclear after he was ordered to surrender his passports. Those reports were not confirmed in the Reuters account of his annulment plan, so treat them as developing."
+            "title": "Up to 50,000 people flee fighting in Ethiopia and cross into Kenya, straining aid around Moyale",
+            "source": "The Eastleigh Voice",
+            "url": "https://eastleighvoice.co.ke/regional/417209/up-to-50000-flee-ethiopia-clashes-seek-refuge-in-kenyas-moyale-county-unhcr",
+            "summary": "As many as 50,000 people have fled clashes in southern Ethiopia and crossed into Kenya in about a week, the U.N. refugee agency UNHCR said, citing local authority figures. The estimate jumped from 36,000 a day earlier, and officials stress the number is still moving as registration continues.\n\nThe fighting pits forces from Ethiopia's Somali and Oromia regions against each other around Moyale. Many of those arriving in Kenya's Marsabit County are women and children; some are staying with relatives, while others are sheltering in schools and churches. Aid agencies list food as the most urgent need, followed by drinking water, shelter, sanitation and healthcare.\n\nUNHCR has sent an emergency team to Moyale and is moving in household supplies and shelter materials for nearly 12,000 people to start, working with Kenyan authorities, the Red Cross and other U.N. agencies. Insecurity on the Ethiopian side has already forced some aid partners to suspend work there.\n\nWhat to watch: whether crossings push past 50,000, and whether supplies can scale up fast enough beyond the first 12,000 people aid is currently organised for."
           },
           {
-            "title": "Canada will make its Eurovision debut in 2027, while Ireland and the Netherlands stay out over Israel",
+            "title": "A short U.S.-brokered ceasefire holds in a besieged Ukrainian town, raising hopes aid can get in",
             "source": "Reuters",
-            "url": "https://www.reuters.com/business/media-telecom/36-countries-to-compete-eurovision-2027-ireland-netherlands-stay-out-over-israel-2026-10-28/",
-            "summary": "Thirty-six countries will compete in the 2027 Eurovision Song Contest, organisers said on Wednesday, one more than this year. Canada will make its debut at the 71st edition of the contest, to be held in the Bulgarian city of Burgas in May.\n\nIreland and the Netherlands confirmed they will again stay out over Israel's participation. Both were among five countries that boycotted this year's contest, which drew a global audience of about 130 million, after calling for Israel's expulsion over its military offensive in Gaza. Israel's broadcaster KAN has confirmed it will take part.\n\nSpain and Slovenia have until December to decide, and Iceland's public broadcaster has signalled its participation is unlikely but has not made a final call. Contest director Martin Green said that in a world that can feel increasingly divided, the event brings audiences together through music across borders, languages and cultures.\n\nWhat to watch: the December deadline for the remaining undecided broadcasters, which will set the final line-up for Burgas."
+            "url": "https://www.reuters.com/world/europe/top-russian-official-takes-us-journalists-into-besieged-ukrainian-city-ahead-2026-10-29/",
+            "summary": "A six-day ceasefire brokered by the United States was holding on Thursday around Oleshky, a Russian-controlled Ukrainian town whose trapped residents have endured regular shelling and severe shortages of food and medicine. Neither side had reported a violation since the truce took effect early Tuesday, and demining work was under way.\n\nRussia's human rights commissioner travelled toward the town with a small team of U.S. journalists, while her Ukrainian counterpart headed to the area as well — a rare moment of parallel movement by officials from both countries. The Kremlin said it hoped aid could reach residents safely on Thursday or Friday and that anyone wishing to leave would be able to do so.\n\nThe truce, brokered with the involvement of U.S. First Lady Melania Trump and Pope Leo, covers Oleshky and the surrounding Kherson region. It is deliberately local: fighting elsewhere in Ukraine has continued, underlining that this is a humanitarian corridor, not a wider peace.\n\nWhat to watch: whether aid convoys and evacuations actually move inside the six-day window, and whether a successful local truce becomes a template — or stays a one-off."
           }
         ]
       },
@@ -337,40 +340,40 @@
         "name": "Politics",
         "items": [
           {
-            "title": "Grand jury declines to indict former White House aide Cassidy Hutchinson over her Jan. 6 testimony",
+            "title": "Trump rallies in South Carolina as a Senate seat his party expected to hold becomes a toss-up",
             "source": "Reuters",
-            "url": "https://www.reuters.com/legal/government/grand-jury-declines-indict-former-white-house-aide-cassidy-hutchinson-source-2026-10-28/",
-            "summary": "A federal grand jury in Washington has declined to indict Cassidy Hutchinson, the former White House aide whose testimony to the congressional panel investigating the January 6, 2021 attack on the U.S. Capitol made her a central witness, a source familiar with the matter said. The Trump administration's Justice Department had been investigating whether she gave false testimony to the panel.\n\nHutchinson has maintained that her testimony was truthful. In a brief court appearance on Tuesday, a federal prosecutor told a magistrate judge that a grand jury had rejected an indictment, without naming the proposed defendant or charges in court; sources later confirmed the case involved Hutchinson.\n\nGrand juries rarely reject charges, because prosecutors only need to show probable cause. Even so, panels have declined cases in several politically charged matters since President Trump returned to office, and critics have raised concerns about efforts to target his perceived opponents.\n\nWhat to watch: whether the Justice Department attempts to present the case again, and how the outcome affects other pending investigations of Trump critics ahead of the midterms."
+            "url": "https://www.reuters.com/world/us/trump-confronts-new-midterm-battleground-south-carolina-2026-10-29/",
+            "summary": "President Trump rallies in South Carolina on Thursday — his second visit in two weeks — because a Senate seat Republicans expected to keep is now rated a toss-up. Incumbent Republican Darline Graham faces Democrat Annie Andrews in the race for the seat once held by Graham's brother, Senator Lindsey Graham, who died suddenly in July.\n\nSouth Carolina has not sent a Democrat to the Senate since Fritz Hollings, who served until 2005. Andrews has picked up endorsements from former governors of both parties, while former Governor Nikki Haley has endorsed neither candidate. Graham, Lindsey Graham's longtime political adviser, brushes off criticism of her unpolished campaign by saying she is not a career politician.\n\nThe scramble in the South is diverting Republican money and attention from planned challenges in Michigan, Georgia and Minnesota. Republicans are defending Senate seats across seven competitive states to protect a six-seat majority, analysts favour Democrats to retake the House, and Senate control is rated too close to call.\n\nWhat to watch: Trump closes the campaign with rallies in Florida, Kansas and Iowa before Tuesday's vote — and whether his personal presence moves a race this close."
           },
           {
-            "title": "Senate control could hang in limbo for weeks after Election Day, Axios reports",
-            "source": "Axios",
-            "url": "https://politicalwire.com/2026/10/28/senate-control-could-hang-in-limbo-for-weeks/",
-            "summary": "Senate leaders may not know who controls the chamber until well into November, Axios reports, thanks to a cluster of very tight races and state-by-state counting rules that stretch out close contests.\n\nThe stakes of the delay are practical. A Republican majority would ease the pressure on Majority Leader John Thune to move quickly on nominations, while a Democratic majority would hand Minority Leader Chuck Schumer more leverage in the lame-duck session that follows the election.\n\nIf the chamber lands exactly at 50-50, the two leaders would have to negotiate a power-sharing agreement before the Senate can fully organize — a process that has slowed Congress before.\n\nWhat to watch: which races are still uncalled on the morning of November 4, and whether mail-ballot and recount rules in those states push answers into the following weeks."
+            "title": "Justice Department says FBI and ICE agents will not serve as poll monitors in the midterms",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/legal/government/us-justice-department-says-fbi-ice-agents-will-not-serve-poll-monitors-midterms-2026-10-29/",
+            "summary": "The Justice Department said late Wednesday that no FBI or ICE employees will serve as monitors during the midterm elections. The commitment came in a court filing in a case brought by the NAACP, which sued to keep law-enforcement personnel away from polling places, arguing the plan amounted to voter intimidation.\n\nInstead, monitors will come from the Federal Bureau of Prisons, the ATF and the DEA. The filing says they will act as observers rather than law enforcement: mainly watching and taking notes, barred from carrying firearms, trained not to interfere with voting and instructed to follow state and local rules, consistent with past practice.\n\nThe clarification lands against a broader backdrop of aggressive federal election oversight, including administration pressure on states to hand over voter-registration data. Some state officials told Reuters earlier this month they are preparing for possible federal interference in the vote.\n\nWhat to watch: how the NAACP case proceeds, and whether the monitors' limited role holds in practice on Election Day."
           },
           {
-            "title": "Justice Department breaks the pre-election quiet with lawsuits in Alaska and California",
-            "source": "Axios",
-            "url": "https://thehairytimes.com/week-ahead-in-politics/",
-            "summary": "The Justice Department has broken the usual quiet period before an election with a string of politically sensitive lawsuits and moves, Axios reports. The biggest is in Alaska, where a preemptive DOJ suit asks a court to delay certification of the U.S. Senate race if Republican Sen. Dan S. Sullivan loses narrowly to Democrat Mary Peltola — arguing that a second candidate with a nearly identical name, Dan J. Sullivan Jr., could confuse voters.\n\nAlaska's Supreme Court has already ruled that the second Sullivan belongs on the ballot. In California, DOJ sued on October 15 to block ballots from more than 20,000 people it suspects are noncitizens and demanded counties set those ballots aside — a request a federal appeals court has already rejected once.\n\nPresident Trump has said he personally directed the Alaska suit and would do anything necessary to ensure honest elections. The Department of Homeland Security told the Associated Press that ICE is not planning operations targeting polling places, and senior Democrats on the intelligence committees say they have seen neither the capability nor the intent for foreign interference with voting infrastructure, though some required pre-election intelligence reports have not arrived.\n\nWhy it matters: certification is the step that turns ballots into an official result. Fights at that stage can leave seats empty and public confidence shaky long after Election Day."
+            "title": "Federal judge blocks the Justice Department from setting aside 20,000 California ballots",
+            "source": "CNN",
+            "url": "https://www.cnn.com/2026/10/28/politics/judge-denies-trump-bid-california-ballots?cid=external-feeds_iluminar_meta",
+            "summary": "A federal judge on Wednesday refused to let the Justice Department intervene in California's mail-ballot counting to segregate up to 20,000 ballots while voters' citizenship was vetted. Judge David O. Carter warned the move would wreak havoc on an election already under way, in a 26-page order.\n\nThe department built its emergency case on a purchased voter list matched against other government data. Carter called that procedure rife with uncertainty and errors, said it would chill voters and discard citizens' ballots, and noted the government already has a tool for genuine cases: prosecuting noncitizens who vote unlawfully. Local officials' early checks found many flagged names were not on the rolls at all, and some flagged as likely noncitizens appear to be U.S.-born.\n\nThe Justice Department appealed the same evening. An earlier round at the 9th Circuit sent the case back as premature, with the majority also signalling the department's arguments were likely to fail.\n\nWhat to watch: the appeal's pace — with counting already running, any reversal would have to arrive fast to matter, making this case a test of how far the department can go inside a state's count."
           },
           {
-            "title": "U.S. tells Middle East partners to prepare for a short, intense campaign against Iran after the midterms, WSJ reports",
-            "source": "Wall Street Journal",
-            "url": "https://www.justsecurity.org/162228/early-edition-october-28-2026/",
-            "summary": "The United States has told several Middle East countries to be prepared for a short, intense military campaign after the U.S. midterm elections, according to sources cited by the Wall Street Journal. The messages went out through diplomatic and military channels.\n\nTwo officials said the U.S. military is also sending an additional Patriot missile-defense system from Texas to Israel to strengthen its air defenses ahead of any operation. Separately, the head of the U.N.'s nuclear watchdog told the Security Council that there is no indication Iran has tried to repair or rebuild the nuclear facilities damaged in U.S. and Israeli strikes over the past two years, while urging Tehran to readmit inspectors.\n\nThe timing is the story: a campaign planned for after November 3 would avoid making a new war the final argument of the midterm campaign, while the Israeli election result — with Netanyahu's bloc ahead but short of a majority — shapes who would be America's partner in it.\n\nWhat to watch: any public movement of additional U.S. forces to the region, and whether the administration briefs congressional leaders before the election."
+            "title": "Farmers help fund $3 million in attack ads against Republicans in rural midterm races",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/legal/government/farmer-funded-attack-ads-targeting-republicans-air-across-rural-america-2026-10-29/",
+            "summary": "Farmers are among the funders behind $3 million in attack ads aimed at Republicans in competitive rural midterm races. The ads, running in Wisconsin, Pennsylvania, Colorado and Iowa, come from the political arm of the American Meat Producers Association, a group founded in 2025 for farmers backing higher animal-welfare standards.\n\nFour incumbents are targeted for supporting the Save Our Bacon Act, which would overturn California and Massachusetts animal-welfare laws. But the spots range wider — one hits a Colorado congressman over tariffs and the Iran war driving prices up. Federal filings show about $2.5 million of the spending opposes Iowa Representative Ashley Hinson's Senate bid alone.\n\nThe ads tap real rural strain: record diesel prices, pricier fertiliser and lost exports to China. The administration plans $8 billion in diesel aid, lifting farm payments to a record $55.4 billion this year — but the money arrives after the election. Reuters/Ipsos polling puts Trump's rural approval at a new low of 45%.\n\nWhat to watch: the group also spent backing two Republican incumbents who opposed the bacon act, so its scorecard is about the issue, not the party — a pattern worth watching in farm country results."
           },
           {
-            "title": "Voters are dissatisfied with both parties ahead of the midterms, AP-NORC poll finds",
-            "source": "Associated Press",
-            "url": "https://newsnationonline.com/news/ap-norc-voters-dissatisfied-both-parties-midterms-2026/",
-            "summary": "A new Associated Press-NORC poll finds widespread dissatisfaction with both major parties ahead of the November 3 midterm elections. Registered voters in the survey gave Democrats an advantage over Republicans on several economic and health care issues, even as few said either party is focused on people like them.\n\nOn the cost of living, 38% of registered voters said Democrats would handle the issue better, compared with 27% for Republicans — a shift from earlier in the year, when the issue was much more evenly divided. About four in ten voters also picked Democrats as better on the economy, and a separate survey found only 17% of adults approved of President Trump's handling of the cost of living.\n\nThe poll was conducted September 24-28 among 2,140 adults, including 1,766 registered voters, with a margin of sampling error of about plus or minus 3 points for registered voters. It is a snapshot of opinion, not a forecast of who will win.\n\nWhat to watch: final-week turnout, especially early voting in the states that will decide control of the Senate."
+            "title": "Trump touts factories, power plants and payouts on the trail — Reuters finds many are years away or uncertain",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/legal/litigation/trump-touts-projects-payouts-campaign-trail-many-are-uncertain-2026-10-29/",
+            "summary": "Campaigning for Republicans in tight races, President Trump has touted billions of dollars in factories, energy projects and jobs, along with cash promises tied to Republican victories. A Reuters review found several of the headline projects remain uncertain, unfunded or years from producing benefits.\n\nIn Iowa, the steel complex promoted as a $15 billion project is not expected to start production until 2030, has no finalised state deal and is still securing funding, despite more than $1.3 billion in approved state incentives. A North Carolina quartz investment announced as hundreds of millions turned out to be $56 million, subject to further approvals. South Korea has made no decision on the $54 billion Alaska gas pipeline investment the president heralded, and a pledged $100 million for a Kentucky drug plant was news to the governor's office.\n\nThe White House defends the president's record on investment and manufacturing, and the pitch is aimed squarely at voters frustrated by the cost of living. A promised $5,000 dividend for every adult, however, would need Congress — where it has gained little traction.\n\nWhat to watch: whether voters credit announcements or their grocery and fuel bills when they decide control of Congress on Tuesday."
           },
           {
-            "title": "Democrats lead the generic ballot by a wide margin as House forecasters eye a big popular-vote win",
-            "source": "Political Wire / CNN",
-            "url": "https://politicalwire.com/front-page/page/2/",
-            "summary": "House Democrats appear to be flirting with one of the biggest popular-vote wins in decades, according to CNN's Poll of Polls, which has them leading the generic congressional ballot by 9 points. The last time either party won the House popular vote by at least 10 points in a midterm was 1986.\n\nThe polling reflects President Trump's deep unpopularity six days before the vote, and it lines up with the pattern in individual Senate races, where new surveys show contests in places like South Carolina tied and Democrats ahead in states the party rarely contests this closely.\n\nA generic-ballot lead does not translate seat-for-seat — district maps blunt national swings — but a margin this size would put far more Republican seats in play than the party planned to defend this cycle.\n\nWhat to watch: whether late polling in the Senate toss-ups moves with the national number, or whether ticket-splitting keeps the two chambers on different paths."
+            "title": "Trump rallies in Chillicothe for Husted and Ramaswamy as both Ohio races tighten",
+            "source": "Columbus Dispatch",
+            "url": "https://www.dispatch.com/story/news/politics/elections/2026/10/28/president-donald-trump-returns-to-ohio-to-campaign-for-republicans--live/92462414007/",
+            "summary": "President Trump made his third Ohio stop of the cycle on Wednesday night, rallying in Chillicothe for Senator Jon Husted and gubernatorial candidate Vivek Ramaswamy. It is a state Trump has won three times, most recently by 11 points — which makes the tightness of both races the story.\n\nHusted, appointed to serve out Vice President JD Vance's Senate term, is locked in a close race with former Senator Sherrod Brown's comeback bid. In the governor's race, polling suggests Democrat Amy Acton may hold a slight lead, and forecasters have shifted it from toss-up toward leaning Democratic amid backlash over a Ramaswamy ad featuring Acton's estranged mother — an ad Trump defended at the rally.\n\nThe headwinds are local and concrete: gas prices tied to the Iran war, spiking property taxes and fights over data centers. Trump also urged a yes vote on Issue 3, which would write Ohio's photo ID voting requirement into the state constitution, and hinted Ohio could land a U.S. Space Academy if Husted wins.\n\nWhat to watch: Ohio turnout in the final early-voting weekend — both parties are treating the state as a bellwether for Tuesday."
           }
         ]
       },
@@ -378,40 +381,41 @@
         "name": "Tech & Business",
         "items": [
           {
-            "title": "Fed holds rates at 3.75%-4.00% in a 10-2 vote, with Cleveland's Hammack and Governor Cook wanting a hike",
-            "source": "USA Today",
-            "url": "https://www.usatoday.com/story/money/economy/2026/10/28/federal-reserve-october-interest-rate-decision--live/92441632007/",
-            "summary": "The Federal Reserve left its benchmark rate unchanged on Wednesday in a divided 10-2 vote, keeping the federal funds range at 3.75% to 4.00% at its final meeting before the midterms. The pause follows a quarter-point hike last month, the first increase in three years.\n\nFed Governor Lisa Cook and Cleveland Fed President Beth Hammack dissented, preferring another quarter-point hike. The Fed said inflation remains elevated and well above its 2% target, and that gathering more information will help it decide the stance needed to return inflation to target. Chair Kevin Warsh said the period ahead is information-rich and the committee is keen to take notice of it.\n\nTraders were already expecting another increase at the Fed's final meeting of the year, and market pricing moved further toward a December hike after the dissents. Stocks finished only slightly higher on the day, with the S&P 500 up about 0.2%.\n\nWhat to watch: Thursday's personal consumption expenditures price data, the Fed's preferred inflation gauge, and any signal about December in officials' speeches."
+            "title": "Microsoft beats forecasts as Azure cloud revenue jumps 48%",
+            "source": "GeekWire",
+            "url": "https://www.geekwire.com/2026/microsoft-azure-revenue-surges-48-to-33-2b-beating-expectations-as-cloud-and-ai-demand-grows/",
+            "summary": "Microsoft cleared Wall Street's bar comfortably, reporting quarterly revenue of $92.3 billion, up 19% and ahead of the $90.75 billion expected. The headline number was Azure: the cloud business brought in $33.2 billion, up 48% year over year — the first time Microsoft has disclosed Azure revenue in dollars rather than just a growth rate.\n\nEarnings of $4.89 a share, excluding the OpenAI investment effect, beat the $4.72 forecast, and the stock rose nearly 4% after hours. Spending came in lighter than feared at $45.2 billion, partly because third-party data-center capacity arrived late, and the company trimmed its expected calendar-2026 capital spending to about $170 billion.\n\nFinance chief Amy Hood guided Azure growth to accelerate to 49–50% next quarter, saying customer demand continues to exceed available supply. Total revenue guidance of $96 billion to $97.1 billion for the December quarter also topped expectations.\n\nWhat to watch: Microsoft is becoming the market's proof case that AI spending can pay for itself — the contrast with Alphabet's results the same day (see below) is driving the whole tech trade.",
+            "img": "https://cdn.geekwire.com/wp-content/uploads/2026/10/20260205_110204-EDIT-1260x945.jpg"
           },
           {
-            "title": "SK Hynix profit jumps more than sevenfold on AI memory demand, and its stock pops",
-            "source": "The Motley Fool",
-            "url": "https://www.fool.com/investing/2026/10/28/why-sk-hynix-stock-popped-today/",
-            "summary": "South Korean memory maker SK Hynix reported a record third quarter on Wednesday, with revenue surging about 328% from a year earlier to 104.6 trillion won and operating profit of 83.3 trillion won — about $62 billion — for an operating margin near 80%. Net income rose 216% to 39.8 trillion won.\n\nThe company credited sales of its newest high-bandwidth memory, HBM4, the stacked memory placed beside AI processors in data centers. SK Hynix holds more than half the global HBM market, supplying chips used in Nvidia's AI accelerators, and it expects HBM4 to become its mainstream product in the fourth quarter and beyond.\n\nManagement said long-term agreements already cover more than half of its expected production for 2027 and 2028, and it forecast memory supply shortages lasting through 2030. Its U.S.-traded shares jumped more than 13% on the day, and the result lifted chip stocks broadly ahead of Microsoft and Alphabet earnings.\n\nWhat to watch: whether the big U.S. cloud companies confirm spending at the pace SK Hynix's order book assumes."
+            "title": "Alphabet sinks as AI spending burns $9 billion in cash, even as Google Cloud doubles",
+            "source": "Reuters",
+            "url": "https://wnflsports.com/2026/10/28/alphabets-heavy-cloud-spending-drives-bigger-than-expected-cash-burn/",
+            "summary": "Alphabet posted a rare double disappointment: revenue of $127.6 billion missed the $128.2 billion estimate, advertising came in $1.4 billion light, and free cash flow was negative $9.1 billion — a second straight negative quarter after a $5.9 billion burn last quarter, for a company that had not posted a negative reading in 22 years as a public company. Shares fell about 10% after hours.\n\nThe soft spot was search advertising, where executives partly blamed growing use of AI Mode — the chatbot-style search where ads are still experimental. Net income fell 25% and adjusted earnings missed their target, even as the company unveiled its new Gemini 4 Carbon model the same day.\n\nThe paradox is that Google Cloud was booming: revenue more than doubled to $30.71 billion, the backlog swelled to $561 billion, and sales of Google's own TPU chip systems are becoming a real business. But finance chief Anat Ashkenazi warned 2027 spending will rise significantly from this year's $195–205 billion plan, with more margin pressure ahead.\n\nWhat to watch: investors are no longer asking whether AI demand is real — they are asking which giants can fund the buildout without torching their cash flow."
           },
           {
-            "title": "Anthropic taps JPMorgan to lead U.S. retail sales in its potentially record-setting IPO",
-            "source": "TipRanks / Bloomberg",
-            "url": "https://www.tipranks.com/news/the-fly/anthropic-selects-jpmorgan-to-lead-us-ipo-bloomberg-reports-thefly-news",
-            "summary": "Anthropic has picked JPMorgan Chase to lead sales of shares to individual investors in the United States in its initial public offering, according to Bloomberg reporting. The AI company behind Claude filed publicly for the offering on Monday, with Goldman Sachs and Morgan Stanley leading the deal overall and Citigroup set to coordinate the international retail offering.\n\nThe company has weighed setting aside about 15% to 20% of the shares for retail investors, and JPMorgan chief executive Jamie Dimon is expected to take part in the bank's campaign. JPMorgan played a similar role gathering retail orders for SpaceX's large IPO, which drew more than $100 billion of demand from individual investors.\n\nInvestors have told bankers their sense of a fair valuation has moved to roughly $1.4 trillion to $1.5 trillion, with $1.75 trillion seen as potentially achievable. The filing shows $16.3 billion of revenue in the first half of 2026 alongside very large commitments for cloud computing.\n\nWhat to watch: final pricing and the retail allocation, both of which could still change before the offering."
+            "title": "Nasdaq futures slide as mixed Big Tech results test the AI trade, with the Fed on hold",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/business/nasdaq-futures-slide-mixed-big-tech-results-test-ai-trade-2026-10-29/",
+            "summary": "Tech stocks were set for a rough Thursday morning: Nasdaq 100 futures fell 1.22% before the bell while Dow futures actually rose, a split that captures the moment — this is an AI-stock problem, not a whole-market one. Alphabet dropped 10.5% premarket on its cash burn, while Microsoft climbed 3.5% on its cloud beat.\n\nThe selling spread through software and chips. Fortinet tumbled 25% and ServiceNow 19% after disappointing results, Marvell fell 9.4% on reports it is in advanced talks to buy optics maker Lumentum, and Nvidia, AMD and Intel all traded lower.\n\nBehind the earnings, the Federal Reserve held interest rates steady on Wednesday, pausing until after next week's midterms while it waits for more inflation data. Traders now see a strong chance of a December rate hike — an unusual backdrop of a central bank leaning toward tightening while tech valuations wobble.\n\nWhat to watch today: the September PCE inflation report, the Fed's preferred gauge, plus a first read on third-quarter GDP — and Amazon and Intel earnings after the close."
           },
           {
-            "title": "Microsoft and Alphabet report after the bell today, with options traders braced for 5%-6% swings",
-            "source": "TipRanks",
-            "url": "https://www.tipranks.com/news/microsoft-and-alphabet-last-minute-earnings-alert-options-traders-expect-5-swings-in-msft-and-googl-stocks",
-            "summary": "Two of the market's biggest companies report on the same afternoon as the Fed decision. Microsoft and Alphabet both post quarterly results after Wednesday's close, and options pricing implies a move of about 5.1% for Microsoft and 6.0% for Alphabet — roughly $27 a share and $19 a share respectively.\n\nAnalysts expect Microsoft to earn $4.73 a share, up 14% from a year earlier, on revenue of about $90.6 billion, with Azure cloud growth the number that matters most. For Alphabet, the forecast is $3.03 a share on revenue up about 25% to $127.9 billion, with management's comments on Search and AI competition likely to drive the reaction as much as the numbers.\n\nBoth stocks carry Strong Buy consensus ratings, but Alphabet's average price target implies more upside — about 33% versus 15% for Microsoft — and at least one analyst cut his Alphabet target ahead of the print while staying cautious on Search.\n\nWhy it matters: these two reports are the market's cleanest test of whether AI spending is turning into AI revenue. A miss from either would land on the same day the Fed decides rates."
+            "title": "Chinese AI firms DeepSeek and Moonshot reportedly trained their models on OpenAI's GPT-6 Astra outputs",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/technology/deepseek-moonshot-used-openais-gpt-6-astra-train-latest-models-information-2026-10-29/",
+            "summary": "Chinese AI developers DeepSeek and Moonshot AI relied heavily on outputs from OpenAI's GPT-6 Astra model to train their latest systems, The Information reported, in a story relayed by Reuters on Thursday. The technique is called distillation: using a stronger model's answers as teaching material for a cheaper model of your own.\n\nMoonshot's Kimi K3.1 Pro, released last week, and DeepSeek's V4.1-Flash update from October 17 both reportedly benefited from distilling Astra. None of the three companies immediately commented. In a September blog post, OpenAI had already linked a distillation campaign that began in July to individuals associated with Moonshot.\n\nAmerican labs argue the practice lets rivals reproduce frontier capabilities far faster and cheaper than building them, and it has become a genuine flashpoint in U.S.–China technology competition. Anthropic said this month its countermeasures have cut data harvested in distillation attempts by roughly 90% to 99%.\n\nWhat to watch: whether Washington treats distillation as an export-controls problem — and whether labs can technically prove where a rival model's knowledge came from."
           },
           {
-            "title": "Vertiv stock jumps as data-center orders more than double and the company raises its full-year outlook",
-            "source": "Invezz",
-            "url": "https://invezz.com/news/2026/10/28/vertiv-stock-soars-on-earnings-is-the-comeback-finally-here/",
-            "summary": "Vertiv, which makes the power and cooling equipment data centers run on, delivered the kind of quarter AI skeptics keep asking for. Third-quarter sales rose 61% to $4.31 billion, adjusted earnings hit $2.21 a share against a $1.82 consensus, and organic orders more than doubled from a year earlier. Shares jumped close to 20% on Wednesday.\n\nManagement raised the full-year outlook with it: revenue guidance moved to $14.45-$14.85 billion and adjusted earnings to $7.10-$7.20 a share, lifting the revenue midpoint by $650 million. The adjusted operating margin expanded to 25.2%.\n\nVertiv sits on the practical side of the AI boom — chips are useless without electricity distribution and cooling — so its order book is a tangible check on whether hyperscaler spending plans are becoming real purchase orders. By that measure, they are.\n\nWhat to watch: converting a swollen order pipeline into delivered, paid-for equipment. Bookings make the headline; deliveries and cash collection decide whether this rally holds."
+            "title": "SK Hynix posts record profit and plans a $75 billion shareholder return as AI memory demand surges",
+            "source": "Reuters",
+            "url": "https://wncy.com/2026/10/27/sk-hynix-q3-profit-jumps-more-than-7-fold-beats-forecasts/",
+            "summary": "South Korea's SK Hynix, a key Nvidia supplier, reported a record quarterly operating profit of 83.3 trillion won — more than seven times a year earlier and well above forecasts. Revenue rose 328% to 104.6 trillion won, the company's first quarter ever above 100 trillion.\n\nThe driver is high-bandwidth memory, the specialised chips AI processors are starved for. SK Hynix says it has sold out of HBM and DRAM until 2029, demand for HBM is running at double its supply, and it expects a chip shortage to last through 2030. It holds almost half the global HBM market and has long-term deals with 14 major customers covering more than half of its 2027–2028 capacity.\n\nShareholders are sharing the windfall: about 100 trillion won — roughly $75 billion — in dividends and buybacks this year. SK Hynix shares jumped 11% on the report and Samsung gained 9%, lifting Asian tech broadly.\n\nWhat to watch: with memory sold out years ahead, the bottleneck for AI data centers is shifting from processors to the chips around them — and pricing power is shifting with it."
           },
           {
-            "title": "AI stocks climb again as the semiconductor rally builds ahead of Big Tech earnings",
-            "source": "OQ Liv",
-            "url": "https://oqliv.com/news/ai-stocks-are-climbing-again-as-semiconductor-rally-gains-momentum-ahead-of-big-tech-earnings",
-            "summary": "The AI trade is staging a comeback after weeks of heavy selling. The Nasdaq rose 1.18% on Tuesday while the Philadelphia Semiconductor Index jumped 3.6%, and the move extended into Wednesday's premarket, with Micron up about 4.2%, Western Digital up 5.1% and AMD up 1.8%.\n\nRecord earnings from South Korea's SK Hynix — profit up more than sevenfold, with a $75 billion shareholder-return plan — helped lift memory stocks across the sector. Vertiv's blowout quarter and outlook raise added a second, independent confirmation that data-center spending is accelerating.\n\nThe rally now runs straight into its biggest test: Microsoft and Alphabet earnings after today's close, followed by Amazon on Thursday, all landing alongside a Fed decision.\n\nWhat to watch: cloud growth rates and capital-spending guidance tonight. Chip stocks have priced in a strong answer, which leaves little room for a merely good one."
+            "title": "Oracle says cash flow turns positive in late fiscal 2028 and tops $30 billion in fiscal 2029",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/business/oracle-expects-turn-cash-flow-positive-second-half-fiscal-2028-2026-10-28/",
+            "summary": "Oracle used its Investor Day on Wednesday to give anxious shareholders a date: free cash flow turns positive in the second half of fiscal 2028 and exceeds $30 billion in fiscal 2029. The stock responded with its best day in about five months, closing up 10.73%.\n\nThe company guided fiscal 2027 sales to at least $90 billion, up from a record $67.4 billion, and reaffirmed a fiscal 2030 revenue target of at least $225 billion. It capped additional fundraising through May 2030 at $20 billion, split between equity and debt, and said vendor financing, customer-supplied hardware and prepayments will ease its upfront cash needs, with capital spending peaking in fiscal 2027–28 before stepping down.\n\nThe reassurance was needed: Oracle's shares had fallen about 50% over the past year on debt-funded AI data-center spending, and its credit rating was cut this year to one notch above junk.\n\nWhat to watch: Oracle is the leveraged bet in the AI buildout — if its cash-flow timetable slips, both the stock and its credit rating are exposed."
           }
         ]
       },
@@ -419,40 +423,41 @@
         "name": "U.S. News",
         "items": [
           {
-            "title": "World Series Game 5 is tonight: Brewers can win their first title, Rays must win to stay alive",
-            "source": "NBC Sports",
-            "url": "https://www.nbcsports.com/mlb/news/how-to-watch-rays-vs-brewers-game-5-of-2026-mlb-world-series-tv-channel-streaming-info-schedule-preview",
-            "summary": "Milwaukee gets its second chance to close out the World Series tonight in Game 5 at Tropicana Field in St. Petersburg, first pitch 8 p.m. ET on FOX. The Brewers lead the series 3-1 after Tampa Bay staved off a sweep with a 4-3 win in 12 innings in Game 4.\n\nTampa Bay scored twice in the bottom of the 12th on Tuesday, after Cooper Pratt's home run had put Milwaukee ahead in the top half, ending the Brewers' eight-game postseason winning streak. Jacob Misiorowski starts tonight for Milwaukee, while Drew Rasmussen is listed for the Rays, whose bullpen covered eight innings in Game 4.\n\nA Milwaukee win would be the first World Series title in franchise history. A Tampa Bay win sends the series back to Milwaukee for Game 6 on Friday, with a possible Game 7 on Saturday.\n\nWhat to watch: how long Tampa Bay's stretched pitching staff can hold up against a rested Misiorowski."
+            "title": "Pennsylvania measles cases climb close to 1,400 in the state's worst outbreak in years",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/pennsylvania-measles-cases-near-1400-state-health-department-says-2026-10-28/",
+            "summary": "Pennsylvania's measles count rose to 1,398 on Wednesday, up 38 from Monday's update, in what the state health department describes as its worst outbreak in years. Measles-related hospitalisations in the state stand at 265 so far in 2026, and Pennsylvania has reported five measles-related deaths this year.\n\nThe state is the centre of a national surge: CDC data as of October 22 counted 4,588 measles cases across the United States this year, with Pennsylvania accounting for well over a quarter of them in the CDC's tally. The CDC has said it will deploy additional support to help Pennsylvania investigate.\n\nMeasles is among the most contagious viruses known, and outbreaks of this size typically trace back to pockets of low vaccination coverage where the virus can sustain transmission. Each new weekly increase extends the period health officials must keep tracing contacts and watching for spread into new communities.\n\nWhat to watch: the state's next update — whether the weekly increase is shrinking, which would suggest the outbreak is cresting, or holding steady."
           },
           {
-            "title": "Record king tides flood both coasts, smashing water-level records in South Florida",
-            "source": "Palm Beach Post",
-            "url": "https://www.palmbeachpost.com/story/weather/2026/10/28/florida-king-tides-cause-major-flooding-surge-new-high-peak-levels/92474898007/",
-            "summary": "High tides across South Florida shattered records this week without any hurricane, topping even storm-driven water levels in some places. At Lake Worth Pier, water reached 2.7 feet on October 27, above levels recorded during Hurricane Nicole in 2022, Hurricane Sandy in 2012 and Category 5 Hurricane Dorian in 2019.\n\nAt Virginia Key in Miami, the gauge hit 2.54 feet above mean higher high water, the highest king tide in records dating to 1994 and third only to hurricane-driven levels from Irma and Wilma. On the other coast, Southern California gauges also set or neared records, with Newport Beach reporting an 8.4-foot tide.\n\nNational Weather Service meteorologist Chris Fisher said southeast Florida faces moderate tidal flooding into the first part of the weekend after this week's major flooding, which he called unusual. The combination of the fall king tide season, gale-force winds and Atlantic swell drove the surge, leaving businesses and residents with losses and delays.\n\nWhat to watch: additional king tide events are expected in November, December and January, and officials are urging coastal residents to keep flood precautions in place."
+            "title": "Federal disaster aid approved for 15 Florida counties still cleaning up after Hurricane Isaias",
+            "source": "Fox Weather",
+            "url": "https://www.foxweather.com/weather-news/disaster-declaration-florida-hurricane-isaias",
+            "summary": "Nearly three weeks after Hurricane Isaias came ashore near Destin as a Category 2 storm, the federal government has approved a major disaster declaration for 15 Florida Panhandle counties. The declaration unlocks FEMA public assistance for longer-term repairs to damaged infrastructure across counties from Escambia to Jefferson, expanding help beyond the emergency declaration issued at landfall on October 9.\n\nThe scale of the cleanup explains the urgency. More than 400,000 customers lost power at the storm's peak, six storm-related deaths were reported, and in the city of Milton alone officials estimate 400,000 to 500,000 cubic yards of debris are still waiting for removal, with local resources starting to run dry.\n\nOne gap remains: assistance for individual households was still under federal review, so residents cannot yet apply for individual FEMA aid even as public-works money starts to flow.\n\nWhat to watch: the decision on household assistance, which determines how quickly families — not just county governments — can start rebuilding.",
+            "img": "https://images.foxweather.com/static.foxweather.com/www.foxweather.com/content/uploads/2026/10/668/376/gettyimages-2299093542-scaled.jpg?ve=1&tl=1"
           },
           {
-            "title": "Opioid deaths fall to their lowest level since the emergency was declared in 2017, HHS reports",
-            "source": "U.S. Department of Health and Human Services",
-            "url": "https://www.hhs.gov/press-room/hhs-reports-opioid-deaths-lowest-nearly-decade.html",
-            "summary": "Opioid-related deaths in the United States have fallen to their lowest level since a public health emergency was declared in 2017, the Department of Health and Human Services said in a new analysis released Tuesday. Secretary Robert F. Kennedy Jr. announced the findings at an event in Detroit.\n\nThe accompanying report also found that the overall age-adjusted death rate in 2025 was 689.2 deaths per 100,000 people, which the department described as the lowest ever reported. On prescribing, researchers found opioid prescriptions dispensed had fallen to 45.3% of their March 2015 level, using data through March 2026.\n\nOfficials credited a mix of reduced unnecessary prescribing, efforts against illicit fentanyl supply, and expanded treatment and recovery services. Health experts generally caution that sustaining the decline depends on treatment capacity staying available in the communities hardest hit.\n\nWhat to watch: whether the provisional data hold as final figures are compiled, and whether a potent new synthetic opioid reported in several states slows the progress."
+            "title": "Dolores Huerta, who co-founded the United Farm Workers and coined 'Sí, se puede,' dies at 96",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/us-civil-rights-leader-dolores-huerta-dies-96-new-york-times-reports-2026-10-28/",
+            "summary": "Dolores Huerta, who co-founded the United Farm Workers with Cesar Chavez and became one of the most consequential American labour organisers of the 20th century, died Wednesday at 96, her family said.\n\nAs the union's chief negotiator and a relentless strike organiser and lobbyist, Huerta helped win contracts that brought farmworkers job security, healthcare, pensions, rest breaks, field toilets, clean drinking water and protection from pesticides — basic dignities that had been denied for generations. She gave the movement its rallying cry, 'Sí, se puede' — 'Yes, we can' — later adopted by Barack Obama's 2008 campaign, and she helped secure the 1975 California law that first gave farmworkers collective bargaining rights.\n\nHer activism carried real costs: she was arrested more than 20 times and was badly beaten by San Francisco police at a 1988 protest. She received the Presidential Medal of Freedom in 2012, founded her own foundation in 2002 and was still lecturing into her 90s. A former teacher, she often said she left the classroom because she could not stand seeing children arrive hungry.\n\nWhat to watch: tributes and memorial plans — and how a new generation of labour organisers, in fields far beyond agriculture, claims her legacy."
           },
           {
-            "title": "Early voting is surging in the states that will decide the Senate, AP analysis shows",
-            "source": "Associated Press",
-            "url": "https://webcenters.netscape.compuserve.com/politics/story/0001/20261021/44df2c18b387d28022dbb480e99feaba",
-            "summary": "Voter turnout is soaring compared with the last midterm in many of the states expected to decide control of the U.S. Senate, according to an Associated Press analysis of early voting. In Texas, early voting was up 74% compared with 2022, in Kansas it had more than doubled, and Maine, North Carolina and Ohio all saw increases of more than 30%.\n\nNationally, more than 13 million mail-in and early in-person votes had been cast at the point of the analysis, compared with 9 million at the same point in 2022. Part of the increase reflects additional states expanding early voting or making more data available since the last midterms.\n\nDemocrats are trying to flip Republican-held Senate seats in each of the highlighted states, and in most of them Republicans accounted for a smaller share of advance voters than four years ago. Analysts caution that early-vote shares are a snapshot of enthusiasm, not a result.\n\nWhat to watch: the final weekend of early voting and whether the pace holds through Election Day on November 3."
+            "title": "Fire at a South Carolina nuclear site injures one worker, with no contamination reported",
+            "source": "Reuters",
+            "url": "https://kwsn.com/2026/10/28/one-injured-in-fire-at-south-carolina-nuclear-site-no-contamination-reported/",
+            "summary": "A fire at the Savannah River Site in South Carolina on Wednesday left one employee with minor injuries and triggered a 'site area emergency' declaration, the Department of Energy said. The fire, at the site's National Laboratory, was extinguished, and officials said no contamination has been reported. The cause has not been disclosed.\n\nThe response was broad as a precaution: the injured worker was taken to hospital, non-essential employees sheltered in place, the FAA temporarily restricted flights over the area, and rail, river and ground travel nearby was restricted.\n\nThe Savannah River complex was built in the early 1950s near Jackson, South Carolina, to produce plutonium and tritium for nuclear weapons during the Cold War. Today its mission is the long, slow work of cleaning up nuclear waste and managing nuclear materials — which is precisely why any incident there draws an outsized response.\n\nWhat to watch: the site's explanation of what caught fire — the key fact still missing from officials' statements."
           },
           {
-            "title": "Trump says he is ending Biden-era methane restrictions on oil and gas drilling",
-            "source": "Associated Press",
-            "url": "https://www.kenw.org/npr-news/2026-10-28/trump-says-hes-ending-restrictions-on-climate-warming-methane-from-oil-drilling",
-            "summary": "President Trump said Tuesday that his administration is terminating a Biden-era rule aimed at cutting methane emissions from oil and gas drilling. He announced the move at a campaign rally in Lubbock, Texas, saying it would save companies and consumers billions of dollars and unlock 210 million barrels of oil — about 10 days of U.S. petroleum consumption.\n\nThe administration is framing the rollback as a response to high fuel prices amid the war in Iran, and as relief for small operators the president said were crushed by the regulations. EPA Administrator Lee Zeldin had previewed the changes last month, including ending the Super Emitter Program, which requires companies to investigate and repair major methane releases, and setting looser standards for small wells.\n\nMethane is the main component of natural gas and a far more potent planet-warming gas than carbon dioxide in the short term; scientists estimate it accounts for about a third of greenhouse-gas warming, and oil and gas operations are the largest industrial source.\n\nWhy it matters: cutting methane has been one of the fastest available levers for slowing near-term warming. Removing the rule trades that benefit for lower compliance costs, and the change is likely to be challenged in court."
+            "title": "CNN, MS NOW and Politico expand their lawsuit over White House press access limits",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/legal/government/cnn-ms-now-politico-expand-lawsuit-over-white-house-access-limits-2026-10-28/",
+            "summary": "CNN, MS NOW and Politico expanded their lawsuit against the White House on Wednesday, asking a federal judge to stop the administration from barring them from the press pool — the small rotating group that covers the president in close quarters such as the Oval Office and aboard Air Force One.\n\nThe outlets say that even after Judge Timothy Kelly issued orders from September 24 onward requiring their access to be reinstated, they have continued to face retaliation for their coverage. They argue the continued exclusion violates the First Amendment. The White House responded that 'the Fake News has no place demanding a spot in the President's Oval Office.'\n\nPool access matters beyond prestige: pool reporters are the eyes of the entire press corps in spaces too small for everyone, and their reports are shared with all outlets. Restricting who may serve therefore shapes what every newsroom — including the administration's friendliest — can know.\n\nWhat to watch: whether Judge Kelly treats the alleged continued exclusion as defiance of his existing orders, which would raise the legal stakes sharply."
           },
           {
-            "title": "Residential cruise ship suspends its world voyage in Cambodia over fuel costs, stranding about 200 residents",
-            "source": "Associated Press",
-            "url": "https://www.kcau9.com/news/international/ap-a-us-cruise-ship-ends-a-global-voyage-in-asia-due-to-fuel-costs-and-200-passengers-lose-their-homes/",
-            "summary": "A residential cruise ship — a vessel whose passengers live aboard full-time as it sails the world — has suspended its voyage in Cambodia because of soaring fuel costs, leaving roughly 200 residents without the home they paid for.\n\nResidents of these ships typically buy or lease cabins for years at a time, selling houses on land to live at sea. A suspended voyage is therefore not a ruined vacation; it is the loss of a home, with personal belongings, routines and medical arrangements all built around the ship.\n\nFuel is one of the largest operating costs for any vessel, and prices have been elevated through the energy shock that followed the strikes on Iran. The operator's decision shows how that shock is reaching even niche corners of the travel economy far from the front lines.\n\nWhat to watch: whether the operator refunds or rehouses residents, and whether other long-voyage and residential ships announce similar pauses."
+            "title": "U.S. approves a license for an $8.2 billion offshore liquefied natural gas port near Texas",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/business/energy/us-agency-approves-deepwater-port-license-application-82-billion-st-lng-project-2026-10-28/",
+            "summary": "The Maritime Administration has approved a deepwater port license for the $8.2 billion ST LNG project, to be built about 10 miles offshore from Matagorda, Texas. Transportation Secretary Sean Duffy announced the approval Wednesday.\n\nThe port would host four liquefaction plants with combined capacity of 8.4 million tonnes a year, fed by gas from the Tres Palacios storage hub and the Williams Markham plant through an existing pipeline. Construction is expected to begin in 2027, with operations starting in 2029. Officials say the offshore siting keeps tanker traffic away from congested onshore waterways.\n\nThe approval was strikingly fast: the final environmental review took 410 days, described as the fastest deepwater port review in more than two decades. It lands as the United States, already the world's largest LNG exporter with more than 100 million tonnes a year in service, has nearly as much again under construction.\n\nWhat to watch: the administration also proposed new rules Wednesday to speed LNG projects generally — expect environmental groups to test both the rules and this license in court."
           }
         ]
       },
@@ -460,40 +465,40 @@
         "name": "Cleveland & Ohio",
         "items": [
           {
-            "title": "Brown leads Husted 47-44 in Ohio's Senate race in a new Suffolk poll — and Acton leads Ramaswamy for governor",
-            "source": "The Columbus Dispatch",
-            "url": "https://www.dispatch.com/story/news/politics/elections/2026/10/28/ohio-senate-race-poll-suffolk-university-sherrod-brown-jon-husted/92441532007/",
-            "summary": "Ohio's U.S. Senate race remains a coin flip in its final week. A Suffolk University / USA Today Ohio Network poll of likely voters released Wednesday has former Sen. Sherrod Brown leading appointed Sen. Jon Husted 47% to 44% — inside the poll's 4.4-point margin of error. The same survey has Democrat Amy Acton leading Republican Vivek Ramaswamy 48% to 44% in the governor's race.\n\nBrown's edge rests on independents, who break for him 52% to 24%. Two minor candidates — Libertarian Bill Redpath and independent Greg Levy — take about 1.6% each, and in a race this close that combined 3% could decide it. Outside groups are already working that angle: a GOP-backed organization has spent more than $2.2 million boosting Levy, while a Democratic-linked group has texted voters promoting Redpath over Husted. Levy's campaign called the effort highly undemocratic.\n\nThe race is on pace to set Ohio ad-spending records and could decide Senate control. Suffolk's polling director put the dynamic plainly: independents will determine the outcome in Ohio, and every independent who votes third-party makes the remaining ones harder to win.\n\nWhat to watch: final-week advertising in the Cincinnati and Cleveland markets, and whether either campaign can pull the minor candidates' voters back before Tuesday."
+            "title": "Ohio mail ballots must be received by Election Day — officials warn mailing one now is risky",
+            "source": "Columbus Dispatch",
+            "url": "https://www.dispatch.com/story/news/politics/elections/2026/10/28/ohio-mail-in-ballot-election-day-2026-drop-off-locations/92476291007/",
+            "summary": "Ohio's rules changed this year, and the change bites this week: under Senate Bill 293, most absentee ballots must arrive at the county board of elections by the close of polls at 7:30 p.m. on Tuesday, November 3, to count. The old four-day grace period after Election Day is gone, except for military and overseas voters.\n\nSecretary of State Frank LaRose said on October 27 that it may already be too late to drop a ballot in the mail and count on it arriving in time — partly because the Postal Service does not necessarily postmark mail the day it is received. The safe route now is in-person drop-off; in Cuyahoga County that is the Board of Elections at 1803 Superior Ave. in Cleveland.\n\nEarly in-person voting continues through the weekend, including Saturday and Sunday, ahead of an Election Day topped by the Acton–Ramaswamy governor's race and the Brown–Husted Senate race.\n\nWhat to watch: if you know anyone holding a completed mail ballot, hand-delivery is the advice from the state itself — do not mail it."
           },
           {
-            "title": "Still holding an Ohio mail ballot? Signal Cleveland walks through how to make sure it counts",
-            "source": "Signal Cleveland",
-            "url": "https://signalohio.org/still-have-your-ohio-mail-ballot-heres-how-to-make-sure-it-counts/",
-            "summary": "If you are still holding an Ohio mail ballot, the safest move now is to deliver it in person. Under Ohio's current rules, mailed ballots must be received by 7:30 p.m. on Election Day, Tuesday November 3 — a postmark no longer saves a late ballot — so dropping it at your county board of elections removes the mail from the equation entirely.\n\nEarly in-person voting continues at county boards this week: Wednesday through Friday, October 28-30, from 7:30 a.m. to 7:30 p.m.; Saturday October 31 from 8 a.m. to 4 p.m.; and Sunday November 1 from 1 to 5 p.m. There is no early voting on Monday November 2. Election Day polls are open 6:30 a.m. to 7:30 p.m.\n\nVoters in person must show an unexpired photo ID: an Ohio driver's license or state ID, an interim BMV form, a U.S. passport or passport card, or a military, dependent, National Guard or VA ID. Student IDs, mobile IDs and out-of-state licenses are not accepted.\n\nWhy it matters locally: Ohio has both a Senate race and a governor's race inside the margin of error. Ballots that arrive late do not count at all, which makes the delivery method — not just the vote itself — part of the result."
+            "title": "More than 1 million Ohioans have already voted early, beating past midterm turnout",
+            "source": "Cincinnati Enquirer",
+            "url": "https://www.cincinnati.com/story/news/politics/2026/10/28/more-hamilton-county-voters-are-voting-early-heres-what-that-means/92266418007/",
+            "summary": "Ohioans are voting early at a pace past midterms never reached. More than 1 million ballots had been returned statewide as of October 27 — nearly 700,000 cast in person and over 491,000 absentee ballots returned — compared with about 818,000 at the same point in 2022 and 736,000 in 2018.\n\nThe returned ballots skew unaffiliated, with about 500,000 from voters registered without a party, followed by roughly 365,000 Democratic and 311,000 Republican ballots in the Secretary of State's figures. Hamilton County shows the same pattern amplified, with a larger Democratic share of early returns than in either prior midterm.\n\nEarly voting is not a result — parties differ in how their voters use it, and Election Day turnout can swamp the early picture. But a bigger, earlier electorate does mean campaigns are now chasing a shrinking pool of undecided, unvoted Ohioans in the final days.\n\nWhat to watch: the final weekend of early voting, including Halloween Saturday hours, before polls open Tuesday at 6:30 a.m."
           },
           {
-            "title": "Browns have no plans to trade Shedeur Sanders, with the backup quarterback stuck to the bench",
-            "source": "New York Post / Cleveland.com",
-            "url": "https://nypost.com/2026/10/28/sports/browns-have-no-plans-to-trade-shedeur-sanders-with-qb-stuck-to-bench/",
-            "summary": "Shedeur Sanders is not going anywhere. The Browns have no plans to trade their backup quarterback ahead of the deadline, according to Mary Kay Cabot of Cleveland.com, even though Sanders has been stuck on the bench all season behind a resurgent Deshaun Watson.\n\nSanders recently hired an agent for the first time in his career — he went through the 2025 draft process without one, a decision often cited in his fall from projected first-rounder to the sixth round — and the hiring fueled speculation that he wanted a move to a team where he could play.\n\nCleveland's logic is longer-term. Watson is in the final year of his contract, and Sanders showed flashes as a rookie last season, throwing for 1,400 yards with seven touchdowns and 10 interceptions across eight starts after injuries forced him into the lineup. Keeping him costs little and preserves a succession plan.\n\nWhat to watch: the November 10 trade deadline. A quarterback injury elsewhere could test Cleveland's resolve with an offer, but for now the 5-2 Browns are keeping their insurance policy."
-          },
-          {
-            "title": "At 5-2, the Browns are low-key buyers to watch before the trade deadline, ESPN insider says",
-            "source": "Athlon Sports / ESPN",
-            "url": "https://athlonsports.com/nfl/cleveland-browns/browns-trade-deadline-defensive-line-blocker",
-            "summary": "First place changes the phone calls. ESPN insider Jeremy Fowler named the 5-2 Browns a low-key team to watch before the November 10 trade deadline, writing that Cleveland likes to make deals and could be a quiet buyer rather than a seller.\n\nThe shopping list Fowler sketched starts with defensive-line help, where depth is available around the league, and includes a versatile blocker at tight end or H-back — the Patrick Ricard role that offensive coordinator Todd Monken used in Baltimore — to support a run game that has become central to Cleveland's identity.\n\nThe Browns head to Pittsburgh on Sunday for a divisional showdown with the also-5-2 Steelers, a game that will say a lot about whether this start is a contender's start. Deadline urgency tends to rise or fall on results like that one.\n\nWhat to watch: Cleveland has an open roster spot on the defensive front after losing Kalia Davis for the season, so a move could come even before deadline week."
-          },
-          {
-            "title": "Cleveland City Council votes 7-6 against reimbursing the Browns $1.1 million for stadium repairs",
-            "source": "Athletic Business / WKYC",
+            "title": "Cleveland City Council refuses to pay $1.1 million for Browns stadium repairs",
+            "source": "Athletic Business",
             "url": "https://www.athleticbusiness.com/facilities/article/16050247/cleveland-city-council-declines-to-reimburse-browns-for-11m-in-stadium-repairs",
-            "summary": "Cleveland City Council voted 7-6 on Monday to reject reimbursing the Browns $1.1 million for repairs to Huntington Bank Field — money the city is obligated to repay under the stadium lease, and which Mayor Justin Bibb's administration supported paying.\n\nThe repairs were unglamorous and essential: a failed sanitary pump, a sewer ejector pump failure, failed pipe insulation and an overhead door, among other work needed to operate the city-owned stadium safely. Council members voting no were blunt that the vote was about the Browns' planned move to Brook Park, not the plumbing.\n\nCouncilman Michael Polensek said residents feel sold out by the $100 million settlement that cleared the team's move, adding that the city is frustrated about losing both the Browns and the stadium. Council President Blaine Griffin, who voted to pay, warned that refusing a lease obligation invites legal bills larger than the reimbursement itself.\n\nWhy it matters: it is the first time in recent memory council has rejected a stadium reimbursement — it approved $2.6 million in repairs just last year. The Browns still expect to be repaid, so the fight now likely moves to lawyers rather than ledgers."
+            "summary": "Cleveland City Council voted 7–6 against reimbursing the Browns $1.1 million for repairs to the city-owned lakefront stadium, with members openly tying the refusal to the team's planned move to Brook Park. The stadium is expected to be demolished within about five years once the club leaves downtown.\n\nThe work itself was unglamorous and essential: a failed sanitary pump, a sewer ejector pump failure, failed pipe insulation and an overhead door, among other projects the team had already completed. Mayor Justin Bibb's administration argued the repairs were necessary to operate the stadium safely and that the existing lease obliges the city to repay the team.\n\nCouncil member Michael Polensek captured the mood, telling administration officials that residents feel the city was sold out over the move and are unhappy about losing both the team and the stadium.\n\nWhat to watch: whether the administration pays anyway, negotiates, or lets the dispute head toward a legal fight over what the lease actually requires — with the demolition clock already ticking."
           },
           {
-            "title": "Guardians face a $9.6 million decision on Jo Adell — keep, trade or non-tender the power bat",
-            "source": "Heavy / Cleveland.com",
-            "url": "https://heavy.com/sports/mlb/cleveland-guardians/guardians-face-96-million-jo-adell-decision-split/",
-            "summary": "Steven Kwan's future will headline the Guardians' offseason, but Jo Adell may be the harder call. Adell is entering his final year of arbitration, and MLB Trade Rumors projects his salary at about $9.6 million for 2027 — a big number by Cleveland's payroll standards.\n\nThe case for paying it is the player Adell became after arriving from the Angels: the right-handed power bat the organization spent years failing to develop internally, capable of protecting Jose Ramirez in the middle of the lineup. That profile is exactly what Cleveland's lineup has lacked.\n\nThe alternatives are to trade him now and get value back, or to non-tender him — offer no contract at all and let him become a free agent, saving the money but losing the player for nothing. For a team that just played in the ALCS, walking away from its one proven right-handed power source would be a difficult sell.\n\nWhat to watch: the non-tender deadline forces a decision early in the offseason, and Adell's market — teams are always short on right-handed power — will shape what a trade could return."
+            "title": "Ohio offers $15 ride credits in Cuyahoga and six other counties to cut Halloween impaired driving",
+            "source": "Columbus Dispatch",
+            "url": "https://www.dispatch.com/story/news/state/2026/10/28/partying-this-halloween-weekend-ohio-offers-15-dollars-in-uber-lyft-credits-to-anyone-in-7-counties/92481244007/",
+            "summary": "Ohio is putting up to $15 of Uber or Lyft credit in residents' pockets this Halloween weekend to keep impaired drivers off the road. The Project Plan Ahead credits, from the Ohio Traffic Safety Office, apply to rides starting or ending in Cuyahoga, Summit, Butler, Franklin, Hamilton, Lucas or Montgomery counties, from 5 p.m. Thursday through 3 a.m. Monday, November 2.\n\nThe need is documented locally: Cuyahoga County recorded 95 OVI-related crashes over the past five Halloween periods, the most in Ohio. Statewide last Halloween, 19 people died in 19 fatal crashes over five days, 13 of them OVI-related. The programme ran earlier this year — about 1,200 rides over Memorial Day weekend, and 4,226 redeemed credits over Labor Day weekend, when traffic deaths fell 55% versus the year before.\n\nCredits cannot be scheduled in advance, the next batch of codes is released Friday at 10 a.m., supplies are limited, and any fare beyond $15 is on the rider.\n\nWhat to watch: grab a code Friday morning if your Halloween plans involve a drink — Solon's trick-or-treat crowds and party traffic overlap Saturday evening."
+          },
+          {
+            "title": "Ohio leads the nation in ballot fights over AI data centers",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/legal/litigation/ai-data-center-boom-faces-backlash-us-ballot-box-2026-10-29/",
+            "summary": "The AI building boom meets the ballot box in Ohio more than anywhere else in America. Voters in more than a dozen Ohio jurisdictions will decide 21 separate proposals to delay, restrict or ban data centers on Tuesday — the most of any state, according to Ballotpedia — out of at least 41 such measures across 38 jurisdictions in 10 states.\n\nOpposition is strikingly bipartisan. Organisers cite the enormous electricity and water demands of the facilities, plus health worries, even when developers generate their own power. Industry analysts say restrictions are more likely to steer projects to friendlier towns than to stop them, as developers already face years-long waits for grid connections and rising construction costs. U.S. data-center capacity under construction jumped 48% in the first half of this year.\n\nThe highest-stakes local fight is in Sunbury, near Columbus, where a ban on facilities using more than 25 megawatts could derail Amazon's proposed $2 billion development.\n\nWhat to watch: Tuesday's results will draw the first real map of where Ohio communities will — and will not — host the AI economy."
+          },
+          {
+            "title": "Amy Acton fires back in Cincinnati: 'Decency is on the line' in the governor's race",
+            "source": "Cincinnati Enquirer",
+            "url": "https://www.cincinnati.com/story/news/politics/2026/10/29/aaron-dessner-plays-bloodbuzz-ohio-at-amy-acton-rally-in-cincinnati/92458749007/",
+            "summary": "Democratic governor candidate Amy Acton took her sharpest swing of the campaign on Wednesday night, telling hundreds of supporters at Cincinnati's Woodward Theater that her Republican opponent tried to use her childhood as a weapon — and that decency itself is on the ballot.\n\nThe rally answered a Ramaswamy campaign ad featuring Acton's estranged mother calling her a liar — an ad that drew criticism from Republicans as well as Democrats. Acton told the crowd she has not seen her mother since 1978, the year she confronted her stepfather in court over his sexual assault of her when she was 12. 'It's not going to work,' she said of the ad.\n\nShe was joined by Senate candidate Sherrod Brown and Representative Greg Landsman, who focused on healthcare and childcare costs, and by Aaron Dessner and Bryan Devendorf of The National, who performed for the hometown crowd. A USA Today/Suffolk poll released this week put Acton ahead 48% to 44%, within a close margin.\n\nWhat to watch: whether the ad controversy is actually moving late deciders — pollsters found a small but real net shift toward Acton among voters who had seen it."
           }
         ]
       }
@@ -741,59 +746,59 @@
     }
   ],
   "tickerExtras": [
-    "🏀 Cavs host Washington tonight, Wed Oct 28, 7 PM at Rocket Arena — Cleveland 2-1 after Monday's 127-125 OT win over Minnesota · Wizards 2-2 · Next: at Atlanta Thu Oct 29",
-    "🏈 Browns 5-2, tied atop the AFC North · Next: at Pittsburgh Sun Nov 1, 1 PM on CBS · Ohio State at USC Sat Oct 31, 7:30 PM ET on NBC — freshman Luke Fahey expected to make his first start with Sayin out",
-    "⚾ World Series Game 5 tonight, 8 PM ET in St. Petersburg on FOX — Brewers lead Rays 3-1 and can win their first title · Jacob Misiorowski (Milwaukee) vs Drew Rasmussen (Tampa Bay)",
-    "📈 Top story: Spain train crash toll rises to at least 68 dead, nearly 80 injured — two high-speed trains collided near Toledo, suspending Madrid-Seville service",
-    "🏷️ Deal of the day: Giant Eagle — large ripe & ready avocados $0.99 each (ad ends today, Wed Oct 28)",
+    "🏀 Cavs beat Washington 121-111 last night (Mobley 24 pts, 12 reb) — at Atlanta TONIGHT, Thu Oct 29, 8 PM ET on NBA TV / WUAB · Cavs 3-1",
+    "🏈 Browns 5-2 · Next: at Pittsburgh (5-2) Sun Nov 1, 1 PM on CBS, first place in the AFC North on the line · Ohio State at USC Sat Oct 31, 7:30 PM ET on NBC — QB Sayin out indefinitely",
+    "⚾ Brewers win the World Series — Milwaukee beat Tampa Bay 4-1 in Game 5 for the first title in franchise history · William Contreras named MVP",
+    "📈 Top story: Spain train crash toll stands at 68 dead — investigators probe why a train was authorised past a red signal; three days of national mourning begin today",
+    "🏷️ Deal of the day: Giant Eagle Market District (Solon) — sirloin tip roasts or value pack steaks BOGO Free in the new ad starting today, Oct 29 – Nov 4",
     "🚗 Roads: Solon-area roads normal today — I-271, US-422 and Aurora Rd clear, no notable closures in ODOT's District 12 bulletin"
   ],
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "baby": {
-    "tip": "Car-seat week: practice installing the Aria V2 base now, while there is no rush — click it onto the Vista frame once at home, check the level indicator, and route the seat belt or LATCH exactly as the manual shows. Then do one calm practice run of getting the base in and out of the MDX. If anything feels wobbly or unclear, a certified car-seat inspection station can double-check it — and your OB's office can point you to a local one.",
-    "fact": "Newborns arrive with remarkably good hearing: they have been listening for months in the womb, and studies show babies in their first days already prefer their mother's voice over a stranger's — and even recognize stories or songs heard often before birth.",
-    "fun": "Tiny prep mission for today: the going-home outfit draft. Each of you picks one newborn outfit (two sizes count as one pick — babies are surprise-sized), lay both next to the hospital bag, and let Moose sniff-approve the final roster."
+    "tip": "Partner go-bag check: alongside Kelly's hospital bag, pack a small bag for Mike — phone charger with a long cord, snacks and water, a change of clothes, toiletries and any meds — and leave both bags, plus the car-seat base already installed, by the door you actually exit through. Hospitals are marathons for partners too, and a dead phone helps nobody.",
+    "fact": "A newborn's eyes are tuned for exactly one distance at first: about 8 to 12 inches, which happens to be roughly the distance from a parent's face during a feeding. Faces are the first thing babies study, and high-contrast patterns hold their attention longest.",
+    "fun": "Tiny prep mission: the Moose introduction plan. Wash one receiving blanket now, let it live in the nursery this week, and after the baby arrives it can come home ahead of you carrying the new scent — Moose's official first briefing, at nose level."
   },
   "watch": {
-    "date": "Wednesday, October 28, 2026",
+    "date": "Thursday, October 29, 2026",
     "items": [
       {
-        "title": "They Mocked Bigfoot at Salt Fork. Then Rocks Came Out of the Dark. | Bigfoot Society 1228",
-        "channel": "Bigfoot Society",
-        "url": "https://www.youtube.com/watch?v=rZCb0HPY4gE",
-        "dur": "42 mins",
-        "why": "Ohio woods, Mike's backyard: two friends mock Bigfoot at Salt Fork State Park, then rocks fly out of the dark and something growls — plus a deer hunter's ravine encounter."
+        "title": "50 YEARS OF BIGFOOT ENCOUNTERS! | Super Dave aka Sasquatch  - Ep. 232 - 10/28/2026",
+        "channel": "The Cryptid Podcast",
+        "url": "https://www.youtube.com/watch?v=F-BMTM-PIRM",
+        "why": "A lifetime eyewitness tells his own story: an 8-foot Sasquatch at his Arkansas fishing hole as a kid, then 50 years of footprints, tree knocks and thermal-imaging nights."
       },
       {
-        "title": "Mexico Unexplained Halloween Special: Cryptids, UFOs & the Supernatural - Robert Bitto - TSP # 2875",
-        "channel": "Typical Skeptic Podcast",
-        "url": "https://www.youtube.com/watch?v=VCDokb3psc4",
-        "why": "Fresh Oct. 27 Halloween special: Mexico Unexplained's Robert Bitto walks through Mexican cryptid, UFO and supernatural legends — new folklore territory."
+        "title": "Black Triangle UFOs, Close Encounters & Disclosure | Lorien Fenton | Ep 796",
+        "channel": "Podcast UFO",
+        "url": "https://www.youtube.com/watch?v=giOyVvsxizo",
+        "why": "UFO researcher Lorien Fenton recounts her own 2014 black-triangle sighting and white-light encounters, firsthand — no Grusch, all witness."
       },
       {
-        "title": "Bigfoot, Dogman & Terrifying Cryptid Encounters — Daniel 'Dano' Hamilton",
+        "title": "TRANCHE SEVEN IS OUT!  The Hits and Misses of the Released UFO Files",
         "channel": "Spaced Out Radio",
-        "url": "https://www.youtube.com/watch?v=a0Tzc8CaBEA",
-        "why": "The Cryptid Podcast's Dano Hamilton as guest this time, trading Bigfoot and Dogman encounter stories — witness-first, in Mike's favorite lane."
+        "url": "https://www.youtube.com/watch?v=TWxYuCnIQYU",
+        "why": "Dave Scott and researcher Josh Rutledge go hit-by-hit through Tranche 7, the government's newest UFO file release, the week it dropped."
       },
       {
-        "title": "Bigfoot & Unexplained Activity | SASQUATCH THEORY LIVE — October 27, 2026",
-        "channel": "Sasquatch Theory",
-        "url": "https://www.youtube.com/watch?v=lFKkNYkeFGE",
-        "why": "Last night's live Sasquatch Theory session on Bigfoot and unexplained backwoods activity — fresh eyewitness conversation for the workday."
+        "title": "True Halloween Horror Stories That Will Keep You Awake!",
+        "channel": "Spaced Out Radio",
+        "url": "https://www.youtube.com/watch?v=ZHre46T3RcU",
+        "dur": "2 hrs 53 mins",
+        "why": "Lon Strickler — who had his own 1981 Maryland Bigfoot encounter — shares Halloween-season eyewitness horror stories from thousands of documented cases."
       },
       {
-        "title": "Abandoned in the World's Most Dangerous Jungle | Daniel Egginton",
-        "channel": "Survival Debrief",
-        "url": "https://www.youtube.com/watch?v=TN0FewCRm3Y",
-        "why": "Survival Debrief interview: Daniel Egginton on being abandoned in the Darién Gap, the world's most dangerous jungle crossing."
+        "title": "71 Days on ALONE: Andrew Price Reveals What TV Didn't Show with Steven Kelly | Survival Debrief",
+        "channel": "The Survival Debrief Podcast with Steven Kelly",
+        "url": "https://www.youtube.com/watch?v=ZSx_0ddgass",
+        "dur": "35:26",
+        "why": "A 71-day Alone survivor in the Canadian Arctic on starvation, isolation — and the two big fish he caught in one day that TV never showed."
       },
       {
-        "title": "The Pedlar and the Witch | Halloween Season",
-        "channel": "Cautionary Tales with Tim Harford",
-        "url": "https://www.podparadise.com/Podcast/1484511465",
-        "dur": "39:15",
-        "why": "Harford storytelling at its spookiest: a 1612 quarrel in the British countryside spirals into one of Britain's most notorious witch trials."
+        "title": "SURVIVE THIS #4: Stay Put — or Walk Out in the Dark?",
+        "channel": "SURVIVE THIS",
+        "url": "https://www.youtube.com/watch?v=9q5yJLBfSWo",
+        "why": "The real October rescue of a 69-year-old hiker lost at 11,301 feet on Mount Taylor, writing goodbye messages: stay put, or walk out in the dark?"
       }
     ]
   },
