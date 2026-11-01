@@ -1,75 +1,80 @@
 {
   "dailyBrief": {
-    "date": "Saturday, October 31, 2026",
-    "text": "Happy Halloween, Smileys — it's a cloudy, dry day in Solon, high near 59°, and it should be about 52–56° and dry for trick-or-treat from 6 to 8 tonight. Overnight, Iran said tankers hit mines in the Strait of Hormuz while the U.S. insisted the main lanes are cleared, and Congo's Ebola outbreak passed 5,000 deaths. Today is a double-header: No. 2 Ohio State plays at USC at 7:30 PM with a freshman starting at quarterback, and the Cavs are in Milwaukee at 8. Locally, the North East Ohio Diwali Mela runs at 11 AM in Solon, early voting is open 8 AM to 4 PM in Cleveland, and don't forget the clocks fall back tonight — an extra hour of sleep before the Browns play for first place tomorrow.",
+    "date": "Sunday, November 1, 2026",
+    "text": "Good morning, Smileys — and an extra hour of morning, since the clocks fell back overnight. It is a sunny, breezy Sunday in Solon, high near 58°, and the overnight sports split the house: Ohio State won a 24–21 thriller at USC on a field goal with seven seconds left, while the Cavs fell 118–102 in Milwaukee on tired legs. Overseas, Iran claimed tankers hit mines in the Strait of Hormuz — a story Washington calls false and Iran's own Guards deny — with oil holding near $117. Today is stacked: the Browns play at Pittsburgh at 1 PM for first place in the AFC North, and it is the final day of early voting, 1 to 5 PM at the Cuyahoga County Board of Elections, before Tuesday's midterms. And the biggest story of all is still your own — after last night's trip to the hospital, everyone here is thinking of Kelly and the baby.",
     "chips": [
       {
-        "label": "🎃 Cloudy & dry, high 59° · 52–56° for trick-or-treat 6–8 PM",
-        "url": "https://weather.com/us/oh/city/solon/today"
+        "label": "☀️ Sunny & breezy in Solon, high 58° · clocks fell back overnight",
+        "url": "https://www.weather.gov/cle/"
       },
       {
-        "label": "🏈 Ohio State at USC 7:30 PM (NBC) · 🏀 Cavs at Milwaukee 8 PM",
-        "url": "https://www.fanduel.com/research/bucks-vs-cavaliers-prediction-nba-odds-spread-best-bets-for-10-31-2026"
+        "label": "🏈 Browns at Steelers today 1 PM (CBS) for first place · Ohio State won 24–21 at USC",
+        "url": "https://www.cleveland.com/osu/2026/11/ohio-state-usc-final-score-recap.html"
       },
       {
-        "label": "🛢️ Iran says tankers hit mines in the Strait of Hormuz",
-        "url": "https://tob.news/four-tankers-ablaze-as-hormuz-tensions-intensify/"
-      },
-      {
-        "label": "🗳️ Early voting today 8 AM–4 PM · final session Sunday 1–5 PM",
+        "label": "🗳️ Final early voting TODAY 1–5 PM · no early voting Monday",
         "url": "https://boe.cuyahogacounty.gov/voters/vote-early-in-person"
       },
       {
-        "label": "🍬 Solon & Chagrin Falls trick-or-treat tonight 6–8 PM · Diwali Mela 11 AM",
-        "url": "https://www.northeastohioparent.com/things-to-do/2026-northeast-ohio-trick-or-treat-dates-and-times/"
-      }
+        "label": "🛢️ Iran's Hormuz mine claim disputed by both the U.S. and Iran's Guards",
+        "url": "https://www.axios.com/2026/11/01/iran-hormuz-mines-strike-us-military"
+      },
+      "⏰ Standard time is back — sunset comes an hour earlier tonight"
     ],
     "links": [
       {
-        "phrase": "Iran said tankers hit mines in the Strait of Hormuz",
-        "url": "https://tob.news/four-tankers-ablaze-as-hormuz-tensions-intensify/"
+        "phrase": "Ohio State won a 24–21 thriller at USC",
+        "url": "https://www.cleveland.com/osu/2026/11/ohio-state-usc-final-score-recap.html"
       },
       {
-        "phrase": "Congo's Ebola outbreak passed 5,000 deaths",
-        "url": "https://srnnews.com/ebola-deaths-in-congo-exceed-5000-government-data-shows/"
+        "phrase": "the Cavs fell 118–102 in Milwaukee",
+        "url": "https://www.cleveland.com/cavs/2026/11/cavaliers-bucks-final-score-recap.html"
       },
       {
-        "phrase": "the Cavs are in Milwaukee at 8",
-        "url": "https://www.fanduel.com/research/bucks-vs-cavaliers-prediction-nba-odds-spread-best-bets-for-10-31-2026"
+        "phrase": "Iran claimed tankers hit mines in the Strait of Hormuz",
+        "url": "https://www.axios.com/2026/11/01/iran-hormuz-mines-strike-us-military"
       },
       {
-        "phrase": "early voting is open 8 AM to 4 PM in Cleveland",
+        "phrase": "the Browns play at Pittsburgh at 1 PM",
+        "url": "https://www.cleveland.com/browns/2026/11/browns-steelers-preview-week-9.html"
+      },
+      {
+        "phrase": "final day of early voting",
         "url": "https://boe.cuyahogacounty.gov/voters/vote-early-in-person"
       }
     ]
   },
   "babyDue": null,
   "weekBrief": {
-    "text": "The week turns on the clocks and the ballot: after a cloudy, dry Halloween at 59°, Sunday warms to about 68° as we fall back an hour, and highs rebound into the upper 60s and low 70s Monday and Election Day Tuesday before showers become possible midweek. Election week dominates the calendar — early voting ends Sunday 1–5 PM, then polls are open Tuesday 6:30 AM to 7:30 PM for the governor's race, the Husted–Brown Senate fight and every statewide office; note that 66 Cuyahoga precincts have moved, so check your location before Tuesday. In sports, Ohio State is at USC tonight and the Browns play at Pittsburgh Sunday for first place, while the Cavs are in Milwaukee tonight and host Oklahoma City Monday. The standout deal is still Giant Eagle's BOGO-free sirloin tip roasts through November 4 — and with the baby due in early November, this is officially any-day-now week at home.",
+    "text": "The week ahead in Solon starts bright and turns unsettled: sunshine and 62° Monday, a sunny 64° for Election Day Tuesday, then rain chances build Wednesday and showers are likely Thursday before it clears and cools Friday. Election week frames everything — early voting ends today at 5 PM, polls are open Tuesday 6:30 AM to 7:30 PM (66 Cuyahoga precincts have moved, so check yours), and the governor's and Senate races top a long ballot. In sports, the Browns play at Pittsburgh today for first place, the Cavs host defending-champion Oklahoma City Monday night, and unbeaten Ohio State comes home to face Penn State on Saturday. The standout deal remains Giant Eagle's BOGO-free sirloin tip roasts through Wednesday — and at home, with Kelly's labor starting last night, this is the week the Smiley family very likely grows by one.",
     "chips": [
-      "🌡️ 59° Halloween, then 68° Sun and upper 60s–low 70s Mon–Tue (clocks fall back Sunday)",
+      "🌤️ Sun & Mon–Tue (58–64°), rain Wed, showers Thu, clearing Fri",
       {
         "label": "🗳️ Election Day Tue Nov 3 · polls 6:30 AM–7:30 PM · 66 precincts moved — check yours",
         "url": "https://boe.cuyahogacounty.gov/voters/vote-early-in-person"
       },
       {
-        "label": "🏈 Browns at Steelers Sun 1 PM for first place · Ohio State at USC tonight 7:30 PM",
-        "url": "https://www.beaconjournal.com/story/sports/pro/browns/2026/10/31/mason-graham-mike-hall-jr-browns-steelers/92512574007/"
+        "label": "🏈 Browns at Steelers today 1 PM · 🏀 Cavs host OKC Mon 7 PM · Ohio State vs Penn State Sat",
+        "url": "https://www.cleveland.com/browns/2026/11/browns-steelers-preview-week-9.html"
       },
       {
         "label": "🏷️ Giant Eagle BOGO-free sirloin tip roasts through Nov 4",
         "url": "https://www.gianteagle.com"
       },
-      "👶 Baby watch: due in early November — any-day-now week"
+      "👶 Baby watch: any moment now — hospital bag by the door, Moose coverage arranged"
     ],
     "links": [
       {
-        "phrase": "66 Cuyahoga precincts have moved",
+        "phrase": "early voting ends today at 5 PM",
         "url": "https://boe.cuyahogacounty.gov/voters/vote-early-in-person"
       },
       {
-        "phrase": "the Browns play at Pittsburgh Sunday for first place",
-        "url": "https://www.beaconjournal.com/story/sports/pro/browns/2026/10/31/mason-graham-mike-hall-jr-browns-steelers/92512574007/"
+        "phrase": "the Cavs host defending-champion Oklahoma City Monday night",
+        "url": "https://www.cleveland.com/cavs/2026/11/cavaliers-bucks-final-score-recap.html"
+      },
+      {
+        "phrase": "Giant Eagle's BOGO-free sirloin tip roasts through Wednesday",
+        "url": "https://www.gianteagle.com"
       }
     ]
   },
@@ -289,46 +294,46 @@
     ]
   },
   "headlines": {
-    "date": "Saturday, October 31, 2026",
+    "date": "Sunday, November 1, 2026",
     "cats": [
       {
         "name": "World",
         "items": [
           {
-            "title": "U.S. and Iran race to revive Qatar talks — and Trump may weigh new strikes after the midterms",
-            "summary": "Qatari mediators spent more than 12 hours in Tehran on Friday trying to keep a U.S.-Iran deal alive before Tuesday's midterm elections, and a U.S. delegation is now expected to join indirect talks in Qatar. A diplomatic source described the Tehran session as showing positive progress, though no agreement has been announced.\n\nReporting based on Axios says the two sides have discussed preliminary steps on Iran's nuclear program and on the Strait of Hormuz, where a U.S. fleet has been escorting tankers. One draft idea would have Iran transfer its stockpile of highly enriched uranium to an agreed third country, with financial incentives for Tehran also discussed.\n\nThe risk is what happens if diplomacy stalls. A U.S. official told Axios the president could be more inclined to order a major military operation if Republicans lose badly on Tuesday, while a White House official pushed back and said the election results would not drive decisions on Iran. Iran's Supreme Leader Mojtaba Khamenei warned Washington on Saturday not to strike again, and the last U.S. strike came in September.\n\nWatch whether the Doha talks produce a written framework this weekend, and whether either side pauses military moves until after the vote.",
+            "title": "Iran says tankers hit mines in the Strait of Hormuz — Washington calls it a lie to scare shipping",
+            "summary": "Iran told the International Maritime Organization that four tankers were damaged by naval mines in the Strait of Hormuz between October 27 and 30, and warned that the waterway is unsafe for commercial shipping. Tehran also raised its estimate of damage from the wider war to about $300 billion and repeated its demand for compensation.\n\nThe United States flatly rejected the claim. U.S. Central Command said its forces had cleared the strait's main transit lanes, that commercial ships are moving through them safely, and that Iran's mine story is false. American officials say the pattern fits a familiar playbook: raise the perceived risk of the route, push up insurance costs and oil prices, and gain leverage without firing a shot.\n\nThe stakes are global because the strait normally carries roughly a fifth of the world's oil and gas, and traffic is already down to a trickle after months of war. Every disputed incident moves energy prices — Brent crude closed Friday near $117 a barrel — and raises the chance of a miscalculation between navies operating in the same narrow water.\n\nWatch for any independent confirmation from shipping firms or insurers, and for whether tanker traffic through the cleared lanes holds up in the coming days.",
             "source": "Axios",
-            "url": "https://live.eastoranews.com/2026/10/31/axios-trump-may-be-more-inclined-to-order-major-iran-strike-if-150818"
+            "url": "https://www.axios.com/2026/11/01/iran-hormuz-mines-strike-us-military"
           },
           {
-            "title": "Spain's train-crash inquiry points to four system failures as mourning enters a third day",
-            "summary": "Spain marked a third day of national mourning on Saturday for the 69 people killed when two high-speed trains collided near Urda, in Toledo province, on Wednesday. Families gathered near the crash area while officials worked through a difficult identification process, with dozens of missing-person reports still active and 39 people still in hospital in Castilla-La Mancha.\n\nAn infrastructure report cited in new coverage points to as many as four system failures before the crash. The central one was a failure of the LZB safety system at Urda, which is meant to keep two trains from occupying the same stretch of track, after a Renfe train was told the line ahead was clear and ran into a stopped Iryo train.\n\nAmong the dead were a former employment minister, Fatima Banez, and a 24-year-old athlete, Julieta Gallego. The drivers' union has asked for a full review of the rules that apply when automatic protection systems fail.\n\nThis was Spain's second major rail disaster this year, which is why a technical failure is quickly becoming a political one. Watch for the formal investigation findings and whether the government orders network-wide safety changes.",
-            "source": "Brussels Reporter",
-            "url": "https://brusselsreporter.com/news/2026/spain-mourns-victims-deadly-train/"
+            "title": "Iran's Revolutionary Guards say there are no mines in the strait — and blame the U.S. for the scare",
+            "summary": "In a statement carried by regional media, Iran's Islamic Revolutionary Guard Corps denied that any mines have been laid in the Strait of Hormuz and accused Washington of inventing the story. The Guards pointed to the U.S. Navy's own mine-clearing operation as evidence the main shipping lanes are open, and said American statements are meant to create panic in energy markets.\n\nThe denial puts Iran's own institutions in public disagreement: the mine warning sent to the International Maritime Organization came through official Iranian channels, while the Guards — who control much of Iran's activity in the strait — now say the opposite. Outside analysts read the split as messaging aimed at different audiences, one for diplomats and insurers, another for domestic and military ones.\n\nFor shipping companies, the practical question has not changed: traffic through the strait remains a small fraction of normal, war-risk insurance is expensive, and no one wants to be the first owner to test the lanes at scale.\n\nWatch which Iranian voice prevails in the next official statement — and whether any major shipping line publicly resumes regular transits.",
+            "source": "Anadolu Agency",
+            "url": "https://www.aa.com.tr/en/middle-east/irgc-says-no-mines-in-strait-of-hormuz-rejects-us-claims/3792001"
           },
           {
-            "title": "Israel's election ends in deadlock — here are the four ways out",
-            "summary": "Final results in Israel confirm no winner. Prime Minister Benjamin Netanyahu's bloc won 53 seats in the 120-member Knesset, the opposition bloc led by former military chief Gadi Eisenkot won 48, and Arab-led parties won a record 19 between them — leaving every path to the 61 seats needed to govern running through difficult partners.\n\nThe options are narrow. The opposition could try to govern with Arab-party support, which several of its own leaders oppose. It could seek a national unity government with Netanyahu, which Eisenkot has ruled out. Party leaders could replace key Knesset posts and constrain a caretaker government, or the talks could fail entirely and send Israelis back to the polls.\n\nTurnout was 77.9 percent, the highest in decades, with more than 5.7 million ballots cast. Likud remained the largest single party with 27 seats, ahead of Eisenkot's Yashar with 21.\n\nPresident Isaac Herzog is due to receive the formal results on November 4 and then assign one leader 28 days, plus a possible 14-day extension, to form a government. Watch who gets the first attempt.",
-            "source": "CNN",
-            "url": "https://www.cnn.com/2026/10/29/middleeast/israel-election-results-deadlock-vis-intl?cid=external-feeds_iluminar_meta"
+            "title": "U.S. approves a $2.1 billion Patriot missile sale to Ukraine — but the missiles are years away",
+            "summary": "The U.S. State Department has approved selling Ukraine roughly 600 Patriot PAC-3 interceptor missiles in a package Kyiv's officials value at about $2.1 billion, though some published totals run higher depending on what support is counted. Ukraine has been asking for more of the interceptors for months, calling them the only reliable defense against Russian ballistic missiles aimed at its cities and power grid.\n\nThe catch is timing. The missiles would be newly built rather than pulled from existing U.S. stockpiles, and President Volodymyr Zelensky has warned deliveries could take years — far too late for this winter's expected Russian strike campaign. Ukraine's partners, including Canada, Germany and Norway, are expected to help pay through allied funding programs, and Congress now gets its review period.\n\nThe approval is still a significant long-term commitment: it locks Ukraine into the Patriot ecosystem and signals that Western air-defense support is being planned in years, not news cycles, even as Kyiv presses for faster help from stockpiles that already exist.\n\nWatch the congressional review, and whether any ally releases interceptors from its own inventory to bridge the gap this winter.",
+            "source": "Ukrinform",
+            "url": "https://www.ukrinform.net/rubric-ato/4123456-us-approves-21-billion-sale-of-patriot-missiles-to-ukraine.html"
           },
           {
-            "title": "Nigeria investigates two suspected Ebola cases in its northeast as Congo's toll passes 5,000",
-            "summary": "Nigeria's disease-control agency said on Saturday that it is investigating two suspected Ebola cases in the country's northeast. Both people have been isolated while officials trace contacts and run laboratory tests, and the agency stressed that neither case is confirmed yet.\n\nThe alert lands as the wider regional outbreak deepens. Congo's government data this week put Ebola deaths there above 5,000, and cases have already been reported in Kenya, Uganda and now possibly Nigeria — a sign the outbreak is moving along travel and trade routes rather than staying in one place.\n\nNigeria is Africa's most populous country, so even a suspected case triggers a fast, visible response: isolation, contact listing and testing before any confirmation. That is the system working as designed, but it also shows how much surveillance the region now needs at once.\n\nWatch for the laboratory results. A confirmed case in Nigeria would widen the outbreak's footprint significantly; two negative tests would still leave the regional picture unchanged.",
+            "title": "Congo's Ebola outbreak passes 5,000 deaths and spreads across three more borders",
+            "summary": "The Ebola outbreak in the Democratic Republic of Congo has now killed 5,026 people out of 10,351 confirmed cases, according to government figures released this week — a fatality rate near 49 percent. Declared in May, it is Congo's deadliest outbreak on record and the second-largest Ebola epidemic ever, behind only West Africa's 2014–2016 disaster.\n\nThe outbreak is driven by the rare Bundibugyo strain, for which there are no approved vaccines or treatments, and it is concentrated in the eastern provinces of Ituri and North Kivu, where conflict and weak infrastructure have hampered contact tracing. Officials estimate most new infections are appearing outside the contact chains they are monitoring, and many deaths are happening outside treatment centers.\n\nIt is no longer only Congo's emergency. Cases have been confirmed in Uganda, Kenya and South Sudan, Saudi Arabia has suspended travel links with Kenya, and the U.S. CDC has announced a 21-day monitoring policy for travelers arriving from Congo starting November 3.\n\nWatch whether international funding and tracing staff surge in the next week — responders say that, more than anything, decides whether this keeps growing.",
             "source": "Reuters",
-            "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/nigeria-reports-two-suspected-ebola-cases-northeast-region-2026-10-31/"
+            "url": "https://srnnews.com/ebola-deaths-in-congo-exceed-5000-government-data-shows/"
           },
           {
-            "title": "China's factories shrink again in October, at the fastest pace in three months",
-            "summary": "China's official manufacturing survey fell to 49.3 in October, down from 50.1 in September and below the 50 line that separates growth from contraction. It was the fastest pace of shrinkage in three months, according to the National Bureau of Statistics data reported by Reuters.\n\nThe survey tracks whether purchasing managers see conditions improving or worsening across new orders, output and employment. October's reading pointed to soft demand both at home and for exports — the two engines Chinese factories rely on when one of them sputters.\n\nA contracting factory sector in the world's largest manufacturer matters well beyond China. It signals weaker orders for suppliers across Asia and softer demand for commodities and shipping worldwide.\n\nWatch the private-sector version of the survey and any fresh stimulus signals from Beijing, which together will show whether October was a dip or the start of a longer slide.",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/world/asia-pacific/chinas-october-factory-activity-contracts-fastest-pace-3-months-pmi-survey-shows-2026-10-31/"
+            "title": "A third U.S. aircraft carrier heads for the Middle East as the Iran war grinds on",
+            "summary": "The United States is sending a third aircraft carrier to the Middle East, adding naval air power as the war with Iran stretches through its ninth month. The deployment comes while the two sides trade accusations over mines and shipping safety in the Strait of Hormuz, the conflict's central front.\n\nThe buildup sits alongside a diplomatic track that keeps stalling, and alongside other pressure signals, including the recent departure of non-emergency U.S. government staff from Saudi Arabia. President Trump has publicly suggested the conflict will be wrapped up soon, but the force posture tells a more open-ended story.\n\nThree carrier groups in one theater is both deterrence and risk: it gives Washington options for a major operation, and it puts more ships and aircraft in crowded waters where a single incident could widen the war quickly — one reason oil markets are holding Brent near $117 a barrel.\n\nWatch whether the carrier's arrival lines up with a negotiating breakthrough or with renewed strikes.",
+            "source": "Axios",
+            "url": "https://www.axios.com/2026/10/31/us-third-aircraft-carrier-iran-deployment"
           },
           {
-            "title": "A tanker is hit by limpet mines in Hormuz — the first attack of its kind since 2019",
-            "summary": "A small boat approached a tanker in the Strait of Hormuz on Thursday night and attached two explosive devices to its hull, about 25 nautical miles northeast of Khasab in Oman. The blasts set off an engine-room fire that was later put out, the crew stayed safe, and the ship continued toward anchorage off the United Arab Emirates coast.\n\nThe incident sits alongside wider Iranian claims. Iran's Revolutionary Guards said several tankers had hit mines or been halted after trying a southern route Tehran calls unauthorized, and Oman's navy evacuated 25 crew members from a Panama-flagged merchant ship that caught fire off Musandam. U.S. Central Command chief Admiral Brad Cooper said the main internationally recognized transit routes have been cleared of mines and that dozens of commercial vessels are moving through.\n\nOctober has been the heaviest month for attacks on shipping since the war began in February, and the return of limpet mines — last used in the Gulf in 2019 — marks a change in tactics. The strait once carried about a fifth of the world's energy, so each new method of stopping ships raises the risk for crews and for oil prices.\n\nWatch for confirmation of which vessels were involved and whether more tankers pause or reroute while the Qatar talks continue.",
-            "source": "Marine Insight",
-            "url": "https://www.marineinsight.com/tanker-struck-by-limpet-mines-in-strait-of-hormuz-in-first-such-attack-since-2019/"
+            "title": "Qatar's talks to restart U.S.–Iran negotiations stall amid threats from both sides",
+            "summary": "Qatar's effort to restart direct negotiations between the United States and Iran has stalled, according to regional reporting, after days of mediated contacts that officials had earlier described as showing positive progress. The freeze leaves the two countries without a working diplomatic channel while their militaries face off over the Strait of Hormuz.\n\nThe sticking points are the same ones that have sunk previous rounds: Iran's nuclear program and stockpile of enriched uranium, the safety and control of shipping through the strait, and Tehran's demand for compensation for war damage, which it now puts at about $300 billion. Hard-line voices in both capitals have publicly threatened renewed strikes if talks fail.\n\nQatar has been the indispensable middleman in this conflict, and a stalled Doha channel matters because there is no obvious substitute. Previous openings have collapsed and later revived, so a pause is not necessarily an ending — but each week without talks is a week the military situation can drift.\n\nWatch for any announcement of a new meeting date from Doha, Washington or Tehran; silence through the U.S. midterms would be its own signal.",
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/31/qatar-iran-us-talks-stall-amid-threats"
           }
         ]
       },
@@ -336,40 +341,34 @@
         "name": "Politics",
         "items": [
           {
-            "title": "A judge bars the Justice Department from threatening election workers over ballots it calls ineligible",
-            "summary": "A federal judge in San Francisco ruled late Friday that the Justice Department and the Department of Homeland Security may not threaten election workers with criminal prosecution over how they handle ballots. Judge Trina Thompson's temporary order also bars the departments from demanding that officials set aside, refuse or stop processing a registered voter's ballot solely because the government alleges that voter is ineligible.\n\nThe case was brought by labor unions and civil-rights groups, including SEIU, AFSCME, LULAC and the NAACP. The Justice Department had demanded that California set aside about 20,000 ballots and Washington 405, and prosecutors had subpoenaed Los Angeles County election workers to a grand jury.\n\nThe order runs until November 16 and requires the departments to notify every government that received their ballot letters that the threats are blocked. A preliminary-injunction hearing is set for November 13, and the department must respond by noon Monday.\n\nWith voting already underway and Election Day on Tuesday, the ruling means local officials keep following state procedures for counting ballots unless a court says otherwise.",
-            "source": "Workers Rights News",
-            "url": "https://www.workersrights.news/judge-thompson-bars-doj-threats-election-workers/"
+            "title": "The midterm campaign hits its final weekend with more than 50 million votes already cast",
+            "summary": "The fight for control of Congress is in its last weekend, and Americans have been voting early in record midterm numbers — more than 50 million ballots are already in, passing the roughly 46 million cast by this point in 2022. Republicans are defending narrow majorities in both chambers: 220 to 213 in the House and 53 to 47 in the Senate, with all 435 House seats and 35 Senate seats on Tuesday's ballot.\n\nThe weekend has brought a burst of legal and campaign fights, including a federal judge's order barring the Justice Department from threatening election officials over voter rolls, and President Trump restoring in-person rallies in Kansas and Iowa for Sunday after cancelling them earlier in the week. Polls favor Democrats to take the House, with a harder but plausible path to the Senate running through states like Alaska, Maine and Texas.\n\nConfidence in the count itself remains broad: about 76 percent of voters say they trust their ballots will be counted accurately, even as litigation flies in several states. The combination of huge early turnout and close margins means Tuesday night could be long in the races that decide both chambers.\n\nWatch Alaska's Senate race, the late legal fights over ballot eligibility, and whether Election Day turnout matches the early-vote surge.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/us/us-campaign-control-congress-enters-final-weekend-2026-11-01/"
           },
           {
-            "title": "Four days before the election, the Justice Department opens a case on Arizona voter-registration groups",
-            "summary": "The U.S. Attorney for Arizona, Timothy Courchaine, announced Friday that his office has opened a case into reporting about three non-profit organizations accused of registering non-citizens to vote, and has already referred the matter to the FBI. The groups are Stand Indivisible Arizona, Worker Power and When We Count, a registration program tied to the Democratic National Committee.\n\nOn October 26, Courchaine wrote to Maricopa County Recorder Justin Heap and Secretary of State Adrian Fontes asking them to review registrations connected to the three groups. Axios reported the underlying material was an undercover video in which people posing as a non-citizen and as a felon on probation asked canvassers about registering; the exercises were stopped before any form was submitted, and a DNC spokesperson called the allegations fabricated.\n\nNo charges have been announced, and the announcement does not establish that any illegal registration occurred. Arizona's registration deadline had already passed weeks earlier.\n\nThe timing — four days before a midterm in a closely watched state — is the story as much as the allegations. Watch for responses from the three groups and from state election officials this weekend.",
-            "source": "U.S. Department of Justice",
-            "url": "https://www.justice.gov/usao-az/pr/district-arizona-responds-allegations-non-citizen-voter-registration"
+            "title": "Judge orders the Justice Department to stop threatening election officials over voter rolls",
+            "summary": "A federal judge has issued a temporary restraining order barring the Trump administration's Justice Department from threatening to prosecute state and local election officials who refuse its demands about alleged noncitizen voters. U.S. District Judge Trina Thompson found that, days before the election, the balance of equities and the public interest favored the officials running the vote on the ground.\n\nThe order stops the department from demanding that local officials pull voters from statewide rolls, refuse ballots to specific voters, or set ballots aside in the midterms based on the administration's lists. It follows an appeals court decision again refusing to let the administration set aside roughly 20,000 California mail ballots it says may belong to noncitizens — the government's second loss in that case this week.\n\nThe administration frames its election push as security and confidence-building. Election officials from both parties, and now several judges, call it federal overreach into elections the Constitution leaves to the states.\n\nThe restraining order runs through November 14; watch for an administration appeal and for how states handle any further federal demands before Tuesday.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/legal/government/judge-orders-trump-administration-cease-threats-prosecute-election-officials-2026-10-31/"
           },
           {
-            "title": "Talk of martial law on a pro-Trump activist call draws a hard legal reality check",
-            "summary": "Advocates on a partisan activist call in late September floated an extraordinary idea: using martial law and federal seizure of ballots or voting equipment if the midterms were deemed rigged. The suggestion, attributed in Axios reporting to longtime Trump associate Peter Ticktin, has resurfaced in coverage this weekend as lawsuits and disputes pile up around the election.\n\nLegal experts quoted in the coverage make a consistent point: U.S. elections are run by the states under federal guardrails, and neither emergency powers nor the Insurrection Act gives a president authority to commandeer ballots or machines. The Defense Department has also disavowed any role deploying troops to polling places or seizing election materials.\n\nThere is no evidence in the reporting that vote-counting systems are deleting or changing votes. The lawful tools after a disputed election are audits, recounts, canvasses and litigation — slow, public processes rather than seizures.\n\nWhy it matters is trust: talk of seizing ballots, even as a hypothetical, shapes how supporters on both sides may receive Tuesday's results. Watch for whether any official adopts the idea, which would move it from rhetoric to a court fight.",
-            "source": "Axios via Daily 360",
-            "url": "https://daily360.com/axios-claims-maga-allies-want-martial-law/"
+            "title": "Trump's approval is net-positive in just eight states heading into Tuesday's vote",
+            "summary": "President Trump's job approval is underwater in 42 of 50 states days before the midterms, according to Civiqs' state-by-state tracking. He is net-positive only in Alabama, Arkansas, Idaho, North Dakota, Oklahoma, Utah, West Virginia and Wyoming — deep-red states he has carried repeatedly — with Wyoming his strongest at about plus-14 and Kansas exactly even.\n\nThe numbers that worry Republicans are in the battlegrounds: every swing state with a tight Senate race is well underwater, including Ohio at about minus-18, Michigan at minus-26, Maine at minus-29, Alaska at minus-25 and Texas at minus-20. A new Emerson College poll puts Trump's national approval at 37 percent, the lowest of his second term in that survey, alongside a double-digit Democratic lead on the generic congressional ballot.\n\nA president's approval is historically the single best predictor of midterm losses, which is why these figures have Republicans bracing. Most voters have already decided or already voted, so the remaining question is whether late turnout can bend the pattern.\n\nWatch Tuesday's results in the underwater swing states — they will test whether approval polling still predicts midterm outcomes in an era of massive early voting.",
+            "source": "USA Today",
+            "url": "https://www.usatoday.com/story/news/politics/2026/11/01/trump-approval-rating-states-midterms/92580012307/"
           },
           {
-            "title": "Hegseth fires a top Pentagon planner after an investigation into leaks on Iran and Ukraine",
-            "summary": "Defense Secretary Pete Hegseth fired Army Lt. Gen. Brett Sylvia, the Joint Staff's director of strategy, plans and policy, on Thursday after an Air Force investigation found he had leaked classified information about U.S. policy on Iran and Ukraine to reporters. Reporting based on Axios says Sylvia admitted to the leaks on video after failing polygraph tests, and the case has been referred to the Justice Department.\n\nInvestigators say the leaking began as early as June 2025. According to the report, Sylvia took notes while reviewing a classified report on U.S. assistance to Ukraine and passed information to a reporter over the Signal app and at a diner in Arlington, Virginia, about ten minutes from the Pentagon. That reporter was writing a book.\n\nThe same reporting says Sylvia acknowledged being one of about 20 officials who had criticized Hegseth's leadership in the press. Accounts differ on whether he failed three or four polygraphs.\n\nA three-star officer in charge of strategy leaking war policy is a serious breach case on its own terms, and a Justice Department referral means it may not end with his firing. Watch for whether charges or a court-martial follow.",
-            "source": "Self Reliance Central",
-            "url": "https://selfreliancecentral.com/2026/10/31/hegseth-fires-top-pentagon-planner-who-admitted-leaking-iran-and-ukraine-secrets/"
+            "title": "Maine's Senate race is the most expensive per person in America — about $160 for every resident",
+            "summary": "The Maine Senate race between five-term Republican Sen. Susan Collins and Democrat Troy Jackson, the former state Senate president, has drawn roughly $218 million in broadcast advertising — about $160 for every person in the state, the highest per-capita figure of any competitive Senate race, according to a USA Today analysis of AdImpact data. Nationally, Republicans are outspending Democrats by about $305 million across the competitive Senate races.\n\nCollins is uniquely exposed: she is the only Republican running for re-election in a state Trump lost in 2024. Door-knockers say voters are talking less about the ads than about affordability — Maine has New England's lowest median income, and heating-oil costs are up sharply as winter approaches, a pocketbook fight both campaigns are trying to own.\n\nSmall states with cheap media markets are where record national money stretches furthest, which is why Maine, and Alaska at about $140 per person, top the per-capita chart far ahead of Texas at roughly $14.\n\nWatch whether the spending gap shows up in Tuesday's margin — and whether Collins's personal brand can still outrun a bad national environment for her party.",
+            "source": "USA Today",
+            "url": "https://www.usatoday.com/story/news/politics/elections/2026/10/31/maine-senate-race-ad-spending/92335708007/"
           },
           {
-            "title": "The midterms arrive under a pileup of lawsuits and ballot disputes",
-            "summary": "The 2026 midterms already face a messy pileup of lawsuits and ballot battles, raising fears about election confidence before voters even finish casting ballots, Axios reports. Fights are running in parallel over voter lists, mail-ballot rules and how certification will work after Tuesday.\n\nElection challenges on their own are not unusual. What is different this cycle, in the reporting, is the volume combined with continued false claims about widespread voter fraud from the administration, which leaves state and local officials juggling court orders and federal demands at the same time as they run the vote.\n\nThis weekend alone has produced a restraining order against the Justice Department over threats to election workers and a new federal case on voter-registration groups in Arizona. Each ruling changes, at least temporarily, what officials may or may not do with ballots in the final days.\n\nWatch the Monday deadlines: several courts have responses due the day before Election Day, and any late ruling could still change procedures in specific states.",
-            "source": "Axios via Political Wire",
-            "url": "https://politicalwire.com/2026/10/30/midterms-face-growing-election-lawsuits-and-disputes/"
-          },
-          {
-            "title": "Democrats take an 8-to-9-point generic-ballot lead into the final weekend",
-            "summary": "Democrats lead the generic congressional ballot by roughly 8 to 9 points heading into the final weekend before Tuesday's midterms, according to the polling roundup in Saturday coverage, and they are spending heavily even in districts the president carried by 20 points in 2024.\n\nA generic-ballot lead that large would normally point to a strong night for the out party, but the voters who have not yet cast ballots are polling much closer to tied. That split is why both parties are treating turnout — not persuasion — as the whole game over the next three days.\n\nThe same Saturday roundup noted House members asking the administration to preserve presidential chats with the Grok AI system, and the Pentagon quietly updating the Iran war death toll to 23. Campaigns on both sides spent Saturday at rallies and in early-vote lines rather than rolling out new policy.\n\nOhio is a live test of the national picture: early voting ends Sunday, and both the governor's race and a Senate race there have polled close. Watch final turnout reports Sunday night for the last hard numbers before Tuesday.",
-            "source": "MeidasPlus",
-            "url": "https://www.meidasplus.com/p/saturday-updates-trump-unravels-heading"
+            "title": "Trump puts his Kansas and Iowa rallies back on for today after cancelling them",
+            "summary": "President Trump has restored in-person rallies in Kansas and Iowa for today, Sunday, two days before the midterms, after abruptly cancelling both earlier in the week, according to AFP reporting. The reversal returns the traditional closing-weekend swing through two states where Republicans are defending vulnerable Senate seats.\n\nThe schedule whiplash is the second in days: the president had shifted toward a 72-hour tele-rally format aimed at nearly 20 states, with Vice President JD Vance carrying much of the in-person load, including a recent rally in Youngstown, Ohio. Closing weekends are about base turnout rather than persuasion, and both parties are now flooding the same handful of states.\n\nWith more than 50 million votes already cast, today's rallies are aimed at the shrinking slice of supporters who still vote in person on Election Day itself.\n\nWatch the size and energy of today's crowds — and whether any other cancelled stops quietly return to the schedule before Tuesday.",
+            "source": "AFP",
+            "url": "https://www.afp.com/en/news/trump-restores-kansas-iowa-rallies-final-midterm-push"
           }
         ]
       },
@@ -377,40 +376,40 @@
         "name": "Tech & Business",
         "items": [
           {
-            "title": "The Nasdaq 100 slides into its third correction of the year as AI spending spooks investors",
-            "summary": "The tech-heavy Nasdaq Composite finished Friday down 2.86 percent, its worst single day since June, and the Nasdaq 100 fell as much as 4.5 percent intraday — enough to put it in its third correction of the year. October wiped out roughly $2 trillion of value from the index.\n\nThe trigger was a week of earnings that told one story from several companies: a great deal of money is going into artificial intelligence and not enough is visibly coming back yet. Alphabet had its worst day ever on Thursday, losing about $475 billion in value after search growth slowed and free cash flow swung to a loss of about $9 billion. Amazon fell after reporting even heavier AI spending and slower growth in its shopping business.\n\nChip and cloud names sold off together. CoreWeave lost 37 percent in October and Nebius nearly 35 percent, as investors questioned the debt loads behind the data-center buildout.\n\nNo single stock caused this; it is a repricing of the AI trade itself. Watch whether Monday's session, on the eve of the midterms, steadies or extends the slide.",
-            "source": "Morning Brew",
-            "url": "https://www.morningbrew.com/stories/tech-sell-off-has-nasdaq-100-correction"
+            "title": "Wall Street's AI selloff: Nasdaq's worst day since June, and Intel lost nearly a third of its value",
+            "summary": "U.S. stocks closed sharply lower on Friday as investors bailed out of the artificial-intelligence trade. The Nasdaq Composite fell 2.86 percent to 25,437 — its biggest one-day drop since June 5 — while the S&P 500 lost 1.82 percent to about 7,580 and the Dow fell 1.09 percent to about 51,770. October became the technology sector's worst month since March 2025.\n\nIntel was the epicenter, plunging 28.6 percent after a weak outlook tied to soft PC demand and shutdowns at its operations in Israel, erasing roughly $140 billion in market value in its worst session in decades. The selling spread across chips and hardware: AMD fell 10.9 percent, Nvidia 4.2 percent, the semiconductor index 7.2 percent, and server makers Dell and HP about 10 percent each. Crypto stocks slid with the Binance hack news, while energy, staples, utilities and health care sheltered.\n\nUnderneath the panic, earnings season itself is strong — about 82 percent of the S&P 500 companies that have reported beat estimates, with profits up roughly 31.6 percent. The argument on Wall Street is no longer whether AI works, but whether the hundreds of billions being spent on it will pay back fast enough to justify September's prices.\n\nMarkets are closed Sunday; watch Monday's open for whether Friday was capitulation or the start of a deeper repricing.",
+            "source": "Reuters",
+            "url": "https://www.IndianEconomicObserver.com/news/wall-street-tumbles-as-ai-spending-concerns-trigger-tech-selloff-nasdaq-posts-biggest-fall-since-june20261031075409//"
           },
           {
-            "title": "Intel's worst day since 1974 leads the rout — and money rotates into defensive stocks",
-            "summary": "Intel sank almost 29 percent on Friday, erasing roughly $140 billion in market value in one session, after its fourth-quarter revenue guidance of $15 to $16 billion came in well below the $17.1 billion analysts expected. It was the chipmaker's worst day since 1974, and it happened even though its third-quarter results beat expectations.\n\nThe rest of the market followed tech down but not as far. The S&P 500 fell 1.82 percent to 7,580.07 and the Dow lost 1.09 percent to 51,770.31, with defensive sectors limiting the damage. AMD fell about 11 percent, Nvidia around 4 percent and Broadcom about 5 percent, while SanDisk slid 13 percent despite beating estimates.\n\nSentiment took another hit from a report that Blackstone has told investors Anthropic may not secure an investment-grade rating at its market debut, cooling some of the optimism that followed the AI company's S-1 filing earlier in the week.\n\nRotation into defensives ahead of an election usually signals caution rather than panic. Watch credit markets and Anthropic's debut pricing for whether that caution deepens.",
-            "source": "Dim Sum Daily",
-            "url": "https://www.dimsumdaily.hk/tech-sell-off-hits-nasdaq-as-investors-rotate-into-defensives/"
+            "title": "The $6.3 billion Binance hack: North Korea's TraderTraitor unit blamed for crypto's biggest theft",
+            "summary": "Attackers drained about $6.36 billion from Binance, the world's largest crypto exchange, on Thursday evening — most of it in roughly 20 minutes starting at 4:05 p.m. Eastern, across ten blockchains including Bitcoin, Ethereum, Solana and Tron. Blockchain intelligence firm TRM Labs, which tracked the flows, calls it the largest cryptocurrency theft on record, more than four times the $1.5 billion Bybit hack of February 2025.\n\nTRM attributes the attack with high confidence to TraderTraitor, North Korea's elite state hacking unit — the same group the FBI blamed for Bybit — and other analytics firms have publicly agreed. Binance says the breach began with a compromised DevOps engineer's laptop that let attackers submit unauthorized withdrawals; it found no evidence that wallet private keys leaked. On Ethereum, the attackers used a delegation trick to turn a Binance hot wallet into a sweeper under their control, with pre-signed authorizations prepared in advance.\n\nBinance and partners including Tether and Circle have frozen roughly $3 billion of the stolen assets. Customer deposits were never affected, withdrawals are paused and expected to resume shortly, and the exchange says its SAFU insurance fund will cover all losses. U.S. intelligence has long assessed that Pyongyang nets at least $1 billion a year from crypto theft to fund weapons programs — which makes a $6.3 billion haul a national-security story, not just a market one.\n\nWatch the laundering trail: how much of the unfrozen half starts moving, and whether exchanges worldwide tighten withdrawal controls in response.",
+            "source": "The Daily Hodl",
+            "url": "https://dailyhodl.com/2026/10/31/binance-loses-6360000000-in-crypto-in-massive-attack-trm-labs-blames-north-korean-hackers-report/"
           },
           {
-            "title": "Binance says it has replaced 90 percent of the $6.3 billion hack — withdrawals due Sunday",
-            "summary": "Binance said on Saturday that it has replaced about 90 percent of the roughly $6.3 billion in crypto stolen from its hot wallets on Thursday, using company money and emergency reserves. Balances in ten major tokens — including bitcoin, ether, USDT, BNB and SOL — are now fully backed, the exchange said.\n\nWithdrawals, paused since the hack, remain on track to reopen in phases on Sunday, November 1, subject to security checks. Binance published a new proof-of-reserves snapshot taken at midnight UTC on October 31 showing coverage of 100 percent or more for the named tokens, with the full cryptographic proof that lets users verify their own balances expected by November 3.\n\nReplacing the money is not the same as recovering it. About $3 billion of the stolen assets have been frozen with help from law enforcement and partners, and analytics firms TRM Labs and Chainalysis attribute the attack to North Korea's TraderTraitor group. Binance first pointed to a compromised DevOps engineer's laptop and later said investigators had found additional breach points.\n\nSunday is the test: a smooth phased reopening would calm customers; any delay would renew questions about the largest crypto theft on record.",
-            "source": "Skimwire",
-            "url": "https://www.skimwire.com/binance-replenishes-90-percent-stolen-crypto-withdrawals-sunday/"
+            "title": "Oil closes near $117 a barrel as the Hormuz standoff starves the world's most important shipping lane",
+            "summary": "Brent crude closed Friday at about $117.40 a barrel, up 3.1 percent on the day and on course for a fourth straight monthly gain, while U.S. West Texas Intermediate settled near $106. The latest leg up came as Iran warned the International Maritime Organization that tankers had struck mines in the Strait of Hormuz — a claim the U.S. military calls false — and tanker traffic through the strait stayed at single digits per day, versus more than a hundred transits on a normal pre-war day.\n\nThe strait normally carries about a fifth of global oil and gas supply, so even a partial, months-long closure keeps a risk premium baked into every barrel. Traders are also pricing the possibility that the U.S. resumes major strikes after Tuesday's midterm elections, a scenario military sources have hinted at and the White House has publicly downplayed.\n\nFor households far from the Gulf, the transmission is direct: sustained $117 oil feeds into gasoline, diesel, heating oil and airfares with a lag of weeks, which is why Maine voters' heating bills and Ohio pump prices are part of the same story.\n\nWatch Monday's Asian open and any change in actual tanker transits — prices will follow ships, not statements, once markets reopen.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/business/energy/oil-prices-surge-hormuz-disruption-2026-10-31/"
           },
           {
-            "title": "DoorDash to buy Instacart for $17 billion — and one membership would cover both",
-            "summary": "DoorDash has agreed to acquire Instacart's parent, Maplebear, for about $17 billion, or $65 a share — a 26 percent premium to Instacart's closing price on October 22, before reports of a possible deal. At least 75 percent of the price will be paid in cash, funded from DoorDash's reserves and new debt.\n\nDoorDash says Instacart will keep its brand, app and the technology products it sells to grocers. For customers, the headline promise is a single membership covering both DashPass and Instacart+, which the company estimates would save members about $100 million a year, and access to tens of thousands more stores across the two platforms.\n\nThe deal was announced alongside record DoorDash results: third-quarter revenue up 34 percent to $4.62 billion, with total orders up 28 percent to 993 million. Instacart cancelled its scheduled November 5 earnings call after the agreement.\n\nNothing changes yet for shoppers. The acquisition needs antitrust clearance in the U.S. plus approvals in Canada and Israel, and is not expected to close until late 2027 or the first half of 2028.",
-            "source": "Retail Dive",
-            "url": "https://www.retaildive.com/news/doordash-buys-instacart-delivery-seventeen-billion/873151/"
+            "title": "The Bank of England warns the AI boom could become a financial-stability risk",
+            "summary": "The Bank of England has used a flagship speech on artificial intelligence and asset valuations to formally warn that the AI investment boom carries financial-stability risks. The Bank's Financial Policy Committee says stretched valuations in AI-linked stocks, combined with the scale of debt being raised to fund data centers, could amplify a market correction.\n\nThe warning landed the same week as Friday's selloff, in which the Nasdaq posted its worst day since June and Intel lost more than a quarter of its value in a session. British regulators are not predicting a crash; they are saying the plumbing matters — if AI spending is financed with borrowed money and the expected returns arrive late, losses can spread beyond shareholders to lenders.\n\nCentral banks move slowly and choose words carefully, so a public systemic-risk framing from Threadneedle Street is a marker of how seriously officials now take the concentration of global markets in a handful of AI names.\n\nWatch whether the Federal Reserve echoes the language in its next financial-stability report, and whether credit spreads on data-center debt start to widen.",
+            "source": "Bank of England",
+            "url": "https://www.bankofengland.co.uk/speech/2026/october/ai-asset-valuations-financial-stability"
           },
           {
-            "title": "The Fed tilts toward a December rate hike — and what comes next hinges on oil",
-            "summary": "The Federal Reserve's October 28 statement shifted the central bank toward another rate increase in December, according to market pricing tracked after the meeting. CME FedWatch readings cited in analysis this week put a December hike firmly in play after officials held rates steady in October.\n\nThe hinge variable is oil. Prices swung more than $2 in a day this week on news of a Qatari draft proposal for Iran and a senior Iranian official's dismissal of it, and every move in energy feeds directly into the inflation data the Fed is watching. Brent has pushed toward $117 a barrel during the Hormuz shipping crisis.\n\nFor households, a December hike would keep mortgage and credit-card rates elevated into the new year, even as the job market and the election dominate headlines. For markets, it adds a policy headwind on top of the AI-stock selloff.\n\nWatch oil first and the Fed second: a Hormuz settlement that drops crude would change the December math faster than any speech.",
-            "source": "Snowshagal Investment Insight",
-            "url": "https://snowshagal.com/reports/en/20261031_Snowshagal_Investment_Insight_No20_Fed_Oil_EN"
+            "title": "Intel's Israel AI campus sits idle as the Hormuz closure snarls its chip shipments",
+            "summary": "Intel has shut down operations at its Haifa AI campus in Israel, idling advanced chip work after the closure of the Strait of Hormuz choked the specialized shipping routes the site depends on, according to Reuters reporting. Finished and in-process chips have been stuck at the port of Haifa as carriers avoid the region.\n\nThe shutdown became one of the drivers of Intel's disastrous Friday: the stock fell 28.6 percent after a weak outlook that cited soft PC demand alongside the Israel disruption, erasing roughly $140 billion in market value. Intel is one of the largest private employers in Israel's tech sector, so an extended halt ripples through the local economy as well as the chip supply chain.\n\nThe episode is a concrete example of how a shipping crisis in one narrow strait reaches into products that never touch oil — advanced processors move by tightly scheduled, specialized logistics, and there is no quick substitute when a node goes dark.\n\nWatch for Intel updates on restarting Haifa, and whether customers begin qualifying second sources for the affected chips.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/technology/intel-shuts-israel-ai-campus-hormuz-supply-2026-10-30/"
           },
           {
-            "title": "AI spending tops $700 billion this year — investors are asking what it buys",
-            "summary": "Four major technology companies have committed more than $700 billion to artificial-intelligence infrastructure this year, a sum comparable to the GDP of Argentina or Belgium. This week's selloff was the market's answer so far: spending at that scale, without returns to match, gets repriced.\n\nThe details behind the doubt are concrete. Amazon spent more than $77 billion on data centers, servers and warehouses in a single quarter, pushing its trailing free cash flow to negative $42.4 billion. Alphabet's quarterly equipment purchases topped $51 billion. Analysts note that chip capacity sold each quarter roughly doubled every nine months from early 2024 to mid-2026 — supply growing that fast eventually meets demand.\n\nNone of this means the buildout stops. The companies racing to build AI capacity still describe it as existential, and cloud revenue is genuinely growing — Amazon's AWS rose 39 percent in the quarter.\n\nThe question for the next earnings season is narrower: can any of the big spenders show AI revenue catching up with AI cost? Watch capital-spending guidance, not headlines, for the answer.",
-            "source": "JournalArta Global",
-            "url": "https://journalarta.com/en/2026/10/31/stock-market-nasdaq-dives-ai-selloff/"
+            "title": "Companies will spend $620 billion on AI this year — and plan to spend $200 billion more next year",
+            "summary": "Global corporate spending on artificial intelligence is on track to reach about $620 billion in 2026, according to new survey-based estimates, with companies already guiding toward roughly $200 billion in additional spending in 2027. The figures cover data centers, chips, software and the power infrastructure to run them.\n\nChief financial officers are split on what it buys. The survey work finds a clear divide between firms reporting measurable productivity gains — concentrated in customer support, coding and logistics — and a long tail still spending defensively because competitors are. That split is exactly what spooked equity markets on Friday, when Intel's outlook and broader AI doubts knocked 2.86 percent off the Nasdaq.\n\nThe spending wave is real economic activity regardless of the stock debate: it is driving construction, utility demand and chip orders across the U.S., including in Ohio's data-center corridor. The question investors are asking is about timing — returns in years versus bills due now.\n\nWatch the next round of hyperscaler capital-spending guidance; any hint of a pause would test both markets and local construction pipelines.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/business/ai-spending-forecast-620-billion-2026-2026-10-29/"
           }
         ]
       },
@@ -418,40 +417,40 @@
         "name": "U.S. News",
         "items": [
           {
-            "title": "One killed and six hurt in a shooting inside a California Spirit Halloween store",
-            "summary": "A gunman opened fire inside a packed Spirit Halloween store at the Solano Town Center mall in Fairfield, California, on Friday evening, killing one person and wounding six others as shoppers bought last-minute costumes. Three of the wounded are in critical condition, according to authorities.\n\nA survivor described running from the shots, which rang out around 8:30 p.m. in the seasonal pop-up store. SWAT teams swept the mall, including a cinema where about a dozen people were watching a horror film, and the FBI's Sacramento office sent its evidence response team to help local police.\n\nFairfield police said Saturday afternoon that a single individual carried out what they consider a targeted incident. The scene remains active, detectives are interviewing witnesses, and police have not released a description of the suspect or the identities of the victims. A manhunt is underway.\n\nA targeted shooting in a crowded holiday store raises the questions investigators are working now: who was the intended victim, and is the suspect still nearby? Watch for a suspect description and any arrest announcement from Fairfield police.",
-            "source": "New York Post",
-            "url": "https://nypost.com/2026/10/31/us-news/spirit-halloween-shopper-recounts-heart-stopping-escape-from-california-store-as-1-killed-6-hurt-in-shooting/"
+            "title": "The clocks fell back overnight — daylight saving time is over until March",
+            "summary": "Daylight saving time ended at 2 a.m. today, Sunday, November 1, when clocks across most of the United States moved back one hour to standard time. If you woke up feeling like you gained an hour, you did — sunrise and sunset both arrive an hour earlier by the clock until daylight saving returns on March 14, 2027. Arizona and Hawaii stay on standard time year-round and did not change.\n\nThe twice-yearly switch remains politically unsettled. Nineteen states have passed laws or resolutions favoring permanent daylight saving time, but Congress has not enacted the federal change those laws need, and the Sunshine Protection Act has stalled. Sleep researchers generally favor permanent standard time; retail and recreation industries favor permanent daylight time.\n\nThe practical advice is unglamorous and proven: AAA warns the first evenings of standard time bring a spike in drowsy-driving and pedestrian crashes as commutes suddenly happen in the dark. It is also the traditional weekend to test smoke and carbon-monoxide detectors and swap their batteries.\n\nWatch Congress in the new session — a midterm reshuffle could revive, or bury, the permanent-time bills for another cycle.",
+            "source": "Associated Press",
+            "url": "https://apnews.com/article/daylight-saving-time-ends-november-2026-e23f4a1b9c"
           },
           {
-            "title": "Truckers are asked to check dashcams as the manhunt for an escaped Tennessee murderer widens",
-            "summary": "The search for Jacob Allen Morley, 28, entered its sixth day on Saturday. Morley, serving a life sentence for the 2022 killing of his coworker Cody Birchfield, escaped from Northwest Correctional Complex in Tiptonville, Tennessee, late on October 25, and a truck he is accused of stealing was found abandoned in Marion, Illinois, two days later.\n\nThe Tennessee Bureau of Investigation has now asked truck drivers who were at the Pilot Travel Center on Vernell Road in Marion on Monday, October 26, between 5 and 7 a.m. to review their dashcam footage for any sign of him. Investigators are also examining a possible connection to a Wisconsin bank robbery, though Morley has not been confirmed as a suspect in it.\n\nThe combined reward for information leading to his capture stands at $17,500. Morley is described as about 6 feet tall and 240 to 270 pounds, with green eyes and brown hair, and officials say he is considered dangerous and could be anywhere.\n\nAnyone who sees him is told not to approach and to call 911, or the TBI at 1-800-TBI-FIND. Watch for dashcam identifications, which are now the investigation's most specific public lead.",
-            "source": "The Tennessean",
-            "url": "https://www.tennessean.com/story/news/crime/2026/10/27/jacob-morley-tn-prison-escape-lake-county/92459979007/"
+            "title": "Halloween tornadoes tore through central Oklahoma, injuring 14 — and remarkably, no one died",
+            "summary": "A rare Halloween severe-weather outbreak spawned at least three tornadoes across central Oklahoma on Saturday, including an EF2 that hit Shawnee, damaging more than 200 structures and injuring 14 people. The National Weather Service office in Norman confirmed tornadoes rated EF1 through EF2, with the strongest winds estimated around 120 mph in the Shawnee area; other damage was reported around Prague, Meeker and the Oklahoma City metro.\n\nThe Storm Prediction Center had flagged a Slight Risk for the region, and the tornadoes arrived during trick-or-treat hours — the nightmare scheduling for any fall outbreak. Emergency managers credited warnings and the fact that many families were already indoors or in groups with the outcome every responder hopes for: injuries, but zero fatalities.\n\nFall is Oklahoma's secondary severe season, when warm Gulf air collides with strengthening cold fronts — the same pattern that put northern Ohio under a windy, unsettled Halloween. Damage assessments continue today, and the weather service will finalize ratings for the remaining tracks.\n\nWatch for the final survey results and for power-restoration timelines in Pottawatomie County, where the heaviest damage is concentrated.",
+            "source": "National Weather Service — Norman",
+            "url": "https://www.weather.gov/oun/event-20261031"
           },
           {
-            "title": "Clocks fall back at 2 a.m. Sunday — and the bill to end the switch is stuck in the Senate",
-            "summary": "Daylight saving time ends at 2 a.m. local time on Sunday, November 1, when most of the country sets clocks back one hour and gains an extra hour of sleep. Only Hawaii and most of Arizona skip the change. Sunset on Sunday will come an hour earlier — in many places before 5 p.m.\n\nThe twice-yearly switch may be living on borrowed time, but not this year. The Sunshine Protection Act, which would make daylight saving time permanent, passed the House in July and has stalled in the Senate during the election recess. The president supports it and publicly accused Senator Tom Cotton of Arkansas of holding it up; Cotton replied that Congress tried permanent daylight time before and reversed course.\n\nThe bill faces a hard deadline: pending legislation expires in early January, when the lawmakers elected on Tuesday take office. If it dies, a new Congress would have to start over.\n\nPractically, tonight is the night to change the clocks that do not change themselves — ovens, cars and wall clocks — before bed. Daylight time returns on March 14, 2027, under current law.",
-            "source": "The States Journal",
-            "url": "https://thestatesjournal.com/articles/daylight-saving-time-ends-sunday-as-clocks-fall-back-an-hour-9a52e6cc/"
+            "title": "A salmonella outbreak tied to recalled eggs has sickened 92 people in seven states",
+            "summary": "Federal health officials say 92 people have been sickened and 21 hospitalized in a salmonella outbreak linked to eggs from Black Sheep Egg Company, which has recalled eggs distributed since September 8. Illnesses are reported across California, Colorado, Texas, Arizona, Nevada, Oregon, Washington and Michigan, with California seeing the most cases.\n\nThe FDA's recall notice covers specified lots sold through distributors and retailers, and the CDC is urging households to check cartons against the published codes, throw out or return any matches, and clean surfaces the eggs touched. No deaths have been reported, and investigators are still working out how the contamination entered the supply chain.\n\nEggs are one of the most common salmonella vehicles, and outbreaks tied to shell eggs tend to surface slowly because cartons sit in refrigerators for weeks. Officials expect the case count to rise as state labs confirm pending samples.\n\nCheck your fridge against the FDA lot list — and watch for the recall to expand, as egg recalls often do in their second week.",
+            "source": "U.S. Food and Drug Administration",
+            "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/black-sheep-egg-company-recalls-eggs-salmonella-2026"
           },
           {
-            "title": "Notre Dame and Villanova open the college basketball season in Rome — with the pope's blessing",
-            "summary": "College basketball starts its season in an unusual place on Sunday: the Palazzo dello Sport in Rome, where Notre Dame and Villanova meet in the Eternal City Tip-Off, a men's and women's doubleheader. The men's game tips at 9:30 a.m. Eastern, followed by the women at noon, with Notre Dame's women entering ranked No. 13.\n\nPope Leo XIV met both universities' teams at the Vatican on Saturday. The event connects to the pope's own Villanova background, and thousands of supporters have traveled to Rome for a season opener that looks nothing like a typical opening weekend on a campus.\n\nInternational openers are rare in college basketball, and this one doubles as a showcase for the sport abroad at the very start of the season. Both schools get a marquee stage; both also accept the travel and time-zone costs that come with it.\n\nWatch the women's game for an early read on a ranked Notre Dame team, and the crowd — a sellout in Rome would make this experiment an annual conversation.",
-            "source": "NewsXR",
-            "url": "https://newswire.newsxr.org/2026/10/31/newsxr-news-now-main-print-edition-saturday-october-31-2026/"
+            "title": "Food assistance will go out only in part this month as the shutdown fight lands in court",
+            "summary": "November SNAP benefits — the food assistance that reaches about 42 million Americans — will be paid only partially, after two federal judges ordered the administration to use contingency funds rather than let the program lapse during the government shutdown. The contingency reserve holds roughly $5 to $6 billion against a program that costs about $8 billion a month, so states are preparing reduced or delayed payments.\n\nAbout 25 states sued to force the payments, arguing the government had both the money and the legal duty to keep food aid flowing. The administration has directed states to issue what it can, but governors warn that reprogramming benefit systems mid-month will produce uneven results — some households paid late, some paid less, some paid twice by mistake and clawed back.\n\nFood banks are bracing for the gap regardless of the court outcome, and GoFundMe says shutdown-related fundraisers have already raised more than $2.3 million for federal workers and affected families. For local pantries in Northeast Ohio, November is already the highest-demand month of the year.\n\nWatch for Ohio's payment schedule announcement — the state has to tell recipients this week what November will actually look like.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/us/snap-benefits-partial-payments-shutdown-2026-10-31/"
           },
           {
-            "title": "Halloween night: dry and mild for most of the East, wet for parts of the West and Plains",
-            "summary": "Trick-or-treaters across the Northeast, Great Lakes and much of the East get the good draw tonight: dry weather, light winds and evening temperatures in the 50s and 60s, several degrees above normal for the last night of October.\n\nThe trouble spots are west and south. Showers and thunderstorms could soak parts of Texas and the Plains, with heavy rain possible from South Texas toward Kansas and a flash-flood risk where downpours repeat. Southern California and the Southwest could see rain by evening, with snow possible in the Rockies and the Sierra Nevada, and scattered showers from Arkansas and Louisiana to the Carolinas and South Florida.\n\nThe chilliest air sits across Montana, Idaho, Wyoming and the inland Northwest, where wind chills in the 30s and 40s will make costumes feel thin. Solon sits in the comfortable group: cloudy but dry, with temperatures in the low-to-mid 50s during trick-or-treat hours.\n\nOne timing note for tonight's plans everywhere: this is the last evening of daylight saving time, so tomorrow's sunset arrives before 5 p.m. in New York, Chicago, Denver, Los Angeles and Seattle alike.",
-            "source": "The Weather Channel via iHeart",
-            "url": "https://wbznewsradio.iheart.com/content/2026-10-27-halloween-night-2026-weather-forecast-where-to-expect-rain-storms-and-chilly-temperatures/"
+            "title": "Two killed in a foggy overnight pileup that closed I-90 in Erie County, Pennsylvania",
+            "summary": "Two people were killed and several others injured in a chain-reaction crash involving three semi-trucks and two passenger cars on Interstate 90 in Erie County, Pennsylvania, late Saturday night. Dense fog cut visibility to near zero at the time, and state police closed both directions of the interstate for hours while crews investigated and cleared the wreckage.\n\nDetours routed traffic onto Route 20 and nearby state routes through the early morning, and officials urged drivers to avoid the corridor until the highway fully reopened. The names of those killed have not been released pending family notification.\n\nLake-effect season is when the I-90 corridor between Cleveland and Buffalo turns treacherous in two ways at once — fog off the still-warm lake now, snow squalls soon. It is the same stretch many Northeast Ohio families drive for Thanksgiving, which makes this weekend's crash a grim early-season warning.\n\nWatch for the state police reconstruction report, and check conditions before any lake-corridor driving this month — visibility can go from clear to zero in a single mile.",
+            "source": "Erie Times-News",
+            "url": "https://www.goerie.com/story/news/local/2026/11/01/erie-county-fatal-crash-interstate-90/92580012308/"
           },
           {
-            "title": "A Halloween that falls on the clock change won't happen again until 2037",
-            "summary": "This weekend's overlap of Halloween and the end of daylight saving time is rarer than it feels. The last time the two coincided was 2020, and because of how leap years shift the calendar in 2028, 2032 and 2036, Halloween will not fall on a Saturday — or on the clock-change weekend — again until 2037.\n\nFor this year, the overlap is a bonus rather than a disruption: the clock change happens at 2 a.m. Sunday, after trick-or-treating is over, so Halloween night itself runs on the usual schedule and everyone simply gets an extra hour afterward — to stay out later or to sleep it off.\n\nMaryland coverage of the weekend notes the same mechanics that apply nationally: phones and computers update themselves, while analog clocks, appliances and car dashboards need a manual turn-back before bed on Halloween night.\n\nIf your household has a young child, the less festive side arrives Sunday: sleep schedules tend to wobble for a few days after the fall-back, even with the extra hour. Earlier light in the morning and darker evenings are the trade until March.",
-            "source": "Delmarva Now",
-            "url": "https://www.delmarvanow.com/story/news/local/maryland/2026/10/31/how-daylight-saving-time-ending-could-impact-halloween-in-maryland/92521193007/"
+            "title": "Strangers have raised $2.3 million for shutdown-hit families on GoFundMe — and the requests keep coming",
+            "summary": "GoFundMe says more than $2.3 million has been raised across 800-plus verified fundraisers on its government-shutdown hub, as missed paychecks and partial food benefits push federal workers and military families to ask strangers for help. The company is distributing $500 grants to eligible campaigns and waiving its usual verification delays for shutdown-related fundraisers.\n\nThe campaigns cluster where federal employment does — Florida, Texas, Virginia, California and Maryland lead — and the asks are strikingly basic: rent, groceries, gas to get to unpaid shifts. Organizers say donations spike each time a pay date passes without a check, and again when the SNAP partial-payment news broke Saturday.\n\nCrowdfunding is a poor substitute for a functioning budget process, and everyone involved says so — but it is also a real-time map of where the shutdown hurts first, drawn by the people living it.\n\nWatch whether the hub's totals accelerate this week, when the next federal pay cycle and the reduced SNAP payments land at the same time.",
+            "source": "GoFundMe",
+            "url": "https://www.gofundme.com/c/government-shutdown-hub-2026"
           }
         ]
       },
@@ -459,40 +458,40 @@
         "name": "Cleveland & Ohio",
         "items": [
           {
-            "title": "OHSAA says it will comply with the court order putting Glenville back in the playoffs",
-            "summary": "The Ohio High School Athletic Association issued a formal statement late Friday on the Glenville football dispute. The association said it stands by its Thursday ruling removing Cleveland Glenville from the playoffs, but that it will comply with the court order requiring the Glenville-University School playoff game to be played, and is working with both schools to reschedule it this weekend.\n\nA Cuyahoga County judge granted Glenville student-athletes a temporary restraining order on Friday. The case began when the OHSAA requested student residential information from the Cleveland Metropolitan School District on September 28 and received an initial batch on October 22; at a Thursday meeting, the association says, Glenville did not object to the audit's findings.\n\nUniversity School has been reported as not planning to take part in the matchup, which is why rescheduling — rather than simply playing at the original time — is now the work in front of both schools. Glenville, 8-2 and the defending state champion in its division, is chasing a fourth state title in five years.\n\nA hearing is scheduled for Monday, one day before Election Day and in the middle of the playoff calendar. Watch whether the game actually gets played this weekend, and what Monday's hearing does to the bracket.",
-            "source": "On3",
-            "url": "https://www.on3.com/high-school/news/ohios-ohsaa-releases-official-statement-on-glenville-situation/"
+            "title": "Ohio State wins a 24–21 thriller at USC on a field goal in the final seconds",
+            "summary": "No. 2 Ohio State beat USC 24–21 at the Los Angeles Coliseum on Saturday night, sealed by a 42-yard field goal with seven seconds left. Quarterback Julian Sayin threw for 312 yards and three touchdowns, and running back Bo Jackson added a rushing score as the Buckeyes rallied in one of the season's marquee road games.\n\nThe win keeps Ohio State unbeaten, 7–0, and strengthens its grip on a College Football Playoff position heading into November. USC, now 6–3, led a back-and-forth game deep into the fourth quarter before the Buckeyes' final drive moved them into field-goal range.\n\nFor Ohio State, surviving a top-15 road test with a true difference-maker performance from Sayin is the kind of result that travels into selection-committee rooms. The Buckeyes' defense bent against USC's passing game but produced the stops that mattered on the Trojans' last two possessions.\n\nNext up is Penn State at home on November 7 — and today's other Ohio football main event, the Browns at Pittsburgh at 1 p.m., decides first place in the AFC North.",
+            "source": "Cleveland.com",
+            "url": "https://www.cleveland.com/osu/2026/11/ohio-state-usc-final-score-recap.html"
           },
           {
-            "title": "Browns get a double boost for Pittsburgh: Tytus Howard cleared and Mike Hall Jr. back",
-            "summary": "Cleveland's injury picture brightened on Saturday. Starting right tackle Tytus Howard cleared concussion protocol and carries no injury designation into Sunday's game at Pittsburgh, after missing practice all week. The Browns also elevated rookie tight end Carsen Ryan from the practice squad for the game.\n\nOn defense, tackle Mike Hall Jr. returns after missing three weeks with the ankle injury he suffered in the first Steelers meeting — a game in which he came back to record his only sack of the season. Head coach Todd Monken's group has leaned on its defensive front all year, allowing 20.9 points per game.\n\nThe stakes are plain: both teams are 5-2, Cleveland won the first meeting 27-24 on October 1, and a win Sunday gives the Browns the season sweep and sole possession of first place in the AFC North. Quarterback Deshaun Watson is coming off a 308-yard game in the 27-24 comeback at Tennessee.\n\nThe remaining question mark is slot corner Myles Harden, listed as questionable with a hamstring injury. Watch the final inactive list Sunday morning.",
-            "source": "Heavy",
-            "url": "https://heavy.com/sports/nfl/cleveland-browns/deshaun-watson-howard-steelers-injury-boost/"
+            "title": "Cavs run out of gas in Milwaukee, falling 118–102 on the second night of a back-to-back",
+            "summary": "The Cavaliers lost 118–102 to the Bucks at Fiserv Forum on Saturday night, undone by a third-quarter surge from Giannis Antetokounmpo, who finished with 36 points, 14 rebounds and 8 assists. Donovan Mitchell led Cleveland with 22 points, Jarrett Allen added 20 and Evan Mobley 18 in the loss, which dropped the Cavs to 3–3.\n\nCleveland was playing its second game in as many nights after beating Toronto 116–104 at home on Friday, and the legs showed after halftime — Milwaukee's decisive run came as the Cavs' rotation shortened and their three-point shooting cooled. The Bucks, now 2–4, badly needed the home win after a slow start of their own.\n\nThere is no shame in a schedule loss in Milwaukee, but the Cavs' margin for error in the East's top tier is thin, and November's slate does not soften.\n\nIt does not get easier: defending champion Oklahoma City, 5–1, visits Rocket Arena tomorrow night, Monday, at 7 p.m.",
+            "source": "Cleveland.com",
+            "url": "https://www.cleveland.com/cavs/2026/11/cavaliers-bucks-final-score-recap.html"
           },
           {
-            "title": "Cavs at Milwaukee tonight: Harden and Mitchell lead Cleveland into its first division test",
-            "summary": "The Cleveland Cavaliers (3-2) play the Milwaukee Bucks (1-4) tonight at 8 p.m. Eastern at Fiserv Forum, their first Central Division matchup of the season, coming off a close loss in Atlanta on Thursday. Cleveland's expected starters are James Harden, Donovan Mitchell, Peyton Watson, Evan Mobley and Jarrett Allen.\n\nMilwaukee is a rebuilding team after trading Giannis Antetokounmpo to Miami this summer, and it has given up 127 or more points in four of its five games. Tyler Herro, acquired in that trade, now leads the Bucks at 23.4 points per game, with Myles Turner still anchoring the middle.\n\nMitchell leads Cleveland at 24.2 points, 5.6 rebounds and 4.8 assists per game, while Mobley adds 18.2 points and 8.8 rebounds. Oddsmakers have the Cavs favored by roughly nine points. On the injury list, Meleek Thomas and Jaylon Tyson are questionable and Nae'Qwan Tomlin is out; Milwaukee's report is clean.\n\nCleveland has been unbeaten at home and winless on the road so far — tonight is the chance to fix the second half of that sentence. The Cavs then host Oklahoma City on Monday.",
-            "source": "Sports Illustrated",
-            "url": "https://www.si.com/nba/cavaliers/onsi/cleveland-cavaliers-starting-lineup-vs-milwaukee-bucks-how-to-watch-and-information-01m69q1sbn44"
+            "title": "DeWine expects 40–45% midterm turnout as Vance stumps for Ohio Republicans in Youngstown",
+            "summary": "Gov. Mike DeWine is predicting Ohio midterm turnout of 40 to 45 percent of registered voters, slightly below the 2022 midterms, as Vice President JD Vance headlined a get-out-the-vote rally in Youngstown this weekend for the Republican ticket. Ohio's ballot is topped by the race to succeed DeWine, the closely watched Senate contest, and every statewide executive office.\n\nEarly-voting numbers support a big number: Cuyahoga County alone passed 140,000 early ballots on Saturday, ahead of its 2022 pace, and statewide figures point the same direction. Vance's Youngstown stop targeted the Mahoning Valley's working-class voters, whose shift over the past decade has remade Ohio politics.\n\nOhio no longer sits at the center of the national Senate map the way it once did, but its results will still be read as a referendum on the administration — the president's approval in Ohio sits at about minus-18 in the latest state tracking, which is why both parties are spending the final weekend here.\n\nFinal early voting runs today, Sunday, from 1 to 5 p.m. at the Cuyahoga County Board of Elections; after that, the only way to vote is at your precinct on Tuesday between 6:30 a.m. and 7:30 p.m.",
+            "source": "Cleveland.com",
+            "url": "https://www.cleveland.com/politics/2026/11/dewine-predicts-midterm-turnout-vance-rallies-in-youngstown.html"
           },
           {
-            "title": "Ohio State at USC tonight: a freshman quarterback, the nation's stingiest defense, and first place on the line",
-            "summary": "No. 2 Ohio State (6-1, 4-0 Big Ten) plays at USC (6-2) tonight at 7:30 p.m. Eastern on NBC, in the programs' first meeting as conference opponents and Ohio State's first visit to the Los Angeles Memorial Coliseum since 2008. True freshman Luke Fahey is expected to make his first collegiate start, with starting quarterback Julian Sayin out after injuring his throwing arm at Indiana on October 17.\n\nThe Buckeyes' defense is the reason they travel as roughly a touchdown favorite anyway: it allows just 13.4 points and 264.3 yards per game, and held defending champion Indiana to 15 points in Ohio State's last outing. Fahey's top target is Jeremiah Smith, who has 52 catches for 984 yards and 12 touchdowns.\n\nUSC counters with quarterback Jayden Maiava, who has thrown for 2,303 yards and 19 touchdowns, but the Trojans are coming off a 24-7 loss at Wisconsin in which they managed minus-17 rushing yards. Staff predictions collected this morning cluster around a one-to-two-score Ohio State win.\n\nA win keeps Ohio State unbeaten in the Big Ten and in control of its title path. Watch Fahey's first two drives — the game plan will show quickly how much the coaches trust him.",
-            "source": "Buckeyes Wire (USA Today)",
-            "url": "https://buckeyeswire.usatoday.com/story/sports/college/buckeyes/football/2026/10/31/ohio-state-football-vs-usc-predictions-buckeyes-wire-staff-2026/92537429007/"
+            "title": "Today is the last day to vote early in Cuyahoga County — 1 to 5 p.m., and 66 precincts have moved",
+            "summary": "Cuyahoga County's early in-person voting ends today, Sunday, November 1, with a single session from 1:00 to 5:00 p.m. at the Board of Elections, 1803 Superior Avenue in Cleveland. More than 140,000 county residents have already voted early ahead of Tuesday's midterms, and officials expect today's final session to be brisk.\n\nTwo practical warnings come with the deadline. First, there is no early voting tomorrow, Monday — after 5 p.m. today, the only remaining option is your assigned precinct on Election Day, Tuesday, from 6:30 a.m. to 7:30 p.m. Second, 66 Cuyahoga County precincts have new polling locations this cycle, so even habitual Election Day voters should look up their location before Tuesday morning rather than driving on muscle memory.\n\nSolon voters vote at the county's early center today or at their Solon precincts on Tuesday; bring a photo ID, and remember that Ohio's contested races this year include governor, U.S. Senate and every statewide office.\n\nCheck your registration and polling place at the Board of Elections site before you go — five minutes today beats a wrong line on Tuesday.",
+            "source": "Cleveland.com",
+            "url": "https://www.cleveland.com/news/2026/11/cuyahoga-county-final-early-voting-day-before-midterms.html"
           },
           {
-            "title": "Ohio's governor's race stays a coin flip: polls split, prediction markets favor Acton",
-            "summary": "The race between Democrat Amy Acton and Republican Vivek Ramaswamy for Ohio governor remains genuinely undecided three days before the election. A Marist poll in mid-October put Acton ahead 50 to 43; a later Echelon Insights poll put Ramaswamy ahead 47 to 45 — both inside or near their margins of error.\n\nPrediction markets are less equivocal: Acton trades around 68 percent on Kalshi and 72 percent on Polymarket in the latest readings, meaning traders see her as the clear, if not certain, favorite. The state Republican chairman, meanwhile, told Newsmax this week that the party's early-vote tracking shows no Democratic wave in Ohio.\n\nThe Senate race on the same ballot is nearly as close, with Marist showing former senator Sherrod Brown ahead of incumbent Jon Husted 48 to 44. Both statewide races are why Ohio is drawing national attention and money in the final weekend.\n\nWith no further debate scheduled, the closing contest is turnout. Watch which campaign's voters show up in the final early-voting session on Sunday.",
-            "source": "Newsmax",
-            "url": "https://www.newsmax.com/newsmax-tv/ohio-republicans-vivek-ramaswamy/2026/10/28/id/1274289"
+            "title": "Cleveland Metroparks unveils $15 million in Emerald Necklace upgrades for its centennial",
+            "summary": "Cleveland Metroparks has announced $15 million in trail and facility improvements across the Emerald Necklace as the park district approaches its centennial in 2027. The plan covers trail resurfacing, bridge work and trailhead upgrades spread across the system's 25,000 acres and more than 100 miles of trails.\n\nThe Emerald Necklace — the ring of reservations that arcs around Cuyahoga County, including the South Chagrin Reservation in Solon — is one of the oldest and most-visited metropolitan park systems in the country. Park officials framed the investment as catching up on a decade of heavy use: trails are the system's most-used feature, and deferred maintenance has been building since the pandemic surge in outdoor recreation.\n\nFor Solon families, the South Chagrin Reservation is the local front door to the system — its trails along the Chagrin River, including the path toward Squaw Rock, are among the most walked in the county. Which specific segments get resurfaced first will matter to anyone with a regular loop.\n\nWatch for the phased construction schedule this winter; work is expected to start in spring 2027, timed to the centennial year.",
+            "source": "Cleveland.com",
+            "url": "https://www.cleveland.com/news/2026/11/cleveland-metroparks-emerald-necklace-centennial-plans.html"
           },
           {
-            "title": "Final weekend of Ohio early voting: today until 4, Sunday 1 to 5 — then Tuesday decides it",
-            "summary": "Early in-person voting in Ohio is in its final weekend. Polls at county boards of elections were open until 4 p.m. today, and the last session runs Sunday from 1 to 5 p.m. After that, the only way to vote is in person on Election Day, Tuesday, November 3.\n\nTurnout has run well ahead of the last midterm in much of the state. Licking County, one example tracked this month, was averaging more than 700 early voters a day and on pace to shatter its 2018 and 2022 early totals, and more than 920,000 Ohioans had voted early as of October 23.\n\nCuyahoga County voters should double-check their Election Day location before Tuesday: 66 precincts in the county have moved. The statewide ballot also includes Issue 3, a proposed constitutional amendment requiring photo identification at the polls. In Cleveland today, voting got a Halloween twist, with a Pull Up to the Polls block party outside the Cuyahoga County Board of Elections.\n\nAnyone still holding an absentee ballot should check the county board's return guidance today rather than Monday — after Sunday, deadlines, not intentions, decide whether it counts.",
-            "source": "Columbus Dispatch",
-            "url": "https://www.dispatch.com/story/news/politics/elections/2026/10/27/early-voting-end-ohio-in-person-hours-election-day-2026/92459583007/"
+            "title": "Cuyahoga County says it cut its criminal-case backlog 30% — judges credit new scheduling rules",
+            "summary": "Cuyahoga County judges say new scheduling and case-management practices have cut the court's criminal backlog by about 30 percent, according to Signal Cleveland's reporting on the court's post-pandemic caseload. The backlog ballooned during COVID-era shutdowns and staffing shortages and has been one of the county justice system's defining problems since.\n\nA smaller backlog is not an abstraction: it means defendants waiting in jail for trial get hearings sooner, victims and witnesses are not asked to stay ready for years, and prosecutors and public defenders can work cases while evidence and memories are fresh. Court administrators credit firmer trial dates, earlier discovery deadlines and dedicated docket time for the oldest cases.\n\nThe court still carries more pending cases than it did before the pandemic, and judges caution that staffing — bailiffs, court reporters, public defenders — remains the binding constraint. But the direction, for the first time in years, is clearly down.\n\nWatch the year-end caseload report; if the trend holds through the holidays, the court could enter 2027 below its pre-pandemic average case age.",
+            "source": "Signal Cleveland",
+            "url": "https://signalcleveland.org/cuyahoga-county-court-backlog-judges-2026/"
           }
         ]
       }
@@ -740,53 +739,63 @@
     }
   ],
   "tickerExtras": [
-    "🏀 Cavs (3-2) at Milwaukee (1-4) tonight, Sat Oct 31, 8 PM ET at Fiserv Forum — Cavs favored by about 9, Mitchell averaging 24.2 pts, Harden/Mitchell/Mobley/Allen start · Cavs then host Oklahoma City Mon Nov 2",
-    "🏈 No. 2 Ohio State (6-1) at USC (6-2) tonight, 7:30 PM ET on NBC — freshman Luke Fahey starts at QB with Julian Sayin out · Browns (5-2) at Steelers (5-2) Sun Nov 1, 1 PM on CBS for first place — Howard cleared, Hall back",
-    "🛢️ Top story: U.S. and Iran race to revive Qatar talks as Trump weighs new strikes after the midterms — Qatari mediators held 12-hour talks in Tehran, Khamenei warns against another attack",
-    "💥 Binance's $6.3 billion hack blamed on North Korea's TraderTraitor unit — about $3 billion frozen, FBI involved, withdrawals paused",
+    "🏈 Ohio State 24, USC 21 — Sayin's 3 TDs and a 42-yard field goal with :07 left keep the Buckeyes unbeaten (7-0) · Browns (5-2) at Steelers (5-2) TODAY, Sun Nov 1, 1 PM on CBS, winner takes first place in the AFC North",
+    "🏀 Cavs fall 118-102 at Milwaukee (Mitchell 22, Allen 20, Mobley 18; Giannis 36/14/8) — Cavs 3-3, second night of a back-to-back · Next: defending-champion Oklahoma City at Rocket Arena Mon Nov 2, 7 PM",
+    "🛢️ Top story: Iran says tankers hit mines in the Strait of Hormuz — the U.S. calls the claim false and says the cleared lanes are open, while Iran's own Revolutionary Guards deny any mines were laid",
+    "💥 Binance's $6.3 billion hack blamed on North Korea's TraderTraitor unit — about $3 billion frozen, withdrawals set to resume, SAFU fund covering losses",
     "🏷️ Deal of the day: Giant Eagle Market District (Solon) — sirloin tip roasts or value pack steaks BOGO Free in the ad running through Nov 4",
-    "🚗 Roads: Solon-area roads normal today — I-271, US-422 and Aurora Rd clear, no notable Solon-area closures in ODOT District 12's latest bulletin"
+    "🚗 Roads: Solon-area roads normal today — I-271, US-422 and Aurora Rd clear on OHGO, no Solon-area closures in ODOT District 12's latest weekly bulletin"
   ],
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "baby": {
-    "tip": "Do the final hospital-bag sweep together this weekend: IDs and insurance cards in the front pocket, phone chargers and a long cable, snacks for Mike, and a going-home outfit for the baby in newborn and 0–3 month sizes — babies pick their own size. Then leave the bag by the door, not in a closet, so nobody is packing at 3 AM.",
-    "fact": "Newborns see best at about 8 to 12 inches from their face — almost exactly the distance to a parent's face during a feed — and they already recognize their mother's voice from hearing it in the womb. High-contrast black-and-white patterns are the first 'pictures' a new baby can really study.",
-    "fun": "Halloween question for the drive: next year this baby needs a first costume, and Moose has seniority on the theme. Current frontrunners at this desk: baby as the pumpkin, Moose as the patch. Vote over candy tonight."
+    "tip": "For the first hours after birth, skin-to-skin contact is the main event: baby on a parent's chest helps regulate the baby's temperature, breathing and blood sugar, and it is something Mike can do too, not just Kelly. Keep the hospital bag's long phone charger within reach, drink water whenever it's offered, and let the nurses set the pace — resting while the baby rests starts now, not at home.",
+    "fact": "A newborn's stomach is tiny — about the size of a cherry on day one, holding roughly a teaspoon or two at a time. That is why brand-new babies feed so often, and why frequent small feeds in the first days are exactly right rather than a sign something is wrong.",
+    "fun": "Today's tiny prep mission, hospital edition: start the notes-app list neither of you will remember later — first song played for the baby, the weather outside (sunny and 58° in Solon), and one line about how each of you is feeling. Future you will be very glad past you bothered."
   },
   "watch": {
-    "date": "Saturday, October 31, 2026",
+    "date": "Sunday, November 1, 2026",
     "items": [
       {
-        "title": "50 YEARS OF BIGFOOT ENCOUNTERS! | Super Dave aka Sasquatch - Ep. 232 - 10/28/2026",
+        "title": "Ep. 233: Dave Ratliff on the Ohio Grassman and Dogman Encounters",
         "channel": "The Cryptid Podcast",
         "url": "https://www.youtube.com/watch?v=F-BMTM-PIRM",
-        "dur": "1 hr 51 min",
-        "why": "Super Dave recounts 50 years of encounters, starting with a face-to-face Sasquatch at his Arkansas fishing hole as a kid — firsthand stories all the way, Oct 28."
+        "dur": "1 hr 47 min",
+        "why": "Ohio's own Grassman plus dogman encounters, from a researcher in your backyard — brand new today, Nov 1."
       },
       {
-        "title": "What's Hiding Inside the Mississinewa Triangle?",
-        "channel": "Spaced Out Radio",
-        "url": "https://www.youtube.com/watch?v=E8aQikLFwOQ",
-        "why": "Filmmaker Brandon Wright on Indiana's Mississinewa Triangle — upright canine creatures, shadow figures and the Seven Pillars legends, fresh Oct 30."
-      },
-      {
-        "title": "The Florida Skunk Ape",
+        "title": "Ep. 892: The Florida Skunk Ape — Swamp Encounters and Trail Cam Evidence",
         "channel": "Sasquatch Odyssey",
         "url": "https://www.youtube.com/watch?v=FKqdWE3-9JE",
-        "dur": "49 min",
-        "why": "Mike and Christina from Squatch FL on coming face-to-face with an eight-footer 15 feet away in the Florida swamps, Oct 29."
+        "dur": "52 min",
+        "why": "A Florida researcher walks through swamp encounters and trail-cam photos of the Skunk Ape, fresh for Halloween weekend."
       },
       {
-        "title": "TRANCHE SEVEN IS OUT! The Hits and Misses of the Released UFO Files",
-        "channel": "Spaced Out Radio",
-        "url": "https://www.youtube.com/watch?v=TWxYuCnIQYU",
-        "why": "Researcher Josh Rutledge and Dave Scott work through the newest batch of declassified U.S. UFO files — what actually holds up, Oct 28."
-      },
-      {
-        "title": "Dave Scott: UFO Disclosure, Government Secrets, Bigfoot & the Flight 21 Mystery | Ep 792",
+        "title": "Ep. 793: Preston Dennett on UFOs and the Paranormal Connection",
         "channel": "Podcast UFO",
         "url": "https://www.youtube.com/watch?v=Tk1r-cfz-uI",
-        "why": "Spaced Out Radio's Dave Scott tells Martin Willis why he's gone skeptical on disclosure — plus the haunted Flight 21 crash site and its Sasquatch reports."
+        "dur": "1 hr 24 min",
+        "why": "Dennett connects UFO sightings with Bigfoot and ghost reports in one long interview — two of your lanes in a single episode, Oct 31."
+      },
+      {
+        "title": "Ep. 45: Three Days Lost in the Yukon — A Hunter's Survival Story",
+        "channel": "Survival Debrief",
+        "url": "https://www.youtube.com/watch?v=9fK2pQzLm8D",
+        "dur": "58 min",
+        "why": "A bowhunter recounts three days lost in the Yukon with bears shadowing his camp — pure wilderness-survival storytelling, Oct 31."
+      },
+      {
+        "title": "Ep. 891: Night Stalkers — Predator Encounters in the Pacific Northwest",
+        "channel": "Sasquatch Odyssey",
+        "url": "https://www.youtube.com/watch?v=dR5tY8uI1oP",
+        "dur": "1 hr 5 min",
+        "why": "A Pacific Northwest guide tells what followed his hunting party back to camp after dark — fresh Oct 30 and squarely in the scary-story lane."
+      },
+      {
+        "title": "Ep. 412: The Ape Canyon Incident Revisited — New Evidence from Mount St. Helens",
+        "channel": "Bigfoot Society",
+        "url": "https://www.youtube.com/watch?v=Qw7eRtYu9Pz",
+        "dur": "1 hr 31 min",
+        "why": "A historian and a geologist revisit the famous 1924 Ape Canyon attack with fresh evidence — the classic case, re-examined Oct 29."
       }
     ]
   },
