@@ -1,15 +1,15 @@
 {
   "dailyBrief": {
     "date": "Sunday, November 1, 2026",
-    "text": "Good morning, Smileys — and an extra hour of morning, since the clocks fell back overnight. It is a sunny, breezy Sunday in Solon, high near 58°, and the overnight sports split the house: Ohio State won a 24–21 thriller at USC on a field goal with seven seconds left, while the Cavs fell 118–102 in Milwaukee on tired legs. Overseas, Iran claimed tankers hit mines in the Strait of Hormuz — a story Washington calls false and Iran's own Guards deny — with oil holding near $117. Today is stacked: the Browns play at Pittsburgh at 1 PM for first place in the AFC North, and it is the final day of early voting, 1 to 5 PM at the Cuyahoga County Board of Elections, before Tuesday's midterms. And the biggest story of all is still your own — after last night's trip to the hospital, everyone here is thinking of Kelly and the baby.",
+    "text": "Good morning, Smileys — and an extra hour of morning, since the clocks fell back overnight. It's a cloudy, mild Sunday in Solon, high near 68°, and the overnight sports split the house: the Cavs rolled 136–111 in Milwaukee behind Mobley and Allen, while Ohio State fell 30–18 at USC with freshman Luke Fahey starting for the injured Julian Sayin. Overseas, Iran claimed tankers hit mines in the Strait of Hormuz — a story Washington calls false and Iran's own Guards deny — with oil holding near $117. Today is stacked: the Browns play at Pittsburgh at 1 PM for first place in the AFC North, and it is the final day of early voting, 1 to 5 PM at the Cuyahoga County Board of Elections, before Tuesday's midterms. And the biggest story of all is still your own — after last night's trip to the hospital, everyone here is thinking of Kelly and the baby.",
     "chips": [
       {
-        "label": "☀️ Sunny & breezy in Solon, high 58° · clocks fell back overnight",
-        "url": "https://www.weather.gov/cle/"
+        "label": "☁️ Cloudy & mild in Solon, high 68° · clocks fell back overnight",
+        "url": "https://weather.com/us/oh/city/solon/today"
       },
       {
-        "label": "🏈 Browns at Steelers today 1 PM (CBS) for first place · Ohio State won 24–21 at USC",
-        "url": "https://www.cleveland.com/osu/2026/11/ohio-state-usc-final-score-recap.html"
+        "label": "🏀 Cavs won 136–111 at Milwaukee · 🏈 Browns at Steelers today 1 PM (CBS) for first place",
+        "url": "https://www.cleveland.com/browns/2026/11/browns-steelers-preview-week-9.html"
       },
       {
         "label": "🗳️ Final early voting TODAY 1–5 PM · no early voting Monday",
@@ -23,12 +23,12 @@
     ],
     "links": [
       {
-        "phrase": "Ohio State won a 24–21 thriller at USC",
-        "url": "https://www.cleveland.com/osu/2026/11/ohio-state-usc-final-score-recap.html"
+        "phrase": "the Cavs rolled 136–111 in Milwaukee",
+        "url": "https://www.cleveland.com/cavs/2026/11/cavaliers-bucks-final-score-recap.html"
       },
       {
-        "phrase": "the Cavs fell 118–102 in Milwaukee",
-        "url": "https://www.cleveland.com/cavs/2026/11/cavaliers-bucks-final-score-recap.html"
+        "phrase": "Ohio State fell 30–18 at USC",
+        "url": "https://www.cleveland.com/osu/2026/11/ohio-state-usc-final-score-recap.html"
       },
       {
         "phrase": "Iran claimed tankers hit mines in the Strait of Hormuz",
@@ -46,9 +46,9 @@
   },
   "babyDue": null,
   "weekBrief": {
-    "text": "The week ahead in Solon starts bright and turns unsettled: sunshine and 62° Monday, a sunny 64° for Election Day Tuesday, then rain chances build Wednesday and showers are likely Thursday before it clears and cools Friday. Election week frames everything — early voting ends today at 5 PM, polls are open Tuesday 6:30 AM to 7:30 PM (66 Cuyahoga precincts have moved, so check yours), and the governor's and Senate races top a long ballot. In sports, the Browns play at Pittsburgh today for first place, the Cavs host defending-champion Oklahoma City Monday night, and unbeaten Ohio State comes home to face Penn State on Saturday. The standout deal remains Giant Eagle's BOGO-free sirloin tip roasts through Wednesday — and at home, with Kelly's labor starting last night, this is the week the Smiley family very likely grows by one.",
+    "text": "The week ahead in Solon starts mild and turns wet: cloudy and about 63° Monday, the warmest day of the week Tuesday at about 73° for Election Day, then showers build Wednesday, rain is likely Thursday, and a sharp cooldown drops Friday into the low 50s. Election week frames everything — early voting ends today at 5 PM, polls are open Tuesday 6:30 AM to 7:30 PM (66 Cuyahoga precincts have moved, so check yours), and the governor's and Senate races top a long ballot. In sports, the Browns play at Pittsburgh today for first place, the Cavs — fresh off a 136–111 rout in Milwaukee — host Oklahoma City Monday night, and Ohio State looks to regroup after Saturday's loss at USC. The standout deal remains Giant Eagle's BOGO-free sirloin tip roasts through Wednesday — and at home, with Kelly's labor starting last night, this is the week the Smiley family very likely grows by one.",
     "chips": [
-      "🌤️ Sun & Mon–Tue (58–64°), rain Wed, showers Thu, clearing Fri",
+      "🌤️ Mild start (63–73° Mon–Tue), showers Wed, rain Thu, sharp cooldown Fri (52°)",
       {
         "label": "🗳️ Election Day Tue Nov 3 · polls 6:30 AM–7:30 PM · 66 precincts moved — check yours",
         "url": "https://boe.cuyahogacounty.gov/voters/vote-early-in-person"
@@ -69,7 +69,7 @@
         "url": "https://boe.cuyahogacounty.gov/voters/vote-early-in-person"
       },
       {
-        "phrase": "the Cavs host defending-champion Oklahoma City Monday night",
+        "phrase": "host Oklahoma City Monday night",
         "url": "https://www.cleveland.com/cavs/2026/11/cavaliers-bucks-final-score-recap.html"
       },
       {
@@ -458,14 +458,14 @@
         "name": "Cleveland & Ohio",
         "items": [
           {
-            "title": "Ohio State wins a 24–21 thriller at USC on a field goal in the final seconds",
-            "summary": "No. 2 Ohio State beat USC 24–21 at the Los Angeles Coliseum on Saturday night, sealed by a 42-yard field goal with seven seconds left. Quarterback Julian Sayin threw for 312 yards and three touchdowns, and running back Bo Jackson added a rushing score as the Buckeyes rallied in one of the season's marquee road games.\n\nThe win keeps Ohio State unbeaten, 7–0, and strengthens its grip on a College Football Playoff position heading into November. USC, now 6–3, led a back-and-forth game deep into the fourth quarter before the Buckeyes' final drive moved them into field-goal range.\n\nFor Ohio State, surviving a top-15 road test with a true difference-maker performance from Sayin is the kind of result that travels into selection-committee rooms. The Buckeyes' defense bent against USC's passing game but produced the stops that mattered on the Trojans' last two possessions.\n\nNext up is Penn State at home on November 7 — and today's other Ohio football main event, the Browns at Pittsburgh at 1 p.m., decides first place in the AFC North.",
+            "title": "Ohio State falls 30–18 at USC as freshman Fahey starts for the injured Sayin",
+            "summary": "No. 2 Ohio State lost 30–18 to USC at the Los Angeles Coliseum on Saturday night, playing without quarterback Julian Sayin, who is out indefinitely with an injury to his throwing arm. Freshman Luke Fahey started in his place and finished 21-of-38 for 260 yards and one touchdown.\n\nThe Buckeyes hurt themselves as much as USC did: 11 penalties for 75 yards stalled drive after drive, and Ohio State settled for four field goals before finally scoring its lone touchdown. USC's defense, meanwhile, made the young quarterback play from behind for most of the second half.\n\nOhio State entered the night 6–1, so the loss does not end its College Football Playoff hopes — but it removes the margin for error. How the Buckeyes respond, and how long Sayin is actually out, now define their November.\n\nWatch for the first official update on Sayin's timeline this week; everything about Ohio State's ceiling runs through his throwing arm.",
             "source": "Cleveland.com",
             "url": "https://www.cleveland.com/osu/2026/11/ohio-state-usc-final-score-recap.html"
           },
           {
-            "title": "Cavs run out of gas in Milwaukee, falling 118–102 on the second night of a back-to-back",
-            "summary": "The Cavaliers lost 118–102 to the Bucks at Fiserv Forum on Saturday night, undone by a third-quarter surge from Giannis Antetokounmpo, who finished with 36 points, 14 rebounds and 8 assists. Donovan Mitchell led Cleveland with 22 points, Jarrett Allen added 20 and Evan Mobley 18 in the loss, which dropped the Cavs to 3–3.\n\nCleveland was playing its second game in as many nights after beating Toronto 116–104 at home on Friday, and the legs showed after halftime — Milwaukee's decisive run came as the Cavs' rotation shortened and their three-point shooting cooled. The Bucks, now 2–4, badly needed the home win after a slow start of their own.\n\nThere is no shame in a schedule loss in Milwaukee, but the Cavs' margin for error in the East's top tier is thin, and November's slate does not soften.\n\nIt does not get easier: defending champion Oklahoma City, 5–1, visits Rocket Arena tomorrow night, Monday, at 7 p.m.",
+            "title": "Cavs rout the Bucks 136–111 in Milwaukee for their first road win of the season",
+            "summary": "The Cavaliers blew out the Bucks 136–111 at Fiserv Forum on Saturday night, riding a 48–21 second quarter to a 72–46 halftime lead and never looking back. Evan Mobley led Cleveland with 27 points, Jarrett Allen added 25 points and 11 rebounds, Donovan Mitchell scored 15 and James Harden 13.\n\nIt was Cleveland's first road win of the season and it came on the second night of a back-to-back, a night after beating Toronto at home. The Cavs' frontcourt set the tone early — Mobley and Allen overwhelmed Milwaukee inside while the Bucks' defense never found an answer for Cleveland's pace.\n\nAt 4–2, the Cavs have steadied themselves after a choppy opening week, and a rout this complete, on the road, on tired legs, is the kind of early-season result that suggests the rotation is settling.\n\nNext up: Oklahoma City visits Rocket Arena tomorrow night, Monday, at 7 p.m. on Peacock/NBCSN — a sterner test against one of the West's best, even with the Thunder banged up.",
             "source": "Cleveland.com",
             "url": "https://www.cleveland.com/cavs/2026/11/cavaliers-bucks-final-score-recap.html"
           },
@@ -739,8 +739,8 @@
     }
   ],
   "tickerExtras": [
-    "🏈 Ohio State 24, USC 21 — Sayin's 3 TDs and a 42-yard field goal with :07 left keep the Buckeyes unbeaten (7-0) · Browns (5-2) at Steelers (5-2) TODAY, Sun Nov 1, 1 PM on CBS, winner takes first place in the AFC North",
-    "🏀 Cavs fall 118-102 at Milwaukee (Mitchell 22, Allen 20, Mobley 18; Giannis 36/14/8) — Cavs 3-3, second night of a back-to-back · Next: defending-champion Oklahoma City at Rocket Arena Mon Nov 2, 7 PM",
+    "🏀 Cavs rout Milwaukee 136-111 — Mobley 27, Allen 25 & 11 rebounds, Mitchell 15, Harden 13 · Cavs 4-2 with their first road win · Next: Oklahoma City at Rocket Arena Mon Nov 2, 7 PM on Peacock/NBCSN",
+    "🏈 Ohio State falls 30-18 at USC — freshman Luke Fahey (21/38, 260 yds, 1 TD) started with Julian Sayin out injured · Browns (5-2) at Steelers (5-2) TODAY, Sun Nov 1, 1 PM on CBS, winner takes first place in the AFC North — Tytus Howard cleared and starting, Mike Hall Jr. back",
     "🛢️ Top story: Iran says tankers hit mines in the Strait of Hormuz — the U.S. calls the claim false and says the cleared lanes are open, while Iran's own Revolutionary Guards deny any mines were laid",
     "💥 Binance's $6.3 billion hack blamed on North Korea's TraderTraitor unit — about $3 billion frozen, withdrawals set to resume, SAFU fund covering losses",
     "🏷️ Deal of the day: Giant Eagle Market District (Solon) — sirloin tip roasts or value pack steaks BOGO Free in the ad running through Nov 4",
@@ -750,7 +750,7 @@
   "baby": {
     "tip": "For the first hours after birth, skin-to-skin contact is the main event: baby on a parent's chest helps regulate the baby's temperature, breathing and blood sugar, and it is something Mike can do too, not just Kelly. Keep the hospital bag's long phone charger within reach, drink water whenever it's offered, and let the nurses set the pace — resting while the baby rests starts now, not at home.",
     "fact": "A newborn's stomach is tiny — about the size of a cherry on day one, holding roughly a teaspoon or two at a time. That is why brand-new babies feed so often, and why frequent small feeds in the first days are exactly right rather than a sign something is wrong.",
-    "fun": "Today's tiny prep mission, hospital edition: start the notes-app list neither of you will remember later — first song played for the baby, the weather outside (sunny and 58° in Solon), and one line about how each of you is feeling. Future you will be very glad past you bothered."
+    "fun": "Today's tiny prep mission, hospital edition: start the notes-app list neither of you will remember later — first song played for the baby, the weather outside (cloudy and in the upper 60s in Solon), and one line about how each of you is feeling. Future you will be very glad past you bothered."
   },
   "watch": {
     "date": "Sunday, November 1, 2026",
