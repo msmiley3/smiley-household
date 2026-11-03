@@ -1,72 +1,68 @@
 {
   "dailyBrief": {
-    "date": "Monday, November 2, 2026",
-    "text": "Good morning, Smileys — and a big welcome to Benji, who arrived this weekend after Saturday night's hospital trip. It is a cloudy, mild Monday in Solon, high near 64°, with no rain expected and the first early sunset of standard time at 5:19 tonight. Overnight, Iran left the Doha talks with a draft U.S. deal circulating that could reopen the Strait of Hormuz if the naval blockade ends, while Senator Chris Murphy was hospitalized after a stroke at his son's hockey game, with a full recovery expected. There is no early voting today, so tomorrow is the day: polls are open 6:30 AM to 7:30 PM for the midterms, and 66 Cuyahoga County precincts — including some in Solon — have new polling places, so check yours before you go. Tonight's home entertainment is set too, with the Cavs hosting Oklahoma City at Rocket Arena at 7 PM.",
+    "date": "Tuesday, November 3, 2026",
+    "text": "Good morning, Smileys — it's homecoming day: Benji is expected to be discharged today, with his first pediatrician appointment already booked for tomorrow, and Solon is giving you a beautiful day for it, mostly sunny with a high near 73°. It is also Election Day: Ohio polls are open 6:30 AM to 7:30 PM, the governor's race between Amy Acton and Vivek Ramaswamy and the Senate race between Jon Husted and Sherrod Brown are both close, and 66 Cuyahoga County precincts — including some in Solon — have new polling places, so check yours before you go. Overnight the U.S. carried out limited strikes on Iranian missile targets on Qeshm Island while talks remained possible, and the Cavs lost a close one to Oklahoma City, 117-112, despite the game staying tight into the final minute. Tonight, after the ride home and a first evening as a family of four (plus Moose), the results start rolling in after Ohio polls close at 7:30.",
     "chips": [
-      "👶 Benji is here — arrived this weekend · welcome-home week begins",
+      "👶 Homecoming day — Benji expected home today · first pediatrician visit tomorrow",
       {
-        "label": "☁️ Cloudy & mild in Solon today, high 64° · sunset 5:19 PM",
+        "label": "☀️ Mostly sunny in Solon today, high 73° · rain arrives Wed, then a sharp cooldown",
         "url": "https://weather.com/us/oh/city/solon/tenday"
       },
       {
-        "label": "🗳️ NO early voting today · Election Day tomorrow 6:30 AM–7:30 PM · 66 precincts moved, incl. Solon — check yours",
+        "label": "🗳️ Election Day TODAY · polls 6:30 AM–7:30 PM · 66 precincts moved, incl. Solon — check yours",
         "url": "https://boe.cuyahogacounty.gov/about-us/media-and-press-releases/2026/10/28/the-cuyahoga-county-board-of-elections-announces-voting-location-changes-for-the-november-3--2026-general-election"
       },
       {
-        "label": "🏀 Cavs host Oklahoma City tonight 7 PM at Rocket Arena",
-        "url": "https://www.yardbarker.com/nba/articles/cavs_still_looking_for_consistency_as_thunder_come_to_town/s1_17038_44504557"
+        "label": "🏀 Cavs lost 117-112 to OKC (SGA 43) · rematch Wed 8 PM at OKC",
+        "url": "https://deadspin.com/shai-gilgeous-alexander-scores-43-lifts-thunder-past-cavaliers/"
       },
       {
-        "label": "🕊️ Iran draft deal circulating after Doha talks · Murphy recovering after a stroke",
-        "url": "https://www.reuters.com/world/middle-east/iranians-have-left-doha-talks-draft-proposal-us-deal-being-circulated-official-2026-11-02/"
+        "label": "🇺🇸 Ohio decides: Acton vs Ramaswamy · Husted vs Brown · results after 7:30 PM",
+        "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/03/ohio-election-2026-governor-senate-congress-races/92517664007/"
       }
     ],
     "links": [
-      {
-        "phrase": "a draft U.S. deal circulating",
-        "url": "https://www.reuters.com/world/middle-east/iranians-have-left-doha-talks-draft-proposal-us-deal-being-circulated-official-2026-11-02/"
-      },
-      {
-        "phrase": "Senator Chris Murphy was hospitalized after a stroke",
-        "url": "https://www.cnn.com/2026/11/01/politics/chris-murphy-stroke?cid=external-feeds_iluminar_meta"
-      },
       {
         "phrase": "66 Cuyahoga County precincts — including some in Solon — have new polling places",
         "url": "https://boe.cuyahogacounty.gov/about-us/media-and-press-releases/2026/10/28/the-cuyahoga-county-board-of-elections-announces-voting-location-changes-for-the-november-3--2026-general-election"
       },
       {
-        "phrase": "the Cavs hosting Oklahoma City at Rocket Arena at 7 PM",
-        "url": "https://www.yardbarker.com/nba/articles/cavs_still_looking_for_consistency_as_thunder_come_to_town/s1_17038_44504557"
+        "phrase": "limited strikes on Iranian missile targets on Qeshm Island",
+        "url": "https://aapnews.aap.com.au/news/iran-says-contacts-over-ending-war-continue"
+      },
+      {
+        "phrase": "the Cavs lost a close one to Oklahoma City, 117-112",
+        "url": "https://deadspin.com/shai-gilgeous-alexander-scores-43-lifts-thunder-past-cavaliers/"
       }
     ]
   },
   "babyDue": null,
   "weekBrief": {
-    "text": "The week ahead in Solon starts mild and ends chilly: cloudy and 64° today, then the warmest day of the week on Tuesday — mostly sunny and 74° for Election Day — before rain arrives Wednesday (a 90% chance), showers linger Thursday at 63°, and Friday cools to the mid-50s. Election week dominates the calendar: there is no early voting today, polls are open Tuesday 6:30 AM to 7:30 PM with 66 Cuyahoga precincts at new locations including in Solon, and Ohio's tight governor's and Senate races top the ballot. In sports, the Cavs host Oklahoma City tonight, the Browns travel to New Orleans on Sunday, and Ohio State hosts Oregon on Saturday afternoon. The standout deal remains Giant Eagle's BOGO-free sirloin tip roasts through Wednesday — and at home, this is Benji's first week: newborn days, a first pediatrician check a few days after discharge, and Moose waiting to meet the newest Smiley.",
+    "text": "This week in Solon starts with the best weather day and gets colder from there: mostly sunny and 73° today for Election Day and Benji's homecoming, rain on Wednesday at 67°, then a sharp cooldown — 62° Thursday, the mid-50s Friday, and only the mid-to-upper 40s by the weekend. Election Day dominates the start of the week, with Ohio's polls open today until 7:30 PM, the governor's and Senate races both close, and results arriving tonight. In sports, the Cavs get an immediate rematch at Oklahoma City on Wednesday night, Ohio State hosts Oregon on Saturday afternoon, and the Browns travel to New Orleans on Sunday. The standout deal is Giant Eagle's BOGO-free sirloin tip roasts through Wednesday — and at home, this is the week the Smileys become a family at home together: Benji's first night home, his first pediatrician check tomorrow, and Moose's first meeting with his little brother.",
     "chips": [
-      "🌤️ Mon 64° cloudy · Tue 74° sunny (Election Day) · Wed rain 90% · Thu showers 63° · Fri cooler 55°",
+      "🌤️ Tue 73° sunny · Wed rain 67° · Thu 62° · Fri 55° · Sat 46° · Sun 48° — a sharp cooldown",
       {
-        "label": "🗳️ Election Day Tue Nov 3 · polls 6:30 AM–7:30 PM · 66 precincts moved — check yours",
-        "url": "https://boe.cuyahogacounty.gov/about-us/media-and-press-releases/2026/10/28/the-cuyahoga-county-board-of-elections-announces-voting-location-changes-for-the-november-3--2026-general-election"
+        "label": "🗳️ Election Day today · polls close 7:30 PM · Ohio governor + Senate races both close",
+        "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/03/ohio-election-2026-governor-senate-congress-races/92517664007/"
       },
       {
-        "label": "🏀 Cavs host OKC tonight 7 PM · 🏈 Ohio State vs Oregon Sat 3:30 PM · Browns at Saints Sun 1 PM",
-        "url": "https://www.yardbarker.com/nba/articles/cavs_still_looking_for_consistency_as_thunder_come_to_town/s1_17038_44504557"
+        "label": "🏀 Cavs at OKC Wed 8 PM · 🏈 Ohio State vs Oregon Sat 3:30 PM · Browns at Saints Sun 1 PM",
+        "url": "https://deadspin.com/shai-gilgeous-alexander-scores-43-lifts-thunder-past-cavaliers/"
       },
       {
         "label": "🏷️ Giant Eagle BOGO-free sirloin tip roasts through Nov 4",
         "url": "https://www.gianteagle.com"
       },
-      "👶 Benji's first week — first pediatrician check comes a few days after discharge"
+      "👶 Benji's homecoming week — discharged today, first pediatrician visit Wed Nov 4"
     ],
     "links": [
       {
-        "phrase": "66 Cuyahoga precincts at new locations including in Solon",
-        "url": "https://boe.cuyahogacounty.gov/about-us/media-and-press-releases/2026/10/28/the-cuyahoga-county-board-of-elections-announces-voting-location-changes-for-the-november-3--2026-general-election"
+        "phrase": "the governor's and Senate races both close",
+        "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/03/ohio-election-2026-governor-senate-congress-races/92517664007/"
       },
       {
-        "phrase": "the Cavs host Oklahoma City tonight",
-        "url": "https://www.yardbarker.com/nba/articles/cavs_still_looking_for_consistency_as_thunder_come_to_town/s1_17038_44504557"
+        "phrase": "the Cavs get an immediate rematch at Oklahoma City on Wednesday night",
+        "url": "https://deadspin.com/shai-gilgeous-alexander-scores-43-lifts-thunder-past-cavaliers/"
       },
       {
         "phrase": "Giant Eagle's BOGO-free sirloin tip roasts through Wednesday",
@@ -290,46 +286,47 @@
     ]
   },
   "headlines": {
-    "date": "Monday, November 2, 2026",
+    "date": "Tuesday, November 3, 2026",
     "cats": [
       {
         "name": "World",
         "items": [
           {
-            "title": "Iran negotiators leave Doha as a draft U.S. deal circulates",
-            "summary": "Iranian negotiators have left talks in Doha with Qatari mediators, and a draft proposal for a deal with the United States is now circulating, an official briefed on the talks said Monday. The team departed Sunday, reportedly not because the talks had broken down, and a follow-up meeting is possible.\n\nTehran says the starting point is its seven-step plan from September to reopen the Strait of Hormuz and end the U.S. naval blockade. Foreign Minister Abbas Araghchi has said the strait could reopen on a two-day timeline if conditions are met, a much faster version than first proposed. An earlier Iranian proposal was rejected by President Trump.\n\nNothing has been agreed yet. Trump has said the U.S. will not launch new attacks before Tuesday's vote and called the talks productive, without ruling out action later. The gap is still over what Washington must do first, and over Iran's broader demands.\n\nWatch for a public U.S. response to the draft and any date for negotiators to return to Doha.",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/world/middle-east/iranians-have-left-doha-talks-draft-proposal-us-deal-being-circulated-official-2026-11-02/"
-          },
-          {
-            "title": "Israel deadlocked after its election as Lieberman backs Eisenkot over Netanyahu",
-            "summary": "Avigdor Lieberman said Monday that his Yisrael Beiteinu party will back Gadi Eisenkot of the Yashar party to form Israel's next government, ruling out sitting in a government led by Benjamin Netanyahu. He also ruled out propping up a minority government, saying it could fall within a year.\n\nLast week's election left no bloc close to power on its own. Netanyahu's bloc won 53 seats in the 120-member Knesset, opposition parties won 48 and Arab parties won 19, and 61 seats are needed to govern. Support for Eisenkot is also growing elsewhere in the opposition, including from Naftali Bennett's bloc, and Arab lawmakers may back him to block Netanyahu.\n\nNetanyahu remains caretaker prime minister until a new government is sworn in. President Isaac Herzog begins consultations on November 4, and whoever is nominated will have 28 days, plus a possible 14-day extension, to win a confidence vote.\n\nThe new parliament convenes November 10. The next few weeks will show whether an anti-Netanyahu majority can actually agree on a government, or whether Israel heads toward another stalemate.",
-            "source": "AnewZ",
-            "url": "https://anewz.tv/region/middle-east/26222/lieberman-backs-eisenkot-to-replace-netanyahu/news"
-          },
-          {
-            "title": "Spain identifies 66 of the 69 people killed in the Urda train crash, including four Americans",
-            "summary": "Officials in Spain have identified 66 of the 69 people killed in last Wednesday's train crash near Urda, south of Madrid, the regional high court said Monday. Three cases are still pending and are believed to involve foreign nationals whose families are traveling to Spain.\n\nOf those identified, 54 were Spanish and 12 were foreign citizens, including four Americans and one person each from Argentina, Canada, the Czech Republic, France, Japan, Mexico, Portugal and Tunisia. Most identifications were made by fingerprints, with the rest confirmed by DNA. Sixty families have been formally notified so far.\n\nThe crash happened on October 28 when a Renfe high-speed train hit the rear of a stationary Iryo train on the Madrid-Seville line. It left 41 people in hospital, 16 of them in intensive care in the latest count.\n\nSpain's government was expected to approve financial aid for those affected on Tuesday. Three missing-person reports remain open while the last identifications are completed.",
-            "source": "El Constitucional",
-            "url": "https://www.elconstitucional.es/en/national/urda-train-accident-66-of-the-69-deceased-persons-have-already-been-identified-and-three-cases-remain-pending_9671_102.html"
-          },
-          {
-            "title": "Ukraine resumes strikes on Russian refineries as Moscow hits its power grid",
-            "summary": "Ukraine has resumed long-range drone strikes on Russian oil refineries, targeting the Kstovo refinery in the Nizhny Novgorod region overnight Sunday after a strike Friday on the Novokuybyshevsk refinery in Samara. The renewed campaign comes despite U.S. pressure on Kyiv to pause attacks on energy sites.\n\nUkrainian officials said they never agreed to a proposed 30-day halt on refinery strikes. President Volodymyr Zelenskyy defended the attacks as a response to Russian strikes on Ukraine's energy system, which he said left hundreds of thousands of households without power across four regions overnight.\n\nRussia said it shot down 235 Ukrainian drones overnight, while Ukraine said it downed 371 of 433 Russian long-range drones launched since Saturday evening. The Nizhny Novgorod governor said a large industrial site suffered significant damage.\n\nThe exchange shows the energy war escalating on both sides heading into winter, even as separate diplomacy over shipping and gas continues in the background.",
-            "source": "The CSR Journal",
-            "url": "https://thecsrjournal.in/ukraine-resumes-drone-attacks-on-russian-oil-refineries"
-          },
-          {
-            "title": "U.N. peacekeeping mission in Western Sahara ends after 35 years",
-            "summary": "The United Nations mission in Western Sahara has ended operations after 35 years, with a liquidation period beginning November 1. A smaller U.N. team will now handle moving equipment and assets back to the countries that contributed them.\n\nThe mission, known as MINURSO, was set up in 1991 to monitor a ceasefire and prepare a referendum on self-determination that never happened. It ended after Russia vetoed a U.S. draft resolution on Friday and a rival Russian plan to extend the mission was voted down. The mission had 534 authorized personnel and a budget of more than $62 million.\n\nMorocco welcomed the outcome. The Algeria-backed Polisario Front called it unacceptable, and Algeria said it deeply regrets the decision. Secretary-General Antonio Guterres remains concerned about security and has urged all sides to show maximum restraint.\n\nWithout peacekeepers on the ground, there is less independent monitoring along the berm dividing the territory, raising the risk that a long-frozen conflict could heat up again.",
+            "title": "U.S. hits Iranian missile targets on Qeshm Island on election eve, while saying a deal is still possible",
+            "summary": "The U.S. military struck Iranian targets in the Strait of Hormuz on Monday, with Iranian state television reporting explosions on Qeshm Island. A U.S. official, speaking anonymously, said the targets were Iranians who had used surface-to-air missiles against U.S. assets, and other reporting said the strikes followed Iran firing at a U.S. aircraft.\n\nThe strikes were described as limited and defensive, not a return to full-scale fighting, and they appear to be part of a series of smaller strikes in recent weeks. They came even though President Trump had previously said the U.S. would not launch new attacks before Tuesday's vote — and when asked Monday whether he was considering strikes after the midterms, he answered no.\n\nAt the same time, Vice President JD Vance offered measured optimism about a negotiated settlement, saying there had been good conversations with Iran. The war is now in its ninth month, the U.S. still maintains a naval blockade, and Tehran says the strait could reopen quickly if the blockade and new sanctions are lifted — terms Washington has not accepted.\n\nWatch whether the strikes stay limited after Election Day, and whether mediated talks produce anything concrete on reopening Hormuz to shipping.",
             "source": "Associated Press",
-            "url": "https://www.nprillinois.org/2026-11-02/uns-peacekeeping-mission-in-disputed-western-sahara-ends-after-35-years"
+            "url": "https://aapnews.aap.com.au/news/iran-says-contacts-over-ending-war-continue",
+            "img": "https://aapnews.imgdeliver.net/article-assets/20261103121136/373eb6b3-6b5f-47d1-a8a4-b73d9a6428eb.jpg"
           },
           {
-            "title": "France opens attempted-murder probe after a petrol bomb is thrown at police in Paris",
-            "summary": "Paris prosecutors have opened an attempted-murder investigation after incendiary devices were thrown at security forces at the end of a Saturday demonstration at Porte de Charenton. About 15 gendarmes and police were targeted, and images showed a device exploding at an officer's feet and setting protective gear alight.\n\nReported injuries included second-degree burns and tinnitus, though officials said the assessment was still provisional. No one had been arrested specifically for that attack at the time of reporting. Nationwide, the Interior Ministry put arrests during the demonstrations and Halloween night at 779, including 105 in Paris, lower than the previous two weekends.\n\nThe march was part of a third weekend of protests over high living costs and government policies. Interior Minister Laurent Nunez condemned the attack in the strongest terms.\n\nInvestigators must now identify who threw the devices. Whether the next round of demonstrations stays peaceful will shape how the government responds to a protest movement that has not faded.",
-            "source": "TBS News",
-            "url": "https://www.tbsnews.net/worldbiz/europe/france-opens-attempted-murder-probe-after-protest-attack-1590046"
+            "title": "Russian double strike on a Ukrainian aid school kills 26, including rescuers and police",
+            "summary": "At least 26 people were killed Monday when Russian aerial bombs hit a school in the village of Komyshuvakha, in Ukraine's southeastern Zaporizhzhia region, President Volodymyr Zelenskiy and emergency services said. Among the dead were two rescue workers and four police officers, and several people were treated in hospital.\n\nNo classes were being held at the school because it sits close to the front line. Instead, residents gathered there every Monday to shelter and collect humanitarian aid packages — a predictable weekly routine. Zelenskiy said a first strike hit as people arrived and a second hit the shelter, a pattern often called a double strike.\n\nThe attack came a day after a short local ceasefire, arranged to bring aid into a neighbouring area and evacuate residents, had expired. Zelenskiy argued Russia had passed up a chance to extend humanitarian steps, while rescue teams worked through smouldering rubble looking for people still trapped.\n\nWatch for the final toll as the rubble is cleared, and for whether the attack hardens positions ahead of the peace talks scheduled in Abu Dhabi next week.",
+            "source": "Reuters",
+            "url": "https://www.devdiscourse.com/article/international/4000948-russian-bombing-kills-26-in-village-in-southeastern-ukraine-emergency-services-say"
+          },
+          {
+            "title": "Oil plunges nearly 8% as traders bet the U.S. and Iran might talk instead of escalating",
+            "summary": "Oil prices tumbled on Monday, with Brent crude falling about 7.6% and U.S. crude dropping about 7.4% in its biggest decline in three months. By Tuesday in Singapore, Brent was holding near $104.77 a barrel and U.S. crude was below $97.\n\nThe drop came as both Washington and Tehran signalled a willingness to pursue peace talks as the war enters its ninth month. Iran's president said his government had been given more authority to negotiate, and President Trump hinted at progress — even as U.S. forces struck targets on Qeshm Island the same day.\n\nMonday's fall partly reversed a strong October, when Brent rose almost 14% to a six-month high on fears of renewed fighting. European gas futures also fell sharply, and U.S. heating oil posted its steepest drop in six months.\n\nThe gap between the two sides is still wide: Tehran wants the naval blockade lifted, sanctions eased and frozen assets released, while Washington wants concessions on Iran's nuclear programme. Analysts warn prices could jump back quickly if attacks intensify.",
+            "source": "Bloomberg",
+            "url": "https://www.moneyweb.co.za/news/markets/oil-steadies-after-tumbling-8-on-optimism-over-us-iran-talks/"
+          },
+          {
+            "title": "U.S., Ukraine and Russia will meet in Abu Dhabi next week for a new round of peace talks",
+            "summary": "The Kremlin confirmed Tuesday that Russia will hold three-way talks with Ukraine and the United States in Abu Dhabi on November 10-11. Vladimir Medinsky, an aide to President Vladimir Putin, will lead Moscow's delegation.\n\nU.S. envoy Steve Witkoff said Monday the meeting would bring Ukrainian and Russian delegations together to discuss post-war security arrangements and ways to de-escalate. Earlier reporting said lead U.S. negotiators are expected to include Witkoff and Jared Kushner, with humanitarian measures also on the agenda.\n\nThe war is now in its fifth year, and U.S. negotiators have been looking for a breakthrough before winter. The last U.S.-mediated talks took place in February, before the war against Iran pulled Washington's attention elsewhere. Putin agreed to this new round after meeting Witkoff in St. Petersburg two weeks ago.\n\nWatch who Ukraine sends, and whether any ceasefire or de-escalation language comes out of the two days in Abu Dhabi.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/europe/kremlin-confirms-trilateral-ukraine-peace-talks-abu-dhabi-next-week-2026-11-03/"
+          },
+          {
+            "title": "Cargo ships are being sunk near NATO's Black Sea coast, and the alliance is being tested",
+            "summary": "After seven strikes on cargo ships near NATO members Romania and Bulgaria last month, NATO said it would send patrol aircraft, radars and drones to strengthen its Black Sea flank. Three days after that pledge, another ship was struck just outside Romanian waters, and last week a Greek container ship was sunk by naval drones in Bulgaria's exclusive economic zone.\n\nAnalysts told Reuters they had little doubt the attacks were Russian, though Russia denies targeting Ukraine's neighbours. One count found 317 merchant and other vessels hit in the Black Sea and Sea of Azov between May and October, up sharply from 74 in the previous half-year.\n\nThe disruption has hit trade hard. Ukraine suspended Black Sea port operations in late July and diverted exports to Danube river ports, and its port grain exports in September were less than half the level of a year earlier. Russia's own Black Sea grain exports fell even more sharply.\n\nNATO calls the attacks a serious security threat aimed at discouraging support for Ukraine. Watch for any stronger alliance response, movement on a narrow maritime ceasefire, and further strikes in Romanian or Bulgarian waters.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/europe/war-widens-black-sea-test-nato-red-lines-2026-11-03/"
+          },
+          {
+            "title": "New Zealand election is neck-and-neck — neither side can govern without a small centrist party",
+            "summary": "New Zealand's final major poll before Saturday's election puts the ruling conservative National Party at 30% and the centre-left opposition Labour Party at 29% — effectively a dead heat days before voters go to the polls. The Greens rose to 16%, while National's current coalition partners, ACT and NZ First, both slipped.\n\nThe numbers leave neither side able to govern on its own. A right-leaning bloc of National, ACT and NZ First falls short, and so does a left bloc of Labour, the Greens and Te Pati Maori. Both would need support from the centrist Opportunity Party, unchanged at 6%.\n\nNew Zealand's mixed-member proportional system tends to produce coalition governments, so negotiation is normal — but this time one small centrist party looks set to become the kingmaker for whoever forms the next government.\n\nWatch Saturday's seat count first, then how quickly coalition talks with Opportunity begin.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/asia-pacific/new-zealands-national-labour-dead-heat-days-before-election-poll-shows-2026-11-03/"
           }
         ]
       },
@@ -337,40 +334,40 @@
         "name": "Politics",
         "items": [
           {
-            "title": "Final Senate polls put Democrats ahead in the battlegrounds, most of them close",
-            "summary": "Democrats lead in the final New York Times/Siena polls of the seven Senate battlegrounds that will likely decide control of the chamber, released on the eve of Election Day. Michigan is the widest gap, with Abdul El-Sayed at 53% to Mike Rogers at 42%, and Texas is next, with James Talarico at 50% to Ken Paxton at 43%.\n\nThe other races are tighter: Sherrod Brown leads Jon Husted 49% to 44% in Ohio, Troy Jackson leads Susan Collins 51% to 45% in Maine, and Adam Hamilton leads Roger Marshall 49% to 44% in Kansas. Alaska and Iowa are within the margin of error. The surveys covered 5,708 likely voters from October 23 to November 1.\n\nDemocrats need a net gain of four seats to take the Senate. President Trump's approval in these states was 38%, described in the polling coverage as historically low for a president heading into a midterm.\n\nPolls are not results, and several of these leads sit inside or near the margin of error. Tuesday's turnout will decide whether the polling picture holds.",
-            "source": "USA Today",
-            "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/02/democrats-lead-republicans-senate-battlegrounds-nyt-siena-polls/92560201007/"
+            "title": "Today decides who controls Congress — but the winner might not be clear for days",
+            "summary": "Tuesday's midterm vote will decide which party controls Congress for the final two years of President Trump's second term. All 435 House seats and 35 Senate seats are being contested, and 36 states are electing governors.\n\nRepublicans currently hold the Senate 53-47 and a narrow House lead. Democrats need a net gain of four Senate seats and three House seats to take both chambers. Forecasters have been predicting a strong Democratic night in the House, while the Senate map is full of toss-ups. A record number of Americans — roughly 57 million by one count — had already voted early.\n\nThe answer may not come tonight. Control could be clear late Tuesday, or it could take more than a week if key races are close. California is famously slow to count, and Alaska's ranked-choice system and possible litigation could add delays there.\n\nThe first polls close at 6 p.m. Eastern in parts of Indiana and Kentucky. Ohio's polls close at 7:30 p.m., and the big wave of Senate results arrives around 9 p.m.",
+            "source": "New York Post",
+            "url": "https://nypost.com/2026/11/03/us-news/midterms-2026-an-hour-by-hour-guide-on-how-to-watch/"
           },
           {
-            "title": "Trump administration asks the Supreme Court to set aside 20,000 California ballots",
-            "summary": "On the eve of the election, the Trump administration asked the Supreme Court to block California from counting mail ballots from more than 20,000 voters federal officials say are likely noncitizens, until each voter's citizenship is verified. The Justice Department argues that once those ballots are mixed with lawful ones, they cannot be separated again.\n\nTwo courts have already said no. A federal judge denied the request on October 28, and the 9th Circuit refused it 2-1 on Friday, pointing to California's own election safeguards and the state's power over election procedures. California officials also say many people on the federal list do not have active registrations and were not sent ballots, so the real number in dispute is likely much smaller.\n\nThe list was assembled by the Department of Homeland Security and sent to California and Los Angeles County. The emergency request goes to Justice Elena Kagan, who handles applications from that circuit.\n\nA decision could come at any time, but election-law experts note courts are usually reluctant to change voting rules this close to an election.",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/world/trump-administration-takes-california-ballot-fight-supreme-court-2026-11-02/"
+            "title": "Watch Kentucky, Indiana, Florida and Virginia early tonight — they will tell you who is winning the House",
+            "summary": "Democrats are strongly favoured to win a House majority tonight, but the earliest returns will show whether the night is close or a rout. Operatives on both sides are watching a handful of races that report first.\n\nIn Kentucky's 6th District, Democrat Zach Dembo faces Republican Ralph Alvarado for a seat left open by a senator-bound incumbent, with polls closing at 6 p.m. Eastern. At the same hour in Indiana's 5th District, Republican Victoria Spartz defends a solidly red seat against Democrat J.D. Ford — a Ford win there would signal a very big Democratic night.\n\nFlorida then offers Republicans their best early hope: redistricting put four Democratic-held seats in play, and a Republican path to holding the House likely runs through flipping them. In Virginia, two Republican-held districts — the 1st and the 2nd — are potential Democratic pickups on the state's existing map.\n\nIf Democrats flip the Kentucky or Indiana seats early, the wave is real. If Republicans take the Florida seats, their path to keeping the majority stays alive.",
+            "source": "Wall Street Journal",
+            "url": "https://www.wsj.com/livecoverage/midterm-election-results-2026-latest-updates/card/here-are-the-early-bellwether-house-races-to-watch-tonight-3E2umH8wcTi636xvIWzj"
           },
           {
-            "title": "Stevens endorsement fallout deepens in Michigan as El-Sayed raises millions in hours",
-            "summary": "The fallout from Rep. Haley Stevens endorsing Republican Mike Rogers for Senate in Michigan rolled into Monday. Stevens, who lost the Democratic primary to Abdul El-Sayed, explained her decision in a new interview by criticizing El-Sayed's focus on Israel, after appearing with Rogers at a Detroit church on Sunday.\n\nDemocratic leaders reacted sharply over the weekend, with Senate Leader Chuck Schumer calling it a betrayal and the Michigan Democratic Party chair saying Stevens was no longer a party member. Several of her staff resigned. President Trump praised the endorsement at a rally and urged her to join the Republican Party.\n\nEl-Sayed's campaign said it raised $2.4 million on Sunday after the endorsement, and he told reporters in Ypsilanti on Monday that he did not want to dwell on it, framing the race as a referendum on Trump through Rogers.\n\nMichigan's open seat has not elected a Republican senator since 1994. Whether the endorsement moves late undecided voters, or mainly energizes El-Sayed's base, will only be clear on Tuesday.",
+            "title": "Supreme Court refuses to sideline 20,000 California ballots the Trump administration questioned",
+            "summary": "The Supreme Court on Monday declined the Justice Department's emergency request to force California to set aside midterm ballots cast by about 20,000 registered voters the administration alleges may not be citizens. The court gave no reasoning, and no justice publicly dissented.\n\nLower courts had already ruled against the administration. A district judge wrote that the federal government had never before, on the eve of an election, tried to force a state to abandon its own election procedures, and questioned how the list of names was built. An appeals panel said using the list could block valid votes and jeopardise Los Angeles County's election.\n\nCalifornia says it already has safeguards against noncitizen voting, and called the administration's list-building process highly suspect. The Constitution gives states and Congress — not the executive branch — the main role in regulating federal elections.\n\nCalifornia will count its ballots under its normal procedures today. The underlying Justice Department lawsuit against the state is still pending, so the fight is not over even after the votes are counted.",
             "source": "USA Today",
-            "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/01/haley-stevens-mike-rogers-michigan-senate/92550566007/"
+            "url": "https://www.usatoday.com/story/news/politics/2026/11/02/supreme-court-trump-california-ballots-midterms-illegal-citizens/92566780007/"
           },
           {
-            "title": "Trump makes his closing midterm pitch at the Reflecting Pool after a final rally weekend",
-            "summary": "President Trump closed his midterm campaign Monday with a speech focused on the Lincoln Memorial Reflecting Pool, billed as his final scheduled pitch before Tuesday's vote. He did not mention the election until about 22 minutes into the remarks, according to live coverage.\n\nThe speech followed rallies Sunday in Dubuque, Iowa, and Salina, Kansas, where he campaigned for Senate candidates Ashley Hinson and Roger Marshall and told supporters a Republican House and Senate would keep his agenda moving. He has held more than two dozen rallies in 19 states since October 1.\n\nAll 435 House seats and 35 Senate seats are on the ballot Tuesday, deciding control of Congress for Trump's final two years. Speaker Mike Johnson joined him in Iowa and urged voters to dismiss polling showing Republicans trailing in key races.\n\nTrump told reporters, 'We have to get the Senate.' Tuesday will test whether a heavy personal campaign schedule can overcome a difficult polling environment for his party.",
-            "source": "USA Today",
-            "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/02/midterm-elections-news-updates-polls--live/92387083007/"
+            "title": "Ohio could decide the Senate — and its governor's race is just as tight",
+            "summary": "Ohio is at the centre of tonight's map, with one of the country's most competitive governor's races, a Senate contest that could shape control of the chamber, and House races that could matter for the majority. Hundreds of millions of dollars have flowed into the state.\n\nFor governor, Trump-backed entrepreneur Vivek Ramaswamy faces Democrat Amy Acton, the former state health director. Neither has won a political race before, Ohio has not elected a Democratic governor since 2006, and the winner will make history either way — as the state's first woman elected governor, or its first person of colour elected to the job. Final polls from different pollsters gave Acton a lead of between four and eight points.\n\nFor the Senate, Republican Jon Husted faces former Democratic Senator Sherrod Brown, who is attempting a comeback after losing in 2024. More than $500 million in advertising has been spent on the race, and Democrats see Ohio as one of their best chances to flip a seat.\n\nOhio's polls close at 7:30 p.m. Eastern. Watch the Senate margin first, then whether Acton can break her party's 20-year drought in the governor's office.",
+            "source": "Columbus Dispatch",
+            "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/03/ohio-election-2026-governor-senate-congress-races/92517664007/"
           },
           {
-            "title": "Early voting tops 54 million, already passing the entire 2022 midterm early total",
-            "summary": "More than 54 million Americans had voted before Election Day, according to the University of Florida Election Lab, about 8 million more than the 45.9 million early votes recorded in the 2022 midterms. The total includes in-person early ballots and mail ballots already returned.\n\nIn states that report party registration, Democrats accounted for roughly 43-44% of early votes and Republicans about 31-32%, with the rest independent or other. Texas alone passed 7.7 million early ballots, and Ohio set its own midterm record with more than 1.7 million early votes.\n\nElection Lab director Michael McDonald said the early electorate looks younger, more diverse and more independent than in past midterms.\n\nExperts caution that early totals show who voted, not how they voted. They are a sign of high interest in a midterm, not a forecast of who controls Congress.",
-            "source": "USA Today",
-            "url": "https://www.usatoday.com/story/graphics/2026/11/01/early-voting-2026-surging-past-2022/92500629007/"
+            "title": "Texas Democrat closes by attacking Elon Musk's huge spending for his opponent",
+            "summary": "Texas Senate candidate James Talarico closed his campaign Monday night in Austin by making Elon Musk the centre of his pitch. Musk, the world's richest man and a Texas resident, has put more than $160 million into the race to support Republican Attorney General Ken Paxton, according to the Wall Street Journal.\n\nTotal spending in the race has passed half a billion dollars, making it one of the most expensive non-presidential races in U.S. history. Talarico himself raised a record $64 million in a single quarter. There was no debate — the first Texas Senate race without one since 2000.\n\nPaxton won the Republican nomination by defeating incumbent Senator John Cornyn, the first Texas incumbent senator to lose renomination since 1970. Polls disagree on the general election: one late survey had Talarico ahead by seven points, another had the race tied.\n\nDemocrats have not won a Texas Senate election since 1988, and have not won any statewide race in Texas since 1994. A Talarico win would be a generational breakthrough — and a key step toward the Senate majority.",
+            "source": "Wall Street Journal",
+            "url": "https://www.wsj.com/livecoverage/midterm-election-results-2026-latest-updates/card/talarico-made-elon-musk-the-center-of-his-closing-pitch-in-texas-ILCPzquL8FqlxosYOG6f"
           },
           {
-            "title": "Sen. Chris Murphy is awake and alert after a stroke, with no new medical update Monday",
-            "summary": "Sen. Chris Murphy of Connecticut remained hospitalized Monday after a stroke on Saturday, with no new clinical update beyond his office's statement on Sunday. His chief of staff said he is awake and alert at Johns Hopkins, responding well to treatment, and that doctors are optimistic he will make a full recovery.\n\nMurphy, 53, first felt numbness in his arm on Saturday afternoon while at his son's hockey game and was taken to a local hospital, where the stroke was discovered. He was then transferred to Baltimore for monitoring. The type of stroke and any discharge timeline have not been disclosed.\n\nMurphy is not on the ballot Tuesday, but he had been campaigning for other Democrats, including a planned New Hampshire stop on Sunday that was overtaken by the hospitalization.\n\nColleagues from both parties sent well wishes over the weekend. Any further word on his condition will come from his office, and Monday's coverage repeated Sunday's statement rather than adding new medical detail.",
+            "title": "Trump spent his final pre-election speech on D.C. renovations and a $5,000 promise, while polls favour Democrats",
+            "summary": "Standing before the Lincoln Memorial Reflecting Pool on Monday, President Trump spent more than 20 minutes of his closing midterm speech on Washington construction projects — the pool's repairs, a new helipad, park improvements and a planned triumphal arch — before turning to the election itself.\n\nWhen he did address the vote, he warned against the Democratic slate and repeated his promise of a $5,000 payment to every adult citizen if Republicans keep control of both the House and the Senate.\n\nThe focus was striking because voters say their top concern is the cost of living, and final forecasts favour Democrats. One ratings service counts 222 House districts leaning Democratic — more than the 218 needed for a majority — and late Senate polls showed Democrats leading in most of the contested states. Trump's approval rating was 37% in one poll cited in the coverage, described as a new low.\n\nTrump will spend Election Day out of public view and host a viewing reception at the White House tonight. Watch whether the $5,000 pledge is revived or quietly dropped once the results are known.",
             "source": "USA Today",
-            "url": "https://www.usatoday.com/story/news/politics/2026/11/01/chris-murphy-senator-hospitalized-stroke/92550421007/"
+            "url": "https://www.usatoday.com/story/news/politics/2026/11/02/trump-reflecting-pool-midterms/92566548007/"
           }
         ]
       },
@@ -378,40 +375,42 @@
         "name": "Tech & Business",
         "items": [
           {
-            "title": "Dow rises alone as tech stocks slide for a third straight day",
-            "summary": "The Dow Jones Industrial Average rose 0.41% to close at 51,983.98 on Monday, even as the broader tech selloff deepened. The S&P 500 fell 0.51% to 7,541.40 and the Nasdaq Composite fell 1.07% to 25,164.32, its third straight steep decline.\n\nChip stocks led the drop, with the S&P technology index down 2.7% and a semiconductor fund down nearly 4%. Intel fell about another 9% after a plunge on Friday, Marvell fell about 13%, and AMD fell 7%. Defensive and travel names rose instead, including Walmart, McDonald's, Sherwin-Williams and the major airlines, helped by cheaper oil.\n\nGold rose 1.5% to about $3,955 an ounce after falling to its lowest level in more than a year on Friday, and the 10-year Treasury yield stood at 4.92%.\n\nThe split picture — old-economy stocks up, AI-linked stocks down — has defined the market since October's selloff, and this week's election and earnings will test whether buyers return to tech.",
-            "source": "Investopedia",
-            "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11022026-12206945"
+            "title": "Apple beats forecasts with a record September quarter, but its stock still falls",
+            "summary": "Apple reported record September-quarter results on Monday: revenue of $114.5 billion, up 12% from a year earlier, and earnings of $2.10 a share, up 14%. Both beat Wall Street's expectations, and iPhone revenue set a September-quarter record at $57.58 billion.\n\nServices revenue hit an all-time high of $31.57 billion, with paid subscriptions passing 1.5 billion. Mac sales jumped 24%, while iPad revenue fell about 10%. For the full fiscal year, Apple's revenue reached a record $479 billion. New CEO John Ternus, who took over September 1, led the earnings call.\n\nInvestors focused instead on what comes next. Apple guided December-quarter growth of 7-10% with thinner profit margins, its China revenue came in below expectations, and its shares fell in after-hours and premarket trading despite the beat.\n\nIt is a sign of the current mood: even a record quarter is not enough if the outlook slows. Apple's AI features begin testing in China this week, which will be one story to follow.",
+            "source": "Apple Newsroom",
+            "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
           },
           {
-            "title": "Oil plunges more than 7% as hopes grow for U.S.-Iran talks",
-            "summary": "Oil posted its biggest drop in three months on Monday. West Texas Intermediate fell 7.4% to settle at $96.46 a barrel, back below $100, and Brent fell 7.6% to $104.77.\n\nThe move followed reports that Iran's leadership approved pursuing negotiations and that President Trump told Israel's prime minister he wanted to let talks play out. Iran's foreign minister said a proposal being worked on in Qatar could reopen the Strait of Hormuz in as little as two days if Washington meets conditions including ending the naval blockade and lifting oil sanctions.\n\nEuropean gas futures fell sharply as well, and U.S. heating oil had its steepest drop in six months. OPEC+ met virtually on Sunday and left December production unchanged.\n\nBrent had briefly reached $118 in October, with a large share of that price reflecting war risk. If talks stall, traders warn that premium could return just as quickly.",
-            "source": "Rigzone",
-            "url": "https://www.rigzone.com/news/wire/oil_prices_sink_as_iran_signals_talks-02-nov-2026-184993-article/"
+            "title": "Nasdaq slips into correction as investors question the cost of the AI boom",
+            "summary": "The Nasdaq 100 fell 1.39% on Monday to about 10.4% below its October 6 all-time high — its third technical correction of 2026, even though it is still up about 11% for the year. Chip stocks were hit hardest, with the semiconductor benchmark down about 12% in three sessions.\n\nThe broader market split: the Dow rose 0.41% on Monday while the S&P 500 fell 0.51% and the Nasdaq Composite fell 1.07%. Oracle dropped about 9% after filing to raise $20 billion — half in stock, half in bonds — to fund its AI and cloud buildout. Asian markets followed the slide, with South Korea and Taiwan down about 3.6% each.\n\nThe shift is about questions, not collapse. Investors are moving from rewarding AI potential to asking what the spending earns back, and even strong results from Apple and Palantir did not lift their shares.\n\nFutures were mixed on Election Day morning, a tentative sign the selloff could pause. Chipmaker AMD reports later today and will be the next test of AI sentiment.",
+            "source": "Wall Street Journal",
+            "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-03-2026"
           },
           {
-            "title": "Palantir revenue nearly doubles, and U.S. business sales pass government sales for the first time",
-            "summary": "Palantir reported third-quarter results after the close on Monday that beat expectations by a wide margin. Revenue rose 96% from a year earlier to $2.313 billion, above the roughly $2.18 billion analysts expected, and profit rose to $1.13 billion, or 44 cents a share.\n\nThe milestone in the report was the mix. U.S. commercial revenue jumped 148% to $984 million, passing U.S. government revenue of $953 million for the first time in the company's history. Total U.S. revenue rose 119% to $1.937 billion, and quarterly revenue passed $2 billion for the first time.\n\nPalantir raised its full-year revenue outlook to about $8.53 billion and guided fourth-quarter revenue above expectations. Shares rose modestly in after-hours trading.\n\nOne caution flagged by analysts is new contract growth: total contract value rose only about 6%, so investors will watch whether today's revenue surge turns into a durable order book.",
-            "source": "Morningstar",
+            "title": "Palantir revenue jumps 96% as business customers pass government for the first time",
+            "summary": "Palantir's third-quarter revenue jumped 96% from a year earlier to $2.313 billion — its first quarter above $2 billion — beating expectations. Profit reached $1.128 billion, and the company closed 212 deals worth at least $1 million each.\n\nThe milestone was in the mix. U.S. commercial revenue rose 148% to $984 million, passing U.S. government revenue of $953 million for the first time in the company's history. U.S. revenue overall was $1.937 billion, 84% of the total.\n\nPalantir raised its full-year guidance to about $8.53 billion and lifted its outlook for U.S. commercial sales and for the fourth quarter, both above what analysts expected.\n\nEven so, the stock fell — closing down about 3% Monday and slipping further after hours. Analysts pointed to slower growth in the total value of new U.S. commercial contracts, a reminder that in this market a beat alone no longer guarantees a rally.",
+            "source": "Morningstar / Dow Jones",
             "url": "https://www.morningstar.com/news/dow-jones/2026110211168/palantir-3q-profit-up-lifts-outlook-as-us-commercial-revenue-overtakes-government-business"
           },
           {
-            "title": "Apple beats earnings in its new CEO's first quarter, but the stock still slips",
-            "summary": "Apple reported fiscal fourth-quarter results after the close on Monday that topped Wall Street forecasts. Revenue rose 12% to $114.5 billion, a September-quarter record, and earnings rose 14% to $2.10 a share, helped by a small benefit from tariff refunds.\n\niPhone revenue rose 17% to $57.58 billion, also a September-quarter record, Mac revenue rose 24%, and services hit an all-time high at $31.57 billion. Sales in Greater China rose 21% but came in below expectations, and iPad and wearables revenue fell. This was the first quarter under new CEO John Ternus.\n\nDespite the beat, Apple shares closed the regular session down 1.83% at $338.32, caught in the day's broader tech selloff, and were little changed in early after-hours trading.\n\nThe December quarter is Apple's biggest of the year. Analysts will focus on holiday iPhone demand and whether China sales recover to forecast.",
-            "source": "MacDailyNews",
-            "url": "https://macdailynews.com/2026/11/02/macdailynews-presents-live-notes-from-apples-q426-conference-call/"
+            "title": "Anthropic posts a $17 billion quarter ahead of its IPO, but spending commitments are huge",
+            "summary": "Anthropic reported third-quarter revenue of about $17 billion, up more than 1,100% from a year earlier, in an updated filing ahead of its planned public offering. Revenue for the first nine months of the year was $33.24 billion.\n\nGrowth is still enormous but slowing in percentage terms: revenue rose 47% in the third quarter, after gains of 144% and 132% in the two quarters before it. The company also swung back to an operating loss of $567 million in the quarter.\n\nThe eye-catching number is on the spending side. The filing lists about $895 billion in purchase commitments and leases, almost all for computing power and infrastructure, and its computing costs grew 382% in a year. Short-term computing commitments were a main driver of the operating loss.\n\nAnthropic says its Claude system has seen the fastest business adoption of any technology in history. Investors in the IPO will have to decide how much of that spending turns into lasting profit.",
+            "source": "PYMNTS",
+            "url": "https://www.pymnts.com/earnings/2026/anthropic-reports-17-billion-dollar-quarterly-revenue-before-ipo/",
+            "img": "https://www.pymnts.com/wp-content/uploads/2026/06/Anthropic.jpeg?w=620"
           },
           {
-            "title": "Oracle files to raise $20 billion in stock and bonds to pay for its AI build-out",
-            "summary": "Oracle filed Monday to raise $20 billion — $10 billion in new common stock and $10 billion in senior notes — to help fund its costly AI and cloud infrastructure expansion. The money is for general purposes including capital spending, debt repayment and acquisitions, according to the filings.\n\nInvestors did not welcome the dilution. Shares fell about 6% during the day, extending a decline of roughly a third so far in 2026. The bond sale will be split into six parts maturing between 2029 and 2046, with pricing not yet set.\n\nThe raise uses the full $20 billion of extra funding capacity Oracle outlined at its investor day on October 28 for its fiscal 2027-2030 AI cycle. The company carried about $125 billion in borrowings as of August 31 and is targeting revenue above $225 billion by fiscal 2030.\n\nOracle says free cash flow should turn positive in the second half of fiscal 2028. Until then, it is asking shareholders and bond buyers to fund the build-out up front.",
-            "source": "Reuters",
-            "url": "https://wixx.com/2026/11/02/oracle-to-offer-10-billion-in-bonds/"
+            "title": "Marvell to buy Lumentum for $115 billion in one of the biggest tech deals ever",
+            "summary": "Marvell Technology has agreed to buy Lumentum in an all-stock deal valued at $115 billion including debt, announced Monday — one of the largest technology deals ever, bigger than Microsoft's purchase of Activision Blizzard and Dell's purchase of EMC.\n\nLumentum shareholders will receive 4.5 Marvell shares for each share they own, a premium of about 24%, and will own roughly a third of the combined company. Both boards approved the deal unanimously. Marvell's CEO stays in charge, and three Lumentum directors will join the board.\n\nThe logic is AI data centres. Marvell makes custom chips and electrical connections; Lumentum makes the lasers and optical parts that move data with light. Together they project more than $1 billion in annual cost savings and a combined market opportunity of $550 billion. Nvidia invested $2 billion in each company earlier this year.\n\nThe deal is not expected to close until the first half of 2028, pending shareholder and regulatory approval — a long road for a merger this size.",
+            "source": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/",
+            "img": "https://techcrunch.com/wp-content/uploads/2026/06/Chip-chips-dollar-signs-money.png?w=1024"
           },
           {
-            "title": "Bitcoin holds up after the record $6.3 billion Binance hack as withdrawals reopen",
-            "summary": "Bitcoin traded around $78,300 on Monday, holding up better than many expected after Binance disclosed a $6.3 billion hack last week — the largest exchange theft on record. Binance says users lost no money, and it has replaced about 90-95% of the stolen assets from its own funds.\n\nWithdrawals, which were paused after the breach, began reopening in phases on Sunday, starting with Bitcoin and 14 other networks. About $3 billion of the stolen assets have been frozen by partner exchanges, including $2.3 billion in stablecoins.\n\nThe FBI and blockchain firms have linked the attack to TraderTraitor, a group tied to North Korea that was also linked to last year's Bybit breach. Analysts tracking the stolen funds say most of the Bitcoin has not moved, though some stolen Solana began converting into Bitcoin over the weekend.\n\nTraders are still paying more for downside protection, a sign the market is relieved but not relaxed. Binance's fuller proof-of-reserves update is the next credibility test.",
-            "source": "The Hindu BusinessLine",
-            "url": "https://www.thehindubusinessline.com/money-and-banking/cryptocurrency/bitcoins-resilience-after-binance-hack-masks-market-jitters/article71655481.ece/amp/"
+            "title": "CrowdStrike to buy two AI security startups for $495 million to police AI agents",
+            "summary": "CrowdStrike will pay a combined $495 million for two artificial-intelligence security startups, expanding its push to monitor AI agents as companies deploy them widely. The larger deal is Fiddler AI, at about $400 million, whose software watches and explains what AI agents are doing.\n\nThe second purchase, Dreadnode at about $95 million, makes automated testing tools that probe AI models for weaknesses before they are released — including more than 100 attack strategies such as jailbreaks and prompt injection.\n\nCrowdStrike plans to sell Fiddler's tools as Falcon Observe, alongside a Falcon Guardian feature that works like a kill switch, letting administrators shut down an agent that starts behaving abnormally. Its president said companies are well past the testing phase and are deploying agents at scale now.\n\nThe risk CrowdStrike is targeting is not only outside attackers, but agents that are set up wrong or given too much access. Both deals are expected to close in the company's fiscal fourth quarter.",
+            "source": "Wall Street Journal",
+            "url": "https://www.wsj.com/pro/cybersecurity/crowdstrike-to-buy-two-ai-security-startups-for-495-million-b0ef6a9e"
           }
         ]
       },
@@ -419,41 +418,41 @@
         "name": "U.S. News",
         "items": [
           {
-            "title": "Investigators say the Florida Learjet may have broken apart before it hit the ground",
-            "summary": "Federal investigators said Monday that the Learjet that crashed in Palm Beach County on Sunday, killing all nine people aboard, may have begun breaking up before impact. Debris is spread over about half a mile, and rain has been filling the impact crater with water, slowing recovery.\n\nThe charter flight left Austin, Texas, on Sunday morning bound for the Bahamas. The crew reported light clear ice and moderate turbulence at 35,000 feet, then asked to climb because of more precipitation. About 20 seconds later came a mayday, and tracking data showed an extremely fast descent.\n\nFamilies on Monday identified the passengers as Adam Robinson, his wife Helen Sharp, their children Emma, 2, and Charlie, 4, the children's nanny Anita Maria Cetina, and a couple, Rachael Reed and Charmi Fehr. The co-pilot was Nathalia Gadelha Filgueiras, 20, of Boca Raton. About 400 to 600 people were displaced from a nearby mobile home park, and roughly 100 homes were evacuated.\n\nNo cause has been given. Weather and icing are a major focus, and officials have cautioned against early conclusions about the crew.",
-            "source": "Palm Beach Post",
-            "url": "https://www.palmbeachpost.com/story/news/local/lakeworth/2026/11/02/learjet-plane-crash-cause-investigation-live-updates-what-happened-monday--live/92560334007/"
+            "title": "Election Day arrives after a surge in early voting, with observers watching the polls closely",
+            "summary": "The final day of midterm voting opened Tuesday after millions of Americans had already cast ballots early — more than 50 million by one Associated Press count — putting turnout on pace to pass the last midterms. Voting so far had unfolded with relatively few problems, the AP reported.\n\nThe Justice Department is running its largest-ever Election Day effort to monitor polling places. Democrats and allied groups have fielded an even larger effort of their own, with tens of thousands of trained volunteer observers.\n\nOfficials said no armed federal officers would guard polling places, and feared steps such as immigration agents at voting sites or seized machines had not happened by Tuesday morning. The Supreme Court also declined Monday night to let the administration set aside California ballots in its search for noncitizen voters.\n\nWeather is the practical complication in the Southwest, where weekend flash flooding may make some polling places harder to reach. Officials are urging anyone still holding an absentee ballot to drop it off in person rather than mail it.",
+            "source": "Associated Press",
+            "url": "https://www.kcau9.com/news/politics/ap-election-day-arrives-after-a-surge-in-early-voting-with-observers-keeping-close-watch-at-the-polls/"
           },
           {
-            "title": "South Florida flooding called a 1,000-year event after 20 inches of rain in a day",
-            "summary": "Parts of Brevard County received about 20 inches of rain in 24 hours, an amount forecasters described as a one-in-a-thousand-year event for that area. All of South Florida stayed under a flood watch through Monday evening, with more rain possible.\n\nBrevard County closed schools for the day, Florida Tech cancelled classes into Tuesday, and Melbourne issued a precautionary boil-water notice after a water main break. Palm Bay also lost water service in places after a separate main break, and rescue crews handled repeated calls for drivers stranded in high water.\n\nForecasters blamed a mix of autumn high tides, a recent full moon, and low pressure near the Bahamas interacting with high pressure to the north. Gusts reached near 50 mph and waves topped sea walls in places.\n\nRain chances stay elevated on Election Day in Palm Beach County, but forecasters do not expect a repeat of Monday's flooding rain. Officials also warned that standing floodwater raises the risk of bacterial infection.",
-            "source": "Palm Beach Post",
-            "url": "https://www.palmbeachpost.com/story/weather/2026/11/02/florida-flood-watch-rain-updates-monday--live/92560023007/"
+            "title": "Flash flooding forces evacuations across Colorado, Arizona and New Mexico",
+            "summary": "Heavy rain on Sunday produced flash flooding and mandatory evacuations across a wide stretch of the Southwest — the second major drenching in about two weeks for a normally dry region. A Tucson fire crew rescued a woman from a car stuck in a flooded wash, one of many water rescues over the weekend.\n\nIn Pagosa Springs, Colorado, officials warned of catastrophic flooding as the San Juan River rose; the river eventually crested at roughly 16.8 feet late Sunday, and roads in and out of town were closed. In Sedona, Arizona, residents near Oak Creek were ordered to leave immediately, floodwaters trapped people in homes, and helicopter rescues were reported. The community of Gisela was ordered fully evacuated.\n\nA National Weather Service meteorologist in Tucson described it as two or three months of rain in a couple of days, with up to about four inches falling across the region. Warnings covered nearly all of Arizona plus parts of Utah, Colorado, New Mexico and Nevada.\n\nNo deaths or injuries had been reported in the AP's Sunday reporting, though nearly 20 homes in one Arizona county needed emergency relocation help. Drier weather was expected for Election Day, with cleanup and road damage lingering.",
+            "source": "Associated Press",
+            "url": "https://www.firerescue1.com/water-rescue/flash-floods-trigger-mass-evacuations-across-southwest-as-rivers-near-record-highs",
+            "img": "https://lexipol.brightspotcdn.com/dims4/default/ac12417/2147483647/strip/true/crop/5000x2815+0+0/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk1-prod-lexipol.s3.us-east-2.amazonaws.com%2Fbrightspot%2Fe7%2F52%2F464c727c4b49b0fd70bf4f60e352%2Fap26306010946744.jpg"
           },
           {
-            "title": "Justice Department to send about 1,000 election monitors to polls in all 50 states",
-            "summary": "The Justice Department plans to send roughly 1,000 federal monitors to polling places in all 50 states on Tuesday, its largest election-monitoring effort ever and about three times the 388 sent in 2022. Monitors observe and take notes on possible violations of federal voting law and are not supposed to interfere with voters.\n\nTo reach that number, the department recruited staff from outside the Civil Rights Division, including criminal prosecutors — a break from past practice that has drawn criticism from voting-rights groups, who say it could intimidate voters and local officials. The NAACP sued to block the use of law enforcement agents as monitors, with a hearing held Monday afternoon.\n\nSome local governments have already set limits, including counties in Minnesota that barred indoor observation and states that set distance rules from voting machines.\n\nThe full deployment list is not public and is expected on Election Day. Election officials have also warned that close races could bring disputes over counting and certification after the polls close.",
+            "title": "Record Southwest flooding raises the El Niño question as rivers break records",
+            "summary": "The weekend's flooding in the Southwest was not just heavy — in places it was record-breaking. The Little Colorado River at Woodruff beat its previous record by about six feet, and the Gila River near Solomon rose 18 feet in a day, passing its historic high by six feet.\n\nAs of Monday morning, 11 rivers in Colorado and Arizona were at or approaching major flood stage, with warnings for rockfalls, mudslides and debris flows on burn scars and in slot canyons. Durango, Colorado recorded 4.3 inches of precipitation on Sunday alone. The flooding even closed a ballot drop box in one Colorado county ahead of Election Day.\n\nScientists are debating the cause. One climate scientist argued that back-to-back record rain events during one of the strongest El Niño events on record is not a coincidence. A National Weather Service meteorologist cautioned that this week's weather cannot yet be attributed to El Niño.\n\nMore flooding was forecast into Tuesday in parts of Arizona, Colorado and New Mexico, even as drier weather returns. Snow is the other side of the storm, with up to a foot and a half possible in the San Juan Mountains.",
             "source": "USA Today",
-            "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/02/midterm-elections-news-updates-polls--live/92387083007/"
+            "url": "https://www.usatoday.com/story/news/weather/2026/11/02/historic-catastrophic-flooding-southwest-el-nino/92561330007/"
           },
           {
-            "title": "Federal judge orders the Justice Department to stop pressuring election officials",
-            "summary": "A federal judge on Monday imposed a sweeping emergency order barring the Justice Department and the Department of Homeland Security from pressuring election officials in any state, including halting threats of criminal prosecution tied to voter-roll disputes.\n\nThe order follows letters sent by the department's Civil Rights Division to election officials in all states this summer, warning of legal action if officials knowingly allowed noncitizens to vote or to remain on the rolls. A separate ruling late Friday had already restrained the administration in the California ballot dispute.\n\nThe administration has argued its efforts are about election integrity and enforcing a 1996 law against noncitizen voting. State officials and voting-rights advocates say the pressure campaign, arriving days before the election, risks confusing voters and burdening the officials who must run it.\n\nThe rulings do not end the underlying lawsuits. They do mean that, for Tuesday's vote, states will run their elections under their own procedures while the legal fights continue afterward.",
-            "source": "USA Today",
-            "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/02/midterm-elections-news-updates-polls--live/92387083007/"
-          },
-          {
-            "title": "Voters head into the midterms in a sour mood on prices, even as jobs and growth look solid",
-            "summary": "On the eve of an election that decides control of Congress, voters are focused on the economy — and many are unhappy about it. High and rising prices are the top complaint, and many voters blame tariffs and the Iran war for keeping inflation stubborn.\n\nThe hard data tell a mixed story. Unemployment remains historically low, overall growth is solid, and business investment rose at a 12.7% annual pace last quarter on AI spending. But consumer prices and hourly pay have both risen about 5.5% since January 2025, and a University of Michigan sentiment gauge sits near a record low.\n\nTreasury Secretary Scott Bessent argued last week that consumer behavior is stronger than the gloomy surveys suggest.\n\nThat gap between decent headline numbers and how households feel about grocery and energy bills is the political problem for the party in power, and it is the backdrop for every close race on Tuesday.",
+            "title": "Judge dismisses the administration's lawsuit seeking Harvard's admissions records",
+            "summary": "A federal judge in Boston on Monday dismissed a Justice Department lawsuit that sought to force Harvard University to hand over records for an investigation into whether it still considers race in admissions.\n\nThe department sued in February, saying it needed years of applicant-level data to check Harvard's compliance with the Supreme Court's 2023 ruling against race-conscious admissions. The case was brought under Title VI of the Civil Rights Act.\n\nHarvard argued the suit was retaliation for refusing administration demands to overhaul its governance, hiring and academic programmes, and noted it was filed after the president ended settlement talks and said he wanted $1 billion in damages. Harvard also said the government had sued without first following the steps required to seek voluntary compliance, and that the records involved sensitive data on thousands of high school applicants.\n\nThe ruling is the latest in a string of court losses for the administration in its fight with Harvard, which has also won cases over terminated research grants and its ability to host international students.",
             "source": "Reuters",
-            "url": "https://941theduke.com/2026/11/02/us-voters-in-a-sour-economic-mood-heading-into-midterm-elections/"
+            "url": "https://www.reuters.com/world/us-judge-dismisses-trump-administrations-harvard-admissions-probe-case-2026-11-02/"
           },
           {
-            "title": "Severe storms target the Plains on Monday, with a tornado risk from Kansas to Oklahoma",
-            "summary": "Five states — Texas, Oklahoma, Kansas, Missouri and Arkansas — were on alert Monday for severe storms, with an enhanced risk of tornadoes between Wichita and Oklahoma City. Forecasters expected supercells to form in south-central Kansas and western Oklahoma in the late afternoon as temperatures climbed into the 70s and low 80s.\n\nThe Storm Prediction Center put parts of Kansas, Oklahoma and north Texas at Level 2 of 5 for Monday afternoon and evening, with large hail, damaging winds and a few tornadoes possible along a cold front and dryline. Storm chasers following the setup warned some tornadoes could be strong if storms stay organized into the early evening.\n\nSeparate warnings covered wind gusts above 60 mph in parts of Texas, New Mexico, South Dakota and Wyoming, with possible tree damage and power outages.\n\nThe threat shifts into the Deep South on Election Day, bringing heavy rain to Louisiana, Mississippi, Arkansas and Alabama, before spreading into the Midwest on Wednesday.",
-            "source": "The Spun",
-            "url": "https://thespun.com/trending/u-s-issues-warning-for-5-states-bracing-for-severe-tornadoes-today",
-            "img": "https://thespun.com/.image/MzM6MDAwMDAwMDAwMzY0MTMz/syndication-usa-today.jpg?profile=w2560&x=50&y=50"
+            "title": "U.S. intelligence sharing has fractured amid agency turf wars, officials say",
+            "summary": "Intelligence sharing on Iran and other global threats — with Congress and across the federal government — has slowed and at times stopped during President Trump's second term, according to eight current and former officials and people briefed on the matter who spoke to Reuters.\n\nThe problems centred on deep tension between the Office of the Director of National Intelligence and the CIA, described as one of the biggest turf wars in three decades. The CIA stopped co-authoring assessments with the National Intelligence Council, lawmakers briefly stopped receiving some reports at two points, and briefings to Congress on election threats were halted in 2025 before being resumed under a new intelligence director in August.\n\nThe FBI also stopped sharing some intelligence with the National Counterterrorism Center for several weeks after a dispute over an investigation. Former officials warn the gaps risk an incomplete picture of threats, echoing failures before the September 11 attacks, and some are working on bipartisan plans to rebuild the system.\n\nThe CIA and the intelligence director's office both said in response that sharing continues and assessment levels are near historic norms. The report lands as the administration weighs whether to resume strikes on Iran after the midterms.",
+            "source": "Reuters",
+            "url": "https://www.reuters.com/world/americas/us-intelligence-sharing-has-fractured-under-trump-officials-say-2026-11-03/"
+          },
+          {
+            "title": "Philips reaches a Justice Department agreement over its 2021 sleep-device recall",
+            "summary": "Philips Respironics has reached an agreement in principle with the U.S. Justice Department to resolve criminal and civil investigations tied to its 2021 global recall of sleep and respiratory devices.\n\nPhilips recalled millions of devices in 2021 over concerns that sound-reducing foam inside them could break down and potentially become toxic. The company has set aside 288 million euros — about $322 million — for the proposed settlement, with payment expected in early 2027 once final documents are signed.\n\nThe company did not say whether the agreement includes an admission of wrongdoing, and its CEO said the deal was reached only in the last few days. Philips also beat quarterly profit expectations and kept its 2026 financial targets unchanged.\n\nThe settlement would not end every legal thread. A separate investigation by U.S. state attorneys general is still ongoing, and Philips says those talks are too early to estimate.",
+            "source": "Reuters",
+            "url": "https://cruisin929.com/2026/11/03/philips-beats-quarterly-profit-estimates-driven-by-higher-sales-gross-margin/"
           }
         ]
       },
@@ -461,40 +460,40 @@
         "name": "Cleveland & Ohio",
         "items": [
           {
-            "title": "Ohio smashes its midterm early-voting record before Election Day",
-            "summary": "More than 1.7 million Ohioans had already voted by the close of early voting, a new record for a midterm in the state, beating the 1.5 million mark set in 2022. Nearly 1.1 million voted in person and about 632,000 returned mail ballots.\n\nMore than 104,000 absentee ballots are still outstanding. They must be received by 7:30 p.m. on Election Day to count — Ohio no longer has a grace period for ballots arriving late, so at this point they should be hand-delivered, not mailed.\n\nElection officials credited heightened interest and record advertising, with high-profile races for governor between Vivek Ramaswamy and Amy Acton and for U.S. Senate between Jon Husted and Sherrod Brown driving turnout.\n\nUnaffiliated voters made up the largest share of the early vote. Final turnout will depend on how many of the record early voters are joined by Election Day voters on Tuesday.",
-            "source": "The Columbus Dispatch",
-            "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/02/ohio-sets-new-early-voting-record-ahead-of-november-midterms/92266591007/"
+            "title": "Election Day in Ohio: Governor and Senate races come down to turnout in Cleveland and two bellwether counties",
+            "summary": "Ohio is being treated like a purple swing state today. The governor's race between Democrat Amy Acton and Republican Vivek Ramaswamy is close in the polls, and the Senate race between Republican Jon Husted and Democrat Sherrod Brown is a nailbiter that could help decide control of the Senate.\n\nThree things will decide the night. The first is Mahoning County, around Youngstown, which flipped Republican in the Trump era — Republicans need it to stay red. The second is fast-growing Delaware County, whose presidential margins have narrowed dramatically over two decades, testing whether it is turning blue. The third is turnout in Cincinnati, Columbus and especially Cleveland, where early voting in Cuyahoga County was described as unprecedented, with lines snaking through the Board of Elections office.\n\nStatewide, more than 1.7 million Ohioans had already voted early, a record for in-person early voting. Cuyahoga County turnout has been drifting down over the years, which is exactly why both campaigns pushed so hard to get Cleveland voters out.\n\nPolls close at 7:30 p.m. tonight. Cleveland's turnout — particularly among Black voters — may be the margin in both statewide races.",
+            "source": "Columbus Dispatch",
+            "url": "https://www.dispatch.com/story/opinion/columns/2026/11/03/election-2026-ohio-midterms-amy-acton-vivek-ramaswamy-sherrod-brown-jon-husted/92570132007/"
           },
           {
-            "title": "Election Day is Tuesday: what Cuyahoga County voters need to know",
-            "summary": "Polls in Ohio are open Tuesday, November 3, from 6:30 a.m. to 7:30 p.m., and anyone in line at 7:30 p.m. can still vote. There was no early voting on Monday — in-person early voting ended Sunday afternoon.\n\nOn Election Day you must vote at your assigned polling place, and the Cuyahoga County Board of Elections warns that a number of polling locations changed for this election, including in the Solon area. Check your precinct and sample ballot with the Board's lookup tool before you go, and bring acceptable photo ID — an Ohio license showing a former address is still valid if your current address is on the poll list.\n\nIf you still hold a mail ballot, do not mail it now. Hand-deliver it to the Board of Elections at 1803 Superior Ave. in Cleveland by 7:30 p.m. Tuesday.\n\nVoters will choose a governor, a U.S. senator, other state and local officials, and local issues. The Board can be reached at 216-443-VOTE.",
+            "title": "Check your polling place: 66 precincts moved in Cuyahoga County, including Solon",
+            "summary": "If you are voting in person today, check your polling place first. The Cuyahoga County Board of Elections announced 66 precinct location changes across nine cities, affecting nearly 60,000 voters — and Solon is on the list.\n\nMany of the Cleveland changes happened because the Cleveland school district closed 10 buildings that had been used as polling places. The board mailed location-change letters to every affected voter, but a letter is easy to miss in a busy week.\n\nPolls are open today from 6:30 a.m. to 7:30 p.m. You can confirm your location at boe.cuyahogacounty.gov or by calling 216-443-8683. Bring an accepted photo ID — an unexpired Ohio driver licence or state ID, a U.S. passport, or a military ID. A digital ID in Apple Wallet is not accepted.\n\nThe Board of Elections office itself is at 1803 Superior Avenue in Cleveland, which is also where Cuyahoga County voters can drop off a completed mail ballot today.",
             "source": "Cuyahoga County Board of Elections",
-            "url": "https://boe.cuyahogacounty.gov/voters/election-faqs"
+            "url": "https://boe.cuyahogacounty.gov/about-us/media-and-press-releases/2026/10/28/the-cuyahoga-county-board-of-elections-announces-voting-location-changes-for-the-november-3--2026-general-election"
           },
           {
-            "title": "Short-handed Thunder visit the Cavs tonight at Rocket Arena",
-            "summary": "The Cavaliers host the Oklahoma City Thunder tonight at 7 p.m. at Rocket Arena, on Peacock and NBCSN. Cleveland is 4-2 and unbeaten at home at 3-0, coming off a 136-111 win at Milwaukee on Saturday. The game had not been played as of Monday evening — this is a preview, not a result.\n\nBoth teams are short-handed. For Cleveland, Peyton Watson is questionable with hamstring tightness, while Jaylon Tyson is out with an ankle sprain and Nae'Qwan Tomlin is out with a back injury. Oklahoma City, also 4-2, lists six players out, including Chet Holmgren, Jalen Williams, Alex Caruso and Cason Wallace.\n\nThe Thunder have lost two straight and scored under 100 points in both, while Shai Gilgeous-Alexander is averaging 26 points a game. Cleveland was favored by about 3.5 to 4.5 points.\n\nThe same two teams meet again Wednesday in Oklahoma City, making tonight the first half of an unusual home-and-home in back-to-back stops.",
-            "source": "Cavaliers Nation",
-            "url": "https://cavaliersnation.com/2026/11/02/cavs-release-full-injury-report-ahead-of-mondays-matchup-vs-thunder/"
+            "title": "Still holding a mail ballot? Drop it off by 7:30 p.m. tonight — Ohio ended the grace period",
+            "summary": "Ohio's rules for mail ballots changed this year, and the change matters tonight. Under a law signed last December, an absentee ballot now has to arrive by the close of polls on Election Day to be counted — the old four-day grace period after Election Day is gone, except for military and overseas voters.\n\nThat means a ballot still sitting on your kitchen counter must be received by 7:30 p.m. today. Secretary of State Frank LaRose warned on October 27 that it was likely already too late to mail a ballot and have it arrive in time.\n\nThe safe move is to drop it off in person. For Cuyahoga County voters, that is the Board of Elections at 1803 Superior Avenue in Cleveland, which has a secure drop box.\n\nEarly in-person voting ran from October 6 through Sunday. Today is the last step: polls open 6:30 a.m. to 7:30 p.m., with the governor's race, a U.S. Senate race and the statewide offices all on the ballot.",
+            "source": "Columbus Dispatch",
+            "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/02/ohio-mail-in-ballots-due-election-day-2026-drop-off-locations/92561885007/"
           },
           {
-            "title": "Browns humbled in Pittsburgh as the Steelers take the AFC North lead",
-            "summary": "Cleveland's 27-6 loss at Pittsburgh on Sunday was its most lopsided defeat of the season. The Browns fell to 5-3, while the Steelers improved to 6-2 and took sole possession of first place in the AFC North.\n\nPittsburgh ran for 200 yards, led by Jaylen Warren's 143 yards and a touchdown, and built a 20-6 halftime lead. Cleveland's first three possessions ended in two lost fumbles and a three-and-out, the offense managed only 34 rushing yards, and Deshaun Watson was sacked eight times. Harold Fannin Jr. was a bright spot with 10 catches for 154 yards, though he also lost a fumble.\n\nHead coach Todd Monken said the team earned the result and is capable of much better. All five of Cleveland's wins this season have come by four points or fewer.\n\nThe Browns travel to New Orleans to face the Saints on Sunday, November 8, at 1 p.m. A win there would keep them firmly in the wild-card picture heading into the second half of the season.",
-            "source": "Athlon Sports",
-            "url": "https://athlonsports.com/nfl/cleveland-browns/browns-playoff-contenders-steelers-eight-sacks"
+            "title": "Vance rallies Republicans near Toledo as Democrats push affordability in Columbus on election eve",
+            "summary": "Both parties closed their Ohio campaigns on Monday. Vice President JD Vance headlined a rally near Toledo alongside Donald Trump Jr., Vivek Ramaswamy and Jon Husted — the sixth campaign trip to Ohio by Vance or President Trump in six weeks.\n\nDemocrats held their own election-eve rally in Columbus, promising to make life more affordable and painting their opponents as beholden to special interests. Amy Acton told the crowd the race was about extreme wealth and special interests against everyone else.\n\nThe late polling in the file tells a close story. One survey had Acton ahead of Ramaswamy by about eight points for governor and Sherrod Brown ahead of Husted by about seven for the Senate; a polling average put Acton's lead closer to four points. Treat those as polls, not results.\n\nMany of the people at both rallies had already voted — they were part of the record 1.7 million Ohioans who cast early ballots. Tonight's turnout decides whether the polling held.",
+            "source": "Columbus Dispatch",
+            "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/02/jd-vance-ohio-candidates-make-final-pitch-to-voters-before-election/92496873007/"
           },
           {
-            "title": "Buckeyes must bounce back Saturday against a dangerous Oregon team",
-            "summary": "Ohio State's margin for error is gone. The Buckeyes, 6-2 and 4-1 in the Big Ten after a 30-18 loss at USC, host Oregon on Saturday at 3:30 p.m. at Ohio Stadium on CBS, and likely need to win all four remaining November games to keep their conference title and playoff hopes alive.\n\nOhio State opened as a favorite of roughly 7.5 to 9.5 points, depending on the sportsbook. Oregon is 5-3 after beating Northwestern, and is now led by quarterback Dylan Raiola — a former Ohio State commit — after starter Dante Moore was lost for the season with a severe concussion in September. Raiola threw for 336 yards and three touchdowns against Northwestern.\n\nThe USC loss still stings in Columbus: Ohio State outgained the Trojans and held the ball for nearly 40 minutes, yet scored only one touchdown on 18 red-zone plays.\n\nFreshman quarterback Luke Fahey, who made his first start at USC, and receiver Jeremiah Smith, who set the Big Ten record with his 40th career touchdown catch in that game, will be central to the response.",
-            "source": "Eleven Warriors",
-            "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165045/five-things-to-know-oregons-season-falls-short-of-national-title-aspirations-dylan-raiola-takes-over-at-qb-after"
+            "title": "Issue 3 explained: Ohio's lone statewide ballot issue would put voter photo ID in the constitution",
+            "summary": "Ohio has exactly one statewide issue on today's ballot. Issue 3 would write the state's voter photo ID requirement into the Ohio Constitution.\n\nOhio has required photo ID for in-person voting under state law since 2023, so for most voters nothing about today would feel different. The change is about permanence: a constitutional requirement is much harder for a future legislature or court to undo. The General Assembly placed the amendment on the ballot, and it takes effect immediately if a majority votes yes.\n\nAccepted IDs include an unexpired Ohio driver licence or state ID, a U.S. passport or passport card, and military, Ohio National Guard or veterans' ID. The amendment also allows state law to provide an alternative for voters with a sincere religious objection to being photographed. Its ballot title runs about 200 words — among the longest in the country this year.\n\nSeveral other proposed amendments — on property taxes, data centres and other topics — did not make the 2026 ballot, and their organisers are aiming at 2027 instead.",
+            "source": "Columbus Dispatch",
+            "url": "https://www.dispatch.com/story/news/politics/state/2026/06/29/ohio-voters-to-decide-one-ballot-issue-in-november-2026-election/90658125007/"
           },
           {
-            "title": "Cleveland misses out on $7.8 million in federal money to make homes lead-safe",
-            "summary": "The federal government has denied Cleveland's application for a $7.8 million lead-hazard grant, after a risk review of how the city manages federal housing money — including reporting, meeting goals and finishing work on time. City Council member Kris Harsh called the denial terrible news.\n\nThe timing is difficult. Three older federal lead grants are winding down with no replacement lined up: a $9.7 million Glenville grant closing at the end of November, a $2 million healthy-homes grant closing next June, and a $5.7 million citywide grant closing next July. Federal officials have also raised concerns about the city's community development block grant funds.\n\nThe denial does not change landlords' obligations. Rental homes built before 1978 must still be certified as lead-safe, and the city says it will keep enforcing that ordinance.\n\nCleveland also lost a $3.3 million state lead grant in February for slow spending. For a city with one of the nation's most serious lead-paint problems in older housing, the gap between the rules on paper and the money to fix homes is widening.",
-            "source": "Signal Cleveland via PbFree Ohio",
-            "url": "https://pbfreeohio.com/2026/11/02/feds-deny-cleveland-7-8-million-lead-grant-what-it-means-for-property-owners/"
+            "title": "Cleveland voters say gas and grocery prices are driving them to vote",
+            "summary": "In Cleveland's Central neighbourhood, about two dozen residents at a community workshop on stress and chronic illness were handed election guides for today's vote — and the conversation kept coming back to the cost of everyday life.\n\nOrganisers with Cleveland VOTES and its Vote Squad have canvassed for months, trying to connect daily frustrations to voting. The issues they hear most are gas prices, federal cuts to food assistance, and stricter work requirements for Medicaid set to take effect next year. They also spend much of their time pushing back on the idea, still common in the neighbourhood, that a vote does not matter.\n\nGreater Cleveland Congregations has sent door-knocking volunteers across Cleveland and its inner-ring suburbs. Its organisers say voters this year sound far more urgent about voting than in the last midterm, and that they lead with issues like gas and food.\n\nIt is a useful ground-level read on tonight: in Ohio's biggest city, affordability — not party messaging — is what is moving people to the polls.",
+            "source": "Signal Cleveland",
+            "url": "https://postgoo.com/posts/6ae065de3edc557752cc26d1?type=article"
           }
         ]
       }
@@ -742,58 +741,57 @@
     }
   ],
   "tickerExtras": [
-    "🏀 Cavs (4-2, 3-0 at home) host Oklahoma City TONIGHT, Mon Nov 2, 7 PM at Rocket Arena — Peyton Watson questionable (hamstring), Tyson and Tomlin out · Thunder without Holmgren, Jalen Williams, Caruso and Wallace · Cavs won 136-111 at Milwaukee Saturday",
-    "🏈 Browns fall 27-6 at Pittsburgh — Steelers (6-2) take first place in the AFC North, Cleveland 5-3 · Next: at New Orleans Sun Nov 8, 1 PM · Ohio State (6-2) hosts Oregon Sat Nov 7, 3:30 PM in a must-win for its playoff hopes",
-    "⚖️ Top story: Election Day is tomorrow — Ohio breaks its midterm early-voting record with 1.7M+ ballots cast, polls open Tue 6:30 AM–7:30 PM · Trump administration asks the Supreme Court to set aside 20,000 California ballots",
+    "🏀 Cavs fall 117-112 to Oklahoma City — Shai Gilgeous-Alexander scores 43 with the go-ahead three late · Cavs 4-3 · Rematch Wed night at OKC, 8 PM",
+    "🏈 Browns (5-3) at New Orleans Sun Nov 8, 1 PM · Ohio State (6-2) hosts Oregon Sat Nov 7, 3:30 PM on CBS at Ohio Stadium",
+    "🗳️ Top story: Election Day is TODAY — Ohio polls open 6:30 AM–7:30 PM · Acton vs Ramaswamy for governor, Husted vs Brown for the Senate · 66 Cuyahoga precincts moved, including Solon — check yours",
     "🏷️ Deal of the day: Giant Eagle Market District (Solon) — sirloin tip roasts or value pack steaks BOGO Free in the ad running through Nov 4",
-    "🚗 Roads: Solon-area roads normal today — I-271, US-422 and Aurora Rd clear with no incidents reported on OHGO-fed feeds, and ODOT District 12's current work is on I-90, not the Solon corridors",
-    "📈 Markets steady Monday after October's AI selloff — futures up ~0.5%, oil down 4%+ on Doha talk hopes · Apple earnings after tonight's close"
+    "🚗 Roads: Solon-area roads normal today — I-271, US-422 and Aurora Rd clear with no incidents reported in ODOT/OHGO checks",
+    "📉 Nasdaq in correction after Monday's AI selloff (Nasdaq -1.07%, Dow +0.41%) · Oil steadies near $105 after plunging ~8% on U.S.–Iran talk hopes"
   ],
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "baby": {
-    "tip": "Day two with a newborn: start a simple log on your phone — feed times, wet diapers and dirty diapers. It feels like overkill at 3 a.m., but the pediatrician's first questions at Benji's first visit (usually a few days after discharge) are exactly those counts, and nobody remembers them on no sleep. One shared note that both Mike and Kelly can add to beats two tired memories.",
-    "fact": "A newborn sees best at about 8 to 12 inches — almost exactly the distance between a feeding baby's face and a parent's face. Benji's vision is still blurry and he prefers high-contrast patterns and faces, which is why face-to-face time at feeding distance is, quite literally, his favorite view in the world right now.",
-    "fun": "Name tidbit for the day: Benjamin is a Hebrew name meaning 'son of the right hand,' and in the Bible Benjamin was the youngest of twelve brothers — a fitting name for the newest and youngest Smiley. Today's tiny mission: tell Benji the story of his name once, out loud, even if he sleeps through the whole thing."
+    "tip": "Homecoming day tip: before you leave the hospital, do the car-seat check while help is still right there — base tight, straps snug at armpit level, and Benji's first ride home in a rear-facing seat in the back. Then tonight, keep it simple: one bag unpacked, feeding log started, and the diaper bag restocked for tomorrow's first pediatrician visit. If anything about feeding, breathing or temperature worries you at home, call the pediatrician or your OB team — that's exactly what they're there for.",
+    "fact": "Newborns sleep a lot but in short stretches — typically 16 to 17 hours a day, broken into naps of just a few hours at a time, because their tiny stomachs need frequent feeding. Benji's sleep will feel random this first week; short, frequent stretches around the clock are completely normal for a brand-new baby.",
+    "fun": "Today's tiny mission: the first family photo at home — Mike, Kelly, Benji and Moose in one frame (Moose at a calm, supervised distance for take one). It doesn't need to be perfect; the slightly chaotic version is the one you'll love most in a year."
   },
   "watch": {
-    "date": "Monday, November 2, 2026",
+    "date": "Tuesday, November 3, 2026",
     "items": [
       {
-        "title": "The Making Of Bigfoot",
-        "channel": "Sasquatch Odyssey",
-        "url": "https://www.youtube.com/watch?v=79xNQwvWy2c",
-        "why": "Brian interviews author Greg Long on his investigation challenging the 1967 Patterson-Gimlin film — evidence-based, long-form Bigfoot history, fresh Nov 1."
-      },
-      {
-        "title": "The Light Gate- Bigfoot & UFOs With Lee Strauss",
+        "title": "SCARY ENCOUNTERS with MONSTERS and LEGENDS!",
         "channel": "Spaced Out Radio",
-        "url": "https://www.youtube.com/watch?v=NrfSR1qV69A",
-        "why": "Brand new today, Nov 2: researcher Lee Strauss on his 15-minute Mt. Baker UFO sighting and years chasing both Bigfoot and UFOs — two of your lanes in one interview."
+        "url": "https://www.youtube.com/watch?v=hPG6oUKHibs",
+        "why": "Fresh today, Nov 3: Christian MacLeod, 'The Cryptid Guy' with 25+ years investigating, recounts scary monster-and-legend encounters."
       },
       {
-        "title": "BIGFOOT CHASED US OUT OF THE WOODS! | Robbie Ferrell's Tennessee Encounter - Ep. 233 - 10/30/2026",
-        "channel": "The Cryptid Podcast",
-        "url": "https://www.youtube.com/watch?v=90SS88ol3WA",
-        "why": "Robbie Ferrell tells Dano how a Sasquatch got within 35 feet and chased him and his partner back to their truck in the Tennessee woods, Oct 30."
-      },
-      {
-        "title": "She Saw a Massive Black Triangle UFO, Then It Vanished | Lorien Fenton | Ep 796",
-        "channel": "Podcast UFO",
-        "url": "https://www.youtube.com/watch?v=giOyVvsxizo",
-        "why": "Martin Willis interviews Lorien Fenton on her massive black triangle sighting over Petaluma — a firsthand witness interview, Oct 30."
-      },
-      {
-        "title": "What's Hiding Inside the Mississinewa Triangle?",
+        "title": "Where Are All the LITTLE GREEN MEN?",
         "channel": "Spaced Out Radio",
-        "url": "https://www.youtube.com/watch?v=E8aQikLFwOQ",
-        "why": "Filmmaker Brandon Wright walks through Indiana's Mississinewa Triangle — upright canine creatures, shadow figures and generations of eyewitness accounts, Oct 30."
+        "url": "https://www.youtube.com/watch?v=putp4bCm0AM",
+        "why": "Nov 2: Dr. Terry Adair on the Fermi Paradox and why advanced alien civilisations may fail — a long-form UFO interview, no Grusch."
       },
       {
-        "title": "Army Scouts Watched It Climb a Waterfall in 10 Seconds | Bigfoot Society 1230",
+        "title": "A MATTER OF LIFE OR DEATH: SURVIVAL, DOOMSDAY & CRYPTID ENCOUNTERS",
+        "channel": "Surviving Bigfoot",
+        "url": "https://www.youtube.com/watch?v=zzQ-MS0-zjY",
+        "why": "Nov 2: a rattlesnake close call while Bigfooting in Alabama, plus field-research survival — how to make it home in one piece."
+      },
+      {
+        "title": "He Didn't See It Until It Ran | California Bigfoot Encounter | Bigfoot Society 1231",
         "channel": "Bigfoot Society",
-        "url": "https://www.youtube.com/watch?v=xh0QJlKhung",
-        "dur": "41 min",
-        "why": "An Army sergeant recounts an 8-foot figure climbing a waterfall during 1989 survival training, then rocks raining down for two weeks — survival and Bigfoot in one, Oct 29."
+        "url": "https://www.youtube.com/watch?v=gOKcta9IFwU",
+        "why": "Nov 1: Corey watches an orange figure tear through California brush less than 30 feet away, then years of movement pacing him."
+      },
+      {
+        "title": "A Flash of Beauty: Caroline and Eric",
+        "channel": "A Flash of Beauty",
+        "url": "https://www.youtube.com/watch?v=Yi-G7ttXess",
+        "why": "Nov 2: a couple breaks 15 years of silence about Wasatch Mountains encounters — glowing eyes, prints, gifts left on a stump."
+      },
+      {
+        "title": "BIGFOOT EXPOSED? PATTERSON–GIMLIN VS. CAPTURING BIGFOOT 2026",
+        "channel": "Coven of Curiosities Podcast",
+        "url": "https://www.youtube.com/watch?v=K863Y5M1hXk",
+        "why": "Live tonight Nov 3 at 9 PM ET (replay on the same link): a roundtable pitting the 1967 Patterson-Gimlin film against the new Capturing Bigfoot footage."
       }
     ]
   },
