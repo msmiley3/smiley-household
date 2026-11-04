@@ -38,139 +38,146 @@
   },
   "babyDue": null,
   "weekBrief": {
-    "text": "This week in Solon starts with the best weather day and gets colder from there: mostly sunny and 73° today for Election Day and Benji's homecoming, rain on Wednesday at 67°, then a sharp cooldown — 62° Thursday, the mid-50s Friday, and only the mid-to-upper 40s by the weekend. Election Day dominates the start of the week, with Ohio's polls open today until 7:30 PM, the governor's and Senate races both close, and results arriving tonight. In sports, the Cavs get an immediate rematch at Oklahoma City on Wednesday night, Ohio State hosts Oregon on Saturday afternoon, and the Browns travel to New Orleans on Sunday. The standout deal is Giant Eagle's BOGO-free sirloin tip roasts through Wednesday — and at home, this is the week the Smileys become a family at home together: Benji's first night home, his first pediatrician check tomorrow, and Moose's first meeting with his little brother.",
+    "text": "Benji is three days old and in his first full week at home — he came home Tuesday, saw his pediatrician today, and now gets a quiet, chilly week to settle in: Solon starts mostly cloudy near 60° on Thursday, cools through Friday showers to a rainy 45° Saturday, then turns dry and partly cloudy Sunday through Wednesday with highs in the 50s. The standout deal is Giant Eagle's frozen turkeys at 95¢/lb (Nov 5–11) — one bird covers a roast dinner, turkey lentil soup and a white bean chili later in the week. If energy allows, the Cavs are home twice at Rocket Arena — Friday against Philadelphia and Saturday against the Knicks — alongside Hadestown at Playhouse Square on Thursday and the free Día de Muertos celebration on Saturday, while Ohio State hosts Oregon Saturday afternoon and the Browns play at New Orleans on Sunday.",
     "chips": [
-      "🌤️ Tue 73° sunny · Wed rain 67° · Thu 62° · Fri 55° · Sat 46° · Sun 48° — a sharp cooldown",
+      "👶 Benji's first full week at home — born Nov 1, homecoming Tue, pediatrician check today",
       {
-        "label": "🗳️ Election Day today · polls close 7:30 PM · Ohio governor + Senate races both close",
-        "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/03/ohio-election-2026-governor-senate-congress-races/92517664007/"
+        "label": "🌦️ Thu 60° cloudy · Fri 51° showers · Sat 45° rain · Sun–Wed dry, 50s",
+        "url": "https://weather.com/us/oh/city/solon/tenday"
       },
       {
-        "label": "🏀 Cavs at OKC Wed 8 PM · 🏈 Ohio State vs Oregon Sat 3:30 PM · Browns at Saints Sun 1 PM",
-        "url": "https://deadspin.com/shai-gilgeous-alexander-scores-43-lifts-thunder-past-cavaliers/"
+        "label": "🏷️ Giant Eagle frozen turkeys 95¢/lb · Nov 5–11",
+        "url": "https://weeklyadhunters.com/giant-eagle-weekly-ad/"
       },
       {
-        "label": "🏷️ Giant Eagle BOGO-free sirloin tip roasts through Nov 4",
-        "url": "https://www.gianteagle.com"
+        "label": "🏀 Cavs home Fri 7:30pm vs 76ers + Sat 8pm vs Knicks · 🏈 Ohio State vs Oregon Sat 3:30pm · Browns at Saints Sun 1pm",
+        "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
       },
-      "👶 Benji's homecoming week — discharged today, first pediatrician visit Wed Nov 4"
+      {
+        "label": "🎭 Hadestown Thu 7:30pm · Día de Muertos Sat 11am–10pm (free)",
+        "url": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
+      }
     ],
     "links": [
       {
-        "phrase": "the governor's and Senate races both close",
-        "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/03/ohio-election-2026-governor-senate-congress-races/92517664007/"
+        "phrase": "Giant Eagle's frozen turkeys at 95¢/lb (Nov 5–11)",
+        "url": "https://weeklyadhunters.com/giant-eagle-weekly-ad/"
       },
       {
-        "phrase": "the Cavs get an immediate rematch at Oklahoma City on Wednesday night",
-        "url": "https://deadspin.com/shai-gilgeous-alexander-scores-43-lifts-thunder-past-cavaliers/"
+        "phrase": "the Cavs are home twice at Rocket Arena",
+        "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
       },
       {
-        "phrase": "Giant Eagle's BOGO-free sirloin tip roasts through Wednesday",
-        "url": "https://www.gianteagle.com"
+        "phrase": "Hadestown at Playhouse Square on Thursday",
+        "url": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
+      },
+      {
+        "phrase": "Día de Muertos celebration on Saturday",
+        "url": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
       }
     ]
   },
   "deals": {
-    "range": "Weekly ads — Oct 28 – Nov 4",
+    "range": "Weekly ads — Nov 4 – Nov 11",
     "stores": [
       {
         "name": "Meijer — Bainbridge/Aurora",
-        "note": "Ad Oct 28 – Nov 3 · Prices from the weekly ad",
-        "link": "https://www.meijer.com/shopping/weekly-ad",
+        "note": "Ad Nov 4 – Nov 10 · Prices verified from this week's ad price list",
+        "link": "https://weeklyadhunters.com/meijer-weekly-flyer-savings/",
         "items": [
           [
-            "Fresh from Meijer pork loin assorted chops",
+            "Fresh from Meijer whole boneless pork loin (avg 8–10 lb)",
             "$1.99/lb",
-            ""
+            "Recipe anchor — roast, pulled pork & souvlaki"
           ],
           [
-            "Family pack chicken breast",
-            "$2.29/lb",
-            ""
-          ],
-          [
-            "Fresh from Meijer boneless pork tenderloin",
-            "$2.49/lb",
-            ""
-          ],
-          [
-            "Butterball Grade A frozen turkey",
+            "Butterball frozen Grade A turkey",
             "$1.29/lb",
-            "With $25 purchase · limit 2"
-          ],
-          [
-            "Honeycrisp apples",
-            "$1.79/lb",
             ""
           ],
           [
-            "Locally grown winter/hard squash",
+            "Fresh from Meijer family pack boneless skinless chicken thighs",
+            "$3.19/lb",
+            "Family pack"
+          ],
+          [
+            "Certified Angus Beef ground chuck, 2.5 lb pkg or larger",
+            "$5.29/lb",
+            ""
+          ],
+          [
+            "Pompeian olive oil 24 oz",
+            "BOGO Free",
+            "Buy 1 Get 1 Free"
+          ],
+          [
+            "Oscar Mayer bacon 12–16 oz",
+            "BOGO Free",
+            "Buy 1 Get 1 Free"
+          ],
+          [
+            "Bulk Granny Smith or Gala apples",
             "$0.99/lb",
             ""
           ],
           [
-            "Russet potatoes 10 lb bag",
-            "$3.99",
+            "Broccoli crowns",
+            "2 for $3",
             ""
-          ],
-          [
-            "Meijer pasta 12–16 oz",
-            "$1.00",
-            "Select varieties"
           ]
         ]
       },
       {
         "name": "Giant Eagle Market District — Solon",
-        "note": "New ad Oct 29 – Nov 4 · Free frozen turkey with $350 spend",
-        "link": "https://www.gianteagle.com",
+        "note": "New ad Nov 5 – Nov 11 · Prices verified from this week's ad price list",
+        "link": "https://weeklyadhunters.com/giant-eagle-weekly-ad/",
         "items": [
           [
-            "Market District sirloin tip roasts or value pack steaks",
-            "BOGO Free",
-            "Standout — stock up"
+            "Giant Eagle / Shady Brook Farms frozen turkeys",
+            "$0.95/lb",
+            "Standout — stock up for Thanksgiving"
           ],
           [
-            "Market District 75% lean ground beef, value pack 3 lb or more",
-            "$3.79/lb",
+            "Boneless center cut pork chops or roasts",
+            "BOGO Free",
+            "Buy 1 Get 1 Free"
+          ],
+          [
+            "Market District top round London broil or roasts",
+            "$5.99/lb",
             ""
           ],
           [
-            "Fresh Atlantic salmon",
-            "$9.99/lb",
-            "Farm raised"
+            "Giant Eagle fresh boneless skinless chicken breasts",
+            "$3.99/lb",
+            ""
           ],
           [
-            "Nature's Basket chicken",
-            "25% off",
-            "All natural, antibiotic free"
+            "Giant Eagle all-purpose flour 5 lb (also granulated sugar 4 lb)",
+            "$0.95",
+            "Each — baking staples at 95¢"
           ],
           [
-            "Large ripe & ready avocados",
-            "$0.99",
-            "Each"
+            "Chobani Greek yogurt or Creations cups",
+            "5 for $5",
+            ""
           ],
           [
-            "Whole golden ripe pineapples",
+            "Market District jumbo blueberries 9.8 oz",
+            "BOGO Free",
+            "Buy 1 Get 1 Free"
+          ],
+          [
+            "Rotisserie chicken",
             "$1.99",
-            "Each"
-          ],
-          [
-            "Seedless cucumbers or Giant Eagle whole white mushrooms 8 oz",
-            "$0.99",
-            "Each"
-          ],
-          [
-            "DiGiorno pizza 14.1–29.3 oz",
-            "BOGO Free",
-            ""
+            "Each, as listed in this week's ad"
           ]
         ]
       },
       {
         "name": "Heinen's — Bainbridge & Chagrin Falls",
-        "note": "Ad Oct 28 – Nov 3 · This week's ad is an image flyer — prices couldn't be verified from the flyer this week, so no prices are listed; full ad at the store link",
-        "link": "https://www.heinens.com",
+        "note": "Ad Nov 4 – Nov 10 · This week's ad is an image flyer — prices couldn't be verified from the flyer this week, so no prices are listed; full ad at the store link",
+        "link": "https://www.theweeklyad.com/heinens-weekly-ad/",
         "items": [
           [
             "See this week's full ad at the store link — produce, meat & deli specials",
@@ -181,41 +188,53 @@
       },
       {
         "name": "Miles Farmers Market — Solon",
-        "note": "Flyer Wed Oct 28 – Tue Nov 3 · 28560 Miles Rd · Miles posts its specials as a PDF flyer — prices couldn't be verified from the flyer this week, so no prices are listed; full flyer at the store link",
-        "link": "https://www.milesfarmersmarket.com",
+        "note": "Flyer dated Wed Nov 4 · 28560 Miles Rd · Miles posts its specials as a single-image flyer — prices couldn't be verified from the flyer this week, so no prices are listed; full flyer at the store link",
+        "link": "https://www.milesfarmersmarket.com/wp-content/uploads/2026/11/MilesAd11.04.26-scaled.jpg",
         "items": [
           [
             "See this week's full flyer at the store link — produce, butcher & bakery specials",
             "",
-            "PDF flyer"
+            "Image flyer"
           ]
         ]
       }
     ]
   },
   "events": {
-    "range": "Thu Oct 29 – Wed Nov 4",
+    "range": "Thu Nov 5 – Wed Nov 11",
     "areas": [
       {
         "name": "Solon",
         "items": [
           {
-            "when": "Sat Oct 31 · 11:00 AM",
-            "title": "North East Ohio Diwali Mela",
-            "where": "28500 Miles Rd, Solon",
-            "link": "https://allevents.in/solon-oh/festivals"
+            "when": "Fri Nov 6 – Sat Nov 7",
+            "title": "Ohio Hazmat Teams Conference 2026",
+            "where": "Solon Community Center, 35000 Portz Pkwy",
+            "link": "https://www.eventbrite.com/e/ohio-hazmat-teams-conference-2026-registration-1999932278281"
           },
           {
-            "when": "Sat Oct 31 · 6:00–8:00 PM",
-            "title": "Solon citywide trick-or-treat",
-            "where": "Neighborhoods across Solon",
-            "link": "https://www.northeastohioparent.com/things-to-do/2026-northeast-ohio-trick-or-treat-dates-and-times/"
+            "when": "Sat Nov 7 · 10:00 AM–12:00 PM",
+            "title": "RePlay for Kids Toy Adapting Workshop",
+            "where": "RePlay's Creative Space, 6190 Cochran Rd",
+            "link": "https://www.northeastohioparent.com/special-needs-3/special-needs-and-sensory-friendly-events-for-kids-in-northeast-ohio/"
           },
           {
-            "when": "Tue Nov 3 · 6:30 AM–7:30 PM",
-            "title": "Election Day — polls open",
-            "where": "Your Solon precinct polling place",
-            "link": "https://www.dispatch.com/story/news/politics/elections/2026/10/27/early-voting-end-ohio-in-person-hours-election-day-2026/92459583007/"
+            "when": "Sat Nov 7",
+            "title": "Saturday Storytime at Ivybrook Academy Solon",
+            "where": "Ivybrook Academy Solon",
+            "link": "https://clevelandeast.macaronikid.com/events?yodelEventId=6aa198d51fca2bef22f10c0c_20261107&yodelOrgLastName=Cleveland-East&yodelEventName=Saturday-Storytime-at-Ivybrook-Academy-Solon"
+          },
+          {
+            "when": "Sat Nov 7 – Dec 10",
+            "title": "Olivia's Dream Toy Drive for Toys for Tots (collection starts)",
+            "where": "Solon Community Center",
+            "link": "https://solonohionews.com/"
+          },
+          {
+            "when": "Tue Nov 10 (series starts)",
+            "title": "Strikes, Smiles & Fun: Bowling Nights",
+            "where": "RollHouse, 33185 Bainbridge Rd",
+            "link": "https://www.northeastohioparent.com/special-needs-3/special-needs-and-sensory-friendly-events-for-kids-in-northeast-ohio/"
           }
         ]
       },
@@ -223,16 +242,22 @@
         "name": "Chagrin Falls",
         "items": [
           {
-            "when": "Sat Oct 31 · 11:00 AM–2:00 PM",
-            "title": "Hive-O-Ween Spooktacular",
-            "where": "The Hive, 8200 E Washington St",
-            "link": "https://www.eventbrite.com/e/hive-o-ween-spooktacular-tickets-2002733529900"
+            "when": "Fri Nov 6 · 7:00 PM awards",
+            "title": "Valley Art Center 55th Annual Juried Art Exhibition — Opening Reception",
+            "where": "Valley Art Center, 155 Bell St",
+            "link": "https://www.findglocal.com/US/Chagrin-Falls/54526434641/Valley-Art-Center"
           },
           {
-            "when": "Sat Oct 31 · 6:00–8:00 PM",
-            "title": "Village trick-or-treating",
-            "where": "Village of Chagrin Falls",
-            "link": "https://www.chagrinfallsoh.gov/Calendar.aspx?EID=1077"
+            "when": "Sat Nov 7 · 1:00–5:00 PM",
+            "title": "Autumn Flavors & Finds Crawl",
+            "where": "Downtown Chagrin Falls / 87 West",
+            "link": "https://www.eventbrite.com/e/autumn-flavors-finds-crawl-chagrin-falls-2026-tickets-2003478649573"
+          },
+          {
+            "when": "Sat Nov 7 · 7:00 PM",
+            "title": "Burning River Swing at Bainbridge Swing Dance",
+            "where": "Federated Church Family Life Center, 16391 Chillicothe Rd",
+            "link": "https://allevents.in/chagrin-falls/entertainment"
           }
         ]
       },
@@ -240,46 +265,46 @@
         "name": "Cleveland",
         "items": [
           {
-            "when": "Fri Oct 30 – Sun Nov 1",
-            "title": "Jurassic Quest",
-            "where": "Huntington Convention Center",
-            "link": "https://www.northeastohioparent.com/event/jurassic-quest-cleveland-oh-2026/"
+            "when": "Thu Nov 5 · 7:30 PM",
+            "title": "Hadestown (touring)",
+            "where": "Connor Palace, Playhouse Square",
+            "link": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
           },
           {
-            "when": "Fri Oct 30 · 5:30–8:00 PM",
-            "title": "Pumpkins & Piranhas — final night",
-            "where": "Greater Cleveland Aquarium",
-            "link": "http://www.greaterclevelandaquarium.com/"
+            "when": "Thu Nov 5 · 5:00 PM",
+            "title": "Arch Enemy & The Black Dahlia Murder",
+            "where": "Agora Theatre, 5000 Euclid Ave",
+            "link": "https://www.ticketmaster.com/discover/cleveland?categoryId=KZFzniwnSyZfZ7v7nJ"
           },
           {
-            "when": "Fri Oct 30 · 7:30 PM",
-            "title": "Cleveland Orchestra — Mahler's Fifth Symphony",
-            "where": "Mandel Concert Hall, Severance Music Center",
-            "link": "https://www.clevescene.com/arts/15-things-to-do-in-cleveland-this-weekend-oct-29-nov-1/"
-          },
-          {
-            "when": "Sat Oct 31 · 8:30 AM",
-            "title": "Halloween Run for Justice (25th annual)",
-            "where": "Edgewater Park",
-            "link": "https://allevents.in/cleveland/this-weekend"
-          },
-          {
-            "when": "Sat Oct 31 · 6:30 PM",
-            "title": "Mushroomhead with Fear Factory",
-            "where": "Agora Theatre",
-            "link": "https://allevents.in/cleveland/this-weekend"
-          },
-          {
-            "when": "Sun Nov 1 · 1:00–5:00 PM",
-            "title": "Final day of early in-person voting",
-            "where": "Cuyahoga County Board of Elections, 1803 Superior Ave",
-            "link": "https://boe.cuyahogacounty.gov/voters/vote-early-in-person"
-          },
-          {
-            "when": "Mon Nov 2 · 7:00 PM",
-            "title": "Cavs vs Oklahoma City Thunder",
+            "when": "Fri Nov 6 · 7:30 PM",
+            "title": "Cavs vs Philadelphia 76ers — Emirates NBA Cup",
             "where": "Rocket Arena",
-            "link": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?ac_link=NBA_TM_LCL_CLE_NBA_SPLASH_PRIMARY&home_away=home"
+            "link": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
+          },
+          {
+            "when": "Sat Nov 7 · 11:00 AM–10:00 PM",
+            "title": "Día de Muertos — 22nd Annual Celebration",
+            "where": "Cleveland Public Theatre, 6415 Detroit Ave",
+            "link": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
+          },
+          {
+            "when": "Sat Nov 7 · 8:00 PM",
+            "title": "Cavs vs New York Knicks",
+            "where": "Rocket Arena",
+            "link": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
+          },
+          {
+            "when": "Sat Nov 7 · 5:30 PM",
+            "title": "Pigeons Playing Ping Pong — Fall Tour 2026",
+            "where": "House of Blues Cleveland",
+            "link": "https://www.ticketmaster.com/discover/cleveland?date=thisweekend"
+          },
+          {
+            "when": "Sun Nov 8 · 3:00 PM",
+            "title": "NUTCRACKER! Magical Christmas Ballet",
+            "where": "Music Hall, Cleveland Public Auditorium",
+            "link": "https://www.ticketmaster.com/discover/cleveland?date=thisweekend"
           }
         ]
       }
@@ -487,242 +512,277 @@
   },
   "recipes": [
     {
-      "name": "Greek lemon chicken & potatoes",
-      "img": "https://cookanswers.com/wp-content/uploads/2026/08/v2-1j3al7-hudfj.jpg",
-      "basedOn": "Meijer — family pack chicken breast $2.29/lb + russets $3.99/10 lb",
-      "blurb": "Mediterranean staple: lemon, oregano and olive oil do all the work in one pan.",
-      "time": "15 min prep · 45 min roast",
-      "servings": "4 servings",
-      "cost": "≈$12 total · ≈$3.00/serving",
-      "calories": "≈480 kcal/serving",
-      "nutrition": "Protein 42g · Carbs 35g · Fat 18g",
+      "name": "Roast pork loin with apples",
+      "basedOn": "Meijer — whole boneless pork loin $1.99/lb + Gala apples $0.99/lb",
+      "blurb": "One-pot roast: seared loin nestled into apples and shallots — protein-rich, slices ahead, reheats beautifully.",
+      "time": "15 min prep · 55 min roast",
+      "servings": "6 servings",
+      "cost": "≈$12 total · ≈$2.00/serving",
+      "calories": "≈430 kcal/serving",
+      "nutrition": "Protein 38g · Carbs 14g · Fat 24g",
       "ingredients": [
-        "2 lb chicken breast",
-        "1.5 lb russet potatoes, wedged",
-        "Lemon juice + zest of 2 lemons",
-        "3 tbsp olive oil (pantry)",
-        "4 garlic cloves (pantry)",
-        "1 tsp dried oregano (pantry)",
-        "1 cup chicken broth (pantry)"
+        "3 lb boneless pork loin",
+        "2 lb Gala apples, quartered",
+        "3 shallots, halved",
+        "6 garlic cloves (pantry)",
+        "1 tsp dried rosemary (pantry)",
+        "1 tbsp olive oil (pantry)",
+        "1/2 cup apple juice or broth (pantry)"
       ]
     },
     {
-      "name": "Pork souvlaki with tzatziki",
-      "img": "https://thelemonapron.com/wp-content/uploads/2018/07/Pork-souvlaki-3-e1530904090291.jpg",
-      "basedOn": "Meijer — boneless pork tenderloin $2.49/lb",
-      "blurb": "Greek skewers with a cool yogurt-cucumber sauce — grill or broiler, both work.",
-      "time": "20 min prep (+30 min marinade) · 12 min grill",
-      "servings": "4 servings",
-      "cost": "≈$13 total · ≈$3.25/serving",
-      "calories": "≈450 kcal/serving",
-      "nutrition": "Protein 38g · Carbs 30g · Fat 19g",
+      "name": "Slow-cooker BBQ pulled pork sandwiches",
+      "img": "https://butterwithasideofbread.com/wp-content/uploads/2021/09/Crockpot-BBQ-Pulled-Pork-6.jpg",
+      "basedOn": "Meijer — whole boneless pork loin $1.99/lb (second half of the loin)",
+      "blurb": "Set it in the morning, shred at dinner — the ultimate one-handed meal, and it freezes in portions for later.",
+      "time": "15 min prep · 8 hrs slow-cook (hands-off)",
+      "servings": "8 servings",
+      "cost": "≈$14 total · ≈$1.75/serving",
+      "calories": "≈520 kcal/serving",
+      "nutrition": "Protein 36g · Carbs 42g · Fat 22g",
       "ingredients": [
-        "1.5 lb pork tenderloin, cubed",
-        "1 cup Greek yogurt",
-        "1 cucumber, grated + diced",
-        "4 pita breads",
-        "2 tbsp olive oil (pantry)",
-        "Lemon + garlic + oregano (pantry)",
-        "Red onion + tomatoes for serving"
+        "4 lb boneless pork loin",
+        "18 oz BBQ sauce",
+        "1 onion, sliced",
+        "1/2 cup light brown sugar (pantry)",
+        "1 tsp each cumin + paprika (pantry)",
+        "8 sandwich buns"
       ]
     },
     {
-      "name": "Mediterranean salmon with cucumber-tomato salad",
-      "img": "https://evawhisks.com/wp-content/uploads/2025/07/Mediterranean_Salmon_3.webp",
-      "basedOn": "Giant Eagle — Atlantic salmon $9.99/lb + cucumbers $0.99",
-      "blurb": "Herb-and-lemon salmon over a crunchy chopped salad — fully cooked through, pregnancy-safe.",
-      "time": "15 min prep · 15 min cook",
+      "name": "Greek pork souvlaki pitas with tzatziki",
+      "basedOn": "Meijer — pork loin $1.99/lb + Pompeian olive oil BOGO Free · Giant Eagle — Chobani 5 for $5",
+      "blurb": "Mediterranean: lemon-oregano pork skewers in warm pitas with cool yogurt tzatziki — wrap it and eat one-handed.",
+      "time": "20 min prep · 12 min grill",
       "servings": "4 servings",
-      "cost": "≈$19 total · ≈$4.75/serving",
-      "calories": "≈420 kcal/serving",
-      "nutrition": "Protein 36g · Carbs 10g · Fat 26g",
+      "cost": "≈$11 total · ≈$2.75/serving",
+      "calories": "≈540 kcal/serving",
+      "nutrition": "Protein 40g · Carbs 38g · Fat 24g",
       "ingredients": [
-        "1.5 lb Atlantic salmon fillets",
-        "2 seedless cucumbers",
-        "2 cups cherry tomatoes",
-        "1/4 cup olive oil (pantry)",
-        "Lemon + fresh dill (pantry)",
-        "1/2 red onion",
-        "Feta crumbles (optional)"
+        "1.5 lb pork loin, cubed",
+        "1/2 cup olive oil (pantry)",
+        "4 tbsp lemon juice + 2 tsp oregano (pantry)",
+        "2 cups Greek yogurt (Chobani)",
+        "1 cucumber, grated",
+        "4 pocketless pitas",
+        "2 garlic cloves (pantry)"
       ]
     },
     {
-      "name": "Tuscan white bean & winter squash soup",
-      "img": "https://gimmedelicious.com/wp-content/uploads/2024/12/Tuscan-White-Bean-Soup-7.jpg",
-      "basedOn": "Meijer — winter squash $0.99/lb",
-      "blurb": "Coastal Italian comfort: beans, squash and rosemary simmered into a thick, cozy soup.",
-      "time": "15 min prep · 35 min simmer",
-      "servings": "4 servings",
-      "cost": "≈$9 total · ≈$2.25/serving",
-      "calories": "≈380 kcal/serving",
-      "nutrition": "Protein 15g · Carbs 52g · Fat 12g",
-      "ingredients": [
-        "2 lb winter squash, cubed",
-        "2 cans white beans (pantry)",
-        "4 cups chicken or veg broth (pantry)",
-        "1 onion + 3 garlic cloves (pantry)",
-        "2 tbsp olive oil (pantry)",
-        "Fresh rosemary or sage (pantry)",
-        "Parmesan for serving"
-      ]
-    },
-    {
-      "name": "Chicken shawarma bowls",
-      "img": "https://juliasalbum.com/wp-content/uploads/2025/05/Chicken-Shawarma-Bowl-Recipe-3.jpg",
-      "basedOn": "Giant Eagle — Nature's Basket chicken 25% off",
-      "blurb": "Levantine-spiced chicken over rice with chopped salad and garlic yogurt sauce.",
-      "time": "20 min prep · 20 min cook",
+      "name": "Greek lemon chicken thighs & potatoes",
+      "img": "https://www.acedarspoon.com/wp-content/uploads/2020/10/Greek-Lemon-Chicken-Image-8.jpg",
+      "basedOn": "Meijer — family pack chicken thighs $3.19/lb + olive oil BOGO Free",
+      "blurb": "Mediterranean one-pan staple: thighs simmer with potatoes in lemon, garlic and oregano — mostly hands-off.",
+      "time": "15 min prep · 40 min simmer",
       "servings": "4 servings",
       "cost": "≈$14 total · ≈$3.50/serving",
-      "calories": "≈520 kcal/serving",
-      "nutrition": "Protein 40g · Carbs 48g · Fat 18g",
-      "ingredients": [
-        "1.5 lb chicken breasts or thighs",
-        "1.5 cups rice (pantry)",
-        "Shawarma spice: cumin, paprika, turmeric (pantry)",
-        "1 cucumber + 2 tomatoes",
-        "3/4 cup Greek yogurt",
-        "Lemon + garlic (pantry)",
-        "2 tbsp olive oil (pantry)"
-      ]
-    },
-    {
-      "name": "Sirloin tip roast with mushrooms",
-      "img": "https://www.theflattopking.com/wp-content/uploads/2023/10/Blackstone-Sirloin-Tip-Roast-04.jpg",
-      "basedOn": "Giant Eagle — sirloin tip roasts BOGO Free + mushrooms $0.99",
-      "blurb": "Buy one, get one free means roast night now and a second roast in the freezer.",
-      "time": "15 min prep · 1 hr 15 min roast",
-      "servings": "4 servings",
-      "cost": "≈$18 total · ≈$4.50/serving",
-      "calories": "≈490 kcal/serving",
-      "nutrition": "Protein 46g · Carbs 8g · Fat 30g",
-      "ingredients": [
-        "1 sirloin tip roast, ≈3 lb (second one free)",
-        "8 oz whole white mushrooms",
-        "1 onion (pantry)",
-        "3 garlic cloves (pantry)",
-        "2 tbsp butter (pantry)",
-        "Beef broth splash (pantry)",
-        "Thyme + rosemary (pantry)"
-      ]
-    },
-    {
-      "name": "Pork loin chops with Honeycrisp pan sauce",
-      "img": "https://www.wholesomelicious.com/wp-content/uploads/2021/10/Browned-Butter-Apple-Cider-Pork-Chops-Photo2-1024x1434.jpg",
-      "basedOn": "Meijer — pork loin chops $1.99/lb + Honeycrisp $1.79/lb",
-      "blurb": "Seared chops with a quick apple-onion pan sauce — fall on a plate.",
-      "time": "10 min prep · 20 min cook",
-      "servings": "4 servings",
-      "cost": "≈$11 total · ≈$2.75/serving",
-      "calories": "≈440 kcal/serving",
-      "nutrition": "Protein 38g · Carbs 16g · Fat 24g",
-      "ingredients": [
-        "2 lb pork loin assorted chops",
-        "2 Honeycrisp apples, sliced",
-        "1 onion, sliced (pantry)",
-        "1/2 cup apple cider or broth (pantry)",
-        "1 tbsp butter (pantry)",
-        "1 tsp Dijon mustard (pantry)",
-        "Fresh thyme (pantry)"
-      ]
-    },
-    {
-      "name": "Stuffed acorn squash with turkey & rice",
-      "basedOn": "Meijer — winter squash $0.99/lb + Jennie-O ground turkey $5.19/lb",
-      "blurb": "Roasted squash halves filled with savory turkey, rice and cranberries.",
-      "time": "20 min prep · 45 min roast",
-      "servings": "4 servings",
-      "cost": "≈$11 total · ≈$2.75/serving",
-      "calories": "≈460 kcal/serving",
-      "nutrition": "Protein 28g · Carbs 44g · Fat 19g",
-      "ingredients": [
-        "2 acorn squash (≈2 lb)",
-        "1 lb 93% lean ground turkey",
-        "1 cup cooked rice (pantry)",
-        "1/3 cup dried cranberries",
-        "1 small onion (pantry)",
-        "1 tsp sage + cinnamon pinch (pantry)",
-        "2 tbsp olive oil (pantry)"
-      ]
-    },
-    {
-      "name": "Pineapple chicken stir-fry",
-      "img": "https://miarecipes.com/wp-content/uploads/2025/08/asmae8888_Close-up_Shot_Top_view__EMOTION_Tempting_I_SCENE_Pine_f455e9e3-7d8f-4ca1-b6bd-8e0b8e9cec01.png",
-      "basedOn": "Giant Eagle — whole pineapples $1.99 + chicken",
-      "blurb": "Sweet-tart and fast: fresh pineapple, peppers and chicken in a gingery sauce.",
-      "time": "15 min prep · 12 min stir-fry",
-      "servings": "4 servings",
-      "cost": "≈$11 total · ≈$2.75/serving",
       "calories": "≈450 kcal/serving",
-      "nutrition": "Protein 36g · Carbs 42g · Fat 14g",
+      "nutrition": "Protein 39g · Carbs 18g · Fat 25g",
       "ingredients": [
-        "1.5 lb chicken breast",
-        "1 whole pineapple, chunked",
-        "2 bell peppers",
-        "3 tbsp soy sauce (pantry)",
-        "1 tbsp honey + ginger (pantry)",
-        "2 cups cooked rice (pantry)",
-        "2 green onions"
+        "3 lb chicken thighs",
+        "1 lb red potatoes, chunked",
+        "1/3 cup olive oil (pantry)",
+        "2 lemons, juiced + sliced",
+        "4 garlic cloves (pantry)",
+        "2 tsp dried oregano (pantry)",
+        "1/2 cup chicken broth (pantry)"
       ]
     },
     {
-      "name": "Creamy garlic chicken pasta",
-      "img": "https://www.saltandlavender.com/wp-content/uploads/2021/03/creamy-chicken-pasta-3.jpg",
-      "basedOn": "Meijer — pasta $1.00 + chicken breast $2.29/lb",
-      "blurb": "One-pot comfort: tender chicken and pasta in a garlicky Parmesan cream sauce.",
-      "time": "10 min prep · 25 min cook",
+      "name": "Chicken shawarma bowls with garlic yogurt sauce",
+      "img": "https://theeastcoastkitchen.com/wp-content/uploads/2026/10/Sheet-Pan-Chicken-Shawarma-2-edited-1024x576.jpg",
+      "basedOn": "Meijer — chicken thighs $3.19/lb · Giant Eagle — Chobani 5 for $5",
+      "blurb": "Levantine sheet-pan bowls: warm-spiced thighs over rice with a garlicky lemon yogurt sauce — easy to eat holding the baby.",
+      "time": "15 min prep · 25 min roast",
+      "servings": "4 servings",
+      "cost": "≈$13 total · ≈$3.25/serving",
+      "calories": "≈560 kcal/serving",
+      "nutrition": "Protein 44g · Carbs 45g · Fat 22g",
+      "ingredients": [
+        "2 lb boneless skinless chicken thighs",
+        "1 cup Greek yogurt (Chobani)",
+        "3 tbsp olive oil (pantry)",
+        "2 tsp cumin + 2 tsp smoked paprika (pantry)",
+        "1 lemon, juiced",
+        "2 cups cooked rice (pantry)",
+        "1 red onion + 1 bell pepper"
+      ]
+    },
+    {
+      "name": "Chicken piccata with lemon & capers",
+      "img": "https://thegardeningcook.com/wp-content/uploads/2013/09/lemon-chicken-piccata.jpg",
+      "basedOn": "Giant Eagle — chicken breasts $3.99/lb · Meijer — olive oil BOGO Free",
+      "blurb": "Coastal Italian classic: golden cutlets in a bright lemon-caper sauce, on the table in about 30 minutes.",
+      "time": "10 min prep · 15 min cook",
       "servings": "4 servings",
       "cost": "≈$12 total · ≈$3.00/serving",
-      "calories": "≈580 kcal/serving",
-      "nutrition": "Protein 44g · Carbs 52g · Fat 21g",
+      "calories": "≈360 kcal/serving",
+      "nutrition": "Protein 37g · Carbs 9g · Fat 16g",
       "ingredients": [
-        "12 oz Meijer pasta",
-        "1.5 lb chicken breast",
-        "3 garlic cloves (pantry)",
-        "1 cup heavy cream",
-        "1/2 cup Parmesan",
-        "2 cups baby spinach",
+        "1.5 lb boneless skinless chicken breasts",
+        "1/3 cup lemon juice (about 2 lemons)",
+        "1/4 cup capers, rinsed",
+        "3 tbsp olive oil (pantry)",
+        "1/4 cup flour (pantry)",
+        "1/2 cup chicken broth or white wine (pantry)",
         "2 tbsp butter (pantry)"
       ]
     },
     {
-      "name": "Beef & black bean chili",
-      "img": "https://www.cookingclassy.com/wp-content/uploads/2019/01/chili-recipe-45.jpg",
-      "basedOn": "Giant Eagle — ground beef value pack $3.79/lb",
-      "blurb": "A big-batch chili night — leftovers reheat beautifully for lunches.",
-      "time": "15 min prep · 45 min simmer",
+      "name": "Mediterranean stuffed peppers",
+      "img": "https://www.acedarspoon.com/wp-content/uploads/2022/06/Mediterranean-Ground-Beef-Stuffed-Peppers-Image-11.jpg",
+      "basedOn": "Meijer — ground chuck $5.29/lb + olive oil BOGO Free",
+      "blurb": "Lebanese-spiced beef and rice baked in pepper halves with feta — iron-rich, make-ahead, freezes for a month.",
+      "time": "15 min prep · 50 min bake",
       "servings": "6 servings",
       "cost": "≈$13 total · ≈$2.25/serving",
-      "calories": "≈470 kcal/serving",
-      "nutrition": "Protein 32g · Carbs 38g · Fat 20g",
+      "calories": "≈480 kcal/serving",
+      "nutrition": "Protein 27g · Carbs 38g · Fat 24g",
       "ingredients": [
-        "2 lb 75% lean ground beef",
-        "2 cans black beans (pantry)",
-        "1 can crushed tomatoes (pantry)",
-        "1 onion + 1 bell pepper (pantry)",
-        "2 tbsp chili powder (pantry)",
-        "1 cup corn kernels",
-        "Meijer shredded cheese $2 for topping"
+        "1 lb ground chuck",
+        "3 large bell peppers, halved",
+        "1 cup cooked rice (pantry)",
+        "15 oz can diced tomatoes",
+        "1/2 cup crumbled feta",
+        "2 tbsp olive oil (pantry)",
+        "1 tsp each cinnamon + allspice (pantry)"
       ]
     },
     {
-      "name": "DiGiorno pizza night + avocado chopped salad",
-      "img": "https://www.twopeasandtheirpod.com/wp-content/uploads/2023/03/Chopped-Salad-4.jpg",
-      "basedOn": "Giant Eagle — DiGiorno BOGO Free + avocados $0.99",
-      "blurb": "The night off: BOGO pizzas plus a crunchy avocado-cucumber salad to round it out.",
-      "time": "10 min prep · 20 min bake",
-      "servings": "4 servings",
-      "cost": "≈$10 total · ≈$2.50/serving",
-      "calories": "≈550 kcal/serving",
-      "nutrition": "Protein 19g · Carbs 58g · Fat 26g",
+      "name": "Italian meatballs in tomato sauce",
+      "img": "https://www.mychefsapron.com/wp-content/uploads/Italian-gluten-free-meatballs-in-tomato-sauce.jpg",
+      "basedOn": "Meijer — ground chuck $5.29/lb + Pompeian olive oil BOGO Free",
+      "blurb": "Coastal Italian comfort: tender beef meatballs simmered low in tomato sauce — serve over pasta, freeze the rest.",
+      "time": "30 min prep · 90 min simmer (hands-off)",
+      "servings": "8 servings",
+      "cost": "≈$18 total · ≈$2.25/serving",
+      "calories": "≈520 kcal/serving",
+      "nutrition": "Protein 34g · Carbs 30g · Fat 28g",
       "ingredients": [
-        "2 DiGiorno pizzas (BOGO)",
-        "2 large avocados",
-        "1 seedless cucumber",
-        "2 cups chopped romaine",
-        "Cherry tomatoes",
-        "Lemon + olive oil dressing (pantry)",
-        "Red onion (pantry)"
+        "2 lb ground chuck",
+        "1 egg (pantry)",
+        "1 cup grated Parmesan",
+        "2 cans whole peeled tomatoes",
+        "6 tbsp olive oil (pantry)",
+        "3 garlic cloves (pantry)",
+        "1 lb pasta (pantry)"
+      ]
+    },
+    {
+      "name": "Slow-cooker turkey & white bean chili",
+      "img": "https://forktospoon.com/wp-content/uploads/2023/11/Slow-Cooker-Turkey-White-Bean-Chili-6-760x760.png",
+      "basedOn": "Giant Eagle — frozen turkey 95¢/lb (roast the bird, chili from the leftovers)",
+      "blurb": "Creamy, high-protein chili with white beans and green chiles — dump, slow-cook, and eat with one hand; freezes great.",
+      "time": "15 min prep · 6 hrs slow-cook (hands-off)",
+      "servings": "6 servings",
+      "cost": "≈$11 total · ≈$1.85/serving",
+      "calories": "≈450 kcal/serving",
+      "nutrition": "Protein 35g · Carbs 48g · Fat 16g",
+      "ingredients": [
+        "3 cups shredded cooked turkey (from the 95¢/lb bird)",
+        "2 cans cannellini beans",
+        "1 can great northern beans",
+        "2 cans diced green chiles",
+        "1 cup salsa verde",
+        "4 cups chicken broth (pantry)",
+        "4 oz cream cheese"
+      ]
+    },
+    {
+      "name": "London broil beef & broccoli",
+      "img": "https://www.jocooks.com/wp-content/uploads/2022/07/beef-and-broccolli-1-10.jpg",
+      "basedOn": "Giant Eagle — London broil $5.99/lb · Meijer — broccoli crowns 2 for $3",
+      "blurb": "Iron-rich takeout favorite at home: thin-sliced beef and bright broccoli in a glossy ginger-soy sauce over rice.",
+      "time": "15 min prep · 10 min stir-fry",
+      "servings": "4 servings",
+      "cost": "≈$11 total · ≈$2.75/serving",
+      "calories": "≈400 kcal/serving",
+      "nutrition": "Protein 32g · Carbs 30g · Fat 17g",
+      "ingredients": [
+        "1 lb London broil, sliced thin",
+        "1 head broccoli crowns (2 for $3)",
+        "1/2 cup low-sodium soy sauce (pantry)",
+        "3 garlic cloves + 1 tsp ginger (pantry)",
+        "3 tbsp honey (pantry)",
+        "2 tbsp cornstarch (pantry)",
+        "2 cups cooked rice (pantry)"
+      ]
+    },
+    {
+      "name": "Broccoli, bacon & cheddar quiche",
+      "img": "https://simplymadeeats.com/wp-content/uploads/2024/11/broccoli-bacon-cheddar-quiche.jpg",
+      "basedOn": "Meijer — Oscar Mayer bacon BOGO Free + broccoli crowns 2 for $3",
+      "blurb": "Slice-and-reheat all week: protein-packed quiche that works for dinner, midnight feeds and breakfast alike.",
+      "time": "20 min prep · 40 min bake",
+      "servings": "6 servings",
+      "cost": "≈$11 total · ≈$1.85/serving",
+      "calories": "≈420 kcal/serving",
+      "nutrition": "Protein 19g · Carbs 18g · Fat 30g",
+      "ingredients": [
+        "6 slices Oscar Mayer bacon",
+        "1 lb broccoli, chopped small",
+        "5 eggs",
+        "1 store-bought pie crust",
+        "1 cup shredded cheddar",
+        "3/4 cup milk (pantry)",
+        "1/4 cup heavy cream"
+      ]
+    },
+    {
+      "name": "Apple pork chop skillet",
+      "basedOn": "Giant Eagle — boneless pork chops BOGO Free · Meijer — apples $0.99/lb",
+      "blurb": "BOGO chops seared with sweet apples and onion — cozy, quick, and the leftovers reheat without drying out.",
+      "time": "10 min prep · 20 min cook",
+      "servings": "4 servings",
+      "cost": "≈$9 total · ≈$2.25/serving",
+      "calories": "≈380 kcal/serving",
+      "nutrition": "Protein 34g · Carbs 16g · Fat 19g",
+      "ingredients": [
+        "4 boneless center cut pork chops (BOGO pack)",
+        "2 Gala apples, sliced",
+        "1 onion, sliced",
+        "1 tbsp olive oil (pantry)",
+        "1 tsp Dijon mustard (pantry)",
+        "1/2 tsp dried thyme (pantry)",
+        "1/2 cup chicken broth (pantry)"
+      ]
+    },
+    {
+      "name": "Greek yogurt chicken salad wraps",
+      "basedOn": "Giant Eagle — chicken breasts $3.99/lb + Chobani 5 for $5",
+      "blurb": "Mediterranean no-cook night: tangy yogurt chicken salad in wraps — make it at nap time, eat it one-handed anytime.",
+      "time": "15 min prep · no cook (uses cooked chicken)",
+      "servings": "4 servings",
+      "cost": "≈$9 total · ≈$2.25/serving",
+      "calories": "≈340 kcal/serving",
+      "nutrition": "Protein 36g · Carbs 24g · Fat 10g",
+      "ingredients": [
+        "1 lb cooked chicken breast, shredded",
+        "1 cup Greek yogurt (Chobani)",
+        "1 tbsp lemon juice",
+        "1 tsp Dijon mustard (pantry)",
+        "1 celery stalk, diced",
+        "4 large wraps or pitas",
+        "1 tsp dried dill (pantry)"
+      ]
+    },
+    {
+      "name": "Turkey lentil soup",
+      "basedOn": "Giant Eagle — frozen turkey 95¢/lb (second meal from the same bird)",
+      "blurb": "Iron- and protein-rich recovery soup: lentils and leftover turkey simmer into a freezer-friendly pot for the week.",
+      "time": "15 min prep · 45 min simmer",
+      "servings": "6 servings",
+      "cost": "≈$8 total · ≈$1.35/serving",
+      "calories": "≈320 kcal/serving",
+      "nutrition": "Protein 28g · Carbs 34g · Fat 7g",
+      "ingredients": [
+        "2 cups shredded cooked turkey",
+        "1.5 cups dry brown lentils (pantry)",
+        "2 carrots + 2 celery stalks",
+        "1 onion + 2 garlic cloves (pantry)",
+        "6 cups chicken or turkey broth (pantry)",
+        "1 tsp cumin (pantry)",
+        "1 tbsp olive oil (pantry)"
       ]
     }
   ],
@@ -734,7 +794,7 @@
     "🚗 Roads: Solon-area roads normal today — I-271, US-422 and Aurora Rd clear with no incidents reported in ODOT/OHGO checks",
     "📉 Nasdaq in correction after Monday's AI selloff (Nasdaq -1.07%, Dow +0.41%) · Oil steadies near $105 after plunging ~8% on U.S.–Iran talk hopes"
   ],
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "baby": {
     "tip": "Homecoming day tip: before you leave the hospital, do the car-seat check while help is still right there — base tight, straps snug at armpit level, and Benji's first ride home in a rear-facing seat in the back. Then tonight, keep it simple: one bag unpacked, feeding log started, and the diaper bag restocked for tomorrow's first pediatrician visit. If anything about feeding, breathing or temperature worries you at home, call the pediatrician or your OB team — that's exactly what they're there for.",
     "fact": "Newborns sleep a lot but in short stretches — typically 16 to 17 hours a day, broken into naps of just a few hours at a time, because their tiny stomachs need frequent feeding. Benji's sleep will feel random this first week; short, frequent stretches around the clock are completely normal for a brand-new baby.",
@@ -783,40 +843,40 @@
   },
   "movies": [
     {
-      "title": "The Mongoose",
-      "when": "Fri Oct 30",
-      "date": "Opens Fri Oct 30",
-      "hook": "Liam Neeson as a framed war hero leading police on a televised cross-country chase. Marisa Tomei and Ving Rhames co-star."
+      "title": "Ramayana",
+      "when": "Thu Nov 5",
+      "date": "Opens Thu Nov 5",
+      "hook": "The ancient Indian epic on the big screen, following Prince Rama's legendary journey. Starring Ranbir Kapoor, Sai Pallavi and Yash."
+    },
+    {
+      "title": "The Cat in the Hat",
+      "when": "Fri Nov 6",
+      "date": "Opens Fri Nov 6",
+      "hook": "Warner Bros. Pictures Animation's animated Dr. Seuss reinvention — the Cat must cheer up siblings Gabby and Sebastian or lose his job. Voices: Bill Hader, Xochitl Gómez, Matt Berry, Quinta Brunson, Giancarlo Esposito and America Ferrera."
     },
     {
       "title": "Godzilla Minus Zero",
       "when": "Fri Nov 6",
-      "date": "Opens Fri Nov 6 · IMAX early Nov 3",
-      "hook": "Toho's sequel to the Oscar-winning Godzilla Minus One — director Takashi Yamazaki returns."
+      "date": "Opens Fri Nov 6 · also IMAX",
+      "hook": "Takashi Yamazaki's direct sequel to Godzilla Minus One, set two years later in 1949 as Japan rebuilds and a new threat emerges. Starring Ryūnosuke Kamiki, Minami Hamabe and Yuki Yamada."
     },
     {
       "title": "Ebenezer",
       "when": "Fri Nov 13",
-      "date": "Expected Fri Nov 13",
-      "hook": "A dark Christmas Carol reimagining from Ti West with Johnny Depp as Scrooge; streaming rights still unannounced."
+      "date": "Opens Fri Nov 13",
+      "hook": "Ti West's take on Dickens — miserly Ebenezer Scrooge is haunted by three spirits on Christmas Eve for one last chance to change. Starring Johnny Depp, Rupert Grint, Andrea Riseborough and Sam Claflin."
     },
     {
       "title": "The Hunger Games: Sunrise on the Reaping",
       "when": "Fri Nov 20",
-      "date": "Opens Fri Nov 20",
-      "hook": "The month's biggest tentpole — Haymitch Abernathy's story, 24 years before Katniss."
+      "date": "Opens Fri Nov 20 · IMAX early screenings Wed Nov 18",
+      "hook": "Prequel set 24 years before the original, following 16-year-old Haymitch Abernathy in the 50th Hunger Games. Starring Joseph Zada, Mckenna Grace, Elle Fanning, Jesse Plemons, Ralph Fiennes and Glenn Close."
     },
     {
-      "title": "Zootopia 2",
+      "title": "Hexed",
       "when": "Wed Nov 25",
       "date": "Opens Wed Nov 25",
-      "hook": "Judy Hopps and Nick Wilde return in Disney's animated sequel — the big family pick for Thanksgiving week."
-    },
-    {
-      "title": "Wicked: For Good",
-      "when": "Fri Nov 27",
-      "date": "Expected Fri Nov 27",
-      "hook": "The second half of the Wicked saga with Cynthia Erivo and Ariana Grande; exact date per streaming roundups, not yet studio-confirmed."
+      "hook": "Walt Disney Animation Studios' new magical coming-of-age saga — impulsive teen Billie discovers secret magical abilities that upend her world. Voices include Hailee Steinfeld, Rashida Jones, Tracey Ullman and Stephen Fry."
     }
   ],
   "eats": [
@@ -824,16 +884,16 @@
       "name": "Burntwood Tavern",
       "area": "Solon",
       "deals": [
-        "Kids Eat Free Mondays (kids 12 & under, with entrée purchase)",
-        "Happy Hour Mon–Fri 3–6pm: $5 draughts, $9 cocktails, $9 apps",
-        "Football Sundays: 10 favorites for $10 each, 10am–4pm"
+        "Kids Eat Free Mondays",
+        "Happy Hour Mon–Fri 3–6pm: $5 draughts, $9 signature cocktails, $9 appetizers",
+        "Football Sundays: 10 game-day favorites for $10 each, 10am–4pm"
       ]
     },
     {
       "name": "Cowboy Food & Drink",
       "area": "Chagrin Falls",
       "deals": [
-        "Kids Eat Free Mondays: 2 kids free with an adult entrée $7+, 4pm–close",
+        "Kids Eat Free Mondays",
         "Half-Off Wings Tuesdays"
       ]
     },
@@ -841,22 +901,14 @@
       "name": "Wingstop",
       "area": "Solon",
       "deals": [
-        "70¢ boneless wings Mon–Tue, by the piece, in-store or via the app/website",
-        "30 wings for $30 Thu & Sun (through Jan 3, 2027)"
+        "70¢ boneless wings Mon–Tue (participating locations, in-store / wingstop.com / app)"
       ]
     },
     {
       "name": "Bob Evans",
       "area": "Solon",
       "deals": [
-        "Kids Eat Free Tuesdays after 4pm — one free kids meal per adult entrée, dine-in"
-      ]
-    },
-    {
-      "name": "IHOP",
-      "area": "Solon",
-      "deals": [
-        "Kids Eat Free every night 4–10pm with an adult entrée (participating locations — check first)"
+        "Kids Eat Free Tuesdays after 4pm — 1 free kids meal (12 & under) per adult entrée, dine-in"
       ]
     },
     {
@@ -870,9 +922,9 @@
       "name": "Condado Tacos",
       "area": "Orange",
       "deals": [
-        "Mon & Wed: $4 house margaritas + $6 street tacos (3 tacos)",
-        "Taco Tuesday: $4 select tacos",
-        "Kids Eat Free Sundays: 2 free kids meals with $12+ food purchase, dine-in"
+        "Mon & Wed: $4 house margaritas + $6 Street Tacos (3 tacos)",
+        "Taco Tuesday: $4 Lucy's Fire, Blue Dream, or Rango Tango tacos",
+        "Kids Eat Free: 2 free kids meals with $12+ food purchase, dine-in only"
       ]
     }
   ],
@@ -883,63 +935,63 @@
       "when": "Fri Dec 25",
       "date": "Series premiere · Christmas Day",
       "type": "New series",
-      "hook": "Season 1 covers Philosopher's Stone across 8 episodes — Dominic McLaughlin as Harry, John Lithgow as Dumbledore, Nick Frost as Hagrid. Casting news Oct 26: James and Lily Potter are now cast, and Charlie Weasley — cut from the films entirely — makes his first on-screen appearance. Already renewed for Season 2."
+      "hook": "Season 1 covers Philosopher's Stone across 8 episodes — Dominic McLaughlin as Harry, John Lithgow as Dumbledore, Nick Frost as Hagrid. New this week: David Threlfall will voice the Sorting Hat and Leo Bill plays Nearly Headless Nick (announced Oct 30), and the first poster landed Nov 1. Already renewed for Season 2."
     },
     {
-      "title": "The Diplomat — Season 4",
-      "service": "Netflix",
-      "when": "Streaming now",
-      "date": "Landed Thu Oct 29",
+      "title": "All's Fair — Season 2",
+      "service": "Hulu",
+      "when": "Wed Nov 4",
+      "date": "Season premiere Wed Nov 4 · three-episode premiere per streaming roundups",
       "type": "New season",
-      "hook": "Keri Russell's Kate Wyler is back — the political thriller's fourth season, with Allison Janney elevated after last season's twist."
+      "hook": "Ryan Murphy's legal drama returns — Kim Kardashian, Niecy Nash-Betts, Naomi Watts, Sarah Paulson, Teyana Taylor and Glenn Close as the divorce lawyers of Grant, Ronson & Greene."
     },
     {
-      "title": "Death by Lightning",
+      "title": "Black Doves — Season 2",
       "service": "Netflix",
       "when": "Thu Nov 5",
-      "date": "Limited series premiere Thu Nov 5",
-      "type": "New series",
-      "hook": "Michael Shannon as President James Garfield and Matthew Macfadyen as his assassin in a stranger-than-fiction historical drama."
-    },
-    {
-      "title": "Frankenstein",
-      "service": "Netflix",
-      "when": "Fri Nov 6",
-      "date": "Streaming premiere Fri Nov 6",
-      "type": "Movie",
-      "hook": "Guillermo del Toro's gothic take on Mary Shelley, with Oscar Isaac as Victor Frankenstein and Jacob Elordi as the Creature."
+      "date": "Season premiere Thu Nov 5 · all 6 episodes",
+      "type": "New season",
+      "hook": "Keira Knightley returns as spy Helen Webb, with Ben Whishaw as assassin Sam and Sarah Lancashire as handler Mrs. Reed. New cast includes Neve Campbell and Ambika Mod."
     },
     {
       "title": "The Lord of the Rings: The Rings of Power — Season 3",
       "service": "Prime Video",
       "when": "Wed Nov 11",
-      "date": "Expected Wed Nov 11",
+      "date": "Season premiere Wed Nov 11 · first 4 episodes, then weekly pairs",
       "type": "New season",
-      "hook": "Sauron moves to forge the One Ring as Middle-earth unites against him; date per streaming roundups."
+      "hook": "Five-year time jump into wartime Middle-earth as Sauron moves toward forging the One Ring. Stars Morfydd Clark, Charlie Vickers and Daniel Weyman as Gandalf, with Jamie Campbell Bower joining as Celeborn."
     },
     {
-      "title": "Madden",
-      "service": "Prime Video",
-      "when": "Late Nov",
-      "date": "Expected late Nov — Nov 25 or 26",
+      "title": "Being Heumann",
+      "service": "Apple TV+",
+      "when": "Fri Nov 13",
+      "date": "Streaming Fri Nov 13 · after a limited theatrical run Nov 6",
       "type": "Movie",
-      "hook": "Nicolas Cage as John Madden and Christian Bale as Al Davis in David O. Russell's biopic; exact date differs between Amazon's announcement coverage and roundups."
-    },
-    {
-      "title": "Stranger Things — Season 5, Volume 1",
-      "service": "Netflix",
-      "when": "Wed Nov 26",
-      "date": "Season premiere Wed Nov 26 · 8 PM ET",
-      "type": "New season",
-      "hook": "The final season begins: the first four episodes drop Thanksgiving eve, with Volume 2 on Christmas and the finale on New Year's Eve."
+      "hook": "Sian Heder's drama about disability-rights activist Judith Heumann."
     },
     {
       "title": "Percy Jackson and the Olympians — Season 3",
       "service": "Disney+",
       "when": "Fri Nov 20",
-      "date": "Season premiere Fri Nov 20",
+      "date": "Season premiere Fri Nov 20 · two-episode premiere, also on Hulu",
       "type": "New season",
-      "hook": "Adapts The Titan's Curse — the first two episodes drop Nov 20, then pairs weekly. Walker Scobell, Leah Jeffries and Aryan Simhadri return, with Nico di Angelo joining the story."
+      "hook": "Season 3 adapts The Titan's Curse — Percy (Walker Scobell) searches for a missing Annabeth as the Hunters of Artemis enter the story, with Leah Sava Jeffries."
+    },
+    {
+      "title": "Yellowjackets — Season 4 (Final Season)",
+      "service": "Paramount+",
+      "when": "Fri Nov 20",
+      "date": "Final season premiere Fri Nov 20 · weekly Fridays",
+      "type": "New season",
+      "hook": "The final chapter as the survivors near rescue and race to bury what happened in the wilderness. Starring Melanie Lynskey, Christina Ricci, Sophie Thatcher and Hilary Swank."
+    },
+    {
+      "title": "Blade Runner 2099",
+      "service": "Prime Video",
+      "when": "Wed Nov 25",
+      "date": "Series premiere Wed Nov 25 · all 8 episodes",
+      "type": "New series",
+      "hook": "Limited series set 50 years after Blade Runner 2049 — Michelle Yeoh as Olwen, a replicant Blade Runner near the end of her life, and Hunter Schafer as Cora. Ridley Scott executive produces."
     }
   ]
 }
