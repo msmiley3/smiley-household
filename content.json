@@ -1,995 +1,1017 @@
 {
-  "dailyBrief": {
-    "date": "Tuesday, November 3, 2026",
-    "text": "Good morning, Smileys — it's homecoming day: Benji is expected to be discharged today, with his first pediatrician appointment already booked for tomorrow, and Solon is giving you a beautiful day for it, mostly sunny with a high near 73°. It is also Election Day: Ohio polls are open 6:30 AM to 7:30 PM, the governor's race between Amy Acton and Vivek Ramaswamy and the Senate race between Jon Husted and Sherrod Brown are both close, and 66 Cuyahoga County precincts — including some in Solon — have new polling places, so check yours before you go. Overnight the U.S. carried out limited strikes on Iranian missile targets on Qeshm Island while talks remained possible, and the Cavs lost a close one to Oklahoma City, 117-112, despite the game staying tight into the final minute. Tonight, after the ride home and a first evening as a family of four (plus Moose), the results start rolling in after Ohio polls close at 7:30.",
-    "chips": [
-      "👶 Homecoming day — Benji expected home today · first pediatrician visit tomorrow",
-      {
-        "label": "☀️ Mostly sunny in Solon today, high 73° · rain arrives Wed, then a sharp cooldown",
-        "url": "https://weather.com/us/oh/city/solon/tenday"
-      },
-      {
-        "label": "🗳️ Election Day TODAY · polls 6:30 AM–7:30 PM · 66 precincts moved, incl. Solon — check yours",
-        "url": "https://boe.cuyahogacounty.gov/about-us/media-and-press-releases/2026/10/28/the-cuyahoga-county-board-of-elections-announces-voting-location-changes-for-the-november-3--2026-general-election"
-      },
-      {
-        "label": "🏀 Cavs lost 117-112 to OKC (SGA 43) · rematch Wed 8 PM at OKC",
-        "url": "https://deadspin.com/shai-gilgeous-alexander-scores-43-lifts-thunder-past-cavaliers/"
-      },
-      {
-        "label": "🇺🇸 Ohio decides: Acton vs Ramaswamy · Husted vs Brown · results after 7:30 PM",
-        "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/03/ohio-election-2026-governor-senate-congress-races/92517664007/"
-      }
-    ],
-    "links": [
-      {
-        "phrase": "66 Cuyahoga County precincts — including some in Solon — have new polling places",
-        "url": "https://boe.cuyahogacounty.gov/about-us/media-and-press-releases/2026/10/28/the-cuyahoga-county-board-of-elections-announces-voting-location-changes-for-the-november-3--2026-general-election"
-      },
-      {
-        "phrase": "limited strikes on Iranian missile targets on Qeshm Island",
-        "url": "https://aapnews.aap.com.au/news/iran-says-contacts-over-ending-war-continue"
-      },
-      {
-        "phrase": "the Cavs lost a close one to Oklahoma City, 117-112",
-        "url": "https://deadspin.com/shai-gilgeous-alexander-scores-43-lifts-thunder-past-cavaliers/"
-      }
-    ]
-  },
-  "babyDue": null,
-  "weekBrief": {
-    "text": "Benji is three days old and in his first full week at home — he came home Tuesday, saw his pediatrician today, and now gets a quiet, chilly week to settle in: Solon starts mostly cloudy near 60° on Thursday, cools through Friday showers to a rainy 45° Saturday, then turns dry and partly cloudy Sunday through Wednesday with highs in the 50s. The standout deal is Giant Eagle's frozen turkeys at 95¢/lb (Nov 5–11) — one bird covers a roast dinner, turkey lentil soup and a white bean chili later in the week. If energy allows, the Cavs are home twice at Rocket Arena — Friday against Philadelphia and Saturday against the Knicks — alongside Hadestown at Playhouse Square on Thursday and the free Día de Muertos celebration on Saturday, while Ohio State hosts Oregon Saturday afternoon and the Browns play at New Orleans on Sunday.",
-    "chips": [
-      "👶 Benji's first full week at home — born Nov 1, homecoming Tue, pediatrician check today",
-      {
-        "label": "🌦️ Thu 60° cloudy · Fri 51° showers · Sat 45° rain · Sun–Wed dry, 50s",
-        "url": "https://weather.com/us/oh/city/solon/tenday"
-      },
-      {
-        "label": "🏷️ Giant Eagle frozen turkeys 95¢/lb · Nov 5–11",
-        "url": "https://weeklyadhunters.com/giant-eagle-weekly-ad/"
-      },
-      {
-        "label": "🏀 Cavs home Fri 7:30pm vs 76ers + Sat 8pm vs Knicks · 🏈 Ohio State vs Oregon Sat 3:30pm · Browns at Saints Sun 1pm",
-        "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
-      },
-      {
-        "label": "🎭 Hadestown Thu 7:30pm · Día de Muertos Sat 11am–10pm (free)",
-        "url": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
-      }
-    ],
-    "links": [
-      {
-        "phrase": "Giant Eagle's frozen turkeys at 95¢/lb (Nov 5–11)",
-        "url": "https://weeklyadhunters.com/giant-eagle-weekly-ad/"
-      },
-      {
-        "phrase": "the Cavs are home twice at Rocket Arena",
-        "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
-      },
-      {
-        "phrase": "Hadestown at Playhouse Square on Thursday",
-        "url": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
-      },
-      {
-        "phrase": "Día de Muertos celebration on Saturday",
-        "url": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
-      }
-    ]
-  },
-  "deals": {
-    "range": "Weekly ads — Nov 4 – Nov 11",
-    "stores": [
-      {
-        "name": "Meijer — Bainbridge/Aurora",
-        "note": "Ad Nov 4 – Nov 10 · Prices verified from this week's ad price list",
-        "link": "https://weeklyadhunters.com/meijer-weekly-flyer-savings/",
-        "items": [
-          [
-            "Fresh from Meijer whole boneless pork loin (avg 8–10 lb)",
-            "$1.99/lb",
-            "Recipe anchor — roast, pulled pork & souvlaki"
-          ],
-          [
-            "Butterball frozen Grade A turkey",
-            "$1.29/lb",
-            ""
-          ],
-          [
-            "Fresh from Meijer family pack boneless skinless chicken thighs",
-            "$3.19/lb",
-            "Family pack"
-          ],
-          [
-            "Certified Angus Beef ground chuck, 2.5 lb pkg or larger",
-            "$5.29/lb",
-            ""
-          ],
-          [
-            "Pompeian olive oil 24 oz",
-            "BOGO Free",
-            "Buy 1 Get 1 Free"
-          ],
-          [
-            "Oscar Mayer bacon 12–16 oz",
-            "BOGO Free",
-            "Buy 1 Get 1 Free"
-          ],
-          [
-            "Bulk Granny Smith or Gala apples",
-            "$0.99/lb",
-            ""
-          ],
-          [
-            "Broccoli crowns",
-            "2 for $3",
-            ""
-          ]
-        ]
-      },
-      {
-        "name": "Giant Eagle Market District — Solon",
-        "note": "New ad Nov 5 – Nov 11 · Prices verified from this week's ad price list",
-        "link": "https://weeklyadhunters.com/giant-eagle-weekly-ad/",
-        "items": [
-          [
-            "Giant Eagle / Shady Brook Farms frozen turkeys",
-            "$0.95/lb",
-            "Standout — stock up for Thanksgiving"
-          ],
-          [
-            "Boneless center cut pork chops or roasts",
-            "BOGO Free",
-            "Buy 1 Get 1 Free"
-          ],
-          [
-            "Market District top round London broil or roasts",
-            "$5.99/lb",
-            ""
-          ],
-          [
-            "Giant Eagle fresh boneless skinless chicken breasts",
-            "$3.99/lb",
-            ""
-          ],
-          [
-            "Giant Eagle all-purpose flour 5 lb (also granulated sugar 4 lb)",
-            "$0.95",
-            "Each — baking staples at 95¢"
-          ],
-          [
-            "Chobani Greek yogurt or Creations cups",
-            "5 for $5",
-            ""
-          ],
-          [
-            "Market District jumbo blueberries 9.8 oz",
-            "BOGO Free",
-            "Buy 1 Get 1 Free"
-          ],
-          [
-            "Rotisserie chicken",
-            "$1.99",
-            "Each, as listed in this week's ad"
-          ]
-        ]
-      },
-      {
-        "name": "Heinen's — Bainbridge & Chagrin Falls",
-        "note": "Ad Nov 4 – Nov 10 · This week's ad is an image flyer — prices couldn't be verified from the flyer this week, so no prices are listed; full ad at the store link",
-        "link": "https://www.theweeklyad.com/heinens-weekly-ad/",
-        "items": [
-          [
-            "See this week's full ad at the store link — produce, meat & deli specials",
-            "",
-            "Image flyer"
-          ]
-        ]
-      },
-      {
-        "name": "Miles Farmers Market — Solon",
-        "note": "Flyer dated Wed Nov 4 · 28560 Miles Rd · Miles posts its specials as a single-image flyer — prices couldn't be verified from the flyer this week, so no prices are listed; full flyer at the store link",
-        "link": "https://www.milesfarmersmarket.com/wp-content/uploads/2026/11/MilesAd11.04.26-scaled.jpg",
-        "items": [
-          [
-            "See this week's full flyer at the store link — produce, butcher & bakery specials",
-            "",
-            "Image flyer"
-          ]
-        ]
-      }
-    ]
-  },
-  "events": {
-    "range": "Thu Nov 5 – Wed Nov 11",
-    "areas": [
-      {
-        "name": "Solon",
-        "items": [
-          {
-            "when": "Fri Nov 6 – Sat Nov 7",
-            "title": "Ohio Hazmat Teams Conference 2026",
-            "where": "Solon Community Center, 35000 Portz Pkwy",
-            "link": "https://www.eventbrite.com/e/ohio-hazmat-teams-conference-2026-registration-1999932278281"
-          },
-          {
-            "when": "Sat Nov 7 · 10:00 AM–12:00 PM",
-            "title": "RePlay for Kids Toy Adapting Workshop",
-            "where": "RePlay's Creative Space, 6190 Cochran Rd",
-            "link": "https://www.northeastohioparent.com/special-needs-3/special-needs-and-sensory-friendly-events-for-kids-in-northeast-ohio/"
-          },
-          {
-            "when": "Sat Nov 7",
-            "title": "Saturday Storytime at Ivybrook Academy Solon",
-            "where": "Ivybrook Academy Solon",
-            "link": "https://clevelandeast.macaronikid.com/events?yodelEventId=6aa198d51fca2bef22f10c0c_20261107&yodelOrgLastName=Cleveland-East&yodelEventName=Saturday-Storytime-at-Ivybrook-Academy-Solon"
-          },
-          {
-            "when": "Sat Nov 7 – Dec 10",
-            "title": "Olivia's Dream Toy Drive for Toys for Tots (collection starts)",
-            "where": "Solon Community Center",
-            "link": "https://solonohionews.com/"
-          },
-          {
-            "when": "Tue Nov 10 (series starts)",
-            "title": "Strikes, Smiles & Fun: Bowling Nights",
-            "where": "RollHouse, 33185 Bainbridge Rd",
-            "link": "https://www.northeastohioparent.com/special-needs-3/special-needs-and-sensory-friendly-events-for-kids-in-northeast-ohio/"
-          }
-        ]
-      },
-      {
-        "name": "Chagrin Falls",
-        "items": [
-          {
-            "when": "Fri Nov 6 · 7:00 PM awards",
-            "title": "Valley Art Center 55th Annual Juried Art Exhibition — Opening Reception",
-            "where": "Valley Art Center, 155 Bell St",
-            "link": "https://www.findglocal.com/US/Chagrin-Falls/54526434641/Valley-Art-Center"
-          },
-          {
-            "when": "Sat Nov 7 · 1:00–5:00 PM",
-            "title": "Autumn Flavors & Finds Crawl",
-            "where": "Downtown Chagrin Falls / 87 West",
-            "link": "https://www.eventbrite.com/e/autumn-flavors-finds-crawl-chagrin-falls-2026-tickets-2003478649573"
-          },
-          {
-            "when": "Sat Nov 7 · 7:00 PM",
-            "title": "Burning River Swing at Bainbridge Swing Dance",
-            "where": "Federated Church Family Life Center, 16391 Chillicothe Rd",
-            "link": "https://allevents.in/chagrin-falls/entertainment"
-          }
-        ]
-      },
-      {
-        "name": "Cleveland",
-        "items": [
-          {
-            "when": "Thu Nov 5 · 7:30 PM",
-            "title": "Hadestown (touring)",
-            "where": "Connor Palace, Playhouse Square",
-            "link": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
-          },
-          {
-            "when": "Thu Nov 5 · 5:00 PM",
-            "title": "Arch Enemy & The Black Dahlia Murder",
-            "where": "Agora Theatre, 5000 Euclid Ave",
-            "link": "https://www.ticketmaster.com/discover/cleveland?categoryId=KZFzniwnSyZfZ7v7nJ"
-          },
-          {
-            "when": "Fri Nov 6 · 7:30 PM",
-            "title": "Cavs vs Philadelphia 76ers — Emirates NBA Cup",
-            "where": "Rocket Arena",
-            "link": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
-          },
-          {
-            "when": "Sat Nov 7 · 11:00 AM–10:00 PM",
-            "title": "Día de Muertos — 22nd Annual Celebration",
-            "where": "Cleveland Public Theatre, 6415 Detroit Ave",
-            "link": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
-          },
-          {
-            "when": "Sat Nov 7 · 8:00 PM",
-            "title": "Cavs vs New York Knicks",
-            "where": "Rocket Arena",
-            "link": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
-          },
-          {
-            "when": "Sat Nov 7 · 5:30 PM",
-            "title": "Pigeons Playing Ping Pong — Fall Tour 2026",
-            "where": "House of Blues Cleveland",
-            "link": "https://www.ticketmaster.com/discover/cleveland?date=thisweekend"
-          },
-          {
-            "when": "Sun Nov 8 · 3:00 PM",
-            "title": "NUTCRACKER! Magical Christmas Ballet",
-            "where": "Music Hall, Cleveland Public Auditorium",
-            "link": "https://www.ticketmaster.com/discover/cleveland?date=thisweekend"
-          }
-        ]
-      }
-    ]
-  },
-  "headlines": {
-    "date": "Wednesday, November 4, 2026",
-    "cats": [
-      {
-        "name": "World",
-        "items": [
-          {
-            "title": "Iran's leaders celebrate Trump's midterm loss and warn against new strikes",
-            "summary": "Iran's government said on Wednesday that American voters had rejected President Trump's war, even as Tehran stayed on high alert for renewed U.S. strikes. Parliament Speaker Mohammad Baqer Qalibaf, Iran's chief negotiator, posted that Americans had said no to war, and Supreme Leader Mojtaba Khamenei warned in a written statement against any inclination toward submission to the United States.\n\nThe celebration was public and pointed. The newspaper Hamshahri put a blindfolded, bowed Trump on its front page under a headline about Iran's shadow over the elections, and the result landed on the anniversary of the 1979 seizure of the U.S. embassy in Tehran. Trump told Fox News the Iran war was part of the result, while also saying voters understood the importance of what he had done.\n\nBehind the gloating, two senior Iranian sources told Reuters Tehran welcomed the Democratic victory but feared Trump might answer a political defeat with a military strike. Mediators have intensified efforts to end the war, Trump on Tuesday declined to rule out resuming combat, and Iran was planning wider retaliation if fighting resumes.\n\nSenior Iranian officials told Reuters before the vote that Tehran had deliberately prolonged talks to weaken Trump politically. Watch whether that calculation now produces a deal — or a strike meant to prove the election changed nothing.",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/world/middle-east/iranian-officials-gloat-us-voters-deal-blow-trump-2026-11-04/"
-          },
-          {
-            "title": "Russian bombing of a Ukrainian aid centre kills 40, with 59 people missing",
-            "summary": "The death toll from a Russian bombing of an aid distribution point in Komyshuvakha, in Ukraine's southeastern Zaporizhzhia region, rose to 40 by Wednesday, officials said — one of the deadliest strikes on civilians this year. A regional defence official wrote on Telegram that 59 people were still missing.\n\nPresident Volodymyr Zelenskiy said Russian forces first dropped aerial bombs on an underground school building used as a distribution point as people arrived to collect aid, then struck the shelter again. The school handed out humanitarian aid every Monday and served as a shelter, about 11 miles from the nearest Russian positions. Two rescue workers and four police officers were among the dead, and Ukrainian police said the munitions included a 3-ton glide bomb.\n\nRussia's Defence Ministry said the attack targeted Ukrainian military units around Komyshuvakha and two other settlements. Both sides deny deliberately targeting civilians.\n\nThe strike came days before the United States brings Ukrainian and Russian delegations together in Abu Dhabi on November 10-11 to discuss ending the war. A toll like this hardens Kyiv's hand — and tests whether Moscow arrives negotiating or escalating.",
-            "source": "Reuters",
-            "url": "https://northlandnewsradio.com/2026/11/04/dozens-dead-and-missing-after-russian-strike-on-ukrainian-aid-centre-officials-say/"
-          },
-          {
-            "title": "Russia hits power stations in Kyiv and Zhytomyr regions as temperatures fall",
-            "summary": "Russia hit two power stations in Ukraine's Kyiv and Zhytomyr regions on Wednesday, its defence ministry said, and also targeted a cargo vessel at sea near Odesa. The attacks followed Tuesday's missile and drone bombardments that knocked out power across swathes of the country.\n\nUkraine's emergency service and local officials said Poltava, Dnipro, Kirovohrad and Rivne regions were also hit. Ukraine's Energy Ministry said the week's strikes had forced nuclear plants to reduce output, emergency outages were cancelled in Kyiv on Wednesday but continued in Kharkiv, and rationing ran up to 16 hours a day in some regions. A drone attack near Krasnodar set fire to a logistics hub of the Russian retailer Ozon.\n\nThe pattern is deliberate: energy infrastructure, in waves, just as temperatures fall and a week before U.S.-brokered talks resume in Abu Dhabi. A Kremlin aide said last month that Moscow's attitude to three-way talks would depend in part on whether Ukraine launched a large-scale attack on Russia's National Unity Day, observed November 4.\n\nEvery plant knocked offline before winter is leverage at that table — and a repair bill Kyiv cannot easily pay while under fire.",
-            "source": "Reuters",
-            "url": "https://duke.fm/2026/11/03/russia-hits-power-stations-in-ukraines-regions-of-kyiv-zhytomyr-2/"
-          },
-          {
-            "title": "Trump says the U.S. will stop $4 billion a year in aid to Israel after this year",
-            "summary": "President Trump said on Fox News that he and Israeli Prime Minister Benjamin Netanyahu had made a deal months ago to stop $4 billion in annual U.S. funding to Israel after this year, while still selling Israel weapons. He cast the move as removing a talking point he said left-wing Democrats used against Republicans.\n\nThe mechanics are unclear. The existing agreement provides $3.8 billion in U.S. military aid each year and does not expire until September 2028, and Trump did not explain how funding would be halted at year-end. Congress authorised the funding in a 2020 law, but the House and Senate must still pass appropriations bills each year to release the money — which now means a Democratic Congress holds that pen.\n\nNeither the White House nor Netanyahu's office responded to requests for comment. Netanyahu's own position is uncertain after an October 27 election in which he lost his governing majority without opponents gaining a clear path to unseat him, and he had already said publicly that he expects U.S. aid to wind down over time.\n\nA Quinnipiac poll in June found 48% of voters — and 66% of Democrats — believe the U.S. is too supportive of Israel. Watch whether the new Congress treats Trump's announcement as policy, or as an opening bid.",
-            "source": "Reuters",
-            "url": "https://wabx.net/2026/11/03/trump-says-us-will-stop-paying-israel-after-year-end/"
-          },
-          {
-            "title": "World leaders react to the Democrats' win: a 'new era,' warnings, and a wait-and-see from Moscow",
-            "summary": "Governments around the world spent Wednesday reading the same result and reaching very different conclusions. South African President Cyril Ramaphosa said the outcome would introduce a new era in world relations, Spain's Pedro Sánchez celebrated a vote against hatred and climate denial, and Norway's Jonas Gahr Støre called it a powerful signal of a change of course among American voters.\n\nMoscow was cooler. Deputy Foreign Minister Sergei Ryabkov said the Democratic leadership's approach to Russia is sharply negative and nothing about that is new, while Kremlin spokesman Dmitry Peskov said Trump remains in office and Moscow hopes he continues peacemaking efforts. Japan's Chief Cabinet Secretary Minoru Kihara said the Japan-U.S. alliance remains the cornerstone of Japanese policy regardless of the outcome.\n\nCzech Prime Minister Andrej Babiš predicted impeachment, vetoes and a kind of paralysis for the rest of Trump's term. Germany's AfD co-leader Alice Weidel said Trump's broken promise to avoid interventionist foreign policy had come back to haunt Republicans, and France's finance minister said Trump must acknowledge gasoline prices or scale back international involvement.\n\nThe through-line: allies and rivals alike now price in a Washington that cannot move fast — on Ukraine, trade, or Iran — for at least two years.",
-            "source": "Reuters",
-            "url": "https://wncy.com/2026/11/04/international-politicians-react-to-democrats-winning-us-midterms/"
-          },
-          {
-            "title": "Spain's transport minister resigns after a train crash that killed 69",
-            "summary": "Spain's Transport Minister Óscar Puente resigned on Tuesday, six days after a high-speed train collision killed at least 69 people and injured dozens. The crash happened October 28 near Urda, about 130 km south of Madrid, when a Renfe train with 397 passengers ploughed into the back of a stationary Iryo train carrying 147.\n\nPuente announced the decision in Congress after a lengthy session in which he outlined new rail safety measures and was grilled by the opposition. He said a transport minister in a country like Spain cannot remain in office after two accidents of this seriousness in less than a year.\n\nIt was Spain's second deadly rail accident this year and its worst crash since 2013; an earlier crash in January in Adamuz killed 46 people, for a combined toll of 115. On Wednesday Prime Minister Pedro Sánchez appointed Deputy Prime Minister Carlos Cuerpo to temporarily oversee the ministry, and the government announced a €30 million assistance package for victims' families.\n\nPuente also withdrew as a candidate in the snap general election scheduled for November 29. The train drivers' union Semaf has announced strikes at Renfe for November 10 and 12 over working conditions and safety concerns.",
-            "source": "Everywhere News",
-            "url": "https://www.everywherenews.net/news/articles/c6wydqd4yxdyo"
-          }
-        ]
-      },
-      {
-        "name": "Politics",
-        "items": [
-          {
-            "title": "Democrats take Congress and vow to rein in Trump as divided government looms",
-            "summary": "Democrats and Republicans squared up on Wednesday for what could be two years of deadlock, with Democrats vowing to use their midterm victory to rein in President Trump and Trump signalling he will keep flexing executive power. Democrats took the Senate with a majority of at least 54-44 and took the House, gaining at least 25 seats, with Senate races in Alaska and Mississippi still uncalled.\n\nThe scale was broad: Republicans lost ground in 99% of the roughly 2,100 counties where most votes had been counted by Wednesday morning. Democrats flipped more than two dozen House seats and won about a dozen races in districts Trump carried by double digits two years ago. House Democratic Leader Hakeem Jeffries, on track to become the first Black Speaker, urged Trump to end the eight-month war on Iran before the new Congress is seated.\n\nTrump posted an image of a red cap with the word VETO on it, congratulated Democrats for doing a good job in overnight interviews, and threatened to veto bills he called insane. Once seated in January, Democrats can investigate the administration and block Trump's nominees, including any Supreme Court vacancy.\n\nFirst, though, the outgoing Republican Congress faces a must-pass bill to fund the federal government past December — the lame-duck session is where the new balance of power gets tested first.",
-            "source": "Reuters",
-            "url": "https://wdsm710.com/2026/11/04/democrats-seize-congress-in-sweeping-midterm-repudiation-of-trump/"
-          },
-          {
-            "title": "Vance blames the Iran war entirely: 'The reason we lost is the war'",
-            "summary": "Vice President JD Vance distanced himself from President Trump's war on Iran on Wednesday, questioning its worth and blaming it entirely for the electoral rebuke that delivered Congress to the Democrats. 'The reason we lost is the war,' Vance wrote on X, adding that if anyone wanted to argue losing the Senate for the next six years was worth it, they should do so.\n\nVance said an earlier recommendation to end the war had been sound advice. He played down a split with the president, saying Trump also acknowledged the war cost Republicans — but Trump's own comments were far more measured, calling the war only a piece of the losses and telling the Wall Street Journal he did the right thing and would do it again.\n\nAn NBC News exit poll found 74% of voters said the Iran war was a crucial or major factor in their vote, and only 37% said the U.S. made the right decision to take military action. Vance listed voters' top priorities as ending the war, cost of living, putting America first, and changing the relationship with Israel.\n\nReuters noted the remarks could complicate Trump's deliberations on whether to restart major combat operations against Iran — a step officials say is still under consideration — and raise pressure on Defence Secretary Pete Hegseth, whom some lawmakers are expected to try to impeach.",
-            "source": "Reuters",
-            "url": "https://www.reuters.com/legal/government/vance-repudiates-iran-war-after-us-electoral-defeat-2026-11-04/"
-          },
-          {
-            "title": "Speaker Johnson steps aside as Jordan and Scalise fight to lead House Republicans",
-            "summary": "House Speaker Mike Johnson told staff on Wednesday morning that he will not run for minority leader after Republicans lost control of Congress, according to sources familiar with the announcement. Johnson, who handily won re-election in his Louisiana district, is not expected to quit Congress.\n\nTwo contenders launched bids the same day: fellow Louisiana Rep. Steve Scalise, the current majority leader, and Ohio Rep. Jim Jordan, the House Judiciary Committee chairman. A person familiar with the situation said Johnson did not want to stand in the way of Scalise's ambitions. In a letter to House Republicans, Johnson said he would step away from leadership to spend more time with his wife Kelly and their four children.\n\nTrump told reporters he would stay out of the race and said he did not ask Johnson to step down. House Republicans are scheduled to hold leadership elections next week, on November 10, by secret ballot.\n\nWhoever wins leads a smaller, more Trump-sceptical minority into two years of divided government — while Hakeem Jeffries prepares to take the Speaker's gavel in January.",
-            "source": "USA Today",
-            "url": "https://www.usatoday.com/story/news/politics/2026/11/04/house-speaker-mike-johnson-gop-leadership/92609302007/"
-          },
-          {
-            "title": "Democrats plan a long list of Trump investigations: 'Lawyer up'",
-            "summary": "With little prospect of passing major legislation while Trump holds the veto, the incoming Democratic majorities plan to use their other power: investigation. New House and Senate majorities give Democrats full investigatory authority, including subpoenaing records and compelling testimony.\n\nRep. Robert Garcia, expected to become House Oversight chair, put it in two words: 'LAWYER UP.' Democratic staffers named the administration's handling of and connections to Jeffrey Epstein as a primary target, alongside public corruption — alleged efforts by officials to advance the financial interests of the president, his family, themselves and close allies.\n\nOther lanes include immigration enforcement, executive power, and the Iran war's authorisation — Congress's sole power to declare war and the requirement to seek approval for military force. Trump's personal projects are also flagged, from remodelling the White House East Wing and building a monumental arch to shuttering the Kennedy Center and paving the Rose Garden.\n\nRep. Jamie Raskin, the top Democrat on House Judiciary, is the other central figure. Expect the first subpoenas to land soon after the new Congress is seated in January.",
-            "source": "NPR",
-            "url": "https://www.classicalwmht.org/2026-11-04/back-in-the-majority-democrats-have-plans-for-a-long-list-of-trump-investigations"
-          },
-          {
-            "title": "Trump says 'I wasn't on the ballot' — and congratulates the Democrats who beat his candidates",
-            "summary": "President Trump watched the results from the White House and moved quickly to distance himself from them. 'I wasn't on the Ballot and if I was, we would have won IN A LANDSLIDE!' he posted on Truth Social, repeating the line to the New York Times, CBS News and Politico.\n\nAt the same time, he struck a cooperative note. 'My message is, congratulations to the Democrats, and I look forward to working with you for the good of our country,' he said, adding that he does not want to spend two years just vetoing everything — even as he posted a mockup of his signature red hat with VETO on the front. Asked by CBS if he was upset, he said he tried hard and left it on the field.\n\nTrump told the New York Times he was absolutely willing to accept the results. He also singled out Texas Governor Greg Abbott, saying Abbott would not have lost had he not become a RINO in the last six months; Abbott lost to Democrat Gina Hinojosa.\n\nMany of the losing candidates — in Texas, South Carolina, North Carolina and Georgia — were hand-picked by Trump. How much of the defeat he ultimately owns will shape the Republican fight over what comes next.",
-            "source": "USA Today",
-            "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/04/donald-trump-midterms-reaction/92608695007/"
-          }
-        ]
-      },
-      {
-        "name": "Tech & Business",
-        "items": [
-          {
-            "title": "Dow jumps 1,569 points in its best post-midterm day in 44 years",
-            "summary": "U.S. stocks soared on Wednesday as Wall Street digested the Democratic sweep, reversing a sharp overnight slump in futures. The Dow closed up 1,569.40 points, or 3.03%, at 53,356.12 — its best day since April 2025 and its biggest post-midterm gain since 1982. The S&P 500 rose 1.58% to 7,688.62 and the Nasdaq Composite added 1.44% to 25,736.51.\n\nThe rally was led by the mega-caps and the economically sensitive names: Microsoft gained about 7%, Amazon about 6% and Apple about 5%, while hospital owners, dollar stores and solar stocks also jumped. Bond yields fell, the dollar weakened, gold rose more than 3% back above $4,000 an ounce, and the VIX volatility index sank almost 20% as investors welcomed certainty — and the prospect of gridlock curbing spending.\n\nNot everything rose. AI infrastructure lagged on fears a Democratic Congress could restrict data centres: Nvidia fell about 3%, CoreWeave sank roughly 10%, and defence names dropped, with Lockheed Martin down about 7%. Oil fell sharply (see below), dragging energy shares with it.\n\nPrivate payrolls rose 86,000 in October, beating forecasts, and services growth cooled only slightly with prices still high — a backdrop that keeps the Federal Reserve cautious even as politics hogs the tape.",
-            "source": "Investopedia",
-            "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11042026-12234321"
-          },
-          {
-            "title": "AMD's data-centre sales nearly double to $8.55 billion, and it guides to about $17 billion next quarter",
-            "summary": "AMD beat expectations for its third quarter, reported Tuesday evening. Adjusted earnings were $2.09 a share, up 74% from a year earlier and ahead of the $1.95 consensus, on revenue of $13.38 billion, up about 45%.\n\nThe engine is the data centre. That segment's revenue reached $8.55 billion, up about 97% year over year — a record, and roughly 64% of total sales, up from about 47% a year ago — driven by demand for its EPYC server processors. Gross margin widened to 56%, and operating income rose about 75% to $3.92 billion. Client and gaming revenue fell 8% to $3.72 billion and missed expectations, with gaming down sharply.\n\nFor the fourth quarter AMD guided revenue to about $17 billion, above consensus, with data-centre sales expected to grow about 50% sequentially. Chief Executive Lisa Su said she expects overall revenue growth above 80% in 2027, with server revenue doubling.\n\nFree cash flow fell to $554 million as the company builds for that demand. The question for investors is whether the AI build-out keeps absorbing supply at this pace — AMD's guidance says yes, for now.",
-            "source": "Zacks",
-            "url": "https://www.zacks.com/stock/news/3023328/amd-q3-earnings-beat-estimates-strong-data-center-aids-revenue-growth"
-          },
-          {
-            "title": "Super Micro's sales nearly quadruple to $19.9 billion on AI server demand",
-            "summary": "Super Micro reported fiscal first-quarter net sales of $19.95 billion, up about 298% from a year earlier and 79% from the prior quarter, beating consensus of about $17.53 billion by roughly 14%. Adjusted earnings were $1.81 a share, well above both guidance and the $1.23 consensus.\n\nAI solutions accounted for 71% of total revenue, up from 59% the prior quarter — a measure of how completely the company's fortunes now ride on AI data-centre build-outs. Gross margin improved to 12.8% on an adjusted basis, though it remains thin for the volumes involved.\n\nManagement raised full-year fiscal 2027 revenue guidance to $72-82 billion, from $65-72 billion, and guided the current quarter to $19.5-21.5 billion. Operations used $434 million in cash during the quarter as inventory and receivables grew with the ramp, and the results were labelled preliminary and unaudited.\n\nSuper Micro is the purest volume play on AI servers — which also makes it the most exposed if orders pause. Wednesday's guidance raise says its customers are not pausing yet.",
-            "source": "The Motley Fool",
-            "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/super-micro-smci-q1-2027-earnings-call-transcript/"
-          },
-          {
-            "title": "Arm beats estimates on AI chip demand, but shares slip on a soft forecast",
-            "summary": "Arm reported fiscal second-quarter revenue of $1.44 billion on Wednesday, beating the $1.38 billion analyst average, with adjusted profit of 52 cents a share against 47 cents expected. Licensing revenue of $773 million comfortably beat estimates.\n\nThe soft spot was royalties: revenue there rose 8% to $670 million but missed the $720.8 million analysts expected. And the third-quarter forecast — $1.54 billion — was only marginally above the $1.53 billion consensus, disappointing investors who had priced in more. Shares fell about 3.5% in extended trading.\n\nChief Executive Rene Haas told Reuters there has been a huge pickup for all technology around the data-centre space. Arm says its server-chip architecture accounts for more than 50% of deployments at major cloud providers in 2025, heading above 60% by the end of 2026, and it now expects $2 billion of AGI CPU sales across fiscal 2027 and 2028 from the complete-chip business it launched in March.\n\nA Delaware jury last month found Arm breached parts of its Qualcomm licensing agreement but awarded only $2 in damages, leaving royalty disputes to a judge — a reminder that Arm's licensing model is both its strength and its legal exposure.",
-            "source": "Reuters",
-            "url": "https://superhits979.com/2026/11/04/arm-beats-second-quarter-revenue-estimates-on-ai-and-data-center-demand/"
-          },
-          {
-            "title": "Qualcomm beats estimates as car chip sales jump 89%, but shares slip after hours",
-            "summary": "Qualcomm reported fiscal fourth-quarter results after Wednesday's close that just topped expectations: adjusted earnings of $2.17 a share against a $2.16 consensus, on revenue of about $10.4 billion.\n\nThe standout was automotive. Car chip revenue surged 89% year over year to $1.99 billion, comfortably ahead of expectations, continuing a run that saw the segment set records in prior quarters. Handset chip sales of $5.14 billion came in below Wall Street expectations, and data-centre-related revenue was about $650 million as the company pushes into a market dominated by others.\n\nDespite the beat, shares came under pressure in after-hours trading on muted guidance: Qualcomm guided the current quarter to earnings of $2.15-2.35 a share on revenue of at least $10.4 billion, against consensus looking for more.\n\nThe mix tells the strategy: phones are mature, cars and data centres are the growth story. An 89% jump in automotive only matters if it holds as carmakers' own demand cycles turn.",
-            "source": "Zacks",
-            "url": "https://www.zacks.com/stock/news/3023448/qualcomm-qcom-tops-q4-earnings-and-revenue-estimates"
-          },
-          {
-            "title": "Oil plunges nearly 9% as traders bet the Iran war may wind down",
-            "summary": "Oil crashed on Wednesday as the midterm result — and the Republican blame game that followed — convinced traders the Iran war may wind down. Brent settled down about $9.27, or 8.9%, at $94.29 a barrel, its lowest since early September, after trading near $118 on Friday. U.S. crude fell about 8.3% to $88.08.\n\nThe triggers were political. Trump told Fox News on election night that he thought gasoline prices explained the Republican defeat, and Vice President Vance posted that the war was the reason for the losses. Trump had also told the Financial Times that Washington had no immediate plans to strike Iran, and a Qatari outlet again reported significant progress in U.S.-Iran negotiations — claims a senior Iranian official had swiftly dismissed the day before.\n\nBrent is down about 20% on the week, on course for its biggest weekly fall since April 2020. U.S. crude inventories fell about 900,000 barrels to 409.8 million in the week ended October 30, roughly 4% below the five-year average.\n\nOne caution from traders: Rapidan Energy's Bob McNally warned that bets on the administration quitting the war may be premature, arguing escalation remains possible. Oil has priced in peace quickly before — and been wrong.",
-            "source": "OilPrice.com",
-            "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Crashes-9-as-Trump-and-Vance-Blame-Iran-War-for-Midterm-Rout.html"
-          }
-        ]
-      },
-      {
-        "name": "U.S. News",
-        "items": [
-          {
-            "title": "Florida rivers keep rising, with major flooding forecast into the weekend",
-            "summary": "Florida's flooding is not over — it is moving into the rivers. On Wednesday morning the National Weather Service in Melbourne raised the forecast for the St. Johns River near Cocoa to major flooding: the river stood at 16.7 feet, above its 16.0-foot flood stage, and was expected to reach major stage late this week and stay there into the weekend.\n\nAt 17 feet, water approaches low-lying homes in the Silver Pines subdivision and in Rockledge and Cocoa. Above Lake Harney in Seminole County the river was at 8.5 feet and forecast to rise to 9.8 feet by Monday, with low homes flooding and many secondary roads impassable at 10 feet. Near Sanford, minor flooding was expected Thursday and rising.\n\nOn the Gulf side, the Peace River at Arcadia was forecast to crest at 16.5 feet Thursday evening — above the 16.0-foot record crest from February 1998 — with up to 60 homes at River Acres at risk at that level.\n\nRiver flooding lags the rain by days, which is why a storm that has passed can still be rising. Anyone near these rivers should treat the weekend forecasts as the event, not the aftermath.",
-            "source": "Storm Recovery Hub",
-            "url": "https://stormrecoveryhub.com/events/2026/south-florida-treasure-coast-flooding-nov-1/"
-          },
-          {
-            "title": "Southwest floodwaters recede, leaving a sea of mud, shattered homes and weeks of cleanup",
-            "summary": "Skies began clearing Tuesday across the Southwest, but floodwaters from almost two weeks of on-and-off heavy rain still inundated some areas while others began digging out of the mud. More than 20 trillion gallons of rain fell on the Four Corners states and Nevada in two weeks — about 10 months of flow over Niagara Falls.\n\nIn Pagosa Springs, Colorado, downtown remained closed to traffic Tuesday as heavy equipment cleared mud, water and debris; walkways and bridges collapsed or were heavily damaged, and cleanup could take weeks or more. The San Juan River at Shiprock, in the Navajo Nation, crested at 19.8 feet early Tuesday before falling. One person died in the floodwaters, and police suspect a second death was weather-related.\n\nColorado Governor Jared Polis declared a disaster emergency for 12 southwest counties, about 100 National Guard members were mobilised, and a disaster assistance centre was set to open Thursday in Pagosa Springs. In Durango, one resident described nearly five feet of water entering her home, surrounded by about two feet of mud.\n\nThe same system soaked Florida, where more than 20 polling places had to be changed after an emergency declaration. Recovery in both regions is measured in weeks, not days.",
-            "source": "The Weather Channel",
-            "url": "https://weather.com/2026/11/04/news/weather/receding-floodwaters-leave-a-sea-of-mud-shattered-homes-in-us-southwest"
-          },
-          {
-            "title": "A Washington resident is the first U.S. bird flu death of 2026",
-            "summary": "A Yakima County, Washington resident died on Sunday, November 1 after contracting H5N1 bird flu through exposure to infected dairy cattle — the first human bird flu death in the United States in 2026, and the third since 2024. Genetic sequencing confirmed the virus was the B3.13 strain circulating in U.S. dairy herds since 2024, matched to samples from two Yakima County farms.\n\nIt was the third human infection in Yakima County since mid-October, all linked to dairies with infected cows. Washington's first cattle detections came on October 8, and state trackers listed about 40 infected herds in Yakima and Benton counties by the end of October — the first bird flu ever found in Washington cattle.\n\nHealth officials stressed the risk to the general public remains low. There is no evidence the virus has adapted to spread more easily between people, and no human-to-human transmission has been documented in the U.S. The county health district and state health department are identifying and monitoring close contacts.\n\nBefore this case, the CDC counted 72 confirmed human H5N1 cases and two deaths in the U.S. since 2024. The death is a reminder the dairy outbreak is still expanding into new states even as human cases stay rare.",
-            "source": "Global-Agriculture",
-            "url": "https://www.global-agriculture.com/animal-health-welfare/washington-dairy-exposure-linked-to-first-us-bird-flu-death-of-2026/"
-          },
-          {
-            "title": "Voters reject AI data centres in almost every local ballot measure — and Ohio led the revolt",
-            "summary": "Voters across the country used Tuesday's ballots to say no to AI data centres. More than 40 measures were decided across 10 states, and opponents were successful in virtually all of them — by one count, the industry prevailed in just a single community.\n\nOhio had the most measures of any state — 21 across roughly 18-20 jurisdictions — and every jurisdiction with reported results voted against development. In Ashville, voters repealed the EdgeConneX agreement by 1,468 to 330, covering two buildings and an on-site gas plant on about 195 acres where construction was already under way. Wilmington rejected four rezoning proposals by about 80% to 20%. Elsewhere, El Dorado, Kansas approved a 10-year ban on high-impact data centres by 71% to 29%.\n\nThe only industry win came in Harwood, North Dakota, where voters rejected a charter amendment that would have required independent review of large industrial projects. An August poll found 75% of registered voters opposed a new data centre near their home, and an NBC exit poll found 56% of midterm voters called AI and data centres a crucial or major factor, with most of those voting Democratic.\n\nSome of these votes are advisory rather than binding. But developers now face a map where local consent — not just power and land — is the scarce resource.",
-            "source": "Route Fifty",
-            "url": "https://www.route-fifty.com/artificial-intelligence/2026/11/voters-reject-data-centers-local-ballot-initiatives/417033/"
-          },
-          {
-            "title": "Florida's Treasure Coast roads stay impassable as shelters move and evacuations continue",
-            "summary": "Major roadways across Florida's Treasure Coast remained impassable on Wednesday after historic rainfall, law enforcement said, with closures in Martin and St. Lucie counties including stretches near the Savannas Preserve and the North Fork of the St. Lucie River. Port St. Lucie police were evacuating residents in the Vitalia at Tradition community affected by flooding.\n\nShelters were relocated Wednesday so schools could reopen: the general population shelter moved to the Havert L. Fenn Center in Fort Pierce, and the special medical needs shelter moved to the health department facility in St. Lucie. As of 9 a.m., 16 people were in the general shelter and five in the medical needs shelter.\n\nA National Weather Service meteorologist called November 2 at least a 500- to 1,000-year rainfall event, with about 12 inches near I-95 in Port St. Lucie. Wider reporting put 24 inches in 36 hours on Malabar in Brevard County, called it Melbourne's wettest day in 89 years, and counted two deaths and hundreds of rescues across the region.\n\nOfficials warned the water may take several days to recede: water control structures are open, but King Tides left the floodwater nowhere to flow.",
-            "source": "TCPalm",
-            "url": "https://www.tcpalm.com/story/weather/2026/11/04/port-st-lucie-fort-pierce-roads-flooded-after-historic-rainfall-jensen-beach-sebastian/92609710007/"
-          }
-        ]
-      },
-      {
-        "name": "Cleveland & Ohio",
-        "items": [
-          {
-            "title": "Amy Acton wins the Ohio governor's race — the first woman elected to the job — and Ramaswamy concedes",
-            "summary": "Democrat Amy Acton defeated Trump-backed Republican Vivek Ramaswamy to become the first woman elected governor in Ohio history, and the first Democrat to win the office in 20 years. Acton, the former Ohio Department of Health director and a first-time candidate, led 52.31% to 44.38% in one statewide summary, with the Associated Press showing 98% of precincts reporting — comfortably above Ohio's automatic recount threshold.\n\nRamaswamy conceded on Tuesday night, saying Ohioans were rooting for the success of her administration, and said he had called Acton and left a message congratulating her. Acton said Ohio had chosen unity and decency and promised to work with anyone to make life better in the state.\n\nShe campaigned on high costs, property and income tax relief, public education and tougher requirements for data centres. The race was not without a flashpoint: Ramaswamy aired an ad featuring Acton's estranged mother accusing her of lying, which his campaign said carried $4 million in airtime.\n\nActon takes office in January facing a Republican Ohio Senate that kept its supermajority — and a House that just lost its one (see below). How she governs across that split is the story of 2027.",
-            "source": "The Columbus Dispatch",
-            "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/04/highlights-of-2026-ohio-elections/92556120007/"
-          },
-          {
-            "title": "Sherrod Brown wins back a U.S. Senate seat, beating Jon Husted in the special election",
-            "summary": "Former Senator Sherrod Brown completed his comeback on Tuesday, defeating incumbent Senator Jon Husted in the special election to fill the seat JD Vance won in 2022 before becoming vice president. The term runs to January 2029. Brown led 50.01% to 45.15% in a statewide summary, with the AP showing 98% of precincts reporting.\n\nBrown lost re-election in 2024 after roughly 30 years in Congress; two years later he is going back, and his win helped Democrats retake the Senate majority. In his victory remarks he promised fights to end the tariffs, end the war, lower costs and raise paychecks.\n\nThe campaign turned on economic anxiety: Brown hammered Husted over data centres and rising utility costs, and voters cited higher grocery, gas, health insurance and electricity prices. Husted aligned closely with Trump and appeared with him at three late rallies. The race drew more than $500 million in political advertising this cycle.\n\nBrown returns as one of the Senate's most senior economic populists — in a majority that will need his vote on everything from nominees to war powers.",
-            "source": "The Columbus Dispatch",
-            "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/04/highlights-of-2026-ohio-elections/92556120007/"
-          },
-          {
-            "title": "Ohio Democrats win 8 of 15 U.S. House seats as Miller, Turner and Carey all lose",
-            "summary": "Ohio Democrats will hold 8 of the state's 15 U.S. House seats, up from five, after defeating three Republican incumbents on Tuesday. In the Cleveland-area 7th District, union ironworker Brian Poindexter beat Rep. Max Miller with about 54-55% of the vote; Miller conceded in a post on X. Poindexter carried Cuyahoga County with 61%.\n\nIn the Dayton-area 10th, Kristina Knickerbocker defeated Rep. Mike Turner, a former mayor who had served in Congress 23 years, by about 49% to 47% with all precincts reporting unofficially. In the Columbus-area 15th, former Ohio State professor Don Leonard upset Rep. Mike Carey by about 52% to 45%.\n\nDemocratic incumbents held the rest: Marcy Kaptur, the longest-serving woman in Congress, beat Derek Merrin 53-47 in the 9th; Emilia Sykes won the 13th; and Greg Landsman, Joyce Beatty and Shontel Brown also won.\n\nMiller's campaign had been overshadowed by domestic violence allegations from his ex-wife, which he denies. All results are unofficial until certified, but none of the three flips is within recount range on current numbers.",
-            "source": "The Columbus Dispatch",
-            "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/04/highlights-of-2026-ohio-elections/92556120007/"
-          },
-          {
-            "title": "Democrats sweep Ohio's statewide offices for the first time since 2008, as the last Republicans concede",
-            "summary": "The concessions landed through Wednesday and completed a sweep two decades in the making. Attorney General Keith Faber conceded early Wednesday to John Kulewicz, a first-time statewide candidate who becomes the first Democratic attorney general since Richard Cordray in 2008; the margin was about 50.31% to 49.69%. Jay Edwards conceded the treasurer's race Wednesday to Cincinnati council member Seth Walsh, who led by roughly 50,000 votes.\n\nAllison Russo won secretary of state — Ohio's chief elections officer — with Robert Sprague conceding before 11 p.m. Tuesday; Russo is the first Democrat to win a down-ballot statewide office since 2008. Republicans held one executive office: Frank LaRose, the current secretary of state, won auditor over Maple Heights Mayor Annette Blackwell, about 50.79% to 49.21%.\n\nOn the Ohio Supreme Court, Democrats held Justice Jennifer Brunner's seat and flipped another, with Marilyn Zayas beating incumbent Justice Dan Hawkins by about two points; Zayas would be the first Latina on the court. Democrats now hold two of seven seats.\n\nAll of these margins sit above Ohio's 0.25% statewide automatic recount threshold. Secretary of State Russo also sits on the Ohio Redistricting Commission — a seat with long consequences beyond this cycle.",
-            "source": "Signal Ohio",
-            "url": "https://signalohio.org/ohio-democrats-gain-long-lost-statewide-offices-including-attorney-general-elections-2026-midterm/"
-          },
-          {
-            "title": "'Cheaters': the Clase and Ortiz pitch-rigging trial opens in Brooklyn",
-            "summary": "Opening statements in the pitch-fixing trial of Cleveland Guardians pitchers Emmanuel Clase and Luis Ortiz were delivered Wednesday in Brooklyn federal court, after a two-day jury selection. Assistant U.S. Attorney Rebecca Urquiola told the jury the defendants are cheaters who sold their pitches.\n\nProsecutors say Clase befriended a gambler in the Dominican Republic in early 2023 and agreed to tip what pitches he would throw, enabling gamblers to win at least $460,000 on ball-and-strike prop bets. Clase is accused of rigging at least 18 pitches across 17 games from May 2023 to May 2025, sometimes using the code words 'chicken' or 'rooster' in texts, and of recruiting Ortiz in 2025. Ortiz is accused over two pitches in June 2025. Both have pleaded not guilty and face up to 65 years if convicted on all counts.\n\nThe defences diverged. Clase's lawyer said gambler Enoc Pena falsely claimed to have inside information and was selling lies — fellow gamblers lost more than 200 bets on Clase pitches. Ortiz's lawyer said Ortiz had no contact with gamblers and that two balls are not a conspiracy, just baseball.\n\nThe trial is expected to last about three weeks, with possible witnesses including pitching coach Carl Willis, several catchers and general manager Mike Chernoff. It is the first of five recent federal sports-gambling cases to reach trial.",
-            "source": "Associated Press",
-            "url": "https://www.thescore.com/mlb/news/3645171/guardians-pitchers-clase-ortiz-described-as-cheaters-at-trial"
-          },
-          {
-            "title": "Democrats break the GOP supermajority in the Ohio House, with four races headed toward recounts",
-            "summary": "Democrats declared victory in eight Ohio House seats previously held by Republicans, dropping the GOP below the 60-seat supermajority it had held since 2013. If current leads hold, the House would sit at 56 Republicans to 43 Democrats — meaning Governor-elect Acton will not face a veto-proof House, though the Ohio Senate kept its Republican supermajority after losing only two seats.\n\nThe flips included Megan Coy beating Rep. Mike Dovilla of Berea, Rose Lounsbury unseating Rep. Andrea White of Kettering, Krista Allison unseating Rep. Jim Thomas, and Shelby Kimball unseating Rep. Brian Lorenz, plus four open-seat wins.\n\nFour more races are too close to call: Rep. Cindy Abrams leads by just 19 votes, Tom Herner leads Rep. Tom Young by 134, Haraz Ghanbari leads by 126, and Edward Schimmel holds a slim lead. District races trigger an automatic recount below 0.5%, and county boards must complete their canvass by November 24.\n\nAnalysts expect a lame-duck push in Columbus before Acton takes office in January, while both parties watch those four recounts — each one changes how much room she has to govern.",
-            "source": "The Columbus Dispatch",
-            "url": "https://www.dispatch.com/story/news/politics/state/2026/11/04/acton-wont-face-gop-supermajority-but-how-will-she-work-with-lawmakers/92566013007/"
-          }
-        ]
-      }
-    ]
-  },
-  "recipes": [
-    {
-      "name": "Roast pork loin with apples",
-      "basedOn": "Meijer — whole boneless pork loin $1.99/lb + Gala apples $0.99/lb",
-      "blurb": "One-pot roast: seared loin nestled into apples and shallots — protein-rich, slices ahead, reheats beautifully.",
-      "time": "15 min prep · 55 min roast",
-      "servings": "6 servings",
-      "cost": "≈$12 total · ≈$2.00/serving",
-      "calories": "≈430 kcal/serving",
-      "nutrition": "Protein 38g · Carbs 14g · Fat 24g",
-      "ingredients": [
-        "3 lb boneless pork loin",
-        "2 lb Gala apples, quartered",
-        "3 shallots, halved",
-        "6 garlic cloves (pantry)",
-        "1 tsp dried rosemary (pantry)",
-        "1 tbsp olive oil (pantry)",
-        "1/2 cup apple juice or broth (pantry)"
-      ]
-    },
-    {
-      "name": "Slow-cooker BBQ pulled pork sandwiches",
-      "img": "https://butterwithasideofbread.com/wp-content/uploads/2021/09/Crockpot-BBQ-Pulled-Pork-6.jpg",
-      "basedOn": "Meijer — whole boneless pork loin $1.99/lb (second half of the loin)",
-      "blurb": "Set it in the morning, shred at dinner — the ultimate one-handed meal, and it freezes in portions for later.",
-      "time": "15 min prep · 8 hrs slow-cook (hands-off)",
-      "servings": "8 servings",
-      "cost": "≈$14 total · ≈$1.75/serving",
-      "calories": "≈520 kcal/serving",
-      "nutrition": "Protein 36g · Carbs 42g · Fat 22g",
-      "ingredients": [
-        "4 lb boneless pork loin",
-        "18 oz BBQ sauce",
-        "1 onion, sliced",
-        "1/2 cup light brown sugar (pantry)",
-        "1 tsp each cumin + paprika (pantry)",
-        "8 sandwich buns"
-      ]
-    },
-    {
-      "name": "Greek pork souvlaki pitas with tzatziki",
-      "basedOn": "Meijer — pork loin $1.99/lb + Pompeian olive oil BOGO Free · Giant Eagle — Chobani 5 for $5",
-      "blurb": "Mediterranean: lemon-oregano pork skewers in warm pitas with cool yogurt tzatziki — wrap it and eat one-handed.",
-      "time": "20 min prep · 12 min grill",
-      "servings": "4 servings",
-      "cost": "≈$11 total · ≈$2.75/serving",
-      "calories": "≈540 kcal/serving",
-      "nutrition": "Protein 40g · Carbs 38g · Fat 24g",
-      "ingredients": [
-        "1.5 lb pork loin, cubed",
-        "1/2 cup olive oil (pantry)",
-        "4 tbsp lemon juice + 2 tsp oregano (pantry)",
-        "2 cups Greek yogurt (Chobani)",
-        "1 cucumber, grated",
-        "4 pocketless pitas",
-        "2 garlic cloves (pantry)"
-      ]
-    },
-    {
-      "name": "Greek lemon chicken thighs & potatoes",
-      "img": "https://www.acedarspoon.com/wp-content/uploads/2020/10/Greek-Lemon-Chicken-Image-8.jpg",
-      "basedOn": "Meijer — family pack chicken thighs $3.19/lb + olive oil BOGO Free",
-      "blurb": "Mediterranean one-pan staple: thighs simmer with potatoes in lemon, garlic and oregano — mostly hands-off.",
-      "time": "15 min prep · 40 min simmer",
-      "servings": "4 servings",
-      "cost": "≈$14 total · ≈$3.50/serving",
-      "calories": "≈450 kcal/serving",
-      "nutrition": "Protein 39g · Carbs 18g · Fat 25g",
-      "ingredients": [
-        "3 lb chicken thighs",
-        "1 lb red potatoes, chunked",
-        "1/3 cup olive oil (pantry)",
-        "2 lemons, juiced + sliced",
-        "4 garlic cloves (pantry)",
-        "2 tsp dried oregano (pantry)",
-        "1/2 cup chicken broth (pantry)"
-      ]
-    },
-    {
-      "name": "Chicken shawarma bowls with garlic yogurt sauce",
-      "img": "https://theeastcoastkitchen.com/wp-content/uploads/2026/10/Sheet-Pan-Chicken-Shawarma-2-edited-1024x576.jpg",
-      "basedOn": "Meijer — chicken thighs $3.19/lb · Giant Eagle — Chobani 5 for $5",
-      "blurb": "Levantine sheet-pan bowls: warm-spiced thighs over rice with a garlicky lemon yogurt sauce — easy to eat holding the baby.",
-      "time": "15 min prep · 25 min roast",
-      "servings": "4 servings",
-      "cost": "≈$13 total · ≈$3.25/serving",
-      "calories": "≈560 kcal/serving",
-      "nutrition": "Protein 44g · Carbs 45g · Fat 22g",
-      "ingredients": [
-        "2 lb boneless skinless chicken thighs",
-        "1 cup Greek yogurt (Chobani)",
-        "3 tbsp olive oil (pantry)",
-        "2 tsp cumin + 2 tsp smoked paprika (pantry)",
-        "1 lemon, juiced",
-        "2 cups cooked rice (pantry)",
-        "1 red onion + 1 bell pepper"
-      ]
-    },
-    {
-      "name": "Chicken piccata with lemon & capers",
-      "img": "https://thegardeningcook.com/wp-content/uploads/2013/09/lemon-chicken-piccata.jpg",
-      "basedOn": "Giant Eagle — chicken breasts $3.99/lb · Meijer — olive oil BOGO Free",
-      "blurb": "Coastal Italian classic: golden cutlets in a bright lemon-caper sauce, on the table in about 30 minutes.",
-      "time": "10 min prep · 15 min cook",
-      "servings": "4 servings",
-      "cost": "≈$12 total · ≈$3.00/serving",
-      "calories": "≈360 kcal/serving",
-      "nutrition": "Protein 37g · Carbs 9g · Fat 16g",
-      "ingredients": [
-        "1.5 lb boneless skinless chicken breasts",
-        "1/3 cup lemon juice (about 2 lemons)",
-        "1/4 cup capers, rinsed",
-        "3 tbsp olive oil (pantry)",
-        "1/4 cup flour (pantry)",
-        "1/2 cup chicken broth or white wine (pantry)",
-        "2 tbsp butter (pantry)"
-      ]
-    },
-    {
-      "name": "Mediterranean stuffed peppers",
-      "img": "https://www.acedarspoon.com/wp-content/uploads/2022/06/Mediterranean-Ground-Beef-Stuffed-Peppers-Image-11.jpg",
-      "basedOn": "Meijer — ground chuck $5.29/lb + olive oil BOGO Free",
-      "blurb": "Lebanese-spiced beef and rice baked in pepper halves with feta — iron-rich, make-ahead, freezes for a month.",
-      "time": "15 min prep · 50 min bake",
-      "servings": "6 servings",
-      "cost": "≈$13 total · ≈$2.25/serving",
-      "calories": "≈480 kcal/serving",
-      "nutrition": "Protein 27g · Carbs 38g · Fat 24g",
-      "ingredients": [
-        "1 lb ground chuck",
-        "3 large bell peppers, halved",
-        "1 cup cooked rice (pantry)",
-        "15 oz can diced tomatoes",
-        "1/2 cup crumbled feta",
-        "2 tbsp olive oil (pantry)",
-        "1 tsp each cinnamon + allspice (pantry)"
-      ]
-    },
-    {
-      "name": "Italian meatballs in tomato sauce",
-      "img": "https://www.mychefsapron.com/wp-content/uploads/Italian-gluten-free-meatballs-in-tomato-sauce.jpg",
-      "basedOn": "Meijer — ground chuck $5.29/lb + Pompeian olive oil BOGO Free",
-      "blurb": "Coastal Italian comfort: tender beef meatballs simmered low in tomato sauce — serve over pasta, freeze the rest.",
-      "time": "30 min prep · 90 min simmer (hands-off)",
-      "servings": "8 servings",
-      "cost": "≈$18 total · ≈$2.25/serving",
-      "calories": "≈520 kcal/serving",
-      "nutrition": "Protein 34g · Carbs 30g · Fat 28g",
-      "ingredients": [
-        "2 lb ground chuck",
-        "1 egg (pantry)",
-        "1 cup grated Parmesan",
-        "2 cans whole peeled tomatoes",
-        "6 tbsp olive oil (pantry)",
-        "3 garlic cloves (pantry)",
-        "1 lb pasta (pantry)"
-      ]
-    },
-    {
-      "name": "Slow-cooker turkey & white bean chili",
-      "img": "https://forktospoon.com/wp-content/uploads/2023/11/Slow-Cooker-Turkey-White-Bean-Chili-6-760x760.png",
-      "basedOn": "Giant Eagle — frozen turkey 95¢/lb (roast the bird, chili from the leftovers)",
-      "blurb": "Creamy, high-protein chili with white beans and green chiles — dump, slow-cook, and eat with one hand; freezes great.",
-      "time": "15 min prep · 6 hrs slow-cook (hands-off)",
-      "servings": "6 servings",
-      "cost": "≈$11 total · ≈$1.85/serving",
-      "calories": "≈450 kcal/serving",
-      "nutrition": "Protein 35g · Carbs 48g · Fat 16g",
-      "ingredients": [
-        "3 cups shredded cooked turkey (from the 95¢/lb bird)",
-        "2 cans cannellini beans",
-        "1 can great northern beans",
-        "2 cans diced green chiles",
-        "1 cup salsa verde",
-        "4 cups chicken broth (pantry)",
-        "4 oz cream cheese"
-      ]
-    },
-    {
-      "name": "London broil beef & broccoli",
-      "img": "https://www.jocooks.com/wp-content/uploads/2022/07/beef-and-broccolli-1-10.jpg",
-      "basedOn": "Giant Eagle — London broil $5.99/lb · Meijer — broccoli crowns 2 for $3",
-      "blurb": "Iron-rich takeout favorite at home: thin-sliced beef and bright broccoli in a glossy ginger-soy sauce over rice.",
-      "time": "15 min prep · 10 min stir-fry",
-      "servings": "4 servings",
-      "cost": "≈$11 total · ≈$2.75/serving",
-      "calories": "≈400 kcal/serving",
-      "nutrition": "Protein 32g · Carbs 30g · Fat 17g",
-      "ingredients": [
-        "1 lb London broil, sliced thin",
-        "1 head broccoli crowns (2 for $3)",
-        "1/2 cup low-sodium soy sauce (pantry)",
-        "3 garlic cloves + 1 tsp ginger (pantry)",
-        "3 tbsp honey (pantry)",
-        "2 tbsp cornstarch (pantry)",
-        "2 cups cooked rice (pantry)"
-      ]
-    },
-    {
-      "name": "Broccoli, bacon & cheddar quiche",
-      "img": "https://simplymadeeats.com/wp-content/uploads/2024/11/broccoli-bacon-cheddar-quiche.jpg",
-      "basedOn": "Meijer — Oscar Mayer bacon BOGO Free + broccoli crowns 2 for $3",
-      "blurb": "Slice-and-reheat all week: protein-packed quiche that works for dinner, midnight feeds and breakfast alike.",
-      "time": "20 min prep · 40 min bake",
-      "servings": "6 servings",
-      "cost": "≈$11 total · ≈$1.85/serving",
-      "calories": "≈420 kcal/serving",
-      "nutrition": "Protein 19g · Carbs 18g · Fat 30g",
-      "ingredients": [
-        "6 slices Oscar Mayer bacon",
-        "1 lb broccoli, chopped small",
-        "5 eggs",
-        "1 store-bought pie crust",
-        "1 cup shredded cheddar",
-        "3/4 cup milk (pantry)",
-        "1/4 cup heavy cream"
-      ]
-    },
-    {
-      "name": "Apple pork chop skillet",
-      "basedOn": "Giant Eagle — boneless pork chops BOGO Free · Meijer — apples $0.99/lb",
-      "blurb": "BOGO chops seared with sweet apples and onion — cozy, quick, and the leftovers reheat without drying out.",
-      "time": "10 min prep · 20 min cook",
-      "servings": "4 servings",
-      "cost": "≈$9 total · ≈$2.25/serving",
-      "calories": "≈380 kcal/serving",
-      "nutrition": "Protein 34g · Carbs 16g · Fat 19g",
-      "ingredients": [
-        "4 boneless center cut pork chops (BOGO pack)",
-        "2 Gala apples, sliced",
-        "1 onion, sliced",
-        "1 tbsp olive oil (pantry)",
-        "1 tsp Dijon mustard (pantry)",
-        "1/2 tsp dried thyme (pantry)",
-        "1/2 cup chicken broth (pantry)"
-      ]
-    },
-    {
-      "name": "Greek yogurt chicken salad wraps",
-      "basedOn": "Giant Eagle — chicken breasts $3.99/lb + Chobani 5 for $5",
-      "blurb": "Mediterranean no-cook night: tangy yogurt chicken salad in wraps — make it at nap time, eat it one-handed anytime.",
-      "time": "15 min prep · no cook (uses cooked chicken)",
-      "servings": "4 servings",
-      "cost": "≈$9 total · ≈$2.25/serving",
-      "calories": "≈340 kcal/serving",
-      "nutrition": "Protein 36g · Carbs 24g · Fat 10g",
-      "ingredients": [
-        "1 lb cooked chicken breast, shredded",
-        "1 cup Greek yogurt (Chobani)",
-        "1 tbsp lemon juice",
-        "1 tsp Dijon mustard (pantry)",
-        "1 celery stalk, diced",
-        "4 large wraps or pitas",
-        "1 tsp dried dill (pantry)"
-      ]
-    },
-    {
-      "name": "Turkey lentil soup",
-      "basedOn": "Giant Eagle — frozen turkey 95¢/lb (second meal from the same bird)",
-      "blurb": "Iron- and protein-rich recovery soup: lentils and leftover turkey simmer into a freezer-friendly pot for the week.",
-      "time": "15 min prep · 45 min simmer",
-      "servings": "6 servings",
-      "cost": "≈$8 total · ≈$1.35/serving",
-      "calories": "≈320 kcal/serving",
-      "nutrition": "Protein 28g · Carbs 34g · Fat 7g",
-      "ingredients": [
-        "2 cups shredded cooked turkey",
-        "1.5 cups dry brown lentils (pantry)",
-        "2 carrots + 2 celery stalks",
-        "1 onion + 2 garlic cloves (pantry)",
-        "6 cups chicken or turkey broth (pantry)",
-        "1 tsp cumin (pantry)",
-        "1 tbsp olive oil (pantry)"
-      ]
-    }
+ "dailyBrief": {
+  "date": "Thursday, November 5, 2026",
+  "text": "Good morning, Smileys — Benji is four days old, and Mike, you're off work today to help Kelly at home, which is exactly where the day should be spent. Overnight, the Ukraine aid-centre death toll rose to 42 ahead of next week's Abu Dhabi peace talks, oil fell for a fourth straight day on hopes the midterm result pushes Washington toward an Iran deal, and the post-election map settled: Democrats hold both chambers of Congress, and Ohio has a governor-elect in Amy Acton and a returning senator in Sherrod Brown. The Cavs lost the rematch in Oklahoma City last night, 124-116, despite Donovan Mitchell's late flurry, and Jarrett Allen left early with a knee knock — they're home Friday against Philadelphia and Saturday against the Knicks. Solon stays cloudy and dry today with a high near 61°, but rain and a sharp cooldown arrive Friday into Saturday, so today is the day for any errands. If energy somehow allows tonight, Hadestown is at Playhouse Square at 7:30 PM.",
+  "chips": [
+   "👶 Benji Day 4 — Mike's day off at home with Kelly and Benji",
+   {
+    "label": "☁️ Solon today: cloudy, high 61°, dry · rain Fri–Sat, highs in the 40s",
+    "url": "https://weather.com/us/oh/city/solon/tenday"
+   },
+   {
+    "label": "🇺🇦 Ukraine aid-centre toll rises to 42 · Abu Dhabi talks Nov 10–11",
+    "url": "https://www.reuters.com/world/europe/death-toll-russian-strike-ukrainian-aid-centre-reaches-42-police-say-2026-11-05/"
+   },
+   {
+    "label": "🏀 Cavs lost 124-116 at OKC · home Fri 7:30 PM vs 76ers + Sat 8 PM vs Knicks",
+    "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
+   },
+   {
+    "label": "🎭 Tonight: Hadestown at Playhouse Square, 7:30 PM",
+    "url": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
+   }
   ],
-  "tickerExtras": [
-    "🏀 Cavs (4-3) at Thunder (5-2) TONIGHT Wed Nov 4, 8 PM ET in Oklahoma City — rematch after OKC won 117-112 in Cleveland Mon (SGA 43) · OKC out: Holmgren, Williams, Wallace · Ohio State hoops (0-1) next: Youngstown State at home Fri Nov 6, 6:30 PM",
-    "🏈 Browns (5-3) at Saints (2-5) Sun Nov 8, 1 PM · Watson in concussion protocol, Shedeur Sanders took all No. 1 reps Wed and is in line to start · Ohio State football (6-2) hosts Oregon Sat Nov 7, 3:30 PM on CBS · Guardians: Clase/Ortiz trial Day 1 in Brooklyn — prosecutors call them 'cheaters'",
-    "🗳️ Top story: Democrats take Congress and vow to rein in Trump as divided government looms — Senate at least 54-44, House +25 · Vance: 'The reason we lost is the war' · Results unofficial, new Congress convenes in January",
-    "🏷️ Deal of the day: Giant Eagle Market District (Solon) — sirloin tip roasts or value pack steaks BOGO Free in the ad running through Nov 4",
-    "🚗 Roads: Solon-area roads normal today — I-271, US-422 and Aurora Rd clear with no incidents reported in ODOT/OHGO checks",
-    "📉 Nasdaq in correction after Monday's AI selloff (Nasdaq -1.07%, Dow +0.41%) · Oil steadies near $105 after plunging ~8% on U.S.–Iran talk hopes"
-  ],
-  "updated": "2026-11-04",
-  "baby": {
-    "tip": "Homecoming day tip: before you leave the hospital, do the car-seat check while help is still right there — base tight, straps snug at armpit level, and Benji's first ride home in a rear-facing seat in the back. Then tonight, keep it simple: one bag unpacked, feeding log started, and the diaper bag restocked for tomorrow's first pediatrician visit. If anything about feeding, breathing or temperature worries you at home, call the pediatrician or your OB team — that's exactly what they're there for.",
-    "fact": "Newborns sleep a lot but in short stretches — typically 16 to 17 hours a day, broken into naps of just a few hours at a time, because their tiny stomachs need frequent feeding. Benji's sleep will feel random this first week; short, frequent stretches around the clock are completely normal for a brand-new baby.",
-    "fun": "Today's tiny mission: the first family photo at home — Mike, Kelly, Benji and Moose in one frame (Moose at a calm, supervised distance for take one). It doesn't need to be perfect; the slightly chaotic version is the one you'll love most in a year."
-  },
-  "watch": {
-    "date": "Tuesday, November 3, 2026",
-    "items": [
-      {
-        "title": "SCARY ENCOUNTERS with MONSTERS and LEGENDS!",
-        "channel": "Spaced Out Radio",
-        "url": "https://www.youtube.com/watch?v=hPG6oUKHibs",
-        "why": "Fresh today, Nov 3: Christian MacLeod, 'The Cryptid Guy' with 25+ years investigating, recounts scary monster-and-legend encounters."
-      },
-      {
-        "title": "Where Are All the LITTLE GREEN MEN?",
-        "channel": "Spaced Out Radio",
-        "url": "https://www.youtube.com/watch?v=putp4bCm0AM",
-        "why": "Nov 2: Dr. Terry Adair on the Fermi Paradox and why advanced alien civilisations may fail — a long-form UFO interview, no Grusch."
-      },
-      {
-        "title": "A MATTER OF LIFE OR DEATH: SURVIVAL, DOOMSDAY & CRYPTID ENCOUNTERS",
-        "channel": "Surviving Bigfoot",
-        "url": "https://www.youtube.com/watch?v=zzQ-MS0-zjY",
-        "why": "Nov 2: a rattlesnake close call while Bigfooting in Alabama, plus field-research survival — how to make it home in one piece."
-      },
-      {
-        "title": "He Didn't See It Until It Ran | California Bigfoot Encounter | Bigfoot Society 1231",
-        "channel": "Bigfoot Society",
-        "url": "https://www.youtube.com/watch?v=gOKcta9IFwU",
-        "why": "Nov 1: Corey watches an orange figure tear through California brush less than 30 feet away, then years of movement pacing him."
-      },
-      {
-        "title": "A Flash of Beauty: Caroline and Eric",
-        "channel": "A Flash of Beauty",
-        "url": "https://www.youtube.com/watch?v=Yi-G7ttXess",
-        "why": "Nov 2: a couple breaks 15 years of silence about Wasatch Mountains encounters — glowing eyes, prints, gifts left on a stump."
-      },
-      {
-        "title": "BIGFOOT EXPOSED? PATTERSON–GIMLIN VS. CAPTURING BIGFOOT 2026",
-        "channel": "Coven of Curiosities Podcast",
-        "url": "https://www.youtube.com/watch?v=K863Y5M1hXk",
-        "why": "Live tonight Nov 3 at 9 PM ET (replay on the same link): a roundtable pitting the 1967 Patterson-Gimlin film against the new Capturing Bigfoot footage."
-      }
-    ]
-  },
-  "movies": [
-    {
-      "title": "Ramayana",
-      "when": "Thu Nov 5",
-      "date": "Opens Thu Nov 5",
-      "hook": "The ancient Indian epic on the big screen, following Prince Rama's legendary journey. Starring Ranbir Kapoor, Sai Pallavi and Yash."
-    },
-    {
-      "title": "The Cat in the Hat",
-      "when": "Fri Nov 6",
-      "date": "Opens Fri Nov 6",
-      "hook": "Warner Bros. Pictures Animation's animated Dr. Seuss reinvention — the Cat must cheer up siblings Gabby and Sebastian or lose his job. Voices: Bill Hader, Xochitl Gómez, Matt Berry, Quinta Brunson, Giancarlo Esposito and America Ferrera."
-    },
-    {
-      "title": "Godzilla Minus Zero",
-      "when": "Fri Nov 6",
-      "date": "Opens Fri Nov 6 · also IMAX",
-      "hook": "Takashi Yamazaki's direct sequel to Godzilla Minus One, set two years later in 1949 as Japan rebuilds and a new threat emerges. Starring Ryūnosuke Kamiki, Minami Hamabe and Yuki Yamada."
-    },
-    {
-      "title": "Ebenezer",
-      "when": "Fri Nov 13",
-      "date": "Opens Fri Nov 13",
-      "hook": "Ti West's take on Dickens — miserly Ebenezer Scrooge is haunted by three spirits on Christmas Eve for one last chance to change. Starring Johnny Depp, Rupert Grint, Andrea Riseborough and Sam Claflin."
-    },
-    {
-      "title": "The Hunger Games: Sunrise on the Reaping",
-      "when": "Fri Nov 20",
-      "date": "Opens Fri Nov 20 · IMAX early screenings Wed Nov 18",
-      "hook": "Prequel set 24 years before the original, following 16-year-old Haymitch Abernathy in the 50th Hunger Games. Starring Joseph Zada, Mckenna Grace, Elle Fanning, Jesse Plemons, Ralph Fiennes and Glenn Close."
-    },
-    {
-      "title": "Hexed",
-      "when": "Wed Nov 25",
-      "date": "Opens Wed Nov 25",
-      "hook": "Walt Disney Animation Studios' new magical coming-of-age saga — impulsive teen Billie discovers secret magical abilities that upend her world. Voices include Hailee Steinfeld, Rashida Jones, Tracey Ullman and Stephen Fry."
-    }
-  ],
-  "eats": [
-    {
-      "name": "Burntwood Tavern",
-      "area": "Solon",
-      "deals": [
-        "Kids Eat Free Mondays",
-        "Happy Hour Mon–Fri 3–6pm: $5 draughts, $9 signature cocktails, $9 appetizers",
-        "Football Sundays: 10 game-day favorites for $10 each, 10am–4pm"
-      ]
-    },
-    {
-      "name": "Cowboy Food & Drink",
-      "area": "Chagrin Falls",
-      "deals": [
-        "Kids Eat Free Mondays",
-        "Half-Off Wings Tuesdays"
-      ]
-    },
-    {
-      "name": "Wingstop",
-      "area": "Solon",
-      "deals": [
-        "70¢ boneless wings Mon–Tue (participating locations, in-store / wingstop.com / app)"
-      ]
-    },
-    {
-      "name": "Bob Evans",
-      "area": "Solon",
-      "deals": [
-        "Kids Eat Free Tuesdays after 4pm — 1 free kids meal (12 & under) per adult entrée, dine-in"
-      ]
-    },
-    {
-      "name": "Winking Lizard",
-      "area": "Macedonia",
-      "deals": [
-        "Wing Night Mon–Tue, after 3pm, dine-in only"
-      ]
-    },
-    {
-      "name": "Condado Tacos",
-      "area": "Orange",
-      "deals": [
-        "Mon & Wed: $4 house margaritas + $6 Street Tacos (3 tacos)",
-        "Taco Tuesday: $4 Lucy's Fire, Blue Dream, or Rango Tango tacos",
-        "Kids Eat Free: 2 free kids meals with $12+ food purchase, dine-in only"
-      ]
-    }
-  ],
-  "streaming": [
-    {
-      "title": "Harry Potter",
-      "service": "HBO Max",
-      "when": "Fri Dec 25",
-      "date": "Series premiere · Christmas Day",
-      "type": "New series",
-      "hook": "Season 1 covers Philosopher's Stone across 8 episodes — Dominic McLaughlin as Harry, John Lithgow as Dumbledore, Nick Frost as Hagrid. New this week: David Threlfall will voice the Sorting Hat and Leo Bill plays Nearly Headless Nick (announced Oct 30), and the first poster landed Nov 1. Already renewed for Season 2."
-    },
-    {
-      "title": "All's Fair — Season 2",
-      "service": "Hulu",
-      "when": "Wed Nov 4",
-      "date": "Season premiere Wed Nov 4 · three-episode premiere per streaming roundups",
-      "type": "New season",
-      "hook": "Ryan Murphy's legal drama returns — Kim Kardashian, Niecy Nash-Betts, Naomi Watts, Sarah Paulson, Teyana Taylor and Glenn Close as the divorce lawyers of Grant, Ronson & Greene."
-    },
-    {
-      "title": "Black Doves — Season 2",
-      "service": "Netflix",
-      "when": "Thu Nov 5",
-      "date": "Season premiere Thu Nov 5 · all 6 episodes",
-      "type": "New season",
-      "hook": "Keira Knightley returns as spy Helen Webb, with Ben Whishaw as assassin Sam and Sarah Lancashire as handler Mrs. Reed. New cast includes Neve Campbell and Ambika Mod."
-    },
-    {
-      "title": "The Lord of the Rings: The Rings of Power — Season 3",
-      "service": "Prime Video",
-      "when": "Wed Nov 11",
-      "date": "Season premiere Wed Nov 11 · first 4 episodes, then weekly pairs",
-      "type": "New season",
-      "hook": "Five-year time jump into wartime Middle-earth as Sauron moves toward forging the One Ring. Stars Morfydd Clark, Charlie Vickers and Daniel Weyman as Gandalf, with Jamie Campbell Bower joining as Celeborn."
-    },
-    {
-      "title": "Being Heumann",
-      "service": "Apple TV+",
-      "when": "Fri Nov 13",
-      "date": "Streaming Fri Nov 13 · after a limited theatrical run Nov 6",
-      "type": "Movie",
-      "hook": "Sian Heder's drama about disability-rights activist Judith Heumann."
-    },
-    {
-      "title": "Percy Jackson and the Olympians — Season 3",
-      "service": "Disney+",
-      "when": "Fri Nov 20",
-      "date": "Season premiere Fri Nov 20 · two-episode premiere, also on Hulu",
-      "type": "New season",
-      "hook": "Season 3 adapts The Titan's Curse — Percy (Walker Scobell) searches for a missing Annabeth as the Hunters of Artemis enter the story, with Leah Sava Jeffries."
-    },
-    {
-      "title": "Yellowjackets — Season 4 (Final Season)",
-      "service": "Paramount+",
-      "when": "Fri Nov 20",
-      "date": "Final season premiere Fri Nov 20 · weekly Fridays",
-      "type": "New season",
-      "hook": "The final chapter as the survivors near rescue and race to bury what happened in the wilderness. Starring Melanie Lynskey, Christina Ricci, Sophie Thatcher and Hilary Swank."
-    },
-    {
-      "title": "Blade Runner 2099",
-      "service": "Prime Video",
-      "when": "Wed Nov 25",
-      "date": "Series premiere Wed Nov 25 · all 8 episodes",
-      "type": "New series",
-      "hook": "Limited series set 50 years after Blade Runner 2049 — Michelle Yeoh as Olwen, a replicant Blade Runner near the end of her life, and Hunter Schafer as Cora. Ridley Scott executive produces."
-    }
+  "links": [
+   {
+    "phrase": "the Ukraine aid-centre death toll rose to 42",
+    "url": "https://www.reuters.com/world/europe/death-toll-russian-strike-ukrainian-aid-centre-reaches-42-police-say-2026-11-05/"
+   },
+   {
+    "phrase": "oil fell for a fourth straight day",
+    "url": "https://www.businesstoday.com.my/2026/11/05/oil-extends-losses-after-us-midterm-results-raise-hopes-of-iran-deal/"
+   },
+   {
+    "phrase": "Ohio has a governor-elect in Amy Acton",
+    "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/04/highlights-of-2026-ohio-elections/92556120007/"
+   },
+   {
+    "phrase": "The Cavs lost the rematch in Oklahoma City last night, 124-116",
+    "url": "https://www.news9.com/oklahoma-city-thunder/okc-thunder-win-over-cavaliers"
+   },
+   {
+    "phrase": "Hadestown is at Playhouse Square at 7:30 PM",
+    "url": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
+   }
   ]
+ },
+ "babyDue": null,
+ "weekBrief": {
+  "text": "Benji's first full week at home is a settle-in week: he was born Sunday, came home Tuesday, saw his pediatrician Wednesday, and now gets a quiet house while Mike takes Thursday off to help Kelly. Solon's weather turns with the weekend — cloudy and dry near 61° Thursday, then rain and a sharp cooldown Friday (49°) and Saturday (46°), clearing Sunday and rebounding into the 50s and low 60s through Tuesday. The week's best grocery move is a Thanksgiving stock-up: Meijer brand frozen turkeys at 79¢/lb or less through November 26 beat Giant Eagle's 95¢/lb, and one bird covers a roast dinner now plus soup and chili later. If energy allows, the Cavs are home twice at Rocket Arena — Friday against Philadelphia and Saturday against the Knicks — alongside Hadestown at Playhouse Square on Thursday, the free Día de Muertos celebration on Saturday, Ohio State hosting Oregon Saturday afternoon, and the Browns at New Orleans on Sunday.",
+  "chips": [
+   "👶 Benji's first full week at home — born Nov 1, Day 4 today",
+   {
+    "label": "🌦️ Thu 61° cloudy · Fri 49° rain · Sat 46° rain · Sun–Tue dry, 50s–61°",
+    "url": "https://weather.com/us/oh/city/solon/tenday"
+   },
+   {
+    "label": "🏷️ Meijer frozen turkeys 79¢/lb or less thru Nov 26 · Giant Eagle 95¢/lb Nov 5–11",
+    "url": "https://www.prnewswire.com/news-releases/savings-are-served-meijer-offering-deep-discounts-on-turkeys-and-thanksgiving-favorites-302929540.html"
+   },
+   {
+    "label": "🏀 Cavs home Fri 7:30 PM vs 76ers + Sat 8 PM vs Knicks · 🏈 Ohio State vs Oregon Sat 3:30 PM · Browns at Saints Sun 1 PM",
+    "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
+   },
+   {
+    "label": "🎭 Hadestown Thu 7:30 PM · Día de Muertos Sat 11 AM–10 PM (free)",
+    "url": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
+   }
+  ],
+  "links": [
+   {
+    "phrase": "Meijer brand frozen turkeys at 79¢/lb or less through November 26",
+    "url": "https://www.prnewswire.com/news-releases/savings-are-served-meijer-offering-deep-discounts-on-turkeys-and-thanksgiving-favorites-302929540.html"
+   },
+   {
+    "phrase": "the Cavs are home twice at Rocket Arena",
+    "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
+   },
+   {
+    "phrase": "Hadestown at Playhouse Square on Thursday",
+    "url": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
+   },
+   {
+    "phrase": "Día de Muertos celebration on Saturday",
+    "url": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
+   }
+  ]
+ },
+ "deals": {
+  "range": "Weekly ads — Nov 4 – Nov 11",
+  "stores": [
+   {
+    "name": "Meijer — Bainbridge/Aurora",
+    "note": "Ad Nov 4 – Nov 10 · Prices verified from this week's ad price list",
+    "link": "https://weeklyadhunters.com/meijer-weekly-flyer-savings/",
+    "items": [
+     [
+      "Fresh from Meijer whole boneless pork loin (avg 8–10 lb)",
+      "$1.99/lb",
+      "Recipe anchor — roast, pulled pork & souvlaki"
+     ],
+     [
+      "Butterball frozen Grade A turkey",
+      "$1.29/lb",
+      ""
+     ],
+     [
+      "Fresh from Meijer family pack boneless skinless chicken thighs",
+      "$3.19/lb",
+      "Family pack"
+     ],
+     [
+      "Certified Angus Beef ground chuck, 2.5 lb pkg or larger",
+      "$5.29/lb",
+      ""
+     ],
+     [
+      "Pompeian olive oil 24 oz",
+      "BOGO Free",
+      "Buy 1 Get 1 Free"
+     ],
+     [
+      "Oscar Mayer bacon 12–16 oz",
+      "BOGO Free",
+      "Buy 1 Get 1 Free"
+     ],
+     [
+      "Bulk Granny Smith or Gala apples",
+      "$0.99/lb",
+      ""
+     ],
+     [
+      "Broccoli crowns",
+      "2 for $3",
+      ""
+     ]
+    ]
+   },
+   {
+    "name": "Giant Eagle Market District — Solon",
+    "note": "New ad Nov 5 – Nov 11 · Prices verified from this week's ad price list",
+    "link": "https://weeklyadhunters.com/giant-eagle-weekly-ad/",
+    "items": [
+     [
+      "Giant Eagle / Shady Brook Farms frozen turkeys",
+      "$0.95/lb",
+      "Standout — stock up for Thanksgiving"
+     ],
+     [
+      "Boneless center cut pork chops or roasts",
+      "BOGO Free",
+      "Buy 1 Get 1 Free"
+     ],
+     [
+      "Market District top round London broil or roasts",
+      "$5.99/lb",
+      ""
+     ],
+     [
+      "Giant Eagle fresh boneless skinless chicken breasts",
+      "$3.99/lb",
+      ""
+     ],
+     [
+      "Giant Eagle all-purpose flour 5 lb (also granulated sugar 4 lb)",
+      "$0.95",
+      "Each — baking staples at 95¢"
+     ],
+     [
+      "Chobani Greek yogurt or Creations cups",
+      "5 for $5",
+      ""
+     ],
+     [
+      "Market District jumbo blueberries 9.8 oz",
+      "BOGO Free",
+      "Buy 1 Get 1 Free"
+     ],
+     [
+      "Rotisserie chicken",
+      "$1.99",
+      "Each, as listed in this week's ad"
+     ]
+    ]
+   },
+   {
+    "name": "Heinen's — Bainbridge & Chagrin Falls",
+    "note": "Ad Nov 4 – Nov 10 · This week's ad is an image flyer — prices couldn't be verified from the flyer this week, so no prices are listed; full ad at the store link",
+    "link": "https://www.theweeklyad.com/heinens-weekly-ad/",
+    "items": [
+     [
+      "See this week's full ad at the store link — produce, meat & deli specials",
+      "",
+      "Image flyer"
+     ]
+    ]
+   },
+   {
+    "name": "Miles Farmers Market — Solon",
+    "note": "Flyer dated Wed Nov 4 · 28560 Miles Rd · Miles posts its specials as a single-image flyer — prices couldn't be verified from the flyer this week, so no prices are listed; full flyer at the store link",
+    "link": "https://www.milesfarmersmarket.com/wp-content/uploads/2026/11/MilesAd11.04.26-scaled.jpg",
+    "items": [
+     [
+      "See this week's full flyer at the store link — produce, butcher & bakery specials",
+      "",
+      "Image flyer"
+     ]
+    ]
+   }
+  ]
+ },
+ "events": {
+  "range": "Thu Nov 5 – Wed Nov 11",
+  "areas": [
+   {
+    "name": "Solon",
+    "items": [
+     {
+      "when": "Fri Nov 6 – Sat Nov 7",
+      "title": "Ohio Hazmat Teams Conference 2026",
+      "where": "Solon Community Center, 35000 Portz Pkwy",
+      "link": "https://www.eventbrite.com/e/ohio-hazmat-teams-conference-2026-registration-1999932278281"
+     },
+     {
+      "when": "Sat Nov 7 · 10:00 AM–12:00 PM",
+      "title": "RePlay for Kids Toy Adapting Workshop",
+      "where": "RePlay's Creative Space, 6190 Cochran Rd",
+      "link": "https://www.northeastohioparent.com/special-needs-3/special-needs-and-sensory-friendly-events-for-kids-in-northeast-ohio/"
+     },
+     {
+      "when": "Sat Nov 7",
+      "title": "Saturday Storytime at Ivybrook Academy Solon",
+      "where": "Ivybrook Academy Solon",
+      "link": "https://clevelandeast.macaronikid.com/events?yodelEventId=6aa198d51fca2bef22f10c0c_20261107&yodelOrgLastName=Cleveland-East&yodelEventName=Saturday-Storytime-at-Ivybrook-Academy-Solon"
+     },
+     {
+      "when": "Sat Nov 7 – Dec 10",
+      "title": "Olivia's Dream Toy Drive for Toys for Tots (collection starts)",
+      "where": "Solon Community Center",
+      "link": "https://solonohionews.com/"
+     },
+     {
+      "when": "Tue Nov 10 (series starts)",
+      "title": "Strikes, Smiles & Fun: Bowling Nights",
+      "where": "RollHouse, 33185 Bainbridge Rd",
+      "link": "https://www.northeastohioparent.com/special-needs-3/special-needs-and-sensory-friendly-events-for-kids-in-northeast-ohio/"
+     }
+    ]
+   },
+   {
+    "name": "Chagrin Falls",
+    "items": [
+     {
+      "when": "Fri Nov 6 · 7:00 PM awards",
+      "title": "Valley Art Center 55th Annual Juried Art Exhibition — Opening Reception",
+      "where": "Valley Art Center, 155 Bell St",
+      "link": "https://www.findglocal.com/US/Chagrin-Falls/54526434641/Valley-Art-Center"
+     },
+     {
+      "when": "Sat Nov 7 · 1:00–5:00 PM",
+      "title": "Autumn Flavors & Finds Crawl",
+      "where": "Downtown Chagrin Falls / 87 West",
+      "link": "https://www.eventbrite.com/e/autumn-flavors-finds-crawl-chagrin-falls-2026-tickets-2003478649573"
+     },
+     {
+      "when": "Sat Nov 7 · 7:00 PM",
+      "title": "Burning River Swing at Bainbridge Swing Dance",
+      "where": "Federated Church Family Life Center, 16391 Chillicothe Rd",
+      "link": "https://allevents.in/chagrin-falls/entertainment"
+     }
+    ]
+   },
+   {
+    "name": "Cleveland",
+    "items": [
+     {
+      "when": "Thu Nov 5 · 7:30 PM",
+      "title": "Hadestown (touring)",
+      "where": "Connor Palace, Playhouse Square",
+      "link": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
+     },
+     {
+      "when": "Thu Nov 5 · 5:00 PM",
+      "title": "Arch Enemy & The Black Dahlia Murder",
+      "where": "Agora Theatre, 5000 Euclid Ave",
+      "link": "https://www.ticketmaster.com/discover/cleveland?categoryId=KZFzniwnSyZfZ7v7nJ"
+     },
+     {
+      "when": "Fri Nov 6 · 7:30 PM",
+      "title": "Cavs vs Philadelphia 76ers — Emirates NBA Cup",
+      "where": "Rocket Arena",
+      "link": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
+     },
+     {
+      "when": "Sat Nov 7 · 11:00 AM–10:00 PM",
+      "title": "Día de Muertos — 22nd Annual Celebration",
+      "where": "Cleveland Public Theatre, 6415 Detroit Ave",
+      "link": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
+     },
+     {
+      "when": "Sat Nov 7 · 8:00 PM",
+      "title": "Cavs vs New York Knicks",
+      "where": "Rocket Arena",
+      "link": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
+     },
+     {
+      "when": "Sat Nov 7 · 5:30 PM",
+      "title": "Pigeons Playing Ping Pong — Fall Tour 2026",
+      "where": "House of Blues Cleveland",
+      "link": "https://www.ticketmaster.com/discover/cleveland?date=thisweekend"
+     },
+     {
+      "when": "Sun Nov 8 · 3:00 PM",
+      "title": "NUTCRACKER! Magical Christmas Ballet",
+      "where": "Music Hall, Cleveland Public Auditorium",
+      "link": "https://www.ticketmaster.com/discover/cleveland?date=thisweekend"
+     }
+    ]
+   }
+  ]
+ },
+ "headlines": {
+  "date": "Thursday, November 5, 2026",
+  "cats": [
+   {
+    "name": "World",
+    "items": [
+     {
+      "title": "Death toll from Russian strike on Ukrainian aid centre rises to 42",
+      "summary": "The death toll from Monday's Russian bombing of an aid distribution point in Komyshuvakha, in Ukraine's southeastern Zaporizhzhia region, rose to 42 on Thursday, police said — one of the deadliest strikes on civilians this year. Up to 33 people were still believed to be buried under the rubble, with rescue and identification work continuing.\n\nVerified bodycam footage from one of the police officers killed showed the moments before a second strike destroyed a shelter where residents were hiding after a radio warning. Ukraine's national police said the attack included a 3-ton glide bomb carrying roughly 1.4 tons of explosives. Russia's Defence Ministry said the strike targeted Ukrainian military units around Komyshuvakha and two other settlements, and both sides deny deliberately targeting civilians.\n\nThe rising toll lands five days before the United States brings Ukrainian and Russian delegations together in Abu Dhabi. A strike this lethal on people collecting aid hardens Kyiv's negotiating position and raises the pressure on Moscow to show it is serious about a ceasefire.\n\nWatch the Abu Dhabi talks on November 10-11, and whether the Komyshuvakha toll climbs further as rescuers reach the rest of the rubble.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/europe/death-toll-russian-strike-ukrainian-aid-centre-reaches-42-police-say-2026-11-05/"
+     },
+     {
+      "title": "U.S. to bring Ukraine and Russia together in Abu Dhabi on November 10-11",
+      "summary": "The United States will bring Ukrainian and Russian delegations together in Abu Dhabi on November 10-11 to discuss ending the war, U.S. envoy Steve Witkoff said. The agenda, as Witkoff described it, covers post-war security agreements, de-escalation, humanitarian measures and ending the fighting itself.\n\nWitkoff and Jared Kushner are expected to lead the U.S. side, and the Kremlin has confirmed that Vladimir Medinsky, an aide to President Putin, will be Moscow's chief negotiator. Putin agreed to the new round after meeting Witkoff in St Petersburg two weeks ago. The last U.S.-mediated talks were in February, before the U.S. and Israel launched the war against Iran. This week, U.S. negotiators are also meeting European and NATO partners in Brussels on security guarantees and reconstruction support for Ukraine.\n\nHosting the talks in the Gulf, with both delegations at the same table, is the most structured attempt at an endgame in months. German Chancellor Friedrich Merz, hosting President Zelenskiy in Berlin, said Russia must show at Abu Dhabi that it is serious about a ceasefire, and Zelenskiy said he hopes the new Democratic Congress will mean more help for Kyiv.\n\nWatch for the delegations' opening positions early next week — an 'energy ceasefire' and a Black Sea truce to protect food exports are among the first items Zelenskiy wants discussed.",
+      "source": "Reuters",
+      "url": "https://wixx.com/2026/11/02/us-to-hold-trilateral-talks-with-ukraine-russia-in-abu-dhabi-next-week-us-official-says/"
+     },
+     {
+      "title": "Netanyahu's position weakens as ultra-Orthodox party withholds support",
+      "summary": "Prime Minister Benjamin Netanyahu's fight to stay in power weakened on Thursday after the ultra-Orthodox party United Torah Judaism, a longtime ally, declined to recommend any candidate to form Israel's next government, while an Arab-led party endorsed his main rival, former military chief Gadi Eisenkot.\n\nIsrael's October 27 election ended in deadlock. Netanyahu's Likud won the most seats of any single party with 27 of 120, but his wider religious-nationalist bloc reached only 53 seats. Eisenkot's coalition won 48, and two parties representing Israel's Arab minority won an unprecedented 19. President Isaac Herzog was meeting both men on Thursday night and has until November 11 to pick who gets the first chance to build a coalition; Netanyahu stays on as caretaker prime minister meanwhile.\n\nNetanyahu has seized on an official investigation into possible vote tampering to question the results, accusing Arab-led parties of stealing the vote. Critics call that an attempt to undermine a loss; the Central Election Committee said Wednesday the election's integrity was not compromised.\n\nWatch Herzog's choice by November 11 — and whether the parties that refused to commit on Thursday become kingmakers or force yet another election.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/middle-east/netanyahus-position-weakens-ultra-orthodox-party-withholds-support-2026-11-05/"
+     },
+     {
+      "title": "Hong Kong activist Joshua Wong sentenced to 10 more years in jail",
+      "summary": "Hong Kong democracy activist Joshua Wong was sentenced on Thursday to 10 more years in prison after pleading guilty to colluding with foreign entities under the city's national security law. Wong, who has been behind bars since 2020, will be 40 years old when he leaves jail.\n\nWong first made headlines at 14, co-founding the student group Scholarism, whose protests forced the government to shelve a pro-China national education plan. By 17 he was the international face of the Umbrella Movement. Prosecutors accused him of working with others between July and November 2020 to solicit foreign sanctions or hostile actions against Hong Kong and China.\n\nThe sentence is the latest measure of how completely Beijing's 2020 National Security Law — imposed after the mass protests of 2019 — has reshaped Hong Kong. Activities Wong and his peers once took for granted are now crimes, and the law's cases keep reaching back to the protest era.\n\nThe new term runs concurrently with his existing sentence, effectively shortening it by two months, and keeps him in prison past his current release date in January. Wong stood silent in the dock as the judge sentenced him.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/hong-kongs-joshua-wong-teenage-protest-leader-decade-behind-bars-2026-11-05/"
+     },
+     {
+      "title": "South Korean audit reveals friction in the U.S. alliance",
+      "summary": "A month-long parliamentary audit in South Korea has surfaced unusual public friction in the alliance with Washington, and President Lee Jae Myung is taking opposition fire over how he has managed the relationship. The strains run from intelligence sharing to White House access and U.S. visa denials for visiting lawmakers.\n\nDuring the audit, spy chief Lee Jong-seok acknowledged that Washington had curtailed some sensitive intelligence sharing after accusing a South Korean minister of publicly disclosing the location of a previously unconfirmed North Korean nuclear site. South Korea's ambassador to the U.S. raised concerns about limited access to key White House officials. A Pew survey in August found 55% of South Koreans held an unfavourable view of the U.S., the highest in more than 20 years.\n\nUnderneath the friction is a shift in Washington's military priorities toward China. U.S. officials say the 28,500 troops in South Korea will stay focused on deterring North Korea, but they have signalled more 'flexibility' to operate beyond the peninsula, potentially including a Taiwan conflict — a prospect that makes Seoul nervous.\n\nPrime Minister Han Seong-sook said Thursday she did not expect major changes after the U.S. midterms, and the defence minister denied any differences to resolve after meeting Defense Secretary Pete Hegseth. Watch whether the intelligence-sharing limits get quietly restored.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/south-korean-audit-reveals-friction-us-alliance-washingtons-priorities-shift-2026-11-05/"
+     },
+     {
+      "title": "After midterm defeat, Trump faces a stark choice on Iran: deal or escalation",
+      "summary": "President Trump went to war seeking regime change in Iran. Instead, voters weary of the fighting and hit by soaring fuel prices handed Congress to the Democrats — and Trump now faces a stark choice between cutting a deal with Tehran and escalating a war he cannot easily sustain politically.\n\nThe war began with U.S.-Israeli strikes on February 28 and spread across the region as Tehran fired missiles and drones at Gulf targets and shipping in the Strait of Hormuz. The campaign badly damaged Iran's military but left its nuclear programme unresolved. Two sources close to Gulf government circles told Reuters that a weakened Trump, facing a Congress that can constrain his military options, now has a greater incentive to deal, and a full-scale assault looks less likely.\n\nTehran is not softening: Supreme Leader Mojtaba Khamenei warned against 'even the slightest inclination towards submission,' and two senior Iranian sources said Tehran stays on high alert, fearing Trump might answer defeat with a strike. Gulf states, for their part, want any settlement to protect freedom of navigation through Hormuz.\n\nReuters flags one middle path — further limited strikes on nuclear facilities that let Washington claim its objectives were met — while China steps up efforts to broker a settlement. Watch Qatar's mediation and any signal from Tehran in the coming days.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/middle-east/beaten-home-trump-faces-stark-choice-iran-deal-or-escalation-2026-11-04/"
+     }
+    ]
+   },
+   {
+    "name": "Politics",
+    "items": [
+     {
+      "title": "Democrats ride anti-Trump wave to win control of Congress",
+      "summary": "Democrats have captured both chambers of Congress, pushing deep into traditionally Republican territory to flip states and districts that President Trump carried. Decision Desk HQ and NBC projected a Democratic Senate after the House had already been called earlier on election night, and the Associated Press later confirmed the House result as well.\n\nDemocrats needed four seats to take the Senate and flipped six — in South Carolina, North Carolina, Texas, Ohio, Kansas and Iowa. Adam Hamilton is projected to be the first Democrat to win a Kansas Senate seat since 1932, and James Talarico the first in Texas since 1988. Republicans entered the night holding 53 Senate seats and favoured to keep the chamber.\n\nThe sweep marks a clear rebuke of the president, who barnstormed the country in the final weeks without holding the red states. Cost of living and the Iran war ran through the results, and the new majority takes power in January with committee gavels and subpoena power.\n\nWatch the organising fights now: Hakeem Jeffries is bidding for speaker, and House Republicans are choosing a new leader after Mike Johnson stepped aside.",
+      "source": "USA Today",
+      "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/03/democrats-win-senate-midterm-elections-2026/92461757007/"
+     },
+     {
+      "title": "Vance repudiates the Iran war after the electoral defeat",
+      "summary": "Vice President JD Vance distanced himself from President Trump's war on Iran on Wednesday, questioning its worth and blaming it entirely for the defeat that delivered Congress to the Democrats. 'The reason we lost is the war,' Vance wrote on X, adding that anyone who thought losing the Senate for six years was worth it should say so.\n\nVance also said an earlier recommendation to end the war had been 'sound advice.' He played down any split with Trump, noting the president had acknowledged the war cost Republicans too — though Trump's own comments were more measured, and he told the Wall Street Journal of the war: 'I did the right thing' and 'I would have done it again.'\n\nA sitting vice president publicly second-guessing the president's central military decision is rare, and it lands just as Trump weighs whether to restart major combat operations against Iran — a step U.S. officials told Reuters is still under consideration.\n\nReuters notes the remarks also raise questions about senior Pentagon officials, notably Defense Secretary Pete Hegseth, who is deeply unpopular in the incoming Congress, where some lawmakers are expected to seek his impeachment.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/government/vance-repudiates-iran-war-after-us-electoral-defeat-2026-11-04/"
+     },
+     {
+      "title": "Jeffries launches his bid to become the first Black House speaker",
+      "summary": "House Minority Leader Hakeem Jeffries formally launched his bid for speaker on Wednesday in a letter to colleagues obtained by Axios. 'I write to humbly request your support in connection with my candidacy to serve as the next Speaker of the House of Representatives,' the letter opens; if elected, the New York Democrat would be the 57th speaker and the first Black speaker in American history.\n\nJeffries organised his pitch around three priorities — 'Affordability,' 'Accountability' and 'American Values.' His first-100-days programme, as reported from the letter, includes reversing Medicaid cuts, restoring SNAP funding, extending Affordable Care Act tax credits, eradicating the Trump tariffs and stopping the war in Iran.\n\nJeffries posted late Wednesday that House Democrats are on track to win at least 255 seats, a working majority with room to spare. He would take the gavel from Republican Mike Johnson, who said this week he will not seek the minority leader post.\n\nThe full House votes for speaker on January 3, when the new Congress convenes — the first real test of whether Jeffries' majority holds together.",
+      "source": "Axios",
+      "url": "https://jeffries.house.gov/2026/11/04/dear-colleague-announcing-candidacy-for-speaker-of-the-house/"
+     },
+     {
+      "title": "Johnson steps aside, setting up a House GOP leadership fight between Scalise and Jordan",
+      "summary": "House Speaker Mike Johnson told staff on Wednesday that he will not seek to lead House Republicans in the next Congress, after the party lost its majority in Tuesday's midterms. Johnson announced the decision on a morning staff call, according to two sources cited by CNN, after discussing it with President Trump.\n\nThe move reverses Johnson's pre-election position: in October he told CBS News he intended to stay on as the top House Republican even if the party lost the majority. Trump had endorsed Johnson's reelection on Monday, calling him 'a true friend, fighter, and WINNER.'\n\nTwo heavyweights moved quickly. Judiciary Committee Chairman Jim Jordan of Ohio announced his run to lead House Republicans in the minority in a letter to colleagues, and Majority Leader Steve Scalise of Louisiana was also expected to announce his candidacy on Wednesday.\n\nThe secret-ballot leadership elections are expected next week. Whoever wins inherits a minority party arguing in public — including over the vice president's claim that the Iran war cost them the election.",
+      "source": "Newsmax",
+      "url": "https://www.newsmax.com/politics/mike-johnson-house-speaker-gop/2026/11/04/id/1275117"
+     },
+     {
+      "title": "Democrats flip five governorships — Texas, Georgia, Ohio, Iowa and Nevada",
+      "summary": "Democrats flipped five Republican-held governors' offices on Tuesday, all in states President Trump carried in 2024, giving the party an advantage in the nationwide gubernatorial count for the first time in more than a decade. Republicans entered Election Day holding 26 governorships to Democrats' 24; with two races still uncalled, Democrats had secured at least 28.\n\nIn Texas, Gina Hinojosa defeated Governor Greg Abbott, ending more than three decades of Republican control of the office; the AP called the race late Tuesday at roughly 53.8% to 44.9%. In Georgia, Keisha Lance Bottoms beat Rick Jackson by about 54.3% to 45.7% after eight years under term-limited Brian Kemp, and reporting notes she becomes the first Black woman elected governor in U.S. history.\n\nIowa's Rob Sand broke a decade of GOP control of state government, Nevada's Aaron Ford beat Governor Joe Lombardo with about 51.7%, and in Ohio, Amy Acton defeated Vivek Ramaswamy 52.3% to 44.4% in the open race.\n\nGovernors matter most where Congress cannot reach: redistricting, election administration and state-level responses to federal policy will now run through Democratic statehouses in several former Republican strongholds.",
+      "source": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/news/campaigns/state/4792060/democrats-gain-five-governorships-what-to-know/"
+     }
+    ]
+   },
+   {
+    "name": "Tech & Business",
+    "items": [
+     {
+      "title": "AI selloff extends globally as Dow futures rise after midterm sweep",
+      "summary": "Artificial-intelligence stocks kept weakening around the world on Thursday as investors absorbed the Democratic sweep in the U.S. midterms. Dow futures rose 0.4%, pointing to more gains after Wednesday's post-election surge, but Nasdaq futures fell 0.7% and S&P 500 futures were flat, with chip and data-centre shares under pressure.\n\nThe split has a political logic: strategists expect Democratic wins in Congress and in governor's races — particularly in Texas — to slow the build-out of data centres, a theme voters themselves endorsed in dozens of local ballot measures. UBS strategists said a slowdown 'should impact estimates for AI infrastructure stocks as well as cloud companies.' In South Korea, Samsung Electronics fell 7.5% and SK Hynix 9.5%, and the selling spread across Japan and Europe.\n\nFor perspective, Wednesday itself was a rally for the history books: the Dow's best day since April 2025 and its strongest post-midterms performance since 1982. Oil held below $100, Treasury yields fell to eight-week lows, gold moved back above $4,100 and Bitcoin topped $80,000.\n\nAhead today: a Bank of England rate decision markets see as a likely quarter-point hike, and earnings from ConocoPhillips and Sony.",
+      "source": "The Wall Street Journal",
+      "url": "https://www.wsj.com/finance/stocks/ai-selloff-extends-treasurys-gain-as-blue-wave-reverberates-2d60fa21"
+     },
+     {
+      "title": "Oil falls for a fourth straight day as midterm result raises hopes of an Iran deal",
+      "summary": "Oil fell for a fourth consecutive session on Thursday as traders bet the midterm result lowers the odds of further military escalation in the U.S.-Israeli war on Iran. Brent futures slipped about 1% to $93.65 a barrel and U.S. crude fell about 1.3% to $86.98 in early trading.\n\nThe move caps a dramatic week: both benchmarks plunged more than 8% on Wednesday to their lowest levels since August 31. Republicans' loss of Congress raised expectations that a Democratic-controlled Congress could constrain President Trump's military options and push toward a deal with Iran, and two sources close to Gulf governments told Reuters a full-scale assault now looks less likely.\n\nThe fundamentals have shifted too. Shipments through the Strait of Hormuz have recovered to near pre-war levels, and JPMorgan says resumed Gulf supplies have pushed the global market back into surplus after months of disruption. Qatar has stepped up mediation between Washington and Tehran.\n\nThe deal itself is not close: a senior Iranian official told Reuters the two sides remain far apart, and Supreme Leader Mojtaba Khamenei has signalled U.S. hostility will persist whoever controls Congress. Watch whether prices hold the $90 line if talks stall.",
+      "source": "Reuters",
+      "url": "https://www.businesstoday.com.my/2026/11/05/oil-extends-losses-after-us-midterm-results-raise-hopes-of-iran-deal/"
+     },
+     {
+      "title": "OpenAI to buy Pierre Computer and fold its code storage into Codex",
+      "summary": "OpenAI said on November 4 that it will acquire Pierre Computer Company, a San Francisco developer-tools startup whose Git-based Code Storage service lets apps and AI agents store code and its history. Financial terms were not disclosed, the deal needs regulatory approval, and the companies stay separate until it closes.\n\nThis is less an acquisition of strangers than a formalising of an existing dependency: Pierre's open-source Trees and Diffs libraries already power file browsing and code review inside OpenAI's Codex app, and Code Storage counts Lovable, Bolt and Amp among its users. OpenAI plans to fold Code Storage into Codex, extending the product from writing code toward storing, reviewing and shipping it. Pierre's open-source projects will remain open.\n\nAxios framed the deal as OpenAI taking aim at Microsoft's GitHub, just as coding agents write more of the world's software and the infrastructure underneath them becomes strategic. Days earlier OpenAI described Pando, its in-house source-control backend, which it says cut median push latency by nearly 80%.\n\nWatch the competitive response: Cursor launched a rival platform, Origin, in August, and Meta bought a coding startup of its own the same day.",
+      "source": "Dealroom News",
+      "url": "https://dealroom.co/news/169828-openai-to-buy-pierre-the-code-storage-startup-already-inside-codex-in-a/"
+     },
+     {
+      "title": "Meta acquires AI coding startup Conductor",
+      "summary": "Meta has acquired Conductor, an AI coding startup whose product lets developers spin up software projects by deploying multiple AI agents into parallel workspaces — each working in an isolated copy of the codebase — then review and merge the results. The deal was first reported by Axios on November 4, and Meta confirmed it to TechCrunch without disclosing terms.\n\nConductor supports agents including Anthropic's Claude Code, OpenAI's Codex and Cursor, with users paying through their own subscriptions. Founder and CEO Charlie Holtz announced 'Conductor is joining Meta' on Wednesday; he and CTO Jackson de Campos join Meta Superintelligence Labs, working with Nat Friedman and Chief AI Officer Alexandr Wang.\n\nThe company moved fast and exits fast: founded in 2024 out of Y Combinator, it launched its core product only last summer and raised a $22 million Series A in March from Spark Capital and Matrix Partners.\n\nFor existing users, the wind-down is already scheduled — new sign-ups are halted, Conductor Cloud goes read-only on November 13 and shuts down November 20, and core local features run until early 2027. The deal landed the same day OpenAI moved to buy Pierre, underlining how quickly the AI coding stack is consolidating.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/"
+     },
+     {
+      "title": "Qualcomm shares slide as smartphone chip sales miss and forecast disappoints",
+      "summary": "Qualcomm fell short of Wall Street estimates for fourth-quarter smartphone chip sales on Wednesday, and its shares dropped more than 6% in extended trading and about 10% in Thursday premarket trading. Handset revenue fell 26% to $5.14 billion, below the $5.25 billion analysts expected, dragging the chip segment down 8% to $9.02 billion.\n\nThe backdrop is a brutal phone market: global smartphone shipments fell 20% in the September quarter to a 14-year low, according to Counterpoint Research, as surging memory-chip costs — driven by AI data-centre demand — pushed device prices up. Declining Apple revenue also weighed, and CEO Cristiano Amon said the current-quarter forecast assumes no further sales to Apple, while adding that Android handset sales have bottomed and are ticking up.\n\nThe headline guidance was not all bad: Qualcomm expects fiscal first-quarter revenue of $10.4–$11.2 billion, above the consensus midpoint, and $650 million in data-centre sales, well above the $539 million analysts expected. Automotive chips were a bright spot, with revenue up 89% year over year to about $1.99 billion.\n\nThe adjusted profit guide — $2.15 to $2.35 a share, midpoint below estimates — is what investors seized on. Watch whether the data-centre ramp can offset the handset slide.",
+      "source": "Reuters",
+      "url": "https://srnnews.com/qualcomm-forecasts-upbeat-sales-on-strength-in-non-smartphone-segments/"
+     },
+     {
+      "title": "Sony profit jumps 45% on Spider-Man and PlayStation, and it raises its outlook",
+      "summary": "Sony reported a 45% rise in second-quarter operating profit on Thursday, to 622.3 billion yen (about $3.95 billion), beating market estimates on the strength of its games and movies businesses. The company also raised its full-year operating profit outlook by 9%, to about 1.87 trillion yen in one summary of the results.\n\nThe hit film 'Spider-Man: Brand New Day' helped the movies unit, while PlayStation anchored games. Sony sold 2.6 million PlayStation 5 consoles in the quarter, down from 4 million a year earlier, and it also lifted its outlook for its image-sensor chips and music divisions.\n\nSony's games business is expected to be a major beneficiary of the launch of 'Grand Theft Auto VI' on November 19, one of the biggest releases in the industry's history.\n\nThe pressure point is memory: like every hardware maker, Sony is grappling with higher memory-chip prices caused by the AI boom, though it said in July it had secured the memory it needs to meet this year's projected sales volume.",
+      "source": "Reuters",
+      "url": "https://kwsn.com/2026/11/05/sony-posts-45-q2-profit-rise-on-movies-games-boost/"
+     }
+    ]
+   },
+   {
+    "name": "U.S. News",
+    "items": [
+     {
+      "title": "Trump says he will accept the midterm results and work with Democrats",
+      "summary": "President Trump told the New York Times in an election-night phone interview that he is 'absolutely willing' to accept the midterm results, and his message to CBS News was similar: 'Congratulations to the Democrats, and I look forward to working with you for the good of our country.' To Politico he added, 'We're gonna work with the Democrats to make sure things go well for our country, very important.'\n\nAt the same time, Trump repeatedly distanced himself from the losses. 'I wasn't on the Ballot and if I was, we would have won IN A LANDSLIDE!' he posted, and he told Politico, 'They didn't like the candidates in most cases.' He said he had no regrets about endorsing candidates who lost, despite travelling to more than 30 places this fall to try to hold Republican seats.\n\nHe also reminded everyone of the leverage he keeps. Trump noted his veto power to the Wall Street Journal — calling the veto the 'ultimate power,' overridable only by two-thirds of Congress — and posted a mockup of his red hat reading 'VETO' on Truth Social. On the Iran war's role in the defeat, he conceded it was 'a piece of it.'\n\nWhat happens next depends on which Trump shows up: divided government gives both sides reasons to deal on affordability, and equal reasons to fight. The new Congress convenes in January.",
+      "source": "USA Today",
+      "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/04/donald-trump-midterms-reaction/92608695007/"
+     },
+     {
+      "title": "Voters reject data centers in nearly every local ballot measure across 10 states",
+      "summary": "Amid the national wave, one of Tuesday's clearest verdicts was local: voters overwhelmingly moved to restrict the data-centre boom. Data centres appeared on roughly 45 ballot measures across 10 states, and by early Wednesday at least 33 restriction measures had passed, with trackers later putting the count at about 40 of 41 going the way of tighter limits.\n\nOhio was the strongest rebuke. The state hosts 257 data centres, they were on the ballot in about 20 communities, and the vote to restrict won or was projected to win everywhere — two localities voted 76% and 77% against allowing data centres nearby. Democrat Sherrod Brown made opposition to data centres the centre of his winning Senate platform in Ohio. Only one town, Harwood, North Dakota, voted down a measure that would have added public-hearing requirements for large industrial projects.\n\nExit polling suggests this was not a side issue: an NBC exit poll found 56% of voters said AI and data centres played a 'major' or 'crucial' role in their vote. Winning governors in Texas and Georgia both promised pauses on new approvals.\n\nAxios called it an 'AI earthquake.' Strategists estimate moratoriums could put roughly 30% of expected 2028 data-centre capacity at risk — one reason AI infrastructure stocks are sliding this week.",
+      "source": "Engadget",
+      "url": "https://www.engadget.com/2306534/americans-overwhelmingly-voted-against-data-centers-in-the-midterms/"
+     },
+     {
+      "title": "Abdul El-Sayed becomes the first Muslim elected to the U.S. Senate, winning Michigan",
+      "summary": "Abdul El-Sayed defeated Republican Mike Rogers in Michigan's Senate race to become the first Muslim elected to the U.S. Senate. The Associated Press called the race at 2:27 a.m. Wednesday, with El-Sayed at about 52.4% of the counted vote to Rogers' 45.6%.\n\nEl-Sayed, 42, is a physician and epidemiologist who served as a Detroit and county health official. Born in Rochester Hills to Egyptian immigrant parents and raised in the Detroit area, he ran on Medicare for All, taxing billionaires and reducing corporate influence in politics. He told AP that Michigan had rejected a 'hateful, spiteful campaign' after months of Republican criticism.\n\nHe replaces outgoing Senator Gary Peters, a Democrat not seeking reelection, in a seat Democrats have held since 1979. Rogers, 63, is a former U.S. representative.\n\nEl-Sayed's win headlined a night of historic firsts in CNN's roundup of the 2026 results. He takes office with the new Senate in January, in a chamber his party now controls.",
+      "source": "People",
+      "url": "https://people.com/abdul-el-sayed-makes-history-becomes-first-muslim-us-senator-beating-mike-rogers-michigan-race-12184042"
+     },
+     {
+      "title": "Xavier Becerra wins California governor's race, becoming the state's first elected Latino governor",
+      "summary": "Democrat Xavier Becerra will be California's next governor. The Associated Press declared him the winner shortly after polls closed on Tuesday, and with about half the expected vote counted he led Republican Steve Hilton by 64.2% to 35.8% — a margin of more than 1.6 million votes.\n\nBecerra, 68, will be the first Latino elected governor of California; the last Latino to hold the office, Romualdo Pacheco in 1875, was elevated from lieutenant governor a century and a half ago. He succeeds term-limited Gavin Newsom and is due to be sworn in on January 4, 2027, extending Democrats' hold on the state's top office.\n\nHis résumé runs through every level of Democratic politics: U.S. congressman from Los Angeles, California attorney general, and U.S. secretary of Health and Human Services under President Biden. Hilton, a former Fox News host endorsed by President Trump, never closed the gap.\n\nThe win caps an unlikely arc — in March, Becerra was polling so low he faced calls to drop out of a crowded primary. He campaigned in part on a pro-housing platform, and housing affordability will be the first test of his governorship.",
+      "source": "Abridged",
+      "url": "https://www.abridged.org/news/california-picks-xavier-becerra-to-replace-gavin-newsom/"
+     },
+     {
+      "title": "SpaceX picks Qualcomm to build Starlink Mobile's nationwide U.S. 5G network",
+      "summary": "Qualcomm has signed a multi-year agreement with SpaceX to supply the radio equipment, baseband units and software for Starlink Mobile's planned nationwide terrestrial 5G network, the companies announced Wednesday. Qualcomm called it 'our biggest 5G deal yet'; financial terms were not disclosed.\n\nThe equipment — Qualcomm's Dragonwing radio units and distributed-unit processors, using massive MIMO antennas with 64 transmit and 64 receive paths — is slated for deployment across tens of thousands of macro cell sites in the U.S. starting in 2027. Starlink described the project on X as 'the first fully-integrated US nationwide satellite and terrestrial network.'\n\nThe terrestrial build complements Starlink's satellite service and follows SpaceX's October agreement to acquire a nationwide 800 MHz spectrum portfolio, subject to FCC approval. No live sites, coverage map or prices were published with the announcement.\n\nIf it delivers, the network would challenge Verizon, AT&T and T-Mobile on their home turf with a satellite company as the new fourth carrier. SpaceX shares slipped more than 1% in Thursday premarket trading, extending recent losses.",
+      "source": "Reuters",
+      "url": "https://krro.com/2026/11/04/qualcomm-signs-major-5g-infrastructure-deal-with-spacex-for-starlink-mobile-network/"
+     },
+     {
+      "title": "October jobs report lands Friday, with the Fed's December decision in the balance",
+      "summary": "The October jobs report arrives Friday at 8:30 a.m. ET, and it is the week's biggest economic test. Previews expect payrolls to rise by 50,000 to 65,000 after September's modest gain of 29,000, with unemployment holding at 4.2% and wages rising 0.3% on the month.\n\nThe number lands in a tense policy moment. The Federal Reserve held rates at 3.75–4.00% on October 28 in a 10–2 vote, and markets currently price roughly a 70–78% chance of a December hike — meaning a hot jobs report could firm that up, while a soft one could reopen the case for standing pat. At least three Fed officials, including Richmond Fed President Thomas Barkin, speak Thursday ahead of the release.\n\nFor households, the stakes are concrete: mortgage and borrowing costs follow the Fed's path, and a labour market that is cooling but not cracking is the narrow path policymakers have been trying to walk all year.\n\nWatch the wage figure as much as the headline — pay growth running hot is the detail most likely to move the December odds.",
+      "source": "Market Daily",
+      "url": "https://marketdaily.com/november-2026-economic-calendar-jolts-jobs-and-october-cpi-set-the-stage-for-the-feds-december-9-decision/"
+     }
+    ]
+   },
+   {
+    "name": "Cleveland & Ohio",
+    "items": [
+     {
+      "title": "Amy Acton beats Vivek Ramaswamy to become Ohio's first woman elected governor",
+      "summary": "Democrat Amy Acton won the Ohio governor's race on Tuesday, defeating Trump-backed Republican Vivek Ramaswamy and becoming the first woman elected governor in Ohio history. Later unofficial figures from the Secretary of State put Acton at 52.3% to Ramaswamy's 44.3%, with Libertarian Don Kissick at 3.3%.\n\nActon, 60, is a physician and Ohio's former health director during COVID who ran as a first-time candidate. She ends Democrats' 20-year losing streak in Ohio governor's races in a state President Trump won three times, campaigning on property and income tax relief, public education and tougher requirements for data centres. The race turned personal late, when a Ramaswamy ad featured Acton's estranged mother and Acton answered by recounting a childhood marked by abuse, neglect and periods of homelessness.\n\nShe succeeds term-limited Republican Governor Mike DeWine and promised to govern across party lines: 'I will work with anyone and everyone... to make life better for Ohio.'\n\nShe will not face a veto-proof legislature: Democrats broke the Ohio House GOP supermajority on the same night, though Republicans kept theirs in the state Senate. Results stay unofficial until counties certify.",
+      "source": "The Columbus Dispatch",
+      "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/04/highlights-of-2026-ohio-elections/92556120007/"
+     },
+     {
+      "title": "Sherrod Brown completes comeback, beats Jon Husted to return to the U.S. Senate",
+      "summary": "Former Senator Sherrod Brown defeated incumbent Senator Jon Husted in Ohio's Senate special election, completing a comeback two years after losing his seat. The AP called the race for Brown; its results table with 98% reporting showed Brown at 2,301,042 votes to Husted's 2,077,748.\n\nHusted was appointed by Governor DeWine in January 2025 to replace JD Vance when Vance became vice president, and this was his first Senate race. Brown's win helps Democrats take control of the U.S. Senate, and he becomes only the seventh former senator since 1946 to lose his seat and later return. Brown hammered Husted over support for data centres and tied their energy demands to rising utility costs; the campaigns and outside groups raised more than $80 million, with total Ohio election spending reported above $517 million.\n\nThe special election fills only the remainder of Vance's term, so Brown would have to run again in 2028 for a full six years.\n\nTiming: under state law Husted leaves office December 15, and Brown could be sworn in as early as that date once the vote is certified.",
+      "source": "Associated Press",
+      "url": "https://apnews.com/projects/elections-2026/?ap_doc=ap%2Frg1%2FWyJhcC92Mi8yMDI2MTEwMy9sLzg0MzI3L09IL3MiLFsiMTM4NCIsIjEzOTQxNSJdXQ"
+     },
+     {
+      "title": "Clase and Ortiz pitch-rigging trial opens in Brooklyn, prosecutors call them 'cheaters'",
+      "summary": "Opening statements in the pitch-rigging trial of former Guardians pitchers Emmanuel Clase and Luis Ortiz began Wednesday in Brooklyn federal court, and prosecutors did not mince words. 'The defendants, Emmanuel Clase and Luis Ortiz, are cheaters,' Assistant U.S. Attorney Rebecca Urquiola told jurors.\n\nProsecutors say Clase befriended a sports bettor in the Dominican Republic in early 2023 and began feeding him pitch information, then recruited Ortiz in 2025. Gamblers allegedly won at least $460,000 betting on whether individual pitches would be balls or strikes. The government alleges Clase rigged at least 18 pitches across 17 games between May 2023 and May 2025, often by intentionally throwing balls or tipping off-speed pitches. Both men pleaded not guilty to conspiracy charges including wire fraud and money laundering conspiracies; NewsNet5 reports the charges carry up to 65 years if convicted on all counts.\n\nClase, 28, is a three-time All-Star and two-time AL Reliever of the Year. Both pitchers were arrested in November 2025, are free on bail, and remain on unpaid, non-disciplinary leave from the Guardians.\n\nJudge Kiyo A. Matsumoto is presiding, and the trial is expected to run about three weeks.",
+      "source": "Associated Press via NBC Sports",
+      "url": "https://www.nbcsports.com/mlb/news/cleveland-guardians-pitchers-emmanuel-clase-and-luis-ortiz-called-cheaters-at-fraud-trial",
+      "img": "https://www.newsnet5.com/wp-content/uploads/2026/11/trial-former-cleveland-guardians-pitchers-match-fixing.jpg"
+     },
+     {
+      "title": "Ohio voters pass Issue 3 voter-ID amendment as Democrats take most statewide offices",
+      "summary": "Ohio voters overwhelmingly approved Issue 3, writing the state's voter-ID rules into the Ohio Constitution. With 98% reporting, the AP table showed Yes at 2,934,245 votes to No at 1,556,864 — roughly two-to-one support.\n\nThe amendment mirrors the existing law requiring photo ID when voting in person. Supporters say it stops future lawmakers from weakening ID rules; critics call it unnecessary, since Ohio already has a photo ID law and little evidence of widespread fraud. Down the ballot, Democrat Allison Russo won secretary of state, becoming Ohio's top elections official, Republican Frank LaRose held the auditor's office, and Democrats John Kulewicz (attorney general) and Seth Walsh (treasurer) led their races in the November 5 roundups.\n\nThe Ohio Supreme Court races were close too: Justice Jennifer Brunner and Judge Marilyn Zayas held narrow leads in early counts, and Zayas would be the first Latina on the court if her lead holds. Republicans have held a majority of the court's seven seats since 1986.\n\nAll results remain unofficial until county certification; Cuyahoga County's is scheduled for November 24.",
+      "source": "The Columbus Dispatch",
+      "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/04/highlights-of-2026-ohio-elections/92556120007/"
+     },
+     {
+      "title": "Northeast Ohio flips a House seat and passes Cuyahoga County levies",
+      "summary": "Northeast Ohio had its own earthquake on Tuesday. Democrat Brian Poindexter unseated Representative Max Miller in Ohio's 7th District — unofficial Secretary of State returns showed Poindexter at 54.9% to Miller's 45.1%, and Miller conceded late Tuesday. Poindexter is an ironworker and Brook Park city council member; the race had turned on abuse allegations by Miller's ex-wife, which he vehemently denied.\n\nCuyahoga County voters passed both big levies: Issue 10 for developmental disabilities with nearly 63%, and Issue 11 for health and human services with about 60%. Together they add $166.50 a year per $100,000 of property value. Voters also approved Charter Issues 12, 13 and 14, which limit some executive powers, and Democrat Courtney Scheff's win in County Council District 5 leaves the council with no Republicans.\n\nMore than 1.7 million Ohioans voted early, a record for a governor's election year. Akron voters approved housing and police-oversight charter amendments, while only about a third of Northeast Ohio school tax increases passed.\n\nCounty certification is scheduled for November 24, after which the unofficial numbers become final.",
+      "source": "Cleveland Magazine",
+      "url": "https://clevelandmagazine.com/articles/how-northeast-ohio-voted-levies-charter-changes-and-the-7th-district-cle-daily/"
+     },
+     {
+      "title": "Ohio Democrats take a majority of the state's U.S. House seats and end the state House supermajority",
+      "summary": "Democrats will control 8 of Ohio's 15 congressional seats after flipping three Republican-held districts under the map approved in 2025 — Brian Poindexter over Max Miller, Kristina Knickerbocker over longtime Representative Mike Turner (49% to 47%), and Don Leonard over Mike Carey (52% to about 45%). Representative Marcy Kaptur held the 9th District with 52%; she has served since 1983 and is the longest-serving woman in Congress.\n\nIn Columbus, Democrats declared victory in eight Ohio House seats previously held by Republicans, with recounts possible in four more. That drops the GOP below the 60-seat supermajority it has held since 2013, so the House is no longer veto-proof against Governor-elect Amy Acton. Republicans lost only two state Senate seats and keep their supermajority there.\n\nAnalysts quoted by the Dispatch caution that the results look like a referendum on President Trump rather than proof Ohio has become a blue state — Republicans have controlled the Ohio Senate since 1984.\n\nEven so, it was Democrats' best Ohio night since 2006, and it changes the math on everything from budgets to redistricting fights in the new year.",
+      "source": "The Columbus Dispatch",
+      "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/05/ohio-congressional-map-democrats-flip-gop-seats/92608531007/"
+     },
+     {
+      "title": "Federal government rejects Cleveland's $7.8 million lead-safety grant",
+      "summary": "The federal government has rejected Cleveland's application for a $7.8 million lead-safety grant, after HUD ran a risk review and judged the city too risky to manage the money based on its performance across several federal housing grants. Signal Cleveland's reporting stresses the denial was not about need — Cleveland's lead problem is well documented — but about how the city has handled federal housing money overall.\n\nThe city is seeking a debriefing, checking whether it can appeal, and looking for other ways to pay for lead cleanup. Cleveland still has three older HUD lead grants in progress, but all are winding down, and there is no fresh federal lead money lined up to replace them.\n\nFor a city where lead paint in older housing remains one of the most serious threats to young children, a gap in funding means fewer homes remediated on schedule — and more pressure on county and state programmes to fill in.\n\nWatch the city's appeal decision and whether Ohio steps in with bridge funding before the older grants run out.",
+      "source": "Signal Cleveland",
+      "url": "https://pbfreeohio.com/2026/11/02/feds-deny-cleveland-7-8-million-lead-grant-what-it-means-for-property-owners/"
+     }
+    ]
+   }
+  ]
+ },
+ "recipes": [
+  {
+   "name": "Roast pork loin with apples",
+   "basedOn": "Meijer — whole boneless pork loin $1.99/lb + Gala apples $0.99/lb",
+   "blurb": "One-pot roast: seared loin nestled into apples and shallots — protein-rich, slices ahead, reheats beautifully.",
+   "time": "15 min prep · 55 min roast",
+   "servings": "6 servings",
+   "cost": "≈$12 total · ≈$2.00/serving",
+   "calories": "≈430 kcal/serving",
+   "nutrition": "Protein 38g · Carbs 14g · Fat 24g",
+   "ingredients": [
+    "3 lb boneless pork loin",
+    "2 lb Gala apples, quartered",
+    "3 shallots, halved",
+    "6 garlic cloves (pantry)",
+    "1 tsp dried rosemary (pantry)",
+    "1 tbsp olive oil (pantry)",
+    "1/2 cup apple juice or broth (pantry)"
+   ]
+  },
+  {
+   "name": "Slow-cooker BBQ pulled pork sandwiches",
+   "img": "https://butterwithasideofbread.com/wp-content/uploads/2021/09/Crockpot-BBQ-Pulled-Pork-6.jpg",
+   "basedOn": "Meijer — whole boneless pork loin $1.99/lb (second half of the loin)",
+   "blurb": "Set it in the morning, shred at dinner — the ultimate one-handed meal, and it freezes in portions for later.",
+   "time": "15 min prep · 8 hrs slow-cook (hands-off)",
+   "servings": "8 servings",
+   "cost": "≈$14 total · ≈$1.75/serving",
+   "calories": "≈520 kcal/serving",
+   "nutrition": "Protein 36g · Carbs 42g · Fat 22g",
+   "ingredients": [
+    "4 lb boneless pork loin",
+    "18 oz BBQ sauce",
+    "1 onion, sliced",
+    "1/2 cup light brown sugar (pantry)",
+    "1 tsp each cumin + paprika (pantry)",
+    "8 sandwich buns"
+   ]
+  },
+  {
+   "name": "Greek pork souvlaki pitas with tzatziki",
+   "basedOn": "Meijer — pork loin $1.99/lb + Pompeian olive oil BOGO Free · Giant Eagle — Chobani 5 for $5",
+   "blurb": "Mediterranean: lemon-oregano pork skewers in warm pitas with cool yogurt tzatziki — wrap it and eat one-handed.",
+   "time": "20 min prep · 12 min grill",
+   "servings": "4 servings",
+   "cost": "≈$11 total · ≈$2.75/serving",
+   "calories": "≈540 kcal/serving",
+   "nutrition": "Protein 40g · Carbs 38g · Fat 24g",
+   "ingredients": [
+    "1.5 lb pork loin, cubed",
+    "1/2 cup olive oil (pantry)",
+    "4 tbsp lemon juice + 2 tsp oregano (pantry)",
+    "2 cups Greek yogurt (Chobani)",
+    "1 cucumber, grated",
+    "4 pocketless pitas",
+    "2 garlic cloves (pantry)"
+   ]
+  },
+  {
+   "name": "Greek lemon chicken thighs & potatoes",
+   "img": "https://www.acedarspoon.com/wp-content/uploads/2020/10/Greek-Lemon-Chicken-Image-8.jpg",
+   "basedOn": "Meijer — family pack chicken thighs $3.19/lb + olive oil BOGO Free",
+   "blurb": "Mediterranean one-pan staple: thighs simmer with potatoes in lemon, garlic and oregano — mostly hands-off.",
+   "time": "15 min prep · 40 min simmer",
+   "servings": "4 servings",
+   "cost": "≈$14 total · ≈$3.50/serving",
+   "calories": "≈450 kcal/serving",
+   "nutrition": "Protein 39g · Carbs 18g · Fat 25g",
+   "ingredients": [
+    "3 lb chicken thighs",
+    "1 lb red potatoes, chunked",
+    "1/3 cup olive oil (pantry)",
+    "2 lemons, juiced + sliced",
+    "4 garlic cloves (pantry)",
+    "2 tsp dried oregano (pantry)",
+    "1/2 cup chicken broth (pantry)"
+   ]
+  },
+  {
+   "name": "Chicken shawarma bowls with garlic yogurt sauce",
+   "img": "https://theeastcoastkitchen.com/wp-content/uploads/2026/10/Sheet-Pan-Chicken-Shawarma-2-edited-1024x576.jpg",
+   "basedOn": "Meijer — chicken thighs $3.19/lb · Giant Eagle — Chobani 5 for $5",
+   "blurb": "Levantine sheet-pan bowls: warm-spiced thighs over rice with a garlicky lemon yogurt sauce — easy to eat holding the baby.",
+   "time": "15 min prep · 25 min roast",
+   "servings": "4 servings",
+   "cost": "≈$13 total · ≈$3.25/serving",
+   "calories": "≈560 kcal/serving",
+   "nutrition": "Protein 44g · Carbs 45g · Fat 22g",
+   "ingredients": [
+    "2 lb boneless skinless chicken thighs",
+    "1 cup Greek yogurt (Chobani)",
+    "3 tbsp olive oil (pantry)",
+    "2 tsp cumin + 2 tsp smoked paprika (pantry)",
+    "1 lemon, juiced",
+    "2 cups cooked rice (pantry)",
+    "1 red onion + 1 bell pepper"
+   ]
+  },
+  {
+   "name": "Chicken piccata with lemon & capers",
+   "img": "https://thegardeningcook.com/wp-content/uploads/2013/09/lemon-chicken-piccata.jpg",
+   "basedOn": "Giant Eagle — chicken breasts $3.99/lb · Meijer — olive oil BOGO Free",
+   "blurb": "Coastal Italian classic: golden cutlets in a bright lemon-caper sauce, on the table in about 30 minutes.",
+   "time": "10 min prep · 15 min cook",
+   "servings": "4 servings",
+   "cost": "≈$12 total · ≈$3.00/serving",
+   "calories": "≈360 kcal/serving",
+   "nutrition": "Protein 37g · Carbs 9g · Fat 16g",
+   "ingredients": [
+    "1.5 lb boneless skinless chicken breasts",
+    "1/3 cup lemon juice (about 2 lemons)",
+    "1/4 cup capers, rinsed",
+    "3 tbsp olive oil (pantry)",
+    "1/4 cup flour (pantry)",
+    "1/2 cup chicken broth or white wine (pantry)",
+    "2 tbsp butter (pantry)"
+   ]
+  },
+  {
+   "name": "Mediterranean stuffed peppers",
+   "img": "https://www.acedarspoon.com/wp-content/uploads/2022/06/Mediterranean-Ground-Beef-Stuffed-Peppers-Image-11.jpg",
+   "basedOn": "Meijer — ground chuck $5.29/lb + olive oil BOGO Free",
+   "blurb": "Lebanese-spiced beef and rice baked in pepper halves with feta — iron-rich, make-ahead, freezes for a month.",
+   "time": "15 min prep · 50 min bake",
+   "servings": "6 servings",
+   "cost": "≈$13 total · ≈$2.25/serving",
+   "calories": "≈480 kcal/serving",
+   "nutrition": "Protein 27g · Carbs 38g · Fat 24g",
+   "ingredients": [
+    "1 lb ground chuck",
+    "3 large bell peppers, halved",
+    "1 cup cooked rice (pantry)",
+    "15 oz can diced tomatoes",
+    "1/2 cup crumbled feta",
+    "2 tbsp olive oil (pantry)",
+    "1 tsp each cinnamon + allspice (pantry)"
+   ]
+  },
+  {
+   "name": "Italian meatballs in tomato sauce",
+   "img": "https://www.mychefsapron.com/wp-content/uploads/Italian-gluten-free-meatballs-in-tomato-sauce.jpg",
+   "basedOn": "Meijer — ground chuck $5.29/lb + Pompeian olive oil BOGO Free",
+   "blurb": "Coastal Italian comfort: tender beef meatballs simmered low in tomato sauce — serve over pasta, freeze the rest.",
+   "time": "30 min prep · 90 min simmer (hands-off)",
+   "servings": "8 servings",
+   "cost": "≈$18 total · ≈$2.25/serving",
+   "calories": "≈520 kcal/serving",
+   "nutrition": "Protein 34g · Carbs 30g · Fat 28g",
+   "ingredients": [
+    "2 lb ground chuck",
+    "1 egg (pantry)",
+    "1 cup grated Parmesan",
+    "2 cans whole peeled tomatoes",
+    "6 tbsp olive oil (pantry)",
+    "3 garlic cloves (pantry)",
+    "1 lb pasta (pantry)"
+   ]
+  },
+  {
+   "name": "Slow-cooker turkey & white bean chili",
+   "img": "https://forktospoon.com/wp-content/uploads/2023/11/Slow-Cooker-Turkey-White-Bean-Chili-6-760x760.png",
+   "basedOn": "Giant Eagle — frozen turkey 95¢/lb (roast the bird, chili from the leftovers)",
+   "blurb": "Creamy, high-protein chili with white beans and green chiles — dump, slow-cook, and eat with one hand; freezes great.",
+   "time": "15 min prep · 6 hrs slow-cook (hands-off)",
+   "servings": "6 servings",
+   "cost": "≈$11 total · ≈$1.85/serving",
+   "calories": "≈450 kcal/serving",
+   "nutrition": "Protein 35g · Carbs 48g · Fat 16g",
+   "ingredients": [
+    "3 cups shredded cooked turkey (from the 95¢/lb bird)",
+    "2 cans cannellini beans",
+    "1 can great northern beans",
+    "2 cans diced green chiles",
+    "1 cup salsa verde",
+    "4 cups chicken broth (pantry)",
+    "4 oz cream cheese"
+   ]
+  },
+  {
+   "name": "London broil beef & broccoli",
+   "img": "https://www.jocooks.com/wp-content/uploads/2022/07/beef-and-broccolli-1-10.jpg",
+   "basedOn": "Giant Eagle — London broil $5.99/lb · Meijer — broccoli crowns 2 for $3",
+   "blurb": "Iron-rich takeout favorite at home: thin-sliced beef and bright broccoli in a glossy ginger-soy sauce over rice.",
+   "time": "15 min prep · 10 min stir-fry",
+   "servings": "4 servings",
+   "cost": "≈$11 total · ≈$2.75/serving",
+   "calories": "≈400 kcal/serving",
+   "nutrition": "Protein 32g · Carbs 30g · Fat 17g",
+   "ingredients": [
+    "1 lb London broil, sliced thin",
+    "1 head broccoli crowns (2 for $3)",
+    "1/2 cup low-sodium soy sauce (pantry)",
+    "3 garlic cloves + 1 tsp ginger (pantry)",
+    "3 tbsp honey (pantry)",
+    "2 tbsp cornstarch (pantry)",
+    "2 cups cooked rice (pantry)"
+   ]
+  },
+  {
+   "name": "Broccoli, bacon & cheddar quiche",
+   "img": "https://simplymadeeats.com/wp-content/uploads/2024/11/broccoli-bacon-cheddar-quiche.jpg",
+   "basedOn": "Meijer — Oscar Mayer bacon BOGO Free + broccoli crowns 2 for $3",
+   "blurb": "Slice-and-reheat all week: protein-packed quiche that works for dinner, midnight feeds and breakfast alike.",
+   "time": "20 min prep · 40 min bake",
+   "servings": "6 servings",
+   "cost": "≈$11 total · ≈$1.85/serving",
+   "calories": "≈420 kcal/serving",
+   "nutrition": "Protein 19g · Carbs 18g · Fat 30g",
+   "ingredients": [
+    "6 slices Oscar Mayer bacon",
+    "1 lb broccoli, chopped small",
+    "5 eggs",
+    "1 store-bought pie crust",
+    "1 cup shredded cheddar",
+    "3/4 cup milk (pantry)",
+    "1/4 cup heavy cream"
+   ]
+  },
+  {
+   "name": "Apple pork chop skillet",
+   "basedOn": "Giant Eagle — boneless pork chops BOGO Free · Meijer — apples $0.99/lb",
+   "blurb": "BOGO chops seared with sweet apples and onion — cozy, quick, and the leftovers reheat without drying out.",
+   "time": "10 min prep · 20 min cook",
+   "servings": "4 servings",
+   "cost": "≈$9 total · ≈$2.25/serving",
+   "calories": "≈380 kcal/serving",
+   "nutrition": "Protein 34g · Carbs 16g · Fat 19g",
+   "ingredients": [
+    "4 boneless center cut pork chops (BOGO pack)",
+    "2 Gala apples, sliced",
+    "1 onion, sliced",
+    "1 tbsp olive oil (pantry)",
+    "1 tsp Dijon mustard (pantry)",
+    "1/2 tsp dried thyme (pantry)",
+    "1/2 cup chicken broth (pantry)"
+   ]
+  },
+  {
+   "name": "Greek yogurt chicken salad wraps",
+   "basedOn": "Giant Eagle — chicken breasts $3.99/lb + Chobani 5 for $5",
+   "blurb": "Mediterranean no-cook night: tangy yogurt chicken salad in wraps — make it at nap time, eat it one-handed anytime.",
+   "time": "15 min prep · no cook (uses cooked chicken)",
+   "servings": "4 servings",
+   "cost": "≈$9 total · ≈$2.25/serving",
+   "calories": "≈340 kcal/serving",
+   "nutrition": "Protein 36g · Carbs 24g · Fat 10g",
+   "ingredients": [
+    "1 lb cooked chicken breast, shredded",
+    "1 cup Greek yogurt (Chobani)",
+    "1 tbsp lemon juice",
+    "1 tsp Dijon mustard (pantry)",
+    "1 celery stalk, diced",
+    "4 large wraps or pitas",
+    "1 tsp dried dill (pantry)"
+   ]
+  },
+  {
+   "name": "Turkey lentil soup",
+   "basedOn": "Giant Eagle — frozen turkey 95¢/lb (second meal from the same bird)",
+   "blurb": "Iron- and protein-rich recovery soup: lentils and leftover turkey simmer into a freezer-friendly pot for the week.",
+   "time": "15 min prep · 45 min simmer",
+   "servings": "6 servings",
+   "cost": "≈$8 total · ≈$1.35/serving",
+   "calories": "≈320 kcal/serving",
+   "nutrition": "Protein 28g · Carbs 34g · Fat 7g",
+   "ingredients": [
+    "2 cups shredded cooked turkey",
+    "1.5 cups dry brown lentils (pantry)",
+    "2 carrots + 2 celery stalks",
+    "1 onion + 2 garlic cloves (pantry)",
+    "6 cups chicken or turkey broth (pantry)",
+    "1 tsp cumin (pantry)",
+    "1 tbsp olive oil (pantry)"
+   ]
+  }
+ ],
+ "tickerExtras": [
+  "🏀 Cavs (4-4) lost 124-116 at OKC Wed — SGA 42, Mitchell 27 · Jarrett Allen left in Q1 with a knee knock · Cavs home Fri Nov 6 vs 76ers 7:30 PM (NBA Cup) + Sat Nov 7 vs Knicks 8 PM",
+  "🏈 Browns (5-3) at Saints (2-5) Sun Nov 8, 1 PM · Watson in concussion protocol, Shedeur Sanders took all No. 1 reps Wed · Ohio State football (6-2, CFP No. 12) hosts Oregon Sat Nov 7, 3:30 PM on CBS · OSU hoops home opener Fri vs Youngstown State 6:30 PM",
+  "🗳️ Top story: Democrats take both chambers of Congress and flip five governorships — in Ohio, Acton beats Ramaswamy for governor and Brown returns to the Senate · New Congress convenes in January",
+  "🏷️ Deal of the day: Meijer brand frozen turkeys 79¢/lb or less through Nov 26 (announced Nov 4) — beats Giant Eagle's 95¢/lb in the Nov 5–11 ad",
+  "🚗 Roads: Solon-area roads normal today — no incidents found for I-271, US-422 or Aurora Rd in ODOT/OHGO checks",
+  "🛢️ Oil down a 4th day (Brent ~$93.65, WTI ~$86.98) on Iran-deal hopes · Dow +3.03% Wed, its best post-midterm day since 1982 · AI stocks still sliding globally Thu"
+ ],
+ "updated": "2026-11-05",
+ "baby": {
+  "tip": "Day 4 tip — diaper math: by today Benji should be having at least 3–4 wet diapers and several stools a day, and the counts should keep climbing toward 6+ wet diapers by day five or six. Keep the little log going on the fridge or phone; it's the simplest feeding check there is, and it's exactly what his pediatrician's office will ask about. If a full day looks low, that's a call-the-pediatrician question, not a wait-and-see one.",
+  "fact": "At four days old, Benji can only focus clearly on things about 8 to 12 inches from his face — which is, not coincidentally, about the distance to a parent's face during a feeding. High-contrast patterns and your faces are basically his favourite channel right now.",
+  "fun": "Tiny mission for Day 4: the first tummy-time minute — a short, supervised session on a firm surface while Benji is awake and calm. One minute counts as a win, and a Moose-supervised (from a polite distance) session counts double."
+ },
+ "watch": {
+  "date": "Thursday, November 5, 2026",
+  "items": [
+   {
+    "title": "The 1971 UFO Photo That Still Defies Explanation | The Cote Photo | Ep 797",
+    "channel": "Podcast UFO",
+    "url": "https://www.youtube.com/watch?v=huiAozUakEs",
+    "why": "Nov 3: Martin Willis interviews researchers on the 1971 Lake Cote disc that appeared in one frame and was gone 13 seconds later — evidence-first UFO, right in your lane."
+   },
+   {
+    "title": "BIGFOOT CHASED US OUT OF THE WOODS! | Robbie Ferrell's Tennessee Encounter - Ep. 233 - 10/30/2026",
+    "channel": "The Cryptid Podcast",
+    "url": "https://www.youtube.com/watch?v=90SS88ol3WA",
+    "why": "Oct 30: an eyewitness says a Sasquatch closed to within 35 feet and followed him and his partner all the way back to their truck in Tennessee."
+   },
+   {
+    "title": "Getting Lost on Purpose: Cal Flyn’s Search for the Wild",
+    "channel": "Constant Wonder (BYUradio)",
+    "url": "https://www.youtube.com/watch?v=az-r5sIoHTc",
+    "dur": "53m",
+    "why": "Nov 4: Flyn on falling through snow into a Scottish river in a whiteout, bears in Transylvania and a too-close volcano in Iceland — real wilderness danger, told well."
+   },
+   {
+    "title": "The Allagash Abduction: Two Witnesses Reveal What Happened Inside the UFO | Ep 791",
+    "channel": "Podcast UFO",
+    "url": "https://www.youtube.com/watch?v=3qQearTtljE",
+    "why": "Original 1976 Allagash witnesses Charlie Foltz and Jim Weiner recount the glowing object, the missing time and what they say happened inside — 50 years on, in their own words."
+   },
+   {
+    "title": "1976 Abair Road Bigfoot Incident, Officer Brian Gosselin Tells His Story 50 Years Later: Ep228",
+    "channel": "The Cryptid Podcast",
+    "url": "https://www.youtube.com/watch?v=MCLgdr0RoCI",
+    "why": "A retired cop recounts the 1976 Abair Road sighting, 50 years on — the classic first-hand witness interview format you like best."
+   },
+   {
+    "title": "The Making Of Bigfoot",
+    "channel": "Sasquatch Odyssey",
+    "url": "https://www.youtube.com/watch?v=79xNQwvWy2c",
+    "why": "Brian King-Sharp with investigative author Greg Long on his challenge to the Patterson-Gimlin film — a skeptical counterpoint to the encounter stories."
+   }
+  ]
+ },
+ "movies": [
+  {
+   "title": "Ramayana",
+   "when": "Thu Nov 5",
+   "date": "Opens Thu Nov 5",
+   "hook": "The ancient Indian epic on the big screen, following Prince Rama's legendary journey. Starring Ranbir Kapoor, Sai Pallavi and Yash."
+  },
+  {
+   "title": "The Cat in the Hat",
+   "when": "Fri Nov 6",
+   "date": "Opens Fri Nov 6",
+   "hook": "Warner Bros. Pictures Animation's animated Dr. Seuss reinvention — the Cat must cheer up siblings Gabby and Sebastian or lose his job. Voices: Bill Hader, Xochitl Gómez, Matt Berry, Quinta Brunson, Giancarlo Esposito and America Ferrera."
+  },
+  {
+   "title": "Godzilla Minus Zero",
+   "when": "Fri Nov 6",
+   "date": "Opens Fri Nov 6 · also IMAX",
+   "hook": "Takashi Yamazaki's direct sequel to Godzilla Minus One, set two years later in 1949 as Japan rebuilds and a new threat emerges. Starring Ryūnosuke Kamiki, Minami Hamabe and Yuki Yamada."
+  },
+  {
+   "title": "Ebenezer",
+   "when": "Fri Nov 13",
+   "date": "Opens Fri Nov 13",
+   "hook": "Ti West's take on Dickens — miserly Ebenezer Scrooge is haunted by three spirits on Christmas Eve for one last chance to change. Starring Johnny Depp, Rupert Grint, Andrea Riseborough and Sam Claflin."
+  },
+  {
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "when": "Fri Nov 20",
+   "date": "Opens Fri Nov 20 · IMAX early screenings Wed Nov 18",
+   "hook": "Prequel set 24 years before the original, following 16-year-old Haymitch Abernathy in the 50th Hunger Games. Starring Joseph Zada, Mckenna Grace, Elle Fanning, Jesse Plemons, Ralph Fiennes and Glenn Close."
+  },
+  {
+   "title": "Hexed",
+   "when": "Wed Nov 25",
+   "date": "Opens Wed Nov 25",
+   "hook": "Walt Disney Animation Studios' new magical coming-of-age saga — impulsive teen Billie discovers secret magical abilities that upend her world. Voices include Hailee Steinfeld, Rashida Jones, Tracey Ullman and Stephen Fry."
+  }
+ ],
+ "eats": [
+  {
+   "name": "Burntwood Tavern",
+   "area": "Solon",
+   "deals": [
+    "Kids Eat Free Mondays",
+    "Happy Hour Mon–Fri 3–6pm: $5 draughts, $9 signature cocktails, $9 appetizers",
+    "Football Sundays: 10 game-day favorites for $10 each, 10am–4pm"
+   ]
+  },
+  {
+   "name": "Cowboy Food & Drink",
+   "area": "Chagrin Falls",
+   "deals": [
+    "Kids Eat Free Mondays",
+    "Half-Off Wings Tuesdays"
+   ]
+  },
+  {
+   "name": "Wingstop",
+   "area": "Solon",
+   "deals": [
+    "70¢ boneless wings Mon–Tue (participating locations, in-store / wingstop.com / app)"
+   ]
+  },
+  {
+   "name": "Bob Evans",
+   "area": "Solon",
+   "deals": [
+    "Kids Eat Free Tuesdays after 4pm — 1 free kids meal (12 & under) per adult entrée, dine-in"
+   ]
+  },
+  {
+   "name": "Winking Lizard",
+   "area": "Macedonia",
+   "deals": [
+    "Wing Night Mon–Tue, after 3pm, dine-in only"
+   ]
+  },
+  {
+   "name": "Condado Tacos",
+   "area": "Orange",
+   "deals": [
+    "Mon & Wed: $4 house margaritas + $6 Street Tacos (3 tacos)",
+    "Taco Tuesday: $4 Lucy's Fire, Blue Dream, or Rango Tango tacos",
+    "Kids Eat Free: 2 free kids meals with $12+ food purchase, dine-in only"
+   ]
+  }
+ ],
+ "streaming": [
+  {
+   "title": "Harry Potter",
+   "service": "HBO Max",
+   "when": "Fri Dec 25",
+   "date": "Series premiere · Christmas Day",
+   "type": "New series",
+   "hook": "Season 1 covers Philosopher's Stone across 8 episodes — Dominic McLaughlin as Harry, John Lithgow as Dumbledore, Nick Frost as Hagrid. New this week: David Threlfall will voice the Sorting Hat and Leo Bill plays Nearly Headless Nick (announced Oct 30), and the first poster landed Nov 1. Already renewed for Season 2."
+  },
+  {
+   "title": "All's Fair — Season 2",
+   "service": "Hulu",
+   "when": "Wed Nov 4",
+   "date": "Season premiere Wed Nov 4 · three-episode premiere per streaming roundups",
+   "type": "New season",
+   "hook": "Ryan Murphy's legal drama returns — Kim Kardashian, Niecy Nash-Betts, Naomi Watts, Sarah Paulson, Teyana Taylor and Glenn Close as the divorce lawyers of Grant, Ronson & Greene."
+  },
+  {
+   "title": "Black Doves — Season 2",
+   "service": "Netflix",
+   "when": "Thu Nov 5",
+   "date": "Season premiere Thu Nov 5 · all 6 episodes",
+   "type": "New season",
+   "hook": "Keira Knightley returns as spy Helen Webb, with Ben Whishaw as assassin Sam and Sarah Lancashire as handler Mrs. Reed. New cast includes Neve Campbell and Ambika Mod."
+  },
+  {
+   "title": "The Lord of the Rings: The Rings of Power — Season 3",
+   "service": "Prime Video",
+   "when": "Wed Nov 11",
+   "date": "Season premiere Wed Nov 11 · first 4 episodes, then weekly pairs",
+   "type": "New season",
+   "hook": "Five-year time jump into wartime Middle-earth as Sauron moves toward forging the One Ring. Stars Morfydd Clark, Charlie Vickers and Daniel Weyman as Gandalf, with Jamie Campbell Bower joining as Celeborn."
+  },
+  {
+   "title": "Being Heumann",
+   "service": "Apple TV+",
+   "when": "Fri Nov 13",
+   "date": "Streaming Fri Nov 13 · after a limited theatrical run Nov 6",
+   "type": "Movie",
+   "hook": "Sian Heder's drama about disability-rights activist Judith Heumann."
+  },
+  {
+   "title": "Percy Jackson and the Olympians — Season 3",
+   "service": "Disney+",
+   "when": "Fri Nov 20",
+   "date": "Season premiere Fri Nov 20 · two-episode premiere, also on Hulu",
+   "type": "New season",
+   "hook": "Season 3 adapts The Titan's Curse — Percy (Walker Scobell) searches for a missing Annabeth as the Hunters of Artemis enter the story, with Leah Sava Jeffries."
+  },
+  {
+   "title": "Yellowjackets — Season 4 (Final Season)",
+   "service": "Paramount+",
+   "when": "Fri Nov 20",
+   "date": "Final season premiere Fri Nov 20 · weekly Fridays",
+   "type": "New season",
+   "hook": "The final chapter as the survivors near rescue and race to bury what happened in the wilderness. Starring Melanie Lynskey, Christina Ricci, Sophie Thatcher and Hilary Swank."
+  },
+  {
+   "title": "Blade Runner 2099",
+   "service": "Prime Video",
+   "when": "Wed Nov 25",
+   "date": "Series premiere Wed Nov 25 · all 8 episodes",
+   "type": "New series",
+   "hook": "Limited series set 50 years after Blade Runner 2049 — Michelle Yeoh as Olwen, a replicant Blade Runner near the end of her life, and Hunter Schafer as Cora. Ridley Scott executive produces."
+  }
+ ]
 }
