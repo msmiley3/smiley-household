@@ -1,87 +1,68 @@
 {
  "dailyBrief": {
-  "date": "Thursday, November 5, 2026",
-  "text": "Good morning, Smileys — Benji is four days old, and Mike, you're off work today to help Kelly at home, which is exactly where the day should be spent. Overnight, the Ukraine aid-centre death toll rose to 42 ahead of next week's Abu Dhabi peace talks, oil fell for a fourth straight day on hopes the midterm result pushes Washington toward an Iran deal, and the post-election map settled: Democrats hold both chambers of Congress, and Ohio has a governor-elect in Amy Acton and a returning senator in Sherrod Brown. The Cavs lost the rematch in Oklahoma City last night, 124-116, despite Donovan Mitchell's late flurry, and Jarrett Allen left early with a knee knock — they're home Friday against Philadelphia and Saturday against the Knicks. Solon stays cloudy and dry today with a high near 61°, but rain and a sharp cooldown arrive Friday into Saturday, so today is the day for any errands. If energy somehow allows tonight, Hadestown is at Playhouse Square at 7:30 PM.",
+  "date": "Friday, November 6, 2026",
+  "text": "Good morning, Smileys — Benji is five days old, and it's a cold, damp Friday to stay in with him. Overnight, Iran sent a nuclear proposal to the U.S. through Qatar tied to seven demands, while tankers keep getting hit in the Strait of Hormuz, and chip stocks are bouncing this morning after Thursday's 5.52% Nasdaq drop into correction. Solon tops out near 49° with temperatures falling through the day and showers likely by evening, so any errands are better done early. Tonight is a sports doubleheader from the couch: Ohio State hoops opens at home against Youngstown State at 6:30 PM, and the Cavs host the 8-1 76ers at 7:30 PM in an NBA Cup game, with Jarrett Allen questionable. Locally, the Ohio Hazmat Teams Conference runs today and tomorrow at the Solon Community Center.",
   "chips": [
-   "👶 Benji Day 4 — Mike's day off at home with Kelly and Benji",
+   "👶 Benji Day 5 — cold, damp Friday, good day to stay in",
    {
-    "label": "☁️ Solon today: cloudy, high 61°, dry · rain Fri–Sat, highs in the 40s",
+    "label": "🌧️ Solon today: high 49°, falling temps, PM showers likely · Sat 46°, Sun sunny 57°",
     "url": "https://weather.com/us/oh/city/solon/tenday"
    },
    {
-    "label": "🇺🇦 Ukraine aid-centre toll rises to 42 · Abu Dhabi talks Nov 10–11",
-    "url": "https://www.reuters.com/world/europe/death-toll-russian-strike-ukrainian-aid-centre-reaches-42-police-say-2026-11-05/"
+    "label": "🇮🇷 Iran sends nuclear proposal via Qatar · Hormuz tankers hit again",
+    "url": "https://www.reuters.com/world/middle-east/iran-sent-nuclear-proposal-us-via-qatar-senior-iranian-official-tells-reuters-2026-11-05/"
    },
    {
-    "label": "🏀 Cavs lost 124-116 at OKC · home Fri 7:30 PM vs 76ers + Sat 8 PM vs Knicks",
+    "label": "🏀 Tonight: OSU hoops 6:30 PM vs Youngstown State · Cavs 7:30 PM vs 76ers (NBA Cup)",
     "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
    },
    {
-    "label": "🎭 Tonight: Hadestown at Playhouse Square, 7:30 PM",
-    "url": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
+    "label": "📈 Nasdaq futures rebound after Thursday's 5.52% correction drop",
+    "url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/"
    }
   ],
   "links": [
    {
-    "phrase": "the Ukraine aid-centre death toll rose to 42",
-    "url": "https://www.reuters.com/world/europe/death-toll-russian-strike-ukrainian-aid-centre-reaches-42-police-say-2026-11-05/"
+    "phrase": "Iran sent a nuclear proposal to the U.S. through Qatar",
+    "url": "https://www.reuters.com/world/middle-east/iran-sent-nuclear-proposal-us-via-qatar-senior-iranian-official-tells-reuters-2026-11-05/"
    },
    {
-    "phrase": "oil fell for a fourth straight day",
-    "url": "https://www.businesstoday.com.my/2026/11/05/oil-extends-losses-after-us-midterm-results-raise-hopes-of-iran-deal/"
+    "phrase": "tankers keep getting hit in the Strait of Hormuz",
+    "url": "https://www.reuters.com/world/middle-east/tankers-hit-hormuz-iran-keeps-up-pressure-after-us-vote-2026-11-05/"
    },
    {
-    "phrase": "Ohio has a governor-elect in Amy Acton",
-    "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/04/highlights-of-2026-ohio-elections/92556120007/"
+    "phrase": "Thursday's 5.52% Nasdaq drop into correction",
+    "url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/"
    },
    {
-    "phrase": "The Cavs lost the rematch in Oklahoma City last night, 124-116",
-    "url": "https://www.news9.com/oklahoma-city-thunder/okc-thunder-win-over-cavaliers"
-   },
-   {
-    "phrase": "Hadestown is at Playhouse Square at 7:30 PM",
-    "url": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
+    "phrase": "Ohio Hazmat Teams Conference runs today and tomorrow at the Solon Community Center",
+    "url": "https://www.eventbrite.com/e/ohio-hazmat-teams-conference-2026-registration-1999932278281"
    }
   ]
  },
  "babyDue": null,
  "weekBrief": {
-  "text": "Benji's first full week at home is a settle-in week: he was born Sunday, came home Tuesday, saw his pediatrician Wednesday, and now gets a quiet house while Mike takes Thursday off to help Kelly. Solon's weather turns with the weekend — cloudy and dry near 61° Thursday, then rain and a sharp cooldown Friday (49°) and Saturday (46°), clearing Sunday and rebounding into the 50s and low 60s through Tuesday. The week's best grocery move is a Thanksgiving stock-up: Meijer brand frozen turkeys at 79¢/lb or less through November 26 beat Giant Eagle's 95¢/lb, and one bird covers a roast dinner now plus soup and chili later. If energy allows, the Cavs are home twice at Rocket Arena — Friday against Philadelphia and Saturday against the Knicks — alongside Hadestown at Playhouse Square on Thursday, the free Día de Muertos celebration on Saturday, Ohio State hosting Oregon Saturday afternoon, and the Browns at New Orleans on Sunday.",
+  "text": "Benji's first week wraps up as a quiet, stay-home stretch — born Sunday, home Tuesday, pediatrician Wednesday, and now five days old with the house settling into a rhythm around him. Solon's weather turns cold and damp for the weekend — 49° with evening showers Friday and 46° Saturday — then breaks sunny and warmer Sunday at 57°, peaking near 61° Tuesday before cooling again. The sports weekend is stacked: the Cavs host Philadelphia tonight and the Knicks Saturday, Ohio State football hosts Oregon Saturday afternoon, and the Browns visit the Saints Sunday with Shedeur Sanders in line for his first start of the season. The week's standout grocery move stays the Thanksgiving stock-up — Meijer brand frozen turkeys at 79¢/lb or less through November 26 beat Giant Eagle's 95¢/lb — and if energy allows, Hadestown continues at Playhouse Square this weekend.",
   "chips": [
-   "👶 Benji's first full week at home — born Nov 1, Day 4 today",
+   "👶 Benji Day 5 — first week at home nearly in the books",
    {
-    "label": "🌦️ Thu 61° cloudy · Fri 49° rain · Sat 46° rain · Sun–Tue dry, 50s–61°",
+    "label": "🌦️ Weekend: Fri 49° showers, Sat 46°, Sun sunny 57°, Tue 61°",
     "url": "https://weather.com/us/oh/city/solon/tenday"
    },
    {
-    "label": "🏷️ Meijer frozen turkeys 79¢/lb or less thru Nov 26 · Giant Eagle 95¢/lb Nov 5–11",
-    "url": "https://www.prnewswire.com/news-releases/savings-are-served-meijer-offering-deep-discounts-on-turkeys-and-thanksgiving-favorites-302929540.html"
-   },
-   {
-    "label": "🏀 Cavs home Fri 7:30 PM vs 76ers + Sat 8 PM vs Knicks · 🏈 Ohio State vs Oregon Sat 3:30 PM · Browns at Saints Sun 1 PM",
+    "label": "🏀🏈 Cavs Fri + Sat at home · Ohio State vs Oregon Sat 3:30 PM · Browns at Saints Sun 1 PM",
     "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
    },
+   "🏷️ Turkey watch: Meijer brand frozen turkeys 79¢/lb or less thru Nov 26",
    {
-    "label": "🎭 Hadestown Thu 7:30 PM · Día de Muertos Sat 11 AM–10 PM (free)",
-    "url": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
+    "label": "🎭 Hadestown at Playhouse Square this weekend",
+    "url": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
    }
   ],
   "links": [
    {
-    "phrase": "Meijer brand frozen turkeys at 79¢/lb or less through November 26",
-    "url": "https://www.prnewswire.com/news-releases/savings-are-served-meijer-offering-deep-discounts-on-turkeys-and-thanksgiving-favorites-302929540.html"
-   },
-   {
-    "phrase": "the Cavs are home twice at Rocket Arena",
-    "url": "https://www.ticketmaster.com/cleveland-cavaliers-tickets/artist/805921?GCID=0&awtrc=true&home_away=home"
-   },
-   {
-    "phrase": "Hadestown at Playhouse Square on Thursday",
-    "url": "https://www.clevescene.com/arts/things-to-do/15-things-to-do-in-cleveland-this-weekend-nov-5-8/"
-   },
-   {
-    "phrase": "Día de Muertos celebration on Saturday",
-    "url": "https://clevelandartsevents.com/event/cleveland-public-theatre-presents-dia-de-muertos-2026/"
+    "phrase": "Meijer brand frozen turkeys at 79¢/lb or less through November 26 beat Giant Eagle's 95¢/lb",
+    "url": "https://weeklyadhunters.com/meijer-weekly-flyer-savings/"
    }
   ]
  },
@@ -319,46 +300,46 @@
   ]
  },
  "headlines": {
-  "date": "Thursday, November 5, 2026",
+  "date": "Friday, November 6, 2026",
   "cats": [
    {
     "name": "World",
     "items": [
      {
-      "title": "Ukraine aid-centre death toll rises to 43 as rescue work enters a fourth day",
-      "summary": "President Volodymyr Zelensky said on Thursday that 43 people have now been confirmed killed in Monday's Russian bombing of a school building in Komyshuvakha, in the Zaporizhzhia region. The building was being used as a shelter and as a place where residents gathered to receive humanitarian aid, and more than 30 people were still unaccounted for.\n\nLocal officials said at least nine heavy aerial bombs hit the site, including very large glide bombs that collapsed a reinforced underground shelter built to protect people during attacks. Two first responders who rushed in after the first strikes were among those killed, and identification of many victims is expected to require DNA testing because of the scale of the damage.\n\nThe Council of Europe's human rights commissioner condemned the attack, noting that the aid distribution had been publicly announced. It is being described as one of the deadliest single attacks on civilians in the war, coming just days before planned peace talks.\n\nWatch for the final toll as crews clear the rubble, and for how the attack is raised at the Abu Dhabi talks scheduled for November 10-11.",
-      "source": "CNN",
-      "url": "https://www.cnn.com/2026/11/03/europe/ukraine-russia-zaporiszhzha-school-strike-intl?cid=external-feeds_iluminar_meta"
+      "title": "Iran sends a nuclear proposal to the U.S. through Qatar — with seven demands first",
+      "summary": "Iran has passed a nuclear proposal to Washington through Qatari mediators, a senior Iranian official told Reuters on Thursday. Tehran says the proposal will only be discussed once the United States meets seven demands it has set out first.\n\nQatari officials have been meeting Iranian counterparts since last week, and the issues on the table go well beyond the nuclear file itself. They include the future of the Strait of Hormuz, the American blockade on Iranian ports, sanctions relief, and whether formal nuclear talks can restart at all.\n\nBoth sides acknowledge they remain far apart, which makes this an opening move rather than a breakthrough. What to watch is whether Washington answers the demands publicly, and whether the channel through Qatar produces an actual negotiating date.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/middle-east/iran-sent-nuclear-proposal-us-via-qatar-senior-iranian-official-tells-reuters-2026-11-05/"
      },
      {
-      "title": "Tankers burn near the Strait of Hormuz as Iran reports mine strikes and a ship is hit off Qatar",
-      "summary": "Iran's Revolutionary Guard said on Thursday that two oil tankers and a tugboat caught fire in separate incidents in the Strait of Hormuz after using routes Tehran calls unauthorised. One tanker was said to have struck a naval mine south of the strait, while a supertanker caught fire leaving the waterway and a tug that came to help it also burned.\n\nThe report follows a claim a day earlier that four tankers were destroyed after hitting mines and two other vessels were seized. Separately, Britain's maritime trade operations agency said it had received a report of a tanker struck by two unidentified projectiles north of Qatar, with the crew's status not yet confirmed.\n\nHormuz is the main exit route for Gulf oil, so repeated mine and fire incidents raise shipping, insurance and supply risks at a moment when crude had been falling on hopes of an Iran deal and then rebounded on Thursday. Iran gave no casualty or damage figures, and independent confirmation is still limited.\n\nWatch for confirmation from shipping agencies, whether tanker companies pause transits, and how oil prices react into Friday.",
+      "title": "Tankers keep getting hit in the Strait of Hormuz after the U.S. election",
+      "summary": "Iran reported three more tankers damaged in the Strait of Hormuz on Thursday — two that struck naval mines and a third that caught fire, according to the Revolutionary Guards. The British maritime agency UKMTO counts at least five vessel incidents since Sunday alone.\n\nOctober was the worst month yet, with 35 vessels hit. Oil markets have been whipsawing through it: prices dropped sharply in recent days as traders bet a chastened Washington might hold off on new strikes, then edged back up on Thursday.\n\nVice President JD Vance has publicly blamed the war for Republicans' midterm losses, while two sources told Reuters the president may still order a return to hostilities now that voting is over. For drivers and shippers alike, the strait remains the single biggest wild card in energy prices.",
       "source": "Reuters",
-      "url": "https://wncy.com/2026/11/04/irans-irgc-says-two-tankers-and-tugboat-caught-fire-in-strait-of-hormuz/"
+      "url": "https://www.reuters.com/world/middle-east/tankers-hit-hormuz-iran-keeps-up-pressure-after-us-vote-2026-11-05/"
      },
      {
-      "title": "Bank of England raises rates to 4% for the first time since 2023 and warns more may come",
-      "summary": "The Bank of England raised its main interest rate to 4% from 3.75% on Thursday, its first increase in more than three years. The vote was 8 to 1, and the lone dissenter wanted an even bigger move to 4.25%, arguing the bank had been too slow to reassure markets about inflation.\n\nBritish inflation was 3.5% in September, and the bank now expects it to peak near 4.8% next spring and not return to its 2% target until late 2028, about six months later than it forecast in July. In a worse case, with oil around $130 a barrel, inflation could reach above 6% next year. Growth forecasts were revised up, helped by spending on artificial intelligence.\n\nGovernor Andrew Bailey said this should not be read as the start of an endless run of hikes, but that unless the Middle East conflict settles, it is unlikely to be the last one either. That adds a direct cost-of-living pressure for Britain's new government, with real household incomes set to fall this year and next.\n\nThe next decision comes on December 17. Watch whether support grows for larger hikes, and how markets price the path for 2027.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/bank-england-raises-rates-first-time-since-2023-says-more-may-come-2026-11-05/"
+      "title": "Israel's president will wait until Sunday to pick who tries to form a government",
+      "summary": "Israeli President Isaac Herzog wrapped up two days of consultations with every party in the Knesset on Thursday and said he will not announce until Sunday who gets the first chance to form a government. Lawmakers backing Gadi Eisenkot totaled 67 recommendations, against 46 for incumbent Prime Minister Benjamin Netanyahu.\n\nThe arithmetic is the problem. Final results from the October 27 election gave Netanyahu's bloc 53 seats, Eisenkot's bloc 48, and Arab-led parties a record 19 — nobody holds the 61 needed for a majority in the 120-seat parliament. Herzog pointed to mutual vetoes between and within the blocs and said he will hold personal talks with party leaders first.\n\nWhoever is picked gets 28 days, with a possible two-week extension, and Netanyahu stays on as caretaker prime minister in the meantime. The new Knesset is expected to be sworn in November 10, so Sunday's choice sets the clock for weeks of coalition bargaining.",
+      "source": "Associated Press",
+      "url": "https://www.reporterworldnews.com/news/world/2026/11/06/israel-president-delays-government-mandate-decision-coalition-deadlock"
      },
      {
-      "title": "Ukraine expects fresh support after the U.S. midterms, its foreign minister says",
-      "summary": "Ukraine's foreign minister Andrii Sybiha said on Thursday that he expects new steps to support Ukraine following the U.S. midterm elections. Speaking at a press conference in Bucharest, he said every change brings a chance for new dynamics.\n\nSybiha said it is not realistic to end the war with Russia without the United States and President Donald Trump, but argued that Europe needs a clearer complementary role alongside the main U.S. track. He also said Ukraine does not see signs on the battlefield that Russia is ready for serious negotiations, and that pressure on Moscow needs to continue.\n\nThe comments came ahead of negotiations involving Ukraine, Russia and the United States in Abu Dhabi next week. Ukraine says it will use any opportunity to speed up peace efforts.\n\nWatch for what the new Democratic Congress proposes on Ukraine aid, and whether Europe announces concrete new commitments before Abu Dhabi.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/ukraine-expects-fresh-support-after-us-mid-terms-minister-says-2026-11-05/"
+      "title": "Russia and Ukraine trade overnight strikes while rebuilding talks go on in Brussels",
+      "summary": "Russia and Ukraine exchanged another heavy round of airstrikes overnight into Thursday, even as officials gathered at NATO headquarters in Brussels for a second day of talks on reconstruction and security. Ukraine said its defenses downed or suppressed 105 of 128 Russian attack drones, with strikes wounding four people in the Dnipropetrovsk and Kyiv regions.\n\nRussia said it intercepted 496 Ukrainian drones across 13 regions and Crimea, and officials in occupied Luhansk reported five people killed there. In Brussels, lead Ukrainian negotiator Rustem Umerov said the agenda covered postwar rebuilding, funding for 2027, and security guarantees, with the U.S., Britain, France, Germany, the EU, NATO, the World Bank and BlackRock all represented.\n\nThe meetings are a runway to next week's planned talks in Abu Dhabi, where Russian, Ukrainian and American negotiators are due to try to end the war. Fighting at this intensity, days before a peace table convenes, is each side negotiating with leverage as much as with words.",
+      "source": "Associated Press",
+      "url": "https://www.military.com/russia-and-ukraine-trade-airstrikes-as-reconstruction-and-security-talks-resume-in-brussels"
      },
      {
-      "title": "Zelensky appeals in Madrid for transformers, cables and generators to keep Ukraine's power on",
-      "summary": "President Volodymyr Zelensky appealed on Thursday to leaders at the Ibero-American Summit in Madrid for urgent help rebuilding and maintaining Ukraine's war-damaged energy system. He asked for transformers, cables, generators and other electrical equipment.\n\nZelensky said Russia had damaged every power plant in the country through missile and drone attacks, forcing energy workers into constant repairs to prevent a nationwide blackout. He named specific needs by country, including transformers from Brazil, Mexico, Argentina and Colombia, cables from Chile, and equipment and generators from Spain.\n\nHe also used the summit to call for pressure over Russian war crimes, citing the school aid-centre attack, and to invite cooperation on defence technology, including drones, electronic warfare and air defences. Spain's prime minister said Ukraine deserved support.\n\nWatch for pledges that turn into deliveries before winter, when power shortages bite hardest.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/americas/ukraines-zelenskiy-appeals-energy-infrastructure-aid-madrid-summit-2026-11-05/"
+      "title": "Pope Leo starts his longest trip yet — Uruguay, Argentina and Peru — weeks after surgery",
+      "summary": "Pope Leo XIV left Rome on Friday to begin a 12-day, three-country tour of Latin America, the longest and farthest trip of his pontificate. He is due in Montevideo, Uruguay, after a 13-and-a-half-hour flight, just three weeks after lung cancer surgery on October 13.\n\nThe itinerary is demanding: a visit to a Montevideo neighborhood struggling with gang violence, Masses in Paysandú and Florida, then Argentina — the first papal visit there in 39 years, including a meeting with President Javier Milei — and finally Peru. Peru is personal territory: Leo served there as a missionary priest and as bishop of Chiclayo for two decades, and he holds Peruvian citizenship.\n\nLatin America is home to roughly 40 percent of the world's 1.4 billion Catholics, but the Catholic share of the population has been shrinking, and Uruguay is the region's most secular country. The trip is both a homecoming and a test of the church's hold in a region where it is losing ground.",
+      "source": "Associated Press",
+      "url": "https://www.cfpublic.org/2026-11-06/after-cancer-surgery-pope-leo-embarks-on-latin-america-trip"
      },
      {
-      "title": "Germany proposes an extra 100 million euros to repair Ukraine's water, energy and transport links",
-      "summary": "Germany is proposing to set aside an extra 100 million euros, about $113 million, to help restore Ukrainian water, energy and transport infrastructure and make it more resilient against intensified Russian attacks, according to a finance ministry letter to parliament's budget committee.\n\nThe money would supplement funding already in the 2026 budget and cover damage from a Russian aerial campaign that has intensified since the summer. Berlin had already set aside 250 million euros in September through the Ukraine Energy Support Fund.\n\nThe letter said 80% of Ukraine's power generation capacity has been destroyed since the full-scale invasion began in 2022, with October attacks creating blackouts in more than a third of Ukraine's regions. Chancellor Friedrich Merz's government is described as the biggest European contributor to Ukraine.\n\nWatch for the budget committee's decision, and whether other European governments add similar winter infrastructure packages.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/germany-proposes-extra-100-million-ukraine-infrastructure-2026-11-05/"
+      "title": "Paraguay's president resigns and is impeached after a digital bank collapse",
+      "summary": "Paraguay's President Santiago Peña announced his resignation on Thursday, and within minutes the lower house of Congress voted 78-0 to impeach him anyway. The attorney general has opened three criminal investigations tied to the collapse of Ueno Bank, which the central bank seized on Tuesday.\n\nUeno's capital ratio had fallen to less than half the legal minimum, and customer deposits, apps and cards were frozen. The bank held about $800 million in public money — including pension and health funds — and served roughly 3 million customers, about 60 percent of Paraguay's adults. A judge has jailed six bank executives, including its founder and president, pending trial.\n\nCongress was still voting Friday on whether to accept the resignation, which would let Vice President Pedro Alliana take over without a Senate trial. Opposition senators want formal removal instead, arguing a quiet resignation would preserve Peña's lifetime Senate seat and legal protections. Peña, a former shareholder in the firm that owned the bank until last year, denies wrongdoing.",
+      "source": "Associated Press",
+      "url": "https://thebullpost.press/paraguay-prosecutor-will-seek-charges-against-embattled-president-after-bank-collapse/"
      }
     ]
    },
@@ -366,34 +347,34 @@
     "name": "Politics",
     "items": [
      {
-      "title": "Democrats won big, but they are already split over what their mandate actually is",
-      "summary": "Democrats are presenting their sweeping midterm victory as a mandate for change, but reporting on Thursday showed early disagreement inside the party over how far voters want them to go. There is broad agreement on affordability, and less agreement on investigations, impeachment, or moving toward government-run health coverage.\n\nLeaders Chuck Schumer and Hakeem Jeffries have stressed that fixing the affordability crisis is the top priority. The consensus list for January includes making Obamacare plans more affordable, reversing some Medicaid cuts, and ending the tariffs and the war in Iran that Democrats blame for higher costs.\n\nSchumer warned that voters did not give Democrats a blank check. Jeffries said he has not had a single House Democrat talk to him about impeachment, even as other members push for tougher accountability for President Trump and his family.\n\nWatch for the first bills Democrats file in January, and whether centrists and progressives can hold together on health care.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/democrats-won-big-what-is-their-mandate-2026-11-05/"
+      "title": "Democrats win both the House and the Senate in a midterm rout",
+      "summary": "Democrats have captured majorities in both chambers of Congress after Tuesday's vote, flipping Republican Senate seats in states including Texas, Kansas, Iowa, Ohio, North Carolina and South Carolina. One AP-based tally puts Democrats at at least 54 Senate seats, with the House count still provisional as late races are called.\n\nTurnout was enormous for a midterm: more than 122 million people voted, close to 49 percent of eligible voters and near the 2018 high-water mark. Races in Mississippi and Alaska remained too close to call, with Democratic challengers leading in both.\n\nThe new majorities are promising affordability legislation, an end to the Iran war, reversals of Medicaid and SNAP cuts, AI and data-center rules, and investigations backed by subpoena power. The president is signaling vetoes in return, so January's handover sets up two years of open conflict between Congress and the White House.",
+      "source": "Particle News (AP/NPR tallies)",
+      "url": "https://particle.news/story/democrats-capture-both-houses-in-midterm-upset"
      },
      {
-      "title": "Democrats promised affordability, but Trump's veto and the filibuster limit what they can deliver",
-      "summary": "Democrats swept to power in Congress promising to lower prices for groceries, gasoline, health care and other necessities, but Axios reporting on Thursday laid out how limited their power is to deliver that relief on their own. The biggest obstacle is President Trump, who retains the veto.\n\nEconomists noted that slowing inflation does not mean prices fall back to earlier levels, and that broad price declines usually come with downturns and job losses. One budget expert told Axios that bringing prices back to 2019 levels is not realistic.\n\nDemocrats campaigned on rolling back tariffs, suspending the federal gasoline tax in some proposals, offering rebate checks, restoring expired Affordable Care Act subsidies and reversing Medicaid cuts. Each of those paths runs into a veto threat, the Senate's 60-vote threshold, or divisions inside the party.\n\nWatch for whether Democrats use spending and borrowing bills as leverage to negotiate, rather than relying on standalone bills Trump can block.",
-      "source": "Axios via Newsmax",
-      "url": "https://www.newsmax.com/politics/Dems-Affordability-Promises-Face-Harsh-Reality/2026/11/05/id/1275303"
+      "title": "Elizabeth Warren is about to run the Senate Banking Committee, and Wall Street is bracing",
+      "summary": "Senator Elizabeth Warren of Massachusetts is set to take over the Senate Banking Committee in January, with subpoena power over the country's biggest financial firms. Banks, private equity, crypto companies and prediction markets are all expecting a far more aggressive oversight era.\n\nHer likely agenda includes a long-standing bill to rein in private-equity deals, probes into alleged insider trading on prediction markets, consumer protections in crypto, and questions about bankers' ties to Jeffrey Epstein. Allies such as Richard Blumenthal on investigations and Maxine Waters, the front-runner for House Financial Services, would extend that reach.\n\nMarkets noticed immediately: the S&P 500 fell more than 4 percent Thursday, with JPMorgan and Goldman Sachs each down over 4 percent, as investors priced in a tougher climate for finance and the AI boom. Warren wrote Thursday that Democrats won by promising to side with working people — and that working people expect delivery.",
+      "source": "The Wall Street Journal",
+      "url": "https://www.wsj.com/politics/policy/elizabeth-warrens-power-in-new-senate-is-a-wall-street-nightmare-dff8fb6e"
      },
      {
-      "title": "Democrats vow to rein in Trump after winning both chambers, as Trump points to his veto",
-      "summary": "Democrats vowed to use their midterm victory to rein in President Donald Trump, setting up two years of possible deadlock in Washington. A wave of anger over Trump's policies, particularly the war with Iran and its effect on living costs, helped Democrats take the Senate with at least a 54-44 majority and gain at least 30 House seats.\n\nHouse Democratic Leader Hakeem Jeffries said the incoming majority would focus on affordability and accountability, and that the House would no longer function as a subsidiary of the Trump administration. Trump, appearing at the construction site for his White House ballroom, said he would probably get along with Democrats unless they wanted to be destructive, but stressed that he has the power of the veto.\n\nTwo very close Senate races, in Alaska and Mississippi, remained uncalled, leaving open the possibility that the Democratic majority could grow to 56-44.\n\nWatch for how Democrats use investigations and nominee confirmations, where the Senate majority gives them real blocking power even without Trump's signature.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/government/democrats-vow-rein-trump-he-shows-off-white-house-ballroom-2026-11-05/"
+      "title": "The 2028 Republican race is already on as leaders blame the Iran war and tariffs",
+      "summary": "Barely three days after the midterms, the Republican autopsy has turned into an opening round of the 2028 presidential race. Vice President JD Vance blamed the losses above all on the Iran war, writing that everyone knows why the party lost. Senator Ted Cruz called the result a blue tsunami and a historic repudiation, pointing at tariffs for making everything more expensive.\n\nFlorida Governor Ron DeSantis described the night as close to an extinction-level event for Republicans in much of the country, while noting Florida held. Democrats' 13-point win in the national popular vote was the biggest midterm margin since 1976, and Texas — where Republicans lost every statewide race — suddenly looks like a top 2028 battleground with 40 electoral votes.\n\nVance and Cruz are both widely expected to run, DeSantis is a possible candidate, and Secretary of State Marco Rubio is in the conversation but has stayed quiet. The president, asked about Vance, said only that maybe he runs and maybe he doesn't — an unusually lukewarm blessing this early.",
+      "source": "USA Today",
+      "url": "https://www.usatoday.com/story/news/politics/2026/11/06/2028-republican-primary-midterm-election-trump-vance-desantis-cruz/92626090007/"
      },
      {
-      "title": "Vance says the Iran war cost Republicans the midterms",
-      "summary": "Vice President JD Vance blamed the Iran war for Republican midterm losses, in remarks reported after the party lost both chambers of Congress. The comment was a notable public break in how the administration explained a result that Democrats tied to the war and to higher living costs.\n\nRepublicans are debating whether the defeat was mainly about the war, about tariffs and prices, or about President Trump's broader standing. Vance's framing puts foreign policy at the centre of that argument, rather than treating the loss as only a domestic economic verdict.\n\nThe remark matters because the new Democratic Congress has promised to use funding bills to impose limits on the administration and on the war in Iran. If senior Republicans also see the war as a political liability, pressure for a settlement could grow inside both parties.\n\nWatch for whether Trump adopts Vance's explanation, and for Republican calls to change course in the coming days.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/government/vance-repudiates-iran-war-after-us-electoral-defeat-2026-11-04/"
+      "title": "Defense Secretary Hegseth is on thin ice, with an impeachment push possible next week",
+      "summary": "Defense Secretary Pete Hegseth is the most exposed member of the Cabinet after Tuesday's losses, according to Axios reporting. One Trump adviser put it bluntly: Hegseth is definitely on thin ice, though that does not automatically mean the president forces him out.\n\nThe pressure is coming from two directions at once. The Iran war he championed — with the rosiest predictions of how quickly it would end — is deeply unpopular, and the House could vote as early as next week on an impeachment measure, sponsored by Republican Thomas Massie, accusing him of defying Congress and illegally continuing the war.\n\nPublicly, the president stood by Hegseth on Wednesday, saying he is doing a very good job. Privately, an administration official predicted accountability would come during the lame-duck period before the new Congress takes over on January 3. Watch whether the impeachment vote is actually scheduled — that is the tell.",
+      "source": "Axios",
+      "url": "https://yalibnan.com/2026/11/05/why-pete-hegseth-could-fall-through-thin-ice-his-record-made-him-the-most-vulnerable/"
      },
      {
-      "title": "Speaker Mike Johnson steps aside as Scalise and Jim Jordan vie to lead House Republicans",
-      "summary": "House Speaker Mike Johnson will not seek to stay on as his party's leader after Democrats erased the Republican majority, according to reporting this week. His decision opens a leadership race in a House Republican conference reeling from the midterm result.\n\nMajority Leader Steve Scalise and Judiciary Chairman Jim Jordan are the two names most often floated as successors, reviving a contest between figures who also figured in the party's 2023 leadership fights. Johnson had previously told interviewers he expected to remain the top Republican regardless of the outcome.\n\nThe winner will lead a smaller Republican minority that still holds a key weapon: Democrats do not have the two-thirds majorities needed to override a presidential veto on their own, so Republican votes will matter on any bill meant to become law over Trump's objections.\n\nWatch for the timing of the leadership vote, and whether the race becomes a proxy fight over how closely House Republicans stay aligned with Trump.",
-      "source": "Axios / Daily Caller",
-      "url": "https://dailycaller.com/2026/11/04/steve-scalise-jim-jordan-face-off-party-leader"
+      "title": "Vance privately blasts Netanyahu as the Iran war splits the administration",
+      "summary": "Vice President JD Vance has privately accused Israeli Prime Minister Benjamin Netanyahu of being wrong on everything about the Iran war, according to reporting cited by Fox News. Vance leads a faction of senior officials urging the president to negotiate an end to the conflict, and he said publicly this week that the war is why Republicans lost.\n\nNetanyahu had pushed Washington to resume strikes on Iran before the midterms; the president held off. Polling referenced in the reporting shows roughly six in ten voters opposed the war, which is why the argument inside the administration is as much political as military.\n\nOn Thursday the president held his first post-election national security meeting and said a decision on Iran is coming soon — with new strikes, continued economic pressure, and a negotiated deal all still on the table. A carrier group is not expected in the region before mid-November, which bounds how fast any military option could move.",
+      "source": "Fox News",
+      "url": "https://foxnews.com/politics/vance-privately-blasts-netanyahu-iran-war-divides-trump-admin-2028-ambitions-loom"
      }
     ]
    },
@@ -401,40 +382,40 @@
     "name": "Tech & Business",
     "items": [
      {
-      "title": "Nasdaq falls 5.52% into correction in Wall Street's worst day since April 2025",
-      "summary": "The Nasdaq Composite dropped 5.52% on Thursday to close at 24,315, entering correction territory, while the S&P 500 fell 4.36% to about 7,354 and the Dow Jones Industrial Average plunged 3.44%, losing about 1,833 points. All three indexes had their worst session since April 2025, erasing the rally that followed the midterm results.\n\nSemiconductors were hit hardest. The Philadelphia chip index fell about 12%, with SanDisk down more than 20% and Micron, AMD and Marvell each down around 17%, while Nvidia fell about 9%. Data-centre operators also fell sharply, and Tesla and other large tech names lost ground.\n\nInvestors tied the selloff to a reassessment of the artificial intelligence trade after Democrats won Congress, amid worries that closer scrutiny of data-centre buildout could slow AI spending. Reuters estimated about $2 trillion was wiped off the Nasdaq's market value on the day.\n\nFriday's October jobs report is the next test. Watch whether the selloff spreads beyond tech, and how the Federal Reserve rate outlook shifts.",
-      "source": "The Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nasdaq-suffers-worst-day-in-18-months-as-ai-trade-comes-under-fire/"
-     },
-     {
-      "title": "Chip stocks plunge 7% or more in early trading as Qualcomm's miss sparks a broader tech slump",
-      "summary": "U.S. stocks dropped sharply on Thursday morning, with the Nasdaq on course for correction territory as steep losses in chip and data-centre stocks weighed a day after the midterm result powered a broad rally. Qualcomm slid about 9% after its smartphone chip sales fell short of Wall Street estimates.\n\nThe broader semiconductor index extended declines and was down 7.1% in morning trading, with losses in Nvidia, Advanced Micro Devices, Intel and Marvell. Data-centre operators IREN, Hut 8 and Applied Digital fell between 6% and 11%, and Meta, Amazon and Alphabet also lost ground, while Tesla tumbled.\n\nAt 9:57 a.m. ET the Dow was down 352 points, or 0.66%, the S&P 500 was down 1.66%, and the Nasdaq was down 3.09%. Those morning losses deepened into the close.\n\nThe morning move set the tone for the day: a company-specific miss at Qualcomm became a sector-wide question about phone demand and about how much AI spending is already priced in.",
-      "source": "Reuters via Kitco",
-      "url": "https://www.kitco.com/news/off-the-wire/2026-11-05/wall-st-slumps-sharp-tech-losses-put-nasdaq-course-correction"
-     },
-     {
-      "title": "Qualcomm falls sharply as smartphone chip sales miss forecasts",
-      "summary": "Qualcomm shares fell sharply after the chipmaker reported weaker-than-expected smartphone chip sales, with handset revenue down 26% year over year to about $5.14 billion, below the roughly $5.25 billion analysts expected. Total quarterly revenue fell 8% to about $10.3 billion.\n\nAt least eight brokerages cut their price targets after the report, according to market data cited in coverage of the results. The miss overshadowed momentum in Qualcomm's data-centre business, which investors had been watching as a growth story.\n\nBecause Qualcomm is a bellwether for phone demand, the result fed a broader worry on Thursday that consumer device demand is softening at the same time AI infrastructure stocks are being repriced.\n\nWatch for guidance from other handset suppliers, and whether Qualcomm's data-centre growth can offset phone weakness in coming quarters.",
+      "title": "Nasdaq futures climb as chip stocks stabilize after the steep AI selloff",
+      "summary": "Chip stocks bounced in early Friday trading after Thursday's rout, the Nasdaq's deepest one-day drop in 19 months, which confirmed a correction. By 4:14 a.m. Eastern, Nasdaq 100 futures were up about 1.5 percent, Nvidia had recovered 3.6 percent, and AMD, Intel, Broadcom and Micron were up between 5 and 8 percent.\n\nThursday's selling followed the Democratic midterm sweep, including wins in key data-center states, and fed fears that Congress could slow the AI buildout. One Jefferies strategist called the selloff reactionary rather than a fundamental reset — a collision of worries about AI spending, policy and inflation rather than broken businesses.\n\nThe next test arrives quickly: the October jobs report at 8:30 a.m. Friday, with traders pricing better than a 65 percent chance of a December rate hike. A fragile rebound plus a hot jobs number is exactly the combination that could restart the slide.",
       "source": "Reuters",
-      "url": "https://wixx.com/2026/11/05/qualcomm-slumps-as-weak-smartphone-chip-sales-overshadow-data-center-momentum/"
+      "url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/"
      },
      {
-      "title": "Reuters calls Thursday a market bonfire as the AI trade implodes",
-      "summary": "Reuters' Trading Day wrap described Thursday as a bonfire for U.S. stocks, led by a ferocious selloff in tech and AI-related shares as investors reassessed what the Democrats' sweeping midterm wins mean for the AI data-centre buildout. Chip stocks posted their second-biggest fall on record.\n\nThe wrap put the closing moves at Nasdaq down 5.5%, S&P 500 down 4.4% and Dow down 3.4%, with all 11 S&P sectors falling, tech down 7.3%, and the Philadelphia chip index down 12%. Bitcoin fell about 6% to around $75,000, and rate traders pushed back the expected timing of the Federal Reserve's next hike to March.\n\nReuters noted the Nasdaq is now firmly in correction territory, down as much as 14% from its all-time high reached only a month ago.\n\nWatch for Friday's employment data, with economists expecting about a 65,000 rise in October non-farm payrolls and unemployment holding at 4.2%.",
+      "title": "Tech selloff wipes out hedge fund gains, prompting risk cuts and layoffs",
+      "summary": "The global tech selloff has erased this year's gains at many hedge funds, and some managers are responding by cutting risk and shrinking their investment teams. Equity long-short funds focused on tech fell more than 4 percent on Thursday alone, leaving them roughly flat for the year, according to Goldman Sachs estimates.\n\nThat is a long fall from a peak gain of 24 percent in June, before the AI trade began unwinding. The $17 billion fund Walleye Capital told investors Thursday it will trim its internal equity long-short business and reduce a substantial part of its equity team, after its worst month since March 2020.\n\nOctober set the tone: the Nasdaq 100 fell 6.6 percent, its worst month in a year and a half, as expensive AI borrowing and doubts about returns chipped at sentiment. When crowded trades unwind, the selling feeds itself — which is why fund managers are cutting exposure before they are forced to.",
       "source": "Reuters",
-      "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-05/"
+      "url": "https://www.reuters.com/world/china/tech-selloff-wipes-out-hedge-fund-gains-prompting-risk-cuts-layoffs-2026-11-06/"
      },
      {
-      "title": "Why the blue wave turned Wall Street red: data-centre worries hit AI stocks",
-      "summary": "Thursday's selloff was tied directly in market coverage to the midterm result, as investors worried that a Democratic Congress will slow development of data centres and artificial intelligence projects. The Nasdaq closed down 5.52%, the S&P 500 down 4.36%, and the Dow down 3.44%.\n\nDouble-digit percentage losers included Advanced Micro Devices, SanDisk, Micron, Dell and Marvell Technology. The moves reversed Wednesday's post-election gains and left the Nasdaq more than 10% below its high from last month.\n\nAnalysts quoted in coverage said entering correction territory does not by itself end the AI trade, but it may signal that investors will be more selective about which AI names they own and what they will pay for growth.\n\nWatch for company-level differentiation in coming sessions, rather than a single AI basket moving together.",
-      "source": "USA Today",
-      "url": "https://www.usatoday.com/story/money/personal-finance/2026/11/05/blue-midterm-sweep-turns-ai-tech-rally/92624862007/"
+      "title": "AI backlash could threaten Anthropic's IPO timing, potential investors say",
+      "summary": "Investors lined up for Anthropic's blockbuster stock offering are questioning whether the AI company can still start its roadshow next week and list in November as planned. The sharpest tech selloff in a year, plus post-election uncertainty, has clouded the calendar for new offerings generally.\n\nPrice is the other sticking point. A valuation around $1.5 trillion has been discussed, and some investors see that as the top of the range — they are pushing for a bigger discount, knowing the company needs the cash given its quarterly losses and huge commitments to AI infrastructure partners. Anthropic declined to comment.\n\nThe stakes reach beyond one company. Anthropic's debut was meant to be the proof that giant AI listings can still command giant prices; a delay or a cut-price deal would tell every other AI firm waiting in line to lower its expectations.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/ai-backlash-could-threaten-anthropic-ipo-timing-potential-investors-say-2026-11-05/"
      },
      {
-      "title": "AMD posts a record quarter as data-centre sales nearly double, even as its shares get swept into the selloff",
-      "summary": "AMD reported a record $13.4 billion quarter, with data-centre sales nearly doubling, in results that underlined how strong underlying demand for AI computing hardware has been. The numbers landed in a week when AMD's shares were nevertheless swept into a broad semiconductor selloff.\n\nThe contrast is the story of Thursday in miniature: company results pointing to continued AI spending, and a market suddenly unwilling to pay previous prices for that growth after the political landscape changed. AMD fell about 17% in Thursday's market rout, alongside peers.\n\nFor investors, the question is whether the selloff is about fundamentals or about valuation and policy risk. AMD's results argue the demand is real, while the share price argues the premium was too high.\n\nWatch for AMD's next guidance and for whether data-centre customers confirm, delay or resize orders after the election.",
-      "source": "TSN",
-      "url": "https://tsnmedia.org/amd-q3-results-data-center/"
+      "title": "Wall Street's week ahead: inflation data is the next test after the tech swoon",
+      "summary": "Investors head into next week with the market on shaky footing. The Nasdaq closed Thursday nearly 12 percent below its October 6 record high, the S&P 500's tech sector sank 7.3 percent in a day, and the Philadelphia chip index tumbled more than 12 percent — the worst one-day drops for both in over six years.\n\nThe calendar offers little rest. Tuesday brings the October Consumer Price Index, the inflation reading that will shape the Federal Reserve's December meeting, and earnings arrive from CoreWeave, Applied Materials and Cisco — three very different windows into whether AI spending is holding up.\n\nFutures still suggest roughly a 65 percent chance the Fed raises rates on December 8-9, with about two quarter-point hikes expected in this cycle. For context, the major indexes are still up for the year, with the S&P 500 ahead more than 7 percent — this is a correction inside a bull market, so far, not yet something worse.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/wall-st-week-ahead-tech-swoon-roils-market-us-inflation-data-tap-2026-11-06/"
+     },
+     {
+      "title": "Krispy Kreme was a sweet spot in Thursday's sour market",
+      "summary": "While investors fled chip and AI stocks on Thursday, Krispy Kreme quietly had its best day in ages, closing about 30 percent higher. The doughnut chain beat expectations on both the top and bottom lines, with third-quarter revenue of $328.8 million against estimates near $316 million.\n\nAdjusted earnings came in at six cents a share versus the one cent analysts expected, and the company raised its full-year revenue guidance to between $1.35 and $1.40 billion. It has also slashed capital spending by roughly 65 percent from a year earlier as it works through a turnaround plan.\n\nThe fine print matters: Krispy Kreme still posted a net loss of $13.3 million for the quarter, and revenue actually fell 12.4 percent from a year ago after a rough stretch that included a breakup with McDonald's. Thursday's jump says investors liked the discipline — not that the turnaround is finished.",
+      "source": "The Wall Street Journal",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026/card/-under-the-radar-krispy-kreme-was-a-sweet-spot-in-today-s-sour-market-e3mN3fyMmGxxP8yDqBWq"
+     },
+     {
+      "title": "India's Coforge joins SpaceX's partner network to deploy Grok AI tools",
+      "summary": "Indian IT services firm Coforge said Friday it has joined the SpaceX Super Intelligence Partner Network, a program for helping companies build the Grok AI portfolio into their day-to-day operations. Coforge will act as a transformation partner, developing industry-specific Grok solutions inside clients' existing systems.\n\nThe work will run through Momentuum Blue, Coforge's engineering unit, which embeds teams of engineers and AI agents inside client organizations and ties projects to agreed business targets. Financial terms of the partnership were not disclosed.\n\nIt is a small deal with a telling shape: while public markets punish AI spending, enterprise firms are still signing up to deploy the technology. Grok's toolkit spans chat, research, analysis, software development and image and video generation — the unglamorous integration work is where the steady money is.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/indias-coforge-joins-spacex-partner-network-deploy-grok-ai-tools-enterprises-2026-11-06/"
      }
     ]
    },
@@ -442,34 +423,34 @@
     "name": "U.S. News",
     "items": [
      {
-      "title": "Gunman kills a woman at a Citibank campus near Tampa before a guard stops him",
-      "summary": "A gunman killed a woman at a Citibank office campus near Tampa, Florida, before a security guard shot and stopped him, according to Associated Press reporting carried in emergency-services coverage. The gunman also died, making two dead in total at the office complex.\n\nDetails about the relationship between the gunman and the victim, and about a motive, were limited in the initial reporting. The guard's intervention was credited with stopping the attack.\n\nWorkplace shootings draw attention to building security and to how quickly an armed guard on site can limit harm, but officials typically caution that early accounts can change as investigators interview witnesses and review video.\n\nWatch for the sheriff's office to release names, a motive, and whether the victim was specifically targeted.",
+      "title": "Wisconsin infant dies of measles — the state's first measles death since 1990",
+      "summary": "Wisconsin health officials announced Thursday that an infant in the southwestern part of the state has died in connection with the ongoing measles outbreak, with the coroner listing measles as the immediate cause. It is Wisconsin's first measles death in 36 years, and officials declined to release further details to protect the family's privacy.\n\nThe state had reported 431 cases across 13 counties as of November 3, with nine people hospitalized — its largest caseload in more than 35 years. All but three cases were in unvaccinated people, according to the Associated Press.\n\nNationally, the CDC has counted more than 4,800 confirmed measles cases this year across 45 states and Washington, D.C. — more than double last year's total — as outbreaks grow in communities where childhood vaccination rates have slipped. Health officials continue to point to vaccination as the clearest line of protection, especially for infants too young to be fully immunized.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/wisconsin-reports-infant-death-linked-measles-outbreak-2026-11-05/"
+     },
+     {
+      "title": "'Catastrophic' flooding forces more than 100 rescues on the Georgia–Tennessee border",
+      "summary": "Historic flooding overwhelmed the twin towns of McCaysville, Georgia, and Copperhill, Tennessee, on Thursday, forcing more than 100 rescues as their shared river climbed to a record crest of 18.05 feet — above the previous record set in 1990. Flash flood emergencies, the highest level of flood warning, were issued for both towns.\n\nBetween three and six inches of rain fell widely, with isolated totals over eight inches and rates meteorologists class as a once-in-200-years event. Roads were blocked by mudslides or washed out, propane tanks broke loose and floated downstream — one caught fire and exploded, lightly injuring a firefighter — and at least four structure fires broke out overnight.\n\nGeorgia's governor declared a state of emergency for four counties, Tennessee activated its operations center, and mandatory overnight curfews were imposed in flooded areas. Remarkably, officials reported no significant injuries or missing people by late Thursday — the rescue count, not a casualty count, is the story.",
+      "source": "CNN",
+      "url": "https://www.cnn.com/2026/11/05/weather/flooding-georgia-tennessee-mccaysville-copperhill-climate?cid=external-feeds_iluminar_meta"
+     },
+     {
+      "title": "A judge blocks Trump's triumphal arch within an hour of its final approval",
+      "summary": "A federal judge blocked construction of President Trump's proposed triumphal arch late Thursday, less than an hour after the National Capital Planning Commission gave the 250-foot monument its final approval in an 8-4 vote. More than 120 citizens, many of them veterans, had testified across eight hours, most pleading with the panel to stop it.\n\nU.S. District Judge Tanya Chutkan's temporary order, sought by the District of Columbia and Virginia, bars construction, excavation, demolition, utility work and road closures at the Memorial Circle site — the traffic island linking the Lincoln Memorial to Arlington National Cemetery — for 14 days while the court weighs the case.\n\nThe administration had said work could run 20 hours a day for two to three years and might begin immediately after the vote. In a 33-page opinion, the judge questioned the government's shifting justifications, including a late emphasis on national security, and found the local governments likely to be harmed — so the arch is approved on paper and frozen in fact, for now.",
+      "source": "CNN",
+      "url": "https://www.cnn.com/2026/11/05/politics/trump-arch-ncpc-final-approval?cid=external-feeds_iluminar_meta"
+     },
+     {
+      "title": "California's governor commutes every death sentence in the state — all 548 of them",
+      "summary": "Governor Gavin Newsom announced Thursday that he will commute the death sentences of all 548 people on California's death row to life in prison without parole — 529 men and 19 women. It is the largest mass commutation in American history, covering more than a quarter of the nation's condemned prisoners.\n\nNewsom, who halted executions in 2019 shortly after taking office, said in an open letter that the death penalty is unjust and error-prone. The move does not repeal capital punishment — voters kept it in 2012 and 2016, and prosecutors can still seek it in new cases — and nobody is being released.\n\nAbout 382 of the commutations, roughly 70 percent, still need California Supreme Court approval because those prisoners have more than one felony conviction. Newsom leaves office in January and is weighing a 2028 presidential run; his successor has said the execution moratorium will continue. No one has been executed in California since 2006.",
       "source": "Associated Press",
-      "url": "https://www.jems.com/ems-operations/two-dead-at-fl-office-complex-including-gunman-shot-by-security-guard/"
+      "url": "https://www.wptf.com/2026/11/05/california-gov-newsom-says-he-will-commute-all-death-sentences-in-state-to-life-without-parole/"
      },
      {
-      "title": "Republicans press Trump to change course after the midterm rout",
-      "summary": "Republicans called on President Trump to change course after a midterm drubbing that cost the party both chambers of Congress, according to Reuters reporting on Wednesday and Thursday. The pressure came from inside a party debating how much of the loss was about policy and how much was about the president himself.\n\nDemocrats flipped Senate seats in deeply Republican states and gained at least 30 House seats, in a wave tied in exit reporting to anger over the Iran war, tariffs and living costs. Republican strategists noted the party lost ground in almost every county where most votes had been counted.\n\nTrump has so far pointed to his veto as his main leverage and said he expects to get along with Democrats unless they are destructive. That stance leaves Republican lawmakers in the new minority to decide whether to cooperate on selected bills or oppose across the board.\n\nWatch for the House Republican leadership race, and for any early White House moves on tariffs or the war that signal a course change.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/government/republicans-call-trump-change-course-after-midterm-drubbing-2026-11-04/"
-     },
-     {
-      "title": "Los Angeles mayor is projected to fall, with council member Nithya Raman ahead",
-      "summary": "Los Angeles Mayor Karen Bass is projected to lose her office, with council member Nithya Raman ahead in the race to become the city's next mayor, according to election coverage on Wednesday. The result would be a major local upset running alongside the national Democratic wave.\n\nRaman's challenge drew on frustration over homelessness, housing costs and city services, issues that have dominated Los Angeles politics for years. Bass, a former member of Congress, had been a prominent national Democrat.\n\nA change in City Hall matters beyond Los Angeles because the city is preparing for major international events and faces large budget and housing pressures. A new mayor would inherit those files immediately.\n\nWatch for the final certified margin, and for Raman's first appointments and budget priorities if the projection holds.",
-      "source": "Political.org",
-      "url": "https://political.org/2026/11/04/nithya-raman-ousts-mayor-karen-bass-in-los-angeles-projected-to-become-citys-next-mayor/"
-     },
-     {
-      "title": "Voters backed data-centre limits in 44 of 45 community ballots, a new headwind for the AI buildout",
-      "summary": "Voters backed limits on data centres in 44 of 45 community ballot measures, according to a tally of local results reported this week. The near-sweep shows how local resistance to large data-centre projects has become a national factor in the AI expansion.\n\nCommunities have raised concerns about electricity demand, water use, noise and tax incentives for facilities that employ relatively few people once built. Developers argue the projects bring construction jobs, tax revenue and the infrastructure the AI economy needs.\n\nThe local results help explain why investors reacted so sharply on Thursday to the prospect of closer scrutiny in Congress as well. If both local ballots and federal politics turn harder, timelines for new capacity could stretch.\n\nWatch for state-level rules on power and water for data centres, and for developers shifting projects toward communities that actively welcome them.",
-      "source": "AInvest",
-      "url": "https://www.ainvest.com/news/ai-build-win-ballot-box-2611/"
-     },
-     {
-      "title": "Inside the Postal Service's sprint to deliver millions of ballots by Tuesday",
-      "summary": "The U.S. Postal Service took special steps to deliver mail-in ballots for the midterms, including longer hours, extra staffing, special lines in branches, expedited handling, extra deliveries and special pickups, according to Reuters reporting from inside the operation.\n\nPressure on the agency was unusually high this year. President Trump had ordered USPS to write rules that would bar it from delivering ballots if states did not turn over lists of eligible voters, and the Supreme Court blocked enforcement of those rules in September. In the last two months USPS delivered tens of millions of ballots and a record 4.2 billion pieces of political marketing mail.\n\nPostal workers described starting as early as 4 a.m. in places like Golden, Colorado, to make sure ballots moved on time, while navigating a blizzard of different state rules on postmarks and deadlines. In 2024, about 30% of votes were cast by mail.\n\nWatch for post-election reports on ballot delivery times, especially in the still-uncalled Alaska and Mississippi Senate races where late ballots could matter.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/government/inside-us-postal-service-sprint-deliver-millions-ballots-by-tuesday-2026-11-02/"
+      "title": "East Coast faces heavy rain and flood risk Friday as a cross-country storm moves east",
+      "summary": "After weeks of dry weather, rain returns to the Northeast on Friday as the same cross-country storm system behind the Georgia–Tennessee flooding tracks up the coast. Forecasters expect rounds of showers and thunderstorms along the I-95 corridor, with more than an inch of rain in places and localized downpours that could trigger minor flooding.\n\nThe National Weather Service has flagged a slight risk of excessive rainfall from the Mid-Atlantic into southeastern New England, with a level-2 flash flood risk covering eastern Long Island, Providence and Boston. A flood watch is posted for Rhode Island and southeast Massachusetts, where one to three inches are expected and isolated spots could see four to five.\n\nFriday morning's commute along I-95 is expected to be particularly wet, and parts of the Delmarva and the Carolinas could see severe afternoon storms with damaging gusts and an isolated tornado. Most of the East Coast dries out by Saturday afternoon — this is a one-day soaking, not a weekend washout.",
+      "source": "Fox Weather",
+      "url": "https://www.foxweather.com/weather-news/heavy-rain-northeast-thunderstorms-localized-flooding-i-95-corridor"
      }
     ]
    },
@@ -477,40 +458,40 @@
     "name": "Cleveland & Ohio",
     "items": [
      {
-      "title": "Democrats won big in Ohio, but experts say that does not make Ohio a blue state",
-      "summary": "Ohio voters rejected Trump-endorsed Republicans Jon Husted and Vivek Ramaswamy and elected Democrats Sherrod Brown and Amy Acton, who campaigned on making life more affordable. Brown will return to the U.S. Senate and Acton will be the first woman elected governor in Ohio.\n\nOhio Democrats also won eight of the state's 15 congressional seats, broke the Republican supermajority in the Ohio House, picked up two Ohio Senate seats, flipped three Republican-held congressional seats, and won attorney general, secretary of state and treasurer, plus two Ohio Supreme Court seats, according to unofficial returns. Brown won 50.1% to 45.2%, and Acton won 52.3% to 44.4%.\n\nPolitical experts quoted by the Dispatch said the results look more like a referendum on Trump than a permanent realignment. One University of Cincinnati political scientist noted how hard it is to win statewide when a president is deeply underwater in approval.\n\nWatch for whether Democrats can hold these gains in 2028, and how Acton governs with a legislature still shaped by years of Republican control.",
-      "source": "The Columbus Dispatch",
-      "url": "https://www.dispatch.com/story/news/politics/2026/11/04/ohio-election-mirrors-2006-voters-punish-trump-republicans/92590594007/"
+      "title": "Amy Acton defeats Vivek Ramaswamy — Ohio's first woman elected governor — and Sherrod Brown is heading back to the Senate",
+      "summary": "The certified picture from Tuesday is now clear: Democrat Amy Acton beat Republican Vivek Ramaswamy for governor, 2,404,178 votes to 2,039,730 with nearly 98 percent of precincts reporting. Acton is the first woman elected governor of Ohio and the first Democrat to win the office since 2006.\n\nSherrod Brown completed the sweep in the special Senate election, defeating Jon Husted 2,301,042 to 2,077,748. Brown, who spent 30 years in Congress before losing in 2024, flips a Republican seat and helped deliver the Democratic Senate majority. Democrats also flipped at least two Ohio U.S. House seats and the secretary of state's office.\n\nActon takes office January 11. Results stay unofficial until counties certify — Cuyahoga County's certification is scheduled for November 24 — but the margins leave no realistic path for the outcomes to change.",
+      "source": "WHRO / NPR (AP results)",
+      "url": "https://www.whro.org/2026-11-04/democrat-amy-acton-defeats-vivek-ramaswamy-in-race-to-become-ohios-next-governor"
      },
      {
-      "title": "Ohio's congressional map was drawn to favour Republicans. Democrats won a majority of seats anyway",
-      "summary": "Democrats will control eight of Ohio's 15 congressional seats after flipping three Republican-held districts and defending three incumbents in competitive races, under a map approved in 2025 that was expected to favour Republicans. The victories were part of the statewide wave that sent Amy Acton to the governor's office and returned Sherrod Brown to the Senate.\n\nThe map had made reelection harder for Representatives Marcy Kaptur and Greg Landsman in exchange for protecting Representative Emilia Sykes, yet all three incumbents won. Newcomers Brian Poindexter, Kristina Knickerbocker and Don Leonard defeated Republican Representatives Max Miller, Mike Turner and Mike Carey.\n\nRepublican leaders had initially proposed a map that could have produced a 13-2 advantage, but compromised to avoid a ballot referendum and a court fight. A Republican strategist said the flipped seats could revert in 2028 with stronger candidates and a different political mood.\n\nWatch for whether Democrats treat the delegation majority as durable, and for Republican recruitment in the flipped districts.",
-      "source": "The Columbus Dispatch",
-      "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/05/ohio-congressional-map-democrats-flip-gop-seats/92608531007/"
+      "title": "Cuyahoga County voters approve the health and human services levies, and re-elect Ronayne",
+      "summary": "Cuyahoga County voters backed both social-services levies on Tuesday by wide margins: Issue 10 for developmental disabilities passed with nearly 63 percent, and Issue 11 for health and human services with about 60 percent. County Executive Chris Ronayne, who championed both, also won an uncontested second term the same night.\n\nThe trade-off is explicit: roughly $166 to $170 more per year for every $100,000 of home value, in exchange for about $210 million in 2027 funding spread over the next decade for foster care, job-search help, developmental-disability services and mental health support. County leaders pitched the levies as backfilling federal cuts, though they do not cover the whole shortfall.\n\nVoters also approved charter changes limiting some executive powers, and a Democratic win in County Council District 5 leaves the council with no Republican members. Locally, this was less a close call than a statement: the county chose to tax itself rather than shrink the safety net.",
+      "source": "Cleveland Scene / Signal Cleveland",
+      "url": "https://www.clevescene.com/news/cleveland-news/cuyahoga-county-levy-wins-to-supplant-federal-cuts-after-election-night-rebuke-to-trump/"
      },
      {
-      "title": "DeWine says he won't back stripping Acton's power as she launches her transition",
-      "summary": "Governor Mike DeWine said he will not back efforts to strip power from Governor-elect Amy Acton before she takes office, as Acton launched her transition this week. The statement matters because Ohio has seen fights in past transitions over lame-duck changes to a governor's authority.\n\nActon, the former state health director, beat Vivek Ramaswamy 52.3% to 44.4% and will be the first woman elected governor and the first Democrat in the office in 16 years. She now heads into divided government, with Republicans still in charge of the legislature.\n\nDeWine's stance lowers the chance of an immediate institutional fight and puts the focus on policy, including schools, vouchers and affordability, where Acton and legislative Republicans are expected to clash.\n\nWatch for Acton's cabinet picks, and for any lame-duck bills that test DeWine's commitment.",
-      "source": "The Columbus Dispatch",
-      "url": "https://www.dispatch.com/story/news/politics/2026/11/05/mike-dewine-amy-acton-governor-powers-ohio-republicans/92624597007/"
+      "title": "The feds deny Cleveland a $7.8 million lead-safe grant after rating the city too risky",
+      "summary": "The U.S. Department of Housing and Urban Development has turned down Cleveland's application for a $7.8 million lead hazard grant — money meant to make local homes lead-safe. Signal Cleveland reports the denial was not about need: HUD's risk review rated the city itself too risky to manage the funds, based on its performance across several federal housing grants, not just lead programs.\n\nThe timing is awkward. Three older HUD lead grants are winding down at once — a $9.7 million Glenville grant closing this month, a $2 million healthy-homes grant ending next June, and a $5.7 million citywide grant ending next July — and no replacement money is lined up behind them.\n\nCity officials are seeking a debriefing, checking whether an appeal is possible, and hunting for other funding. One thing does not change: property owners' Lead Safe Certificate obligations stay exactly as they are, grant or no grant.",
+      "source": "Signal Cleveland",
+      "url": "https://pbfreeohio.com/2026/11/02/feds-deny-cleveland-7-8-million-lead-grant-what-it-means-for-property-owners/"
      },
      {
-      "title": "How Northeast Ohio voted: levies pass, charter limits pass, and the 7th District flips",
-      "summary": "Northeast Ohio's local results are now clear: Democrat Amy Acton was elected governor and Democrat Sherrod Brown won back a U.S. Senate seat, while Cuyahoga County voters passed two levies and three charter changes. Democrat Brian Poindexter unseated Representative Max Miller in the 7th District with 53%.\n\nIn Cuyahoga County, Issue 10, the developmental disabilities levy, passed with nearly 63%, and Issue 11, the health and human services levy, passed with about 60%, adding about $166.50 a year per $100,000 in property value. Charter Issues 12, 13 and 14, which limit some executive powers, also passed, and Democrat Courtney Scheff's win in District 5 leaves County Council with no Republicans.\n\nAkron voters approved housing and police oversight charter amendments, and only about a third of Northeast Ohio school tax increases passed. Results remain unofficial until counties certify them.\n\nWatch for certification, and for how the new charter limits affect county government in practice.",
-      "source": "Cleveland Magazine",
-      "url": "https://clevelandmagazine.com/articles/how-northeast-ohio-voted-levies-charter-changes-and-the-7th-district-cle-daily/"
+      "title": "Glenville's playoff run ends after an appeals court sides with the OHSAA",
+      "summary": "Glenville High School's football season is over. On Thursday, Ohio's Eighth District Court of Appeals granted the OHSAA an emergency stay, undoing a lower-court order that had put the Tarblooders back into the Division III playoffs and reinstating their October 29 removal while the appeal plays out.\n\nThe fight centers on Ginn Academy, a magnet school with no athletics of its own, and how the Cleveland school district documented where 10 of its student-athletes live and which school they play for. The trial judge had called the removal arbitrary because the OHSAA acted before finishing its investigation or declaring any player ineligible.\n\nFor the bracket, the consequence is immediate: Salem hosts University School tonight at 7 p.m. in the second round, with University advancing in Glenville's place. Glenville finishes 8-2 — a defending state champion from last year, eliminated by paperwork and a court calendar rather than on the field.",
+      "source": "USA Today",
+      "url": "https://www.usatoday.com/story/sports/high-school/football/2026/11/05/glenville-high-school-football-out-of-ohio-playoffs-ohsaa-court-reversal/92630031007/"
      },
      {
-      "title": "Browns waive Carsen Ryan a day after promoting him, as Fannin joins the injury report",
-      "summary": "The Browns waived tight end Carsen Ryan on Thursday afternoon, less than 36 hours after promoting him from the practice squad to the active roster on Wednesday morning. It is the second time this season Cleveland has waived the rookie. Longtime Browns reporter Zac Jackson noted the timing suggests the team needs the roster spot for someone else.\n\nOn the same day, Harold Fannin Jr. was added to Thursday's injury report and was limited with a groin injury, the same issue that ended his rookie season and kept him out for much of the offseason. Cutting a tight end while another tight end is limited makes the move harder to read as a simple depth decision.\n\nPossibilities include activating a player from injured reserve, claiming a player off waivers, or making room for a trade before Tuesday's 4 p.m. ET deadline. Cleveland has been linked to several tight ends, and defensive line depth has also been mentioned as a target.\n\nWatch for the corresponding roster move, and for Fannin's and Deshaun Watson's status for Sunday in New Orleans.",
-      "source": "Browns Nation",
-      "url": "https://www.brownsnation.com/browns-recent-roster-move-could-signal-something-bigger/"
+      "title": "Democrat Brian Poindexter unseats Rep. Max Miller in Ohio's 7th District",
+      "summary": "One of Tuesday's biggest local upsets came in Ohio's 7th Congressional District, where Democrat Brian Poindexter defeated Republican Representative Max Miller, 54.1 percent to 45.9 percent. This is a district Donald Trump carried by 11 points in 2024, and Miller himself won it that year by 15.\n\nMiller's campaign never escaped its own headlines, including domestic-violence allegations from his ex-wife and a public feud with his ex-father-in-law. Republican senators had called on him to resign, but he stayed in the race too long for the party to replace him — stepping aside would simply have left Poindexter unopposed.\n\nThe result fits the night's pattern across Northeast Ohio, but it stands out on its own: safe-seat incumbency protected Miller through the primary season and then collapsed in the general. District voters will get a freshman representative in January, and the seat becomes an instant 2028 target.",
+      "source": "Daily Caller",
+      "url": "https://dailycaller.com/2026/11/04/max-miller-ohio-house-race-midterm-elections"
      },
      {
-      "title": "Atkinson says turnovers are the Cavs' fatal flaw after a second straight loss to Oklahoma City",
-      "summary": "Cavaliers head coach Kenny Atkinson singled out turnovers after Cleveland's 124-116 loss to Oklahoma City on Wednesday, the team's second straight loss to the Thunder. The Cavs never led in the game, finished with 12 turnovers that Oklahoma City turned into 15 points, and gave up 21 fast-break points.\n\nShai Gilgeous-Alexander led the Thunder with 42 points. Jarrett Allen suffered a knee injury in the first half and never returned, and he is now listed as questionable for Friday's NBA Cup game against Philadelphia, along with Peyton Watson and Tyrese Proctor, while Jaylon Tyson and Nae'Qwan Tomlin are out.\n\nCleveland has lost three of its last four and sits at 4-4. Atkinson compared the problem to the Atlanta loss, saying the team has to take better care of the ball and execute better, rather than blaming any single player.\n\nWatch for Allen's final status on Friday, and whether Cleveland's ball-handling improves against a 76ers team that arrives on a five-game winning streak.",
-      "source": "ClutchPoints",
-      "url": "https://clutchpoints.com/nba/cleveland-cavaliers/cavs-news-kenny-atkinson-calls-out-major-issue-hurt-vs-thunder"
+      "title": "Strongsville, North Royalton and Olmsted Falls approve fire and EMS levies",
+      "summary": "Three Cuyahoga County suburbs voted Tuesday to pay for their own fire and ambulance services. Strongsville approved Issue 103, a new 1-mill continuing fire levy, with 56 percent support — the money is earmarked primarily to hire 12 additional firefighter-paramedics.\n\nNorth Royalton's Issue 57 passed with about 56 percent: it renews the existing 1.7-mill EMS levy and adds 0.3 mill, creating a 2-mill levy for five years from tax year 2027 worth roughly $2.27 million a year. Olmsted Falls renewed its fire levy with 60 percent support, while rejecting a separate income-tax increase on the same ballot.\n\nRead together with the county's big social-services levies, Tuesday's pattern in the suburbs was consistent: voters said yes to funding the services that show up at their door, even in a year when they were punishing incumbents almost everywhere else.",
+      "source": "Cleveland.com",
+      "url": "https://www.ems1.com/legislation-funding/3-ohio-county-communities-approve-fire-ems-tax-levies"
      }
     ]
    }
@@ -793,58 +774,60 @@
   }
  ],
  "tickerExtras": [
-  "🏀 Cavs (4-4) lost 124-116 at OKC Wed — SGA 42, Mitchell 27 · Jarrett Allen questionable (right knee) for Fri · Watson & Proctor questionable, Tyson & Tomlin out · Cavs home Fri Nov 6 vs 76ers (8-1) 7:30 PM (NBA Cup) + Sat Nov 7 vs Knicks 8 PM",
-  "🏈 Browns (5-3) at Saints Sun Nov 8, 1 PM CBS · Watson in concussion protocol, DNP Thu, Sanders took all No. 1 reps · Fannin limited Thu (groin), TE Carsen Ryan waived Thu · Ohio State football (6-2, CFP No. 12) hosts Oregon Sat Nov 7, 3:30 PM CBS — freshman Fahey at QB for injured Sayin · OSU hoops home opener Fri vs Youngstown State 6:30 PM",
-  "📉 Top story: Nasdaq falls 5.52% into correction as AI selloff wipes out the post-election rally — S&P 500 -4.36%, Dow -1,833, chip index -12% · Ukraine aid-centre toll rises to 43",
-  "🏷️ Deal of the day: Meijer brand frozen turkeys 79¢/lb or less through Nov 26 (announced Nov 4) — beats Giant Eagle's 95¢/lb in the Nov 5–11 ad",
-  "🚗 Roads: Solon-area roads normal today — no incidents found for I-271, US-422 or Aurora Rd in ODOT/OHGO checks",
-  "🛢️ Oil down a 4th day (Brent ~$93.65, WTI ~$86.98) on Iran-deal hopes · Dow +3.03% Wed, its best post-midterm day since 1982 · AI stocks still sliding globally Thu"
+  "🏀 Cavs (4-4) host 76ers (8-1) TONIGHT Fri Nov 6, 7:30 PM at Rocket Arena — NBA Cup · Jarrett Allen questionable (right knee), Watson & Proctor questionable, Tyson & Tomlin out · Ohio State hoops home opener tonight 6:30 PM vs Youngstown State",
+  "🏈 Browns (5-3) at Saints Sun Nov 8, 1 PM · Watson in concussion protocol, missed Wed+Thu practice, Sanders took all No. 1 reps · Fannin limited Thu (groin) · No. 12 Ohio State football hosts No. 23 Oregon Sat Nov 7, 3:30 PM CBS",
+  "📰 Top story: Iran sends nuclear proposal to U.S. via Qatar tied to seven demands · Tankers keep getting hit in Hormuz · Nasdaq futures rebound after Thursday's 5.52% correction drop",
+  "🏷️ Deal of the day: Meijer brand frozen turkeys 79¢/lb or less through Nov 26 — beats Giant Eagle's 95¢/lb frozen turkeys in the Nov 5–11 ad · Giant Eagle flour/sugar also 95¢ each",
+  "🚗 Roads: Solon-area roads normal this morning — no incidents found for I-271, US-422 or Aurora Rd in ODOT/OHGO checks · Heads-up: I-271 NB local lanes Shaker–Brainard down to one lane Nov 14–16",
+  "🌡️ Solon today: high 49° and falling, PM showers likely (70% tonight), WNW gusts 16–20 mph · Sat 46°, Sun sunny 57°"
  ],
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "baby": {
-  "tip": "Day 4 tip — diaper math: by today Benji should be having at least 3–4 wet diapers and several stools a day, and the counts should keep climbing toward 6+ wet diapers by day five or six. Keep the little log going on the fridge or phone; it's the simplest feeding check there is, and it's exactly what his pediatrician's office will ask about. If a full day looks low, that's a call-the-pediatrician question, not a wait-and-see one.",
-  "fact": "At four days old, Benji can only focus clearly on things about 8 to 12 inches from his face — which is, not coincidentally, about the distance to a parent's face during a feeding. High-contrast patterns and your faces are basically his favourite channel right now.",
-  "fun": "Tiny mission for Day 4: the first tummy-time minute — a short, supervised session on a firm surface while Benji is awake and calm. One minute counts as a win, and a Moose-supervised (from a polite distance) session counts double."
+  "tip": "Day 5 tip — the paperwork one, while it's quiet: Benji needs to be added to the health plan, and newborn enrollment windows are usually short, so it's worth a call to the fund office to confirm the exact deadline and what they need (typically the birth certificate or hospital record). One short call now beats a scramble later — and ask his pediatrician's office what they need on file too.",
+  "fact": "At five days old, Benji already knows his favorite scent — newborns can recognize their mother's smell within days of birth and will turn toward it. His hearing is tuned the same way: the voices he's heard most, yours and Kelly's, are the ones that settle him fastest.",
+  "fun": "Name tidbit for Day 5: Benjamin means 'son of the right hand' in Hebrew — traditionally the favored spot. Tiny mission to match: one photo today of Benji in someone's right-arm cradle hold, Moose supervising from a polite distance."
  },
  "watch": {
-  "date": "Thursday, November 5, 2026",
+  "date": "Friday, November 6, 2026",
   "items": [
    {
-    "title": "The 1971 UFO Photo That Still Defies Explanation | The Cote Photo | Ep 797",
-    "channel": "Podcast UFO",
-    "url": "https://www.youtube.com/watch?v=huiAozUakEs",
-    "why": "Nov 3: Martin Willis interviews researchers on the 1971 Lake Cote disc that appeared in one frame and was gone 13 seconds later — evidence-first UFO, right in your lane."
-   },
-   {
-    "title": "BIGFOOT CHASED US OUT OF THE WOODS! | Robbie Ferrell's Tennessee Encounter - Ep. 233 - 10/30/2026",
-    "channel": "The Cryptid Podcast",
-    "url": "https://www.youtube.com/watch?v=90SS88ol3WA",
-    "why": "Oct 30: an eyewitness says a Sasquatch closed to within 35 feet and followed him and his partner all the way back to their truck in Tennessee."
-   },
-   {
-    "title": "Getting Lost on Purpose: Cal Flyn’s Search for the Wild",
-    "channel": "Constant Wonder (BYUradio)",
-    "url": "https://www.youtube.com/watch?v=az-r5sIoHTc",
-    "dur": "53m",
-    "why": "Nov 4: Flyn on falling through snow into a Scottish river in a whiteout, bears in Transylvania and a too-close volcano in Iceland — real wilderness danger, told well."
-   },
-   {
-    "title": "The Allagash Abduction: Two Witnesses Reveal What Happened Inside the UFO | Ep 791",
-    "channel": "Podcast UFO",
-    "url": "https://www.youtube.com/watch?v=3qQearTtljE",
-    "why": "Original 1976 Allagash witnesses Charlie Foltz and Jim Weiner recount the glowing object, the missing time and what they say happened inside — 50 years on, in their own words."
-   },
-   {
-    "title": "1976 Abair Road Bigfoot Incident, Officer Brian Gosselin Tells His Story 50 Years Later: Ep228",
-    "channel": "The Cryptid Podcast",
-    "url": "https://www.youtube.com/watch?v=MCLgdr0RoCI",
-    "why": "A retired cop recounts the 1976 Abair Road sighting, 50 years on — the classic first-hand witness interview format you like best."
-   },
-   {
-    "title": "The Making Of Bigfoot",
+    "title": "Is Bigfoot Really Dead?",
     "channel": "Sasquatch Odyssey",
-    "url": "https://www.youtube.com/watch?v=79xNQwvWy2c",
-    "why": "Brian King-Sharp with investigative author Greg Long on his challenge to the Patterson-Gimlin film — a skeptical counterpoint to the encounter stories."
+    "url": "https://www.youtube.com/watch?v=9sQHeqfm0dk",
+    "why": "Nov 5: Brian talks with researcher Christopher Noel about the paranormal side of Bigfoot — fresh, long-form, right in your lane."
+   },
+   {
+    "title": "Bigfoot Banging On The Cabin",
+    "channel": "Sasquatch Odyssey",
+    "url": "https://www.youtube.com/watch?v=imd25pUH3q4",
+    "dur": "32:31",
+    "why": "Nov 4: Fred from SubArctic Alaska Sasquatch on a terrifying anniversary cabin getaway — something was banging on the walls in the Alaskan woods."
+   },
+   {
+    "title": "SCARY ENCOUNTERS with MONSTERS and LEGENDS!",
+    "channel": "Spaced Out Radio",
+    "url": "https://www.youtube.com/watch?v=hPG6oUKHibs",
+    "why": "Nov 3: Cryptid investigator Christian MacLeod shares 25 years of monster and legend encounters — pure outdoor-scary interview."
+   },
+   {
+    "title": "Where Are All the LITTLE GREEN MEN?",
+    "channel": "Spaced Out Radio",
+    "url": "https://www.youtube.com/watch?v=putp4bCm0AM",
+    "why": "Nov 2: Dr. Terry Adair on the Fermi Paradox — if the universe is full of life, where is everybody? Aliens lane, no Grusch repeat."
+   },
+   {
+    "title": "Abandoned in the World's Most Dangerous Jungle | Daniel Egginton | Survival Debrief",
+    "channel": "The Survival Debrief Podcast with Steven Kelly",
+    "url": "https://www.youtube.com/watch?v=TN0FewCRm3Y",
+    "dur": "35:26",
+    "why": "His guide abandoned him on day 2 in the Darién Gap and he finished the crossing alone — a gripping survival debrief."
+   },
+   {
+    "title": "71 Days on ALONE: Andrew Price Reveals What TV Didn't Show with Steven Kelly | Survival Debrief",
+    "channel": "The Survival Debrief Podcast with Steven Kelly",
+    "url": "https://www.youtube.com/watch?v=ZSx_0ddgass",
+    "dur": "44:39",
+    "why": "71 days alone in the Canadian Arctic — starvation, isolation, and the moments the Alone cameras never showed."
    }
   ]
  },
